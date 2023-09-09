@@ -26,7 +26,7 @@ export class VenturoMenuSuperior extends HTMLElement{
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/">
-                    <img src="./static/imagens/logo_simples_pequeno_branco.webp" alt=""
+                    <img src="./venturo-d10/static/imagens/logo_simples_pequeno_branco.webp" alt=""
                         style="width:40px;" class="rounded-pill">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
