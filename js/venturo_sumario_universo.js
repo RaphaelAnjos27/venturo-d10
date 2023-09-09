@@ -23,22 +23,22 @@ export class VenturoSumarioUniverso extends HTMLElement {
                     <div class="card-body">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo.html">Introdução</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/universo.html">Introdução</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo/01-introducao/01-sistema-estelar.html">Sistema Estelar</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/universo/01-introducao/01-sistema-estelar.html">Sistema Estelar</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo/01-introducao/02-organizacoes.html">Organizações Espaciais</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/universo/01-introducao/02-organizacoes.html">Organizações Espaciais</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo/01-introducao/03-ciclo.html">Ciclo Comercial e Estações</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/universo/01-introducao/03-ciclo.html">Ciclo Comercial e Estações</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo/01-introducao/04-guildas.html">Guildas</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/universo/01-introducao/04-guildas.html">Guildas</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo/01-introducao/05-civilizacoes.html">Tipos de Civilizações</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/universo/01-introducao/05-civilizacoes.html">Tipos de Civilizações</a>
                             </li>
                         </ul>
                     </div>
@@ -55,37 +55,37 @@ export class VenturoSumarioUniverso extends HTMLElement {
                     <div class="card-body">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo/02-mitologia/01-introducao.html">Introdução</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/universo/02-mitologia/01-introducao.html">Introdução</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo/02-mitologia/02-energia.html">Energia Auforem</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/universo/02-mitologia/02-energia.html">Energia Auforem</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo/02-mitologia/03-abys.html">Unyvirsaly'Abys</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/universo/02-mitologia/03-abys.html">Unyvirsaly'Abys</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo/02-mitologia/04-primordiais.html">Divindades primordiais</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/universo/02-mitologia/04-primordiais.html">Divindades primordiais</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo/02-mitologia/05-divindades.html">Divindades</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/universo/02-mitologia/05-divindades.html">Divindades</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo/02-mitologia/06-celestiais.html">Celestiais</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/universo/02-mitologia/06-celestiais.html">Celestiais</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo/02-mitologia/07-filhos.html">Filhos das Divindades</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/universo/02-mitologia/07-filhos.html">Filhos das Divindades</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo/02-mitologia/08-divinos.html">Seres Divinos e Infernais</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/universo/02-mitologia/08-divinos.html">Seres Divinos e Infernais</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo/02-mitologia/09-azmir.html">Azmir</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/universo/02-mitologia/09-azmir.html">Azmir</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo/02-mitologia/10-idioma.html">Idioma Cósmico</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/universo/02-mitologia/10-idioma.html">Idioma Cósmico</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo/02-mitologia/11-dominios.html">Domínios</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/universo/02-mitologia/11-dominios.html">Domínios</a>
                             </li>
                         </ul>
                     </div>
@@ -102,17 +102,17 @@ export class VenturoSumarioUniverso extends HTMLElement {
                     <div class="card-body">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo/03-dimensoes/01-introducao.html">Introdução</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/universo/03-dimensoes/01-introducao.html">Introdução</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo/03-dimensoes/02-dimensao.html">Dimensões e Planos</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/universo/03-dimensoes/02-dimensao.html">Dimensões e Planos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo/03-dimensoes/03-dimensoes2.html">Dimensões</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/universo/03-dimensoes/03-dimensoes2.html">Dimensões</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo/03-dimensoes/04-planos.html">Planos</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/universo/03-dimensoes/04-planos.html">Planos</a>
                             </li>
                         </ul>
                     </div>
@@ -129,16 +129,16 @@ export class VenturoSumarioUniverso extends HTMLElement {
                     <div class="card-body">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo/04-habilidade/01-introducao.html">Introdução</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/universo/04-habilidade/01-introducao.html">Introdução</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo/04-habilidade/02-categoria.html">Categorias</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/universo/04-habilidade/02-categoria.html">Categorias</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo/04-habilidade/03-formas.html">Formas de Invocação</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/universo/04-habilidade/03-formas.html">Formas de Invocação</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo/04-habilidade/04-origem.html">Origem e Área</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/universo/04-habilidade/04-origem.html">Origem e Área</a>
                             </li>
                         </ul>
                     </div>
@@ -155,13 +155,13 @@ export class VenturoSumarioUniverso extends HTMLElement {
                     <div class="card-body">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo/05-racasclasse/01-introducao.html">Introdução</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/universo/05-racasclasse/01-introducao.html">Introdução</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo/05-racasclasse/02-racas.html">Civilizações</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/universo/05-racasclasse/02-racas.html">Civilizações</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo/05-racasclasse/03-classes.html">Classes</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/universo/05-racasclasse/03-classes.html">Classes</a>
                             </li>
                         </ul>
                     </div>

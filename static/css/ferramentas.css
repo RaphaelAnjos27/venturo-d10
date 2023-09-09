@@ -1,8 +1,8 @@
 .sobre{
-    background-image: url(../imagens/banners/banner_ferramentas.webp);
+    background-image: url(/venturo-d10/static/imagens/banners/banner_ferramentas.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
 ul {
-    list-style-image: url('../imagens/bulletpoint.svg');
+    list-style-image: url('/venturo-d10/static/imagens/bulletpoint.svg');
   }
