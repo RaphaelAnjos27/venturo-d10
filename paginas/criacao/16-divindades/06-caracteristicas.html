@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Criação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/criacao.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criacao</h1>
+        <p>Agora que você conhece o Universo e as Regras. Está na hora de aprender a criar os elementos desse universo!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-criacao></venturo-sumario-criacao>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>CARACTERÍSTICAS</h2>
+                <p>
+                    Nessa sessão vamos abordar algumas propriedades das divindades que seguem regras específicas em seu preenchimento, e pode variar de acordo com a ascensão divina dessa divindade.
+                </p>
+                <h3>ASCENSÃO DIVINA:</h3>
+                <p>
+                    A ascensão divina é o atributo responsável pela diferença de poder entre as divindades. De acordo com o nível desse atributo, uma divindade pode ser mais poderosa que a outra, ter mais vitalidade e por ai vai. Esse atributo vai definir alguns limites de algumas propriedades da sua divindade, como pode perceber nas habilidades.
+                </p>
+                <p>
+                    A ascensão divina vai do nível 1 a 20, sendo dividida em duas classes, semidivindades (<i>nível 1 a 5</i>) e divindades (<i>nível 6 a 20</i>). Divindades especiais iniciam com sua ascensão divina já no nível 20.
+                </p>
+
+                <h3>ATRIBUTOS:</h3>
+                <p>
+                    As divindades por padrão, independente da sua ascensão divina, contêm um <b>Nível dos Atributos de Raça igual</b> a <b>10</b>. Agora seus atributos em si vão do nível 1 ao 6 iguais as raças, porém eles podem conter uma bonificação divina estabelecida pela divindade.
+                </p>
+                <p>
+                    A quantidade de bonificação divina que uma divindade pode ter é relacionada a sua ascensão. Para <b>cada nível</b> de ascensão divina, a divindade ganha <b>+10 pontos</b> de bonificação divina para distribuir em seus atributos. Sua notação se dá por dois sinais de positivo seguindo do valor da bonificação, por exemplo.: <b>++2</b>.
+                </p>
+                <p>
+                    Quem define em qual atributo colocar cada ponto de bonificação divina é o criador da divindade. Normalmente são escolhidos os atributos mais usados pela divindade, principalmente os relacionados a habilidades. 
+                </p>
+
+                <h3>VITALIDADE:</h3>
+                <p>
+                    A vitalidade de uma divindade também é bastante alta, e pode variar de acordo com a ascensão divina dessa divindade. Essa evolução é simples, onde: Para cada nível de Ascensão Divina, a divindade ganha <b>+500 pontos de vitalidade</b>.
+                </p>
+
+                <h3>ENERGIA DIVINA:</h3>
+
+                <p>
+                    A energia divina também vai variar de acordo com a ascensão da divindade em questão. Mas aqui a energia divina varia de acordo com um intervalo de níveis da ascensão divina, onde:
+                </p>
+                <ul>
+                    <li><b>Para o Nível 1 ao 5</b> – A divindade contêm 20 pontos de energia divina;</li>
+                    <li><b>Para o Nível 6 ao 15</b> – A divindade contêm 40 pontos de energia divina;</li>
+                    <li><b>Para o Nível 16 ao 20</b> – A divindade contêm 60 pontos de energia divina.</li>
+                </ul>
+                <p>
+                    Você vai levar todas essas informações em consideração na hora de trabalhar na criação de sua divindade. Quando o mestre começar a criar uma divindade para sua campanha, a primeira coisa que ele deve pensar é no nível da Ascensão Divina dessa divindade. Pois esse atributo nós indica os limites de muitos outros atributos.
+                </p>
+
+                <h3>AÇÕES COMPLEMENTARES:</h3>
+                <p>
+                    A <b>ação complementar</b> é um atributo que indica quantas ações uma divindade pode fazer após a ação de um PP ou PnJ dentro de uma mesma rodada. No livro de regras no capítulo Ações em Ações complementares explicamos melhor do que se trata essa regra.
+                </p>
+                <p>
+                    Diferentes das criaturas, as deidades do sistema Venturo tem por obrigação, ações complementares, mesmo que sejam poucas. Deidades podem ter entre +2 a +8 em ações complementares.
+                </p>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

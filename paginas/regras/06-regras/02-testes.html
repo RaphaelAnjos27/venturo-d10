@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>TESTES NORMAIS E TERMOS</h2>
+                <p>
+                    Uma sessão de RPG é constituída por testes. Eles são responsáveis por definir a vitória de uma ação tanto do jogador quanto do mestre.
+                </p>
+                <p>
+                    Quando o jogador descreve sua ação, ele será submetido a um teste. Esse teste é na maioria das vezes realizado com a soma dos seus atributos mais perícias. Porem pode ser feito apenas com os atributos ou qualquer outro elemento da ficha do jogador, como por exemplo, a perseverança.
+                </p>
+                <p>
+                    Esses tipos de testes sempre serão feitos utilizando o <b>D10</b> (dado de 10 faces). E podemos usar os dados <b>D2</b>, <b>D6</b>, <b>D10</b> e <b>D20</b> para definir os efeitos de uma ação, como por exemplo, o dano.
+                </p>
+
+                <img class="img-fluid" src="/static/imagens/imgs_regra/introducao/dados.webp"
+                    alt="Pilares do Sistema">
+
+                <p>
+                    Quando realizado o teste, você terá os dados jogados em cima da superfície, cada um com seus valores. Esse comportamento é chamado de <b>PD “Parada de Dados”</b>.
+                </p>
+                
+                <img class="img-fluid" src="/static/imagens/imgs_regra/introducao/dados2.webp"
+                    alt="Pilares do Sistema">
+
+                <p>
+                    Nesse exemplo acima tivemos uma <b>PD igual a 8</b>, ou seja, a soma do Atributo + Perícia ou só o atributo ou só a perícia, resultou em 8 dados para serem jogados. E nessa jogada tivemos <b>5 vitórias</b> e <b>3 derrotas</b>. O que define a vitória ou derrota, é o valor do dado ser igual ou maior que o <i>Nível de dificuldade</i> (<b>ND</b>), que nesse caso era um <b>ND = 7</b>.
+                </p>
+                <p><b>Outro exemplo de Teste:</b></p>
+
+                <p>
+                    Vamos supor que você descreveu uma ação de saltar de um prédio ao outro. Seu mestre decide que sua ação é realizada devido a sua <b>força+atletismo</b> (<i>atributo+perícia</i>), e seu ND será 7.
+                </p>
+                <p>
+                    Vamos supor então que você tem <b>2 de força</b>, e <b>2 de atletismo</b>, totalizando <b>4 dados</b> para sua <b>PD</b>. Ao realizar o teste sua PD foi (<i>2, 5, 7 e 9</i>). Lembrando que se deve utilizar o D10, como dados de testes. Nessa PD você obteve dois sucessos, pois pelo menos dois dados foram igual ou maior que o ND estipulado pelo mestre. Assim sua ação foi realizada com sucesso. 
+                </p>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Pode ocorrer do personagem não ter a perícia necessitaria para realizar aquele teste. Nesse caso o mestre pode usar a regra do “Teste de Tentativa” abordado mais a baixo.</i>
+                </div>
+
+                <p>
+                    O sucesso de um jogador depende de um único acerto em sua parada de dados “PD”. O número de acertos de uma PD, descreve o qual bem o jogador foi em seu teste, por exemplo: Em um teste onde o jogador teve apenas um acerto, sua ação foi realizada, porém com dificuldade. Agora se nesse teste ele obteve 5 acertos, ele não só fez a ação, como foi exemplar na realização da mesma.
+                </p>
+
+                <p>
+                    Além do ND <b>“Nível de Dificuldade”</b>. Temos o <b>NV “Nível de Vitória”</b>, que serve para dificultar um pouco mais os testes quando os mesmos parecem mais complicados que o normal. Ele dita quantos acertos sua PD devem ter para que seu teste seja bem-sucedido.
+                </p>
+                <p>
+                    Ele deve ser usado em testes onde você não só tenha que conseguir realizá-lo, mas sim realizá-lo com performance, por exemplo: Imagine que você está em uma missão diplomata, e deve convencer um Rei a se aliar a sua causa maior. Para isso você faria um discurso, e jogaria um teste. Porem como se trata de um Rei, você não pode chegar lá e somente acerta o teste, deve saber lidar com a situação, deve ser mestre no que está fazendo.
+                </p>
+                <p>
+                    No escopo da sessão, o seu discurso não pode haver falhas, gaguejo e outras falhas de discurso que normalmente seriam irrelevantes. Lembre-se que estamos convencendo um Rei. O ser superior naquele lugar. Então você deve fazer um discurso plausível para o mesmo (<i>no mínimo 2 NV, ou seja, dois acertos na PD</i>).
+                </p>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Via de regra, o NV serve para ações que o mestre julgue serem mais difíceis de serem realizadas.</i>
+                </div>
+                <p>
+                    A quantidade de NV interfere na qualidade de sua ação. Para isso temos uma tabela tanto para explicar as características de cada ND quanto para os NV. 
+                </p>
+                <p>
+                    Quero deixar claro que os valores usados para o ND é entre 3 e 10. E para o NV é entre 1 e 5. Assim podendo ter testes simples como uma PD com ND 4, até um teste impossível com uma PD de 5 NV com ND 10.
+                </p>
+                <p>
+                    E como vimos até agora, temos a PD <i>“Parada de Dados”</i> que representa a quantidade de dados total que você terá para fazer um determinado teste. Lembre-se que a PD deve ser maior ou igual ao NV estipulado pelo mestre para que o jogador consiga realizar o mesmo.
+                </p>
+                <h6>TABELA DE NÍVEL DE DIFICULDADE:</h6>
+                <table class="table table-striped">
+                   
+                    <thead>
+                        <tr>
+                            <th>ND</th>
+                            <th>Nome</th>
+                            <th>Descricao</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>3</td>
+                            <td>Fútil</td>
+                            <td>Correr atrás de alguém quando você é perito em Esportes</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Fácil</td>
+                            <td>Procurar alguém em um lugar conhecido</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Simples</td>
+                            <td>Apagar uma pessoa numa briga onde a mesma já se encontra alcoolizado. </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Relativamente Simples</td>
+                            <td>Fazer disparos com armas ou conduzir um veículo simples.</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Padrão</td>
+                            <td>Dirigir um carro somente tendo capacidade para dirigir uma moto.</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Díficil</td>
+                            <td>Pular de um prédio a outro (ações que requer muito esforço dos personagens)</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Extremamente difícil</td>
+                            <td>Pilotar um cargueiro tendo o nível para dirigir apenas um carro.</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Hardcore</td>
+                            <td>Querer fazer ações inacreditáveis, quando todos elementos da sessão estão contra esse feito.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h6>TABELA DE NÍVEL DE VITÓRIA:</h6>
+                <table class="table table-striped">
+                   
+                    <thead>
+                        <tr>
+                            <th>NV</th>
+                            <th>Nome</th>
+                            <th>Descricao</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Simples</td>
+                            <td>Você conseguiu realizar sua ação da forma que foi interpretado tendo alguns erros como uma escorregadinha aqui ou ali.</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Bom</td>
+                            <td>Parabéns, você realizou sua ação e não nenhum erro relevante.</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Feito</td>
+                            <td>Fez uma ação tão boa que problemas futuros que poderia ocorrer na ação foram anulados exemplo: pular de uma madeira a outra e ela pode quebrar... no caso ela não quebraria.</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Fabuloso</td>
+                            <td>Sua ação foi bela, passou perfeitamente, deixando as pessoas impressionadas.</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Sensacional</td>
+                            <td>Você conseguiu realizar uma ação e a fez perfeitamente, você literalmente “mitou” sua ação.</td>
+                        </tr>
+                    
+                    </tbody>
+                </table>
+                <p>
+                    Evite ficar usando muito os NV. Seu uso é mais aplicado quando a ação é literalmente impossível de ser realizada por aquele personagem. Ou quando o mestre a considera muito complicada para um personagem já experiente, como foi no exemplo do Rei.
+                </p>
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

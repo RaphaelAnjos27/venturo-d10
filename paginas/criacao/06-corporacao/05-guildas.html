@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Criação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/criacao.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criacao</h1>
+        <p>Agora que você conhece o Universo e as Regras. Está na hora de aprender a criar os elementos desse universo!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-criacao></venturo-sumario-criacao>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>CRIANDO GUILDAS/GRUPOS</h2>
+                <p>
+                    Vamos aprender aqui a como criar seu sistema de guildas dentro de um cenário coletivo que você esteja criando. A primeira coisa que você deve pensar é: <b>“Como funciona uma guilda em meu cenário?”</b>. Essa é a base de partida.
+                </p>
+                <p>
+                    E como todos os pensamentos por trás dessa pergunta podem gerar suas próprias regras de jogo, a resposta para ela vai ter que entrar em <b>“Componentes de Concepção”</b>, ou seja, você criará um contexto de regras seu para o cenário em questão. Esse componente deverá ser chamado de: <b>“Guildas & Grupos”</b>.
+                </p>
+                <p>
+                    Dentro desse componente você vai explicar num contexto geral, como funciona esse sistema de guildas e grupos dentro de seu cenário. Podendo criar títulos e subtítulos para deixar tudo bem explicado. Essa base é interessante para quem estiver querendo jogar em seu cenário.
+                </p>
+                <p>
+                    Você pode fazer um trabalho bem elaborado de seu sistema de guildas, mas lembre-se da essência: Uma guilda é composta por um grupo de pessoas que visam os mesmos objetivos (<i>ou objetivos semelhantes</i>). Composta por um ou mais fundadores, e que visam lucrar de alguma forma (<i>tanto membros quanto para a própria guilda em si</i>).
+                </p>
+
+                <h3>CRIANDO UMA GUILDA:</h3>
+                <p>
+                    Agora entramos na parte interessante: Como criamos as guildas no geral para nossos cenários de RPG! E a resposta é simples… Preenchendo atributos pré estipulados pelos desenvolvedores desse sistema. Pensamos em todos os atributos que seriam necessários para que você pudesse ter a maior liberdade possível na criação de sua guilda.
+                </p>
+                <p>
+                    Vamos ver esses atributos:
+                </p>
+                <ul>
+                    <li><b>Nome Da Guilda </b>– Como o próprio título sugere, é o nome que você dará a guilda. Lembre-se que esse mesmo nome é anotado nas aquisições da ficha de personagem.</li>
+                    <li><b>Fundador</b> – Qual o nome do PnJ ou PP que criou essa guilda.</li>
+                    <li><b>Símbolo</b> – Sua guilda precisa ter um símbolo que a represente.</li>
+                    <li><b>Objetivo</b> – Aqui você descreve qual é o objetivo da criação de sua guilda, por exemplo, um grupo de mercantes que criaram uma guilda só para eles, para compartilharem rotas estratégicas, missões e etc.</li>
+                    <li><b>Requisitos</b> – Aqui você descreve oque o personagem precisa ter para fazer parte dessa guilda, por exemplo, certos níveis de atributos, classe, ser convidado e etc.</li>
+                    <li><b>Aquisição</b> – Explique se essa guilda tem níveis de aquisição, como subir esses níveis dentro da guilda e quais as vantagens de cada nível.</li>
+                    <li><b>Membros</b> – Aqui você listará todos os principais PnJ e PP membros dessa guilda.</li>
+                    <li><b>Vantagens e Desvantagens</b> – Algumas guildas podem gerar vantagens, e outras podem gerar desvantagens para os jogadores, por exemplo, uma guilda criminosa pode gerar a desvantagem de ser caçado por todo um reino.</li>
+                    <li><b>Local</b> – Explique onde é a localidade de sua guilda. Se ela foi criada dentro de reino, ou se ela tem suas próprias regras de encontro. No geral, descreva se ela tem e onde é sua base de operações.</li>
+                    <li><b>História </b>– Aqui você escreve a história de sua guilda dentro do cenário que você está desenvolvendo.</li>
+                    <li><b>Outros Assuntos</b> – Aqui é mais para informações extras de sua guilda.</li>
+                </ul>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

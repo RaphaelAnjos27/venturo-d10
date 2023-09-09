@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Criação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/criacao.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criacao</h1>
+        <p>Agora que você conhece o Universo e as Regras. Está na hora de aprender a criar os elementos desse universo!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-criacao></venturo-sumario-criacao>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>CONTATO</h2>
+                <p>
+                    Em algum momento os cultuadores de uma divindade tentam entrar em contato com a mesma para pedir seu auxílio. Todas as divindades têm uma forma de contato, cada uma com suas características. Porem todas seguem o padrão de 3 categorias de contatos, essas categorias são:
+                </p>
+                <ul>
+                    <li><b>Oração</b> – Quando você precisa recitar um conjunto de palavras para conseguir chamar a atenção da divindade. Divindades conseguem ouvir orações para elas de qualquer lugar do universo;</li>
+                    <li><b>Ritual</b> – Quando você precisa fazer um determinado ritual para entrar em contato com a divindade. Um ritual pode ser um sacrifício seguido de algumas palavras, o uso de um determinado objeto que invoca a divindade entre outras coisas;</li>
+                    <li><b>Natural</b> – Os contatos naturais, como o próprio nome sugere, são contatos que ocorrem de forma natural, normalmente associados a divindades especiais. A morte de um personagem, por exemplo, é o contato natural com a divindade responsável por guiar as Azmires recém-falecidas.</li>
+                </ul>
+
+                <p>
+                    Cada divindade vai ter uma forma diferente de realizar um desses três tipos de contato. Uma mesma divindade pode ter mais de uma forma de contato, seja por orações para se comunicar e rituais para invocar. Mas apenas divindades com <b>ascensão divina nível 8</b> podem criar formas de contato. 
+                </p>
+                <p>
+                    Então na criação de uma divindade, você vai precisar especificar como é sua forma de contato. Para isso precisará preencher alguns atributos para cada tipo de contato.
+                </p>
+
+                <p><b>Os atributos são:</b></p>
+
+                <ul>
+                    <li><b>Nome</b> – Qual o nome dessa forma de contato (relacionado a função do contato);</li>
+                    <li><b>Tipo</b> – Aqui você informa de o contato é feito através de orações, rituais ou natural;</li>
+                    <li><b>Descrição</b> – Em seguida você vai descrever o que deve ser feito para ativar esse contato levando em consideração o tipo de contato, e o objetivo desse contato.</li>
+                    <ul>
+                        <li>Para contatos do tipo oração, você vai explicar o que o personagem deve pronunciar para que a divindade esculte ele, seja uma palavra em especial ou grupo de palavras, e até mesmo poses que o personagem deve estar para realizar a oração;</li>
+                        <li>Para contatos do tipo ritual, você vai precisar explicar como o personagem deve fazer para realizar esse ritual, isto é, se ele precisa sacrificar algo, se ele precisa de um item especial ou desenhar algum símbolo.</li>
+                        <li>E para contatos naturais, você só precisa explicar o que deve acontecer com o personagem para que ele consiga entrar em contato com a divindade ou até mesmo invocá-la.</li>
+                    </ul>
+                </ul>
+                <p>
+                    A forma de contato pode ter uma descrição detalhada seguindo de imagens para os símbolos, poses ou objetos que serão usados no processo.
+                </p>
+                <p>
+                    Os contatos podem ser usados para invocar ou contactar uma divindade. O que define se essa divindade vai aparecer ou responder ao chamado, é a empatia que ela tem com o personagem. O mestre pode exigir um teste de <b>CAR</b> com um <b>ND</b> que tenha relação com a empatia que a divindade tem pelo personagem, ou seja, quanto menos empatia, maior a dificuldade para convencê-la.
+                </p>
+                <p>
+                    Alguns contatos podem ter funções específicas, como por exemplo, invocar uma divindade relacionada a tortura para torturar um alvo. Nesses casos específicos o mestre vai precisar exigir o teste de <b>CAR</b> com um <b>ND</b> alto (<i>7 a 9</i>), podendo exigir até <b>NV</b> dependendo do objetivo do contato. E esse teste deve ser feito independente da empatia que a divindade tenha pelo personagem.
+                </p>
+                <p>
+                    O contato é a forma que um devoto pede ajuda ou ter temporariamente os poderes de sua divindade.
+                </p>
+
+                
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

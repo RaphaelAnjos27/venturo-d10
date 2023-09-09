@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Criação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/criacao.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criacao</h1>
+        <p>Agora que você conhece o Universo e as Regras. Está na hora de aprender a criar os elementos desse universo!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-criacao></venturo-sumario-criacao>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>ARMAS BRANCAS</h2>
+                <p>
+                    Armas brancas são objetos cujo principal objetivo é ser usado agressivamente para defesa ou ataque. Algumas armas brancas têm o objetivo de realizar trabalho, como as facas, martelos e machados. E temos também as armas brancas criadas para ferir um oponente, podendo ou não levá-los a morte, como os socos ingleses, espadas e entre outros objetos.
+                </p>
+                <p>
+                    As armas brancas são classificadas em sete principais categorias, essas são:
+                </p>
+
+                <h5>Cortantes</h5>
+	            <p>São os instrumentos cuja principal característica é a existência de uma borda delgada chamada de gume ou corte. Que é afiada o suficiente para realizar cortes por meio de uma pressão deslizante.</p>
+                <h5>Perfurantes</h5>
+	            <p>São objetos terminados em ponta aguda com seção circular ou poligonal. Sua principal função é realizar a perfuração em um determinado local.</p>
+                <h5>Contundentes</h5>
+	            <p>São armas cuja principal função é serem chocadas contra um alvo, onde a pressão de choque causa o dano. Podemos ter como exemplo o soco inglês e o bastão de beisebol.</p>
+                <h5>Perfurocortantes</h5>
+	            <p>São objetos constituídos por uma lâmina que contém uma ponta com um ou mais gumes. Sua principal função é perfurar e cortar, como por exemplo as facas, adagas ou uma garrafa quebrada.</p>
+                <h5>Cortocontundentes</h5>
+	            <p>São objetos cortantes, porém contém uma massa a mais em sua estrutura dando a possibilidade de serem usadas como objetos contundentes. Bons exemplos dessa categoria é a guilhotina, machados, cutelos e foices.</p>
+                <h5>Perfurocontundentes</h5>
+	            <p>Nessa categoria temos objetos perfurantes, e por conta de sua maça podem ser usados como categorias contundentes. Bons exemplos que temos são picaretas, lanças e arpão.</p>
+                <h5>Perfurocortocontundentes</h5>
+	            <p>E por último temos essa categoria que tem como função cortar, perfurar ou fraturar um alvo. Um facão ou katana podem ser dados como bons exemplos.</p>
+
+                <h3>ATRIBUTOS:</h3>
+                <ul>
+                    <li><b>Nome</b> – Informe o nome dado a sua arma branca</li>
+                    <li><b>Ilustração</b> – Faça uma ilustração da mesma. </li>
+                    <li><b>Preço</b> – Informe o preço dessa arma branca, seja em Auron ou a moeda da raça.</li>
+                    <li><b>Criadores</b> – Informe a raça ou organização que criou a arma.</li>
+                    <li><b>NARF-Força</b> – Cada arma costumam ter um peso para erguê-las, e o personagem deve ser capas de conseguir isso. Para isso você deve informar o Nível do Atributo de Raça Força (NARF) necessário para erguer essa arma, e também o nível de força necessária do personagem.</li>
+                    <li><b>Arma Branca</b> – Informe o nível da perícia “Armas brancas” necessário para usar a arma.</li>
+                    <li><b>Dano</b> – Informe quanto de dano a arma causa. Os danos de armas brancas são bem relativos levando em consideração o seu tipo (espada, foice e entre outros). E a sua categoria (lâmina ou plasma).</li>
+                    <li><b>NdA</b> – Informe o nível de dificuldade para os testes de ataque.</li>
+                    <li><b>Tipo</b> – Aqui você deve informar qual a característica da sua arma branca, por exemplo: se ela é cortante, perfurante, contundente e por ai vai. </li>
+                    <li><b>Descrição</b> – Explique um pouco mais da sua arma. Porque ela foi criada, quando e onde.</li>
+                </ul>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

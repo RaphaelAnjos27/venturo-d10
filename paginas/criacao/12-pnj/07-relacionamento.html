@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Criação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/criacao.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criacao</h1>
+        <p>Agora que você conhece o Universo e as Regras. Está na hora de aprender a criar os elementos desse universo!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-criacao></venturo-sumario-criacao>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>MAPA DE RELACIONAMENTO</h2>
+                <p>
+                    O mapa de relacionamento é usado pelo mestre e jogadores. Para saberem como é o relacionamento entre os PnJ, ou seja, quem gosta de quem, quem odeia quem e por aí vai. Para fazer esse mapa você deve escrever ou colocar a foto dos PnJ envolvidos em (<i>de preferência</i>) uma folha. Em seguida ligue uma seta que leva de um PnJ a outro, e no corpo dessa seta escreva o que um PnJ sente ou acha do outro.
+                </p>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Um PnJ que tenha um relacionamento com o outro, ou seja, tenha suas opiniões formadas de outro PnJ, tem uma seta “indo”, com a indicação do que ele pensa daquele PnJ. E outra voltando, com a indicação que aquele PnJ tem sobre ele.</i>
+                </div>
+                <p><b>Por exemplo:</b></p>
+                <img class="img-fluid" src="/static/imagens/imgs_criacao/mapa_relacionamento.webp"
+                    alt="Funcionamento de armas">
+                <br><br>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>ENCONTROS ALEATÓRIOS</h2>
+                <p>
+                    Jogadores experientes já devem ter ouvido falar desse tal de <i>“Encontro Aleatório”</i>, agora os
+                    mais leigos não devem nem saber oque é isso. Existem momento na narrativa onde os jogadores precisam
+                    viajar por longas distâncias, ou a ação não chega com o tempo previsto. Nesse caso para não ficar
+                    algo entediante o mestre pode inserir no meio da trama oque chamamos de encontro aleatório, ou seja,
+                    uma espécie de ataque que ocorre de maneira aleatória decidida por um <b>1D10 ND7</b>, ou até mesmo
+                    <b>1D2</b>.
+                </p>
+                <p>
+                    Encontros aleatórios podem ocorrer por muitos motivos, como por exemplo:
+                </p>
+
+                <h5>VACILO DOS JOGADORES:</h5>
+                <p>
+                    Um simples vacilo de seus jogadores pode colocar em sua fila de encontros um problema para eles
+                    resolverem. Imagine que seus jogadores destruam um ninho de lobos, pelo simples prazer de fazê-lo.
+                    Isso pode acarretar num encontro aleatório no futuro onde os lobos daquele ninho cassem os jogadores
+                    pelo mapa. Ou melhor, a luta entre eles contra um determinado inimigo gerou prejuízo em uma fazenda.
+                    Para resolver esse problema, o dono da fazenda contratou mercenários para roubar nossos jogadores
+                    para que ele tenha menos prejuízo na manutenção da fazenda.
+                </p>
+                <p>
+                    Essa dá aos seus jogadores mais responsabilidade. Assim eles vão pensar duas vezes antes de querer
+                    fazer alguma falcatrua pelo mundo. Então tudo que seus jogadores fizerem, procure anotar, e quando
+                    estiver planejando as próximas sessões, use suas anotações para auxiliar nas consequências.
+                </p>
+
+                <h5>CONSEQUÊNCIAS DO PASSADO:</h5>
+                <p>
+                    Jogadores em particular podem ter um passado sombrio. Tão sombrio que justifique o rei de uma cidade
+                    distante mandar uma pequena guarda atrás dele para tentar matá-lo e trazer sua cabeça como
+                    recompensa. E isso justifica aquele encontro aleatório que você inseriu no meio de uma viagem.
+                </p>
+                <p>
+                    Essa é uma boa dica, porém depende muito da história do jogador. Você não pode inserir em sua
+                    história algo que eles não colocaram, lembre-se disso.
+                </p>
+
+                <h5>ENCONTROS INCREMENTAIS:</h5>
+                <p>
+                    Você pode usar os encontros aleatórios para ajudar seus jogadores a trabalhar em sua trama. A invés
+                    de tentar justificar porque caralhos 5 guardas da nação vizinha tentaram matar os jogadores, é mais
+                    interessante perguntar a um membro especifico da mesa. Se seu jogador estiver interessado, ele pode
+                    criar um motivo pessoal do porque isso ter acontecido. Incrementando assim sua trama e dando mais
+                    ideias sobre futuros plots.
+                </p>
+                <p>
+                    Isso ajuda seus jogadores a participar mais da história. Procure aceitar todas as ideias de seus
+                    jogadores, por mais loucas que elas sejam, até porque, RPG de mesa é uma ferramenta em si para a
+                    criação de história coletiva.
+                </p>
+
+                <h3>PREPARAÇÃO:</h3>
+                <p>
+                    Antes de começarmos a criar qualquer coisa, devemos começar a pensar nos elementos que estejam
+                    dentro do contexto daquele cenário que estamos querendo inserir nossos encontros aleatórios. Quando
+                    criamos uma tabela de encontro aleatório, podemos pensar não só em uma, mas três tabelas que se
+                    complementam, cada uma com sua função: O <b>tipo de encontro, Os obstáculos do encontro e as
+                        condições</b>. Depois você deve decidir qual o dado usar para elaborar a tabela, você pode
+                    escolher desde o D6 até o D20 (<i>caso seja uma tabela extensa</i>).
+                </p>
+                <p>
+                    Então antes mesmo de criar a tabela de encontros aleatórios, procure estudar a região do cenário que
+                    está jogando, para ter uma boa base de criação.
+                </p>
+
+                <h5>TIPO DE ENCONTRO:</h5>
+                <p>
+                    Após estudar o seu cenário, podemos começar a pensar em nossos tipos de encontros para a primeira
+                    tabela. Essa tabela vai servir para indicar oque nossos jogadores vão encontrar no meio do caminho.
+                    Aqui você pode colocar generalidades de seu cenário, por exemplo: Para qualquer tipo de animal, use
+                    <b>“animal“</b> mesmo, para monstros perigosos, coloque <b>“besta”</b>, para raças inteligentes,
+                    coloque <b>“humanoide”</b>, para problemas narrativos coloque <b>“evento”</b> e por ai vai.
+                </p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>1D6</th>
+                            <th>Tipo de Encontro</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Humanoide</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Humanoide</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Besta</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Evento</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Animal</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Animal</td>
+                        </tr>          
+                    </tbody>
+                </table>
+
+                <p>
+                    Note que existe uma espécie de frequência entre os mesmos elementos. Pense neles como a probabilidade de ocorrer aquele determinado tipo de encontro. Quantos mais monstros existirem no cenário, maiores as chances deles aparecerem que por sua vez, aumenta sua frequência na tabela.
+                </p>
+                <h5>OS OBSTÁCULOS DO ENCONTRO:</h5>
+                <p>
+                    Agora chegou o momento que detalharemos ainda mais o tipo de encontro, por exemplo, se no item anterior caiu “animal” que tipo de animal será? Será isso que essa tabela retratará. Pense em mitos contados pelos moradores da região para carregar sua tabela, por exemplo, se moradores locais dizem que grandes lobos assolam aquela região, não tem o porque não colocar eles na tabela.
+                </p>
+                <p>
+                    Outra coisa que você pode abusar é dos dados. Coloque também uma rolagem para cada categoria que aparecer, ou seja, não coloque apenas o nome do animal, coloque algo como: <b>1D6 animais</b>, para assim, definirmos de forma aleatória a quantidade desses seres.
+                </p>
+                <p>
+                    Outra característica interessante que vemos em tabelas de encontros aleatórios é a necessidade de rolar mais vezes a tabela como um elemento da própria tabela, por exemplo: em um elemento da tabela pedimos que seja rolado novamente aquela categoria, seja para somar os elementos ou dobrá-los.
+                </p>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>1D6</th>
+                            <th>Animal</th>
+                            <th>Humanoide</th>
+                            <th>Besta</th>
+                            <th>Evento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>1D6 Javali</td>
+                            <td>1D6 Mercadores</td>
+                            <td>1D2 Lobos de Sangue</td>
+                            <td>Ninho de um Animal Vazio</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>1D10 Lobos</td>
+                            <td>1D6+2 Aventureiros</td>
+                            <td>1D6 Lobos de Sangue</td>
+                            <td>Ninho de um Animal com Ovos</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>1D2+1 Leões</td>
+                            <td>1D10 Bandidos</td>
+                            <td>1 Minhoca da Terra Gigante</td>
+                            <td>Caravana sendo atacada por Bestas</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>1D4 alce</td>
+                            <td>1D6 Elfos</td>
+                            <td>1D2 Escorpião Gigante</td>
+                            <td>Acampamento em Chamas</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>1D6 Raposas</td>
+                            <td>1D10 Viajantes</td>
+                            <td>1D3 Quimeras</td>
+                            <td>Vestígios de uma grande batalha</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Role 2x e some</td>
+                            <td>Role novamente e dobre</td>
+                            <td>1 Wyvern</td>
+                            <td>Wyvern observando de longe</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>
+                    Note como na própria tabela temos chamadas para que ela seja rolada de novo: Em Eventos, 3 temos que a caravana está sendo atacada por uma tipo de <b>besta</b>, que é uma categoria da própria tabela. Então rolamos novamente a tabela na categoria “besta” para saber oque será passado.
+                </p>
+
+                <h5>CONDIÇÕES:</h5>
+                <p>	E aqui que quebramos aquele padrão de <i>“O grupo observa a frente o…”</i>. Essa tabela conterá cenas que deixará esse encontro mais orgânico. Será esses elementos que você apresentará aos jogadores para que eles possam escolher a melhor forma de proceder ao ocorrido.</p>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>1D6</th>
+                            <th>Animais</th>
+                            <th>1D6</th>
+                            <th>Bestas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Se Alimentando</td>
+                            <td>1</td>
+                            <td>Dormindo</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Descansando Após uma Refeição</td>
+                            <td>2</td>
+                            <td>Comendo</td>
+                        </tr>    
+                        <tr>
+                            <td>3</td>
+                            <td>Correndo Assustado na sua direção</td>
+                            <td>3</td>
+                            <td>Acasalando</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Faminto</td>
+                            <td>4</td>
+                            <td>Amamentando</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Cuidando da sua Prole</td>
+                            <td>5</td>
+                            <td>Seguindo Vocês</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Ferido e Acuado por Casadores</td>
+                            <td>6</td>
+                            <td>Caçando em Frenesi</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>1D6</th>
+                            <th>Humanoides</th>
+                            <th>1D6</th>
+                            <th>Eventos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Acampando com Desdem</td>
+                            <td>1</td>
+                            <td>Elementos Valiosos no Local</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Enterrando seu Aliado</td>
+                            <td>2</td>
+                            <td>Um observador no local</td>
+                        </tr>    
+                        <tr>
+                            <td>3</td>
+                            <td>Negociando</td>
+                            <td>3</td>
+                            <td>Névoa Envolvendo o Local</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Perdidos</td>
+                            <td>4</td>
+                            <td>Grande Chuva</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Fugindo de Algo</td>
+                            <td>5</td>
+                            <td>Quimeras Observando ao longe</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Abordando Vocês de Surpresa</td>
+                            <td>6</td>
+                            <td>Role 2x e some</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    Essa foi nossa técnica básica para a criação de uma tabela de encontros aleatórios. Oque você fará agora é testar essa tabela e se achar necessário, pode inserir novos elementos ou modificar os existentes. Cada tabela criada para um cenário diferente talvez não se aplicará bem em outro cenário, pois nessa tabela, estamos abusando dos elementos daquela região em específico. 
+                </p>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

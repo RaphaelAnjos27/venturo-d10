@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevLog do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/devlog.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>DevLog do Sistema</h1>
+        <p>Veja as atualizações do sistema</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-10">
+                <h1>Desenvolvimento do Sistema</h1>
+                <p>
+                    O Sistema Venturo é uma coletânea meticulosamente desenvolvida ao longo de mais de oito anos,
+                    abrangendo um conjunto de regras e contextos. Ao comparar a primeira versão do sistema com a atual,
+                    torna-se evidente que são sistemas distintos que compartilham o mesmo nome. Cada uma dessas regras
+                    foi cuidadosamente elaborada ao longo da minha trajetória de evolução nessa área específica do RPG
+                    de mesa.
+                </p>
+
+                <p>
+                    É importante ressaltar que o sistema continuará a evoluir mesmo após o seu lançamento inicial. As
+                    regras serão atualizadas periodicamente e novas regras surgirão de acordo com as necessidades dos
+                    jogadores e mestres.
+                </p>
+                <p>
+                    Atualmente, o Sistema Venturo encontra-se na versão 2.0.0. Essa numeração reflete não apenas o novo
+                    formato do site, mas também uma intensa reformulação de suas regras, o que me levou a considerá-lo
+                    como um sistema totalmente reformulado. À medida que as regras são atualizadas, as versões serão
+                    incrementadas gradualmente. A reformulação de regras altera o primeiro algarismo da versão, a adição
+                    de novas regras altera o segundo e as atualizações abrangentes, como a introdução de uma nova
+                    mecânica no sistema, afetam o terceiro algarismo.
+                </p>
+                <p>
+                    Conforme essas atualizações ocorrem, novas páginas de resumo serão disponibilizadas aqui para que
+                    possamos acompanhar a evolução cronológica desse sistema.
+                </p>
+
+                <h2>Notas das versões</h2>
+                <div id="accordion">
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="btn" data-bs-toggle="collapse" href="#nota01">
+                                Versão 2.0.0
+                            </a>
+                        </div>
+                        <div id="nota01" class="collapse" data-bs-parent="#accordion">
+                            <div class="card-body">
+                                <p><a href="/paginas/versoes/2.0.0/2.0.0.html">Notas da Versão 2.0.0 </a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>PRIMEIRA FICHA</h2>
+                <p>
+                    Muito antes de criar sua ficha, você precisa decidir qual será sua raça. Isso ajuda a elaborar a
+                    história e planejar melhor o seu personagem. Ao escolher a raça, você deve guardar o seu nome para
+                    preencher um campo da ficha dedicado a ela.
+                </p>
+                <p>
+                    A primeira coisa que você precisa fazer é descrever um pouco do seu personagem. Essa parte tem muito
+                    a ver com a personalidade, comportamento e algumas características faíscas de seu personagem:
+                </p>
+
+                <img class="img-fluid" src="/static/imagens/imgs_regra/personagem/parte01.webp"
+                    alt="head da ficha"><br><br>
+
+                <p>
+                    Não se tem muito oque explicar sobre essa sessão. Com exceção dos <b>Níveis dos Atributos de
+                        Raça</b>, que representa os níveis dos atributos da sua raça escolhida. Ele é usado para testes
+                    físicos entre duas espécies distintas, ou para o uso de alguns equipamentos. Toda raça vai te
+                    informar quais os níveis dos atributos físicos da mesma.
+                </p>
+                <p>
+                    Sobre o comportamento e a personalidade, temos algumas dicas:
+                </p>
+                <h5>COMPORTAMENTO:</h5>
+                <p>
+                    O comportamento é a maneira que seu personagem se comportar em meio a sociedade. Ele é o modelo
+                    falso de seu personagem e pode ser parecido com a personalidade. A diferença de um para outro, é que
+                    a personalidade é o seu “verdadeiro eu”, é aquilo que te faz tomar a suas decisões. Agora o
+                    comportamento é aquilo que você demonstra ser para as pessoas a sua volta.
+                </p>
+
+                <h5>PERSONALIDADE:</h5>
+                <p>
+                    Cada pessoa tem seu jeito de ser. O que diferencia uma pessoa da outra, é sua personalidade. Ela
+                    está ligada a como a pessoa tende a pensar, agir e sentir ao longo da sua vida. E para descrever
+                    isso usamos diversos adjetivos.
+                </p>
+                <p>
+                    A personalidade pode ser intendida como um padrão único de pensamentos, e pode ser instável ao longo
+                    da sua vida. Podendo mudar de um instante para o outro decorrente aos eventos da vida. Você pode ser
+                    uma pessoa <b>simpática</b>, <b>engraçada</b>, <b>arrogante</b>, <b>agressivo</b>, <b>legal</b>,
+                    <b>Bravo</b> ou qualquer outro adjetivo.
+                </p>
+
+                <div class="row justify-content-center">
+                    <div class="col-sm-2">
+                        <p><i>Atento</i></p>
+                        <p><i>Calmo</i></p>
+                        <p><i>Inteligente</i></p>
+                        <p><i>Pessimista</i></p>
+                        <p><i>Nervoso</i></p>
+                        <p><i>Amigável</i></p>
+                    </div>
+                    <div class="col-sm-2">
+                        <p><i>Feliz</i></p>
+                        <p><i>Trabalhador</i></p>
+                        <p><i>Honesto</i></p>
+                        <p><i>Impaciente</i></p>
+                        <p><i>Humilde</i></p>
+                        <p><i>Animado</i></p>
+                    </div>
+                    <div class="col-sm-2">
+                        <p><i>Obediente</i></p>
+                        <p><i>Otimista</i></p>
+                        <p><i>Paciente</i></p>
+                        <p><i>Hostil</i></p>
+                        <p><i>Educado</i></p>
+                        <p><i>Popular</i></p>
+                    </div>
+                    <div class="col-sm-2">
+                        <p><i>Reservado</i></p>
+                        <p><i>Egoísta</i></p>
+                        <p><i>Distraído</i></p>
+                        <p><i>Rude</i></p>
+                        <p><i>Tímido</i></p>
+                        <p><i>Louco</i></p>
+                    </div>
+                    <div class="col-sm-2">
+                        <p><i>Hipócrita</i></p>
+                        <p><i>Orgulhoso</i></p>
+                        <p><i>Infeliz</i></p>
+                        <p><i>Preguiçoso</i></p>
+                        <p><i>Desonesto</i></p>
+                        <p><i>Generoso</i></p>
+                    </div>
+                </div>
+
+                <h5>DESCRIÇÃO DE JOGO:</h5>
+                <img class="img-fluid" src="/static/imagens/imgs_regra/personagem/parte02.webp"
+                    alt="descricao jogo"><br><br>
+
+                <p>
+                    Agora precisamos passar algumas informações sobre a <b>campanha</b> que estamos iniciando, nome do <b>personagem</b>, nome do <b>jogador</b> e <b>raça</b> escolhida. A “campanha” deve ser informada pelo mestre, e a cada nova campanha é recomendável renovar a ficha, ou seja, passar todos atributos de seu personagem atual para essa nova ficha. Isso por que ao longo de uma campanha, sua ficha vai ficando velha e delicada, a ponto de rasgar quando for passado uma borracha (<i>isso se já não estiver rasgando</i>).
+                </p>
+
+                <h3>PERSEVERANÇA:</h3>
+                <p>
+                    A “Perseverança” é o desejo do personagem de continuar lutando (<i>ou tentando</i>). Em outras palavras ela é sua força de vontade. Ela pode ser usada para voltar uma ação após declará-la e confirmá-la (<i>antes de rolar os dados</i>), pode receber acertos automáticos em alguns tipos de teste (<i>não todos</i>), pode fazer ação múltipla e entre outras coisas. Lembrando que seu uso deve ser aceito pelo narrador.
+                </p>
+
+                <div class="row">
+                    <div class="col-sm-8">
+                        <p>
+                            Inicialmente, o personagem começa com <b>8 pontos</b> de perseverança. E pode adquirir mais por meio de qualidades. Ou receber do mestre em alguma situação ao qual ele julgar necessário, como por exemplo, acertos críticos. 
+                        </p>
+                        <p>
+                            A perseverança não pode ser comprada com pontos de XP. Ela é constituída por 20 slots de perseverança, como pode ver na imagem acima. Cada um desses slots são compostos por duas áreas de preenchimento. A parte de cima é preenchida a <b>lápis</b> quando um ponto de perseverança é usado. Já a de baixo é preenchida a <b>caneta</b> indicando que aquele slot pode ser usado. Eles são preenchidos da esquerda para direita, de cima para baixo. No exemplo ao lado o usuário tem <b>7 slots</b> de perseverança para uso, e já consumiu 3 desses 7 pontos.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img class="img-fluid" src="/static/imagens/imgs_regra/personagem/parte04.webp"
+                        alt="Perseverança"><br><br>
+                        <img class="img-fluid" src="/static/imagens/imgs_regra/personagem/parte05.webp"
+                        alt="Perseverança preenchida">
+                    </div>
+                </div>
+
+                <p>
+                    Quando a perseverança de um personagem está baixa, isto é, conter entre 1 a 2 pontos de perseverança, o narrador pode gerar ações aleatórias para esse personagem. A perseverança está ligada a força de vontade desse personagem, mas também ao condicionamento físico dele. Nesse caso, perseverança baixa pode gerar desmaios aleatórios (<b>Mestre roda 1D10 ND 8</b>) ao personagem.	
+                </p>
+                <h5>RECUPERANDO PERSEVERANÇA:</h5>
+                <p>
+                    Existem algumas formas de se recuperar a perseverança de seu personagem. Algumas dessas formas podem ou não ser aceitas pelo narrador. As formas de recuperar a perseverança do personagem são:
+                </p>
+                <p>
+                    <b>Início de sessão</b> – A cada início de sessão, o personagem pode recuperar 1 ponto de perseverança;
+                </p>
+                <p>
+                    <b>Gastando XP</b> – O personagem a cada início de sessão, pode gastar pontos de XP equivalente ao quanto de perseverança ele deseja recuperar. A cada 1 ponto de XP, ele recupera 1 ponto de perseverança;
+                </p>
+                <p>
+                    <b>Dormindo</b> – A cada 2 horas de sono no escopo narrativo, o personagem pode recuperar 1 ponto de perseverança.
+                </p>
+                <p>
+                    <b>Comendo</b> – A cada refeição, o personagem consegue recuperar 1D4 pontos de perseverança.
+                </p>
+
+                <h3>CLOL:</h3>
+                <img class="img-fluid" src="/static/imagens/imgs_regra/personagem/parte06.webp"
+                        alt="Atributo Clol"><br><br>
+                <p>
+                    O CLOL é uma espécie de mana do universo Venturo. Ela é usada para ativar as habilidades de um usuário. A forma de preenchimento desse atributo é semelhante à perseverança, com diferença que ela tem <b>40 slots</b> de pontos para gastar. E para determinar quantos slots o jogador vai ter na construção da ficha, ele precisa pegar o atributo <b>POD</b> e multiplicar por <b>5</b>. O resultado vai indicar quantos pontos de CLOL o jogador vai ter no início da ficha.
+                </p>
+                <p>
+                    Atributos são proibidos de chegarem ao nível 3 na construção da ficha (<i>a menos que o mestre permita</i>). Por isso o nível máximo de CLOL inicial acaba sendo 15, se o jogador investir seus pontos de XP inicial ao nível 3 do atributo POD. A cada evolução desse atributo após a construção da ficha, vai ser liberado <b>+5 Slots</b> de CLOL. Ao chegar no limite (<i>nível 6</i>) do Atributo POD, seu CLOL total será de <b>30 Slots</b>. Restando então +10 Slots bloqueados, que podem ser adquiridos por meios narrativos, como um acerto critico, ou algo que ocorreu no escopo narrativo, ou seja, em cena.
+                </p>
+                <p>
+                    O consumo de CLOL é feito pelas habilidades naturais de uma Raça, Habilidades Secundárias, ou algum acontecimento narrativo. Cada habilidade vai indicar quanto de CLOL é necessário para ativá-la. 
+                </p>
+                <p>
+                    As áreas <b>Recebidos</b> e <b>Gastos</b> servem para anotarmos uma possível bonificação de CLOL (<i>recebidos</i>), e conforme formos gastando essa bonificação, anotamos em “gastos”. Quando temos essa bonificação, devemos primeiro consumir todo o CLOL da bonificação (<i>que pode ou não se regenerar</i>). Para só depois começarmos a consumir o CLOL do personagem.
+                </p>
+
+                <h3>CORAGEM:</h3>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <p>
+                            Algumas das ações que forem realizadas, dependem da coragem do personagem, por exemplo: pular de um prédio a outro ou atacar um monstro gigantesco. A Coragem é o que vai determinar se o personagem se arriscará em uma determinada ação, ou não. Ela também pode ser usada para outros fins, sugeridos pelo mestre.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img class="img-fluid" src="/static/imagens/imgs_regra/personagem/parte07.webp"
+                        alt="Atributo Coragem">
+                    </div>
+                </div>
+
+                <p>
+                    O personagem começa com <b>nível 1</b> em coragem. E será dado mais <b>2 pontos</b> de coragem para ele preencher na ficha. O jogador pode evoluir sua coragem utilizando 1 ponto de XP inicial por nível (<i>na criação da ficha</i>). No decorrer da crônica para adquirir mais Coragem, deve ser gasto o nível de Coragem atual, multiplicado por 2 (<i>mesma lógica da evolução de atributos</i>).
+                </p>
+                <p>
+                    Testes de Coragem será uma <b>PD</b> igual ao nível de coragem. Onde a dificuldade será definida pelo mestre, dependendo da ação ou situação (<i>Considere sempre 6 ou 7</i>).
+                </p>
+
+                <h3>PONTOS DE AÇÃO:</h3>
+                <p>
+                    Os <i>“pontos de ação”</i> são pontos fornecidos ao jogador no início de cada sessão. Sua função é dar ao jogador uma ação extra em um turno desejado. E para usá-los basta declarar ao mestre que vai gastar um ponto de ação em um determinado turno. Eles também podem ser usados para ações do tipo <b>reação</b> (<i>regra explicada na sessão de Ações</i>).
+                </p>
+                <p>
+                    Pontos de ação não são acumulativos, ou seja, você não vai ter na próxima sessão, a quantidade de “pontos de ação” que tinha no término da sessão passada. O jogador deve <b>rolar 1D6</b> no começo de todas as sessões e preencher em <i>“Recebidos”</i> o valor do dado.
+                </p>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <p>
+                            Você deve marcar tanto os pontos recebidos quanto os gastos a <b>lápis</b>. No início da sessão você vai marcar quantos pontos de ação tirou no teste em <b>“Recebidos”</b>. E toda vez que gastar um ponto de ação, vai marcar em <b>“Gastos”</b>. Até que a quantidade de pontos de gastos seja igual à de recebidos.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img class="img-fluid" src="/static/imagens/imgs_regra/personagem/parte08.webp"
+                        alt="Atributo pontos de acao">
+                    </div>
+                </div>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Só pode usar <b>“1”</b> ponto de ação por rodada. E o nível de gastos não pode ser maior que o nível de Recebidos (isso é óbvio).</i>
+                </div>
+
+                <h3>PONTOS DE XP:</h3>
+                <p>
+                    Pontos de XP são fornecidos ao jogador por acontecimentos narrativos, ou no final de cada sessão. E podemos usar esses pontos para evoluir a ficha de nosso personagem. O mestre é o responsável por distribuir o XP ao seus jogadores levando em consideração o tempo de narrativa, e o desempenho individual dos jogadores. O mestre também pode dar XP aos jogadores que desempenharem ações extraordinárias na sessão (<i>caso seja da vontade do mesmo</i>).
+                </p>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <p>
+                            No Pontos de XP temos dois campos simples de intender. O Campo <b>Acumulados</b> é onde você vai colocar cada XP que você vai recebendo durante a sessão. No campo <b>Total</b> você vai colocar a quantidade de XP total que você tem acumulado, mais a quantidade acumulada durante a sessão.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img class="img-fluid" src="/static/imagens/imgs_regra/personagem/parte09.webp"
+                        alt="Atributo pontos de xp">
+                    </div>
+                </div>
+
+                <p>
+                    O mestre pode usar a lista a baixo como referência no momento que for distribuir o XP para sua mesa:
+                </p>
+                <p>
+                    <b>3 XP</b> – Esse valor é dado quando o jogador não tem um bom desempenho dentro de narrativa. Ou pelo fato de ter ficado atrapalhando a sessão. 
+                </p>
+                <p>
+                    <b>5 XP</b> – Esse é um valor que pode ser dado quando o jogador tem um desempenho médio.
+                </p>
+                <p>
+                    <b>8 XP</b> – Esse valor é dado para jogadores que fazem boas ações, não atrapalha o jogo e ainda presta atenção na sessão.
+                </p>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> O mestre pode puni-lo por algum mal comportamento durante a sessão. Tirando uma quantia de XP definida por ele.</i>
+                </div>
+                <p>
+                    Essa lista a cima é apenas uma sugestão. Vai haver momentos que seu uso é inapropriado, como no caso de sessões muito curtas. Quem deve decidir a melhor quantia de XP para o jogador é o mestre (<i>levando em consideração o tempo de jogo e desempenho do jogador</i>).
+                </p>
+
+                <h3>ATRIBUTOS:</h3>
+                <img class="img-fluid" src="/static/imagens/imgs_regra/personagem/parte10.webp"
+                        alt="Atributos">
+
+                <p>
+                    Os atributos são as características básicas do personagem. Utilizamos sete atributos básicos e um oitavo atributo, que é o <b>poder</b> (<i>POD</i>). Este último é usado para a manipulação das <i>“habilidades sobrenaturais”</i> de uma determinada <b>espécie</b> ou <b>habilidade</b>.
+                </p>
+                <p>
+                    Todos os atributos têm níveis de <b>1</b> a <b>6</b>. E como pode ver começamos no <b>nível 1</b>. Neste nível o personagem consegue realizar coisas básicas relacionadas ao atributo. Você pode receber bonificação para cada atributo, bem como, penalidade, que deverão ser anotadas a lápis no espaço acima do nome de cada atributo.
+                </p>
+                <p>
+                    Ainda existem alguns tipos de bonificação e penalidade dentro do sistema, que devem ser destacados quando usados nesses atributos.
+                </p>
+
+                <h5>BONIFICAÇÃO:</h5>
+                <p>
+                    Existe a <b>bonificação padrão</b> dentro do sistema Venturo. Ela é responsável por fornecer dados de <b>+1</b> a <b>+6</b> para serem usados dentro do sistema. Quando temos uma bonificação padrão sendo usada, devemos preenchê-la no campo usando um sinal de positivo (<b>+</b>) antes do valor da bonificação. 
+                </p>
+                <p>
+                    Quando temos uma bonificação normal, devemos primeiro jogar o teste normal, ou seja, <b>Atributo+Perícia</b>. Para só depois jogar a bonificação separadamente. E somar os resultados no final.
+                </p>
+                <p>
+                    E existe a <b>bonificação divina</b>, responsável por fornecer acertos automáticos a qualquer teste que envolva o atributo bonificado. O valor dessa bonificação vai de <b>+1</b> a <b>+5</b>. Uma bonificação divina deve ser anotada com dois sinais de positivo (<b>++</b>) antes do valor da bonificação.
+                </p>
+                <p>
+                    Bonificação divina tem preferência, sendo assim, quando temos uma bonificação divina mais uma bonificação padrão no mesmo atributo. Anotamos a divina primeira, e ao lado anotamos a normal, por exemplo: <b>++1+2</b>.
+                </p>
+
+                <h5>PENALIDADE:</h5>
+                <p>
+                    Temos a <b>penalidade padrão</b> que vai servir para retirar dados dos testes relacionado ao atributo ao qual está atribuída. Podemos ter penalidades de <b>-1</b> a <b>-6</b> dados, dependendo da penalidade. Sua anotação é dada pelo símbolo negativo (<b>-</b>) antes do valor da penalidade.
+                </p>
+                <p>
+                    E temos a penalidade infernal, que vai <b>retirar os acertos</b> de sua jogada, relevantes ao atributo associado. Essas penalidades são mais raras de aparecerem para cada atributo, porém quando aparecem, elas podem ter o valor de <b>-1</b> a <b>-4</b>. A penalidade infernal é anotada na ficha seguindo de dois sinais negativos (<b>- -</b>) antes do valor da penalidade. E segue a mesma regra que a bonificação quando temos penalidade padrão e infernal no mesmo atributo.
+                </p>
+
+                <h5>PREENCHENDO:</h5>
+                <p>
+                    Na criação da ficha, o personagem gasta XP inicial para comprar atributos. Mas primeiro ele vai usar os <b>Pontos de Atributo</b>. Esses pontos vão valer apenas na criação da ficha. Durante a campanha, a evolução vai depender somente do XP ou treino. A quantidade de pontos de atributo de um personagem é definido por sua faixa etária. E para cada nível de atributo, deve-se gastar 1 ponto de atributo (<i>Isso na criação da ficha</i>).
+                </p>
+                <p>
+                    <b>Criança (normalmente entre 7 a 15 anos)</b> – 3 pontos de Atributo.
+                </p>
+                <p>
+                    <b>Adolescente (normalmente entre 16 a 21)</b> – 5 pontos de Atributo.
+                </p>
+                <p>
+                    <b>Adulto (normalmente entre 21 a 60)</b> – 8 pontos de Atributo.
+                </p>
+                <p>
+                    <b>Ancião (a parti de 61)</b> – 15 pontos de Atributo.
+                </p>
+
+                <p>
+                    A infância, Adolescência, vida adulta e anciã, vão variar de raça para raça. O mestre e jogador devem consultar a raça em questão para saber sua faixa etária.
+                </p>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> O nível máximo de um atributo é 6, e podemos alcançá-los através de treino e evolução por XP. Mais do que isso, apenas com bonificações.</i>
+                </div>
+
+                <h5>EVOLUINDO OS ATRIBUTOS:</h5>
+                <p>
+                    A evolução de um atributo deve ser feita apenas no começo ou final de sessão. O jogador vai gastar seus pontos de XP que recebeu ou acumulou, para evoluir um determinado atributo. Na criação da ficha, após ter usado todos os pontos de atributo. O jogador poderá usar seu XP inicial, porém a evolução será um pouco diferente. O jogador deve pegar o nível atual de seu atributo e multiplicar por <b>2</b>. O resultado será a quantidade de XP para comprar um novo atributo. E isso se repete para cada evolução.
+                </p>
+                <p>
+                    Após a criação da ficha, a evolução funciona da mesma forma. Porém em vez de multiplicarmos por 2, multiplicaremos por <b>7</b>. Campanhas <b>One-Shot</b> (<i>campanha de uma única sessão</i>) normalmente não é focada na evolução do personagem. E campanhas momentâneo (<i>Campanhas com duração de um a três meses</i>) continuam usando a constante <b>“7”</b> para evolução dos atributos. Porem a quantidade de XP inicial pode ser maior. 
+                </p>
+
+                <h3>PERÍCIAS:</h3>
+                <img class="img-fluid" src="/static/imagens/imgs_regra/personagem/parte11.webp"
+                        alt="Pericias">
+
+                <p>
+                    As perícias são as especialidades de um personagem. Um jogador dentro desse sistema pode ter entre 5 a 11 perícias. E cada uma contêm um nível que vai de 1 a 5. E o valor desse nível determina a quantidade de dados de seu teste, por exemplo: Uma perícia <b>nível 2</b> somado com um atributo <b>nível 4</b> resulta em um teste com uma <b>PD</b> de <b>6D10</b>.
+                </p>    
+                <p>
+                    Cada nível da perícia mostra o domínio do personagem na mesma. Por exemplo, um personagem com nível 5, tem mais domínio da área da perícia do que um personagem nível 2. Podemos categorizar cada nível da seguinte forma:
+                </p>
+                <p>
+                    <b>Nível 1</b> – Iniciante.
+                </p>
+                <p>
+                    <b>Nível 2</b> – Experiente.
+                </p>
+                <p>
+                    <b>Nível 3</b> – Profissional.
+                </p>
+                <p>
+                    <b>Nível 4</b> – Perito.
+                </p>
+                <p>
+                    <b>Nível 5</b> – Expert.
+                </p>
+
+                <p>
+                    Na construção da ficha, o jogador poderá usar seu XP inicial para comprar suas perícias. E cada nível da perícia vale <b>1 ponto de XP inicial</b>. Após a criação da ficha, o personagem poderá evoluir suas perícias através de treino (<i>falaremos dele mais a baixo</i>), ou comprando com XP. A evolução de sua perícia usando XP será o nível atual da perícia multiplicado por <b>6</b>. O resultado é a quantidade de XP necessário para o próximo nível.
+                </p>
+                <p>
+                    Periciais são constituídas por seu nome, nível, combo e especialização (<i>falaremos dele em seguida</i>). O combo de uma perícia representa qual o atributo que essa perícia é usada. No caso de perícias com mais de um combo, podemos escolher qual a atributo será associado a ela. Mas não torne isso uma regra, pois podemos sim ter ocasiões onde uma perícia será usada com outros atributos.
+                </p>
+                <h5>ESPECIALISTA:</h5>
+                <p>
+                    Quando um personagem consegue chegar ao nível máximo de uma perícia. Ele pode escolher ser especialista em alguma coisa relevante a essa perícia em questão. Por exemplo, um personagem <b>nível 5</b> em <b>armas de fogo</b> pode querer ser especialista em rifle de precisão. Nesse caso, qualquer teste feito no escopo da especialidade desse personagem, terá o <b>Nível de Dificuldade</b> (ND) diminuído em <b>2</b>.
+                </p>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Você pode ser especialista em mais de uma coisa na mesma perícia. Basta seguir as regras da Ficha de Especialização Auxiliar.</i>
+                </div>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

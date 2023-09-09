@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Criação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/criacao.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criacao</h1>
+        <p>Agora que você conhece o Universo e as Regras. Está na hora de aprender a criar os elementos desse universo!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-criacao></venturo-sumario-criacao>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>ARTEFATOS DIVINOS</h2>
+                <p>
+                    As divindades podem conter artefatos que auxiliam a mesma em suas jornadas. Esses artefatos podem ser armas, armaduras ou qualquer outro item que uma divindade pode usar para ajudá-la. Esses itens divinos dão ao portador uma bonificação muito elevada, podendo fazer uma grande diferença na divindade.
+                </p>
+                <p>
+                    Armas são criadas para fornecer dano. E as armas divinas têm a mesma função, porém o dano dela é muito elevo, podendo chegar a valores como 200 de dano. Em uma única espada divina. Já armaduras são voltadas a proteção, e com as armaduras divinas não é diferente. Porem a proteção de uma armadura divina é extremamente superior a comum. Já os itens dão a divindades algum tipo de bonificação, ou algum tipo de habilidade.
+                </p>
+                <p>
+                    Cada divindade poderá conter uma série de Artefatos divinos. Quem decide isso é o criador dessa divindade.
+                </p>
+                <p>
+                    Para criar um artefato divino da divindade, você só precisa preencher alguns atributos básicos como:
+                </p>
+                <ul>
+                    <li><b>Nome</b> – Qual o nome desse artefato.</li>
+                    <li><b>Ilustração</b> – fornecer uma ilustração para esse artefato.</li>
+                    <li><b>Descrição</b> – Faça uma descrição desse artefato com sua origem, criador e finalidade. E caso ela tenha habilidades de artefato, você coloca aqui como um sub-topico <b>“Habilidades do Artefato”</b>. Cada habilidade deve conter um Nome e descrição, onde a descrição vai conter seus efeitos, tanto visuais como físicos.</li>
+                    <li><b>Atributos</b> – Aqui você vai colocar informações do item que esse artefato carrega, ou seja, se for uma espada, você vai colocar todos os atributos de armas brancas aqui para complementar esse artefato.</li>
+                </ul>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

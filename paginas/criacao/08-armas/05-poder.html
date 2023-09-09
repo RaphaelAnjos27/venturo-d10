@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Criação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/criacao.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criacao</h1>
+        <p>Agora que você conhece o Universo e as Regras. Está na hora de aprender a criar os elementos desse universo!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-criacao></venturo-sumario-criacao>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>ARMAS DE GRANDE PODER</h2>
+                <p>
+                    Na categoria de armas de grande poder temos algumas armas bem interessantes. Com atributos a serem pensados. Levando em consideração que essas armas são muito grandes, não são fáceis de se manipular. Porem tem alto poder destrutivo.
+                </p>
+
+                <h3>CANHÕES:</h3>
+                <p>
+                    Canhões são armas primarias de uma nave de ataque, transporte ou até mesmo um avião de combate. Tem um dano um pouco reduzido comparadas com os torrents e são sempre colocadas à frente do veículo. Como são comandadas pelo condutor do veículo, fica mais fácil realizar o disparo. Para criar canhões você deve pensar nos seguintes atributos:
+                </p>
+                <ul>
+                    <li><b>Nome</b> – Elabore um nome para esse equipamento.</li>
+                    <li><b>Ilustração</b> – Faça uma ilustração detalhada do seu armamento.</li>
+                    <li><b>Preço</b> – Informe o preço em Auron, ou na moeda da raça.</li>
+                    <li><b>Criadores</b> – Informe quem é a raça ou empresa responsável pelo desenvolvimento dessa arma.</li>
+                    <li><b>Dano</b> – Informe o dano da sua arma.</li>
+                    <li><b>NdA</b> – Informe qual o nível de dificuldade para se usar essa arma.</li>
+                    <li><b>Capacidade</b> – Para usar a arma devem ter um conhecimento na área. Então nesse campo você anota a quantidade de conhecimento necessário para saber se pode ou não usar a arma. E ao lado uma letra, E para armas de energia e F para armas de fogo e A para armas de antimatéria, por exemplo: eu preciso de 4 de Armas de energia, então eu anotaria 4-E.</li>
+                    <li><b>Descrição</b> – De uma descrição detalhada de seu armamento. Informe a empresa e raça que a criou, motivos e entre outros elementos interessantes para descrição.</li>
+                </ul>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Canhões também são comuns de serem vistos em navios antigos. E até mesmo nos atuais, com tecnologias de armamento mais modernas. </i>
+                </div>
+
+                <h3>TORRENTS:</h3>
+
+                <p>
+                    Torrents são armas geralmente comandadas por um personagem ou grupo de personagens. Eles são grandes armas com alto poder destrutivo. Essas armas são colocadas em solo para defesa, ou em algum tipo de veículo (<i>isso vai depender do tamanho da arma</i>).
+                </p>
+                <p>Para criar esse tipo de arma, pense nos seguintes atributos:</p>
+
+                <ul>
+                    <li><b>Nome</b> – Qual será o nome da sua arma.</li>
+                    <li><b>Ilustração</b> – Faça uma ilustração da arma.</li>
+                    <li><b>Preço</b> – Informe o preço. Seja em Auron, ou na moeda da raça.</li>
+                    <li><b>Criadores</b> – Aqui você deve colocar o nome da raça ou organização que desenvolveu esse equipamento.</li>
+                    <li><b>Dano</b> – Qual o dano da arma. Lembrando que na hierarquia, armas de antimatéria estão em primeiro lugar. Em seguida temos as armas de energia e por último as de fogo.</li>
+                    <li><b>NdA</b> – Qual o nível de dificuldade para usar o equipamento.</li>
+                    <li><b>Capacidade</b> – Para usar a arma devem ter um conhecimento na área. Então nesse campo você anota a quantidade de conhecimento necessário para saber se pode ou não usar a arma. E ao lado uma letra, E para armas de energia e F para armas de fogo e A para armas de antimatéria, por exemplo: eu preciso de 4 de Armas de energia, então eu anotaria 4-E.</li>
+                    <li><b>Classe</b> – As classes que temos são <b>“T”</b> Para uso em bases terrestres. <b>“MP“</b> Para uso em naves e veículos (Médio porte). E <b>“GP”</b> Para uso em Cargueiros e naves-mães, ou estações espaciais (Grande Porte).</li>
+                    <li><b>Tipo</b> – Temos os tipos (Remoto). Tipo remoto são equipamentos controlados a distância normalmente de uma cabine e (Manual). Que são equipamentos controlados internamente, fazendo uso de uma pequena sala dentro da arma.</li>
+                </ul>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> O tipo manual é somente para torrents GP, pois as outras categorias são muito pequenas para conter um cockpit interno. E assim serem categorizadas como manuais.</i>
+                </div>
+
+                <ul>
+                    <li>
+                        <b>Descrição</b> – Aqui você coloca a descrição de sua arma, como: onde foi criada, por quem foi criada, quando, objetivos da criação e entre outros elementos.
+                    </li>
+                </ul>
+                <p>Na hora de pensar o dano da sua torrent você deve levar em consideração a classe dela.</p>
+
+                <h3>MISSEIS:</h3>
+                <p>
+                    Misseis são todos projeteis guiados, que utilizam algum tipo de propulsor. Sendo assim, eles tem características básicas como um ou mais propulsores. Sejam eles motores de foguete, estatorreator ou ambos. Deve conter um sistema de navegação como por exemplo: os lemes. E por fim devem possuir uma carga que pode ser explosiva, eletromagnética e entre outros.
+                </p>
+                <p>
+                    Quando abordamos os misseis, estamos nos referindo somente aos que são usados em algum tipo de veículo ou armamento de grande poder.
+                </p>
+                <p>
+                    Vejamos os atributos globais que enquadram todos os misseis. E em seguida vamos ver os atributos específicos de cada tipo de míssil:
+                </p>
+
+                <ul>
+                    <li><b>Nome</b> – De um nome ao seu míssil.</li>
+                    <li><b>Ilustração</b> – Faça uma arte conceitual de seu míssil.</li>
+                    <li><b>Preço</b> – Informe o preço em Auron, ou na moeda da raça.</li>
+                    <li><b>Criadores</b> – informe qual a raça ou organização que criou esse míssil.</li>
+                    <li><b>Tipo</b> – Você deve informar qual o tipo desse míssil, ou seja, se ele é explosivo, eletromagnético, químico ou biológico.</li>
+                    <li><b>NdA</b> – Aqui deve ser informado qual a dificuldade usada na hora de usar essa arma. Isso por que geralmente esses itens são atirados remotamente por um veículo ou componente. Porem podem ser ativados manualmente em ocasiões bastante raras. </li>
+                    <li><b>Raio</b> – Qual o seu raio de efeito para causar o dano em área. que pode variar de 1 a 500 metros (<i>ou até mais, dependendo da arma</i>).</li>
+                    <li><b>Descrição</b> – Qual a descrição do seu míssil. Onde foi criado. Por que foi criado e entre outras informações relevantes.</li>
+                </ul>
+
+                <p>
+                    Agora veremos os atributos extras que cada tipo de míssil vai comportar. Junto com uma descrição básica de cada tipo.
+                </p>
+
+                <h5>Explosivo</h5>
+                <p>
+                    Ogivas explosivas têm a função de causar grande dano físico contra o inimigo. Sua PD vai depender muito da ocasião, mas na maioria das vezes essa tecnologia deverá ser ativada por algum painel de controle. Seus atributos são:
+                </p>
+
+                <ul>
+                    <li>
+                        <b>Dano</b> – Você deve informar quanto de dano essa arma causa.
+                    </li>
+                </ul>
+
+                <h5>Eletromagnética</h5>
+                <p>
+                    Já as ogivas eletromagnéticas terão a função de desativar ou interromper temporariamente o funcionamento de um determinado sistema eletrônico. Seus atributos são:
+                </p>
+                <ul>
+                    <li>
+                        <b>Turnos</b> – Aqui você deve colocar quantos turnos o equipamento eletrônico do alvo ficará desativado.
+                    </li>
+                </ul>
+                
+                <h5>Química</h5>
+                <p>
+                    As bombas químicas são criadas para causar a morte ou lesões em seus alvos. Elas também são conhecidas como armas de destruição em massa.
+                </p>
+
+                <p>
+                    Temos algumas categorias de bombas químicas, essas são: <i>Agentes Vesicantes</i>, <i>Agentes Nervosos</i>, <i>Agentes de Sangue</i> e <i>Agentes Sufocantes</i>. Cada uma com sua função.
+                </p>
+
+                <ul>
+                    <li><b>Dano</b> – Aqui você deve informar quanto de dano por turno esse míssil fornece.</li>
+                    <li><b>Turnos</b> – Aqui você informa quantos turnos a bomba fica ativa. Lembrando que pode ser que o composto nunca desapareça, por conta disso pode ocorrer de precisar limpar a área.</li>
+                    <li><b>Categoria</b> – Informe qual dos quatro agentes essa arma é:</li>
+                    <ul>
+                        <li><b>Agentes Vesicantes</b>: São substâncias químicas, que ao entrar em contato com a pele causam bolhas cutâneas, irritação na pele, úlceras e fortes queimaduras. </li>
+                        <li><b>Agentes Nervosos</b>: São agentes químicos que perturbam os mecanismos pelos quais os nervos transferem mensagens para os órgãos.</li>
+                        <li><b>Agentes Sufocantes</b>: São agentes químicos que causam bastante irritação ao nariz, garganta e olhos. E quando ingeridos em bastante quantidade causam sufocamento.</li>
+                        <li><b>Agentes de Sangue</b>: São agentes que reagem com o sangue, interferindo na oxigenação de órgãos do corpo. E envenenam o sangue. </li>
+                    </ul>
+                    <li><b>Efeito</b> – Informe qual o efeito causado nas vítimas dessa arma.</li>
+                </ul>
+
+                <h5>Biológicas</h5>
+
+                <p>
+                    As armas biológicas são compostas por agentes patogênicos como os fungos, vírus, bactérias e entre outros. E são usadas para atingir e contaminar um grande número de pessoas.
+                </p>
+                <p>
+                    Normalmente essas armas não causam dano e sim infecta o alvo para um futuro problema.
+                </p>
+                <ul>
+                    <li><b>Doença</b> – Aqui você fala as possíveis doenças que essa arma causa ao seu alvo.</li>
+                    <li><b>Turno</b> – Aqui você informa por quantos turnos a bomba fica ativa. Lembrando que pode ser que o agente nunca morra, por conta disso pode ocorrer de precisar desinfestar a área. Nesse caso o valor aqui é “Contaminado”.</li>
+                </ul>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Informe a raça aonde podemos encontrar essa doença!</i>
+                </div>
+
+                <h3>ATÔMICAS E EMP:</h3>
+                <p>
+                    Armas <b>atômicas</b> são, assim como os misseis e ogivas que podem ser detonados em solo ou a partir de um veículo. Escapar desse tipo de arma é difícil e tem a capacidade de tirar uma grande quantidade de vitalidade (<i>que varia de bomba para bomba</i>).
+                </p>
+                <p>
+                    Já as <b>EMP</b> são bombas de pulso eletromagnéticos que funcionam igual as ogivas eletromagnéticas, ou seja, tem função de desativar sistemas eletrônicos. Porem essas armas em vez de atingir um pequeno raio, elas têm um raio superior aos 5 quilômetros.
+                </p>
+                <p>
+                    Temos os atributos globais encontrados nas duas categorias de bombas. Esses são:
+                </p>
+
+                <ul>
+                    <li><b>Nome</b> – Qual o nome escolhido para essa bomba.</li>
+                    <li><b>Ilustração</b> – Assim como qualquer outro objeto, queremos uma arte conceitual do mesmo.</li>
+                    <li><b>Preço</b> – Informe o preço dessa arma. Seja em Aurons ou na moeda da raça.</li>
+                    <li><b>Criadores</b> – Informe a raça ou organização que criou essa arma</li>
+                    <li><b>NdA</b> – Informe o nível de dificuldade para usar essa arma. Isso por que normalmente uma ogiva é disparada de uma estação de controle. Porem pode ser ativada manualmente com um teste de escolha do mestre.</li>
+                    <li><b>Tipo</b> – Informe se é uma bomba atômica ou EMP.</li>
+                    <li><b>Raio</b> – Informe o raio de ação da arma. Sendo que aqui o raio de ação que pode variar de 1 a 16km (<i>Ou mais, dependendo da arma</i>).</li>
+                    <li><b>Descrição</b> – Fale um pouco mais de sua bomba, história, por que foi desenvolvida, quem foi a mente por trás dela e entre outras informações relevantes. </li>
+                </ul>
+
+                <p>
+                    E temos os atributos privados de cada categoria de bombas (atômica ou EMP).
+                </p>
+
+                <h5>
+                    Atômica
+                </h5>
+
+                <p>
+                    Os principais atributos de uma bomba atômica são:
+                </p>
+                <ul>
+                    <li>
+                        <b>Dano</b> – Aqui você deve informar qual o dano causado por essa arma. Normalmente sendo muito elevados.
+                    </li>
+                </ul>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> As bombas atômicas se dividem em algumas categorias como fissão nuclear, fusão nuclear, bomba suja, bomba de neutros e até as de antimatéria (<i>aqui entramos na ficção</i>). Não é necessário especificar qual é a categoria da bomba atômica em um atributo. Mas é interessante informá-lo na descrição da arma.</i>
+                </div>
+
+                <h5>EMP</h5>
+                <p>
+                    Os atributos das bombas EMP são:
+                </p>
+                <ul>
+                    <li>
+                        <b>Turnos</b> – Aqui basta informar quantos turnos essa bomba desabilita os equipamentos eletrônicos do alvo.
+                    </li>
+                </ul>
+
+                <h3>HPP:</h3>
+                <p>
+                    Os HPP ou (<i>Hiper Pulso de plasma</i>) são bombas que tem disparos de 1 a 3 pulsos quilométricos, que desintegram todos seres e estruturas sem emitir radiação. Ela tem um valor de dano muito alto assim como bombas atômicas porém seu raio de alcance é muito maior do que as bombas atômicas.
+                </p>
+                <p>
+                    Esse é um tipo de arma muito poderosa. A diferença dela para uma bomba nuclear é que elas são ativadas de uma estrutura. Elas têm um tamanho muito elevado sendo assim detonadas de grandes estruturas, tendo um disparo de 2 a 5 vezes por minuto, destruindo a si e tudo que está em volta. 
+                </p>
+                <p>
+                    Para criar você deve pensar nos seguintes atributos:
+                </p>
+                <ul>
+                    <li><b>Nome</b> – Informe qual o nome dessa arma.</li>
+                    <li><b>Ilustração</b> – Faça uma arte conceitual dessa estrutura.</li>
+                    <li><b>Preço</b> – Informe o valor em Aurons ou na moeda da raça.</li>
+                    <li><b>Criadores</b> – Informe a raça ou organização que criou essa arma</li>
+                    <li><b>NdA</b> – Informe qual a dificuldade para ativar essa arma.</li>
+                    <li><b>Pulsos</b> – Informe quantos pulsos a arma dispara antes de se destruir.</li>
+                    <li><b>IpR (Intervalo de pulsos p/rodada)</b> – Informe o intervalo de pulsos por rodada.</li>
+                    <li><b>Dano</b> – Informe a quantidade de dano da arma.</li>
+                    <li><b>Raio</b> – Informe o raio de alcance da arma.</li>
+                    <li><b>Descrição</b> – De uma descrição de sua arma, história, por que foi desenvolvida, quem foi a mente por trás dela e entre outras informações relevantes. </li>
+                    <li><b>Mapa</b> – Tendo esses três componentes em mente, podemos desenhar o mapa dessa estrutura. Esse mapa pode variar muito de tamanho, dependendo muito das suas características destrutivas.</li>
+                </ul>
+                <p>
+                    Quando for desenvolver uma HPP, você deve ter em mente que elas são estruturas para a bomba em si. Sendo assim esses abrigos contem:
+                </p>
+                <ul>
+                    <li><b>Sala de controle</b>: É dentro dessa sala que você detonará a bomba. Deve ser pensado e construído com as características da raça ou corporação escolhido.</li>
+                    <li><b>Sala de energia</b>: Aqui se encontrara o gerador projetado para a bomba e todos os componentes responsáveis pelo seu gerenciamento.</li>
+                    <li><b>Sala de detonação</b>: Aqui que a bomba se encontra e seus componentes de detonação principal.</li>
+                </ul>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Você pode desenhar mais salas se achar melhor. Mas lembre-se sempre de fazer esses lugares com as características da raça ou corporação escolhidos.</i>
+                </div>
+                <p>
+                    Estamos dizendo que essas armas são estruturas. Porem não se limite a isso. Eles podem ser grandes estruturas móveis também. E podem ser acionados a distância por meio de algum controle. Essas informações devem estar na descrição da arma.
+                </p>
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

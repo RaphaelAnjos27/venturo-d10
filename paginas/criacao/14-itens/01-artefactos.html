@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Criação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/criacao.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criacao</h1>
+        <p>Agora que você conhece o Universo e as Regras. Está na hora de aprender a criar os elementos desse universo!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-criacao></venturo-sumario-criacao>  
+            </div>
+
+            <div class="col-sm-7">
+                <h1>ITENS</h1>
+                
+                <p>
+                    O universo é cheio de objetos que usamos para algum fim. Aqui será mostrado os atributos que devemos preencher para a criação de cada um desses objetos. Então veremos como criar os mais diversos itens encontrados no Universo Venturo, cujo tenham alguma função específica.
+                </p>
+                <p>
+                    Então os itens apresentados aqui, são todos aqueles itens que de alguma forma tem alguma função. Então ele pode transportar, restaurar e por ai vai.
+                </p>
+
+                <h3>NOMENCLATURA:</h3>
+                <p>
+                    Falar sobre a nomenclatura dos itens é algo interessante para abrir seu olho na hora da criação. No universo podemos ter os mesmos tipos de itens, com mesmos compostos químicos e que fazem a mesma coisa para ambas as raças. Então não precisa pensar em um nome mirabolante para o mesmo. 
+                </p>
+                <p>
+                    Podemos pegar como exemplo a Morfina. Esse é um tipo de item que pode ser encontrado em diversas raças. Então em vez de querer criar um nome único para ela, você pode simplesmente colocar seu nome comum como, por exemplo, <b>“Morfina”</b>. Ou pode colocar o nome comum mais a raça responsável pelo item, por exemplo, <b>“Morfina Humana”</b>, mas isso não é necessário já que os itens têm um atributo próprio para indicar a raça responsável por ele.
+                </p>
+
+                <h3>CRIADORES:</h3>
+                <p>
+                    Os <b>criadores</b> é um atributo que você vai encontrar em todos os itens do sistema. Nele você vai basicamente indicar quem é a raça ou corporação responsável pela criação do item em questão.
+                </p>
+                <p>
+                    Podemos ter itens criados por divindades ou outros seres que não estão associados a uma raça ou corporação. Nesse caso você pode colocar o seu nome e título. O título seria o que esse personagem é, como por exemplo, uma divindade. 
+                </p>
+
+                <h3>AQUISIÇÃO:</h3>
+                <p>
+                    A aquisição é um atributo que informa onde, e como você pode conseguir achar esse item. Além disso ele informa também a raridade do item, como por exemplo, se ele é único ou bem comum.
+                </p>
+                <p>
+                    Então você pode ter por exemplo: Esse item pode ser encontrado em estações Anrar dentro dos centros médicos. Sendo um item bastante comum nesses setores.
+                </p>
+
+                <h3>CRIADORES:</h3>
+                <p>
+                    Esse é um atributo que aparece em todos os itens do sistema. Mas esse atributo pode ser omitido em alguns casos, por exemplo: imagine que o olho de um determinado animal é um item que pode ser usado para fazer poções. Então esse item não é algo que foi criado, e sim algo natural de um animal que você deve ir atrás.
+                </p>
+                <p>
+                    Então omita esse atributo quando o mesmo não é necessário, isto é, o item não é algo criado por alguém ou raça.
+                </p>
+                
+
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

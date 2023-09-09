@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>ATAQUE SURPRESA</h2>
+                <p>
+                    Caso seja feito um ataque surpresa, seja ele por jogadores ou oponentes. O ND desse ataque será reduzido a -3 (<i>ataques traseiros</i>) e -2 (<i>ataques laterais</i>).
+                </p>
+                <p>
+                    Essa regra somente é aplicada se o ataque seja surpresa. Caso o personagem saiba onde esta esse oponente, não se torna mais um ataque surpresa.
+                </p>
+
+                <div class="alert alert-primary">
+                    <p><i><b>NOTA.:</b> Cabe ao jogador lembrar o seu mestre de que alguma forma (normalmente perícias) esse ataque não é surpresa.</i></p>
+                </div>
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

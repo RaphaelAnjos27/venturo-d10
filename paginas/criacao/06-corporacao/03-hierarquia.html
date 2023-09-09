@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Criação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/criacao.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criacao</h1>
+        <p>Agora que você conhece o Universo e as Regras. Está na hora de aprender a criar os elementos desse universo!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-criacao></venturo-sumario-criacao>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>HIERARQUIA</h2>
+                <p>
+                    A hierarquia é a base da organização de sistemas militares, e serve para compor a cadeia de comando a ser seguida por todos os integrantes do mesmo. Você vai desenvolver as hierarquias de sua organização, tomando como base as áreas dessa organização. E com isso estipular os níveis de hierarquia para cada área.
+                </p>
+                <p>
+                    A baixo segue uns exemplos de patentes usados nos sistemas militares mais comuns.
+                </p>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                
+                        <thead>
+                            <tr>
+                                <th>Tipos</th>
+                                <th>Marinha</th>
+                                <th>Exército</th>
+                                <th>Força aérea</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="4"><b>Oficiais Generais</b></td>
+                                <td>Almirante</td>
+                                <td>Marechal</td>
+                                <td>Marechal do Ar</td>
+                            </tr>
+                            <tr>
+                                <td>Almirante de Esquadra</td>
+                                <td>General de Exército</td>
+                                <td>Tenente-Brigadeiro</td>
+                            </tr>
+                            <tr>
+                                <td>Vice-Almirante</td>
+                                <td>General de Divisão</td>
+                                <td>Major-Brigadeiro</td>
+                            </tr>
+                            <tr>
+                                <td>Contra-Almirante</td>
+                                <td>General de Brigada</td>
+                                <td>Brigadeiro</td>
+                            </tr>
+
+                            <tr>
+                                <td rowspan="3"><b>Oficiais Superiores</b></td>
+                                <td>Capitão de Mar e Guerra</td>
+                                <td>Coronel</td>
+                                <td>Coronel</td>
+                            </tr>
+                            <tr>
+                                <td>Capitão de Fragata</td>
+                                <td>Tenente-Coronel</td>
+                                <td>Tenente-Coronel</td>
+                            </tr>
+                            <tr>
+                                <td>Capitão de Corveta</td>
+                                <td>Major</td>
+                                <td>Major</td>
+                            </tr>
+
+                            <tr>
+                                <td><b>Oficiais Intermediários</b></td>
+                                <td>Capitão-Tenente</td>
+                                <td>Capitão</td>
+                                <td>Capitão</td>
+                            </tr>
+
+                            <tr>
+                                <td rowspan="3"><b>Oficiais subalternos</b></td>
+                                <td>Primeiro-Tenente</td>
+                                <td>Primeiro-Tenente</td>
+                                <td>Primeiro-Tenente</td>
+                            </tr>
+                            <tr>
+                                <td>Segundo-Tenente</td>
+                                <td>Segundo-Tenente</td>
+                                <td>Segundo-Tenente</td>
+                            </tr>
+                            <tr>
+                                <td>Guarda-Marinha</td>
+                                <td>Aspirante</td>
+                                <td>Aspirante</td>
+                            </tr>
+
+                            <tr>
+                                <td rowspan="6"><b>Praças ou graduados</b></td>
+                                <td>Sub-oficial</td>
+                                <td>Subtenente</td>
+                                <td>Sub-oficial</td>
+                            </tr>
+                            <tr>
+                                <td>Primeiro-Sargento</td>
+                                <td>Primeiro-Sargento</td>
+                                <td>Primeiro-Sargento</td>
+                            </tr>
+                            <tr>
+                                <td>Segundo-Sargento</td>
+                                <td>Segundo-Sargento</td>
+                                <td>Segundo-Sargento</td>
+                            </tr>
+                            <tr>
+                                <td>Terceiro-Sargento</td>
+                                <td>Terceiro-Sargento</td>
+                                <td>Terceiro-Sargento</td>
+                            </tr>
+                            <tr>
+                                <td>Cabo</td>
+                                <td>Cabo</td>
+                                <td>Cabo</td>
+                            </tr>
+                            <tr>
+                                <td>Marinheiro / Soldado</td>
+                                <td>Soldado</td>
+                                <td>Soldado</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <p>
+                    As hierarquias abordadas aqui foram pegas de um sistema já existentes e podem ser modificadas dependendo do que estiver sendo criado. O Criador da organização pode criar suas próprias hierarquias para adaptá-las ao seu sistema militar.
+                </p>
+                <p>
+                    Essas hierarquias serão criadas para cada uma das <b>áreas</b> de uma organização. E poderão ser usadas para determinar funções dentro dessas áreas. As hierarquias são interessantes de se trabalhar, pois elas além de serem definidas pelo nome, elas definem um cargo. Então pedem uma descrição, e também uma imagem que represente o símbolo da hierarquia.
+                </p>
+                <p>
+                    As hierarquias sempre devem ser listadas do mais importante para o menos importante. Cada uma delas terão os seguintes atributos:
+                </p>
+
+                <ul>
+                    <li><b>Nome da Hierarquia</b> – Qual o nome escolhido para esse posto;</li>
+                    <li><b>Ilustração</b> – Forneça uma ilustração do símbolo da hierarquia;</li>
+                    <li><b>Descrição</b> – De uma descrição das funções de quem tem essa hierarquia e como a mesma pode ser conquistada. </li>
+                </ul>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

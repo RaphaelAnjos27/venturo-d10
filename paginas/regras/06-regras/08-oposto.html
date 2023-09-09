@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>TESTE OPOSTO</h2>
+                <p>
+                    Esta regra deve ser aplicado quando houver uma ação de um personagem contra outro. Tanto jogáveis, quanto não jogáveis. Ele é feito da mesma forma que os demais testes, ou seja, <i>atributo + perícia</i>, com um determinado ND. Porém os acertos de um anulam os do outro. Sendo assim, quem tiver mais acerto, vence, e esses acertos não anulados são usados para a jogada.
+                </p>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Essa regra não se aplica em nenhuma forma de ataque.</i>
+                </div>
+
+                <p>
+                    Vamos ver um exemplo: Imagine que dois personagens de sua mesa resolvem disputar uma partida de Xadrez. Você pode optar por uma interpretação real desse jogo (<i>se ambos aceitarem</i>). Mas caso essa não seja sua realidade, você pode optar em usar essa regra. Onde ambos fazem um teste de <i>Inteligência+Lógica, ND 7</i>.
+                </p>
+                <p>
+                    Cada um vai fazer sua jogada e o mestre vai anotar o NV de cada um, ou seja, ele vai anotar a quantidade de acertos de cada jogador. Então quem tiver o maior NV ganha o teste.
+                </p>
+                <p>
+                    Porem ainda temos que subtrair os valores para ver com quantos NV um ganhou do outro, para tirar dai a qualidade da ação. Então o jogador 1 teve um NV = 5. Já o jogador 2 teve um NV = 3. Subtraindo o maior pelo menor temos 2. Isso significa que o jogador 1 ganhou do jogador 2 com dois NV.
+                </p>
+                
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

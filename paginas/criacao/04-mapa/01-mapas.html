@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Criação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/criacao.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criacao</h1>
+        <p>Agora que você conhece o Universo e as Regras. Está na hora de aprender a criar os elementos desse universo!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-criacao></venturo-sumario-criacao>  
+            </div>
+
+            <div class="col-sm-7">
+                <h1>MAPAS</h1>
+                <p>
+                    Nessa sessão de mapas, aprenderemos a como criar dois tipos de mapas importantes para as suas
+                    criações no sistema venturo. Não iremos ver nesse livro a criação de outros tipos de mapas, pois
+                    tornaria o livro maior do que ele já é.
+                </p>
+
+                <h2>MAPA SETORIAL:</h2>
+                <p>
+                    O mapa setorial foi criado para mapear uma galáxia com setores. Usamos nesse tipo de mapa, as
+                    coordenadas cilíndricas, e veremos o básico de como essas coordenadas funcionam para então darmos
+                    inicio a criação do mapa.
+                </p>
+
+                <h3>COORDENADAS CILÍNDRICAS:</h3>
+                <p>
+                    As coordenadas cilíndricas trabalham com três atributos simples para localizar pontos dentro da área
+                    de um cilindro, esses atributos são: <b>r</b> (<i>raio</i>), <b>z</b> (<i>altura</i>) e o <b>Θ</b>
+                    (<i>teta</i>). Vamos ver oque significa cada um deles.
+                </p>
+
+                <p>
+                    <b>R (raio)</b> – é a distância do centro de nosso plano zero, até a projeção do ponto;
+                </p>
+                <p>
+                    <b>Z (altura)</b> – é a distância do plano zero até o ponto. A distância zero desse ponto é
+                    conhecida como projeção;
+                </p>
+                <p>
+                    <b>Θ (teta)</b> – é o ângulo que se encontra a projeção de nosso ponto com o eixo 0º.
+                </p>
+                <img class="img-fluid" src="/static/imagens/imgs_criacao/coordenadas.webp"
+                    alt="Coordenadas polares">
+                <br><br>
+                <p>
+                    Observe a imagem acima: Temos nosso <b>plano zero</b> (<i>z=0</i>), que é onde fica <b>nossas
+                        projeções</b> (<i>sombra do ponto P</i>). Ainda temos uma coordenada <b>X,Y</b> para ajudar na
+                    exemplificação. Em <b>X,Y = 0</b> temos o centro de nosso cilindro, e desse ponto até a projeção de
+                    nosso ponto temos o raio <b>r</b>, numa abertura de <b>teta</b> em relação a <b>X</b>. E nosso ponto
+                    se encontra a uma altura <b>Z</b> de sua projeção.
+                </p>
+                <p>
+                    Com o parágrafo acima resumi bem oque são coordenadas cilíndricas, e com base nesse sistema temos os
+                    mapas setoriais, mapas de quadrantes e mapas estelares. A notação de uma coordenada é descrita da
+                    seguinte forma: (<b>r,Θ,z</b>) exemplo, (<b>5,30º,25</b>).
+                </p>
+
+                <h3>CRIANDO UM MAPA:</h3>
+                <p>
+                    Agora que sabemos como funciona as coordenadas cilíndricas, vamos ver como aplicar esse conceito em
+                    nossos mapas setoriais.
+                </p>
+
+                <p>
+                    A primeira coisa que faremos, é configurar um novo documento no inkscape. Ao abrir seu programa,
+                    tecle <b>Ctrl+Shift+D</b> e desmarque a opção <b>Mostrar bordas da Página</b>. Em seguida cria as
+                    seguintes camadas: <b>Fundo</b>, <b>Grid</b>, <b>Títulos</b> e <b>Objetos</b>. E vamos começar
+                    trabalhando na camada <b>Grid</b>.
+                </p>
+                <p>
+                    Primeiro crie duas linhas guias uma cruzando a outra:
+                </p>
+                <img class="img-fluid" src="/static/imagens/imgs_criacao/parte01.webp"
+                    alt="Tutorial de como criar o mapa setorial">
+                <br><br>
+                <p>
+                    É a partir dessas guias que trabalharemos. Vamos começar montando nossas réguas: O mapa Setorial
+                    trabalha com uma régua com um espaçamento de 10,000 mil anos-luz de comprimento. A linha guia
+                    vertical começa no valor zero, e tanto para a esquerda, quanto direita, aumentamos o valor de 10 a
+                    10 mil anos-luz.
+                </p>
+                <p>
+                    Então vamos criar <b>retângulos guias</b> para nos ajudar. O comprimento total de cada retângulo vai
+                    representar 10 mil anos-luz, e com eles vamos duplicar até obter o tamanho desejado. Então imagina o
+                    seguinte: A Via Láctea tem aproximadamente 105.700 anos-luz , vamos arredondar isso para cima
+                    chegando a 120,000 anos-luz, e dividir isso por 2. Assim teremos 60,000 anos-luz, ou cerca de 6
+                    retângulos guias para cada lado da linha guia vertical:
+                </p>
+                <img class="img-fluid" src="/static/imagens/imgs_criacao/parte02.webp"
+                    alt="Tutorial de como criar o mapa setorial">
+                <br><br>
+                <p>
+                    E a partir dessas guias vamos criar mais 6 linhas guias verticais da primeira linha até o final dos
+                    retângulos. Isso nos ajudara mais pra frente:
+                </p>
+                <img class="img-fluid" src="/static/imagens/imgs_criacao/parte03.webp"
+                    alt="Tutorial de como criar o mapa setorial">
+                <br><br>
+                <p>
+                    Agora crie a régua, tendo como base esses retângulos:
+                </p>
+                <img class="img-fluid" src="/static/imagens/imgs_criacao/parte04.webp"
+                    alt="Tutorial de como criar o mapa setorial">
+                <br><br>
+                <p>
+                    Ative os Snaps para ajudar no trabalho.
+                </p>
+                <p>
+                    Agora começaremos a criar a área total do mapa. Antes de fazer isso, adicione mais dois retângulos
+                    tanto da direita quanto na esquerda, e crie uma linha guia vertical de cada lado:
+                </p>
+                <img class="img-fluid" src="/static/imagens/imgs_criacao/parte05.webp"
+                    alt="Tutorial de como criar o mapa setorial">
+                <br><br>
+                <p>
+                    Agora a partir da linha vertical zero, vamos criar um quadrado proporcional até o limite dos
+                    retângulos guias. E essa será nosso limite de área do mapa.
+                </p>
+                <img class="img-fluid" src="/static/imagens/imgs_criacao/parte06.webp"
+                    alt="Tutorial de como criar o mapa setorial">
+                <br><br>
+                <p>
+                    Chegou a hora de posicionarmos nossa régua nos limites da camada. Crie uma margem nas partes
+                    superiores e inferiores de nossa área total. Essa margem terá a altura de um retângulo guia. Em
+                    seguida vamos posicionar nossa régua em 1/3 desse retângulo. Tanto na horizontal quanto vertical:
+                </p>
+                <img class="img-fluid" src="/static/imagens/imgs_criacao/parte07.webp"
+                    alt="Tutorial de como criar o mapa setorial">
+                <br><br>
+                <p>
+                    Pronto, temos nossas réguas. Agora podemos começar a criar nosso Grid. Antes disso, pegue esse plano
+                    de fundo e jogue ele na camada de Fundo. Em seguida trave essa camada para não manipularmos ela
+                    indesejadamente.
+                </p>
+                <p>
+                    A criação do Grid é um pouco mais complicado. Vamos fazer o seguinte: Do centro de nossas guia
+                    horizontal e vertical, criaremos círculos, cada um deles terá um tamanho ao limite da próxima guia
+                    vertical que criamos anteriormente. Isso até o limite de seis guias, isso é, até o limite de nossa
+                    régua.
+                </p>
+                <img class="img-fluid" src="/static/imagens/imgs_criacao/parte08.webp"
+                    alt="Tutorial de como criar o mapa setorial">
+                <br><br>
+                <div class="alert alert-success">
+                    <i><b>DICA.:</b> Desabilite essas funções da ferramenta Seletor. Assim podemos redimensionar nossos
+                        círculos sem sofrer modificação na largura das bordas.</i>
+                </div>
+                <img class="img-fluid" src="/static/imagens/imgs_criacao/parte09.webp"
+                    alt="Tutorial de como criar o mapa setorial">
+                <br><br>
+                <p>
+                    Agora vamos criar as guias de nossos ângulos. Para isso vamos usar uma ferramenta muito legal do
+                    inkscape que nos permite trabalhar com pontos de um círculo. Selecione o último círculo e duplique
+                    ele, em seguida aumente sua espessura, e, por fim, ative a ferramenta <b>Editor de Nós</b>. Eu
+                    alterei a cor do meu círculo para auxiliar.
+                </p>
+
+                <div class="row">
+                    <div class="col-sm-7">
+                        <p>
+                            Após ativar a ferramenta de editor de nós, teremos dois ícones destacados no círculo, dois
+                            quadrados e um redondo. Será esse ícone redondo que manipularemos. Em seguida coloque um
+                            desses ícones redondos no limite da guia vertical e o outro mantenha na guia horizontal.
+                        </p>
+                        <p>
+                            Agora vamos fazer o seguinte. Vamos pegar o ícone redondo da parte inferior do círculo, e
+                            com o botão Ctrl pressionado, puxaremos uma unidade para a direita. E repetiremos esse
+                            processo mais uma vez após duplicar o objeto e puxando duas unidades. E por fim, o ícone
+                            redondo da guia horizontal, puxaremos uma unidade para baixo. No final teremos o resultado
+                            da imagem a baixo:
+                        </p>
+                    </div>
+                    <div class="col-sm-5">
+                        <img class="img-fluid" src="/static/imagens/imgs_criacao/parte10.webp"
+                            alt="Tutorial de como criar o mapa setorial">
+                    </div>
+                </div>
+                <div class="alert alert-info">
+                    <i><b>CURIOSIDADE.:</b> Fonte Utilizada – Jura Book;</i>
+                </div>
+                <img class="img-fluid" src="/static/imagens/imgs_criacao/parte11.webp"
+                    alt="Tutorial de como criar o mapa setorial">
+                <br><br>
+
+                <div class="row">
+                    <div class="col-sm-7">
+                        <p>
+                            A partir dessas três linhas, usaremos como uma guia para criar as linhas de ângulo que vão do centro do objeto ao limite do último círculo. Essas três linhas serão duplicadas para os outros três cantos de nosso <b>Grid</b>.
+                        </p>
+                        <p>
+                            Após fazer isso selecione todo o grid (<i>não selecione as réguas</i>) e tecle <b>Ctrl+G</b> para agruparmos o mesmo. Em seguida iremos distorcê-lo para obtermos o efeito do plano zero.
+                        </p>
+                        <p>
+                            Para distorcer o Grid você vai fazer o seguinte: Vai selecionar o mesmo com a ferramenta <b>Seletor</b>. Vai pressionar <b>Shift+Alt</b> e a partir do ícone de seta inferior do Grid, vai subi-lo 3 níveis, como mostrado na imagem a baixo:
+                        </p>
+                    </div>
+                    <div class="col-sm-5">
+                        <img class="img-fluid" src="/static/imagens/imgs_criacao/parte12.webp"
+                            alt="Tutorial de como criar o mapa setorial">
+                    </div>
+
+                    
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img class="img-fluid" src="/static/imagens/imgs_criacao/parte13.webp"
+                        alt="Tutorial de como criar o mapa setorial">
+                    </div>
+                    <div class="col-sm-4">
+                        <img class="img-fluid" src="/static/imagens/imgs_criacao/parte14.webp"
+                        alt="Tutorial de como criar o mapa setorial">
+                    </div>
+                    <div class="col-sm-4">
+                        <img class="img-fluid" src="/static/imagens/imgs_criacao/parte15.webp"
+                        alt="Tutorial de como criar o mapa setorial">
+                    </div>
+                </div>
+                <p>
+                    Essas linhas estão muito grossas, diminua elas um pouco mais, e em seguida diminua sua opacidade para <b>15%</b>. E em seguida vamos colocar o valor dos ângulos de cada linha. Lembrando que cada linha tem um período de <b>30º</b>:
+                </p>
+                <img class="img-fluid" src="/static/imagens/imgs_criacao/parte16.webp"
+                    alt="Tutorial de como criar o mapa setorial">
+                <br><br>
+                <p>
+                    E com isso terminamos o Grid. Vamos agora aos Títulos, que é basicamente os atributos básicos dessa Galáxia como: <b>Nome</b>, <b>Núcleo Ativo</b>, <b>Categoria</b> e <b>Galáxias Satélites</b>. Essas informações ficarão armazenadas na camada <b>Título</b>. 
+                </p>
+                <div class="alert alert-danger">
+                    <i><b>ALERTA.:</b> Quando o mapa é de uma Galáxia Satélite, temos o atributo  Galáxias Satélites omitido.</i>
+                </div>
+
+                <p><b>O resultado Final:</b></p>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <p>
+                            Agora, para finalizarmos nosso mapa setorial, basta criarmos o ícone e alteramos a cor de fundo para escuro.
+                        </p>
+                        <p>
+                            O ícone é relativamente fácil de se fazer. Primeiro vamos pegar um de nossos retângulos guias e dividi-lo em 10 unidades. Logo em seguida vamos fazer um círculo do tamanho de 1/10 do retângulo guia e uma desenhar uma projeção desse círculo um pouco maior que o círculo.
+                        </p>
+                        <p>
+                            Essa projeção tem que ser um pouco maior que o círculo em si, e deve ser distorcido da mesma forma que fizemos com o Grid.
+                        </p>
+                        <p>
+                            Duplique o Círculo e o desfoque um pouco, em seguida jogue-o para trás do círculo original e agrupe os dois círculos
+                        </p>
+                    </div>
+                    <div class="col-sm-8">
+                        <img class="img-fluid" src="/static/imagens/imgs_criacao/parte17.webp"
+                        alt="Tutorial de como criar o mapa setorial">
+                    </div>
+                </div>
+                <p>
+                    Por fim ligamos uma reta entre o círculo e a projeção, e adicionamos um título acima do círculo. Essa reta deve ser customizada para serrilhado:
+                </p>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img class="img-fluid" src="/static/imagens/imgs_criacao/parte18.webp"
+                        alt="Tutorial de como criar o mapa setorial">
+                    </div>
+                    <div class="col-sm-3">
+                        <img class="img-fluid" src="/static/imagens/imgs_criacao/parte19.webp"
+                        alt="Tutorial de como criar o mapa setorial">
+                    </div>
+                    <div class="col-sm-3">
+                        <img class="img-fluid" src="/static/imagens/imgs_criacao/parte20.webp"
+                        alt="Tutorial de como criar o mapa setorial">
+                    </div>
+                    <div class="col-sm-3">
+                        <img class="img-fluid" src="/static/imagens/imgs_criacao/parte21.webp"
+                        alt="Tutorial de como criar o mapa setorial">
+                    </div>
+                    <div class="col-sm-3">
+                        <img class="img-fluid" src="/static/imagens/imgs_criacao/parte22.webp"
+                        alt="Tutorial de como criar o mapa setorial">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <p>
+                            Agrupe esses ícones criados e por fim coloque-o no canto inferior direito num espaço que temos ali reservado para esse ícone. E coloque esse objeto na camada <b>objetos</b>. Coloque uma legenda de coordenadas a baixo dele também.
+                        </p>
+                        <p>
+                            Antes de criarmos o fundo, vamos alterar a cor de todos os elementos que criamos até agora. Tudo que está na cor preta, você vai alterar para branco, pois o mesmo ficará acima de um fundo escuro. 
+                        </p>
+                    </div>
+                    <div class="col-sm-2">
+                        <img class="img-fluid" src="/static/imagens/imgs_criacao/parte23.webp"
+                        alt="Tutorial de como criar o mapa setorial">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <p>
+                            Agora vamos fazer nosso fundo. Primeiro Selecione a ferramenta de <b>Gradiente Radial</b> e crie um gradiente que vai do centro de nosso mapa até os limites. O centro desse gradiente terá a cor (<b>00141aff</b>) e as extremidades terá (<b>001014ff</b>), assim alcançamos o resultado ao lado.
+                        </p>  
+                        <p>
+                            Porem não terminamos, apenas criamos nosso modelo. Agora vamos ver os atributos necessários para a criação de um mapa setorial que não entrará nesse documento vetorial, mas sim em um documento de texto.
+                        </p>                      
+                        <p>
+                            Aqui ajustaremos todos os setores  de nosso mapa. O objeto criado anteriormente representa cada setor e deverão ser dispostos no grid, como demonstra a imagem a baixo:
+                        </p>
+                    </div>
+                    <div class="col-sm-8">
+                        <img class="img-fluid" src="/static/imagens/imgs_criacao/parte24.webp"
+                        alt="Tutorial de como criar o mapa setorial">
+                    </div>
+                </div>
+
+                <img class="img-fluid" src="/static/imagens/imgs_criacao/parte25.webp"
+                    alt="Tutorial de como criar o mapa setorial">
+                <br><br>
+                <p>
+                    Os valores de coordenada serão anotados em um documento a parte, aqui trabalhamos só a parte visual. Lembre-se de ajustar esses elementos tendo como base as coordenadas dos setores, a altura e raio. Nesse mapa, as coordenadas de cada setor não ficará exato na ilustração, pelo menos, não feito a mão da forma que fizemos. Mas ainda assim, é uma ótima ilustração para termos como base.
+                </p>
+                <p>
+                    Esse mapa, quando exportado em PDF ou PNG deverá ter uma resolução alta, como <b>4000x4000px</b>. Caso você esteja criando uma galáxia maior que 120,000 anos-luz, você pode ajustar o valor dessa exportação, para uma melhor resolução, ou até mesmo, dividir o mapa em partes.
+                </p>
+            
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Para a melhor organização, mantenha a exportação dentro da pasta _Moldes com o nome “MapaSetorialGalaxia.png”.</i>
+                </div>
+
+                <h3>MAPA DE QUADRANTES:</h3>
+                <p>
+                    Vamos falar do mapa de Quadrantes nessa mesma sessão, pois ele é simples de ser criado já que é basicamente o mapa setorial um pouco menor. A diferença dele é basicamente no retângulo guia. Enquanto no mapa setorial usamos um total de 14 retângulos, sendo que dois deles são para fazer a margem de nosso mapa, aqui no mapa de quadrantes usamos apenas <b>12</b>, sendo que 2 são para delimitar as margens.
+                </p>
+                <p>
+                    Cada um desses retângulos representa um valor de <b>100 anos-luz</b>, sendo assim, cada quadrante tem um valor fixo de <b>1000 anos-luz</b>.
+                </p>
+                <p>
+                    Já o círculo do objeto que representa o quadrante será apenas do retângulo guia, como podemos ver na imagem a baixo:
+                </p>
+                <img class="img-fluid" src="/static/imagens/imgs_criacao/parte26.webp"
+                    alt="Tutorial de como criar o mapa setorial">
+                <br><br>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <p>
+                            Basta criar todo o mapa com base nessas medidas, que teremos um resultado semelhante a imagem ao lado:
+                        </p>
+                        <p>
+                            Note que o único atributo da camada Título que mantemos foi o Nome, que nesse caso, por se tratar de um mapa de quadrantes, o <b>nome</b> será um setor selecionado do <b>Mapa Setorial</b>.
+                        </p>
+                        <p>
+                            Os atributos do documento desse mapa, diferente do mapa setorial, será: <b>Nome do Setor</b> com coordenada, <b>Descrição</b> e o nome dos <b>Quadrantes</b> com a coordenada de cada um deles.
+                        </p>
+                    </div>
+                    <div class="col-sm-7">
+                        <img class="img-fluid" src="/static/imagens/imgs_criacao/parte27.webp"
+                        alt="Tutorial de como criar o mapa setorial">
+                    </div>
+                </div>
+                
+                <h3>INSERINDO ELEMENTOS:</h3>
+                <p>
+                    Agora que aprendemos a cria o mapa de setor, vamos aprender a como inserir de forma correta os nossos setores e quadrantes. Não basta que você chegue no mapa e comece a colocar elementos a torta e a direita, com base no seu julgamento, lembre-se, você inseriu coordenadas nesse projeto, então você deve segui-las de maneira correta.
+                </p>
+                <p>
+                    Talvez no futuro o sistema venturo forneça um sistema de criação mais digital que facilite isso, mas nada o impede de aprender a colocar de maneira manual.
+                </p>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <p>
+                            Vamos criar um setor nas seguintes coordenadas: <b>25, 327º, 15</b>. A primeira coisa que deve fazer é criar um círculo do mesmo tamanho que o raio horizontal do nosso grid:
+                        </p>
+                        <p>
+                            Oque faremos agora é jogar esse círculo para a lateral esquerda do mapa saindo do canvas. Ele vai nos servir como um guia para inserirmos nossos setores, você pode fazer a localização de todos os seus setores de uma só vez.
+                        </p>
+                        <p>
+                            Com nosso círculo do lado de fora do mapa, cruze uma guia horizontal e vertical no centro dele, provavelmente já terá uma horizontal.
+                        </p>
+                    </div>
+                    <div class="col-sm-7">
+                        <img class="img-fluid" src="/static/imagens/imgs_criacao/parte28.webp"
+                        alt="Tutorial de como criar o mapa setorial">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-5">
+                        <img class="img-fluid" src="/static/imagens/imgs_criacao/parte29.webp"
+                        alt="Tutorial de como criar o mapa setorial">
+                    </div>
+                    <div class="col-sm-7">
+                        <p>
+                            Agora crie uma linha vertical do centro do círculo até sua borda inferior, e em seguida altere seu centro de rotação da linha para o centro de rotação do círculo. Para isso de dois cliques na linha, aparecerá um + no centro dele, mova esse + até o centro do círculo:
+                        </p>
+                        <p>
+                            Agora duplique essa linha e teremos os dois objetos responsáveis por nos fornecer as coordenadas. Agora oque devemos fazer é definir primeiro a coordenada do <b>Raio</b>.
+                        </p>
+                    </div>
+                </div>
+                <p>
+                    Para fazer isso usaremos uma regra de três. Lembra-se que de uma argola a outra temos uma distância de aproximadamente <b>10 mil anos-luz</b>. Então o Raio de nossa coordenada <b>“25”</b> representa 25 mil anos-luz. Levando em consideração que do centro do círculo até a borda temos 60 mil anos-luz, como podemos pegar o tamanho exato da nossa linha guia? Para isso usamos regras de três onde temos a fórmula: <b>X = R * 100 / Rt</b>, onde <b>X</b> é nossa porcentagem, <b>R</b> é o raio da coordenada e <b>Rt</b> é o raio total do círculo e o 100 é representa 100%. Então temos que: <b>X = 25*100/60 = 41.66…</b>, esse resultado usamos para diminuir o tamanho da reta com a configuração em porcentagem.
+                </p>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <img class="img-fluid" src="/static/imagens/imgs_criacao/parte30.webp"
+                        alt="Tutorial de como criar o mapa setorial">
+                    </div>
+                    <div class="col-sm-7">
+                        <p>
+                            Então, com nossa linha selecionada, vá ao menu superior e altere o parâmetro das escalas de <b>px</b> ou <b>mm</b> para <b>%</b> e coloque na altura o valor <b>41.66</b>. Altere a sua cor para destacarmos da outra linha. Agrupe ambas as linhas e certifique-se de que o centro de rotação do grupo esteja no centro do círculo:
+                        </p>                        
+                        <p>
+                            Agora trabalharemos no ângulo de nossa coordenada, antes de tudo, selecione a linha preta e tecle <b>Shift+Ctrl+M</b>, na janela que se abrir clique na aba <b>girar</b> e certifique-se de que a opção graus “º” esteja ativada.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-7">
+                        <p>
+                            Coloque um ângulo de 15 graus no sentido anti-horário para posicionarmos a linha no ângulo zero do grid. Você vai perceber ambas as linhas foram parar no ângulo zero de nosso grid, como demonstra a imagem ao lado. Agora você pode colocar o valor de graus que nossa coordenada pede, que nesse caso é <b>327º</b>. Após fazer isso a linha rotacionará certinho pro grau desejado.
+                        </p>
+                        <p>
+                            Agora você precisa fazer isso para todos os setores que desejar, ou pode fazer separadamente um de cada vez para não gerar problemas.
+                        </p>
+                    </div>
+                    <div class="col-sm-5">
+                        <img class="img-fluid" src="/static/imagens/imgs_criacao/parte31.webp"
+                        alt="Tutorial de como criar o mapa setorial">
+                    </div>
+                </div>
+
+                <p>
+                    Agora estamos acabando, você vai agrupar o círculo junto com a linha e em seguida diminuir seu tamanho da mesma forma que fizemos com o grid. Antes de posicionarmos o elemento no grid, vamos pegar o último atributo, o eixo <b>Z</b>. Para fazer isso é bem simples, basta irmos na régua vertical do mapa e extrair essa informação de lá, em nosso caso, o eixo <b>Z = 15</b>.
+                </p>
+                <p>
+                    Se quiser a altura exata, podemos usar a mesma fórmula que anteriormente, primeiro você deve criar um elemento que abranja mais que o limite do valor desejado, se no nosso caso temos 15, eu criei um elemento que foi até o 20, e então apliquei a fórmula: <b> X = 15 * 100 / 20 = 75% </b> essa resposta erá obvia, mas pode ser que no futuro você tenha que fazer com valores não tão óbvios:
+                </p>
+                <img class="img-fluid" src="/static/imagens/imgs_criacao/parte32.webp"
+                    alt="Tutorial de como criar o mapa setorial">
+                <br><br>
+
+                <p>
+                    Pronto, agora você só precisa posicionar esse objeto no centro do seu grid e aplicar os setores conforme desejado:
+                </p>
+                <img class="img-fluid" src="/static/imagens/imgs_criacao/parte33.webp"
+                    alt="Tutorial de como criar o mapa setorial">
+                <br><br>
+                <img class="img-fluid" src="/static/imagens/imgs_criacao/parte34.webp"
+                    alt="Tutorial de como criar o mapa setorial">
+                <br><br>
+
+                <p>
+                    Você pode aplicar essas regras tanto para os mapas de quadrantes quanto para os mapas estelares, lembrando apenas de que os seus tamanhos são fixos.
+                </p>
+
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

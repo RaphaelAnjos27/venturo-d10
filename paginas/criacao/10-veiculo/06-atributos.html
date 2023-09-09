@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Criação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/criacao.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criacao</h1>
+        <p>Agora que você conhece o Universo e as Regras. Está na hora de aprender a criar os elementos desse universo!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-criacao></venturo-sumario-criacao>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>ATRIBUTOS DOS VEÍCULOS</h2>
+                <p>
+                    Nessa sessão falaremos dos atributos que terão que ser pensados obrigatoriamente para o veículo. Isso quase que independente dos componentes.
+                </p>
+                <h3>ATRIBUTOS UNIVERSAIS:</h3>
+                <p>
+                    Atributos universais são os atributos que se repetem em todas as categorias de veículos.
+                </p>
+                <ul>
+                    <li><b>Nome</b> – Qual o nome desse meio de transporte?</li>
+                    <li><b>Ilustração</b> – Faça uma ilustração desse veículo apenas para termos noção de seu tamanho e formato. De preferência coloque uma representação da raça ao lado para ajudar na distinção de tamanho.</li>
+                    <li><b>Velocidade Máxima</b> – Informe a velocidade máxima que esse veículo pode alcançar em quilômetros/hora.</li>
+                </ul>
+                <p>Aqui temos uma tabela que pode nos dar uma base em quilômetro/hora:</p>
+                
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                
+                        <thead>
+                            <tr>
+                                <th class="text-center" colspan="7">Terrestre</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>Animais</b></td>
+                                <td><b>Motocicletas</b></td>
+                                <td><b>Carros</b></td>
+                                <td><b>Transporte</b></td>
+                                <td><b>Maquinários</b></td>
+                                <td><b>Militar</b></td>
+                                <td><b>Mechs</b></td>
+                            </tr>
+                            <tr>
+                                <td>50 a 120</td>
+                                <td>300</td>
+                                <td>300</td>
+                                <td>150</td>
+                                <td>60</td>
+                                <td>150</td>
+                                <td>150</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                
+                        <thead>
+                            <tr>
+                                <th class="text-center" colspan="3">Marítimo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>Pequeno Porte</b></td>
+                                <td><b>Médio Porte</b></td>
+                                <td><b>Grande Porte</b></td>
+                            </tr>
+                            <tr>
+                                <td>200</td>
+                                <td>150</td>
+                                <td>100</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                
+                        <thead>
+                            <tr>
+                                <th class="text-center" colspan="5">Aéreos e Espaciais</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>Aeronave</b></td>
+                                <td><b>Naves Pequenas</b></td>
+                                <td><b>Naves Médias</b></td>
+                                <td><b>Capital</b></td>
+                                <td><b>Colossal</b></td>
+                            </tr>
+                            <tr>
+                                <td>~180 a 900</td>
+                                <td>2000-2800</td>
+                                <td>1000-1500</td>
+                                <td>500 - 3000</td>
+                                <td>200 - 3000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <ul>
+                    <li>
+                        <b>Vitalidade do Veículo</b> – Representa a “vida” da nave. Ela é subdividida em três atributos, esses são Escudo, Blindagem e Estrutura. E o atributo escudo é subdivido em Resistência, Vigor e Consumo.
+                    </li>
+                </ul>
+
+                <div class="alert alert-success">
+                    <i><b>DICA.:</b> Para decidir a vitalidade de seu veículo, use como base os danos estipulados das armas que podem atacá-lo. Em capitais, leve em consideração danos comuns de torrrents, atômicas e entre outras.</i>
+                </div>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Escudos são diferentes da resistência, e devem ser adicionados em componentes.</i>
+                </div>
+                
+                <ul>
+                    <li><b>Criadores</b> – Informe a raça/organização originária desse veículo. Isso é importante para comparação, pois um veículo é na maioria das vezes projetado para a raça que está o criando.</li>
+                    <li><b>Categoria</b> – Alguns veículos foram feitos apenas para sua categoria, como um carro que foi feito apenas para andar em terra. Porem pode ocorrer de alguns veículos de um determinado tipo atenderem outras categorias. Por exemplo: Um veículo marítimo também pode ser usado em terra.</li>
+                </ul>
+                <p>
+                    Para isso temos três categorias, essas são: Terrestres, Marítimas e Aéreas. Um veículo pode ter todas as três ou apenas uma. Elas devem ser separadas por vírgula (,). E o primeiro item representa a categoria principal daquele veículo.
+                </p>
+                <ul>
+                    <li>
+                        <b>Capacidade de Cargas</b> – aqui teremos todos os atributos relacionados a carga do veículo, esses são:
+                    </li>
+                    <ul>
+                        <li><b>Tripulantes</b> – Esse atributo contem a tripulação ideal do veículo, ou seja, a soma da tripulação de todas as cabines que contenham o atributo tripulante. E também a tripulação máxima, que se trata de quantos seres a mais podem ser carregados no veículo levando em consideração a raça originária do veículo, mais os espaços de carga, e áreas vazias como corredores (normalmente levamos isso no “chutômetro” e será uma aproximação “~”).</li>
+                        <p>Por exemplo: Minha nave de transporte cabem 25 seres humanos. Porem em pé na mesma cabine cabem mais 20, então temos um atributo tripulação (25/~20).</p>
+                        <li><b>Hangar</b> – Aqui informaremos quantos veículos o hangar desse veículo pode comportar. Muito comum em capitais ou navios grandes. Usamos a seguinte notação: Valor Veículo, por exemplo, 32 Naves de Ataque. Separe por virgulo se ele comportar outros tipos de veículos.</li>
+                        <li><b>Carga</b> e Dispensa de Veículos – Ambos os atributos usam a mesma unidade de medida, ou seja, metros cúbicos. Porém uma foca em cargas no geral e a outra foca em minérios.</li>
+                    </ul>
+                </ul>
+                <ul>
+                    <li><b>Dificuldade</b> – Informe a dificuldade (ND) padrão para usar esse veículo.</li>
+                    <li><b>Teste</b> – Aqui você coloca qual o atributo e perícia deve ser utilizado para conduzir esse veículo. Isso por que temos as perícias montaria, conduzir, pilotar 1 e 2. E cada uma tem sua especialidade de veículo.</li>
+                </ul>
+
+                <div class="alert alert-success">
+                    <i><b>DICA.:</b> Veículos que devem ser conduzidos por meio de comandos como é o caso de alguns capitais, onde o responsável pelo veículo não tem contato com os controles da nave. Você pode usar a perícia “liderança”.</i>
+                </div>
+                <ul>
+                    <li><b>Energia</b> – O atributo energia nos indica quantos pontos de energia o veículo tem para ativar suas armas e escudo. Energia trabalha com os pontos (valor de energia total) e o gerador (quantos pontos de energia a nave recupera por turno).</li>
+                    <li><b>Consumo</b> – Consumo é um atributo que nos indica os pontos de energia que algumas funções de um veículo consomem. Dentre essas funções temos: Escudo, Canhão primário, Torrents, Misseis, Atômicas e EMP e por fim Espaciais.</li>
+                    <li><b>Poder de Fogo</b> – O poder de fogo é o atributo que vai conter todos os tipos de armamentos e habilidades naturais do veículo. Esse atributo pode ser considerado mais uma sessão do que um atributo.</li>
+                    <li><b>Salas e Componentes</b> – As salas e componentes vão comportar todos os componentes e salas encontradas com seu veículo. E assim como o poder de fogo ela também é uma sessão que pode ou não ser extensa (<i>vai depender de veículo para veículo</i>).</li>
+                    <li><b>Patente</b> – Esse atributo está ligado mais aos tipos de veículo militares. E aos tipos de veículos usados por organizações. Onde para conduzi-lo o piloto deve ter alguma patente da raça ou organização em questão.</li>
+                    <p>Você preenche esse atributo com a patente necessário para conduzir o veículo e a organização/raça da mesa, por exemplo: Marechal-Humanos. Caso não seja necessário uma patente, você pode preencher com o valor “Livre” para veículos que podem ser utilizado por qualquer um que possa comprá-lo. </p>
+                    <li><b>Descrição</b> – Descreva qual a principal função desse veículo, e qualquer outra coisa relevante ao veículo como um todo.</li>
+                </ul>
+
+                <h3>ATRIBUTOS ÚNICOS:</h3>
+                <p><i>Os atributos únicos são voltados apenas para uma categoria de veículo.</i></p>
+                <h5>ANIMAIS:</h5>
+                <p>
+                    A categoria animal, além de ter o atributo de energia, terá também o atributo <b>CLOL</b>, pois alguns animais domesticados para transporte podem usar habilidades especiais.
+                </p>
+
+                <h5>NAVES PEQUENAS, NAVES MÉDIAS, CAPITAIS E COLOSSAIS:</h5>
+                <ul>
+                    <li><b>Velocidade de navegação</b> – Esse atributo é usado para saber quantas rodadas a nave leva para percorrer 5 anos-luz. Ao todo temos 5 níveis conhecidos como Nível de Liry. Esses níveis estipulam:</li>
+                        <ul>
+                            <li><b>Nível 1</b> – 50 rodadas para percorrer 50 anos-luz;</li>
+                            <li><b>Nível 2</b> – 20 rodadas para percorrer 50 anos-luz;</li>
+                            <li><b>Nível 3</b> – 10 rodadas para percorrer 50 anos-luz;</li>
+                            <li><b>Nível 4</b> – 5 rodadas para percorrer 50 anos-luz;</li>
+                            <li><b>Nível 5</b> – 1 rodada para percorrer 50 anos-luz.</li>
+                        </ul>
+                    <p>
+                        Esse é o limite que uma nave pode percorrer o espaço sem que a mesma seja destruída. Chega um momento que essa velocidade da nave é tão alto, que nem os melhores equipamentos conseguem proteger a mesma dos problemas gerados pela dilatação temporal. 
+                    </p>
+                    <li>
+                        <b>Voo</b> – O Voo dita se a aeronave pode voar tanto no espaço quanto dentro de planetas ou se ela pode se deslocar no submerso. Podemos ter uma nave que não tem força suficiente para sair da gravidade de um planeta, ou não tem estrutura que o mantenha em voo como os aviões. E um veículo espacial também pode submergir-se no mar, porém alguns veículos por conta de seus motores não conseguem esse feito. Os valores desse atributo são:
+                    </li>
+                    <ul>
+                        <li><b>Espacial</b>: quando a nave pode voar pelo espaço. O que de fato é obrigatório por que são naves;</li>
+                        <li><b>Planetário</b>: quando essa nave também pode voar em ambientes de gravidade e gás.</li>
+                        <li><b>Marítimo</b>: para quando o veículo pode também submergir-se na água.</li>
+                    </ul>
+                    <p>Preenchemos esse atributo com os valores acima, separados por barra “/”, seguindo a mesma ordem da lista acima, por exemplo, <b>Especial</b>/ <b>Planetário</b>/ <b>Marítimo</b>.</p>
+                    <li><b>Gravidade Artificial</b> – A gravidade artificial é a tecnologia que gera a gravidade artificial de seu veículo. Porem nesse atributo você apenas coloca o valor de gravidade dentro do veículo (normalmente sendo aproximado a gravidade da raça em questão).</li>
+                    <li><b>Mobilidade</b> – Além dos atributos que indica se uma nave pode voar em terra, submergir-se na água ou voar pelo espaço. Temos o atributo que nos indica como a nave faz isso. Aeronaves podem se deslocar para frente e para trás, para cima e para baixo. Esse atributo indica isso.</li>
+                    <p>	                Um veículo aéreo precisa de dois atributos básicos para se locomover no espaço, esses são: deslocamento, para que possa ir para frente e para trás, cima, baixo, esquerda e direita. E temos a rotação, para que ele possa rotar dentre seu eixo para fazer curvas sobre o espaço tridimensional. A mobilidade trabalha com esses dois atributos.</p>
+                    <p>
+                        Existem alguns valores que naves podem possuir em sua mobilidade, esses são:
+                    </p>
+                    <ul>
+                        <li><b>Avançado</b>: Nesse nível a nave se desloca para todos os eixos X,Y e Z, sem a necessidade de rotacionar para virar. E também pode rotacionar em todos os eixos;</li>
+                        <li><b>Padrão</b>: Aqui a nave se desloca para frente e para trás, para cima e para baixo. E pode rotacionar sobre todos os eixos para se deslocar pelo espaço;</li>
+                        <li><b>Simples</b>: A nave se desloca apenas para frente e para trás. E pode se deslocar por todos os eixos, caso esteja em voo.</li>
+                    </ul>
+                </ul>
+                <div class="alert alert-danger">
+                    <i><b>ALERTA.:</b> Mobilidade Avançada deixa a nave mais difícil de conduzir, aumentando assim seu ND.</i>
+                </div>
+                <div class="alert alert-danger">
+                    <i><b>ALERTA.:</b> O atributo mobilidade também se encontra nas aeronaves (aviões).</i>
+                </div>
+
+                <h3>MAPA:</h3>
+                <p>
+                    Não são todos, mas muitos veículos precisam de um mapa para representá-lo. Isso se aplica para Veículos de grande porte como, por exemplo, grandes embarcações. Você deve fazer seu mapa de acordo com as características do veículo, como a quantidade de cabines, armas (<i>algumas armas têm capines próprias</i>) e por ai vai. Elas mesmas vão exigir um mapa, que você vai colocar junto com o mapa geral do veículo.
+                </p>
+                <p>
+                    O mapa geral do veículo é o mapa do tipo <b>“Interiores de Equipamentos”</b>. Já os mapas das cabines são do tipo <b>“Interiores”</b>. Ambos os tipos são abordados no capítulo de mapas.
+                </p>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

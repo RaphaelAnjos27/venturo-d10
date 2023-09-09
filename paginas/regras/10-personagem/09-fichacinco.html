@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>QUINTA FICHA</h2>
+                <h3>AÇÕES PROFICIENTES:</h3>
+                
+                <img class="img-fluid" src="/static/imagens/imgs_regra/personagem/parte33.webp"
+                    alt="ações proficientes"><br><br>
+
+                <p>
+                    As ações proficientes são movimentos que seu personagem pode fazer sozinho ou em conjunto com outro jogador, mesclando habilidades e itens, a fim de bonificar o efeito, como por exemplo, causar um dano maior. As regras para criação e treino de uma ação proficiente está no capítulo <b>Regras do sistema</b>, sessão <b>Treino de Ação</b>.
+                </p>
+                <p>
+                    Aqui vamos aprender a preencher uma ação que já foi criada e treinada. Para isso você deve ir nos atributos da ação encontrada na ficha auxiliar de <b>História do Personagem</b> na sessão Treino de Ação. Lá você vai encontrar o <b>nome da ação</b>, o <b>Atributo + Perícia</b> (<i>Teste</i>) e o Nível de Dificuldade (ND).
+                </p>
+                <p>
+                    Um mesmo personagem pode ter na sua ficha até 16 ações proficientes. Acima disso é necessário uma ficha auxiliar.
+                </p>
+
+                <h3>CONHECIMENTOS:</h3>
+                <img class="img-fluid" src="/static/imagens/imgs_regra/personagem/parte34.webp"
+                    alt="Conhecimentos"><br><br>
+
+                <p>
+                    O <b>conhecimento</b> é tudo aquilo que seu personagem estuda ou descobre ao longo de uma aventura. Então se um personagem descobrir algo sobre anjos que ele ou o mestre ache relevante anotar, ele coloca nessa área a fim de lembrar o mestre que ele detêm de tal conhecimento.
+                </p>
+                <p>
+                    Nessa área você vai criar um título referente ao que o personagem sabe, e em seguida no documento auxiliar <b>“História do Personagem”</b> na sessão <b>“Conhecimentos”</b>, você vai colocar esse título e uma descrição do que o personagem aprendeu.
+                </p>
+
+
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

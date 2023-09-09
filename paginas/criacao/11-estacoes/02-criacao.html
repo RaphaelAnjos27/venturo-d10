@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Criação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/criacao.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criacao</h1>
+        <p>Agora que você conhece o Universo e as Regras. Está na hora de aprender a criar os elementos desse universo!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-criacao></venturo-sumario-criacao>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>CRIAÇÃO</h2>
+                <p>
+                    Vamos iniciar o processo de criação de uma estação/base para seu universo. Vamos abordar todos os atributos que devem ser preenchidos para definir o mesmo. 
+                </p>
+                <ul>
+                    <li><b>Nome</b> – Pense no nome da sua estação/base.</li>
+                    <li><b>Ilustração</b> – Faça uma ilustração para representar sua base ou estação.</li>
+                    <li><b>Classificação</b> – Podemos ter estações espaciais orbitais (<i>orbita um objeto celeste</i>), cidadelas (<i>Não tem ligação orbital com nenhum objeto celeste</i>) e bases (<i>estão localizadas no solo de um objeto celeste</i>).</li>
+                    <li><b>Zona de Controle</b> – Aqui você informa quantos quilômetros têm o raio de controle dessa estação.</li>
+                    <li><b>Tipo</b> – Podemos ter diversos tipos diferentes de estações, essas são: <b>Portal de Salto</b>, <b>Comercial</b>, <b>Mineração</b>, <b>Engenharia</b>, <b>Comum</b>, <b>Entretenimento</b>.</li>
+                </ul>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Caso ache necessário, você pode criar outros tipos, de acordo com a função de sua estação. E descrever esse tipo no atributo “descrição” usando a estrutura tipo-descrição.</i>
+                </div>
+                <ul>
+                    
+                    <li><b>Associação</b> – Informe a raça/organização dona dessa estrutura.</li>
+                    <li><b>Localização</b> – Informe o Setor, quadrante, sistema e planeta que essa estrutura está localizada. Se não estiver em um planeta ou orbitando o mesmo, você pode omitir. Caso esteja em um asteroide, indique qual.</li>
+                    <li><b>Descrição</b> – Descreve o porque essa estrutura existe, quais os objetivos da mesma?</li>
+                    <li><b>Aportar</b> – Descreva oque a nave precisa fazer para aportar nessa estação e como isso ocorre.</li>
+                    <li><b>Mapa</b> – Mostre um mapa completo da estrutura seguindo as regras de criação de mapa para estruturas.</li>
+                    <li><b>Poder de Fogo</b> – Liste todas as armas dessa estrutura.</li>
+                    <li><b>Locais</b> – Estações e bases podem ter diversos tipos de locais especiais, como por exemplo, o Hangar.</li>
+                    
+                </ul>
+                <p>
+                    Esses foram os atributos para criar uma estação/base para uma raça ou organização. Agora basta você usar sua criatividade para elaborar suas estruturas. 
+                </p>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

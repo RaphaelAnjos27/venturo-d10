@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>AÇÕES COMPLEMENTARES</h2>
+                
+                <p>
+                    As ações complementares é um atributo para diversos tipos monstros, animais ou inimigos. Elas são ações extras que um inimigo pode ou não fazer após a ação de qualquer outro <b>PP</b> ou <b>PnJ</b>. Assim ele quebra a iniciativa realizando uma ação após a ação de outro jogador. 
+                </p>
+                <p>
+                    Quando esse tipo de ação é jogada, o inimigo pode fazer qualquer outra ação que ele desejar. Porem ele só pode usar essa ação após a ação de um PP ou PnJ, isto é, ele não pode usar essas ações como ações extras após sua ação principal.
+                </p>
+                <p>
+                    Para saber quem tem ou não ações complementares, vai ter que pesquisar na descrição do ser, se ele tem um atributo chamado <b>“Ação Complementar”</b>. Ele vai indicar quantas ações esse ser pode fazer.
+                </p>
+                <p>
+                    Normalmente quem tem esse tipo de ação são seres mais poderosos, como chefes de campanha e divindades. E a quantidade também pode variar entre eles, sendo:
+                </p>
+                <ul>
+                    <li>
+                        <b>Divindades e Príncipes do Inferno</b> – até 8 ações complementares;
+                    </li>
+                    <li>
+                        <b>Chefes de Campanha</b> – até 6 ações complementares;
+                    </li>
+                    <li>
+                        <b>Monstros poderosos</b> – até 4 ações complementares;
+                    </li>
+                    <li>
+                        <b>Animais Perigosos</b> – Até 2 ações complementares.
+                    </li>
+                </ul>
+                
+                <p>
+                    As ações complementares é um comportamento muito poderoso, por isso é associado apenas para seres fortes.
+                </p>
+                <p>
+                    Um uma batalha muito grande, com uma quantidade muito grande de PnJ, o mestre pode jogar 1D2 (<i>quando o inimigo está focando nos PP</i>) para saber se a ação complementar será usada na equipe ou nos PnJ, ou ele pode usar 1D6 (<i>quando o foco não é tanto os PP</i>). No caso do D6, se cair o valor 6 no dado, os PP serão o alvo da ação. 
+                </p>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

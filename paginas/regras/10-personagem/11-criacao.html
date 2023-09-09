@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>TABELA DE CRIAÇÃO DE PERSONAGEM</h2>
+                <p>
+                    A baixo temos uma tabela com informações rápidas da criação completa da ficha:
+                </p>
+
+                <h5>TABELA GUIA DE CRIAÇÃO DE FICHA:</h5>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+
+                        <thead>
+                            <tr>
+                                <th>Características</th>
+                                <th>Inicial</th>
+                                <th>Evolução inicial</th>
+                                <th>Evolução</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>Perseverança</b></td>
+                                <td>8</td>
+                                <td>Não Tem</td>
+                                <td>Não Tem</td>
+                            </tr>
+                            <tr>
+                                <td><b>Atributos</b></td>
+                                <td>3/5/8/15</td>
+                                <td>2 XP Inicial</td>
+                                <td>7 XP</td>
+                            </tr>
+                            <tr>
+                                <td><b>Perícias</b></td>
+                                <td>1 XP Inicial</td>
+                                <td>1 XP Inicial</td>
+                                <td>6 XP</td>
+                            </tr>
+                            <tr>
+                                <td><b>Habilidades</b></td>
+                                <td>2/4/6/9</td>
+                                <td>2 XP Inicial</td>
+                                <td>8 XP</td>
+                            </tr>
+                            <tr>
+                                <td><b>Coragem</b></td>
+                                <td>2</td>
+                                <td>1 XP Inicial</td>
+                                <td>2 XP</td>
+                            </tr>
+                            <tr>
+                                <td><b>CLOL</b></td>
+                                <td>POD x 5</td>
+                                <td>Não Tem</td>
+                                <td>Não Tem</td>
+                            </tr>
+                            <tr>
+                                <td><b>Bondade</b></td>
+                                <td>3</td>
+                                <td>2  XP Inicial</td>
+                                <td>Não Tem</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>
+                    Essa tabela foi criada para agilizar o processo de criação de personagens. Ela contém os principais valores usados na hora da criação de personagens, onde temos:
+                </p>
+                <p>
+                    <b>Inicial</b> – Representa o valor de <b>XP inicial</b> e outros pontos que você deve ganhar no início da ficha para distribuir nas características de sua ficha.
+                </p>
+                <p>
+                    <b>Evolução inicial</b> – Representa o valor que será multiplicado pelo nível atual da característica para evoluí-la.
+                </p>
+                <p>
+                    <b>Evolução</b> – Representa o valor que será multiplicado pelo nível atual da característica para evoluí-la depois da criação da ficha.
+                </p>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Tanto Atributos, quanto Habilidades. Tem alguns valores separados por barra “/”. Eles representam os valores da faixa etária, seguindo a ordem criança, adolescente, adulto e ancião.</i>
+                </div>
+
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

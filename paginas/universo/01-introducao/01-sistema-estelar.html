@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universo do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/universo.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Universo Base</h1>
+        <p>Agora que conhecemos as mecânicas do sistema. Está na hora de conhecer o cenário básico!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-universo></venturo-sumario-universo>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>SISTEMA ESTELAR</h2>
+                <p>
+                    O universo é composto por uma quantia massiva de galáxias que podem conter formas variadas de vida
+                    inteligente. O sistema Venturo usa a galáxia Via Láctea como base principal. Porem mestre e
+                    jogadores podem se sentir livres para criar suas próprias galáxia e habitá-la com as raças já
+                    criadas, tudo isso para gerar seu próprio universo de RPG nesse sistema.
+                </p>
+                <p>
+                    O mapeamento de galáxias usadas pelo sistema venturo trabalha com o sistema de coordenadas
+                    cilíndricas que será apresentado logo a baixo. Dessa forma a criação de uma galáxia dentro desse
+                    sistema se torna bem mais fácil. Essas galáxias vão conter a coordenada dos Setores, que se
+                    assemelham muito com as galáxias, porém eles guardam as coordenadas dos quadrantes, que serão os
+                    nossos <b>mapas estelares</b>.
+                </p>
+
+                <p>
+                    Então note que temos três níveis de mapas diferentes para de fato chegarmos aos planetas do jogo. Os
+                    mapas de setores que mapeiam uma galáxia são chamados de <b>Mapas Setoriais</b>.
+                </p>
+
+                <img class="img-fluid" src="/static/imagens/imgs_universo/mapaestelar.webp"
+                    alt="mapa setorial">
+
+                <p>
+                    Essa é a aparência de um <b>Mapa Setorial</b> de uma galáxia. Vamos intender seu funcionamento:
+                </p>
+
+                <h3>COORDENADAS CILÍNDRICAS:</h3>
+                <p>
+                    As coordenadas cilíndricas trabalham com três atributos simples para localizar pontos dentro da área
+                    de um cilindro, esses atributos são: <b>r</b> (raio), <b>z</b> (altura) e o <b>Θ</b> (teta). Vamos
+                    ver oque significa cada um deles.
+                </p>
+                <p>
+                    <b>R</b> (raio) – é a distância do centro de nosso plano zero, até a projeção do ponto;
+                </p>
+                <p>
+                    <b>Z</b> (altura) – é a distância do plano zero até o ponto. A distância zero desse ponto é
+                    conhecida como projeção;
+                </p>
+                <p>
+                    <b>Θ</b> (teta) – é o ângulo que se encontra a projeção de nosso ponto com o eixo 0º.
+                </p>
+
+                <img class="img-fluid" src="/static/imagens/imgs_universo/coordenadas.webp"
+                    alt="coordenadas cilindricas">
+
+                <p>
+                    Observe a imagem acima: Temos nosso <b>plano zero</b> (z=0), que é onde fica nossas <b>projeções</b>
+                    (<i>sombra do ponto P</i>). Ainda temos uma coordenada <b>X,Y</b> para ajudar na exemplificação. Em
+                    <b>X,Y = 0</b> temos o centro de nosso cilindro, e desse ponto até a projeção de nosso ponto temos o
+                    raio r, numa abertura de <b>teta</b> em relação a <b>X</b>. E nosso ponto se encontra a uma altura
+                    <b>Z</b> de sua projeção.
+                </p>
+                <p>
+                    Com o parágrafo acima resumi bem oque são coordenadas cilíndricas, e com base nesse sistema temos os
+                    mapas setoriais, mapas de quadrantes e mapas estelares. A notação de uma coordenada é descrita da
+                    seguinte forma: (<b>r,Θ,z</b>) exemplo, (<b>5,30º,25</b>).
+                </p>
+                <p>
+                    Agora que sabemos como funciona as coordenadas cilíndricas, vamos falar um pouco mais das mecânicas
+                    de nossos mapas setoriais:
+                </p>
+                <p>
+                    A primeira regra é relacionado aos aros de nosso mapa. A distância de um círculo para outro é de
+                    <b>10 mil anos-luz</b> a partir do centro. Como nossa Via Láctea tem <b>105.700 anos-luz</b>
+                    colocamos <b>6 aros</b> totalizando <b>60,000 anos luz</b> de raio.
+                </p>
+                <p>
+                    Cada galáxia tem um tamanho, e os mapas podem variar de um para outro, porém à distância de um aro a
+                    outro sempre será de <b>10,000 Ly</b>.
+                </p>
+                <p>
+                    Note que cada ponto no Mapa, também tem sua projeção no Plano Zero, e uma linha para medir sua
+                    altura em Z. É interessante ressaltar que essa linha de Z pode assumir tanto valores positivos
+                    (<b>acima do plano zero</b>) quanto valores negativos (<b>a baixo do plano zero</b>), e você pode
+                    notar isso na ilustração do mapa acima. Quando a linha está acima da projeção do ponto, ela é
+                    positiva, quando está a baixo, ela é negativa.
+                </p>
+                <p>
+                    O mapa setorial é o sistema adotado pela força universal (<b>corporação usada no universo oficial
+                        desse sistema</b>) e usado por todas as raças em seu sistema de navegação. Ele também é usado na
+                    identidade espacial da Força universal, assim contendo o setor, quadrante, sistema planetário e
+                    planeta de uma determinada entidade, por exemplo <b>“Nome Setor.Nome Quadrante/Solar-Terra”</b>.
+                    Esse seria o registro de um humano do planeta Terra.
+                </p>
+                <p>
+                    Os setores e quadrantes não são controlados pela força universal e nem por uma raça em específico.
+                    Na verdade cada organização ou raça do espaço, controlam uma certa área do quadrante em que estão
+                    alocados, e podemos ver isso nos mapas estelares que abordaremos mais a frente.
+                </p>
+                <p>
+                    Dentro de cada setor podemos ter várias estações chamadas de <b>“Estação de Salto Setorial”</b>. Ela
+                    tem a função de transportar uma nave de um setor a outro. Naves cargueiras podem realizar esse
+                    feito, porém consome muita energia fazendo-as optar pelos saltos setoriais. Várias raças e
+                    organizações tecnologicamente avançadas podem fazer essas estações de salto setorial.
+                </p>
+
+                <h3>ESTRUTURA PADRÃO:</h3>
+                <img class="img-fluid" src="/static/imagens/imgs_universo/estrutura.webp"
+                    alt="estrutura padrão">
+
+                <p>
+                    O <b>Mapa Setorial</b> vai conter todos os setores de uma galáxia. Já o <b>Mapa de Quadrantes</b> é
+                    um mapa gerado pelo setor alocado no mapa setorial, e nele teremos todos os Mapa Estelares também
+                    conhecidos como quadrante. E por fim, temos o <b>Mapa estelar</b> que vai conter as coordenadas dos
+                    Sistemas Planetários, Estruturas e Outros elementos.
+                </p>
+                <p>
+                    Note como em apenas uma galáxia temos uma quantia absurda de oportunidades de criação. Dificilmente
+                    você vai ver uma raça ou organização que domine todo um quadrante sozinho.
+                </p>
+
+                <h3>PORTAIS DE SALTO:</h3>
+                <p>
+                    Os portais de salto são grandes estações (<i>normalmente propicias a vida</i>) que levam uma nave de
+                    um setor a outro ou de um sistema a outro. E para esse feito, elas acabam abrindo um buraco de
+                    minhoca. Essas grandes estruturas trabalham com geradores que fornecem a energia necessária para a
+                    estação em si e para os saltos.
+                </p>
+                <p>
+                    Seu funcionamento varia bastante de estação para estação. Porem seguem alguns critérios básicos.
+                    Todas tem uma área de salto, onde a nave fica para se preparar para o transporte, ou saltar dali
+                    mesmo. E o salto ocorre por meio de uma fenda que gera o buraco de minhoca, ou que joga diretamente
+                    a nave ao buraco de minhoca, e a guia pelo percurso.
+                </p>
+                <p>
+                    O salto pode levar de 15 minutos a 1 hora para ser carregado. E geralmente é cobrado uma taxa em
+                    <b>Aurons</b> por ele. Esse valor pode ser de 20,000AU, por salto. Quando a máquina é da força
+                    universal. Ou pode ter um valor maior ou menor, quando a estação pertence a outra raça ou
+                    organização.
+                </p>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Dependendo da situação, seu valor pode ser zero, quando por exemplo: for uma missão
+                        da própria Força universal.</i>
+                </div>
+
+                <p>
+                    O salto começa, quando a nave entra em conexão direta com a cabine de controle da estação. Seu valor
+                    é descontado, e o mesmo informa a localização que deseja ir.
+                </p>
+
+                <h3>BURACO DE MINHOCA:</h3>
+                <p>
+                    Os buracos de minhoca são considerados portais que geram uma fenda em dois extremos do espaço.
+                    Podemos imaginá-lo como duas bocas conectadas em um tubo, também conhecido como passagem. No
+                    universo temos muitas dessas passagens, umas artificiais criadas por estação de saltos, e outras
+                    naturais criadas a partir de estrelas que colapsaram e não tiveram força o suficiente para formar um
+                    buraco negro ou pequenos buracos de minhoca que levam para outros planos.
+                </p>
+                <p>
+                    Os buracos de minhocas artificiais são criadas por naves, bases em solo e bases espaciais,
+                    habilidades e outros fatores. Eles servem para gerar uma travessia de um ponto a outro no espaço,
+                    permitindo um deslocamento mais rápida pelo universo. Quando criados artificialmente eles seguem uma
+                    classe que definem seu comprimento. Essas classes são:
+                </p>
+
+                <h5>CLASSES DE BURACOS DE MINHOCA</h5>
+                <table class="table table-striped">
+
+                    <thead>
+                        <tr>
+                            <th>Classe</th>
+                            <th>Comprimento em Km</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Portal</b></td>
+                            <td>0.0005</td>
+                            <td>Portais artificiais normalmente terrestres, ou por habilidades</td>
+                        </tr>
+                        <tr>
+                            <td><b>A</b></td>
+                            <td>~60</td>
+                            <td>Buracos artificiais criados por bases terrestres e espaciais</td>
+                        </tr>
+                        <tr>
+                            <td><b>B</b></td>
+                            <td>~200</td>
+                            <td>Buracos naturais criados por grandes explosões.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    Por segurança, os buracos de minhocas criados por naves tem um comportamento diferente dos demais. Enquanto os buracos normais ficam com seus dois extremos abertos, conforme recebem energia. Os buracos criados por naves, fecham sua entrada assim que sua fonte geradora entra no mesmo. E sua saída só se abre quando a nave chega nela.
+                </p>
+
+                <h3>UNIDADES DE MEDIDA:</h3>
+                <p>
+                    Essas são as unidades de medidas já criadas e usadas na vida real para grandes distâncias. Elas foram colocadas aqui para que os mestres usem em suas narrativas.
+                </p>
+                <p><b>Unidade astronômica (UA):</b></p>
+                <p>
+                    A unidade astronômica surgiu a partir da distância da terra ao sol que é aproximadamente 150 milhões de quilômetros, sendo assim 150 milhões de quilômetros é igual a 1 U.A (<i>unidade astronômica</i>).
+                </p>
+                <p><b>Velocidade da Luz (c):</b></p>
+                <p>
+                    A velocidade da luz no vácuo é simbolizado pela letra “c” do grego <i>“celeritas”</i>, e ela é igual a 299.792.458 metros por segundo.
+                </p>
+                <p><b>Anos luz (ly):</b></p>
+                <p>
+                    O ano-luz é basicamente a distância que a luz atravessa o vácuo em 1 ano juliano. Essa é a medida usada por astrônomos para mensurar distâncias de objetos no espaço como estrelas.
+                </p>
+                <p>
+                    Para se ter ideia, 1 ano-luz equivale a 9.460.730.580,8 Quilômetros (9,5 Trilhões de Km) percorridos em 1 ano na velocidade da luz. 
+                </p>
+                <h1>DOBRA ESPACIAL:</h1>
+                <p>
+                    Todas as naves que utilizem de seus propulsores para atingirem certas velocidades, terão em algum momento um limite a ser atingido. Esse limite gerou certos níveis que esses propulsores podem alcançar, denominado de <b>Nível de Liry</b>. 
+                </p>
+                <div class="row">
+                    <div class="col-sm-7">
+                        <p>
+                            Esse limite é dividido em 5 níveis, que ditam a velocidade que uma nave pode alcançar acima da velocidade da luz. Propulsores como esses só conseguem atingir essa velocidade quando são do tipo <b>Nuclear</b>, <b>Ions</b>, <b>Antimatéria</b> e <b>Gravitacional</b>. Naves que tenham esses motores automaticamente devem ser capazes de lidar com todos os problemas gerados pela dilatação do tempo.
+                        </p>
+                        <p>
+                            Nos veículos que viajam o espaço, temos o nível da dobra de uma nave no atributo <b>Velocidade de navegação</b>.
+                        </p>
+                        <p>
+                            Esse limite estipula quantas rodadas uma nave leva para percorrer 50 anos-luz no espaço. Ao lado na tabela podemos ver quantas rodadas cada nível tem. Levando em conta que uma rodada pode ter até 30 minutos, percorrer 50 anos-luz com um motor nível 1 levaria um dia e algumas horas.
+                        </p>
+                    </div>
+                    <div class="col-sm-5">
+                        <h5>Níveis da HIPERVELOCIDADE</h5>
+                        <table class="table table-striped">
+
+                            <thead>
+                                <tr>
+                                    <th>Nível</th>
+                                    <th>Rodadas/50 anos-luz</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>1</b></td>
+                                    <td>50 Rodadas</td>
+                                </tr>
+                                <tr>
+                                    <td><b>2</b></td>
+                                    <td>20 Rodadas</td>
+                                </tr>
+                                <tr>
+                                    <td><b>3</b></td>
+                                    <td>10 Rodadas</td>
+                                </tr>
+                                <tr>
+                                    <td><b>4</b></td>
+                                    <td>5 Rodadas</td>
+                                </tr>
+                                <tr>
+                                    <td><b>5</b></td>
+                                    <td>1 Rodadas</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <p>
+                    Os níveis 4 e 5 desse motor são construídos por raças e organizações bastante evoluídas tecnologicamente. A Força Universal é um bom exemplo de organização que contem suas naves no nível 5 desse motor.
+                </p>
+                <p>
+                    Percorrer grandes distâncias fica inviável em alguns casos, isso porque pode demorar algum tempo para viajar de um ponto a outro. Então para viagens mais longas, costuma-se usar os saltos espaciais, que consiste em abrir buracos de minhoca no tecido do espaço para atravessar com a nave.
+                </p>
+
+                <h3>MAPA DE QUADRANTES E ESTELAR:</h3>
+                <p>
+                    Os mapas de Quadrantes e os mapas estelares são muito semelhantes ao Mapa Setorial. A diferença entre eles é apenas o tamanho: Enquanto o Mapa Setorial tem um tamanho dinâmico, os mapas de quadrantes e estelares contem tamanho fixo, onde:
+                </p>
+                <ul>
+                    <li>
+                        <b>Mapas de Quadrantes</b> – Tem um raio de 500 Anos-luz;
+                    </li>
+                    <li>
+                        <b>Mapa Estelar</b> – Tem um raio de 50 Anos-luz.
+                    </li>
+                </ul>
+                <p>
+                    Então vamos supor que você criou um determinado planeta que serve como fonte de mineração para uma determinada raça. Então você vai colocar o nome desse sistema dentro do mapa estelar.
+                </p>
+                <p>
+                    Além disso vamos encontrar também localização de <b>buracos negros estelares</b> e  <b>Estrelas de neutros</b>. Isso porque esses objetos cósmicos, até mesmo os que abrigam um sistema planetário, são prejudiciais a vida, sendo constantemente evitados pelos comércios estelares.
+                </p>
+                <p>
+                    Os comércios estelares são as rotas que grandes embarcações costumam fazer dentro do mapa estelar. Essas são rotas consideradas “seguras” que uma embarcação faz para transportar determinado objetos, como por exemplo, embarcações de minérios da Força Universal.
+                </p>
+                <p>Então como dito acima, esses mapas costumam ter:</p>
+                <ul>
+                    <li>
+                        Coordenadas de Buracos Negros Estelares;
+                    </li>
+                    <li>
+                        Coordenadas de Estrelas de Neutro;
+                    </li>
+                    <li>
+                        Coordenadas de Sistemas planetários importantes;
+                    </li>
+                    <li>
+                        Coordenadas de Corporações importantes.
+                    </li>
+                </ul>
+                <p>
+                    E você ainda pode criar mais elementos para colocar em seu mapa estelar. Será ensinado no livro da criação, o processo para desenvolver um mapa estelar com algumas regras que devem ser seguidas.
+                </p>
+
+                <h3>NAVEGAÇÕES ESPACIAIS:</h3>
+                <p>
+                    Agora vamos abordar uma questão muito importante para quem desenvolve um universo futurista a base de exploração espacial. Vamos ver algumas dicas de como essa ideia pode funcionar.
+                </p>
+                <p>
+                    Assim como as eras medievais usavam mapas e referências, a era moderna usam GPS. A era espacial precisa de uma tecnologia para conseguir se deslocar pelo espaço. A criatividade é muito importante nesse momento, porém veremos duas formas mais usadas.
+                </p>
+                <h5>NAVEGAÇÃO ESTELAR:</h5>
+                <p>
+                    Esse é o tipo de navegação mais comum. Ele se dá pelo uso de estrelas de um setor para se deslocar. Imagine o seguinte: Temos que ir de um planeta para outro planeta a anos-luz de distância. A navegação se dá por estrelas próximas, que por sua vez, gera uma rota. A cada salto você cai em um sistema planetário diferente, e salta para o outro sistema logo em seguida.
+                </p>
+                <img class="img-fluid" src="/static/imagens/imgs_universo/estelar.webp"
+                    alt="navegação estelar guiado por estrelas">
+
+                <p>
+                    Normalmente para usar essa ideia é interessante que os motores das naves sejam limitados para fazer dobras espaciais, assim, tendo que parar em sistemas planetários próximos até chegar no destino final.
+                </p>
+                <p>
+                    Em seu universo usando esse sistema de navegação, você pode gerar uma espécie de banco de dados controlado por alguma organização, que mantém e atualiza todos os caminhos que uma nave pode fazer. Use sua criatividade para criar esse sistema.
+                </p>
+                <p>
+                    Normalmente após a criação de seu universo. Informações de como funciona o sistema de navegação estarão dentro dos <b>Componentes de concepção</b> do universo.
+                </p>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Componentes de concepção é uma estrutura dentro de seu universo no qual você pode criar regras especiais para o seu universo, além das regras padrões do sistema. Você aprenderá sobre ele no livro da criação.</i>
+                </div>
+
+                <div class="alert alert-success">
+                    <i><b>DICA.:</b> Naves que usam esse sistema, logicamente estarão na frente da estrela de um sistema estelar a cada salto. Já que a mesma é o ponto de referência para o salto.</i>
+                </div>
+
+                <h5>PONTOS DE NAVEGAÇÃO:</h5>
+                <p>
+                    O ponto de navegação é semelhante a navegação estelar, mas, em vez de estrelas usamos tecnologia como pontos de referência. Essas tecnologias podem ser estações ou apenas algum satélite orbitando um planeta ou estrela de um sistema estelar.
+                </p>
+                <img class="img-fluid" src="/static/imagens/imgs_universo/radar.webp"
+                    alt="navegação estelar guiado por radar">
+
+                <p>
+                    Todas as ideias aplicadas no sistema de navegação estelar podem ser aplicadas aqui. A diferença é que: Em vez de astros, usamos algum meio tecnológico como ponto de referência no qual o sistema de navegação da nave pode seguir.
+                </p>
+                <p>
+                    A explicação de como essas coisas funcionam deve estar dentro de seu universo, possibilitando que cada universo crie seu método de navegação atrativo.
+                </p>
+                <div class="alert alert-danger">
+                    <i><b>ALERTA.:</b> A criação de um sistema de navegação do universo, deve usar um nome padrão (Sistema de Navegação Estelar) dentro dos componentes.</i>
+                </div>
+
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

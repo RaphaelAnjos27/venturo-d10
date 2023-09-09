@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>MODIFICADOR DE INICIALIZAÇÃO</h2>
+                <p>
+                    O universo é muito grande não é mesmo? Imagine o personagem de uma determinada raça usando uma arma que ele nunca tenha nem visto na vida. Pode até saber os conceitos, mas, mesmo assim, nunca realizou um disparo se quer com essa arma. E esse é seu primeiro contato com a mesma.
+                </p>
+                <p>
+                    Para isso temos os <i>“modificadores de inicialização”</i>, que fornece uma bonificação no ND, na primeira vez que o personagem tentar fazer ou usar algo que ele nunca usou na vida, e que seja muito complicado (<i>Como no exemplo a cima</i>). Essa bonificação vai variar bastante dependendo da ação. Por esse motivo, fica a critério do mestre pensar em uma bonificação justa para a ND.
+                </p>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> É obrigação do jogador lembrar o mestre de já ter usado aquele objeto, ou ter feito aquela ação complicada alguma vez na vida.</i>
+                </div>
+
+                <div class="alert alert-success">
+                    <i><b>DICA.:</b> Quando o personagem tem a perícia necessária para a ação. Uma bonificação de +1 ou +2 para a ND é plausível. Agora quando ele não tem a perícia, e ainda quer fazer alguma coisa que nunca fez na vida, seu ND pode aumentar bastante. Lógico que isso vai depender de caso a caso.</i>
+                </div>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

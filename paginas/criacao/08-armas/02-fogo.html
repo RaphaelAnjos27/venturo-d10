@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Criação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/criacao.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criacao</h1>
+        <p>Agora que você conhece o Universo e as Regras. Está na hora de aprender a criar os elementos desse universo!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-criacao></venturo-sumario-criacao>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>FOGO/ENERGIA/ANTIMATÉRIA</h2>
+                <p>
+                    Aqui vamos falar um pouco dos componentes de uma arma, para clarear suas ideias na hora de pensar na
+                    sua arma. Em seguida vamos também falar como criar essa categoria de arma. Vamos começar com os
+                    principais <b>tipos</b> de armas, ou seja, aquelas que podem ser portadas pelos personagens.
+                </p>
+
+                <h5>FOGO:</h5>
+                <p>
+                    Todas as armas com essa categoria disparam um projétil a uma grande velocidade, através da queima de
+                    algum combustível (<i>Pólvora</i>). Num processo chamado de deflagração, que é nada mais nada menos
+                    do que o processo de combustão subsônica.
+                </p>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Armas primitivas como Arcos e Flecha, e Bestas também se enquadram aqui.</i>
+                </div>
+
+                <h5>ENERGIA:</h5>
+                <p>
+                    Armas de energia, são armas que utilizem a energia para arremessar projeteis (biCoilguns), raios ou
+                    lasers (biRaioguns). Algumas pessoas costumam falar que essas duas categorias são a mesma coisa. Mas
+                    nesse sistema, como dito a cima, cada uma tem sua função. Mas ambas se enquadram em armas de
+                    energia.
+                </p>
+
+                <h5>ANTIMATÉRIA:</h5>
+                <p>
+                    Armas de antimatéria são uma das categorias mais poderosas que temos. Apenas raça com nível
+                    tecnológico igual a 10 tem o poder de criá-las. Essas armas têm uma taxa de dano muito alta.
+                </p>
+
+                <h3>SUBCATEGORIAS:</h3>
+
+                <p>
+                    Essas armas ainda se dividem em uma categoria para especificar qual o seu tipo (O seu tipo pode ser
+                    informado na descrição da arma).
+                </p>
+
+                <div class="table-responsive">
+                    <table class="table table-striped">
+
+                        <thead>
+                            <tr>
+                                <th colspan="2">Categoria das armas leves</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>Armas de mão</b></td>
+                                <td>
+                                    Pistolas e revólveres. Armas levas carregadas por tambor ou cartucho.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>Submetralhadoras</b></td>
+                                <td>
+                                    Armas de uma mão automáticas que podem ou não ter seletores de tiro, seu tamanho
+                                    reduzido para ser usado em mão não aceita modificadores como tripé com alta cadência
+                                    de tiro e pouca precisões usadas para ataques de perto.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>Escopetas</b></td>
+                                <td>
+                                    Uma arma portátil de cano longo e liso (para projeteis) que em um único tiro lança
+                                    múltiplos projeteis com alta taxa de dano para disparos de curta distância.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>Metralhadoras</b></td>
+                                <td>
+                                    A metralhadora se subdivide em fuzil e a metralhadora em si, são armas automáticas
+                                    com uma grande quantidade de munição e distância moderada.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>Fuzil de precisão</b></td>
+                                <td>
+                                    São armas cuja sua função é realizar disparos a longas distâncias com um dano
+                                    elevado, seus principais modificadores são uma luneta e tripé.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>Bazuca</b></td>
+                                <td>
+                                    Bazucas ou canhões são armas com um poder de fogo ainda maiores usadas para lançar
+                                    ogivas explosivas ou uma imensa rajada de energia capas de destruir um blindado,
+                                    essas armas têm poder de dano muito elevados podendo ser igual ou maior que 10.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>Essas informações contidas na tabela servem para você informar qual a subcategoria de sua arma na
+                    descrição da mesma.</p>
+
+                <h3>ATRIBUTOS:</h3>
+                <p>
+                    Vamos agora falar dos atributos que englobam essas categorias de armas. Aqui os atributos são os
+                    mesmos para as três categorias de armas, porém vão ter valores específicos dependendo de sua
+                    categoria e subcategoria:
+                </p>
+                <ul>
+                    <li><b>Nome</b> – Você deve dar um nome a sua arma. Lembrando de fazer um nome curto ou abreviado,
+                        para que caiba na ficha.</li>
+                    <li><b>Ilustração</b> – Faça uma arte conceitual de sua arma.</li>
+                    <li><b>Preço</b> – Informe o preço da sua arma podendo ser no valor da raça ou em Auron.</li>
+                    <li><b>Criadores</b> – Nome da raça ou organização por trás da sua criação dessa arma.</li>
+                    <li><b>NARF-Força</b> – Cada arma costumam ter um peso para erguê-las, e o personagem deve ser capas
+                        de conseguir isso. Para isso você deve informar o Nível do Atributo de Raça Força (NARF)
+                        necessário para erguer essa arma, e também o nível de força necessária do personagem.</li>
+                    <li><b>Capacidade</b> – Para usar a arma, os personagens devem ter um conhecimento na área. Nesse
+                        campo deve colocar a quantidade de conhecimento necessário para usar a arma, e ao lado uma
+                        letra, E para armas de energia e F para armas de fogo e A para armas de antimatéria, por
+                        exemplo: eu preciso de 4 de Armas de energia, então eu anotaria 4-E.</li>
+                    <li><b>Dano</b> – Esse será o dano que sua arma ira causar contra o inimigo.</li>
+                    <li><b>Distância</b> – Aqui você coloca a distância máxima do disparo efetivo da arma (em
+                        quilômetros).</li>
+                    <li><b>Carga</b> – A carga é o objeto que sua arma usa como munição. Dependendo da arma pode ser
+                        projeteis ou baterias, porém a carga e descrita sempre com Quantidade de disparo.</li>
+                </ul>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Em carga, coloque sempre a quantidade de disparos que a arma faz, apenas com um
+                        único cartucho. Porem quando for anotar na ficha. Coloque a quantidade de disparos, junto com a
+                        quantidades de cartuchos que você pegou, por exemplo: 50-2, ou seja, a arma da 50 disparos por
+                        cartucho, e o personagem pegou 2 cartuchos.</i>
+                </div>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Quando falamos de revólveres e escopetas. Ou qualquer arma que tenha sua munição
+                        diretamente na arma, como por exemplo: os revólveres que tem seus projéteis colocados no tambor.
+                        Você vai colocar a quantidade de disparos, e quantidade de balas que você tem, por exemplo:
+                        5-10.</i>
+                </div>
+                <ul>
+                    <li>
+                        <b>ReC</b> – É o tempo de Recarga de sua arma. Ele é meio chato, pois o valor que estiver
+                        atribuído a ela representa quantos turnos você demora para carregar a arma.
+                    </li>
+                </ul>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Quando a recarga é rápida, você pode colocar um valor fracionário por exemplo 0,5
+                        representando que a arma leva aproximadamente meio turno para ser recarregada. dando ao jogador
+                        a chance de fazer uma ação rápida (lembrando que uma ação normal demora de 3 s a 5 min e em
+                        batalha 2 s a 1 min).</i>
+                </div>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> O tempo mínimo para recarga de uma arma é de 0,5.</i>
+                </div>
+                <ul>
+                    <li><b>NdA</b> – Seria o nível de dificuldade da arma. Usado para definir o nível de dificuldade ao
+                        disparar com uma arma.</li>
+                    <li><b>Descrição da carga</b> – A carga é o objeto que sua arma usa como munição. Dependendo da arma
+                        pode ser projeteis ou baterias. Porem a carga deve ser descrita sempre. Explique como é o
+                        calibre da arma, nomenclatura de sua munição e as possíveis variações que temos.</li>
+                </ul>
+
+                <p>
+                    Algumas armas têm variações de sua munição que dão bonificação no dano. você pode descrever cada uma
+                    delas aqui, lembrando de separá-las por: <b>Nome</b>, <b>descrição</b>, <b>bonificação</b> e
+                    <b>ilustração</b>, <b>Valor da munição</b> (<i>por unidade</i>).
+                </p>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Uma arma pode ter diversos projeteis com diferentes bonificações de dano.</i>
+                </div>
+
+                <p>
+                    Quando falamos de carga de outros tipos de arma, você deve descrever como é o disparo dessa arma,
+                    desde seu disparo até o seu objetivo final (<i>alvo</i>). Fazemos isso por que algumas armas de
+                    energia ou antimatéria tem seus diversos efeitos de disparo, como, por exemplo, focar a energia na
+                    ponta da arma antes de disparar.
+                </p>
+                <ul>
+                    <li><b>Descrição</b> – Aqui você coloca a descrição de sua arma, como: Onde foi criada, por quem foi
+                        criada, quando, objetivos da criação e entre outras coisas.</li>
+                    <li><b>Modificadores</b> – Modificadores são espaços localizados em sua arma para serem inseridos
+                        acessórios, que darão alguma bonificação a mesma. Quando for especificar os modificadores da
+                        arma, devemos ter em mente que temos três espaços na arma para isso, esses são:</li>
+                    <ul>
+                        <li><b>Cano:</b> espaços no cano são reservados para silenciadores ou redutores de recoil, para
+                            armas de fogo. Normalmente são roscas ou outro tipo de trava por pressão. (normalmente os
+                            silenciadores são projetados para um tipo de arma em específico não seguindo um padrão).
+                        </li>
+                        <li><b>Trilho superior:</b> São trilhos colocados na parte de cima das armas destinadas para
+                            miras.</li>
+                        <li><b>Trilho inferior:</b> São trilhos colocados na parte de baixo das armas destinadas a
+                            lanternas, miras a laser, forward hand grip ou tripés.</li>
+                    </ul>
+                </ul>
+                <p>
+                    Os posicionamentos padrões que temos são: (<i>Cano</i>) são geralmente silenciadores que ajudam na
+                    precisão da arma e reduzem o barulho. Alguns modelos tendem a abaixar o dano. (<i>Trilho
+                        Superior</i>) São modificadores voltados a mira. Suas bonificações são voltadas a precisão.
+                    (<i>Trilho Inferior</i>) Trilho são geralmente suportes que ajudam a segurar o recoil da arma. Podem
+                    ser desde simples suportes até tripés que ajuda na precisão da arma. podem ser também lasers ou
+                    lanternas, normalmente localizados entre o cano e o corpo da arma.
+                </p>
+                <p>
+                    E quando for preencher essa parte na criação de sua arma. Identifique em primeiro lugar em qual
+                    espaço o modificador se encontra. Em seguida devemos informar como esse acessório se prende a arma
+                    (<i><b>Tipo de encaixe</b></i>). E para isso temos mais algumas formas de prender o objeto, que
+                    devemos ver:
+                </p>
+                <ul>
+                    <li><b>Tático:</b> Essa é a forma de trilho onde o acessório será preso. trilhos táticos são criados
+                        por diversas raças, e cada uma segue o seu padrão, diferenciado de raça para raça. O que informa
+                        se tal trilho é compatível com determinado acessório é o seu comprimento informado em
+                        centímetros. então informe também o tamanho do trilho.</li>
+                    <li><b>Magnético:</b> Essa é a forma de trilho onde o acessório é preso magneticamente com a base.
+                        Os trilhos magnéticos seguem a mesma ideia dos trilhos táticos, porem são mais raros.</li>
+                    <li><b>Flutuante:</b> Os acessórios de trilho flutuante. Diferente dos dois últimos, em vez de
+                        usarem o seu comprimento para compatibilizar o acessório. Usam frequências para manter conectado
+                        o acessório. Esse tipo de componente é desenvolvido por raças mais avançadas, e seguem um padrão
+                        de sequência que vai do valor 1 a 30.</li>
+                    <li><b>Rosca:</b> Normalmente os acessórios destinados a serem rosqueados ficam no cano (como o
+                        silenciador). Cada raça ou arma tem seu padrão de rosca, por isso quando temos armas com
+                        silenciadores ou outros acessórios em seu cano, aquele acessório só funciona naquela arma.</li>
+                    <li><b>Pressão:</b> Acessórios que usam essa característica, normalmente são presos na arma usando
+                        alguma forma de encaixe. E assim como a “Rosca”, esses acessórios são construídos para um único
+                        modelo de arma.</li>
+                </ul>
+
+                <p>
+                    Sabendo essas características podemos anotar os espaços de modificadores que nossa arma tem, apenas
+                    escrevendo a localização e tipo por exemplo: -Trilho Superior, tático. Uma mesma arma pode ter de 1
+                    a 3 (<i>ou mais</i>) locais para modificadores.
+                </p>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Nunca se esqueça de criar uma ilustração da sua arma. Nela você pode colocar até
+                        mesmos modificadores básicos da arma como suportes a Bandoleiras que são suportes de fitas que
+                        auxiliam o transporte da arma.</i>
+                </div>
+
+                <h3>MODIFICADORES:</h3>
+
+                <p>
+                    Modificados são itens que podem ser colocados em armas para dar bonificação na sua jogada. Seja ela
+                    abaixando a quantidade do ND, quanto alimentando sua PD. Modificadores devem ser criados seguindo
+                    algumas regras básicas, essas são:
+                </p>
+
+                <ul>
+                    <li><b>Nome</b> – Você deve dar um nome para esse modificador.</li>
+                    <li><b>Ilustração</b> – Você deve fazer uma ilustração desse modificador. </li>
+                    <li><b>Preço</b> – Informe o valor desse componente, seja em auron, ou na moeda da raça.</li>
+                    <li><b>Bonificação</b> – Explicar qual a bonificação e penalidade fornecida por esse modificado.
+                    </li>
+                    <li><b>Descrição</b> – Forneça uma descrição da fabricação.</li>
+                </ul>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Modificadores não tem área na ficha para especificá-los. Isso por que os mesmos dão
+                        bonificações e penalidades a arma, que afetam diretamente seus atributos. Caso seja necessário,
+                        coloque os modificadores de sua arma, em uma folha de anotações separadas da ficha (ou atrás da
+                        mesma).</i>
+                </div>
+                <h3>SUPORTES:</h3>
+                <p>
+                    Daqui para frente vamos começar a falar de características dessas armas, começando pelo suporte:
+                </p>
+                <p>
+                    De suportes, temos a famosa bandoleira. Que é o suporte por fita que se prende a arma e pode ser
+                    usada de diversas maneiras. Temos posições usadas pelos humanos onde cada posição define seu uso,
+                    seja para descanso, patrulha e entre outros. Bandoleiras são divididas em categorias de 1, 2 e 3
+                    pontos (<i>quando falamos de humanos</i>).
+                </p>
+                <p>
+                    Temos além da bandoleira. Um acessório de suporte chamado clip tático. Ele fica na parte da frente
+                    do colete e a partir de um acessório que vem com o clip, que é acoplado na arma. Podemos pendurá-la
+                    no peito.
+                </p>
+                <p>
+                    Temos um suporte para revólveres e pistolas chamadas de coldre. Ele é geralmente colocado na cintura
+                    do seu usuário, mas pode ser encontrado também no peitoral. O coldre tem a função de carregar sua
+                    pistola ou revólver de forma fácil e segura, podendo fornecer um saque rápido em caso de conflito.
+                </p>
+                <p>
+                    Todos esses três tipos de suporte a cima são usados para carregar uma. Mas também temos suportes que
+                    dão espaço para alojamento de modificadores. Esses são: Os trilhos táticos, trilhos magnéticos, e
+                    trilhos flutuantes (<i>tipo raro</i>).
+                </p>
+                <p>
+                    Os trilhos são geralmente colocados nas armas em sua fabricação. Ou pode ser alocado por meio de
+                    algum modificador que não use trilho e sim um sistema de pressão ou qualquer outro. Os trilhos
+                    táticos seguem um único padrão universal da sua raça, assim como os magnéticos. Por esses motivos
+                    modificadores com alojamento magnético e tático são fáceis de serem compatíveis com seus respetivos
+                    suportes. O que diferencia um trilho tático ou magnético de outro trilho são suas larguras dadas em
+                    centímetros.
+                </p>
+                <p>
+                    Os trilhos flutuantes são suportes que são ligadas uma as outras por linhas magnéticas que podem ou
+                    não ser visíveis a olho nu. Instalação de acessórios nesse tipo de modificador é dado por meio de
+                    sincronização de sinais.
+                </p>
+
+                <h3>SISTEMAS DE FUNCIONAMENTO:</h3>
+                <p>
+                    Temos três principais sistemas de funcionamento que podem ser usados em qualquer categoria de arma,
+                    esses são:
+                </p>
+
+                <h5>REPETIÇÃO</h5>
+                <p>
+                    Armas com sistema de repetição necessitam uma ação de seu operador para recarregar a arma, ou seja,
+                    uma recarga manual. Sendo assim o operador por meio de uma ação ira recarregar o cano, extraindo o
+                    estojo vazio e inserindo o cheio que pode vir de um carregador, tambor ou receptáculos. Para que
+                    finalmente realize um novo disparo ao pressionar o gatilho. Repetindo o ciclo a cada disparo.
+                </p>
+                <p>
+                    Armas que tem esse funcionamento são: Carabinas “lever action”, espingardas “pump action” e os
+                    rifles “bolt action”.
+                </p>
+
+                <h5>SEMIAUTOMÁTICO:</h5>
+                <p>
+                    Armas com sistemas semiautomáticos têm sua alimentação dada pela energia do último disparo
+                    realizado. E cada disparo ocorre ao pressionar o gatilho. Nesse sistema temos um tiro por gatilho
+                    pressionado.
+                </p>
+                <p>
+                    Assim que o disparo é realizado o sistema da arma se encarrega de retirar o estojo usado e
+                    reposiciona um novo projétil na câmara. Essas armas necessitam de uma ativação manual a cada recarga
+                    da arma, para colocar a primeira munição na câmara. Isso funciona para os sistemas automáticos.
+                </p>
+
+                <h5>AUTOMÁTICO:</h5>
+                <p>
+                    Esse é o sistema mais simples de se explicar. Nele teremos uma arma que realizará disparos
+                    constantes até esvaziar o cartucho ou o operador retirar a pressão do gatilho.
+                </p>
+
+                <h3>CLIP, PENTE E CARREGADOR</h3>
+                <p>
+                    Vamos falar um pouco dos clips, pentes e carregadores. Começando pelo clip. Ele é um acessório usado
+                    para segurar um grupo de munição. Um grupo de munições seguradas por um clip é chamado de pente. Já
+                    um carregador ou magazine é uma caixa responsável por armazenar diversas munições. Ela geralmente é
+                    destacável para poder ser recarregada ou trocada.
+                </p>
+
+                <h3>PRINCIPAIS PARTES DE UMA ARMA:</h3>
+                <p>
+                    Colocarei aqui explicações simples de cada componente de uma arma, e suas principais funções. Use
+                    esse conhecimento para desenhar suas próprias armas tendo uma ideia do que a compõem e por que desse
+                    componente. E essa base pode ser usada também no uso das outras duas categorias de armas.
+                </p>
+                <h5>CANO:</h5>
+                <p>
+                    O cano basicamente é o componente encontrado em qualquer tipo de arma. Geralmente em formato
+                    cilíndrico, mas não é uma regra. Temos diversos formatos de cano, inclusive para outras armas que
+                    não são de fogo.
+                </p>
+                <p>
+                    Vamos falar sobre as ranhuras dos canos das armas. Basicamente temos três tipos de canos, esses são:
+                    cano de alma lisa, cano estriado e cano com estriamento poligonal.
+                </p>
+
+                <img class="img-fluid" src="/static/imagens/imgs_criacao/armas/parte01.webp"
+                    alt="Funcionamento de armas">
+                <br><br>
+
+                <p>
+                    As principais partes de um cano que temos atualmente é o flanco que são as paredes das ranhuras. O diâmetro do raiamento, que é o diâmetro total do cano com a ranhura, além de ser também o diâmetro total do projétil. Temos o diâmetro do cano que é dado por cima das ranhuras. O rebaixo é o espaçamento de um raiamento a outro. Temos também o cheio do raiamento, que seria a sua estrutura. E a superfície do raiamento, que pode várias bastante de cano para cano. E por fim mas não menos importante temos a parede do cano, que pode ter uma grossura variada.
+                </p>
+                
+                <div class="row">
+                    <div class="col-sm-7">
+                        <p>
+                            Temos também os perfis de ranhuras, onde cada um tem sua característica. Veremos quais são essas características:
+                        </p>
+                        <p>
+                            O perfil concêntrico tem tanto seu rebaixo quanto sua superfície e flanco totalmente retos:
+                        </p>
+                    </div>
+                    <div class="col-sm-5">
+                        <img class="img-fluid" src="/static/imagens/imgs_criacao/armas/parte02.webp"
+                    alt="Funcionamento de armas">
+                    </div>
+                </div>
+                <img class="img-fluid" src="/static/imagens/imgs_criacao/armas/parte03.webp"
+                    alt="Funcionamento de armas">
+                <br><br>
+                <p>
+                    O perfil Concêntrico sulcado tem seu flanco e superfície retos. Porem seu rebaixo segue o arco do cano. Além de ser um pouco maior o espaçamento de um corpo do raiamento a outro.
+                </p>
+                <img class="img-fluid" src="/static/imagens/imgs_criacao/armas/parte04.webp"
+                    alt="Funcionamento de armas">
+                <br><br>
+                <p>
+                    O perfil Concêntrico híbrido tem a superfície e o rebaixo do mesmo tamanho. Porem seu flanco é mais curvado, além da superfície e rebaixo seguirem a curvatura do arco do cano:
+                </p>
+                <img class="img-fluid" src="/static/imagens/imgs_criacao/armas/parte05.webp"
+                alt="Funcionamento de armas">
+                <br><br>
+                <p>
+                    Os perfis poligonais têm suas superfícies, flanco e rebaixo arredondados ou pontiagudos. Vai depender de cano para cano:
+                </p>
+                <img class="img-fluid" src="/static/imagens/imgs_criacao/armas/parte06.webp"
+                alt="Funcionamento de armas">
+                <br><br>
+                <p>
+                    E por fim os perfis Estrias de serra. Eles podem conter ou não um rebaixo. Suas superfícies são curvadas e não tem um dos flancos:
+                </p>
+                <img class="img-fluid" src="/static/imagens/imgs_criacao/armas/parte07.webp"
+                alt="Funcionamento de armas">
+                <br><br>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Os perfis podem ser usados não somente para armas de fogo, energia e antimatéria. Como pode ser usado também para as outras categorias de armas que possuem um cano.</i>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-7">
+                        <p>
+                            Dentro dos canos essas ranhuras são construídas em formas helicoidais para que elas consigam exercer a sua função, que é dar ao projétil uma força de rotação em torno de seu eixo. As balas devem ter essa rotação para conseguirem mais estabilidade na sua trajetória. Um projétil disparado de um cano de alma lisa tem uma instabilidade muito grande. Já os projeteis disparados de canos estriados ganha uma rotação que dá a ela estabilidade de voo, graças a inercia giroscópica. Isso ajuda a precisão, aerodinâmica, veja um exemplo a baixo de como isso funciona:
+                        </p>
+                    </div>
+                    <div class="col-sm-5">
+                        <img class="img-fluid" src="/static/imagens/imgs_criacao/armas/parte08.webp"
+                alt="Funcionamento de armas">
+                    </div>
+                </div>
+
+                <img class="img-fluid" src="/static/imagens/imgs_criacao/armas/parte09.webp"
+                alt="Funcionamento de armas">
+                <br><br>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Podemos encontrar também canos mistos, onde no começo temos o cano de alma lisa. E no final é aplicado o estriado. Muito usada em carabinas de pressão.</i>
+                </div>
+
+                <p>
+                    Temos também dois tipos de rotação do projétil, esses são: A dextrogira, quando o projétil gira para a direita. E a sinistrogira, quando o projétil gira para esquerda. Os estriamentos são descritos por sua taxa de torção, isso indica a distância que um projétil deve correr para completar uma volta completa, por exemplo: Uma volta em 200 milímetros ficaria (<i>1:200mm</i>). Quanto mais curto à distância de uma rotação completa, conseguintemente teremos um torque mais rápido. O tamanho, peso e formato de um projétil interfere na sua velocidade de rotação para se ter uma estabilidade de voo maior.
+                </p>
+                <p>
+                    Em armas de energia e antimatéria. Essa precisão dada para o disparo é fornecida por componentes magnéticos colocados em algum lugar da arma. Como por exemplo no HCP-V onde temos estabilizadores encontrados no próprio cano da arma.
+                </p>
+                <h5>FERROLHO:</h5>
+                <p>
+                    O ferrolho é um grupo de peças que tem a função de travar a culatra de variados tipos de armas. No ferrolho de alguns fuzis encontramos também a agulha percussora e o extrator de estojo.
+                </p>
+                <h5>
+                    CÃO:
+                </h5>
+                <p>
+                    O cão é uma peça responsável por acionar o precursor. Essa peça das armas de fogo tem a função de realizar um movimento até o precursor. Que ao colidir com a munição temos como resultado o disparo.
+                </p>
+
+                <h5>AGULHA PERCUSSORA:</h5>
+                <p>
+                    É um componente encontrado na arma. Que tem a função de acionar o disparo de uma munição, após receber uma pressão do mecanismo da arma.
+                </p>
+
+                <h5>ANTECARGA E RETROCARGA:</h5>
+                <p>
+                    São maneiras diferentes de se recarregar uma arma. Armas de antecarga são recarregadas pela parte frontal do cano, ou seja, por onde sai a munição. Como por exemplo morteiro ou mosquetes. Já as armas de retrocarga, são aquelas armas onde a munição é adicionada ao cano pela sua parte traseira. Por meio de mecanismos da arma.
+                </p>
+
+                <h3>MUNIÇÕES DE ARMAS DE FOGO:</h3>
+
+                <div class="row">
+                    <div class="col-sm-8">
+                        <p>
+                            Vamos falar sobre as munições de armas de fogo. Uma munição de arma de fogo é composta por um projétil, que nada mais é do que o objeto disparado contra um alvo. A cápsula ou estojo responsável por armazenar a pólvora e é nela que o projétil se encontra alocado, A pólvora em si ou o combustível para o disparo. E por último a espoleta, normalmente localizada abaixo do projétil. Cuja função é iniciar a queima da pólvora.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img class="img-fluid" src="/static/imagens/imgs_criacao/armas/parte10.webp"
+                alt="Funcionamento de armas">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-7">
+                        <p>
+                            Devemos dar uma atenção maior para a espoleta, pois a mesma tem dois tipos principais. Dependendo de sua raça pode ocorrer de seus modelos nem seguir esse padrão. Mas os dois tipos principais de espoletas que temos são: Os de “fogo central” localizado no meio do projétil. E o de “fogo circular” localizado nas bordas da bala.
+                        </p>
+                        <p>
+                            Ambas funcionam da mesma maneira, ou seja, iniciam sua detonação após a colisão do percursor. A diferença é que em uma, essa detonação é feito na espoleta, no centro do projétil. E a outra nas bordas. 
+                        </p>
+                    </div>
+                    <div class="col-sm-5">
+                        <img class="img-fluid" src="/static/imagens/imgs_criacao/armas/parte11.webp"
+                alt="Funcionamento de armas">
+                    </div>
+                </div>
+
+                <p>
+                    As de fogo central são considerados mais confiáveis que a de fogo circular.
+                </p>
+                <p>
+                    Agora vamos falar de alguns tipos de munição de armas de fogo. Temos em princípio, as munições de pistolas, submetralhadoras e as de revólveres. A principal diferença de uma para outra é que as munições de revólveres tem um aro que sai para fora, como ilustra a imagem a baixo. Esse aro exposto serve para que a munição não entre no tambor do revólver. Já as de pistola tem um relevo que é usada para ser segurado pelo ejetor.
+                </p>
+                <img class="img-fluid" src="/static/imagens/imgs_criacao/armas/parte12.webp"
+                alt="Funcionamento de armas">
+                <br><br>
+
+                <p>
+                    Vamos agora ver os calibres de arma longa. Também conhecidos como calibre de fuzil. E também veremos os cartuchos de escopetas. Esses cartuchos normalmente são mais longos, e seguem o mesmo princípio de uma munição de pistola, ou seja, tem uma espoleta de fogo circular e um relevo na parte de baixo. Para serem seguradas pelo ejetor da arma.
+                </p>
+                <img class="img-fluid" src="/static/imagens/imgs_criacao/armas/parte13.webp"
+                alt="Funcionamento de armas">
+                <br><br>
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <p>
+                            Esses calibres são usados em armas longas como fuzis de assalto, precisão, escopetas e entre outros. Os cartuchos de fuzil tem muitos tamanhos para atender aos mais variados tipos de armas. Agora vamos dar uma atenção espacial para os calibres de escopetas. Também chamadas de doze “12” ou espingarda. Esses cartuchos podem atirar tanto uma única munição, conhecida como “Balote” quanto inúmeros projeteis de chumbo de uma única vez.
+                        </p>
+                        <p>
+                            As munições de escopetas têm dentro de seu interior um componente a mais chamado de “Bucha”. Que pode ser visto no número “2” na imagem ao lado. Ela é responsável por separar a pólvora da munição. E também ajuda no impulso. Porque no momento que a energia da pólvora é ativada, a bucha será responsável por realizar o deslocamento da munição até o final do cano. Após isso se perderá, e o disparo segue apenas com a munição padrão.
+                        </p>
+                    </div>
+                    <div class="col-sm-2">
+                        <img class="img-fluid" src="/static/imagens/imgs_criacao/armas/parte14.webp"
+                alt="Funcionamento de armas">
+                    </div>
+                </div>
+                <p>
+                    E temos também a munição <b>“1”</b> que nesse caso da imagem ao lado é um balote. E por fim temos a pólvora <b>“3”</b>.
+                </p>
+
+                <p>
+                    Então temos quatro tipos de munição para diferentes tipos de armas. Essas são munições de pistola ou submetralhadora, munições de revólveres, munição de fuzil e munição de escopetas. Cada tipo de munição tem suas variações seguindo os mesmos princípios, por exemplo, diversos rifles usam a munição de fuzil, com seu formato de garrafa. Mas não se limite achando que apenas fuzis carregam munição no formato tipo garrafa, isso não é exclusividade.
+                </p>
+                <p>
+                    Uma munição costuma ter nome e sobrenome. Onde podemos ter no primeiro nome, os valores de diâmetro aproximado do cano que percorrerá o projétil. Pela altura do estojo que comporta esse projétil (<i>Tudo em mm</i>). E seu sobrenome costuma ser o nome da arma ao qual a munição é destinada ou o nome da fabricante. 
+                </p>
+                <p>
+                    Quando a munição é fabricada para um padrão de armas, e não apenas para uma arma em específico. O primeiro nome costuma ser a calibre, por exemplo: Uma munição calibre 7.62x67mm é uma munição de rifles, essa munição tem então um projétil capaz de passar por um cano de 7.62mm e seu estojo contém um comprimento de 67 mm.
+                </p>
+                <p>
+                    Além de nome e sobrenomes podemos ter famílias de munição, como por exemplo: A munição a cima a 7.62x67mm, essa munição faz parte de uma família inteira de 7.62mm. O que muda de uma para outra é o seu estojo, que podem variar bastante. Lembrando que o valor “7.62” é o diâmetro do cano (<i>por conceito de famílias</i>). Pois podemos ter diversas armas com cano de 7.62mm, Mas por conta da capacidade de comportar um estojo em seu pente ou pelo próprio mecanismo da arma seja necessário um estojo diferenciado.
+                </p>
+                <p>
+                    Uma curiosidade sobre o nome das munições que pode ser aplicado no universo venturo. As munições podem variar seus nomes dependendo do país que forem adquiridas por conta de seus sistemas de medidas, por exemplo uma munição “7.62x33” é nomeada nos Estados Unidos como “.30 carbine”. A recomendação é dar seu nome padrão como fazemos. E em seguida, na descrição escrever o nome de sua munição, esse valor em pontos é dado nos sistemas imperiais polegadas “in”.
+                </p>
+                <h5>TIPOS DE PROJETEIS:</h5>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <p>
+                            Projeteis também tem uma estrutura básica. Suas partes são: ponta, corpo e base. São também compostas por um núcleo de chumbo e uma camisa (<i>nome dado a sua proteção externa</i>) que geralmente é feita de latão.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img class="img-fluid" src="/static/imagens/imgs_criacao/armas/parte15.webp"
+                alt="Funcionamento de armas">
+                    </div>
+                </div>
+                <p>
+                    Os principais tipos de projeteis que temos são: Em primeiro lugar “projétil jaquetado” que pode ser pontiagudo ou oval. Onde sua camisa pode ser em latão e seu núcleo em chumbo. Temos projeteis de caça, onde a ponta do projétil é de chumbo exposto, feito assim para ser deformado na hora de perfurar o alvo. E temos os projeteis típicos de defesa, também conhecidos como “Hollow Point”. Esse projétil em contato com o alvo se abre, diminuindo a chances de varar o alvo e acertar uma pessoa atrás.
+                </p>
+
+                <img class="img-fluid" src="/static/imagens/imgs_criacao/armas/parte16.webp"
+                alt="Funcionamento de armas">
+                <br><br>
+                <p>
+                    Estamos falando que o combustível de detonação que fornece a energia para arremessar a bala é chamado de pólvora. Mas o termo mais técnico é propelente que hoje em dia é a fonte de energia química capaz de arremessar o projétil. Lembrando que sua raça pode conter algum tipo de fonte diferente.
+                </p>
+
+                <div class="alert alert-success">
+                    <i><b>DICA.:</b> Para sabermos a potência de disparo (<i>a força gerada por uma munição</i>) usamos a notação Joules.</i>
+                </div>
+
+                <div class="alert alert-success">
+                    <i><b>DICA.:</b> A maior munição de uma metralhadora humana é a 12.7x99 também conhecida como .50 BMG. Acima disso as munições são categorizadas para canhões, como por exemplo a 20 mm. </i>
+                </div>
+                <p>
+                    Não será falado sobre munições de armas de energia pois a mesma é composta por alguma fonte de energia que tem a função de alimentar a arma, para ela realizar disparos de plasma, laser ou até mesmo antimatéria. Esse tipo de disparo terá coloração e formato variado. E depende muito da arma, pois isso estará escrito em sua descrição.
+                </p>
+                <p>
+                    E para finalizar. Todo esse conhecimento sobre munição de armas de fogo é um material não educacional (<i>Não o use como guia para outras coisas</i>). Somente para projetar suas próprias munições dentro do RPG venturo, e nada mais.
+                </p>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

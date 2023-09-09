@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+            <div class="col-sm-7">
+                <h2>ESCUDO DO MESTRE</h2>
+                
+                <p>
+                    Vamos abordar agora sobre <b>Escudo do Mestre</b>. Essa é uma ferramenta usada em vários tipos de RPG. Ela é comumente usada para cercar o mestre de seus jogadores, possibilitando assim que o mestre guie sua sessão protegendo determinadas informações de seus jogadores.
+                </p>
+
+                <p>
+                    O escudo do mestre é um objeto físico no qual dispõe de diversas informações que devem ser acessadas rapidamente pelo mestre. No planejamento de uma sessão, informações importantes de um determinado mostro, local e etc... pode ser adicionada no seu escudo do mestre para facilitar seu acesso.
+                </p>
+            
+                <p>
+                    Cada mestre pode montar seu escudo reunindo informações relevantes para sua sessão como:
+                </p>
+                <ol>
+                    <li>
+                        Vitalidade de seus jogadores;
+                    </li>
+                    <li>
+                        Pontos de perseverança;
+                    </li>
+                    <li>
+                        Pontos de Clol;
+                    </li>
+                    <li>
+                        Tabelas de Regras do sistema no geral.
+                    </li>
+                </ol>
+                <p>
+                    Em mesas online, o escudo do mestre acaba se tornando apenas um conjunto de informações relevantes do sistema e também atributos de todos seus jogadores.
+                </p>
+                <h5>PORQUE ESCONDER INFORMAÇÕES DOS JOGADORES?</h5>
+
+                <p>
+                    Imagine o seguinte: Você planejou uma sessão na qual um monstro muito fraco atacaria seus jogadores. Porém, por algum motivo esse monstro está estraçalhando seus jogadores. Para driblar essa situação, as rolagens de dados desse monstro podem ser feitas atrás do escudo do mestre, e ter seus resultados alterados. E essa premissa se encaixa em muitas outras situações.
+                </p>
+                <p>
+                    Parece errado ficar alterando resultados dos dados dessa forma. Mas você tem que se atentar a diversão de seus jogadores. Já pensou se todos morrem em um único ataque porque simplesmente o inimigo teve sorte em sua jogada? Então uma modificada aqui, outra ali, em prol da sessão não tem problema.
+                </p>
+                <p>
+                    Existem mestres que não curtem fazer isso? Sim, e também existem jogadores que não gostam dessas ações. Caso você ou seus jogadores se encaixem nesse perfil, então não modifique os resultados. Use seu escudo do mestre apenas para consultas rápidas.
+                </p>
+            </div>
+
+            
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h1>AÇÕES</h1>
+                
+                <p>
+                    O jogador não precisa necessariamente rolar dados a cada ação que faça. Algumas ações podem ser pura interpretação, onde você pode está simplesmente falando com alguém. Porem temos casos onde são necessários muitos testes, e um deles é as cenas de ações. E temos ações que o personagem pode realizar em cenas de ação, onde o mesmo não joga teste, esses são:
+                </p>
+                <p>
+                    <b>Passar a vez</b> – Passar a sua ação, de vez em quanto o torna o “noob” da mesa. Mas sabemos que sempre tem aquela vez que não sabemos o que fazer, e passar a vez pode se tornar uma ação plausível. Então quando fazemos isso a vês vai para o jogador com a iniciativa maior que a dos outros e logicamente inferior à sua.
+                </p>
+                <p>
+                    <b>Locomover-se</b> – você também pode se mover para realizar alguma ação. Porém fazer isso faz com que você gaste o seu turno. Você pode simplesmente andar, e com isso pode se mover 8 metros. Caso corra, sua destreza estando no nível 1 a 3 você corre 15 metros, agora se estiver 4 a 5 você corre 25 metros em um turno (dependendo da raça).
+                </p>
+               
+            </div>
+
+           <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

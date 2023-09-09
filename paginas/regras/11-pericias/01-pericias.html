@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h1>PERICIAS</h1>
+                <p>
+                    Aqui tem uma lista de Perícias que serão usadas no sistema venturo, entretanto, fica a critério do narrador usá-las ou não, bem como, se incrementará alguma, ou permanecer apenas estas. Estará escrito ao lado o Atributo básico que será combado com a Perícia.
+                </p>
+                <p>
+                    Algumas perícias podem ser atribuídas apenas a determinado tipo de raça, então só poderão ser achados nos documentos daquela raça. E existem perícias que pedem que o personagem indique na sua história onde a aprendeu, a fim de fazer sentido o conhecimento sobre determinada perícia que o personagem tem.
+                </p>
+                <p>
+                    As perícias são conhecimentos que um determinado personagem adquiri durante a sua vida. Elas possuem níveis, que representam o grau desse conhecimento em uma determinada área. 
+                </p>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Os níveis das perícias podem fazer com que uma ação tenha uma dificuldade muito alta ou a tenha muito baixa.</i>
+                </div>
+                
+                <h3>Perícias com contexto Histórico do Personagem:</h3>
+
+                <p>A relação entre as perícias e o passado de cada personagem é fundamental para garantir a coesão e a autenticidade de suas habilidades. Personagens que possuem determinadas perícias e especializações devem ser capazes de justificar a origem e o desenvolvimento dessas habilidades ao longo de suas histórias pregressas.</p>
+
+                <p>Ao criar um personagem, as perícias e especializações escolhidas não devem ser consideradas meramente como mecânicas de jogo, mas sim como reflexos diretos da vida e experiências do personagem. Cada perícia deve ter uma explicação plausível dentro do contexto do passado do personagem.</p>
+
+                <p>Por exemplo, se um personagem possui habilidades médicas avançadas, é necessário que haja um enredo que explique como ele adquiriu essas habilidades, seja através de treinamento formal em uma escola de medicina, como médico militar ou até mesmo como autodidata por meio de experiências pessoais.</p>
+
+                <p>Da mesma forma, perícias como habilidades de combate, idiomas, conhecimento em tecnologia ou até mesmo talentos artísticos devem ter raízes sólidas nas histórias individuais dos personagens. Essas origens não apenas adicionam profundidade aos personagens, mas também permitem que os jogadores explorem momentos-chave de suas vidas, que moldaram quem são hoje.</p>
+
+                <p>Ao conectar as perícias ao passado dos personagens, a narrativa se torna mais rica e imersiva. Isso permite que os jogadores se envolvam em histórias pessoais, criando uma experiência de jogo mais envolvente e autêntica. Além disso, essa abordagem incentiva a criação de personagens mais coesos e bem desenvolvidos, que são capazes de enriquecer tanto a trama principal quanto as subtramas individuais.</p>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

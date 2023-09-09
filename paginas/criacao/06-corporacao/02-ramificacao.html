@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Criação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/criacao.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criacao</h1>
+        <p>Agora que você conhece o Universo e as Regras. Está na hora de aprender a criar os elementos desse universo!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-criacao></venturo-sumario-criacao>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>ÁREAS E RAMIFICAÇÕES</h2>
+                
+                <p>
+                    Cada sistema militar vai conter diversas <b>áreas</b> de atuação dentro dela, e variam de acordo com o nível tecnológico da raça. Citarei os existentes aqui, porém você pode desenvolver sua própria área e ramificações dessas áreas.
+                </p>
+                <p>
+                    É interessante saber que cada organização terá uma área de atuação, que pode ser qualquer uma dessas categorias: <b>engenharia</b> (<i>para evoluir o poder tecnológico desse grupo</i>) <b>manutenção</b> (<i>responsável pela manutenção dos equipamentos em geral</i>), <b>medicina</b> (<i>serviço responsável para garantir a saúde dos integrantes</i>), <b>administrativa</b> (<i>para serviços de administração em geral</i>) e <b>comunicação</b> (<i>para serviços de comunicação, informática comando e controle</i>). Ou pode ser outra atuação que posteriormente deve ser informado na descrição da área.
+                </p>
+                <p>
+                    As áreas sugeridas aqui são uma base do que já existe, você pode ter muito mais áreas em sua corporação, cada uma com suas funções específicas. Ainda mais se o sistema militar estiver dentro de uma organização privada.
+                </p>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Essa parte é bem estrutural, onde você pode até mesmo ter ramificações de outras áreas. </i>
+                </div>
+
+                <h3>EXÉRCITO DA TERRA:</h3>
+                <p>
+                    O exército da terra são todas as organizações terrestres cujo a função é combate e proteção. Você pode criar uma área específica para cada função, e cada uma delas devem conter um sistema de hierarquia, equipamentos e instalações.
+                </p>
+
+                <ul>
+                    <li><b>Artilharia</b> – área especializada no manuseio de armas pesadas para combate, ou seja, manuseio de armamentos como canhões, morteiros, misseis e entre outros.</li>
+                    <li><b>Cavalaria</b> – área especializada na utilização de cavalaria para operações de combate e reconhecimento.</li>
+                    <li><b>Defesa Antiaérea </b>– área responsável pelo manuseio de equipamentos para defesa e detecção antiaéreos.</li>
+                    <li><b>Defesa Nuclear, química e biológica</b> – serviço responsável pela proteção contra armas de destruição em massa.</li>
+                    <li><b>Polícia militar</b> – é a corporação que exerce o poder de polícia dentro do espaço interno das forças armadas, garantindo a segurança, a ordem e a lei no seu seio.</li>
+                    <li><b>Corpo de Bombeiros</b> – São corporações cujo a principal função consiste na atividade de defesa civil, prevenção e combate a incêndios, busca, salvamento e socorros.</li>
+                </ul>
+
+                <h3>EXÉRCITO DO AR:</h3>
+                <p>
+                    O exército do ar são todas as organizações cujo a função se dá pelo deslocamento aéreo. Essa área assim como qualquer outra pode conter diversas funções, e cada uma delas com seus próprios sistemas de hierarquia, equipamentos e instalações.
+                </p>
+                <ul>
+                    <li><b>Ataque</b> – é uma área responsável por aeronaves de ataque e grupos de ataque. Normalmente contendo ramificações específicas para cada tipo de ataque.</li>
+                    <li><b>Transporte</b> – área responsável pelo transporte de unidades para diversas funções.</li>
+                    <li><b>Bombardeio</b> – Responsável pela unidade cuja função é bombardear uma certa região. </li>
+                    <li><b>Resgate</b> – área responsável por resgates, podendo conter muitas ramificações para rasgastes específicos.</li>
+                </ul>
+
+                <h3>EXÉRCITO DO MAR:</h3>
+                <p>
+                    O exército do mar são todas as organizações onde a função se dá pelo meio marítimo. E ela também vai conter diversas funções, cada uma com seu sistema de hierarquia, equipamentos e instalações.
+                </p>
+                <ul>
+                    <li><b>Navegação e Operações Marítimas</b> – Responsável por conduzir e coordenar operações marítimas, garantindo o deslocamento eficiente das embarcações da frota. Esta área é encarregada de planejar rotas, coordenar operações navais e garantir a eficiência dos deslocamentos marítimos da frota. A equipe lida com navegação, manobra das embarcações e resposta a situações imprevistas no ambiente marítimo.</li>
+                    <li><b>Patrulha e Vigilância Costeira</b> – Focada na proteção e vigilância das áreas costeiras e águas territoriais. Equipes de patrulha e vigilância monitoram as águas costeiras e territoriais para garantir a segurança contra ameaças como invasões, contrabando e atividades ilegais. Também podem ser responsáveis pela resposta a incidentes de busca e salvamento.</li>
+                    <li><b>Guerra Submarina</b> – Encarregada das operações de combate submarino, incluindo submarinos e técnicas de guerra submarina. Essa área concentra-se nas operações submarinas, como patrulhas subaquáticas, ataques estratégicos e defesa contra ameaças submarinas inimigas.</li>
+                    <li><b>Manutenção Naval</b> – Responsável pela manutenção, reparo e atualização das embarcações. Equipes de manutenção naval cuidam da saúde operacional das embarcações, realizando reparos, manutenção preventiva e atualizações para garantir que a frota esteja sempre pronta para o combate.</li>
+                </ul>
+
+                <h3>FORÇAR ESPACIAIS:</h3>
+                <p>
+                    As forças espaciais são constituídas em raças mais evoluídas, normalmente tendo uma única força espacial por raça. Suas funções englobam todo o ramo espacial como viagens espaciais, saltos e entre outros. Então podemos ter diversas funções para esse grupo, cada um com suas hierarquias, equipamentos e instalações.
+                </p>
+                <ul>
+                    <li><b>Exploração Espacial</b> – Enfocada na descoberta e exploração de novas regiões e sistemas estelares. Essa área busca explorar o espaço além dos limites conhecidos, identificar novos planetas, sistemas estelares e recursos para expandir o domínio da civilização no cosmos.</li>
+                    <li><b>Defesa Espacial</b> – Concentrada em proteger o território espacial contra ameaças extraterrestres ou hostis. Equipes de defesa espacial monitoram atividades hostis ou não autorizadas no espaço e respondem a possíveis ameaças usando tecnologia avançada de defesa.</li>
+                    <li><b>Diplomacia Intergaláctica</b> – Encarregada de manter relações pacíficas e alianças com outras raças ou facções galácticas. Essa área se dedica à construção de relações diplomáticas, negociações de tratados e alianças com outras civilizações do universo.</li>
+                    <li><b>Comando e Controle Espacial</b> – Responsável por coordenar todas as operações e comunicações espaciais. Essa área centraliza o comando e controle de todas as atividades espaciais, garantindo a comunicação eficiente entre as unidades e o monitoramento constante das operações.</li>
+                    <li><b>Engenharia Espacial</b> – Focada no design, construção e manutenção das naves e equipamentos espaciais. A equipe de engenharia espacial projeta, constrói e mantém as naves e sistemas espaciais, assegurando que estejam em perfeitas condições para enfrentar os rigores do espaço.</li>
+                    <li><b>Exploração de Recursos Espaciais</b> – Encarregada de identificar e extrair recursos valiosos no espaço. Essa área visa descobrir e extrair recursos naturais encontrados em asteroides, planetas e outros corpos celestes para uso na construção, energia e manutenção.</li>
+                    <li><b>Unidades de Assalto Espacial</b> – Responsáveis por operações de ataque e invasão em ambientes espaciais. As unidades de assalto espacial realizam operações ofensivas e invasões em ambientes como estações espaciais inimigas, navios de guerra e bases planetárias hostis.</li>
+                    <li><b>Defesa Orbital </b>– Concentrada na proteção de sistemas planetários e orbitais contra ameaças externas. Equipes de defesa orbital monitoram atividades suspeitas no espaço próximo a planetas e sistemas, garantindo a segurança contra possíveis ataques ou invasões.</li>
+                    <li><b>Operações de Resgate Espacial</b> – Responsáveis por resgates de emergência e evacuações no espaço. Essa área lida com situações de emergência no espaço, como resgates de tripulações em naves avariadas ou evacuações de estações espaciais em perigo.</li>
+                    <li><b>Guerra Eletrônica Espacial</b> – Focada em operações de interferência e contra-espionagem em comunicações espaciais. Equipes de guerra eletrônica espacial buscam interferir nas comunicações inimigas, desativar sistemas de defesa e proteger as próprias comunicações contra espionagem.</li>
+                    <li><b>Exploração de Anomalias Espaciais</b> – Encarregada de investigar fenômenos espaciais não identificados. Essa área explora fenômenos misteriosos, como buracos de minhoca, singularidades temporais e outros eventos cósmicos incomuns que podem ter implicações estratégicas ou científicas.</li>
+                    <li><b>Técnicas de Saltos Espaciais</b> – Responsáveis por desenvolver e aprimorar as tecnologias de salto no hiperespaço. A equipe de saltos espaciais pesquisa e desenvolve técnicas para viagens mais rápidas através do hiperespaço, permitindo movimentos estratégicos e exploração avançada.</li>
+                    <li><b>Exploração de Vida Extraterrestre</b> – Concentrada na busca por formas de vida alienígena e contato interespécies. Essa área explora mundos distantes e estuda a possibilidade de vida extraterrestre, buscando estabelecer contato pacífico e ampliar o conhecimento interespécies.</li>
+                </ul>
+
+                <h3>EMPRESAS:</h3>
+                <p>
+                    Você pode criar uma empresa inteira focada em venda de equipamentos específicos como: Armas, naves, veículos Terrestres e por ai vai. Caso a empresa seja importante para sua narrativa, você pode desenvolvê-la usando essa estrutura, explicando como ela consegue recursos para desenvolver seus produtos, onde elas desenvolve e entre outros assuntos que você pode criar.
+                </p>
+                <ul>
+                    <li><b>Pesquisa e Desenvolvimento de Tecnologia</b> – Focada na criação de inovações tecnológicas para venda. A equipe de pesquisa e desenvolvimento concentra-se em criar produtos inovadores, como armas avançadas, veículos especiais e tecnologia de ponta para atender às demandas do mercado.</li>
+                    <li><b>Produção e Fabricação</b> – Responsável pela produção em massa dos equipamentos vendidos pela empresa. Esta área engloba a fabricação, montagem e produção em massa dos produtos desenvolvidos pela empresa, garantindo alta qualidade e eficiência na produção.</li>
+                    <li><b>Vendas e Marketing</b> – Encarregada de promover e comercializar os produtos da empresa. Equipes de vendas e marketing desenvolvem estratégias para alcançar clientes em potencial, promovendo os produtos da empresa e garantindo sua presença no mercado.</li>
+                    <li><b>Logística e Distribuição</b> – Responsável por gerenciar a cadeia de suprimentos e a distribuição dos produtos. Essa área cuida do transporte, armazenamento e distribuição dos produtos da empresa, garantindo que eles cheguem aos clientes de maneira eficiente e no prazo.</li>
+                </ul>
+                
+                <h3>DICAS PARA CRIAR AREAS:</h3>
+                <p>A criação das áreas da sua corporação é uma oportunidade para construir um mundo rico e cativante para sua narrativa. Divirta-se explorando as possibilidades e construindo um sistema organizacional que se encaixe perfeitamente na sua história.</p>
+
+                <ol>
+                    <li><b>Identifique as Funções Essenciais:</b> Pense nas principais funções e objetivos da sua corporação. Isso pode incluir operações de combate, pesquisa, exploração, logística, administração, entre outras. Identificar essas funções é o primeiro passo para determinar as áreas necessárias.</li>
+                    <li><b>Análise de Hierarquia:</b> Para cada função essencial, pense na hierarquia necessária para operá-la eficientemente. Quem são os líderes, supervisores e membros de equipe? Isso ajudará a criar diferentes níveis de responsabilidade nas suas áreas.</li>
+                    <li><b>Relações entre as Áreas:</b> Considere como as diferentes áreas se relacionam entre si. Algumas podem ser interdependentes, enquanto outras podem ser complementares. Por exemplo, uma área de pesquisa pode fornecer inovações para uma área de desenvolvimento de equipamentos.</li>
+                    <li><b>Especialização vs. Generalização:</b> Decida se suas áreas serão altamente especializadas em uma tarefa específica ou mais generalistas, abrangendo várias atividades relacionadas. Isso dependerá da complexidade da sua corporação e das necessidades da narrativa.</li>
+                    <li><b>Inspiração na Realidade:</b> Você pode buscar inspiração na organização de exércitos, empresas, agências governamentais e outros tipos de instituições. Analise como essas organizações dividem suas operações em diferentes departamentos ou divisões.</li>
+                    <li><b>Consideração do Contexto:</b> Pense no contexto da sua narrativa. O ambiente em que sua corporação opera (terreno, espaço, mar, etc.) pode influenciar as áreas necessárias. Além disso, leve em conta a tecnologia, cultura e recursos disponíveis.</li>
+                    <li><b>Variedade e Equilíbrio:</b> Busque uma variedade de áreas que abranjam diferentes aspectos da sua corporação, desde operações de combate até logística, pesquisa e administração. Um equilíbrio entre áreas é importante para uma narrativa rica e diversificada.</li>
+                    <li><b>Crie Descrições Detalhadas:</b> Para cada área, crie descrições detalhadas que incluam a função principal, a hierarquia, as responsabilidades, as instalações, os equipamentos e quaisquer outras informações relevantes. Isso ajudará a dar vida às suas áreas.</li>
+                    <li><b>Flexibilidade para Expansão:</b> Lembre-se de que sua narrativa pode evoluir ao longo do tempo. Deixe espaço para expandir ou adicionar áreas conforme necessário para manter a história interessante e envolvente.</li>
+                    <li><b>Personalização Criativa:</b> Não tenha medo de ser criativo e adicionar toques únicos às suas áreas. Isso pode envolver elementos mágicos, tecnológicos avançados, tradições culturais, entre outros.</li>
+                </ol>
+                
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Criação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/criacao.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criacao</h1>
+        <p>Agora que você conhece o Universo e as Regras. Está na hora de aprender a criar os elementos desse universo!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-criacao></venturo-sumario-criacao>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>COMPONENTES</h2>
+                <p>
+                    Os componentes são salas ou funções internas de sua nave. Porem essas funções devem ser especificadas no atributo da nave.
+                </p>
+                <p>
+                    Algumas dessas salas exigem um mapa da mesma. Quando a sala tem mais de um andar você pode usar a regra de Múltiplos Mapas para criá-los. Salas que não precisem de um mapa, mas você queira fazer um para representar, basta informar sua existência na descrição da Sala ou Componente, dentro do mapa do veículo e em seguida um mapa separado para a sala.
+                </p>
+
+                <h5>CORREDORES:</h5>
+                <p>
+                    Corredores são as passagens que ligam uma cabine a outra, junto com eles temos portas, elevadores e até mesmo teleporte interno que leva de um canto a outro da nave. Os corredores estão presentes em todos tipos de veículos, e normalmente será ilustrado no mapa geral do veículo, gerando a ligação entre todas as cabines.
+                </p>
+
+                <h5>ESTAÇÃO DE CONTROLE:</h5>
+                <p>
+                    Estações de controle são salas cuja função é reunir um grupo da tripulação responsável pelo controle do veículo. Essa sala está normalmente conectada a todas as outras salas do veículo permitindo monitoramento das mesmas e comunicação direta e rápida. Esse componente pode ser encontrado em grandes veículos.
+                </p>
+                <p><b>Seus atributos são:</b></p>
+
+                <ul>
+                    <li><b>Comunicação interna</b> – se trata da descrição de como a estação de controle se comunica com os outros módulos do veículo. E se esses módulos têm direito de resposta.</li>
+                    <li><b>Comunicação Externa</b> – Aqui é a função que dá ao veículo comunicação exterior com outros veículos, seja por voz ou vídeo. E ainda se essa comunicação é feita somente entre veículos do mesmo tipo ou outros tipos.</li>
+                    <li><b>Controle</b> – O controle dita a forma que esse veículo é conduzido. Temos dois principais tipos de controle, esses são:</li>
+                    <ul>
+                        <li><b>Piloto</b>: Quando apenas um ou mais pilotos são responsáveis pelo controle do veículo, sem interferência externa, ou seja, é quando a pessoa responsável pelo veículo pilota o mesmo diretamente sem ter que depender de um NPC/Jogador externo para isso. </li>
+                        <li><b>Comandante</b>: É quando a pessoa responsável pelo veículo conduz o mesmo dando comandos para um piloto que possa vir a ser um jogador ou NPC.</li>
+                    </ul>
+                        <li><b>Tripulantes</b> – Aqui você deve colocar a quantidade de tripulantes que irão sentados dentro dessa sala. Normalmente sendo entre 5 a 20 dependendo de cada veículo.</li>    
+                        <li><b>Funções dos pilotos</b> – Aqui você vai colocar a função de cada piloto dessa estação de controle. Por exemplo: Controlar a aeronave ou controlar as armas. De uma descrição bem detalhada de cada função. </li> 
+                        <li><b>Mapa</b> – O mapa da estação de controle, além de identificar visualmente o mesmo. Demonstra onde está cada lugar dos tripulantes e suas funções. Por exemplo, controle de torrents, canhões, ogivas nucleares, escudos e controle.</li> 
+                </ul>
+
+                <h5>COCKPIT:</h5>
+                <p>
+                    O cockpit na realidade é uma sala menor que uma estação de controle (<i>normalmente tendo espaço para no máximo 4 tripulantes</i>). São encontrados em todas as categorias de aviões, barcos, naves pequenas e em algumas naves médias.
+                </p>
+                <p>
+                    Porem aqui ela representa também o controle do veículo. Ou seja, uma montaria também tem um cockpit.
+                </p>
+                <p><b>Seus atributos são:</b></p>
+
+                <ul>
+                    <li><b>Comunicação externa</b> – Os cockpits têm apenas a comunicação externa. Isso por que o mesmo não foi criado para ser alojado em grandes veículos. E se o mesmo ocorrer normalmente são bem abertos tendo até mesmo contado visual com os tripulantes do veículo. Aqui você descreve como é feito a comunicação para outros veículos externos. E se o mesmo suporta voz, vídeo ou ambos.</li>
+                    <p>
+                        Em alguns casos o cockpit nem tem comunicação externa, como por exemplo: alguns <i>carros</i>, <i>motocicletas</i>, <i>montarias</i>, e por ai vai.
+
+                    </p>
+                    <li><b>Tripulantes</b> – Aqui você informa a quantidade de tripulantes dessa sala. Que variam de 1 a no máximo 4. Acima disso se categoriza como cabine de controle.</li>
+                    <li><b>Funções dos pilotos</b> – Aqui você vai colocar a função de cada piloto desse cockpit. Por exemplo: Controlar a aeronave ou controlar as armas. De uma descrição bem detalhada.</li>
+                    <li><b>Descrição</b> – Como é feito para conduzir esse veículo. Não precisa ser muito descritivo. Apenas informe o básico, por exemplo: como é feito para entrar no veículo, ferramentas de controle e etc. </li>
+                </ul>
+
+                <h5>ENERGIA/COMBUSTÍVEL:</h5>
+                <p>
+                    Energia são salas ou componentes responsáveis por armazenar o gerador de energia/Combustível do veículo. Encontrado em todas as categorias de veículos, e vai depender muito do seu uso.
+                </p>
+                <p>Seus atributos são:</p>
+
+                <ul>
+                    <li><b>Tipo</b> – Informe o tipo dessa energia, que pode ser Geradores ou Combustível.</li>
+                    <li><b>Consumo</b> – Aqui você descreve qual o combustível desse veículo. Se o veículo consome algum tipo de energia, você coloca aqui qual é esse item do tipo fonte. Ou se ele consome algum tipo de combustível, você descreve qual é esse combustível aqui.</li>
+                    <li><b>Pontos de Energia</b> – Se o tipo for Gerador você deve informar quantos pontos de energia total o veículo tem.</li>
+                    <li><b>Descrição</b> – Aqui você informa onde e como é feito o abastecimento dessa fonte de consumo. Se ela é um gerador que recupera os pontos de energia, você informa quantos pontos é recuperado por turnos, rodadas ou cenas.</li>
+                    <li><b>Mapa</b> – Pode ser que esse componente seja toda uma sala para comportar o item de consumo, quando falamos de grandes veículos. Por isso ilustre um mapa do mesmo.</li>
+                </ul>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Caso não necessite do mapa, o local para comportar o item de consumo deve estar em algum local do veículo. Você deve descrever esse local em consumo.</i>
+                </div>
+
+                <h5>CABINE DA REPOUSO:</h5>
+                <p>
+                    São cabines onde seus tripulantes repousam, onde guardam suas coisas e fazem suas necessidades pessoais, encontrado em embarcações de médio e grande porte, aviões de transporte, naves médias, capitais e colossais.
+                </p>
+                <p>
+                    Seu veículo pode ter mais de um tipo de cabine de repouso.
+                </p>
+                <p><b>Seus atributos são:</b></p>
+
+                <ul>
+                    <li><b>Nome da Cabine</b> – Pode existir vários tipos de cabines para cada tipo de tripulação, como passageiros e guerreiros ou comandantes. Aqui você coloca o nome dessa cabine.</li>
+                    <li><b>Quantidade de cabines</b> – Aqui você coloca quantas dessas cabines existem no veículo. </li>
+                    <li><b>Tripulantes</b> – Aqui você fala a quantidade de tripulantes suportados por essa cabine.</li>
+                    <li><b>Descrição</b> – De uma descrição dessa cabine.</li>
+                    <li><b>Mapa</b> – Aqui você fornece um mapa dessa cabine. </li>
+                </ul>
+
+                <h5>CABINE DA TRIPULAÇÃO:</h5>
+                <p>
+                    A Cabine de tribulação é onde ficam os seres que estão sendo transportados pelo veículo. Normalmente encontrado em naves de médias, todos veículos terrestres, e embarcações de pequeno porte.
+                </p>
+                <p>
+                    Seu veículo pode ter mais de uma cabine.
+                </p>
+                <p><b>Seus atributos são:</b></p>
+                <ul>
+                    <li><b>Nome da Cabine</b> – Pode existir vários tipos de cabines para cada tipo de tripulação, como passageiros e guerreiros. Aqui você coloca o nome dessa cabine.</li>
+                    <li><b>Quantidade de cabines</b> – Aqui você coloca quantas dessas cabines existem no veículo. </li>
+                    <li><b>Tripulantes</b> – Aqui você fala a quantidade de tripulantes suportados por essa cabine.</li>
+                    <li><b>Descrição</b> – De uma descrição dessa cabine.</li>
+                    <li><b>Mapa</b> – Aqui você fornece um mapa dessa cabine.</li>
+                </ul>
+                
+                <h5>HANGAR:</h5>
+                <p>
+                    O hangar é um espaço reservado para o pouso, decolagem e manutenção rápida de um veículo como aviões de caça, helicópteros, aviões menores, naves pequenas, médias  e até capitais, comumente encontrado em embarcações de grande porte naves capitais e colossais.
+                </p>
+                <p>
+                    Dependendo do veículo, podemos ter mais de um hangar.
+                </p>
+                <p><b>Seus atributos são:</b></p>
+                <ul>
+                    <li><b>Nome do Hangar</b> – Aqui você informa qual o nome desse hangar.</li>
+                    <li><b>Tipo de Veículos suportados</b> – Aqui você informa os tipos de veículos suportados por esse hangar.</li>
+                    <li><b>Quantidade de veículos</b> – Aqui você coloca a quantidade máxima de veículos que cabem dentro desse hangar. Isso para cada tipo que esse hangar em questão suporta usando a anotação Quantidade – Nome do Veículo.</li>
+                    <li><b>Descrição</b> – Aqui você descreve as principais características desse hangar. </li>
+                    <li><b>Mapa</b> – Faça um mapa desse hangar.</li>
+                </ul>
+
+                <h5>EVACUAÇÃO:</h5>
+                <p>
+                    São salas ou parte de uma sala, com diversos ou um único módulo de evacuação para quando a nave está bastante avariada. Normalmente essas salas se encontram muito perto do casco dos veículos para facilitar e agilizar a evacuação, essa cabine pode ser encontrada em naves médias, capitais e colossais, além de grandes embarcações.
+                </p>
+                <p>
+                    Seu veículo pode ter mais de uma cabine de evacuação, ou uma única área de evacuação.
+                </p>
+                <p><b>Os atributos são:</b></p>
+                <ul>
+                    <li><b>Nome da cabine</b> – Seu veículo pode ter mais de uma cabine com diferentes tipos de módulos de evacuação. </li>
+                    <li><b>Módulo de evacuação</b> – São normalmente grandes veículos de transporte, até pequenos módulos para uma única pessoa. Aqui você descreve como se pilota esse modulo, ou se ele é automático. E se for um veículo, informe qual o nome desse veículo.</li>
+                    <li><b>Quantidade de Módulos</b> – Aqui você informa quantos módulos têm seu veículo.</li>
+                    <li><b>Tripulantes máximos por modulo</b> – Aqui você informa a quantidade de tripulantes suportado pelos módulos de evacuação.</li>
+                    <li><b>Descrição</b> – Descreva o que os tripulantes têm que fazer para ter acesso aos módulos dessa cabine. E se essa cabine é uma pequena área de uma cabine maior como por exemplo: Em uma nave pequena, podemos ter na mesma cabine do cockpit o modulo de evacuar a nave, como um acento ejetável. Você descreve como isso funciona. </li>
+                    <li><b>Mapa</b> – Faça um mapa da cabine de cada modulo desse veículo, se o mesmo for um modulo separado. </li>
+                </ul>
+
+                <h5>ÁREA DO ARSENAL:</h5>
+                <p>
+                    Essas áreas são muito comuns e normalmente pequena. Elas serve apenas para abrigar as armas dos tripulantes, usadas em qualquer tipo de veículo.
+                </p>
+                <p>
+                    Um veículo pode ter mais de uma área de arsenal.
+                </p>
+                <p><b>Os atributos são:</b></p>
+                <ul>
+                    <li><b>Nome da cabine</b> – Informe o nome em particular dessa cabine. </li>
+                    <li><b>Suprimento</b> – Essas cabines fornecem suprimentos para armas, as armas em si, e armaduras. Informe qual o tipo de armamento e armadura encontrado dentro dessas cabines. Coloque esses elementos em listas.</li>
+                    <li><b>Descrição</b> – descreva esse espaço em seu veículo, e como é feito para acessá-lo.</li>
+                    <li><b>Mapa</b> – Caso seja uma cabine separada de uma sala principal, ou seja, é uma sala única. Faça um mapa dessa sala. </li>
+                </ul>
+
+                <h5>CABINES DE LAZER:</h5>
+                <p>
+                    São salas projetadas para o lazer da tripulação ou para necessidades como uma cantina, por exemplo. Temos essas cabines em colossais, capitais e naves médias, embarcações de grande e médio porte e em aviões robustos. E elas podem ter tamanhos exorbitantes. 
+                </p>
+                <p>
+                    Um veículo pode ter mais de uma cabine de laser:
+                </p>
+                <p><b>Os atributos são:</b></p>
+                <ul>
+                    <li><b>Nome da cabine</b> – Aqui você indica qual o nome dessa cabine. Normalmente nomeada com a categoria de laser oferecida, por exemplo, área de piscina.</li>
+                    <li><b>Descrição</b> – escreva o que os tripulantes podem fazer dentro dessa cabine.</li>
+                    <li><b>Mapa</b> – Você deve fazer um mapa dessa cabine.</li>
+                </ul>
+
+                <h5>CABINE DE CONTENÇÃO:</h5>
+                <p>
+                    Essas cabines são responsáveis por manter preso um ser ou grupo de seres por um tempo de viagem indeterminado. Normalmente se encontra em Veículos de transporte e militares, embarcações de grande porte, colossais, capitais e naves médias.
+                </p>
+                <p>
+                    Um veículo pode ter mais de uma cabine de contenção:
+                </p>
+                <p><b>Os atributos são:</b></p>
+                <ul>
+                    <li><b>Nome da cabine</b> – Aqui você coloca o nome dessa cabine de contenção, por exemplo: Contenção máxima.</li>
+                    <li><b>Descrição</b> – Descreva como funciona essa contenção.</li>
+                    <li><b>Mapa</b> – Faça um mapa dessa cabine. </li>
+                </ul>
+
+                <h5>ÁREA DE CARGA:</h5>
+                <p>
+                    A área de carga é um espaço no veículo reservado apenas para ser colocado objetos para serem transportados. É muito comum ver veículos criados apenas para esse fim.
+                </p>
+                <p>
+                    Um veículo pode ter mais de uma área de Carga.
+                </p>
+                <p><b>Seus atributos são:</b></p>
+                <ul>
+                    <li><b>Largura e comprimento</b> – Aqui você coloca a largura e comprimento dessa área em metros. </li>
+                    <li><b>Altura</b> – aqui você coloca a altura em metros dessa área (<i>caso seja uma área fechada</i>). </li>
+                    <li><b>Descrição</b> – De uma descrição desse espaço. É um porta-malas, é a área de um navio capital, ou é uma cabine fechada de uma nave capital? Tem também a questão de nomenclatura. Como podemos ter várias dessas áreas explique como é a regra de nomenclatura de cada uma, por exemplo. Área de carga – A até Z.</li>
+                    <li><b>Quantidade</b> – Aqui você fala quantas dessas áreas existem dentro de seu veículo.</li>
+                    <li><b>Mapa</b> – Faça um mapa dessa área de carga, se a mesma precisar. </li>
+                </ul>
+
+                <h5>CABINE DE VEÍCULOS:</h5>
+                <p>
+                    As cabines de veículos são grandes hangares que comportam veículos de ataque ou transporte para defender o veículo maior, ou explorar solo desconhecido. Elas são encontradas mais em embarcações marítimas de grande porte, capital e colossais.
+                </p>
+                <p>
+                    Seu veículo pode ter mais de uma cabine de ataque.
+                </p>
+                <p><b>Os atributos são:</b></p>
+                <ul>
+                    <li><b>Nome da Cabine</b> – Aqui você dá um nome para essa cabine, normalmente levando em consideração sua função, por exemplo. Exploração terrestre, exploração espacial, ataque terrestre ou ataque espacial, etc.</li>
+                    <li><b>Veículos</b> – Aqui você informa quais os veículos encontrados dentro dessa cabine.</li>
+                    <li><b>Quantidade de veículos</b> – Aqui você informa quantos desses veículos existem dentro dessa cabine usando a denotação Quantidade – Nome do Veículo.</li>
+                    <li><b>Mapa</b> – Faça um mapa dessa cabine de veículo.</li>
+                </ul>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> No caso de porta-aviões, o correto é usar o Hangar em vez de cabines de Veículos.</i>
+                </div>
+
+                <h5>ÁREA MÉDICA:</h5>
+                <p>
+                    As áreas médicas é uma sala encontrada em seu veículo responsável por atendimentos médicos, ou pequenos espaços reservados para o tratamento de pacientes. Então podem ser grandes salas com equipamentos médicos de uma raça, ou pequenos armários em uma sala qualquer com kits médicos.
+                </p>
+                <p>
+                    Um veículo pode ter mais de uma sala médica.
+                </p>
+                <p><b>Seus atributos são:</b></p>
+                <ul>
+                    <li><b>Nome</b> – Qual o nome dado a essa sala.</li>
+                    <li><b>Quantidade</b> – Quantas dessas áreas existem no veículo.</li>
+                    <li><b>Pacientes</b> – Quantos pacientes cada área consegue atender. </li>
+                    <li><b>Descrição</b> – Descreva como é o funcionamento dessa área. É onde ela está localizada se não for uma sala própria.</li>
+                    <li><b>Mapa</b> – Caso seja uma sala, faça um mapa representativo do mesmo. </li>
+                </ul>
+
+                <h5>GRAVIDADE ARTIFICIAL:</h5>
+                <p>
+                    Essa tecnologia é só usada em naves e estações espaciais. Esse tipo de tecnologia dá a sua estrutura uma gravidade artificialmente semelhante à da sua raça de origem, por todo interior da nave. 
+                </p>
+                <p>
+                    Para estruturas grandes como, colossais, capitais ou naves médias, teremos uma cabine separada só para o gerenciamento da gravidade artificial, quando a estrutura é menor como uma nave pequena ou até mesmo média, essa tecnologia é um simples modulo encontrado em alguma sala.
+                </p>
+                <p>
+                    A gravidade artificial também influência na estrutura de sua nave. Podemos tomar como exemplo: A raça humana e algumas outras raças que usam a gravidade artificial por meio da rotação da nave. Com isso, as estruturas que utilizam desse conceito são de formas circulares para poderem girar e gerar essa forma de gravidade artificial.
+                </p>
+                <p>
+                    Outras raças optam por tecnologias que gerem a deformação do espaço, onde o mesmo gera a gravidade necessária para a raça, normalmente essa deformação é dada por buracos negros artificiais.
+                </p>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Saber da existência dessas características a cima ajuda a montar a estrutura de seu veículo.</i>
+                </div>
+                <p>
+                    Você pode ainda inventar outros estilos de gravidade artificial. Por isso esse componente tem alguns atributos que devem ser preenchidos para a nave:
+                </p>
+                <ul>
+                    <li><b>Descrição</b> – de uma descrição de como funciona a gravidade artificial desse veículo. E onde está localizado, ou seja, se está localizado em uma área de alguma sala, informe qual é essa área. Porem se for algum modulo, informe o nome desse modulo.</li>
+                    <li><b>Mapa</b> – Caso esse sistema esteja dentro de um módulo, faça um mapa representativo do mesmo.</li>
+                </ul>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Aqui você não informa qual a gravidade dentro do veículo, por que o mesmo será um atributo preenchido direto na nave.</i>
+                </div>
+
+                <h5>BRAÇO MECÂNICO:</h5>
+                <p>
+                    Alguns veículos como submarinos, barcos e até mesmo naves contem braços robóticos controlados pela parte interna do veículo. Comumente usado para capturar objetos na parte externa do veículo.
+                </p>
+                <p>
+                    Muitas vezes controlados pelo cockpit, ou pela cabine de controle do veículo. Para ele damos apenas uma descrição.
+                </p>
+                <p>
+                    <b>Os atributos são:</b>
+                </p>
+
+                <ul>
+                    <li>
+                        <b>Descrição</b> – Aqui você descreve como esses braços mecânicos são controlados para realizar a captura de externa de objetos. Descreva também o comprimento desses braços.
+                    </li>
+                </ul>
+
+                <h5>MINERADOR:</h5>
+                <p>
+                    Muitos Veículos tanto terrestres quanto marítimos e aéreos podem conter algum tipo de mineradores usados para minerar algo de alguma coisa. Em naves eles são comuns para mineração em meteoros. Em veículos terrestres e marítimos esses mineradores são usados para extrair recursos naturais do planeta.
+                </p>
+                <p>
+                    Eles são controlados normalmente pelo cockpit ou cabine de controle. Porem podem ser controlados por um cockpit próprio. 
+                </p>
+                <p>
+                    Em um mesmo veículo podemos ter diversos tipos de minerador.
+                </p>
+                <p><b>Os atributos são:</b></p>
+                <ul>
+                    <li><b>Nome</b> – Nome desse minerador.</li>
+                    <li><b>Tipo de controle</b> – Interno ou externo. Onde que no interno devemos controlar o minerador em uma sala interna a ele. Ou externo onde controlamos o minerador em uma sala externa a ele como por exemplo, a estação de controle.</li>
+                    <li><b>Descrição</b> – Descreva como funciona esse minerador de seu veículo.</li>
+                    <li><b>Mapa</b> – Como pode ser uma sala enorme. Podemos ter um mapa para a mesma.</li>
+                </ul>
+
+                <h5>EXTRATOR:</h5>
+                <p>
+                    Extratores são equipamentos usados em veículos para extração de objetos da área externa ao veículo. Temos diversos tipos de extratores, para as diversas categorias de veículos.
+                </p>
+                <p>
+                    Extratores são quase a mesma coisa que os braços mecânicos, porém usam de algum meio de tecnologia como teleportes ou magnetismo para capturar objetos fora do veículo.
+                </p>
+                <p>
+                    Um veículo pode ter mais de um extrator.
+                </p>
+                <p><b>Seus atributos são:</b></p>
+                <ul>
+                    <li><b>Nome</b> – Nome desse extrator.</li>
+                    <li><b>Alcance</b> – Informe o alcance desse extrator em metros.</li>
+                    <li><b>Descrição</b> – Descreva como funciona esse extrator do veículo. Se ele é comandado pela sala principal do veículo. Ou se tem uma sala própria para seu manuseio.</li>
+                    <li><b>Mapa</b> – Como pode ser uma sala enorme. Podemos ter um mapa para a mesma.</li>
+                </ul>
+
+                <h5>SCANNERS:</h5>
+                <p>
+                    Os scanners são componentes instalados em seu veículo cuja função é obter informações de objetos ao redor de seu veículo. Pode ser poderoso o suficiente para saber qual o material do núcleo de um asteroide ou pequenos objetos ao seu redor. Esse tipo de componente pode ser encontrado em todos tipos de veículos. e ficam fora do veículo, sendo comandado pela estação de controle ou cockpit. 
+                </p>
+                <p>
+                    Os scanners para grandes veículos podem ter uma sala própria onde pode ser feito reparos dos componentes do mesmo, ou ele pode ser pequeno o suficiente para ser instalado em uma sala existente no veículo que não necessariamente seja criada para ele. Se for o segundo caso, coloque sua localização na descrição (<i>normalmente cockpit ou Estação de Controle</i>).
+                </p>
+                <p>
+                    Um veículo pode ter mais de uma scanners para fins diferentes.
+                </p>
+                <p><b>Seus atributos são:</b></p>
+                <ul>
+                    <li><b>Nome</b> – qual o nome desse equipamento (<i>normalmente tendo relação com sua função, por exemplo: scanner de vidas</i>).</li>
+                    <li><b>Raio</b> – Informe o raio de atuação desse equipamento em Km. </li>
+                    <li><b>Tempo de Scanner</b> – Aqui você fala quantos turnos ele leva para finalizar seu trabalho. </li>
+                    <li><b>Alvo</b> – Descreva tudo que esse scanner foi projetado para escanear, por exemplo, itens orgânicos, meteoros, naves e etc</li>
+                    <li><b>Descrição</b> – De uma descrição de onde se encontra, e como funciona a ativação deste equipamento (<i>normalmente sendo automático e exibido na sala de controle em geral do veículo</i>).</li>
+                    <li><b>Mapa</b> – Faça um mapa para comportar esse equipamento, caso o mesmo tenha uma sala própria.</li>
+                </ul>
+                
+                <h5>INVISIBILIDADE:</h5>
+                <p>
+                    Não preciso falar muito da função desse dispositivo, apenas devemos saber que a tecnologia de invisibilidade se subdivide em duas categorias. As que tornam o veículo invisível a olho nu, e aos radares. Esses tipos de equipamentos são colocados fora do veículo, ou seja, são externos, porém equipamentos para grandes veículos costumam ser muito maiores e terem uma sala própria para comportar seus componentes. 
+                </p>
+                <p>
+                    Normalmente seu controle é feito pela cabine de controle em geral do veículo.
+                </p>
+                <p><b>Seus atributos são:</b></p>
+                <ul>
+                    <li><b>Nome</b> – Qual o nome escolhido para esse radar.</li>
+                    <li><b>Tipo</b> – Como falado na introdução a cima, temos dois tipos de invisibilidade. Os que tornam o veículo invisível a olho nu. E os que tornam o veículo invisível a radares em geral, então use o valor <b>Veículo</b> ou <b>Radares</b>.</li>
+                    <li><b>Tempo de uso</b> – Aqui você coloca quantas rodadas o veículo fica invisível. Caso seja infinito, coloque “Infinito”. </li>
+                    <li><b>Consumo</b> – Equipamentos que realizam esse feito consomem mais energia. E você deve colocar aqui quantos pontos de energia eles consomem por rodadas ativadas.</li>
+                    <li><b>Descrição</b> – Forneça uma descrição de como esse item é ativado, onde está localizado. E mais coisas que achar relevante colocar.</li>
+                    <li><b>Mapa</b> – Como disse a cima. Esses componentes podem ser muito grandes a tau ponto de precisarem possuírem uma sala própria. Caso isso ocorra, faça um mapa dessa sala.</li>
+                </ul>
+
+                <h5>ESCUDO:</h5>
+                <p>
+                    Escudos são proteções de energia ou físicas que pode ser encontrada em todos tipos de veículos. Esses dispositivos também dão uma característica a mais para o exterior de seus veículos, e dependendo do tamanho do veículo, eles exigem uma cabine própria para trabalho.
+                </p>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Escudos físicos podem ter uma sala própria para eles também. Isso por que podem comportar peças de reparo do mesmo. </i>
+                </div>
+                <p>
+                    Seu veículo pode ter mais de um escudo.
+                </p>
+                <p><b>Seus atributos são:</b></p>
+                <ul>
+                    <li><b>Nome</b> – Qual o nome desse sistema de proteção extra?</li>
+                    <li><b>Tipo</b> – Físico ou de energia. </li>
+                    <li><b>Consumo</b> – Esse atributo pode ser omitido se o escudo for físico. Porem no caso de escudos de energia, você deve colocar qual o consumo de pontos de energia, por rodada.</li>
+                    <li><b>Resistência</b> – Informe qual a resistência desse escudo. Ela funciona da mesma forma que escudos convencionais. </li>
+                    <li><b>Descrição</b> – Coloque qualquer descrição relevante desse equipamento aqui. Se o mesmo se regenera, como ocorre, e o tempo que leva em rodadas para isso. Como é ativado (<i>no caso de escudos de energia</i>). E qualquer outra informação relevante.</li>
+                    <li><b>Mapa</b> – Esses escudos podem ter salas para reparos ou até mesmo para a fonte do equipamento. Então faça um mapa do mesmo.</li>
+                </ul>
+
+                <h5>
+                    SALTO
+                </h5>
+                <p>
+                    São componentes cujo a função é viajar rapidamente para outros setores. Normalmente essa tecnologia tem uma cabine própria, ou uma pequena área na cabine de controle, encontrado apenas em naves médias, capitais, colossais e raramente em naves pequenas, esses tipos de equipamento são controlados dentro da cabine de controle.
+                </p>
+                <p>
+                    Normalmente um veículo tem apenas um sistema de salto. Isso quando tem, pois temos muitas naves que não carregam o mesmo, pois uma nave pode ser transportada apenas para o transporte de carga, deixando a parte do salto para ser feita por estações de salto setorial.
+                </p>
+                <p><b>Seus atributos são:</b></p>
+                <ul>
+                    <li><b>Nome</b> – Qual o nome desse sistema de salto.</li>
+                    <li><b>Setores</b> – Quantos setores máximos ela faz em um único salto.</li>
+                    <li><b>Turno</b> – Quantos turnos ela leva para completar um salto quando ativado.</li>
+                    <li><b>Carga</b> – Quantos turnos leva para ativar um salto.</li>
+                    <li><b>Resfriamento</b> – Alguns sistemas podem necessitar de um resfriamento após um salto. Informe os turnos aqui. </li>
+                    <li><b>Consumo</b> – Quantos pontos de energia ela gasta por salto.</li>
+                    <li><b>Descrição</b> – De uma descrição de como é ativado esse salto (normalmente pela cabine de controle em geral) e outras características relevantes. </li>
+                    <li><b>Mapa</b> – Esses sistemas podem ter salas próprias para comportar seu sistema. Caso tenha, faça um mapa representativo do mesmo.</li>
+                </ul>
+
+                <h5>PILOTO AUTOMÁTICO:</h5>
+                <p>
+                    Seu veículo pode ter um sistema de piloto automático. Eles podem ser complexos o suficiente para pilotar o veículo em um trajeto programado, ou tão simples que consegue apenas fazer o veículo ir em linha reta.
+                </p>
+                <p>
+                    Esses sistemas muitas vezes podem estar diretamente ligadas com a inteligência artificial do veículo.
+                </p>
+                <p><b>Seus atributos são:</b></p>
+                <ul>
+                    <li>
+                        <b>Descrição</b> – Apenas descreva a complexidade desse sistema. Como ele é ativado, e por onde ele é ativado (normalmente na cabine de controle).
+                    </li>
+                </ul>
+
+                <h5>INTELIGÊNCIA ARTIFICIAL:</h5>
+                <p>
+                    A inteligência artificial de um veículo pode ser responsável por muitas coisas. Desde cuidar de todo gerenciamento dos equipamentos do veículo, até a interação social com os tripulantes.
+                </p>
+                <p>
+                    Um veículo pode ter mais de um sistema de inteligência artificial. E pode conter todo um módulo (<i>sala</i>) para guardar armazenar todo o poder computacional da mesma.
+                </p>
+                <ul>
+                    <li><b>Nome</b> – Qual o nome dessa inteligência artificial.</li>
+                    <li><b>Tipo</b> – Caso seja um objeto físico que se move pelo veículo, coloque físico. Agora, caso seja um software que consegue se conectar as várias redes da nave e se comunicar com os tripulantes pelas entras I/O (<i>entradas e saídas de dados</i>) do veículo, coloque imaterial.</li>
+                    <li><b>Funções</b> – Descreva as funções que essa IA desempenha no veículo.</li>
+                    <li><b>Descrição</b> – De uma descrição dessa IA, por exemplo. Se for do tipo físico, como é essa inteligência. O qual parecida com os seres vivos ela é. E todas as informações relevantes da mesma.</li>
+                    <li><b>Mapa</b> – Alguns sistemas de IA sofisticados podem ser pequenos o suficiente para caberem em um pequeno CHIP. Porem pode ser tão poderosas a ponto de terem grandes estações dentro do veículo.</li>
+                </ul>
+
+                <h5>COMPONENTES EXTRAS:</h5>
+                <p>
+                    Você também poderá criar seus próprios componentes, caso tenha uma ideia genial para implementar no veículo que esteja criando. Componentes extras dá ao veículo, habilidades extras.
+                </p>
+                <p>
+                    Crie os atributos de seu componente, sempre começando pelo <b>Nome</b>, ao qual pode ter relação direta com o componente. Caso ele consuma energia, informe o atributo de <b>consumo</b>. E não se esqueça do atributo de <b>Descrição</b>, que é universal para tudo.
+                </p>
+
+            </div>
+
+           <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

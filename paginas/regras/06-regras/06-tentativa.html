@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>TESTE DE TENTATIVA</h2>
+                
+
+                <p>O teste de tentativa ocorre quando o jogador tenta realizar uma ação para a qual não possui a Perícia apropriada. Nessa situação, o teste é conduzido utilizando o <b>atributo</b> relevante para a ação, acrescido de <b>2D10</b>, e a <b>Nível de Dificuldade</b> (ND) é estabelecida como <b>10</b>.</p>
+
+                <p>Contudo, pode ocorrer que o jogador possua a perícia em questão, porém, seu nível de habilidade nela seja insuficiente para a tarefa que está tentando realizar. Nesse cenário, você tem a opção de aumentar a Dificuldade para um valor acima do <b>padrão (7)</b>.</p>
+
+                <p>Essa abordagem permite que os jogadores enfrentem desafios mesmo quando não possuem a perícia necessária, incentivando-os a experimentar ações fora de sua zona de conforto. Por outro lado, ao permitir ajustes na Dificuldade com base no nível de perícia, você mantém um equilíbrio entre a complexidade da tarefa e a expertise do personagem, criando oportunidades para superar obstáculos de diferentes maneiras. Isso acrescenta uma camada adicional de estratégia e decisão aos testes, aumentando a profundidade e a diversão do jogo.</p>
+
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>NAVES</h2>
+
+                <p>
+                    O Sistema Venturo se baseia principalmente no tema sci-fi, sendo assim, o controle de embarcações
+                    espaciais é obrigatório. Naves tem de ser controladas assim como qualquer outro veículo de
+                    transporte. Porem elas têm características muito diferentes de veículos normais como a
+                    <i>“velocidade de navegação”</i>. Já outros são iguais, como a Vitalidade do Veículo.
+                </p>
+                <p>
+                    Jogar com naves em uma batalha é quase igual a jogar com personagens. As regras básicas podem ser
+                    aplicadas da mesma forma. O que muda são as formas de calcular a esquiva e o ataque.
+                </p>
+                <p>Ao todo, temos quatro categorias de naves, e algumas ainda tem subcategorias:</p>
+
+                <h5>NAVES PEQUENAS:</h5>
+                <p>
+                    Naves pequenas são veículos de 1 a 2 lugares criadas para realizar a defesa ou ataque de uma certa
+                    área. Seu tamanho varia dos 2 a 10 metros de comprimento.
+                </p>
+                <p>
+                    Por serem equipamentos mais robustos eles fornecem capacidade de operação de 3 a 4 dias no máximo, a
+                    partir disso seu estoque de ar ou energia pode zerar, ou seja, não são naves com capacidade de
+                    viagens muito longas sem um componente de salto.
+                </p>
+                <p>
+                    Suas subcategorias são:
+                </p>
+                <ul>
+                    <li>
+                        <b>Corveta</b> – É uma pequena nave com espaço para apenas um tripulante, e um poder de fogo
+                        reduzido. Além de seu suporte a vida ser bem ínfimo;
+                    </li>
+                    <li>
+                        <b>Fragata</b> – Também é uma pequena nave, porém um pouco maior que as corvetas. Elas contem
+                        mais poder de fogo podendo carregar pequenos torrents, um espaço para no máximo 6 tripulantes e
+                        um suporte a vida um pouco maior;
+                    </li>
+                    <li>
+                        <b>Operária</b> – É uma nave com funções específicas dentro de uma corporação. Normalmente
+                        usadas para descarregar contêiner e outros afins.
+                    </li>
+                </ul>
+
+                <h5>NAVES MÉDIAS:</h5>
+                <p>
+                    As naves médias podem ser usadas para ataques mesmo não tendo a agilidade de tal. Mas sua principal
+                    função é o transporte de seres ou mercadorias pelo espaço afora. Elas já podem ser usadas para
+                    exploração, diferente das de ataque, e seu tamanho varia dos 10 a 100 metros de comprimento.
+                </p>
+                <ul>
+                    <li>
+                        <b>Minerador</b> – São naves que exercem atividades de mineração, seja em asteroides, planetas e
+                        entre outros. Sua tripulação é mais reduzida, entre 1 a 4 tripulantes;
+                    </li>
+                    <li>
+                        <b>Transporte</b> – São naves com o único objetivo de transportar objetos ou tripulantes. Sendo
+                        assim seu poder de carga é estendido, podendo carregar uma carga de 50 a 100 tripulantes em uma
+                        única nave, ou toneladas de recursos.
+                    </li>
+                    <li>
+                        <b>Emergencial</b> – Essas são naves encontradas em estações, naves capitais e colossais. Sua
+                        capacidade de tripulação é bem maior, chegando a cerca de 200 tripulantes, dependendo da nave.
+                    </li>
+                    <li>
+                        <b>Cruzador</b> – é uma nave extremamente poderosa. Pode servir para diversos afins já que a
+                        mesma carrega um autopoderio bélico e tripulação mais elevada.
+                    </li>
+                </ul>
+
+                <h5>CAPITAIS:</h5>
+                <p>
+                    Capitais são naves muito grandes tendo um tamanho de 500 metros a 1 quilômetro. Geralmente usadas
+                    para transporte de uma grande quantidade de cargas. São muito usadas em guerras para transportar os
+                    combatentes e as naves pequenas, podendo ter até mesmo grande poder de fogo.
+                </p>
+                <ul>
+                    <li>
+                        <b>Cargueiro</b> – São uma nave com capacidade de carga de materiais muito elevada, já que são
+                        criados para essa função. Sua tripulação pode ser grande também, mas não tão alta, tendo cerca
+                        de 20 a 50 membros em um único cargueiro;
+                    </li>
+                    <li>
+                        <b>Exploração</b> – É um tipo de capital enorme com um grande foco na exploração espacial. Ela
+                        contem poder de fogo mais reduzido, comparado aos encouraçados, porém tem mais funções
+                        exploratórias e uma alta capacidade de tripulação;
+                    </li>
+                    <li>
+                        <b>Encouraçado</b> – É uma nave capital com foco na destruição. Ela carrega todos os tipos de
+                        armas que podemos ver em uma nave. Sua tripulação também é estendida assim como as de
+                        exploração.
+                    </li>
+                </ul>
+
+                <h5>COLOSSAIS:</h5>
+                <p>
+                    Naves colocais são criadas por raças com nível tecnológico bastante elevado. São naves extremamente
+                    grandes chegando a ter 10 quilômetros ou mais. São projetadas para que a raça possa viajar pelo
+                    espaço sem a necessidade de um planeta. Seus tripulantes não necessitam sair da nave para nada pois
+                    a mesma fornece tudo que um planeta pode fornecer. E ela tem uma capacidade de carga muito superior
+                    à dos capitais.
+                </p>
+
+                <h3>CONTROLE:</h3>
+                <p>
+                    Para se controlar essas naves precisamos ter duas perícias feitas somente para elas, essas são:
+                    <b>“Pilotar 1”</b> e <b>“Pilotar 2”</b>, Cada uma com suas categorias de veículo. Sempre o teste
+                    será <i>Pilotar 1 ou 2 + Destreza ND 7</i>.
+                </p>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> O ND pode mudar de acordo com a dificuldade do cenário.</i>
+                </div>
+
+                <p>
+                    Algumas colossais e capitais não são controladas diretamente por você. Porem você é o capitão e dá a
+                    ordem para seus pilotos. Quando isso ocorre, a perícia utilizada nos testes de controle desse
+                    veículo será <b>Liderança</b>.
+                </p>
+
+                <h3>ATAQUE, ESQUIVA E DEFESA:</h3>
+                <p>
+                    Naves <b>colossais</b> e <b>capitais</b> não tem esquiva. Elas dependem somente de sua defesa. As
+                    únicas naves de esquiva são as <b>pequenas</b> e <b>médias</b>. E seu teste é realizado usando
+                    <b>Esquiva + Destreza ND 7</b>.
+                </p>
+
+                <p>
+                    Tanto a <b>esquiva</b> quanto o <b>ataque</b> funciona de forma diferente quando comparado ao
+                    combate tradicional (<i>entre personagens</i>). Em vez de somarmos os acertos com o dano da arma,
+                    devemos multiplicar. Sendo assim, antes de calcular qualquer dano realizado pela nave, você vai
+                    pegar o valor da esquiva e subtrair pela quantidade de acertos do dano. Só depois disso
+                    multiplicamos os acertos restantes com o dano da arma.
+                </p>
+                <p>
+                    Por exemplo: Imagine que o dano da arma da nave seja “15”. Assim seu teste resultou em um PD com “6”
+                    acertos. Porem a nave inimiga está esquivando com “4”. Então pegamos os acertos “6” e subtraímos com
+                    a esquiva “4”, resultando em “2”. Agora pegamos esse resto e multiplicamos pelo dano da arma (2 x
+                    15). E nosso dano total foi de 30.
+                </p>
+                <p>
+                    Naves que não tem esquiva dependem somente de seus escudos e vitalidade. A vitalidade de uma
+                    colossal ou capital é dado pela resistência de sua carcaça. E ela funciona da mesma forma que os
+                    escudos, absorve o dano total, subtraindo então sua resistência pelo dano recebido.
+                </p>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> As naves pequenas e médias também tem a resistência da sua nave subtraída pelo dano
+                        recebido, quando seus escudos não dão mais conta do trabalho.</i>
+                </div>
+                <p>
+                    O ataque sempre será feito usando algum tipo de armamento atribuído a nave. Os testes e explicações
+                    dessas armas estão mais a baixo na categoria de armas. Você deve jogar a iniciativa nos combates de
+                    nave como se estivesse fazendo um combate normal.
+                </p>
+                <p>
+                    E ainda existe uma característica que diferencia o ataque da nave dos ataques normais. Uma nave pode
+                    ter mais de uma arma em sua direção de ataque, assim cada arma fará um ataque no mesmo turno daquela
+                    nave. Por exemplo: Se eu tenho uma nave de transporte com dois canhões a sua frente, em um único
+                    ataque, farei duas jogadas. Um para cada canhão, isto é, o dano do ataque será o dano das duas
+                    armas.
+                </p>
+                <p>
+                    Isso ocorre por que os canhões da frente de uma nave sempre atacam ao mesmo tempo. E quando
+                    estivermos tratando de capitais ou naves maiores. Suas armas são controladas por pessoas diferentes.
+                    Isso quando armas não estão sendo controladas por um PP, pois ai o ataque da nave vai depender do
+                    jogador disposto naquela arma. Sendo assim a quantidade de ataque por turno das naves vai depender
+                    da quantidade de armas que ela tem em sua direção de ataque, que não esteja sendo controlada por um
+                    PP.
+                </p>
+
+                <h3>VELOCIDADE DE NAVEGAÇÃO:</h3>
+                <p>
+                    Velocidade de navegação é um limite físico criado no sistema para as naves. Mais para frente você
+                    verá que o universo é dividido em quadrantes e setores, e é nesses quadrantes que você vai usar essa
+                    velocidade de navegação.
+                </p>
+                <p>
+                    A velocidade de navegação dita quantas rodadas leva para uma nave percorrer 50 anos-luz. Essa
+                    velocidade é separada em 5 níveis que é melhor abordado no capítulo de universo do sistema em
+                    <i>Sistema Estelar</i>. Quando uma nave ultrapassa esse nível, a mesma começa a levar <b>100 de
+                        dano</b> por turno.
+                </p>
+
+                <h3>VITALIDADES DO VEÍCULO:</h3>
+                <p>
+                    Todas as naves, sem exceção contém três atributos relacionados a sua vitalidade. Esses atributos são
+                    consumidos na seguinte ordem quando a nave recebe alguma avaria, primeiro vem o <b>Escudo</b>
+                    (<i>que segue as regras de escudo</i>), depois temos a <b>Blindagem</b> e por fim a
+                    <b>Estrutura</b>.
+                </p>
+                <p>
+                    O escudo são todos os sistemas de proteção de uma nave, gerando por algum modulo, que por sua vez,
+                    gera algum tipo de campo de proteção. A blindagem são elementos na carcaça da nave que geram essa
+                    proteção extra. E a estrutura da nave, como o próprio nome diz, é a parte interna. Quando essa parte
+                    começa a ser destruída, você pode tera perca de módulos, salas, corredores e por ai vai.
+                </p>
+                <p>
+                    Para finalizar, os atributos das naves são:
+                </p>
+                <b>
+                    <ul>
+                        <li>
+                            Escudos;
+                            <ul>
+                                <li>Resistência;</li>
+                                <li>Vigor</li>
+                            </ul>
+                        </li>
+                        <li>Blindagem;</li>
+                        <li>Estrutura;</li>
+                    </ul>
+                </b>
+
+                <h3>ENERGIA:</h3>
+                <p>
+                    O atributo Energia de um veículo funciona quase que da mesma forma que o CLOL, ou seja, usamos esses
+                    pontos para ativar os componentes de uma nave. Esse atributo é dividido em duas partes principais,
+                    essas são:
+                </p>
+                <p>
+                    <b>Pontos</b> – Quantidade de energia de sua nave para ser utilizado.
+                </p>
+                <p>
+                    <b>Gerador</b> – Quantos pontos de energia ela recupera por turno.
+                </p>
+                <p>
+                    Na ficha técnica de cada nave você ainda terá um atributo chamado <b>consumo</b>, que vai nos
+                    informar quantos pontos de energia os principais componentes de um veículo pode consumir.
+                </p>
+                <p>
+                    <b>Escudo</b> – Consumo de energia da nave para manter o escudo por turno;
+                </p>
+                <p>
+                    <b>Canhão primário</b> – Consumo de energia para disparar com os canhões primários;
+                </p>
+                <p>
+                    <b>Torrents</b> – Consumo de energia para disparar com Torrents;
+                </p>
+                <p>
+                    <b>Misseis</b> – Consumo de energia para manipular os mísseis;
+                </p>
+                <p>
+                    <b>Atômicas e EMP</b> – Consumo de energia para manipular as armas atômicas e EMP;
+                </p>
+                <p>
+                    <b>Espaciais</b> – Consumo de energia para manipular as armas espaciais.
+                </p>
+                <p>
+                    Cada nave pode usar mais ou menos energia para manipular a mesma arma. Quem dita esses valores de
+                    energia será esse atributo de consumo.
+                </p>
+                <h3>CAPACIDADE DE CARGA:</h3>
+                <p>
+                    Um veículo pode ter diversos tipos de cargas, as naves principalmente. Cada veículo terá os seus grupos de capacidade de carga, como por exemplo, as naves que podem ter a capacidade de carga do hangar. Então os atributos relacionados a capacidade de carga são:
+                </p>
+
+                <p>
+                    <b>Tripulantes</b> – Informa quantas pessoas esse veículo pode transportar.
+                </p>
+                <p>
+                    <b>Hangar</b> – Mostra a quantidade de naves um capital pode comportar.
+                </p>
+                <p>
+                    <b>Dispensa de minérios</b> – informa a capacidade máxima em metros cúbicos que temos para comportar minérios.
+                </p>
+                <p>
+                    <b>Carga</b> – Informa a capacidade máxima em metros cúbicos que temos para transportar qualquer tipo de item.
+                </p>
+                
+                <p>
+                    Nem todos os veículos terão os mesmos atributos de carga, como por exemplo, as naves pequenas, que não tem um hangar.
+                </p>
+
+                <h3>MOBILIDADE:</h3>
+                <p>
+                    Esse é um atributo encontrado apenas em naves. Ele dita como você conduz a nave, ou seja, qual a liberdade de deslocamento da nave em um espaço tridimensional. Naves mais avançadas permitem que você possam controlá-las de diversas maneiras, como por exemplo, voar de lado como se fosse um carangueiro, subir e descer sem precisar rotacionar a nave e por ai vai.
+                </p>
+
+                <p>
+                    Ou seja, para que uma aeronave possa se deslocar pelo espaço, ela precisa primeiro, se <b>deslocar</b> para frente ou para trás, e ela precisa <b>rotacionar-se</b> para conseguir se direcionar por um caminho.
+                </p>
+                <p>
+                    A mobilidade trabalha com esses dois atributos <i>(deslocamento e rotação)</i> gerando três tipos de valores, esses são:
+                </p>
+
+                <p>
+                    <b>Mobilidade Avançada</b> – Quando a nave tem total liberdade sobre o eixo X,Y e Z tanto para o deslocamento, quanto para rotação.
+                </p>
+                <p>
+                    <b>Mobilidade Padrão</b> – Aqui a nave só pode se deslocar para frente e para trás, para cima e para baixo. Mas sua rotação é livre em qualquer eixo.
+                </p>
+                <p>
+                    <b>Mobilidade Simples</b> – Já aqui, a aeronave só pode se deslocar para frente e para trás. Porem sua rotação é libre para qualquer eixo.
+                </p>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

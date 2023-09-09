@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>ARMADURAS</h2>
+                
+                <p>
+                    Algumas armaduras têm suas próprias regras de uso. Porem todas as armaduras contém algumas características em comum, essas são: Durabilidade, Vigor da Armadura <b>“VA”</b> e o ponto crítico da armadura <b>“PcA”</b> (<i>Para armaduras mais tecnológicas</i>).
+                </p>
+
+                <p>
+                    Uma armadura funciona da seguinte forma. Você tem sua durabilidade. Que representa a vitalidade dessa armadura, e quando chega a zero, essa armadura se torna inútil.
+                </p>
+
+                <p>
+                    Sua armadura te protege de uma quantia fixa de dano automático que é descrito no VA. E a mesma recebe esse dano, porém não subtraímos o valor máximo de dano pela durabilidade, e sim por um teste que abordaremos mais a frente.
+                </p>
+                <p>
+                    Tanto mestre quanto jogadores, devem ficar cientes que nem todas as armaduras criadas no universo, serão compatíveis com o PP do jogador. A raça desse PP dita as armaduras que eles podem usar. E nos atributos de cada armadura, teremos as suas raças compatíveis (<i>normalmente a raça originária da armadura</i>).
+                </p>
+                <p>
+                    Vale lembrar que armaduras e escudos seguram uma quantidade fixa de dano, e não todo o dano. Então mesmo depois de subtrair do dano, haver sobras. Essa sobra será tomada pelo seu personagem, e subtraída pela vitalidade do mesmo.
+                </p>
+
+                <h3>PONTO CRÍTICO DA ARMADURA (PCA)</h3>
+                <p>
+                    Toda as armaduras quando perdem uma certa quantidade de durabilidade começam a dar defeitos. Esses defeitos podem ser descritos pelo mestre no momento que a armadura atinge seu <b>PcA</b>. 
+                </p>
+                <p>
+                    Quando uma armadura atinge seu PcA. Testes de suas funções tem o ND maior, variando de +2 a +3. Já em funções que não necessitem de um teste, deve-se jogado um D2 para saber se a função da armadura funcionou ou não. Isso quando atingi o PcA dessa armadura.
+                </p>
+                <p>
+                    Armaduras menos modernas podem ter sua proteção comprometida quando atingem seu PcA. Para saber quanto de dano será segurado o jogador deve fazer um teste jogando 1D10, onde se o seu resultado for menor ou igual a “4” <i>(não será segurado nada)</i>, entre “4” e “7” <i>(segura metade do VA)</i>, maior que “7” <b>(segura todo o dano)</b>.
+                </p>
+                <p>
+                    O PcA de uma armadura é 5% de sua durabilidade. Por exemplo: digamos que sua armadura tem uma durabilidade de 1500 pontos, o PcA dela será:
+                </p>
+                <p><i>PcA = ((5*1500)/100)</i></p>
+                
+                <p>
+                    O valor dessa percentagem é de 75 pontos, sendo assim o ponto crítico de sua armadura é aos 75 pontos. Então quando você perder durabilidade e chegar em 75 pontos, essas regras acima podem ser usados.
+                </p>
+                <h3>PERCA DE DURABILIDADE:</h3>
+                <p>
+                    A durabilidade de sua armadura não é subtraída pelo dano como ocorre nos escudos. Ela tem um teste para cada ação que o jogador receba um dano, seja ele por ataque ou acontecimentos narrativos <i>(como cair da escada)</i>.
+                </p>
+                <p>
+                    Depois de receber o dano desse evento, e absorvê-lo. Você deve jogar um teste de Força+2D10 com um ND 7. Onde dependendo de seu resultado, você subtrairá um valor de sua durabilidade. A tabela de dano está a baixo:
+                </p>
+
+                <h6>TABELA DE PERCA DE DURABILIDADE:</h6>
+                <table class="table table-hover">
+                    <tbody>
+                      <tr>
+                        <td><b>TIPO</b></td>
+                        <td>Acerto Critico</td>
+                        <td>Acerto</td>
+                        <td>Erro</td>
+                        <td>Erro Critico</td>
+                      </tr>
+                      <tr>
+                        <td><b>DANO</b></td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>5</td>
+                        <td>10</td>
+                      </tr>
+                     
+                    </tbody>
+                </table>
+
+                <p>
+                    Esse teste é de efeito único. Então mesmo se tiver dois acertos, seu dano será apenas “2”. Pois ele dita o seguinte: <i>Se você passar no teste, você recebe dois de dano, caso contrário, você recebe 5</i>. E ainda temos os acertos críticos e erros críticos.
+                </p>
+                <p>
+                    O mestre deve ficar alerta com os atributos das armaduras de cada jogador. Pois ele pode usar isso ao seu favor em uma sessão. Procure ter isso sempre anotado no escudo do mestre.
+                </p>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Isso vale para danos padrões de armas. Quando o personagem recebe um dano colossal, essa regra se torna ineficiente, e o mestre pode dobrar ou até mesmo subtrair toda a durabilidade..</i>
+                </div>
+                <p>
+                    As armaduras mais tecnológicas têm atributos a mais do que outras armaduras. Esses atributos são:
+                </p>
+                <p>
+                    <b>Consumo por dia narrativo (CdN)</b> – Esse atributo da armadura informa quantos pontos de energia a mesma consome em um único dia dentro do universo de jogo.
+                </p>
+                <p>
+                    <b>Alcance de Conexão (AC)</b> – Esse atributo é responsável por informar qual o raio em quilômetro da conexão dessa armadura. 
+                </p>
+                <p>
+                    <b>Bateria</b> – Esse atributo informa qual o nome da bateria que essa armadura utiliza. Esse atributo tem como notação padrão o <i>“nome da bateria – Quantidade de pontos dessa bateria”</i>, por exemplo: Bateria de plutônio –800pt.
+                </p>
+
+                
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

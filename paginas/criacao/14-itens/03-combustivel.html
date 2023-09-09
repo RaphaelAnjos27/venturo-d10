@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Criação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/criacao.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criacao</h1>
+        <p>Agora que você conhece o Universo e as Regras. Está na hora de aprender a criar os elementos desse universo!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-criacao></venturo-sumario-criacao>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>COMBUSTÍVEL</h2>
+                <p>
+                    O item Combustível se referem a materiais usados em alguns veículos, que não usem fontes de energia para funcionar. Ele pode ser alimentos para animais, ou até mesmos combustíveis fósseis como a gasolina.
+                </p>
+                <p>
+                    Normalmente esse item é criado, acompanhado do veículo que irá usá-lo.
+                </p>
+                <p>
+                    O combustível, é um item fácil de se criar. Não temos muito atributos para ele não. Seus atributos são:
+                </p>
+
+                <ul>
+                    <li><b>Nome</b> – Crie um nome para esse tipo de combustível.</li>
+                    <li><b>Ilustração</b> – Faça uma ilustração desse combustível. Pode parecer estranho, mas não temos apenas liquido como combustível. Podemos ter animais de montaria que se alimentem de um item em especial. Que aqui é tratado como combustível.</li>
+                    <li><b>Preço</b> – Informe o preço desse item, seja ele por unidade, litro ou quilo. E esse valor pode ser passado em Aurons, ou na moeda da raça.</li>
+                    <li><b>Criadores</b> – Aqui você só escreve a raça/corporações responsáveis por sua criação.</li>
+                    <li><b>Aquisição</b> – Informe aonde e como você consegue adquirir este item.</li>
+                    <li><b>Descrição</b> – Faça uma descrição básica de como se usa esse item. Se é tóxico ou não. Ou qualquer outra coisa importante, que ache relevante declarar nessa parte.</li>
+                </ul>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

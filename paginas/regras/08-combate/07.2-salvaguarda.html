@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>TESTE DE SALVAGUARDA</h2>
+                
+                <p>
+                    A <b>Salvaguarda</b> é uma mecânica que não deve ser usada em combates no qual a iniciativa foi declarada. Ela serve como uma espécie de reação do personagem a um evento que acontecerá com ele naquele momento. Por exemplo, um controle mental do nada, ou a ativação de uma armadilha. O Mestre do Jogo exigirá que você faça uma salva guarda se você estiver enfrentando um efeito prejudicial que pode ser resistido com uma salva guarda.
+                </p>
+                <p>
+                    Quem pede um teste de Salvaguarda sempre será o mestre no momento que algo for ocorrer contra o personagem ou o grupo, podendo atribuir um teste de <b>Atributo+Perícia ND</b> estipulada pelo mestre de acordo com a complexidade do evento. 
+                </p>
+                <p>
+                    Vamos supor o seguinte cenário:
+                </p>
+
+                <div class="alert alert-secondary">
+                    <p><b>Mestre</b> – Vocês adentram na tumba, ao acenderem a tocha, se deparam com uma névoa densa e rasteira. Ao fundo conseguem enxergar um altar, que reluz a tocha erguida, e no corredor, imponentes estátuas segurando espadas, machados e escudos estão erguidas.</p>
+                    <p><b>Jogador</b> – Vou correr até o altar!</p>
+                    <p><b>Mestre</b> – Ao correr até o altar, você sente o chão se mover sobre a pressão de seu pisar. Jogue uma salvaguarda de <b>Destreza + Esquisa ND10</b>…</p>
+                </div>
+                <p>
+                    Nesse cenário, o jogador ativou uma armadilha porque realizou uma ação sem pensar. Caso ele falhe no teste a armadilha soltará um machado sobre a cabeça dele causando 150 de dano. Caso ele passe, ele consegue se esquivar, dando a ele a chance de fazer uma ação, no qual, se não for pensada, poderá colocá-lo em outro teste de salvaguarda.
+                </p>
+                <p>
+                    Com a Salvaguarda o mestre pode livrar os jogadores de ataques físicos, armadilhas, eventos narrativos e até mesmo magias que possam vir a sofrer na sessão. Em combates, as salvaguardas são menos relevantes do que em outras situações, porque os jogadores já têm outras maneiras de se defender de ataques.
+                </p>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

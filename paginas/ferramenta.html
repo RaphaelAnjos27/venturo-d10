@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferramentas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/ferramentas.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Ferramentas e Documentos</h1>
+        <p>Aqui você encontrará todos os documentos relacionados ao sistema venturo, e algumas ferramentas para auxiliar
+            nas campanhas</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3" style="z-index: 1;">
+                <div class="card sticky-top">
+                    <div class="card-header">
+                        <h5>Sumário</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="nav nav-pills flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#introducao">Ferramentas e Documentos Complementares</a>
+                                
+                                <a class="nav-link" href="#documentos">Documentos</a>
+                                <ul style="list-style: none;">
+                                    <li>
+                                        <a class="nav-link" href="#fichas">Fichas</a>
+                                        <a class="nav-link" href="#escudo">Escudo do Mestre</a>
+                                        <a class="nav-link" href="#linha">Linha do Tempo</a>
+                                        <a class="nav-link" href="#documentos">Documentos do Universo</a>
+                                    </li>
+                                </ul>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div><br>
+            </div>
+            
+            <div class="col-sm-7">
+                <h1 id="introducao">Ferramentas e Documentos Complementares</h1>
+
+                <p>
+                    Todos os sistemas de RPG possuem, além de suas regras, documentos complementares que são utilizados
+                    durante a campanha, tais como fichas de personagem. Além disso, existem vários outros documentos,
+                    como tabelas de encontros e escudos do mestre, entre outros. Com o avanço do sistema, foram criados
+                    diversos documentos adicionais com o objetivo de auxiliar o mestre durante a campanha e o
+                    desenvolvimento do cenário.
+                </p>
+                <p>
+                    Além desses documentos, dedicarei tempo ao desenvolvimento de ferramentas para o site que poderão
+                    auxiliar em diversos aspectos do sistema, como a rolagem de dados e a geração aleatória de
+                    elementos.
+                </p>
+
+                <h2 id="documentos">Documentos:</h2>
+
+                <p>
+                    Agora vejamos uma lista de todos os documentos que foram desenvolvidos ao longo da trajetória de
+                    desenvolvimento desse sistema:
+                </p>
+
+                <div class="row justify-content-center">
+                    <div class="col-sm-6">
+                        <blockquote class="blockquote">
+                            <h4 id="fichas">FICHAS</h4>
+                            <p>No link a baixo você será redirecionado para todas as fichas usadas no sistema venturo para criação de personagem. Além das fichas padrões, será encontrado também as fichas auxiliares.</p>
+                            <footer class="blockquote-footer"><a href="/paginas/documentos/fichas_personagem.html">Acesse...</a></footer>
+                        </blockquote>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <blockquote class="blockquote">
+                            <h4 id="escudo">ESCUDO DO MESTRE</h4>
+                            <p>O Escudo do mestre é um documento pdf que pode ser usado para facilitar a pesquisa de alguns atributos do Sistema Venturo. Destaquei nesse documento as principais tabelas de regras do sistema.</p>
+                            <footer class="blockquote-footer"><a href="/paginas/documentos/escudo_mestre.html">Acesse...</a></footer>
+                        </blockquote>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <blockquote class="blockquote">
+                            <h4 id="linha">LINHA DO TEMPO</h4>
+                            <p>	Esses documentos podem ser usados para você elaborar a linha do tempo de seu mundo de acordo com as regras de linha do tempo do Sistema Venturo.</p>
+                            <footer class="blockquote-footer"><a href="/paginas/documentos/linha_tempo.html">Acesse...</a></footer>
+                        </blockquote>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <blockquote class="blockquote">
+                            <h4 id="documentos">DOCUMENTOS DO UNIVERSO</h4>
+                            <p>	Como o sistema venturo foca em um método de criação padronizado, foram desenvolvidos alguns documentos modelos que você pode usar para elaborar seus elementos do universo.</p>
+                            <footer class="blockquote-footer"><a href="/paginas/documentos/documentos_universo.html">Acesse...</a></footer>
+                        </blockquote>
+                    </div>
+                             
+                                       
+                </div>
+
+                
+
+            </div>
+
+
+            
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

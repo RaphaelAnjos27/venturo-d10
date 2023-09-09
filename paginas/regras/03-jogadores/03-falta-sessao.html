@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>FALTA NA SESSÃO</h2>
+                <p>
+                    Temos muitos jogadores que por conta de compromissos pessoais ou o péssimo gerenciamento dos dias de narrativa, acabam faltando a sessão. Essas faltas podem gerar grandes problemas para o jogador caso se torne frequente. O mestre deve ser justo nessa parte, sendo assim se sua falta ocorreu por conta do mal gerenciamento do dia de narrativa ele pode apenas descartar aquele PP até a próxima sessão, ou se estiverem em uma missão, o mestre pode tornar aquele PP um PnJ temporário.
+                </p>
+                <p>
+                    Agora quando a justificativa de não comparecimento do jogador não valer a sua falta, o mestre pode usar o PP como gancho inicial da sessão para alguma coisa, por exemplo, um sequestro. E o jogador tem que ter em mente que os acontecimentos narrativos podem afetar seu PP e até mesmo levá-lo a óbito.
+                </p>
+                <p>
+                    Outra abordagem que o mestre pode fazer caso um ou mais jogadores faltem a sessão, é criar uma sessão "<b>Day Off</b>" (<i>dia de folga</i>), onde o mestre pode direcionar a sessão desse dia para o laser dos jogadores como campeonatos de bebida na taverna, jogatinas no cassino ou rotinas de treino para subir os atributos. Qualquer coisa desfoque da missão principal e que não envolva uma missão muito arriscada.
+                </p>
+
+            </div>
+
+            
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

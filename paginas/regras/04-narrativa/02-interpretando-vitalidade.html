@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>
+            </div>
+
+            <div class="col-sm-7">
+                <h2>INTERPRETANDO A VITALIDADE</h2>
+                <p>
+                    Veremos agora como criar narrativas onde a interpretação da vitalidade de um personagem ou inimigo
+                    em um combate seja mais realista. Para os Personagens, dentro da ficha temos estabelecido um certo
+                    comportamento com relação a quantidade de dano que o mesmo leva, isto é, quanto mais dano o
+                    personagem toma, certos atributos podem surgir nesse personagem.
+                </p>
+                <p>
+                    Se um personagem levar aproximadamente 10 de dano, por exemplo, ele acaba recebendo um ferimento
+                    médio e uma penalidade de -2 em qualquer teste que fizer. Isso pode ser visto na criação de
+                    personagem. Agora imagine o seguinte cenário: O personagem leva um tiro, e por algum milagre leva
+                    apenas <b>10 de dano</b>. Como é possível um personagem levar um tiro a queima roupa e receber
+                    apenas isso de dano?
+                </p>
+                <p>
+                    Em meio aos testes de dano personagens podem segurar muito dano através de seu atributo de
+                    <i>Resistência, Armaduras ou Escudos</i>. São essas características que abaixam o dano causado a um
+                    personagem. Porem a explicação do mesmo pode ser narrativa.
+                </p>
+                <p>
+                    Imagine o seguinte: Em uma ação o personagem dispara contra uma criatura, e esse disparo vara o
+                    peito da criatura. Essa ação seria algo conhecido como HtK (<i>Hit Kill</i>), ou seja, uma ação que
+                    mataria a criatura em um único ataque. E traduzindo isso para o sistema, significa que a ação
+                    deveria retirar todos os pontos de vida do alvo. Porem nosso PP não conseguiu retirar nem metade da
+                    vida da criatura.
+                </p>
+                <p>
+                    Nesses casos usamos a narrativa para interpretar. Então o personagem descreve que a ação dele é para
+                    varar a criatura em um único disparo. Caso os acertos dele permitam essa proeza, ou seja, deem o
+                    dano necessário para varar a criatura (<i>você vai intender melhor isso a baixo</i>), você pode
+                    deixar a ação descrita acontecer. Agora caso o dano não chegue ao valor necessário o mestre pode
+                    narrar o motivo desse dano ter sido causado contra a criatura, como por exemplo:
+                </p>
+                <p style="text-align: center;">
+                    “Ao disparar contra a criatura, seu tiro pegou de raspão na barriga dela. Após isso acontecer a
+                    mesma caiu para trás sentindo muita dor. Quando caiu bateu suas costas em uma pedra se machucando
+                    mais ainda, recebendo assim o dano do teste”
+                </p>
+                <p>
+                    Então para danos de pôr exemplo, decapitar a cabeça (<i>que seria um HtK</i>), o jogador deve
+                    precisar causar um dano que consiga zerar a vitalidade da criatura. Essas ações de HtK são chamados
+                    de <b>Atuação Deslumbrante</b>. Imagine a cena:
+                </p>
+                <p style="text-align: center;">
+                    <i>“Vocês se deparam com a criatura ajoelhada toda ensanguentada e sem forças para se levantar. O PP
+                        se aproxima dessa criatura para dar o golpe final, e ao perceber sua aproximação ela reage
+                        rugindo ferozmente, mas antes que possa fazer qualquer movimento, o PP corta sua cabeça e a
+                        mesma rola pelo chão até os pês de outro personagem do grupo”.</i>
+                </p>
+                <p>
+                    Essa ação HtK só foi possível por que a vitalidade da criatura estava baixa. E ainda por cima gerou
+                    uma ação de atuação deslumbrante.
+                </p>
+
+                <p>
+                    Então fique atento no seguinte, se você perceber que o personagem está levando um dano menor do que
+                    sugerido, você pode usar Acontecimentos Narrativos para justificar aquele dano causado. Como no
+                    exemplo do tiro, como seu dano foi menor do que o esperado, esse mesmo tiro pegou de raspão no alvo.
+                </p>
+                <p>
+                    Caso queira decapitar seu inimigo em uma ação, você vai precisar muito mais além do dano. Nesse caso
+                    você precisa de bons acertos seguindo de uma alta taxa de dano. Se seus acertos foram ótimos, porém
+                    o inimigo absorveu mais da metade do dano, de nada adianta. Agora se você teve um bom acerto e uma
+                    taxa de dano alto, nesse caso sua ação pode decapitar o alvo caso o mesmo não interfira no HtK, ou
+                    seja, caso essa decapitação não cause a morte instantânea do alvo.
+                </p>
+
+                <h5>VITALIDADE E CANSAÇO:</h5>
+
+                <p>
+                    Pense na vitalidade não como os pontos de vida do ser, mas sim seu nível de cansaço. Sendo assim,
+                    quando os ataques de um personagem tiram alguns pontos de vida desse ser, o mesmo acaba ficando mais
+                    cansado, conseguindo se defender menos dos ataques.
+                </p>
+                <p>
+                    Então imagine a cena: Uma batalha de espadas entre dois personagens, ambos com a vitalidade ao
+                    máximo. Então um desses personagens ataca o outro causando 10 de dano no total. O total de dano
+                    causado era para ser 20, mas o alvo conseguiu defender. A cena dessa defesa seria a seguinte:
+                </p>
+                <p style="text-align: center;">
+                    <i>“Ao atacar o personagem com sua espada afiada você conseguiu realizar um corte em seu braço. Mas
+                        ele conseguiu se defender com seu escudo.”</i>
+                </p>
+
+                <p>
+                    Agora esse personagem que recebeu o ataque acaba ficando mais cansado por conta desse ataque. E
+                    conforme perde vida, em narrativa sua defesa vai ficando mais fraca. E a cada dano, podemos exagerar
+                    mais nos ferimentos. Então as ações de defesa de um personagem caem conforme ele perde vida.
+                </p>
+
+                <p>
+                    Essa também é uma excelente forma de narrar a vitalidade em combate, e não se aplica apenas aos PP.
+                    E com isso geramos uma imersão maior na hora da narrativa.
+                </p>
+
+                <h5>NARRANDO O HIT KILL:</h5>
+
+                <p>
+                    No caso de Personagens, quando suas vitalidades chegam a zero, ainda existe a possibilidade deles
+                    serem salvos. Nesse caso o mestre pode narrar oque está acontecendo com o personagem após sua
+                    vitalidade chegar a zero. E vai narrando enquanto ninguém o salva, como por exemplo, falando que o
+                    personagem tem uma fratura interna que está piorando, causando falta de respiração e por ai vai até
+                    que o personagem morra de fato. Alucinações e flashbacks são ótimos nessas horas.
+                </p>
+                <p>
+                    Agora no caso de criaturas, o narrador pode narrar o HtK acompanhada do jogador mesclando a
+                    descrição do jogador com a adaptação do mestre para formar a atuação deslumbrante.
+                </p>
+                <p>
+                    Então é assim que funciona uma narrativa de vitalidade. Você só dá o golpe final quando a vitalidade
+                    do alvo chega realmente a zero. Antes disso você fica em uma batalha épica onde você ataca, o
+                    inimigo defende, ele ataca e você defende.
+                </p>
+                <p>
+                    Melhor ainda que conforme um PP perde vida, ele tem penalidades em dados, reforçando ainda mais a
+                    ideia do cansaço na perca de vitalidade. E isso pode ser aplicado também nos inimigos, isto é, o
+                    mestre pode definir penalidade nos dados conforme eles perdem vitalidade.
+                </p>
+                <p>
+                    Pense na vitalidade como uma representação da capacidade do personagem de se manter vivo, consciente
+                    e apto numa batalha.
+                </p>
+
+                <h5>RESTABELECENDO A VITALIDADE:</h5>
+                <p>
+                    Fique atento a esse comportamento no momento que for recuperar sua vitalidade. Se estiver usando uma
+                    poção que recupera a vitalidade do personagem, os danos físicos do mesmo não se recuperam como, por
+                    exemplo, um corte leve ou profundo ou até mesmo uma decapitação.
+                </p>
+                <p>
+                    Agora se a poção ou magia de cura informar que restaura parte do corpo que foram danificadas, ai
+                    sim, nesse caso, as feridas se fecham e as partes cortadas se regeneram. Então fique atento a isso:
+                </p>
+                <p>
+                    <b>Cura</b> – Apenas restaura a vitalidade e fecha ferimentos;
+                </p>
+                <p>
+                    <b>Restauração</b> – Além de curar, ela restaura partes cortadas do personagem.
+                </p>
+                <p>
+                    E narrar como isso acontece com o personagem que utiliza desse recurso também é extremamente
+                    interessante para gerar mais profundidade.
+                </p>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

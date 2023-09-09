@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universo do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/universo.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Universo Base</h1>
+        <p>Agora que conhecemos as mecânicas do sistema. Está na hora de conhecer o cenário básico!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-universo></venturo-sumario-universo>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>FORMAS DE INVOCAÇÃO</h2>
+                <p>
+                    Todas as habilidades secundárias têm alguma forma de ser invocada. Essas formas ainda podem ser
+                    combinadas entre si para uma mesma habilidade, para que ela seja ativada. As formas de invocação que
+                    temos são:
+                </p>
+
+                <div class="row justify-content-center" style="text-align: center;">
+                    <div class="col-sm-2">
+                        <p>
+                            <b>Vocal (V)</b>
+                        </p>
+                        <img class="img-fluid"
+                            src="/static/imagens/imgs_universo/_Página 1_tipo.webp"
+                            alt="Simbolo de Abys">
+                    </div>
+                    <div class="col-sm-2">
+                        <p>
+                            <b>Gestual (G)</b>
+                        </p>
+                        <img class="img-fluid"
+                            src="/static/imagens/imgs_universo/_Página 2_tipo.webp"
+                            alt="Simbolo de Abys">
+                    </div>
+                    <div class="col-sm-2">
+                        <p>
+                            <b>Material (M)</b>
+                        </p>
+                        <img class="img-fluid"
+                            src="/static/imagens/imgs_universo/_Página 3_tipo.webp"
+                            alt="Simbolo de Abys">
+                    </div>
+                    <div class="col-sm-2">
+                        <p>
+                            <b>Símbolos (S)</b>
+                        </p>
+                        <img class="img-fluid"
+                            src="/static/imagens/imgs_universo/_Página 5_tipo.webp"
+                            alt="Simbolo de Abys">
+                    </div>
+                    <div class="col-sm-2">
+                        <p>
+                            <b>Leitura (L)</b>
+                        </p>
+                        <img class="img-fluid"
+                            src="/static/imagens/imgs_universo/_Página 4_tipo.webp"
+                            alt="Simbolo de Abys">
+                    </div>
+                </div>
+
+                <ul>
+                    <li>
+                        <b>Invocação</b> Vocal – Nesse tipo de invocação, o personagem deve pronunciar uma frase ou conjunto de
+                        frases para que o mesmo consiga invocar a habilidade.
+                    </li>
+                    <li>
+                        <b>Invocação Gestual</b> – Nesse tipo de invocação, o personagem deve fazer um ou uma sequência de gestos para que a habilidade seja invocada.
+                    </li>
+                    <li>
+                        <b>Material</b> – Nesse tipo de invocação, o personagem precisa de algum objeto para ativar a habilidade, como, por exemplo, um cajado especial, um anel, e por ai vai. 
+                    </li>
+                    <li>
+                        <b>Símbolos</b> – Nesse tipo de invocação, um símbolo deve estar desenhando para que a habilidade seja invocada. Eles podem ser símbolos muito grandes, contendo alguma regra especial, ou bastante pequenos.
+                    </li>
+                    <li>
+                        <b>Leitura</b> – Nas invocações por leitura, a habilidade será escrita em algum local como livros, pergaminhos, paredes e entre outros. O invocador, caso a habilidade seja apenas leitura, pode ler mentalmente a mesma para poder invocá-la. Esse tipo de invocação é mais usado em habilidades bastante complexas, e está em sua maioria combinada com a invocação vocal.
+                    </li>
+                </ul>
+                
+                <h3>RITUAIS:</h3>
+                <p>
+                    Quando fazemos o uso de um ou mais tipos de invocação para uma habilidade, temos o que chamamos de ritual de invocação. Normalmente uma habilidade secundária carrega mais de um tipo de invocação para ativá-la. Dificilmente você verá uma habilidade que use apenas uma desses tipos de invocação. 
+                </p>
+                <p>
+                    E o ritual serve para que você explique o que deve ser feito para ativar a habilidade. É aqui que entra a <b>mesclagem de invocação</b>. Que se trata das formas que podemos juntar as formas de invocação para gerar o ritual da habilidade. Podemos ter muitas formas diferentes de rituais:
+                </p>
+                <p>
+                    Podemos ter runas com símbolos, que ao ser dito uma frase, a mesma ativa a habilidade da runa. 
+                </p>
+                <p>
+                    Podemos ter invocações complexas que usam de uma ser (<i>Material</i>), como sacrifício para ativar a habilidade. E nessa mesma invocação é necessário que esse sacrifício esteja no meio de um símbolo, rodeado por invocadores que dizem frases e fazem gestos para completar o ritual.
+                </p>
+                <p>
+                    Poremos ter rituais, onde em partes específicas de um grande símbolo fica os invocadores que doam sua energia para que a habilidade seja ativada.
+                </p>
+                <p>
+                    Então podemos ter muitas formas de rituais apenas usando a junção de uma ou mais formas de invocação. Assim podemos criar as mais diversas habilidades secundárias. Uma civilização inteira pode ser construída seguindo uma única regra de habilidades secundária, como: símbolos mais gestos, símbolos mais frases, frases mais gestos e por ai vai.
+                </p>
+
+                <h3>TEMPO DE DURAÇÃO:</h3>
+                <p>
+                    As habilidades secundárias contem um tempo de duração, tanto para mantê-las ativas, quanto para ativá-las. E podemos definir o tempo de duração de uma habilidade secundária em quatro formas, essas são: 
+                </p>
+                <ul>
+                    <li>
+                        <b>Turnos</b> – Onde podemos especificar quantos turnos uma habilidade leva para ficar ativa ou para ser ativada;
+                    </li>
+                    <li>
+                        <b>Rodadas</b> – Onde podemos especificar o tempo em rodadas para ativar uma habilidade, ou mantê-la ativa.
+                    </li>
+                    <li>
+                        <b>Instantâneo</b> – Onde ao fazer o ritual de ativação da habilidade, sua ativação é feita na hora, ou seja, não leva turnos ou rodadas para terminar de ativar. Ou quando a habilidade já está ativada, e seu efeito é instantâneo, como, por exemplo, uma habilidade de dano, onde o mesmo não é contínuo.
+                    </li>
+                    <li>
+                        <b>Infinito</b> – Aqui se aplica após a ativação da habilidade, onde seu tempo de duração é dado pelo consumo de CLOL do invocador. Assim, enquanto a habilidade receber CLOL, ela fica ativa. 
+                    </li>
+                </ul>
+                <p>
+                    Esse tempo de duração em rodadas e turnos para ativação de habilidades, são usadas para habilidades mais complexas. Enquanto o tempo de ativação instantâneo é usado em habilidades que dão efeitos aos invocadores, como uma bonificação em força, por exemplo. 
+                </p>
+
+                <h3>ESCOPO DE INVOCAÇÃO:</h3>
+                <p>
+                    As habilidades secundárias podem ser ativadas através de seus rituais. Porem durante o processo de ativação ou após sua ativação, elas podem requerer que o invocador fique concentrado ou livre. E essa regra se aplica também para manter a habilidade ativa até o final do tempo de duração de seu efeito.
+                </p>
+                <p>
+                    A concentração ainda tem suas ramificações, pois ela pode ser intensa ou mínima. Quando a habilidade exige concentração mínima, significa que após a sua ativação, ou no momento de ativação. O personagem pode ainda se mover e atacar, porém ao contrário de livre, ele não pode levar dado. Caso um personagem concentrado minimamente em uma habilidade leve dano, ele deve realizar um teste de resistência ND8 para manter a concentração.
+                </p>
+                <p>
+                    <b>Concentração mínima</b> – Nesse caso o personagem deve se concentrar na ativação ou mantimento da habilidade secundária por um tempo determinado em turnos, rodadas ou até acabar seu CLOL (<i>infinito</i>). O invocador pode se mover e atacar. Porem se levar qualquer tipo de dano, deve fazer um teste de resistência <b>ND8</b> para manter a concentração. 
+                </p>
+                <p>
+                    <b>Concentração intensa</b> – Agora quando ela é intensa, o personagem não pode nem mesmo se mover durante ou depois de ativar a habilidade. E nesse caso, se o personagem levar qualquer tipo de dano o mesmo perde a concentração sem direito a teste. 
+                </p>
+                <p>
+                    <b>Livre</b> – O escopo livre se aplica apenas após a ativação, onde o invocador pode fazer o que bem intender após ativar a habilidade. Isso por que habilidades com rituais que levem turnos ou rodadas, obrigatoriamente requer concentração do personagem para realizar o ritual.
+                </p>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

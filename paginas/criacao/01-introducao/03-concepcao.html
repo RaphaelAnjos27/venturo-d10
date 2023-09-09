@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Criação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/criacao.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criacao</h1>
+        <p>Agora que você conhece o Universo e as Regras. Está na hora de aprender a criar os elementos desse universo!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-criacao></venturo-sumario-criacao>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>CONCEPÇÃO</h2>
+                <p>
+                    A concepção é um elemento que podemos criar no sistema para dar mais vida a nossos universos. Imagine que você elaborou uma história que contemple todo o seu universo, como por exemplo, uma guerra divina que ocorreu a muito tempo atrás. Ou imagine que você queira criar uma regra nova que se aplica no seu universo. Esses elementos podem ser criados nesse atributo. Separamos a concepção em dois tipos principais, as <b>histórias </b> e os <b>componentes</b>.
+                </p>
+                <ul>
+                    <li>
+                        <b>Histórias</b> – As histórias será onde colocaremos todos os contos relacionados ao universo, seja uma Guerra ou outro evento qualquer.
+                    </li>
+                    <li>
+                        <b>Componentes</b> – Os componentes são regras criadas além do sistema de regras padrão. Aqui são colocados elementos complementares do seu universo, que por sua vez, seguem suas próprias diretrizes de funcionamento. Um bom exemplo disso são as Mestrias criadas por Valay.
+                    </li>
+                </ul>
+                <p>
+                    A concepção é um elemento simples, sem muitos atributos (<i>até porque, em sua maioria, quem os cria é você</i>). Ao criar um Componente ou uma História, o atributo principal será seu <b>nome</b>.
+                </p>
+                <p>
+                    O restante é <b>descrição</b> que você deve elaborar, colocando títulos e subtítulos até que consiga passar todos seus pensamentos para aquela história/componente.
+                </p>
+                <p>
+                    Vale lembrar que Componentes também podem gerar elementos para o universo, que por sua vez se aplique a um elemento já existentes no sistema, ou seja, componentes podem gerar Categorias de itens dentro do sistema e até mesmo modelos.
+                </p>
+
+                <ul>
+                    <li>
+                        <b>Categorias </b>– São elementos dentro do sistema, como por exemplo, armas de fogo, armas de energia e armas de antimatéria. Nesses casos, quando é criado uma nova categoria independente do sistema de regras padrão, temos que colocar <b>“COMP_”</b> de componente no nome dessa categoria, por exemplo, <b>COMP_Mestrias</b>.
+                    </li>
+                    <li>
+                        <b>Modelos </b>– São novos elementos com novos atributos que seguem as regras do componente que você está criando. A criação desse componente e seus atributos são todos descritos pelo componente. E sua localização também é informada no componente relacionado ao mesmo.
+                    </li>
+                </ul>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Na criação de um componente veremos em um mesmo documento, tanto as explicações que teríamos no livro de regras, quanto as explicações que veríamos no livro da criação.</i>
+                </div>
+                
+                <h3>COMPONENTES PADRÕES:</h3>
+                <p>
+                    Dentro do sistema venturo podemos ter componentes padrões que devem ser trabalhados dentro de cada universo. Você deve descrever como esses componentes funcionam dentro de seu universo.
+                </p>
+                <p>
+                    O componente padrão é:
+                </p>
+
+                <p>
+                    <b>SISTEMA DE NAVEGAÇÃO ESTELAR </b>– Esse componente se trata de como suas naves se deslocam pelo vaco de um planeta a outro. Veja dicas de como isso funciona no livro de regras capítulo de Universo sessão Sistema Estelar.
+                </p>
+                <p>
+                    <b>GUILDAS & GRUPOS</b> – Esse componente dita como funciona as guildas ou grupos dentro de seu cenário de rpg.
+                </p>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

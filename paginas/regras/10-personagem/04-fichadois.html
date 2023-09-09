@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>SEGUNDA FICHA</h2>
+
+                <img class="img-fluid" src="/static/imagens/imgs_regra/personagem/parte12.webp"
+                    alt="head da ficha"><br><br>
+
+                <p>
+                    A partir da segunda ficha, todas as demais fichas na parte de cima terão uma área para colocar o
+                    nome do personagem. Isso evita perdemos as fichas, caso se misturem com as de outros personagens.
+                </p>
+
+                <h3>VITALIDADE:</h3>
+                <p>
+                    A vitalidade representa a vida do personagem. E nessa área temos quarenta “40” ícones de caveira em
+                    branco, que serão riscados a <b>lápis</b> quando o personagem levar dano. Cada caveira representa um
+                    ponto de vida do personagem.
+                </p>
+
+                <div class="row">
+                    <div class="col-sm-8">
+                        <p>
+                            Conforme o personagem vai perdendo vida ele deve riscar uma caveira, como demonstra na
+                            imagem ao lado. Elas devem ser riscadas da esquerda para direita, de cima para baixo.
+                        </p>
+                        <p>
+                            A cada 10 pontos de vitalidade riscado, o personagem ganha um atributo e uma penalidade. Que
+                            serão melhores abordadas a baixo.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img class="img-fluid"
+                            src="/static/imagens/imgs_regra/personagem/parte13.webp"
+                            alt="Vitalidade">
+                    </div>
+                </div>
+
+                <p>
+                    A vitalidade também pode adotar uma <b>Bonificação de Vitalidade</b> ou uma <b>Penalidade Vital</b>.
+                    Ambas podem ser anotadas no campo <b>bonificação</b> a baixo do nome Vitalidade. As bonificações
+                    vitais são pontos de vida extra para um personagem. Conforme vamos gastando essa bonificação,
+                    devemos anotá-la no campo <b>“gastos“</b>. E assim como o CLOL. A vitalidade quando está bonificada
+                    devera consumir essa bonificação, antes de consumir a vitalidade do personagem.
+                </p>
+                <p>
+                    Já a <b>Penalidade Vital</b> é uma penalidade que retira seus pontos de vida (<i>normalmente dado
+                        por doenças</i>). Essa penalidade vai consumir a Vitalidade de baixo para cima, da direita para
+                    esquerda, e deve ser anotado a <b>lápis</b>. E só vai perder essa penalidade quando o personagem em
+                    questão se curar da doença ou efeito aplicado a ele.
+                </p>
+
+                <h5>ATRIBUTOS DA VITALIDADE:</h5>
+                <p>
+                    Vamos falar um pouco dos atributos dados pela Vitalidade após atingir +10 pontos de vitalidade
+                    gastos. Nesse sistema temos quatro tipos de atributos, esses são: <b>Ferimento Médio</b>,
+                    <b>Espancado</b>, <b>Quebrado</b> e <b>Incapaz</b>. E cada um deles vai fornecer uma penalidade ao
+                    personagem.
+                </p>
+                <p>
+                    A penalidade de cada atributo serve para retirar dados da PD de um personagem. Indicando que ele
+                    está ferido e não consegue usar seu potencial ao máximo.
+                </p>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Quando a penalidade da vitalidade for maior que a <b>PD</b> do jogador. O mestre
+                        deve deixá-lo jogar apenas <b>1D10</b> com um <b>ND alto</b>.</i>
+                </div>
+                <p>
+                    Já os atributos indicam o estado do personagem com relação a perca de vitalidade do mesmo. Mas não
+                    só isso, o mestre pode usar esses atributos para indicar o dano do personagem em um acontecimento
+                    narrativo, por exemplo: Em uma determinada ação o personagem quebrou a perna. Então sabemos que ele
+                    perdeu de <b>20</b> a <b>30</b> pontos de vitalidade.
+                </p>
+                <p>
+                    <b>Ferimentos médios</b> – São aqueles ferimentos leves como um corte ou tiro de raspão. Dando ao
+                    personagem uma penalidade de -2 dados;
+                </p>
+                <p>
+                    <b>Espancado</b> – É quando o personagem levou tanto dano, que seu corpo surge hematomas, dentes
+                    quebrados e até inchaço na cara. Isso dá ao personagem uma penalidade de -3 dados;
+                </p>
+                <p>
+                    <b>Quebrado</b> – Como o próprio nome diz, é quando o personagem tem uma fratura em seus ossos. Mas
+                    nesse caso é quando temos uma grande fratura como por exemplo, um braço, perna ou costela quebrada.
+                    Aqui a penalidade é de -5 dados;
+                </p>
+                <p>
+                    <b>Incapaz</b> – Quando o personagem leva tanta surra, que seu corpo não aguenta mais lutar. Aqui se
+                    aplica também a decapitação de membros de seu corpo. Quando chegamos nesse nível o personagem recebe
+                    -10 dados.
+                </p>
+                <p>
+                    Essa penalidade pode ser bonificada conforme o personagem perde mais vitalidade, por exemplo: Se o
+                    personagem está no nível quebrado, com <b>-30 pontos de vitalidade</b>, ele vai ter uma
+                    <b>penalidade de -5</b>. Nesse caso, se sua vitalidade cair até 35 pontos de vitalidade, o mestre
+                    pode bonificar mais a sua penalidade para <b>-6</b> ou mais. Mas isso vai depender também da
+                    situação, ou seja, do estado do personagem naquele momento.
+                </p>
+
+                <h3>TREINO:</h3>
+                <p>
+                    O Campo de <b>Treino</b> é responsável por gerenciar o treino de seu personagem, por meio de algum
+                    evento narrativo. E nele o personagem pode treinar seus atributos perícias e habilidades (<i>tanto
+                        normal, quando secundárias</i>). Temos ao todo, três campos de treino. Cada campo, contendo: Um
+                    espaço para informar o que estamos treinando, 16 campos para preencher a quantidade que já foi
+                    treinado, E um campo para informar quantas vezes devemos treinar.
+                </p>
+
+                <div class="row">
+                    <div class="col-sm-8">
+                        <p>
+                            Nessa imagem ao lado, estamos fazendo um treino de força, onde devemos treinar <b>8</b>
+                            vezes, para conseguir passar para o próximo nível de força. E nesse mesmo exemplo, já
+                            conseguimos realizar esse treino 4 vezes, num total de 8.
+                        </p>
+
+                    </div>
+                    <div class="col-sm-4">
+                        <img class="img-fluid"
+                            src="/static/imagens/imgs_regra/personagem/parte14.webp"
+                            alt="Treino">
+                    </div>
+                </div>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Todo esse campo deve ser preenchido a lápis.</i>
+                </div>
+                <p>
+                    Os treinos devem fazer sentido, por exemplo: Querer treinar força levantando peso faz sentido. Agora
+                    querer treinar força lendo um livro não tem sentido algum. O treino funciona da seguinte forma.
+                    Primeiro deve informa qual característica da ficha está sendo treinada (<i>atributos, perícias ou
+                        habilidades</i>). Em seguida o jogador então deve rolar <b>1D10 + 1D6</b>, e somar os
+                    resultados. Esse resultado final será a quantidade de treinos que você tem que fazer. A cada treino
+                    o Jogador vai declarar sua ação (<i>que terá a duração de uma cena</i>), e no final da <b>cena</b>,
+                    ele vai fazer um teste para saber se o treino funcionou.
+                </p>
+
+                <p>
+                    O teste final vai de acordo com o Nível da Habilidade, Perícia ou Atributo que ele está treinando,
+                    segue a tabela a baixo:
+                </p>
+
+                <h5>Nível de Dificuldade de Treino por Nível de Atributo:</h5>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+
+                        <thead>
+                            <tr>
+                                <th><b>Niveis</b></th>
+                                <th>1 ao 2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6 ou mais</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>Dados + ND</b></td>
+                                <td>2D10 ND7</td>
+                                <td>2D10 ND8</td>
+                                <td>1D10 ND7</td>
+                                <td>1D10 ND8</td>
+                                <td>1D10 ND9</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>
+                    Com a tabela em mãos podemos fazer o teste final, que sempre será composto por uma quantidade de
+                    Dados D10 e um ND. Então se estou treinando o <b>nível 3</b>, meu teste será <b>2D10 ND8</b>. Caso
+                    passe no teste, o jogador pode pintar (<b>a lápis</b>) um campo para registar que aquele treino foi
+                    realizado com sucesso. Caso contrário não pinta nada, mostrando que o treino não funcionou. Se seu
+                    treino não funcionar, o mestre pode implementar na sua ação de treino, o motivo do porque não deu
+                    certo aquela ação, como por exemplo: <i>“Alguém aparecer para atrapalhar”</i>.
+                </p>
+                <div class="alert alert-danger">
+                    <i><b>ALERTA.:</b> Essa tabela do Nível de Dificuldade não se aplica a Habilidades Secundárias.</i>
+                </div>
+                <p>
+                    E para finalizar, caso o <b>nível</b> da característica treinada seja <b>maior</b> que <b>3</b>, o
+                    jogador terá que realizar o teste de <b>1D10+1D6</b> repetidas vezes até que o valor de treino seja
+                    igual ou superior a <b>8</b>.
+                </p>
+
+                <h3>HABILIDADES:</h3>
+                <p>
+                    Cada raça possui suas habilidades. Algumas muita poderosas, já outras, nem tanto. As habilidades são
+                    encontradas na descrição de cada raça. A ficha fornece <b>5 slots</b> de Habilidade para um
+                    personagem. Esses 5 slots é a quantidade de habilidades que cada raça pode ter.
+                </p>
+                <div class="row">
+                    <div class="col-sm-7">
+                        <p>
+                            Todas as habilidades vão do <b>nível 1</b> ao <b>5</b>, onde o nível define o grau de poder
+                            de uma única habilidade. Quando o jogador escolher as habilidades de seu personagem, ele
+                            colocará o nome da mesma a caneta na linha ao lado dos slots de nível. E para cada nível,
+                            ele vai pintar um slot (<i>também a caneta</i>).
+                        </p>
+
+                    </div>
+                    <div class="col-sm-5">
+                        <img class="img-fluid"
+                            src="/static/imagens/imgs_regra/personagem/parte15.webp"
+                            alt="Habilidades">
+                    </div>
+                </div>
+
+                <p>
+                    Na criação da ficha, o jogador vai ganhar uma quantia de <b>pontos de habilidade</b>. A quantidade
+                    de pontos vai depender da idade do personagem, da mesma forma que fazemos nos atributos. O jogador
+                    também pode usar pontos de XP inicial, onde cada habilidade vale <b>2XP</b>.
+                </p>
+                <p>Os pontos por faixa etária são:</p>
+                <p>
+                    <b>Criança (normalmente entre 7 a 15 anos) </b>– 2 pontos de habilidade.
+                </p>
+                <p>
+                    <b>Adolescente (normalmente entre 16 a 21)</b> – 4 pontos de habilidade.
+                </p>
+                <p>
+                    <b>Adulto (normalmente entre 21 a 60)</b> – 6 pontos de habilidade.
+                </p>
+                <p>
+                    <b>Ancião (a parti de 61)</b> – 9 pontos de habilidade.
+                </p>
+
+                <p>
+                    Após a criação da ficha, a habilidade poderá ser treinada ou evoluída com o <b>XP</b>. A quantidade
+                    de XP para o próximo nível de qualquer habilidade será o <b>nível atual</b> da habilidade
+                    multiplicado por 8. Assim como funciona para os outros atributos.
+                </p>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> O Personagem só pode aprender as habilidades de sua raça ou habilidades
+                        secundárias.</i>
+                </div>
+
+                <h5>USO DAS HABILIDADES:</h5>
+                <p>
+                    Cada habilidade vai exigir um teste para ativar a mesma. Cada habilidade terá em sua descrição qual
+                    o atributo mais pericia que devem ser usados para fazer o teste, seguido do ND e do consumo de CLOL.
+                </p>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Habilidades são composta por níveis. O uso do nível 1 de uma habilidade tem seu ND
+                        diminuído em -1 caso tenha um nível a mais da habilidade e isso consecutivamente.</i>
+                </div>
+
+                <h4>HABILIDADES NATURAIS:</h4>
+                
+                <p>As habilidades naturais são divididas em três categorais: <b>Fortitude</b>, <b>Celeridade</b> e <b>Robustez</b>. Cada ser de uma raça pode nascer com características únicas de sua espécie, e essa característica está atrelado a essas três habilidades que pode ser adicionada a personagens de qualquer raça. Porém, ao adquirir uma dessas três habilidades, você não poderá adquirir nenhuma das outras duas.</p>
+	            <p>Essas <b>habilidades são universais</b>, e como dito anteriormente, pode ser associado a qualquer personagem independente de raça. Então escolha uma agora na criação de sua ficha, ou simplesmente treine-a no futuro.</p>
+
+                <h5>Fortitude:</h5>
+                <p>
+                    A habilidade natural Fortitude <b>bonifica</b> seus testes de Força. Cada nível da habilidade representa uma bonificação de <b>+1 na força</b> do personagem.
+                </p>
+                <h5>Celeridade:</h5>
+                <p>
+                    A habilidade de "Celeridade" oferece ao personagem um <b>bônus</b> em sua <b>Destreza</b>. Nos <b>níveis 1 a 3</b>, há um acréscimo de <b>+1 na Destreza</b>. Nos <b>níveis 4 e 5</b>, o personagem ganha uma <b>ação extra por nível</b>.
+                </p>
+                <h5>Robustez:</h5>
+                <p>
+                    A habilidade de "Robustez" concede ao personagem um <b>bônus</b> em testes de <b>resistência</b>, aumentando em <b>+1 RES</b> a cada nível da habilidade.
+                </p>
+                <div class="alert alert-danger">
+                    <i><b>ALERTA.:</b> Lembre-se de escolher apenas uma das três habilidades naturais disponíveis. Uma vez feita a escolha, você não poderá treinar ou adquirir as outras duas habilidades naturais.
+                    </i>
+                </div>
+
+                <h3>AQUISIÇÕES:</h3>
+                <p>
+                    As aquisições são conquistas do seu personagem, que podem aparecer antes ou depois do despertar
+                    (<i>inicio da crônica</i>). Algumas aquisições contem nível de <b>1</b> a <b>5</b>. E outras não
+                    contem nenhum nível, como por exemplo, a patente militar de alguma raça ou organização.
+                </p>
+                <div class="row">
+                    <div class="col-sm-7">
+                        <p>
+                            Na criação da ficha, o personagem pode comprar aquisições usando seu XP inicial. Onde o
+                            primeiro nível é 1XP. Após isso será o <b>nível atual</b> multiplicado por 2.
+                        </p>
+
+                    </div>
+                    <div class="col-sm-5">
+                        <img class="img-fluid"
+                            src="/static/imagens/imgs_regra/personagem/parte16.webp"
+                            alt="aquisições">
+                    </div>
+                </div>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Quando a aquisição não tem nível, não preenchemos o campo nível.</i>
+                </div>
+                <p>
+                    Depois da criação da ficha, o jogador não poderá mais comprar aquisições ou evoluí-las com XP. Ele
+                    só vai conseguir uma aquisição ou evoluí-las, através de acontecimentos narrativos.
+                </p>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> O mestre pode dar um determinado nível, ou apenas a aquisição para seus jogadores.
+                        Tanto na criação da ficha, quanto na sessão. </i>
+                </div>
+
+                <h3>BONDADE:</h3>
+                <p>
+                    Esse atributo serve para definir o nível de bondade de seu personagem. Ela interfere em suas ações,
+                    e é usada para conquistar uma classe na aventura. Quando falamos que a bondade interfere nas ações
+                    de seu personagem, queremos dizer o seguinte. Um personagem bom de mais, não teria capacidade de
+                    realizar uma ação onde ele deve matar a sangue frio um inimigo incapacitado.
+                </p>
+                <div class="row">
+                    <div class="col-sm-7">
+                        <p>
+                            Os pontos de bondade devem ser preenchido a lápis. Pois no decorrer narrativo, o personagem
+                            estará constantemente ganhando e perdendo bondade. Inicialmente. O personagem inicia com
+                            <b>3 pontos</b> de bondade. Que você deve usar para um dos dois lados.
+                        </p>
+
+                    </div>
+                    <div class="col-sm-5">
+                        <img class="img-fluid"
+                            src="/static/imagens/imgs_regra/personagem/parte17.webp"
+                            alt="Bondade">
+                    </div>
+                </div>
+                <p>
+                    O lado escuro do <b>Ying Yang</b> representa a <b>Maldade</b> do personagem, enquanto o lado claro
+                    representa a <b>Bondade</b>. Quando for distribuir seus quatro pontos você deve escolher um desses
+                    dois lados. Um jogador ainda pode comprar cada nível de Bondade usando o <b>XP inicial</b>, onde
+                    cada ponto de XP vale um ponto de Bondade. Mas isso se aplica somente na construção da filha. Após
+                    isso o personagem só pode ganhar ou perder bondade.
+                </p>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Anote seus pontos de bondade sempre a Lápis, pois os mesmos são constantemente
+                        alterados.</i>
+                </div>
+
+                <p>
+                    Para ganhar pontos de Bondade, seja para o lado <b>bom</b> ou <b>mau</b>. O personagem deve agir
+                    como tal. Sendo assim, suas ações devem ser focadas na categoria de bondade que seu personagem
+                    segue. O mestre fica responsável por adicionar ou retirar pontos de bondade de um personagem de
+                    acordo com suas ações. O mestre deve informar os pontos mau e bom de um personagem em todo final de
+                    narrativa. Seja subtraindo ou adicionando nível a categoria (mau e bom). Ou o mestre pode dar esses
+                    pontos durante a sessão.
+                </p>
+                <p>
+                    A bondade, além de influenciar nas ações de seu personagem. Vai também informar qual a classe
+                    primária que seu personagem pode ser atribuído.
+                </p>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Algumas classes secundárias também podem usar o nível de bondade de seu
+                        personagem.</i>
+                </div>
+
+                <p>
+                    A bondade pode ditar se seu personagem faz ou não determinadas ações. E conforme o grau de Bondade
+                    (<b>+</b>) ou Maldade (<b>-</b>), pode ser feito um teste. Em casos onde o ser é Bondoso e deseja
+                    fazer algo ruim, o mestre pode mandar ele jogar um teste de <b>SAB</b> onde o <b>ND</b> será a
+                    bondade desse personagem. Caso ele passe, sua ação de maldade será feita, e ele perde <b>-1</b> ou
+                    mais ponto de bondade (<i>dependendo do nível de maldade da ação</i>).
+                </p>
+                <p>
+                    Agora em casos onde o personagem mal deseja realizar ações bondosas. Ele vai jogar um teste de
+                    <b>SAB</b> onde o <b>ND</b> é a quantidade de Maldade que esse ser tem. Caso passe sua ação será
+                    realizada, e ele ganha <b>+1</b> ou mais ponto de bondade (<i>dependendo da ação</i>).
+                </p>
+                <h5>DISTRIBUIÇÃO:</h5>
+                <p>
+                    Antes de você aprender a distribuir pontos de bondade, você precisa intender que você nunca terá
+                    pontos de Bondade nos dois lados do atributo, ou seja, não terá pontos no lado <b>Bom (+)</b> e
+                    <b>Mau (-)</b> ao mesmo tempo. Isso por que ela representa a intensidade de bondade ou maldade de um
+                    personagem. Quando os lados de Bondade e Maldade estão zerados, seu personagem é neutro, podendo
+                    fazer ações tanto para um quanto para outro lado.
+                </p>
+                <p>
+                    No despertar você terá um 3 pontos de bondade distribuídos para o lado positivo ou negativo, para
+                    dar início a sua ficha. Quando você ganha um ponto de bondade na sessão, você vai anotá-lo nos
+                    <b>slots</b> do lado positivo, ou negativo. Agora quando você perde bondade, você precisa subtrair o
+                    valor perdido pelo valor de slots preenchidos no lado Positivo. Após todos os slots serem apagador,
+                    e você entrar no estado neutro. A perca de bondade vai passar a preencher os slots do lado Negativo.
+                    E para perder a Maldade você vai precisar de pontos de bondade para apagar os slots do lado Negativo
+                    e começar a preencher novamente os slots do lado Positivo.
+                </p>
+                <p>
+                    Então quando se ganha bondade, você precisa ver primeiro se o lado negativo está vazio, caso não
+                    esteja, esses pontos ganhos vão apagar a quantidade de slots preenchidos dentro dele. Isso até que
+                    você entre na neutralidade, onde nenhum dos lados tem pontos. Após isso, cada ponto de Bondade
+                    ganho, você vai preencher os slots positivos. E vice-versa para o lado negativo, quando se perde
+                    pontos de Bondade, como pode ver no exemplo a baixo:
+                </p>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <p style="text-align: center;">
+                            Ganhou 3 Pontos
+                        </p>
+                        <img class="img-fluid"
+                            src="/static/imagens/imgs_regra/personagem/parte18.webp"
+                            alt="Bondade">
+                    </div>
+                    <div class="col-sm-4">
+                        <p style="text-align: center;">
+                            Perdeu 2 pontos
+                        </p>
+                        <img class="img-fluid"
+                            src="/static/imagens/imgs_regra/personagem/parte19.webp"
+                            alt="Bondade">
+                    </div>
+                    <div class="col-sm-4">
+                        <p style="text-align: center;">
+                            Perdeu 1 ponto (neutro)
+                        </p>
+                        <img class="img-fluid"
+                            src="/static/imagens/imgs_regra/personagem/parte20.webp"
+                            alt="Bondade">
+                    </div>
+                    <div class="col-sm-4">
+                        <p style="text-align: center;">
+                            Perdeu dois pontos
+                        </p>
+                        <img class="img-fluid"
+                            src="/static/imagens/imgs_regra/personagem/parte21.webp"
+                            alt="Bondade">
+                    </div>
+                    <div class="col-sm-4">
+                        <p style="text-align: center;">
+                            Ganhou 1 ponto
+                        </p>
+                        <img class="img-fluid"
+                            src="/static/imagens/imgs_regra/personagem/parte22.webp"
+                            alt="Bondade">
+                    </div>
+                    <div class="col-sm-4">
+                        <p style="text-align: center;">
+                            Ganhou 1 ponto (neutro)
+                        </p>
+                        <img class="img-fluid"
+                            src="/static/imagens/imgs_regra/personagem/parte23.webp"
+                            alt="Bondade">
+                    </div>
+                </div>
+                <br><br>
+                <h3>VANTAGENS E DESVANTAGENS:</h3>
+                <p>
+                    As vantagens e desvantagens são características extras para seu personagem. Elas podem tanto ajudar
+                    seu jogador quanto ferrar o mesmo durante a narrativa. Cada vantagem tem seu preço em <b>XP</b>, e
+                    só pode ser comprada na construção da ficha. Depois disso, as vantagens e desvantagens serão
+                    conquistadas por acontecimentos narrativos.
+                </p>
+                <p>
+                    Na construção da ficha, as desvantagens dão ao jogador <b>XP extra</b> para ele poder montar sua
+                    ficha. Esses valores estão na descrição de cada Vantagem ou Desvantagem. A ficha fornece <b>13
+                        Slots</b> para que você possa inserir vantagens ou desvantagens.
+                </p>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Tanto as vantagens quanto desvantagem dão um realismo maior ao seu personagem. E
+                        podem aparecer indiretamente dentro de suas histórias.</i>
+                </div>
+                <img class="img-fluid" src="/static/imagens/imgs_regra/personagem/parte24.webp"
+                    alt="Vantagens e Desvantagens">
+
+                <p>
+                    Como pode observar a cima, devemos colocar o nome da <i>vantagem/desvantagem</i> e o valor de XP que ela consome ou fornece. Para vantagens, usamos o <b>XP inicial</b> para comprá-las. E A desvantagem nós dá mais XP inicial. Por isso elas são anotadas com os sinais de positivo (<i>mais XP inicial</i>) e negativo (<i>subtração do XP inicial</i>). Vale lembrar também que algumas vantagens ou desvantagens pode ser acrescentado uma <b>descrição</b> da vantagem ou desvantagem que ela fornece, ou a alguma característica que ela esteja associada.
+                </p>
+                <p>
+                    Algumas raças contem vantagens naturais, e podemos encontrá-los na descrição da raça. Essas vantagens ou desvantagens naturais são anotadas nessa mesma área. E no campo valor colocamos <b>“NT”</b> de “natural”.
+                </p>
+                <p>
+                    Anotamos os valores das vantagens ou desvantagens dentro da ficha, por que algumas delas têm mais de um valor. Com isso o mestre consegue identificar a intensidade da propriedade adquirida, para poder usar a favor ou contra o personagem. 
+                </p>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

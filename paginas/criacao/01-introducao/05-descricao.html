@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Criação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/criacao.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criacao</h1>
+        <p>Agora que você conhece o Universo e as Regras. Está na hora de aprender a criar os elementos desse universo!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-criacao></venturo-sumario-criacao>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>DESCRIÇÃO DE ATRIBUTOS</h2>
+                
+                <p>
+                    Ao longo de seus projetos, você se deparará com a necessidade de descrever diversos elementos, como estações, bases, aeronaves e veículos. Nesta sessão, abordaremos uma dica que pode ser aplicada a qualquer elemento que você identifique como requerendo uma descrição detalhada, especialmente quando se trata de suas salas e partes específicas. Em vez de simplesmente copiar e preencher os atributos genéricos na ficha do elemento, há uma abordagem mais interessante para integrá-los ao veículo. Você pode optar por uma descrição mais rica e envolvente, destacando as características únicas de cada componente, fornecendo detalhes que enriqueçam a experiência do leitor ou usuário. Essa abordagem permitirá que sua criação ganhe vida e se torne mais imersiva, tornando a experiência do leitor mais cativante e envolvente.
+                </p>
+                <p>
+                    Então em vez de fazer assim para cada componente de seu veículo:
+                </p>
+
+                <div class="alert alert-secondary">
+                    <p>
+                        <b>ESTAÇÃO DE CONTROLE</b><br>
+                        <b>CONTROLE:</b> Comandante<br>
+                        <b>TRIPULANTES:</b> 10<br>
+                        <b>COMUNICAÇÃO INTERNA:</b> <br>
+                        Caixas de som são espalhadas por todo o interior da nave, fornecendo assim uma rede aberta para a sala de controle se comunicar com a tripulação geral da nave. Porém cada tripulante possui um fone de ouvido para comunicação direta a partir da sala de controle.<br>
+                        <b>COMUNICAÇÃO EXTERNA:</b> <br>
+                        Quando contatada, um telão no para-brisa da nave aparece, dando início a uma videochamada entre as estações de controle das naves;<br>
+                        <b>FUNÇÕES DOS PILOTOS</b><br>
+                        <b>Controle da aeronave</b> – Existem, pelo menos, dois pilotos que comandam a aeronave a mando do comandante.<br>
+                        <b>Controle de Armas</b> – Quatro dos tripulantes da estação são responsáveis por controlar um grupo de armas de cada setor da aeronave. <br>
+                        <b>Comunicação</b> – Dois tripulantes são designados para o controle da comunicação, seja ela interna ou externa. <br>
+                    </p>
+                </div>
+
+                <p>
+                    Você poderia explicar todos esses atributos em um paragrafo:
+                </p>
+                <div class="alert alert-secondary">
+                    <p>
+                        A <b>estação de controle</b> é o coração pulsante da nave, liderada pelo <b>Comandante</b> e composta por uma equipe de 10 tripulantes altamente treinados. A <b>comunicação interna</b> é eficiente e inclusiva, com caixas de som estrategicamente posicionadas pela nave, permitindo que a sala de controle se conecte com toda a tripulação de forma aberta. Além disso, cada tripulante possui um fone de ouvido para comunicação direta. A <b>comunicação externa</b> é ativada por meio de um telão no para-brisa da nave, permitindo videochamadas entre as estações de controle de outras naves. Os pilotos são responsáveis por comandar a aeronave sob as ordens do comandante, garantindo uma operação precisa e coordenada. Além disso, quatro tripulantes especializados são incumbidos do controle das armas, cada um responsável por um setor da nave. Dois tripulantes têm a importante tarefa de gerenciar a comunicação, tanto interna quanto externa, assegurando a conectividade e a eficiência das operações em todos os momentos cruciais. Essa equipe dedicada e bem equipada representa a espinha dorsal da nave, garantindo o sucesso de suas missões no vasto universo.
+                    </p>
+                </div>
+                <p>
+                    Essa seção do livro foi criada especialmente para abordar os desafios enfrentados ao lidar com os componentes de veículos, que muitas vezes podem se tornar tediosos durante o processo de criação. No entanto, ao transformar esses atributos em descrições envolventes, é possível tornar essa tarefa mais estimulante e inspiradora. Essa abordagem permite que você dê vida aos componentes do veículo, explorando suas características únicas de maneira cativante. Além disso, a regra de descrever os elementos pode ser aplicada a outros aspectos da sua criação, agregando valor a qualquer elemento que exija detalhamento e enriquecendo a experiência global do leitor ou usuário. Com essa técnica, você terá a oportunidade de tornar suas histórias e projetos mais atrativos e memoráveis, garantindo uma conexão mais profunda com o público e despertando a imaginação de todos aqueles que se envolverem com suas criações.
+                </p>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

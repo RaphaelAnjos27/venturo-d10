@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h1>COMBATE</h1>
+                <p>
+                    Vamos agora abordar como funciona o combate dentro desse Sistema. Será explicado o sistema de
+                    combate em si e algumas dicas para mestre e jogador.
+                </p>
+                <h2>COMBATE DE PERSONAGENS</h2>
+                <p>
+                    O combate é feito por turnos, e a ordem do combate é determinada pela iniciativa que são feitas no
+                    início de cada combate. Depois temos a ação, e pôr fim a contagem dos pontos.
+                </p>
+
+                <div class="alert alert-success">
+                    <i><b>DICA.:</b> Para auxiliar, o mestre pode usar miniaturas ou tokens para representar os aliados
+                        e inimigos numa batalha.</i>
+                </div>
+
+                <h3>PRIMEIRO – INICIATIVA:</h3>
+                <p>
+                    Todos personagens rolam Destreza, onde o mestre pega o valor de cada um e anota. A ordem dos
+                    personagens vai ser do maior valor ao menor. Onde o maior valor será o primeiro e assim vai até o
+                    menor valor. Personagens com valores iguais podem escolhem quem será o primeiro (<i>ou deixa o D2
+                        escolher</i>).
+                </p>
+                <p>
+                    Observe que quando falo personagem, quero dizer tanto PP quanto PnJ, seja aliado ou inimigo. Isso
+                    define o dinamismo entre todos personagens da mesa, seja eles PnJ ou PP, inimigos ou aliados.
+                </p>
+                <p>
+                    Assim podemos ter uma iniciativa onde o inimigo ataque primeiro, depois um aliado, e depois um
+                    jogador, aí volta a um inimigo e por aí vai. É recomendável jogar os dados para os PnJ aliados e
+                    inimigos, por que esse simples ato, mesmo que demorado, da mais vida a sessão.
+                </p>
+                <p>
+                    Jogadores com valores de iniciativa semelhante à de inimigos terão preferência na jogada.
+                </p>
+
+                <h3>SEGUNDO – AÇÃO:</h3>
+                <p>
+                    Todos os personagens seguindo sua ordem de iniciativa vão fazer suas ações. E o mestre fica
+                    responsável por definir a ação de todos os PnJ. Essas ações podem demorar de 5 segundos a 2 minutos
+                    se o personagem tiver ação múltipla.
+                </p>
+                <p>
+                    O teste da ação desse personagem terá que ser <i>Destreza + perícia especifica daquela ação</i>, e
+                    em seguida com os acertos da ação em mãos o alvo tentará realizar a esquiva, e vice-versa.
+                </p>
+                <p>
+                    O mestre deve ficar atento a regra de <i>Nível de Atributos Físicos</i>, pois ela pode influências
+                    nos testes de combate. Essa regra é encontrada na sessão Regras do Sistema.
+                </p>
+                <p>
+                    Sabendo a ação e os acertos do ataque. Somamos ele com o dano da arma, em seguida o personagem
+                    atacado usa a defesa ou esquiva (<i>isso ele deve escolher</i>). Essa ação de <b>defesa/esquiva</b>
+                    tem a função de anula os danos causados pelo atacante. Então o inimigo joga Destreza + a perícia
+                    especifica da defesa/esquiva, e a cada acerto da PD o inimigo anula cada ponto de dano do atacante.
+                </p>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Perícias de combate podem ser usados como perícias de defesa.</i>
+                </div>
+
+                <p>
+                    Se a quantidade de pontos de esquiva ou defesa forem maior que a de dano. O personagem que está
+                    recebendo o ataque tem o direito de uma ação de contra ataque (<i>que seria uma ação rápida de
+                        ataque, sem o uso de ação extra</i>). E o inimigo não tem direito a esquiva ou defesa. (<i>isso
+                        quando a defesa depende de uma perícia e não de um escudo ou armadura</i>).
+                </p>
+                <p>
+                    Acertos críticos na esquiva/defesa também dão o direito do personagem atacado contra-atacar.
+                </p>
+                <p>
+                    A defesa usada aqui, pode ser tanto um atributo de defesa pessoal da raça para segurar um ataque
+                    (<i>quando a ação envolve briga corpo a corpo ou armas brancas</i>) quanto a defesa por algum tipo
+                    de escudo. Será explicado a baixo o uso dessas defesas.
+                </p>
+                <div class="alert alert-danger">
+                    <i><b>ALERTA.:</b> O mestre deve ficar ligado nas ações de um personagem. No escopo narrativo a ação
+                        de um personagem no máximo 2 minutos (isso com ações múltiplas), ou seja, é rápida. Então com ou
+                        sem o auxílio de miniatura e mapas, o mestre deve ficar ligado na distância que um alvo está do
+                        personagem, pois dependendo do caso, percorrer uma distância longa até o alvo (cerca de 10
+                        metros) pode ser considerado uma ação em si.</i>
+                </div>
+
+                <h3>TERCEIRO – FIM DO TURNO:</h3>
+                <p>
+                    Depois de todos os personagens acabarem suas ações. O mestre deve narrar a cena de acordo com os
+                    acertos dos personagens e ações declaradas. Isso vale para ataque, defesa e esquiva. Caso a batalha
+                    não tenha acabado o turno volta no início de seu ciclo, ou seja, volta a vez do personagem com maior
+                    valor de iniciativa.
+                </p>
+                <p>
+                    A ação de ataque deve ser declarada antes do teste, para que o mesmo seja elaborado. Mas uma
+                    esquiva/defesa só terá sua ação declarada após o teste da mesma. Isso por que essas ações devem ter
+                    seu grau de complexidade com base nos acertos do teste (<i>tanto da defesa quanto da esquiva</i>). E
+                    essa ação de esquiva/defesa deve ser declarada pelo jogador, e recontada pelo mestre de acordo com
+                    os acertos no teste.
+                </p>
+                <p>
+                    Esses 3 passos ocorrerão até que não exista mais PnJ inimigos ou jogadores em condições de lutar.
+                </p>
+                <table class="table table-hover">
+
+                    <tbody>
+                        <tr>
+                            <td><b>Iniciativa</b></td>
+                            <td>Teste de Destreza anotando o valor de cada personagem.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Ataque</b></td>
+                            <td>Ação, mais teste de combate.<br>Calculo do Dano.<br>Teste de esquiva/defesa</td>
+                        </tr>
+                        <tr>
+                            <td><b>Resolução</b></td>
+                            <td>Explicação do que ouve nesse turno.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Caso o ataque (seja do PP ou PnJ) tenha um erro crítico, a resposta desse critico
+                        será a defesa e um contra-ataque de um PnJ selecionado logicamente.</i>
+                </div>
+                <div class="alert alert-success">
+                    <i><b>DICA.:</b> Quando estiver em uma ação de combate, é interessante que o mestre não informe aos
+                        seus jogadores a quantidade de vida do oponente. Isso da mais profundidade ao jogo.</i>
+                </div>
+
+                <h3>LOCOMOÇÃO:</h3>
+                <p>
+                    No início dessa sessão expliquei que o simples fato de se locomover em sua vez pode consumir seu
+                    turno. O mestre deve ficar de olho nessas ações. Se um personagem ou oponente tem atributos de
+                    locomoção, eles devem ser levados em consideração nos turnos. Imagine o seguinte cenário:
+                </p>
+                <div class="alert alert-secondary">
+                    <p>
+                        <b>– Mestre:</b> Seu personagem está a 10 metros de um oponente, oque você faz?
+                    </p>
+                    <p>
+                        <b>– Jogador:</b> Corro até esse personagem, e ataco seu peito com um corte de cima para baixo
+                        com minha espada!
+                    </p>
+                </div>
+
+                <p>
+                    Notou como isso é esquisito? Oque o inimigo faz com base na ação do seu jogador, pois ele atacou o inimigo de frente. Então ele simplesmente ficou lá esperando o cara chegar? Ações como essa devem ser cortadas, ou seja, o turno de um jogador deve terminar no momento que ele usa ela para se locomover até o inimigo. Leve como base duas características, uma <b>reação do oponente</b>, se o mesmo pode reagir ao ataque, corte o turno do jogador e a <b>distancia entre ambos</b>. 
+                </p>
+                <p>
+                    Caso exista a possibilidade de reação do oponente e a distância que o atacante está avançado seja o dobro da capacidade do atributo <b>andando</b> de sua espécie, você considera terminar a ação de dele após ele se aproximar do inimigo. Pode parecer estranho, mas quando você terminar um combate, isso faz muito sentido. Quando você ataca um inimigo na sua ação e seu amigo ataca na dele, dentro do jogo não existe uma sequência disso, na real ambas as ações ocorrem ao mesmo tempo. E é por isso que implementei essa diretriz, pois um inimigo que tenha a chance de reagir ao seu ataque, não deixará você nem mesmo chegar perto.
+                </p>
+                <p>
+                    Lógico que você deve levar em consideração outros fatores, pois se o jogador de alguma forma consegue bloquear a visão do alvo, impedindo que ele perceba sua aproximação, uma ação de ataque corpo a corpo pode ser feita sem nenhum problema. Então como mestre você deve saber a hora de fechar ou continuar a ação de seus jogadores e NPCs.
+                </p>
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

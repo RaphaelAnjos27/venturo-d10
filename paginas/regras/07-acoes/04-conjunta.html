@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>AÇÃO CONJUNTA</h2>
+                <p>
+                    Teremos ocasiões em que os personagens vão querer realizar ações juntos. Seja para somar poder ou qualquer outra coisa. Então para isso realizamos a ação conjunta, onde basicamente pegamos a soma dos PD de todos que vão se juntar para fazer a ação. E colocamos uma classe de dificuldade 10, com no mínimo 2 NV.
+                </p>
+                <p>
+                    Por exemplo: vou correr e pular na mão daquele personagem que vai me jogar para cima. Assim temos a sua ação (<i>Des + Esporte = 7 dados</i>) mais o teste do outro jogador (<i>For + Arremesso = 6</i>) o total será de 13 dados. Jogando esses 13 dados devemos ter pelo menos 2 NV iguais a 10.
+                </p>
+                <p>
+                    O narrador pode abaixar o ND, porém o padrão definido foi 10. Isso por que realizar uma ação com outro personagem acaba sendo difícil, pois o mesmo não tem os mesmos reflexos que você. Caso os personagens treinem na crônica a ação que eles vão fazer, o seu ND pode abaixar, ou seja, vão fazer um <b>Treino de Ação</b> (<i>Capítulo Regras do Sistema</i>).
+                </p>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

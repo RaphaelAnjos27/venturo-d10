@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Criação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/criacao.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criacao</h1>
+        <p>Agora que você conhece o Universo e as Regras. Está na hora de aprender a criar os elementos desse universo!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-criacao></venturo-sumario-criacao>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>SOBRENATURAIS</h2>
+                <p>
+                    Criaturas sobrenaturais são todas aquelas que de alguma forma transcendem os limites da natureza. Aqui no sistema criaturas sobrenaturais são toda as categorias de fantasmas ou espíritos que de alguma forma tem poder para influência o mundo a sua volta.
+                </p>
+                <p>
+                    Esse tipo de criatura pode nascer a partir de seres que morreram em determinada raça, e por graças a forma que esse ser morreu, ele virou uma criatura sobrenatural que tem certas características que outra criatura sobrenatural não tem.
+                </p>
+                <ul>
+                    <li><b>Nome</b> – Pense em um nome para essa criatura sobrenatural. Seres sobrenaturais não tem maturidade, pois são criados a partir de eventos como os rituais. </li>
+                    <li><b>Ilustração</b> – Ilustre essa criatura sobrenatural.</li>
+                    <li><b>Idiomas</b> – Aqui você preenche o nome do idioma que a criatura fala. Caso ela não tenha um idioma preencha com “nenhum”, caso ela tenha um idioma próprio da espécie, insira o nome desse idioma. E se tiver mais idiomas que ela domine, coloque-os todos entre parênteses após o idioma nativo da espécie.</li>
+                    <li><b>Vitalidade</b> – Sim, seres sobrenaturais têm vitalidade. Porém não é uma vitalidade que pode ser perdida por ataques normais. Para ferir um ser sobrenatural você precisa de um artefato que tenha tal efeito.</li>
+                    <li><b>Tamanho</b> – Tipo mais a bonificação de Dano.</li>
+
+                    <div class="alert alert-primary">
+                        <i><b>NOTA.:</b> Pode existir artefatos específicos que ferem um sobrenatural, ou encantamentos que selam essa criatura, purifica e entre outros efeitos. Isso tudo é informado na descrição do mesmo.</i>
+                    </div>
+                    <li><b>Ação Complementar</b> – Aqui você coloca quantas ações complementares essa criatura possui. As ações complementares de ser sobrenatural podem variar dependendo da periculosidade desse monstro entre +2 a +4.</li>  
+                    <li><b>Perigo</b> – o perigo é somente uma palavra que representa os riscos que a criatura oferece a outros seres.</li>         
+                    <ul>
+                        <li><b>Calmo</b>: criaturas sobrenaturais calmas não atacam sem motivo;</li>
+                        <li><b>Hostil</b>: criaturas sobrenaturais hostis atacam sem motivo, e algumas vezes atacam até mesmo a sua própria espécie.</li>
+                    </ul>
+                    <li><b>Habitat</b> – informe simplificadamente a localização dessa criatura. </li>
+                    <li><b>Frequência</b> – é um atributo que indica a raridade da criatura em seu habitat, podendo ser preenchido com os valores “único”, “raro” e “normal”. Esse atributo é melhor explicado no começo desse capítulo.</li>
+                    <li><b>Atributos</b> – São valores usados para testes.</li>
+                    <ul>
+                        <li><b>Força</b>: representa a quantidade de força que o monstro tem;</li>
+                        <li><b>Destreza</b>: representa a velocidade do monstro;</li>
+                        <li><b>Percepção</b>: capacidade de perceber coisas sejam materiais ou não.</li>
+                        <li><b>Sabedoria</b>: Responsável pelo autoconhecimento, conhecimentos adquiridos, intuição. </li>
+                        <li><b>Inteligência</b>: representa a inteligência do monstro. Muito usado para montar estratégias de ataques em bando;</li>
+                        <li><b>Constituição</b>: Representa a capacidade física do monstro. </li>
+                        <li><b>Resistência</b>: usada para segurar ataques dos inimigos;</li>
+                        <li><b>Carisma</b>: Alguns monstros são inteligentes o suficiente para fazerem testes de carisma contra jogadores. </li>
+                        <li><b>Poder</b>: esse atributo é usado para ativar habilidades do monstro.</li>
+                    </ul>
+                    <li><b>Deslocamento</b> – Esse atributo já foi explicado a cima em “Deslocamento”.</li>
+                    <li><b>CLOL</b> – O CLOL de uma criatura sobrenatural varia de 20 a 100 dependendo de sua origem.</li>
+                    <li><b>Descrição</b> – Na descrição você deve elaborar um texto explicando como surgiu essa criatura e como vive. Segue uma lista do que devemos descrever:</li>
+                    <ul>
+                        <li><b>Origem</b>: Explique como surgi essa criatura e qual o seu habitat;</li>
+                        <li><b>Rituais</b>: Caso esse ser tenha algum ritual que a expulse ou aprisione, você pode indicar aqui, e criá-lo em seguida como uma habilidade secundária.</li>
+                    </ul>
+                    <li><b>Ações de Ataque</b> – Esses são todos os ataques que a criatura faz para se defender de inimigos, cada ação deve conter.</li>
+                    <ul>
+                        <li><b>Nome</b>: qual o nome dessa habilidade;</li>
+                        <li><b>Frequência</b>: Estipule o dado base e o Nível de Dificuldade dessa frequência.</li>
+                        <li><b>Teste</b>: Aqui você coloca a Perícia mais atributo “PD” da habilidade, o Nível de Dificuldade “ND” da habilidade;</li>
+                        <li><b>Descrição</b>: descreva como funciona, por exemplo: Uma mordida dolorosa seguida de envenenamento.</li>
+                    </ul>
+                    <li><b>Habilidades</b> – Crie os poderes sobrenaturais de sua criatura. O número mínimo de poderes é de 1 e o máximo é 10. Os atributos de poderes são:</li>
+                    <ul>
+                        <li><b>Nome</b>: De um nome a essa poder;</li>
+                        <li><b>Teste</b>: Aqui você coloca a Perícia mais atributo “PD” da habilidade, o Nível de Dificuldade “ND” da habilidade e, por fim, seu consumo de CLOL;</li>
+                        <li><b>Descrição</b>: Descreva como funciona esse poder.</li>
+                    </ul>
+
+                    <li><b>Particularidades</b> – São coisas que essa criatura faz em particular, como estratégia de bando ou criar armadilhas para sua proteção (Esse segundo caso se aplica para criaturas mais inteligentes).</li>
+                    <li><b>Ponto fraco</b> – O ponto fraco já foi explicado a cima. Nele você precisa preencher o atributo descrição para cada ponto fraco. No caso de criaturas sobrenaturais, você indica algum material que pode feri-la.</li>
+                    <li><b>Resistência</b> – A resistência já foi explicada no começo da sessão. Aqui você vai precisar preencher um atributo descrição para cada elemento que a criatura é resistente ou imune. Criaturas sobrenaturais são imunes a ataques corpo a corpo naturalmente, então nem precisa passar essa informação nesse atributo. </li>
+
+                </ul>
+
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

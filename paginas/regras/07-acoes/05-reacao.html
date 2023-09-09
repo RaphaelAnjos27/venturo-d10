@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>REAÇÃO</h2>
+                <p>
+                    A reação é uma ação que pode ser feita logo ao final da ação de qualquer outro personagem, seja ele jogador ou NPC, amigo ou inimigo. Esse tipo de ação deve ser rápida (<i>aproximadamente 1 segundos</i>). Então qualquer ação que você consiga imaginar, que pode ser feita em 1 segundo é valida para a reação, como por exemplo, proteger um amigo que está ao seu lado com um escudo, ou conjurando rapidamente uma habilidade.
+                </p>
+                <p>
+                    Quando o jogador for usar a reação ele deve usar um <b>ponto de ação</b> por reação. E ela não tem limite de uso por rodada, ou seja, você pode usar quantas vezes quiser, enquanto tiver pontos de ação na ficha (<i>pontos de ação é um recurso que pode ser encontrado na ficha, e será melhor explicado na sessão de criação de personagem</i>).
+                </p>
+                <p>
+                    O mestre deve prestar muita atenção na reação de um determinado jogador. E deve ser capaz de julgar se a reação é valida ou não. Por serem ações rápidas, o jogador não pode querer fazer coisas mirabolantes com ela.
+                </p>
+                <p>
+                    E como dito anteriormente a reação pode ser feita somente no final da ação de outros personagens. Em casos de uma reação cujo objetivo é proteger um aliado, a mesma pode vir primeiro que o teste de dano. Assim o mestre pode julgar se o teste de dano terá alguma penalidade (<i>ou bonificação</i>). E toda reação jogará teste normalmente como se fosse uma ação normal. 
+                </p>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

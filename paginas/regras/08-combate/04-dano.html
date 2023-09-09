@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>DANO E TESTE DE EFEITO</h2>
+                <p>
+                    Todo o <b>dano</b> vem depois de um ataque ou situação. E o dano varia de acordo com os tipos de
+                    armas ou habilidade. Em um teste, cada acerto da PD equivale a um dano normal. Temos os danos
+                    causados por armas de fogo, energia, brancas, habilidades, combate corpo a corpo e até mesmo por
+                    acontecimentos narrativos.
+                </p>
+                <p>
+                    O dano também pode ser chamado de <b>Teste de efeito</b> graças a uma das regras relacionadas a ela.
+                    Chamamos de testes de efeitos, todas as Paradas de Dados que um jogador tem que fazer para ver a
+                    quantidade do efeito de uma ação. Essa ação pode estar relacionada a algum ataque (<i>ai chamamos de
+                        dano</i>), ou pode estar relacionada a algum efeito causado no personagem, como por exemplo, uma
+                    restauração aleatória da vitalidade.
+                </p>
+                <p>
+                    Tenha em mente que, o dano será primeiro subtraído pelas defesas do alvo. Para só então subtrair a
+                    vitalidade sua vitalidade.
+                </p>
+                <p>
+                    Nesse sistema podemos encontrar quatro formas de levar dano, essas são:
+                </p>
+                <h5>Normal ou fixo:</h5>
+                <p>
+                    Quando um personagem recebe um ataque de outro. Os danos normais riscam somente um slot da
+                    vitalidade. E seu calculo é feito com base nos acertos do teste mais o dano da arma, ou seja,
+                    <b>Dano + Acertos = Dano Total</b>. E esse tipo de dano é usado em armas do tipo branca, fogo e
+                    energia e ataques corpo a corpo, ou qualquer outro item que tenha anotado o valor de dano fixo.
+                </p>
+
+                <img class="img-fluid" src="/static/imagens/imgs_regra/introducao/dano.webp"
+                    alt="Pilares do Sistema">
+
+                <p>
+                    Nesse exemplo acima temos um dano estipulado igual a <b>2</b> e temos uma Parada de Dados igual a
+                    <b>3</b>. Porem acertamos apenas <b>2</b>. Então nosso dano dotal é os acertos da PD + Dano da PD
+                    que é igual a um dano total de <b>4</b>.
+                </p>
+                <p>
+                    No final dessa sessão temos uma tabela com uma média de dano padrão para cada tipo de arma existente
+                    nesse sistema.
+                </p>
+
+                <h3>Letal:</h3>
+                <p>
+                    Quando o ataque é mais crítico o dano se torna maior. Danos letais se risca uma quantidade maior de
+                    vitalidade. Seu calculo é feito da seguinte forma. Multiplicamos por 2 a quantidade de
+                    <b>acertos</b>, e somamos o resultado com o dano do objeto. Normalmente, os danos letais ocorrem por
+                    conta de ataques com <b>alvo localizado</b>. Ou quando o ataque é mais agravado, como, por exemplo,
+                    um corte profundo ou tiro. Podemos também ter esse tipo de dano sendo usado em acertos ou erros
+                    críticos.
+                </p>
+
+                <img class="img-fluid" src="/static/imagens/imgs_regra/introducao/dano2.webp"
+                    alt="Pilares do Sistema">
+                <p>
+                    Nesse exemplo acima temos uma PD igual a 3, onde tivemos <b>3</b> acertos. Nesse caso pegamos a
+                    quantidade de acertos e multiplicamos por 2 (<b>2 x 3 = 6</b>). E somamos o resultado com o dano
+                    estipulado, que nesse caso é 5. Isso nos fornece um dano total de <b>6 + 5 = 11</b>.
+                </p>
+                <p>
+                    Um dano letal pode ocorrer também quando o golpe ou evento narrativo acontece diretamente no corpo
+                    do oponente ou personagem. Então se ele não tiver nenhuma armadura, e levar um tiro, o dano desse
+                    disparo será letal.
+                </p>
+                <h3>Multiplicado:</h3>
+                <p>
+                    Esse é o tipo de dano usado em armas muito grandes fabricadas para destruir veículos. O dano
+                    multiplicado é muito elevado, e geralmente é atribuído a armas de grande poder de fogo, como por
+                    exemplo, os torrents de uma nave ou bombas. Seu calculo se resume a multiplicar a quantidade de
+                    acertos com o dano da arma, ou seja. <b>Total Acertos * Dano da arma = Dano Total</b>.
+                </p>
+                <img class="img-fluid" src="/static/imagens/imgs_regra/introducao/dano3.webp"
+                    alt="Pilares do Sistema">
+
+                <p>
+                    Nesse caso acima tivemos uma PD igual a 4, porém apenas <b>3</b> acertos. Levando em consideração
+                    que o dano da arma é de <b>10</b>, temos um dano total de <b>3 x 10 = 30</b>.
+                </p>
+
+                <h5>Dinâmico:</h5>
+                <p>
+                    Os testes de efeitos dinâmicos são usados em <b>acontecimentos narrativos</b> para diversas coisas como: Causar dano ao jogador por algum motivo como, escorregar da escada ou por conta de um objeto
+                    mágico que restabelece a vitalidade de seu portador para um valor aleatório. O dano dinâmico foi criado para ser usados em eventos
+                    narrativos onde a quantidade de dano não é algo fixo, e sim uma coisa que pode variar de jogador
+                    para jogador. E ser interpretado de acordo com a quantidade. E no caso desse efeito, podemos usar
+                    outros dados além do <b>D10</b>, como o <b>D2</b>, <b>D6</b> e <b>D20</b>.
+                </p>
+                <img class="img-fluid" src="/static/imagens/imgs_regra/introducao/dano5.webp"
+                    alt="Pilares do Sistema">
+                <p>
+                    No exemplo acima temos efeito dinâmico de <b>3D2</b>. O dano total é a soma da PD total, que nesse
+                    caso é <b>1 + 2 + 1 = 4</b>.
+                </p>
+                <img class="img-fluid" src="/static/imagens/imgs_regra/introducao/dano6.webp"
+                    alt="Pilares do Sistema">
+                <p>
+                    No exemplo acima temos um efeito dinâmico de <b>4D10</b>. O para saber o dano total basta fazer
+                    igual ao primeiro exemplo, ou seja, <b>10 + 1 + 5 + 7 = 23</b>.
+                </p>
+                <img class="img-fluid" src="/static/imagens/imgs_regra/introducao/dano7.webp"
+                    alt="Pilares do Sistema">
+
+                <p>
+                    E no último exemplo temos um efeito de <b>2D20</b>. Seu dano total foi de <b>20 + 14 = 34</b>.
+                </p>
+
+                <p>
+                    Note que estamos tratando o efeito como um dano causado por alguma coisa. Mas ele pode ser tratado
+                    também como a restauração ou bonificação dependendo do caso. Note também que o efeito dinâmico não
+                    usa o teste para definir o efeito. O teste nesse caso serve apenas para saber se o dano dinâmico vai
+                    ocorrer, então depois do teste, você joga o efeito dinâmico.
+                </p>
+                <p>
+                    No começo falei que o dano dinâmico pode ser <i>“interpretado de acordo com a quantidade”</i>. Isso
+                    quer dizer que o mestre pode criar uma trama em cima da quantidade de dano que um personagem
+                    recebeu, por exemplo:
+                </p>
+                <div class="alert alert-secondary">
+                    <p>
+                        <b>Mestre</b> – A nave de vocês então colide com o mar! Joguem ai 1d10.
+                    </p>
+                    <p>
+                        <b>Jogador¹</b> – Meu resultado foi 2.
+                    </p>
+                    <p>
+                        <b>Jogador²</b> – Meu resultado foi 7.
+                    </p>
+                    <p>
+                        <b>Mestre</b> – Jogador¹ você como estava preso no cinto, acabou sofrendo apenas uma pequena
+                        pressão em seu peito. Agora jogador², você também estava preso no cinto, porém o mesmo estava
+                        com defeito. Com isso você acabou sendo jogado para o lado e bateu com força na parede da nave.
+                    </p>
+                </div>
+
+                <div class="alert alert-danger">
+                    <i><b>ALERTA.:</b> Não use Efeito Dinâmico nos testes de Habilidades</i>
+                </div>
+                
+                <p>O efeito dinâmico é interessante para ser usado em <b>eventos narrativos</b>, e não se deve usá-lo em nenhum tipo de habilidade. Pode parecer convidativo usar a ideia de teste dinâmico em habilidades, principalmente aquelas no qual o efeito é muito abstrato, por exemplo, manipulação de elementos. Nesses casos, onde o efeito causado é incerto, podemos deixar a escolha do mestre. </p>
+
+	            <p>Em testes complexos onde não podemos estipular o efeito, seja dano, restauração e entre outros, podemos deixar o mestre estipular o <b>nível de dificuldade</b> (<i>ND</i>) de acordo com a descrição da ação.</p>
+
+                <p><b>Então o jogador um pode descrever:</b></p> 
+                
+                <div class="alert alert-secondary">
+                    <p><b>Jogador 01</b> – Eu vou manipular essa massa de água para criar uma pequena onda.
+                    </p>
+                </div>
+
+                <p><b>Já o Jogador dois me descreve:</b></p>
+
+                <div class="alert alert-secondary">
+                    <p><b>Jogador 02</b> – Manipularei essa massa de água formando pequenas estacas de gelo, e irei atirá-la contra meus inimigos, causando um ataque em área.</p>
+                </div>
+                
+                <p>
+                    Note a complexidade nas duas ações, enquanto o jogador um vai criar uma simples onda, o jogador dois quer além de manipular a aguá da sua habilidade, ele quer também criar estacas e arremessar contra os inimigos. 
+                </p>
+
+                <p>
+                    Nesse caso o mestre pode usar o teste da sua habilidade e nível, porém estipulando uma dificuldade muito maior para sua ação. Já o dano que cada estaca causará nos inimigos pode ser usando o teste dinâmico com base num dano estipulado pelo mestre, isso se for realmente relevante, por exemplo: Essa ação do jogador causará um ataque em área em diversos inimigos no campo de batalha, mas realmente é necessário calcular o dano de todos os inimigos? Calcule o dano apenas em alvos importantes, e dependendo dos acertos e do contexto, pode até mesmo acertar aliados. 
+
+                </p>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Caso necessário, dependendo da habilidade o mestre pode consultar a tabela de dano padrão abordado mais a baixo nesse capítulo.
+                    </i>
+                </div>
+
+                <h3>EXEMPLOS DE TESTES:</h3>
+                <p>
+                    Para danos com armas e combates:
+                </p>
+                <p>
+                    <b>Armas de fogo</b> – Destreza + Arma de Fogo, e somamos os acertos com o dano da arma, que pode
+                    ser, por exemplo, igual a “2”. Em um PD igual a 10, tivemos 5 acertos então o dano seria “5+2 = 7”,
+                    em seguida teremos a defesa.
+                </p>
+                <p>
+                    <b>Corpo a Corpo</b> – Destreza + perícia de luta, e somamos os acertos teste mais o dano fornecido
+                    pela perícia, depois vem a defesa do alvo.
+                </p>
+                <p>
+                    Um personagem pode fazer um ataque corpo a corpo apenas usando a Destreza, sem perícia. Nesse caso,
+                    o dano será a quantidade de acertos do teste mais o nível de seu atributo Força. Porem o ND aumenta.
+                </p>
+                <p>
+                    Ataque com arma branca, tem a força somada com o dano final, por exemplo: Em um ataque (<i>Destreza
+                        + Arma Branca</i>) e nossa PD nos deu 3 de dano, somamos isso com mais 4 do dano da arma, e a
+                    força (<i>igual a 4</i>) teremos 11 de dano.
+                </p>
+
+                <h3>DANO PADRÃO:</h3>
+                <p>
+                    Existem características narrativas que dão uma certa quantidade de dano padrão ao personagem. Essas
+                    características fornecem ao jogador um <b>dano dinâmico</b>, onde alguns podem variar de acordo com
+                    a intensidade.
+                </p>
+                <p>
+                    <b>Queimadura</b> – Se o jogador receber uma queimadura, ele vai tomar dano, e receber a desvantagem
+                    de queimadura. Seus efeitos de dano são:
+                </p>
+                <ol>
+                    <li>
+                        <b>Leve</b> – Pequena queimadura causada no corpo: <b>Efeito 1D6</b>;
+                    </li>
+                    <li>
+                        <b>Médio</b> – Uma queimadura que pode pegar em todo o braço: <b>Efeito 1D10</b>;
+                    </li>
+                    <li>
+                        <b>Forte</b> – Queimaduras que podem pegar 90% do corpo: <b>Efeito 3D10</b>.
+                    </li>
+                </ol>
+                <p>
+                    <b>Choque elétrico</b> – Em caso de Choque elétrico o personagem toma os efeitos abaixo por turno de
+                    exposição. Ele deve fazer um teste de <b>CON ND 7</b>, caso falhe o alvo fica <b>1D6</b> Pasmo, ou
+                    seja, joga com <b>-4D10</b> em todas suas ações.
+                </p>
+                <ol>
+                    <li>
+                        <b>Leve</b> – Equivalente ao choque de <b>20</b> miliamperes: <b>Efeito 1D10</b>;
+                    </li>
+                    <li>
+                        <b>Médio</b> – Equivalente ao choque de <b>70</b> miliamperes: <b>Efeito 2D10</b>;
+                    </li>
+                    <li>
+                        <b>Forte</b> – Equivalente ao choque de <b>100</b> miliamperes: <b>Efeito 4D10</b>.
+                    </li>
+                </ol>
+                <p>
+                    <b>Ficar sem respirar</b> – Caso o jogador fique sem respirar ele toma <b>4 de dano por turno</b>
+                    que ficar sem respirar.
+                </p>
+                <p>
+                    <b>Exposição ao vaco do espaço</b> – Se de alguma forma o personagem ficar exposto no vaco do
+                    espaço, ele recebe <b>8 de dano por turno</b>.
+                </p>
+                <p>
+                    <b>Contato com gás, veneno ou ácido</b> – Nesse escopo cada caso é um caso, onde:
+                </p>
+                <ol>
+                    <li>
+                        Gás especial como do sono, o personagem sofre penalidade de menos <b>-2D10</b> em CON, DES e
+                        FOR.
+                    </li>
+                    <li>
+                        Veneno, o personagem sofre as penalidades de acordo com o veneno.
+                    </li>
+                    <li>
+                        Pará ácido teremos um dano em sua descrição que variam de 1 a 30 de dano por contato.
+                    </li>
+                </ol>
+
+                <h3>DANO LOCALIZADO:</h3>
+                <p>
+                    O Atacante pode querer usar suas habilidades ou desferir um golpe em uma área específica de seu
+                    alvo. Esse ato altera o ND daquela ação. E esse ND deve ser pensando pelo mestre levando em
+                    consideração (<i>Local onde quer acertar</i>) e (<i>Distancia do alvo</i>). E após o ataque o mestre
+                    não pode esquecer de narrar a consequência que o ataque deu ao inimigo, por exemplo: o inimigo ficou
+                    cego, manco, atordoado, etc.
+                </p>
+                <p>
+                    Armaduras podem proteger seu personagem tomando danos automaticamente (<i>Isso vai depender muito da
+                        armadura</i>). Uma armadura pode defender muito dano ou pouco dano, podendo várias de 3 a 10 no
+                    dano recebido. Algumas armaduras não protegem certos lugares, como, por exemplo, um colete a prova
+                    de balas que não protege cabeça, pernas e braços, ou seja, caso o personagem de colete receba um
+                    dano localizado, sua armadura não segurará o dano (<i>caso o alvo seja desprotegido pela
+                        armadura</i>).
+                </p>
+
+                <h3>DANO POR QUEDA:</h3>
+                <p>
+                    Quando se está em queda livre e seu contato com o solo não tem nenhum tipo de interferência. Devemos
+                    atribuir um dano ao personagem. Esse dano vai variar com a distância da queda. Então quando a queda
+                    do personagem ultrapassar <b>5 metros</b> faça o jogador rolar <b>1D6</b> onde o resultado é o
+                    <b>dano atribuído</b>. A <b>10 metros multiplique</b> o valor do <b>D6</b> por <b>2</b>. E a cada 10
+                    metros a mais some +1 ao multiplicador, por exemplo: 5 metros é igual a 1D6, 15 metros é igual a 1D6
+                    e o resultado é multiplicado por 2, e a 25 metros, 1D6 e o resultado multiplicado 2+1, ou seja, 3 e
+                    por aí vai até chegarmos ao limite de 75 metros.
+                </p>
+
+                <h6>TABELA DE QUEDA:</h6>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Metros</th>
+                                    <th>Dados</th>
+                                    <th>Multiplicado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>5</td>
+                                    <td>1D6</td>
+                                    <td>x1</td>
+                                </tr>
+                                <tr>
+                                    <td>15</td>
+                                    <td>1D6</td>
+                                    <td>x2</td>
+                                </tr>
+                                <tr>
+                                    <td>25</td>
+                                    <td>1D6</td>
+                                    <td>x3</td>
+                                </tr>
+                                <tr>
+                                    <td>35</td>
+                                    <td>1D6</td>
+                                    <td>x4</td>
+                                </tr>
+                                <tr>
+                                    <td>45</td>
+                                    <td>1D6</td>
+                                    <td>x5</td>
+                                </tr>
+                                <tr>
+                                    <td>55</td>
+                                    <td>1D6</td>
+                                    <td>x6</td>
+                                </tr>
+                                <tr>
+                                    <td>65</td>
+                                    <td>1D6</td>
+                                    <td>x7</td>
+                                </tr>
+                                <tr>
+                                    <td>75</td>
+                                    <td>1D6</td>
+                                    <td>x8</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="/static/imagens/imgs_regra/introducao/quedadano.webp"
+                            class="">
+                    </div>
+                </div>
+
+                <p>
+                    Essa regra está levando em consideração a queda de um ser vivo comum em gravidade análogas a
+                    terra. Caso o planeta tenha mais gravidade, o mestre pode optar por ultrapassar o limite de 75
+                    metros de dano. E pode calcular dano para objetos maiores como aviões e naves, apenas alterando
+                    o dado. Para naves de pequeno porte, usar o dado 2D6 (<i>também conhecido como 1D66</i>). Para
+                    naves maiores podemos usar <b>2D10</b> (<i>também conhecido como 1D110</i>). Saber esse dano
+                    causado por queda é interessante, pois podemos usar esse mesmo dano, caso o corpo em queda
+                    atinja uma estrutura ou outra pessoa.
+                </p>
+                <p>
+                    Uma forma rápida de saber o multiplicador do D6 é pegar a casa decimal dos metros e somar mais
+                    1. Acima disso (<i>centena</i>) você vai pegar as duas últimas casas, concatenar e somar mais 1.
+                    Por exemplo: 250 metros, pegamos os 25 + 1 e multiplicamos pelo valor do D6. Quando for na casa
+                    milhar, pegamos as três últimas. E por ai vai (<i>acredito que não passará do milhar</i>).
+                </p>
+                <p>
+                    Agora caso aja alguma interferência na queda, onde a mesma não foi suficiente para evitar um
+                    forte impacto ao solo. O mestre pode dividir o valor de dano atribuído por um número de sua
+                    escolha, ou da jogada de 1 (<i>ou mais</i>) D10. Tudo vai depender da interpretação do mestre
+                    perante essa queda e interferência.
+                </p>
+
+                <h3>DANO CONTINUO:</h3>
+                <p>
+                    Existem certos momentos que o personagem pode levar um dano a queima roupa, causando um
+                    ferimento letal no mesmo. Nesse ferimento o personagem ficara perdendo muito sangue. E essa
+                    perca de sangue vai causando um dano continuo ao personagem a cada <b>rodada</b>.
+                </p>
+                <p>
+                    Então todo momento que chegar na vez desse personagem com um ferimento grave, o mestre pode
+                    jogar <b>1D6</b>, <b>2D6</b>, <b>1D10</b> ou <b>2D10</b> para saber a quantidade de dano que ele
+                    vai receber nesse turno. Quem define esses dados é a gravidade do ferimento.
+                </p>
+
+                <ul>
+                    <li>
+                        Ferimentos pequenos como cortes de faca, pode se jogar 1D6;
+                    </li>
+                    <li>
+                        Ferimentos maiores como um corte de uma espada, pode se jogar 2D6;
+                    </li>
+                    <li>
+                        Ferimentos profundos como um tiro, pode se jogar 1D10;
+                    </li>
+                    <li>
+                        Agora quando personagem é decapitado, pode se jogar 2D10.
+                    </li>
+                </ul>
+
+                <p>
+                    Essas jogadas só pararão quando o personagem arrumar alguma forma de estancar o sangue. Em
+                    alguns casos, parar o sangramento é extremamente difícil, como por exemplo, ser decapitado no
+                    meio. Nesse caso não somente o fator da perca de sangue afeta o personagem, como também a dor, e
+                    a falecimento dos órgão. Nesses cenários restaurar o personagem vai depender de alguma
+                    habilidade ou equipamento.
+                </p>
+
+                <h3>DANO EM ÁREA:</h3>
+                <p>
+                    Algumas habilidades, e até mesmo armas com capacidade de dano em área podem existir dentro desse
+                    sistema. Então para suportar essa ação em nosso sistema utilizaremos uma regra básica.
+                </p>
+                <p>
+                    O sistema Venturo é mais voltado a interpretação dos jogadores sem que seja necessário o uso de
+                    mapas com tamanhos em metros ou quilômetros, ou seja, não temos um padrão de mapas para criar
+                    uma regra precisa de dano em área. Por conta disso toda essa ideia terá que ser interpretada,
+                    onde o mestre tem a obrigação de dizer a quantos metros ou quilômetros um possível inimigo
+                    (<i>que esteja visível</i>) está dos PP.
+                </p>
+
+                <div class="alert alert-success">
+                    <p><i><b>DICA.:</b> O mestre pode fazer o uso de tokens ou miniaturas para exemplificar a distribuição dos inimigos no cenário, e até mesmos mapas.</i></p>
+                </div>
+
+                <div class="alert alert-success">
+                    <p><i><b>DICA.:</b> O mestre pode usar um dado, e na hora do ataque jogar esse dado para saber quantos inimigos foram afetados.</i></p>
+                </div>
+
+                <p>
+                    Todas as habilidades ou armas que usarem o dano em área, informarão o raio de seu alcance. Assim a dano em área funcionará da seguinte forma: Todos os inimigos dentro dessa área de dano recebem o dano calculado no final do ataque igualmente. A não ser que a habilidade tenha uma descrição da distribuição do dano.
+                </p>
+
+                <h3>DANO EXTIPULADO:</h3>
+                <p>
+                    Existem situações onde o dano causado por algum evento não condiz com a <i>“realidade”</i>. Em uma ação onde a quantia de dano, logicamente falando, seria maior que o resultado gerado, o mestre pode manipulá-lo. Ele pode usar a regra do <b>dano dinâmico</b>, ou estipular um valor de dano padrão para os jogadores receberem, sem mesmo jogar dados.
+                </p>
+                <p>
+                    Essa é uma ideia arriscada e deve ser usada apenas em emergências, quando você e sua mesa vê que o dano estipulado pelos dados não condiz com a realidade, por exemplo, vamos imaginar que um meteoro caiu encima dos personagens, não existe uma regra específica para distribuir dano nessa situação. Então ou o mestre usa um <b>dano dinâmico</b> que por sua vez pode gerar até uma trama narrativa interessante para explicar o motivo da quantidade de dano tomada. Ou o mestre pode pular e estipular um valor de dano que ele julgue justo.
+                </p>
+                
+                <h3>BONIFICAÇÃO DE DANO POR TAMANHO:</h3>
+                <p>
+                    Esse é um atributo que aparece nas criaturas, mas que pode ser útil quando estivermos trabalhando com largas escalas. Aqui veremos uma tabela com bonificação de <b>dano dinâmico</b> para determinador tipos de altura, isso é, quanto maior o inimigo, mais forte será seu ataque físico:
+                </p>
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Categoria</th>
+                            <th>Tamanho (Largura ou Altura)</th>
+                            <th>Bonificação de Dano</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Inferior</b></td>
+                            <td>~ 0,1 a 20cm</td>
+                            <td>Nenhum</td>
+                        </tr>
+                        <tr>
+                            <td><b>Pequeno</b></td>
+                            <td>~ 50cm</td>
+                            <td>Nenhum</td>
+                        </tr>
+                        <tr>
+                            <td><b>Médio</b></td>
+                            <td>~ 2m</td>
+                            <td>Nenhum</td>
+                        </tr>
+                        <tr>
+                            <td><b>Grande</b></td>
+                            <td>~ 10m</td>
+                            <td>2D20</td>
+                        </tr>
+                        <tr>
+                            <td><b>Enorme</b></td>
+                            <td>~ 50m</td>
+                            <td>5D20</td>
+                        </tr>
+                        <tr>
+                            <td><b>Colossal</b></td>
+                            <td>~ 400m</td>
+                            <td>5D100</td>
+                        </tr>
+                        <tr>
+                            <td><b>Planetário</b></td>
+                            <td>Tamanho de Planetas</td>
+                            <td>Designado pelo Mestre</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>TABELA DOS NÍVEIS DE DANO:</h3>
+                <p>
+                    É de extrema importância termos uma referência na hora de criarmos nossas armas, ou for causar danos em nossos jogadores. Essa tabela a baixo reuni e dano mínimo e máximo que uma arma pode causar em um personagem.
+                </p>
+                <p>
+                    Os níveis representam as capacidades de cada categoria de arma. Eles são uma base para ser usado tanto em narrativa, quanto na criação de uma arma.
+                </p>
+                <h5>PODER BÉLICO</h5>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Armas</th>
+                            <th>Nível 1</th>
+                            <th>Nível 2</th>
+                            <th>Nível 3</th>
+                            <th>Nível 4</th>
+                            <th>Nível 5</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Armas Brancas</b></td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>10</td>
+                            <td>16</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td><b>Armas de Fogo</b></td>
+                            <td>10</td>
+                            <td>15</td>
+                            <td>30</td>
+                            <td>40</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td><b>Armas de Energia</b></td>
+                            <td>10</td>
+                            <td>15</td>
+                            <td>30</td>
+                            <td>45</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <td><b>Armas de antimatéria</b></td>
+                            <td>25</td>
+                            <td>45</td>
+                            <td>65</td>
+                            <td>80</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td><b>Bombas Explosivas</b></td>
+                            <td>30</td>
+                            <td>50</td>
+                            <td>100</td>
+                            <td>250</td>
+                            <td>400</td>
+                        </tr>
+                        <tr>
+                            <td><b>Bombas Incendiárias</b></td>
+                            <td>10</td>
+                            <td>15</td>
+                            <td>25</td>
+                            <td>30</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td><b>Bombas Químicas</b></td>
+                            <td>25</td>
+                            <td>35</td>
+                            <td>50</td>
+                            <td>80</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td><b>Canhões</b></td>
+                            <td>100</td>
+                            <td>200</td>
+                            <td>300</td>
+                            <td>400</td>
+                            <td>500</td>
+                        </tr>
+                        <tr>
+                            <td><b>Torrents</b></td>
+                            <td>*30</td>
+                            <td>*45</td>
+                            <td>*60</td>
+                            <td>*80</td>
+                            <td>*100</td>
+                        </tr>
+                        <tr>
+                            <td><b>Mísseis Explosivos</b></td>
+                            <td>100</td>
+                            <td>200</td>
+                            <td>400</td>
+                            <td>1000</td>
+                            <td>5000</td>
+                        </tr>
+                        <tr>
+                            <td><b>Mísseis Químicos</b></td>
+                            <td>100</td>
+                            <td>200</td>
+                            <td>400</td>
+                            <td>600</td>
+                            <td>1000</td>
+                        </tr>
+                        <tr>
+                            <td><b>Mísseis Biológicos</b></td>
+                            <td>100</td>
+                            <td>200</td>
+                            <td>400</td>
+                            <td>600</td>
+                            <td>1000</td>
+                        </tr>
+                        <tr>
+                            <td><b>Atômica</b></td>
+                            <td>200</td>
+                            <td>500</td>
+                            <td>1000</td>
+                            <td>2000</td>
+                            <td>5000</td>
+                        </tr>
+                        <tr>
+                            <td><b>HPP</b></td>
+                            <td>200</td>
+                            <td>500</td>
+                            <td>1000</td>
+                            <td>2000</td>
+                            <td>5000</td>
+                        </tr>
+                        <tr>
+                            <td><b>Espaciais</b></td>
+                            <td>10.000</td>
+                            <td>30.000</td>
+                            <td>50.000</td>
+                            <td>80.000</td>
+                            <td>100.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>
+                    Dano <b>normal</b> são anotados usando apenas os valores de dano. E para dano <b>multiplicado</b> usamos o sinal estrela <b>“*”</b> antes do valor.
+                </p>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

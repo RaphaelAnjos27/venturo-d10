@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>ACERTOS E FALHAS</h2>
+                <p>
+                    A todo momento em uma sessão, teremos os erros ou acertos nos testes propostos. Os erros e acertos normais ocorrem quando os valores da PD não chegam a ser 1 ou 10. Esses dois valores definem um segundo tipo de erro ou acerto.
+                </p>
+                <p>
+                    O erro e acerto normal, é algo que você fez, e seu retorno não foi extraordinário.
+                </p>
+                <p>
+                    Agora quando temos os valores <b>1 e 10</b>, teremos um erro crítico (1) ou acerto critico (10).
+                </p>
+
+                <img class="img-fluid" src="/static/imagens/imgs_regra/introducao/dados3.webp"
+                    alt="Pilares do Sistema">
+
+                <h3>ACERTO CRITICO:</h3>
+                <p>
+                    Temos um acerto critico. Somente quando na PD tivemos valores igual a “10”. Assim, o jogador terá de travar sua PD e jogar novamente os dados igual a “10”. E se novamente tivermos dados igual a “10” nessa nova PD, você terá acertado critico.
+                </p>
+
+                <p>As vantagens de um acerto critico são:</p>
+                <ul>
+                    <li>
+                        No próximo teste o jogador ganhará um bônus de +2D10 (mais dois dados de 10 faces);
+                    </li>
+                    <li>
+                        O mestre poderá aumentar o nível de um atributo ou perícia. Ou ele poderá fornecer um item ao jogador.
+                    </li>
+                </ul>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Normalmente o mestre pergunta ao jogador qual item ele quer ganhar. E nisso o mestre avalia se aceita o pedido ou não. Caso não aceite, opte por dar um atributo ou perícia.</i>
+                </div>
+
+                <div class="alert alert-success">
+                    <i><b>DICA.:</b> Ao dar um item ao jogador, faça uma pequena trama em cima disso. Não forneça um item vindo do nada. Isso pode quebrar um pouco da trama. Aproveite a ação de acerto critico para criar a trama onde o PP recebe um item.</i>
+                </div>
+
+                <h3>ERRO CRÍTICO:</h3>
+                <p>
+                    Só temos erro crítico, quando sua PD não tem nenhum acerto normal, e, pelo menos, um dos dados tem o valor “1”. Vale lembrar que um erro crítico pode ser mortal. Mais de um erro crítico pode matar seu personagem. Vai depender muito do que está acontecendo na ação. Veja um erro crítico como um erro mortal, que pode ferrar tanto o PP do jogador quanto o PP dos outros jogadores, e aliados presentes.
+                </p>
+                <p>
+                    O erro crítico pode quebrar um item especial do personagem, pode feri-lo gravemente, ou aliados. E também pode matá-lo (<i>ou matar aliados</i>). Quem decide isso é o mestre e sua mente criativa. Porem normalmente a morte de um personagem ocorre por conta de quatro erros críticos em uma única PD.
+                </p>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> O Mestre pode usar um D2 para realizar essas decisões difíceis.</i>
+                </div>
+
+                <h3>ANULANDO ACERTOS:</h3>
+                <p>
+                    Erros críticos são anulados por acertos normais e críticos. Assim conseguindo minimizar uma possível catástrofe de erros críticos no personagem. Para começar pegue todos os erros críticos da sua PD, e anule-os começando do maior acerto para o menor. Por exemplo:
+                </p>
+                <p>
+                    Em minha PD eu tinha 10D10 para usar com um ND 7. Ao fazer o teste obtive o seguinte resultado <i>(1,1, 1, 5, 8, 9, 7, 7, 6 e 10)</i>. Então nessa PD tivemos três erros críticos, um acerto crítico, e quatro acertos normais e 2 erro normal.
+                </p>
+                <p>
+                    Agora anulamos os erros críticos com todos os acertos do maior para o menor <i>(1/10, 1/9 e 1/8)</i>. Agora que todos os erros críticos foram anulados, ainda sobraram dois acertos normais. E seu teste não foi falho.
+                </p>
+                <p>
+                    Pode ocorrer do teste em questão cair tanto erro crítico, que não exista acertos suficientes para anulá-los. E pode ocorrer também de cair a mesma quantidade de acertos normais com erros críticos, onde todos se anulam e resulta numa falha normal. Via de regra, se mesmo depois de anular, sobrar erros críticos. Sua ação terá falhado critico.
+                </p>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

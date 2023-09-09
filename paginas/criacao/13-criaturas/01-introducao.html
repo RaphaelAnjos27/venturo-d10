@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Criação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/criacao.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criacao</h1>
+        <p>Agora que você conhece o Universo e as Regras. Está na hora de aprender a criar os elementos desse universo!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-criacao></venturo-sumario-criacao>  
+            </div>
+
+            <div class="col-sm-7">
+                <h1>CRIATURAS</h1>
+                
+                <p>
+                    Em toda campanha temos conflitos que impede os jogadores de alcançarem seus objetivos. Esses conflitos podem variar desde enigmas a obstáculos vivos como animais ferozes ou robôs mal-intencionados. Abordaremos aqui como podemos criar essas criaturas para serem implementados nas campanhas.
+                </p>
+                <p>
+                    Aqui você vai aprender as regras e atributos para criar fichas de criaturas que poderá ser usada em campanha. São regras simples, porém com padrões bem definidos para deixar tudo mais centralizado e organizado na criação de seu universo.
+                </p>
+                <p>
+                    A primeira coisa que devemos intender. É que temos algumas categorias de obstáculos. A diferença de uma categoria para outra é pequena, porém cada uma tem algumas características a mais ou a menos que tornam aquela categoria especial. Mas antes de dar introdução a categorias de criaturas, vamos falar de algumas características encontrada em praticamente todos seres vivos que não sejam completamente máquinas.
+                </p>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> É importante saber equilibrar o seu obstáculo, ou seja, faça um inimigo que possa ser derrotado e não o contrário. Lembre-se, o seu monstro pode ser difícil, não impossível!</i>
+                </div>
+                
+                <h3>EXISTÊNCIA (<i>MATURIDADE</i>):</h3>
+                <p>
+                    É uma característica comum dos seres terem um tempo de vida com começo meio e fim. Por conta disso, esses seres ao longo de sua vida evoluem, tanto em forma física quanto em habilidades. Então você deve colocar bonificações neles de acordo com seu tempo de vida.
+                </p>
+                <p>
+                    O tempo de vida de uma criatura pode ser categorizado como (<i><b>Filhote</b></i>, <i><b>Jovem</b></i>, <i><b>Adulto</b></i> e <i><b>Longevo</b></i>). Você deve pensar o que será bonificado e quanto de bonificação ele vai receber em cada estágios de sua vida. Com isso podemos concluir que ao criarmos seres vivos como obstáculos, sejam eles monstros ou animais simples. Estamos criando na verdade quatro possibilidades para usarmos em narrativa.
+                </p>
+                <p>
+                    Podemos também usar esse estágio de vida para influenciar nas habilidades ou características, por exemplo: a criatura só tem capacidade de usar uma certa habilidade de sua espécie quando alcança a maturidade.
+                </p>
+                <p>
+                    Quando for desenvolver sua criatura, ao lado de seu nome você vai colocar entre parênteses a maturidade dessa criatura, por exemplo, “Nome da Criatura (Longevo)”, E depois deve preencher todos seus atributos de acordo com essa maturidade.
+                </p>
+                <p>
+                    Se você perceber que no estágio de maturidade não existem grandes mudanças na criatura, você pode colocar tudo em uma mesma ficha, passando os estágios de vida daquela criatura no nome, por exemplo, “Nome da Criatura  (<i>Jovem, Adulto</i>)”.
+                </p>
+
+                <h3>SEXO:</h3>
+                <p>
+                    Pensar no sexo desses seres é muito importante. Informações como essa podem ser usadas dentro da campanha de muitas maneiras. Mas não somente isso. Cada espécie pode conter habilidades e características bem diferentes de acordo com seu sexo. Por exemplo, um dragão macho de determinada espécie pode lançar bolas de fogo, enquanto a fêmea lança plasma.
+                </p>
+                <p>
+                    Além disso devemos dar uma descrição de como esses seres se reproduzem. Acredite ou não, saber se o animal bota ovo é interessante para planejar campanhas ou planos de ação.
+                </p>
+
+                <h5>FECUNDAÇÃO:</h5>
+                <p>
+                    A fecundação é a união entre gametas masculinos (<i>espermatozoides</i>) e femininos (<i>ovo ou óvulo</i>). Essa união da origem a célula-ovo (<i>zigoto</i>) que nada mais é do que a célula inicial de um novo ser. Temos dois tipos de fecundação, essa são:
+                </p>
+
+                <ul>
+                    <li><b>Externa</b> – Quando ocorre fora do corpo, no meio ambiente.</li>
+                    <li><b>Interna</b> – Quando ocorre dentro do corpo do individuo que produz os óvulos.</li>
+                </ul>
+                <p>
+                    O custo de energia para produzir gametas na fecundação externa é maior que a interna. Quando temos esse tipo de fecundação, são formados muitos gametas masculinos e femininos. Isso garante uma chance de encontro casual entre eles maior, consequentemente aumentando o número de zigotos. Porém mesmo com esse número maior de zigotos, nem todos sobrevivem as condições adversas do ambiente. E os que sobrevivem dão continuidade a espécie.
+                </p>
+                <p>
+                    Agora para fecundação interna, o custo energético de produção é muito menor, junto com o número de gametas produzidos. E o desenvolvimento do embrião vai depender do animal ser ovíparo, ovovivíparo ou vivíparo.
+                </p>
+
+                <ul>
+                    <li><b>Ovíparo</b> – são seres que botam ovos e seu desenvolvimento ocorrem fora do corpo materno. Os embriões desse estilo dependem dos nutrientes encontrados no ovo.</li>
+                    <li><b>Ovovivíparo</b> – Nessa categoria o ovo fica dentro do ser até o mesmo chocar. Aqui o ser ainda depende dos nutrientes encontrados no ovo.</li>
+                    <li><b>Vivíparos</b> – aqui os embriões evoluem dentro do corpo materno, e só nascem quando estão formados. Aqui o número de embriões são menores, porém a chance de sobrevivência é muito maior. A nutrição desses seres são fornecidos diretamente da mãe, que ocorre por meio de trocas fisiológicas entre mãe e feto. Além disso o custo energético para produção é muito maior, por conta da mãe ter que investir energia na nutrição e no desenvolvimento do embrião dentro de si.</li>
+                </ul>
+
+                <h5>EXCEÇÕES:</h5>
+                <p>
+                    Normalmente criaturas de mesma raça, mas sexo oposto são descritos na mesma ficha. Porem caso eles tenham peculiaridades extremamente diferentes como partes do corpo ou habilidades. Você pode fazê-los em fichas separadas.
+                </p>
+
+                <h3>PONTO FRACO:</h3>
+
+                <p>
+                    Os pontos são características que podem enfraquecer sua criatura. Caso alguma criatura seja atingida em seu ponto fraco ou por algo que seja seu ponto fraco, a mesma pode sofrer um dano maior. Uma criatura pode ter diversos pontos fracos.
+                </p>
+
+                <p>
+                    Os pontos fracos vai conter um atributo, esse é:
+                </p>
+                <ul>
+                    <li>
+                        <b>Descrição</b> – Oque ou onde é o ponto fraco dessa criatura. E na mesma descrição você coloca se o ponto fraco é <b>Frágil</b> (<i>causa um dano multiplicado na criatura</i>), ou se é um ponto fraco <b>Rígido</b> (<i>causa um dano letal</i>).
+                    </li>
+                </ul>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Ataques a pontos fracos seguem a regra de alvo localizado. Já os efeitos letal e multiplicado são explicados em Dano e Teste de Efeito em Combate no livro de regras.</i>
+                </div>
+                
+                <h3>RESISTÊNCIA:</h3>
+                <p>
+                    O atributo de resistência nos indica os materiais e ataques que uma criatura pode aguentar ou nem ser afetado. Uma criatura pode ser imune ou resistente a fogo, ou ela pode ser imune ou resistente a venenos.
+                </p>
+                <p>
+                    A resistência contem o seguinte atributo:
+                </p>
+                <ul>
+                    <li>
+                        <b>Descrição</b> – Aqui você indica o elemento que essa criatura é resistente, e o tipo de resistência que pode ser <b>Imune</b> (<i>a criatura não sofre dano caso seja atacada por esse elemento</i>) ou <b>Resistente</b> (<i>a criatura sobre apenas metade do dano caso seja atacado por esse elemento</i>).
+                    </li>
+                </ul>
+
+                <h3>DESLOCAMENTO:</h3>
+                <p>
+                    O deslocamento é um atributo que informa a distância em metros que determinados seres se desloca por mar, terra e ar dentro de um único turno. Esse atributo tem forte ligação com as características físicas do ser, por exemplo: Um animal nativo do mar, se desloca melhor em seu habitat do que uma outra espécie da terra, e vice-versa. Além também do tamanho do animal, ou seja, seres maiores se deslocam mais longe do que seres menores.
+                </p>
+
+                <p>Devemos preencher 3 atributos que envolvem essa característica, esses são:</p>
+
+                <ul>
+                    <li><b>Andando</b> – Distância em metros que a espécie se desloca na terra;</li>
+                    <li><b>Nadando</b> – Distância em metros que a espécie se desloca no mar;</li>
+                    <li><b>Voando</b> – Distância em metros que a espécie se desloca no Ar.</li>
+                </ul>
+
+                <p>
+                    Alguns animais podem ter todas essas características altas se a mesma conseguir cumprir os requisitos físicos para todos as três categorias, como por exemplo, ter assas para voar.
+                </p>
+
+                <h3>AÇÕES COMPLEMENTARES:</h3>
+                <p>
+                    A <b>ação complementar</b> é um atributo que indica quantas ações uma criatura pode fazer após a ação de um PP ou PnJ dentro de uma mesma rodada. Esse atributo é encontrado em criaturas mais poderosas. No livro de regras no capítulo Ações em Ações complementares explicamos melhor do que se trata essa regra.
+                </p>
+                <p>
+                    Aqui abordaremos apenas como devemos preencher esse atributo, e para isso passarei uma lista indicando quantas ações complementares uma criatura pode ter de acordo com sua categoria.
+                </p>
+                <ul>
+                    <li><b>Criaturas Simples</b> – Criaturas mais fracas não precisam ter ação complementar, então o atributo pode ser preenchido com a palavra “Nenhum”;</li>
+                    <li><b>Animais Perigosos</b> – Alguns animais mais perigosos que tem como forte a caça, podem ter entre +1 a +2 ações complementares;</li>
+                    <li><b>Monstros poderosos</b> – Os monstros mais fortes podem ter até +4 ações complementares;</li>
+                    <li><b>Chefes de Campanha</b> – Se estiver criando uma criatura para ser o objetivo final da sua campanha, ele pode ter até +6 de ação complementar.</li>
+                </ul>
+                <p>
+                    Lembre-se que as ações complementares é um atributo muito “apelão”. Inserir um inimigo com muitas ações complementares pode significar a morte de um membro da mesa a cada rodada. O mestre deve ficar atento na hora que for inserir esse atributo em uma criatura.
+                </p>
+
+                <h3>ATRIBUTOS:</h3>
+                <p>
+                    Os atributos de criaturas são um pouco diferentes dos atributos de seres normais como, por exemplo, um humano. Enquanto os personagens podem ter esse nível de atributo de 1 a 6, as criaturas podem ter um nível em seus atributos que variam de 1 a 20. Então em um teste, dependendo da criatura ele pode jogar 20 dados em uma única rolagem.
+                </p>
+                <p>
+                    Isso ainda é mais perigoso dependendo do tipo de dado que a habilidade dessa criatura usa, como por exemplo, um efeito multiplicado.
+                </p>
+
+                <h3>FREQUÊNCIA:</h3>
+                <p>
+                    Algumas criaturas podem ser extremamente fáceis de serem encontradas em seus habitats, outras nem tanto. Esse atributo especifica exatamente isso: “O quão raro é uma criatura em seu habitat”. Esse atributo é composto por valores padrões que são:
+                </p>
+                <ul>
+                    <li><b>Únicos</b> – Para criaturas únicas criadas por algum evento;</li>
+                    <li><b>Raro</b> – Para quando existe uma quantidade muito limitada dessas criaturas em seu habitat tornando difícil encontrá-los;</li>
+                    <li><b>Normal</b> – Para quando existem muitas criaturas dessa espécie em seu habitat, tornando fácil sua localização.</li>
+                </ul>
+
+                <h3>AÇÕES DE ATAQUE:</h3>
+                <p>
+                    A ação de ataque é um atributo que aparece em todas as criaturas. É esse atributo que nos informa quantos ataques cada monstro tem, e com que frequência ele usa os mesmos. Aqui darei uma dica importante na hora que você for pensar nos ataques que sua criatura realiza. 
+                </p>
+                <p>
+                    Pense o seguinte: Alguns ataques podem ser extremamente poderosos dependendo da criatura. E ao mesmo tempo podem exigir muito da mesma, como por exemplo, um movimento supercomplexo. Por isso cada ataque de uma criatura deve ter uma <b>Frequência</b> que se trata do intervalo de tempo que uma criatura pode realizar novamente essa ação.
+                </p>
+                <p>
+                    A frequência funciona assim: Caso a criatura tenha uma frequência de <b>1D10
+                    ND6</b> , significa que ela só está habita a fazer o ataque caso o dado resulte em 6 ou mais. Esse dado é jogado antes do teste para saber se a criatura consegue fazer o ataque.
+                </p>
+                <p>
+                    Caso o dado resulte em valores menores que ao estipulado pela frequência daquela ação, a criatura usará uma outra ação que seja igual ou menor que o valor do dado. Ou o mestre pode usar as habilidades da criatura.
+                </p>
+                <p>
+                    Quando for estipular a frequência de uma ação você vai sempre usar <b>1D10</b> ou <b>1D6</b>. E em seguida estipular um Nível de Dificuldade que varia entre <b>1</b> a <b>10</b> (<i>para D10</i>) e de <b>1</b> a <b>6</b> (<i>para D6</i>). Você nunca deve usar mais de um dado, como por exemplo <b>3D10</b>. 
+                </p>
+
+                <h3>IDIOMA:</h3>
+
+                <p>
+                    A maioria das criaturas podem ter seus próprios idiomas, e em alguns casos falar o idioma da raça ao qual está inserido. Esse é um atributo que aparece até mesmo em animais.
+                </p>
+                <p>
+                    Criaturas que não falam uma língua nativa ou qualquer outra, pode ter nesse atributo o valor <b>“nenhuma”</b>.
+                </p>
+                <p>
+                    Esse idioma é abstrato e não precisa ser superbem trabalhado como é nas raças.
+                </p>
+
+                <h3>TAMANHO:</h3>
+                <p>
+                    Criaturas podem assumir diversos tamanhos dentro do universo, seja em altura ou comprimento. Criamos uma tabela com os nomes dos tamanhos que temos mais algumas mudanças que ele dá a criatura.
+                </p>
+                <p>Os atributos apresentados nessa tabela são:</p>
+                <ul>
+                    <li>
+                        <b>Categoria</b> – Aqui temos a categoria do monstro em si, que será usado para preencher o atributo Tamanho. Essas categorias são:
+                    </li>
+                    <ul>
+                       
+                            <li><b>Inferior</b>;</li>
+                            <li><b>Pequeno</b>;</li>
+                            <li><b>Médio</b>;</li>
+                            <li><b>Grande</b>;</li>
+                            <li><b>Enorme</b>;</li>
+                            <li><b>Colossal</b>;</li>
+                            <li><b>Planetário</b>.</li>
+                        
+                    </ul>
+                </ul>
+                <ul>
+                    <li><b>Tamanho Largura ou Altura</b> – Esse atributo informa o tamanho médio em centímetros, metros ou quilômetros dessa criatura seja em largura ou altura.</li>
+                    <li><b>Bonificação de Dano</b> – Esse atributo fornece um <b>dano dinâmico</b> a mais de acordo com o tamanho da criatura.</li>
+                </ul>
+
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                
+                        <thead>
+                            <tr>
+                                <th>Categoria</th>   
+                                <th>Tamanho (Largura ou Altura)</th>
+                                <th>Bonificação de Dano</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>Inferior</b></td>
+                                <td>~0,1 a 20cm</td>
+                                <td>Nenhum</td>
+                            </tr>
+                            <tr>
+                                <td><b>Pequeno</b></td>
+                                <td>~50cm</td>
+                                <td>Nenhum</td>
+                            </tr>
+                            <tr>
+                                <td><b>Médio</b></td>
+                                <td>~2m</td>
+                                <td>Nenhum</td>
+                            </tr>
+                            <tr>
+                                <td><b>Grande</b></td>
+                                <td>~10m</td>
+                                <td>2D20</td>
+                            </tr>
+                            <tr>
+                                <td><b>Enorme</b></td>
+                                <td>~50m</td>
+                                <td>5D20</td>
+                            </tr>
+                            <tr>
+                                <td><b>Colossal</b></td>
+                                <td>~400m</td>
+                                <td>5D100</td>
+                            </tr>
+                            <tr>
+                                <td><b>Planetário</b></td>
+                                <td>Tamanho de Planetas</td>
+                                <td>Designado pelo Mestre</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <p>
+                    Quando for preencher esse atributo o coloque na seguinte notação: Categoria +Bonificação de Dano, por exemplo, <b>Grande +3D20</b>.
+                </p>
+                <div class="alert alert-danger">
+                    <i><b>ALERTA.:</b> Lembrando que essa bonificação só vale para ataques físicos, ou seja, ataques corpo a corpo.</i>
+                </div>
+
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

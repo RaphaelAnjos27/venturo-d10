@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>NÍVEIS DOS ATRIBUTOS DE RAÇA</h2>
+                
+                <p>
+                    Essa é uma regra muito importante quando queremos realizar ações entre duas raças com capacidades físicas diferentes em seus atributos físicos <b>Força</b>, <b>Destreza</b> e <b>Resistência</b>. No universo podemos achar seres com uma força, velocidade ou resistência muito maior que a de outros seres. Realizar testes entre eles é impossível apenas usando os níveis de atributo do personagem. Imagine um Humano e um Otirus, ambos no seu nível 4 do atributo força. Se um teste for feito entre esses dois, nada indica que a capacidade de um Otirus é maior, mesmo ela sendo superior que a dos humanos.
+                </p>
+                <p>
+                    O <b>nível dos atributos de raça</b> entram justamente para resolver esse problema. Pois com ele conseguimos distinguir a capacidades dos atributos físicos de cada raça ou espécie. Um personagem tem os seus <b>8 atributos</b> que vão do <b>nível 1</b> ao <b>6</b>. Agora a sua raça como um todo tem os seus 3 níveis dos atributos de raça que vão do <b>nível 1</b> ao <b>10</b> (<i>podendo ser maior em alguns casos raros</i>).
+                </p>
+
+                <p>
+                    Os atributos englobados pelo nível de atributo de raça são <b>FOR</b>, <b>DES</b> e <b>RES</b>. E eles não tem a relação direta com o nível dos atributos FOR, DES e RES do personagem, que vão do nível 1 ao 6. Você só vai usar esses atributos da raça quando existir um teste entre duas raças, que envolva esses atributos diretamente. 
+                </p>
+                <p>
+                    Então imagine três personagens de raças distintas, onde sua FOR tanto para o Atributo de raça, quanto de personagem variam.
+                </p>
+                <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Raça</th>
+                        <th>Nivel do Atributo de Personagem</th>
+                        <th>Nível do Atributo de Raça</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Personagem 1 - Raça 01</td>
+                        <td>5</td>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        <td>Personagem 2 - Raça 02</td>
+                        <td>5</td>
+                        <td>6</td>
+                      </tr>
+                      <tr>
+                        <td>Personagem 3 - Raça 03</td>
+                        <td>2</td>
+                        <td>2</td>
+                      </tr>
+                      
+                    </tbody>
+                </table>
+                <p>
+                    Os níveis de atributo de raça, vão ser usados para gerar <b>vantagens</b> ou <b>desvantagens</b> no nível de dificuldade (<b>ND</b>), dependendo do escopo da ação. Como pode ver na tabela acima, tanto o <b>personagem 1</b> quanto o <b>personagem 2</b> tem o mesmo nível em seu atributo de personagem. Porem o nível de atributo de raça é diferente, tendo o Personagem 2 com maior capacidade de força, pois seu nível é <b>6</b>.
+                </p>
+                <p>
+                    Se o <b>personagem 1</b> tentar realizar uma ação contra o <b>personagem 2</b> que tenha relação com o atributo força, o mesmo terá desvantagem nessa ação, pois ele é mais fraco nesse nível de atributo de raça. Essa desvantagem é obtida <b>subtraindo</b> o <b>maior nível</b> (<i>Nível do oponente</i>) pelo <b>menor nível</b> (<i>Nível do Atacante</i>). E o resultado será somado com o <b>ND</b> do personagem 1.
+                </p>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> O mestre ainda pode aumentar o nível de dificuldade caso o Nível do Atributo de personagem sejam diferentes, podendo somar <b>+1</b> ou <b>+2</b> ao <b>ND</b> desse personagem.</i>
+                </div>
+                <p>
+                    Pode existir momentos que o ND ultrapasse o valor <b>10</b> (<i>nível máximo de dificuldade</i>). Nesse caso o mestre deve quebrar o nível de dificuldade, em 2 ou 3 <b>Níveis de Vitória (NV)</b> cada um tendo o mesmo valor, inferior a 10. 
+                </p>
+                <p>
+                    Podemos ver o NV ocorrendo em um teste entre o <b>Personagem 3</b> contra o <b>Personagem 2</b> onde: em um teste com <b>ND 8</b>, eu peguei o valor da diferença do atributo físico de raça (<b>6 - 2 = 4</b>). E ainda dei um valor de desvantagem por conta do atributo de personagem ser menor (<b>+2</b>), totalizando então um <b>ND 14</b>, que foi quebrado em <b>2 NV</b> com <b>ND 9</b>.
+                </p>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Essa regra só deve ser usada para testes que envolvam raças distintas, onde os atributos usados são FOR, DES ou RES.</i>
+                </div>
+
+                <h5>Vantagem e Desvantagem:</h5>
+
+                <p>
+                    Então como vimos até agora. Essa regra vai gerar uma vantagem ou desvantagem no Nível de Dificuldade de nossas jogadas. Isso vai depender muito da perspectiva de jogo. Então o <b>Personagem 1</b> tem desvantagem em testes contra o <b>Personagem 2</b>, pois seu nível do atributo da raça é inferior ao do Personagem 2.
+                </p>
+                <p>
+                    Porem se o <b>Personagem 2</b> realizar um teste contra o <b>Personagem 1</b> ele claramente terá vantagem, pois seu atributo de raça é superior. Para um caso de <b>vantagem</b>, o mestre vai realizar a mesma regra. Mas em vez de somar ao <b>ND</b>, ele vai subtrair o mesmo.
+                </p>
+                <p>
+                    Então quem for realizando a ação tiver um <b>valor maior</b> que seu oponente no atributo de raça, vai ter uma <b>vantagem</b>. Nesse caso o valor do calculo será subtraído com o Nível de Dificuldade, e a diferença no atributo de personagem não causa efeitos para vantagem. Agora quem for realizando a ação, tiver um valor menor que seu oponente no atributo de raça, vai ter um uma <b>desvantagem</b>. Ela será a soma do calculo com o Nível de Dificuldade, podendo gerar até mesmo Níveis de Vitória. E para desvantagem, a diferença entre os atributos de personagem podem bonificar em <b>+1</b> ou <b>+2</b> a desvantagem.
+                </p>
+                
+                <h3>Variações</h3>
+                <p>
+                    Níveis de Atributo de Raça podem aparecer como atributo de algum determinado item, indicando que o personagem deve ter determinado valor desse atributo para portar o item. Essa propriedade variam de acordo com o Atributo que está sendo requerido:
+                </p>
+                <p>
+                    <b>NARF</b> – Nível do Atributo de Raça Força;
+                </p>
+                <p>
+                    <b>NARD</b> – Nível do Atributo de Raça Destreza;
+                </p>
+                <p>
+                    <b>NARR</b> – Nível do Atributo de Raça Resistência.
+                </p>
+                <p>
+                    E podemos ter esses mesmos atributos sendo exibidos com o nível do atributo do personagem, por exemplo <b>NARF-Força</b> denotados (5-2).
+                </p>
+
+                <h3>NÍVEIS:</h3>
+                <p>
+                    Os níveis dos atributos de raça vão de <b>1</b> a <b>10</b>. Eles estão diretamente relacionados as características físicas da raça, por exemplo: <i>raças gigantescas com mais de 8 metros de altura tem musculatura suficiente para levantar mais peso que uma raça de 1 ou 2 metros</i>. Esses níveis vão ser usados para os seguintes atributos físicos:
+                </p>
+                <p>
+                    <b>Força</b> – Atributo da capacidade de erguem algo;
+                </p>
+                <p>
+                    <b>Destreza</b> – Atributo da capacidade de agilidade;
+                </p>
+                <p>
+                    <b>Resistência</b> – Atributo da resistência física.
+                </p>   
+
+                <p>
+                    Cada um desses três atributos podem assumir um valor de 1 a 10. Determinado então a capacidades físicas da espécie. Vale lembrar que esses níveis não estão relacionados aos níveis que o personagem evoluem (<i>Atributo do Personagem</i>). Saiba diferenciar <b>Nível do Atributo de Raça</b> (<i>nível de 1 a 10</i>) para o <b>Nível de Atributo de Personagem</b> (<i>Nível de 1 a 6</i>). 
+                </p>
+                <p>
+                    O <i>nível do atributo de raça</i> é algo que já vem com a raça, e não é evoluído pelo jogador. Ele é uma constante que serve para distinguir a capacidade de uma raça para outra e consequentemente interferir em testes feitos entre elas. Quando esses níveis são iguais, não tem o por que usar essa regra, já que a disputa de poder físico é quase a mesma.
+                </p>
+
+                <h3>COMPORTAMENTO DA RESISTÊNCIA:</h3>
+                <p>
+                    A Resistência tem um comportamento dentro das regras, que nos obriga a alterar sua forma de teste. Ele não serve para influenciar dentro do Nível de dificuldade (ND), mas sim por fornecer bonificação nos dados de teste de absorção de dano.
+                </p>
+                <p>
+                    Nesse caso, quanto maior for o Atributo de Resistência da raça, maior será sua bonificação. Logo a baixo você terá uma tabela mostrando os pontos de bonificação de cada nível.
+                </p>
+
+                <h3>CONSTANTES:</h3>
+                <p>
+                    O Nível dos Atributos de Raça tem relação direta com as características físicas de uma raça. Então uma raça pode ter sua pele toda molenga, tendo uma resistência muito baixa, ou pode ser todo encouraçado tendo uma resistência maior com relação as outras raças. Esses níveis devem ser equilibrados na raça. 
+                </p>
+                <p>
+                    Força e Destreza mostrarão a capacidade máxima que aquele nível consegue atingir. Isso dá ao mestre e jogadores uma ideia mais clara das capacidades de cada Nível. Já a Resistência vai mostrar uma bonificação de RES que a raça ganha naturalmente de acordo com seu nível.
+                </p>
+
+                <h6>VALORES DAS CONSTANTES DOS NÍVEIS DOS ATRIBUTOS DE RAÇA:</h6>
+
+                <table class="table table-striped" style="text-align: center;">
+                    <thead>
+                      <tr>
+                        <th colspan="2">Força (Kg)</th>
+                        <th colspan="2">Destreza (K/h)</th>
+                        <th colspan="2">Resistência (Bonificação)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                            <b>Nível</b>
+                        </td>
+                        <td>
+                            <b>Máximo</b>
+                        </td>
+                        <td>
+                            <b>Nível</b>
+                        </td>
+                        <td>
+                            <b>Máximo</b>
+                        </td>
+                        <td>
+                            <b>Nível</b>
+                        </td>
+                        <td>
+                            <b>Máximo</b>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>50</td>
+                        <td>1</td>
+                        <td>20</td>
+                        <td>1</td>
+                        <td>0</td>          
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>100</td>
+                        <td>2</td>
+                        <td>50</td>
+                        <td>2</td>
+                        <td>+1</td>          
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>500</td>
+                        <td>3</td>
+                        <td>70</td>
+                        <td>3</td>
+                        <td>+2</td>          
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>700</td>
+                        <td>4</td>
+                        <td>100</td>
+                        <td></td>
+                        <td>+3</td>          
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>1000</td>
+                        <td>5</td>
+                        <td>150</td>
+                        <td>5</td>
+                        <td>+4</td>          
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>1500</td>
+                        <td>6</td>
+                        <td>200</td>
+                        <td>6</td>
+                        <td>+5</td>          
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td>2000</td>
+                        <td>7</td>
+                        <td>250</td>
+                        <td>8</td>
+                        <td>+6</td>          
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>5000</td>
+                        <td>8</td>
+                        <td>300</td>
+                        <td>8</td>
+                        <td>+7</td>          
+                      </tr>
+                      <tr>
+                        <td>9</td>
+                        <td>10000</td>
+                        <td>9</td>
+                        <td>350</td>
+                        <td>9</td>
+                        <td>+8</td>          
+                      </tr>
+                      <tr>
+                        <td>10</td>
+                        <td>100000</td>
+                        <td>10</td>
+                        <td>400</td>
+                        <td>10</td>
+                        <td>+9</td>          
+                      </tr>
+                    </tbody>
+                </table>
+                
+                <p>
+                    Note que os valores são bem diferentes em sua escala. Os níveis 10 desses atributos são para raças que realmente tem uma característica bastante bruta, como por exemplo, raças gigantes (<i>aproximadamente 10 metros ou mais</i>), que contem musculaturas bastante fortes, ou divindades. Em geral as raças de tamanho normal, podem ter uma variação em suas musculaturas que deixem eles pelos níveis 3 e 6. Acima disso são gigantes, e abaixo disso são raças de menor porte. 
+                </p>
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

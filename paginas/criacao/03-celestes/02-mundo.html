@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Criação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/criacao.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criacao</h1>
+        <p>Agora que você conhece o Universo e as Regras. Está na hora de aprender a criar os elementos desse universo!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-criacao></venturo-sumario-criacao>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>CRIANDO UM MUNDO</h2>
+                <p>
+                    Estamos dando introdução a criação. Quero deixar claro que essa parte envolve também a próxima
+                    sessão explica como criar mapas. Após ter criado seu universo, e em seguida ter escolhido o período
+                    no tempo onde suas histórias irão se passar, vamos ter que começar a alocar vossas criações nesse
+                    novo universo.
+                </p>
+                <p>
+                    Então damos inicio criando a Galáxia que vai se passar as histórias. O sistema permite a criação de
+                    infinitas galáxias.
+                </p>
+
+                <h3>CRIANDO UMA GALÁXIA:</h3>
+                <p>
+                    Criar a galáxia do seu universo é uma parte essencial. É nela que alocaremos as próximas criações.
+                    Aqui abordaremos como criar os componentes básicos de uma galáxia, e aprofundaremos mais isso quando
+                    formos criar os setores e quadrantes no capítulo de mapas.
+                </p>
+                <h5>ATRIBUTOS DA GALÁXIA:</h5>
+
+                <ul>
+                    <li>
+                        <b>Nome:</b> Vai ter um atributo “-nome da galáxia” que você deve substituir pelo nome de sua
+                        galáxia.
+                    </li>
+                    <li>
+                        <b>Núcleo Ativo:</b> Aqui colocamos “Sim” caso o buraco negro no centro dessa galáxia esteja se
+                        alimentando. E “Não” caso o buraco negro no centro dessa galáxia não esteja se alimentando.
+                    </li>
+                    <li>
+                        <b>Categoria:</b> Em seguida vamos inserir a categoria de nossa galáxia. Uma galáxia pode ser
+                        Elíptica, Espiral, Espiral Barrada ou Irregular. Escolha uma dessas quatro categorias para
+                        preencher
+                        esse atributo.
+                    </li>
+                    <li>
+                        <b>Galáxias Satélites:</b> Aqui você deve colocar a quantidade total de satélites que essa
+                        galáxia
+                        tem.
+                    </li>
+                    <li>
+                        <b>Descrição:</b> Aqui você vai descrever um pouco da galáxia, informar quantos braços ela tem,
+                        nomes desses braços, morfologia e entre outras informações que sejam relevantes a galáxia.
+                    </li>
+                    <li>
+                        <b>Setores:</b> Nesse atributo você vai colocar o nome dos setores e a coordenada do mesmo
+                        usando
+                        coordenadas cilíndricas.
+                    </li>
+                    <li>
+                        <b>Galáxias Satélites:</b> Aqui você coloca o nome de todas as galáxias satélites que sua
+                        galáxia
+                        tem que são importantes. Você não precisa necessariamente criar elas, basta declará-las e se
+                        quiser,
+                        mais a frente pode habitar a mesma.
+                    </li>
+
+                </ul>
+
+                <h5>ATRIBUTOS DA GALÁXIA SATÉLITES:</h5>
+                <p>
+                    A criação de galáxias satélites é igual à criação de galáxias normais. A única coisa que muda é o
+                    atributo satélite que não existe nas galáxias satélites. Você vai criar essas galáxias associadas a
+                    suas respectivas galáxias mães.
+                </p>
+
+
+                <h3>CRIANDO UM SISTEMA PLANETÁRIO:</h3>
+                <p>
+                    Após a criação completa de sua galáxia, vamos começar a popular ela com sistemas planetários para
+                    que suas raças possam habitar. A criação dos sistemas planetários foram desenvolvidas para serem
+                    simples de intender, por isso tem coisas que não levamos em consideração nessa criação.
+                </p>
+
+                <ul>
+                    <li>
+                        <b>Nome:</b> Você deve iniciar definindo o nome desse sistema planetário.
+                    </li>
+                    <li>
+                        <b>Dimensão/Plano</b>: Informe em qual dimensão ou plano esse sistema está localizado.
+                    </li>
+                    <li>
+                        <b>Galáxia:</b> Aqui você coloca o nome da galáxia que esse sistema habita.
+                    </li>
+                    <li>
+                        <b>Setor:</b> Em seguida vamos escolher um setor para alocar nosso sistema planetário.
+                    </li>
+                    <li>
+                        <b>Quadrante:</b> Após ter escolhido o Setor, vamos escolher qual será o quadrante desse setor.
+                    </li>
+                    <li>
+                        <b>Classe da Estrela:</b> Aqui você coloca a classe de sua estrela, essas são: O, B, A, F, G, K,
+                        M, Ana Branca ou Neutros.
+                    </li>
+                    <li>
+                        <b>Descrição:</b> Crie uma descrição desse sistema, informe coisas relevantes como por exemplo,
+                        se
+                        ela é uma estrela binária que tem um baricentro com outra estrela.
+                    </li>
+
+                </ul>
+                <div class="alert alert-info">
+                    <i><b>CURIOSIDADE.:</b> O Sol é uma estrela de Classe G.</i>
+                </div>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> O Atributo <b>Zona da Estrela</b> deve ser preenchido com: <b>
+                        Zona muito Quente (Inicial, Central ou Final) Zona Habitável (Inicial, Central ou Final) e Zona Muito Fria (Inicial, Central ou Final)
+                    </b> </i>
+                </div>
+
+                <h5>CINTURÕES DE ASTEROIDES:</h5>
+                <p>
+                    Você deve agora criar todos os cinturões de asteroides desse sistema planetário, seus atributos são
+                    simples:
+                </p>
+                <ul>
+                    <li>
+                        <b>Nome:</b> Para informar o nome desse cinturão.
+                    </li>
+                    <li>
+                        <b>Zona da Estrela:</b> informe em qual zona da estrela ele se encontra, por exemplo Zona Muito Fria
+                        Final.
+                    </li>
+                    <li>
+                        <b>Descrição:</b> Na descrição informe coisas importantes como por exemplo, o nome do planeta
+                        localizado
+                        antes desse cinturão.
+                    </li>
+
+                </ul>
+
+                <div class="alert alert-success">
+                    <i><b>DICA.:</b> Você pode dar nome aos cinturões ou asteroides em nome de cientistas da raça, isso
+                        dá mais vida a história da raça.</i>
+                </div>
+
+                <h5>OBJETOS DO SISTEMA:</h5>
+                <p>
+                    Agora você vai citar todos os objetos (<i>celestes ou não</i>) encontrados no seu sistema. Oque você
+                    deve fazer é colocar o objeto principal, seja ele um planeta um asteroide de algum cinturão ou
+                    estação. Você terá que especificar o nome do objeto, uma descrição bem simples do que se trata
+                    aquele objeto e por fim, os demais objetos que orbitam ou estão localizados dentro do objeto em
+                    questão.
+                </p>
+                <p>
+                    Então os atributos dessa sessão são:
+                </p>
+                <ul>
+                    <li>
+                        <b>Nome</b> – Aqui você coloca o nome do objeto principal que orbita a estrela;
+                    </li>
+                    <li>
+                        <b>Ícone</b> – Eles terão ícones para representá-los visualmente;
+                    </li>
+                    <li>
+                        <b>Breve descrição</b> – Escreva uma descrição bem resumida do que se trata o objeto;
+                    </li>
+                    <li>
+                        <b>Objetos filhos</b> – Aqui vamos citar todos os objetos que orbitam ou estão localizados dentro do objeto principal, como estações, bases, luas, asteroides e etc.
+                    </li>
+                    <ul>
+                        <li>
+                            <b>Nome do objeto filho</b> – Aqui você coloca o nome do objeto filho;
+                        </li>
+                        <li>
+                           <b> Ícone</b> – Todos os objetos têm um ícone o representando;
+                        </li>
+                        <li>
+                            <b>Breve descrição</b> – Escreva uma descrição bem resumida do que se trata o objeto;
+                        </li>
+                    </ul>
+                </ul>
+                <p>
+                    Todos esses objetos descritos nessa lista, serão melhores representadas mais a frente na sua criação. Aqui apenas apresentamos sua existência e organização no sistema planetário.
+                </p>
+
+                <h5>ASTEROIDES:</h5>
+                <p>
+                    Agora vamos falar dos asteroides mais importantes de seu sistema planetário. Esses asteroides são relevantes no sistema pois os mesmos contem algum elemento abundante. A origem de um asteroide pode variar bastante, sua história fica a critério de seu criador. Ele pode ter vindo da colisão entre dois planetas ou pode ter se formado na condensação do gás.
+                </p>
+                <ul>
+                    <li>
+                        <b>Nome:</b> Informe qual o nome escolhido para esse asteroide.
+                    </li>
+                    <li>
+                        <b>Tamanho:</b> Informe seu tamanho em comprimento por largura. Por serem estruturas irregulares, seu tamanho é só relevante para se ter uma base.
+                    </li>
+                    <li>
+                        <b>Ilustração:</b> Ter um desenho representativo de seu asteroide é bastante interessante para sabermos como é sua forma.
+                    </li>
+                    <li>
+                        <b>Localização:</b> Informe onde esse asteroide se encontra, seja orbitando um planeta, em uma órbita livre por uma das zonas da estrela ou no cinturão de asteroides.
+                    </li>
+                    <li>
+                        <b>Elemento Abundante:</b> Descreva qual o elemento abundante encontrado nesse asteroide. Normalmente é por conta desse atributo, que o seu asteroide ganha importância. 
+                    </li>
+                    <li>
+                        <b>Descrição:</b> Aqui você descreve um pouco da forma desse objeto. Informe também o porquê de sua importância e como a raça age sobre isso, ou seja, o que eles fazem nesse asteroide.
+                    </li>
+                    <li>
+                        <b>Locais:</b> Podemos ter minas de extrações nesses asteroides para raças mais avançadas, campos de pesquisa e entre outro que sua mente permitir.
+                    </li>
+                </ul>
+                <div class="alert alert-danger">
+                    <i><b>ALERTA.:</b> Quando o Asteroide está orbitando um planeta, o mesmo é considerado um satélite natural.</i>
+                </div>
+
+                <h5>PLANETAS ROCHOSOS:</h5>
+                <ul>
+                    <li>
+                        <b>Nome:</b> Informe o nome do planeta.
+                    </li>
+                    <li>
+                        <b>Classe:</b> As classes de planetas são explicadas na sessão Planetas. As classes que temos são: Planeta de Lava, Planeta Desértico, Planeta Estufa, Planeta Estéril, Planeta Oceânico, Planeta de Gelo, Planeta de Carbono, Planeta de Ferro e Análogo a Terra.
+                    </li>
+                    <li>
+                        <b>Zona da Estrela:</b> informe em qual zona da estrela ele se encontra, por exemplo Zona Habitável Central.
+                    </li>
+                    <li>
+                        <b>Massa Terrestre:</b> Informe quantas massas da terra esse planeta tem no formato Mt (massaTerrestre).
+                    </li>
+                    <li>
+                        <b>Diâmetro Terrestre:</b> Informe o diâmetro terrestre desse planeta no formato Dt (Diâmetro Terrestre).
+                    </li>
+                    <li>
+                        <b>Anos Terrestre:</b> Informe quantos dias terrestres o planeta leva para dar a volta a sua estrela.
+                    </li>
+                    <li>
+                        <b>Horas Terrestres:</b> informe quantas horas terrestres esse planeta leva para completar um dia.
+                    </li>
+                    <li>
+                        <b>Inclinação:</b> Qual a inclinação de seu planeta? A terra, por exemplo, tem uma inclinação de 23°.
+                    </li>
+                    <li>
+                        <b>Gravidade:</b> Informe a gravidade desse planeta usando a notação metros / segundo ao quadrado.
+                    </li>
+                    <li>
+                        <b>Mapa Mundo:</b> Ilustre o mapa mundo de seu planeta.
+                    </li>
+                    <li>
+                        <b>Locais:</b> Independe do planeta ser habitável ou não, ele pode possuir locais importantes.
+                    </li>
+                </ul>
+
+                <h5>PLANETAS GASOSOS:</h5>
+                <ul>
+                    <li>
+                        <b>Nome:</b> Informe o nome do planeta.
+                    </li>
+                
+                   <li>
+                     <b>Classe:</b> As classes de planetas são explicadas na sessão Planetas. As classes que temos são: Planeta Júpiter Frio, Planeta Júpiter Quente,  Planeta Super Júpiter, Planeta Netuno Frio e Planeta Netuno Quente.
+                    </li>
+                
+                    <li>
+                        <b>Zona da Estrela:</b> informe em qual zona da estrela ele se encontra, por exemplo Zona Muito Fria Final.
+                    </li>
+                    
+                    <li>
+                        <b>Massa Terrestre:</b> Informe quantas massas da terra esse planeta tem no formato Mt (massaTerrestre).
+                    </li>
+                    
+                    <li>
+                        <b>Diâmetro Terrestre:</b> Informe o diâmetro terrestre desse planeta no formato Dt (Diâmetro Terrestre).</li>
+                    
+                    <li>
+                        <b>Anos Terrestre:</b> Informe quantos dias terrestres o planeta leva para dar a volta a sua estrela.
+                    </li>
+                    
+                    <li>
+                        <b>Horas Terrestres:</b> informe quantas horas terrestres esse planeta leva para completar um dia.
+                    </li>
+                    
+                   <li>
+                     <b>Inclinação:</b> Qual a inclinação de seu planeta? A terra, por exemplo, tem uma inclinação de 23°.
+                    </li>
+                
+                    <li>
+                        <b>Gravidade:</b> Informe a gravidade desse planeta usando a notação metros / segundo ao quadrado.
+                    </li>
+                    
+                    <li>
+                        <b>Mapa Mundo:</b> Ilustre o mapa mundo de seu planeta.
+                    </li>
+                
+                    <li>   
+                        <b>Locais:</b> Independe do planeta ser habitável ou não, ele pode possuir locais importantes.
+                    </li>
+                    
+                </ul>
+
+                <h5>SATÉLITES NATURAIS:</h5>
+                <p>
+                    Satélite natural ou lua (<i>em letra minúscula</i>) é um corpo celeste que orbita um planeta ou outro corpo menor. Dessa forma, o termo satélite natural poderia se referir a planetas anões orbitando a uma estrela, ou até uma galáxia anã orbitando uma galáxia maior. Porém, ele é normalmente um sinônimo de lua, usado para identificar satélites não artificiais de planetas, planetas anões ou corpos menores.
+                </p>
+                <ul>
+                    <li>
+                        <b>Nome:</b> Informe o nome desse satélite natural.
+                    </li>
+                    <li>
+                        <b>Diâmetro:</b> Informe o diâmetro de seu satélite natural.
+                    </li>
+                    <li>
+                        <b>Distância do Planeta:</b> Informe a distância desse satélite em quilômetros.
+                    </li>
+                    <li>
+                        <b>Ilustração:</b> Faça uma ilustração desse seu satélite natural.
+                    </li>
+                    <li>
+                        <b>Descrição:</b> Aqui você descreve um pouco da forma desse objeto. Informe também o porquê de sua importância e como a raça age sobre isso, ou seja, o que eles fazem nesse asteroide.
+                    </li>
+                    <li>
+                        <b>Locais:</b> Podemos ter minas de extrações nesses asteroides para raças mais avançadas, campos de pesquisa e entre outro que sua mente permitir.
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

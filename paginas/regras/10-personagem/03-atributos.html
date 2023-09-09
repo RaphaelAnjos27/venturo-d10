@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>EXPLICAÇÃO DOS ATRIBUTOS</h2>
+                <p>
+                    Como falamos na explicação da primeira ficha, os atributos são características básicas do
+                    personagem, suas capacidades físicas, mentais e intelectuais. E são usadas para os testes, podendo
+                    ser associadas a uma perícia ou não.
+                </p>
+
+                <h3>FORÇA (FOR):</h3>
+                <p>
+                    Como o próprio nome já diz, este atributo condiz à força física do personagem. Toda vez que for
+                    utilizar a força, será levado em consideração este atributo. Podemos usar para levantar alguma
+                    coisa, ou desferir um golpe contra alguém. Um personagem com um determinado nível de força, pode
+                    levantar uma quantidade de peso específico dependendo da raça.
+                </p>
+                <p>
+                    Caso o personagem disfira um soco contra um adversário, ou até mesmo um golpe de espada. A força
+                    deverá ser levada em consideração para calcular o dano final. Os níveis de força são:
+                </p>
+
+                <ul>
+                    <li>
+                        <b>Nível 1</b> – Seu personagem é muito sedentário.
+                    </li>
+                    <li>
+                        <b>Nível 2</b> – Realiza pouco exercício.
+                    </li>
+                    <li>
+                        <b>Nível 3</b> – Faz exercícios regulamente.
+                    </li>
+                    <li>
+                        <b>Nível 4</b> – Atleta amador.
+                    </li>
+                    <li>
+                        <b>Nível 5</b> – Atleta profissional.
+                    </li>
+                    <li>
+                        <b>Nível 6</b> – Campeão olímpico.
+                    </li>
+                    <li>
+                        <b>Nível maior que 6</b> – Força sobre humana (força além da comum na raça).
+                    </li>
+                </ul>
+
+                <h3>DESTREZA (DES):</h3>
+                <p>
+                    A destreza mostra o quão rápido é o personagem. Ela mede a coordenação entre os olhos e mãos,
+                    reflexos, equilíbrio e velocidade. Este atributo define o nível de precisão de um personagem ao
+                    manusear uma arma de disparo, ou arma branca. Pode-se aplicar este atributo, até mesmo em testes de
+                    combate corpo a corpo.
+                </p>
+                <ul>
+                    <li>
+                        <b>Nível 1</b> – Seu personagem é muito sedentário.
+                    </li>
+                    <li>
+                        <b>Nível 2</b> – Realiza pouco exercício.
+                    </li>
+                    <li>
+                        <b>Nível 3</b> – Faz exercícios regulamente.
+                    </li>
+                    <li>
+                        <b>Nível 4</b> – Atleta amador, bônus de +1D10 na iniciativa.
+                    </li>
+                    <li>
+                        <b>Nível 5</b> – Atleta profissional, bônus de +2D10 na iniciativa.
+                    </li>
+                    <li>
+                        <b>Nível 6</b> – Campeão olímpico, bônus de +3D10 na iniciativa.
+                    </li>
+                    <li>
+                        <b>Nível maior que 6</b> – Destreza de um “semideus”.
+                    </li>
+                </ul>
+
+                <p>
+                    Exemplos de Situações para Testes de DESTREZA:
+                </p>
+                <p>
+                    Ataque com Armas Brancas. Ex.: DES + Armas Brancas;
+                </p>
+                <p>
+                    Ataque com Arco e Flecha. Ex.: DES + Armas de Fogo;
+                </p>
+                <p>
+                    Atirar com Pistola. Ex.: DES + Armas de Fogo.
+                </p>
+
+                <h3>INTELIGÊNCIA (INT):</h3>
+                <p>
+                    A inteligência representa a capacidade de raciocínio lógico, a capacidade de aprendizado e a memória
+                    de um personagem. Os testes de inteligência surgirão em situações em que o personagem necessite usar
+                    seu conhecimento e intelecto. O teste que envolvem este atributo, geralmente são para solucionar
+                    enigmas, decifrar códigos, enfim, tudo o que envolva o intelecto do personagem. Também pode ser
+                    usado para ativar habilidades.
+                </p>
+                <ul>
+                    <li><b>Nível 1</b> – Pouca inteligência.</li>
+                    <li><b>Nível 2</b> – Inteligência normal.</li>
+                    <li><b>Nível 3</b> – Inteligência acima da média.</li>
+                    <li><b>Nível 4</b> – Inteligência bem acima da média.</li>
+                    <li><b>Nível 5</b> – Génio.</li>
+                    <li><b>Nível 6</b> – Supergénio.</li>
+                    <li><b>Nível maior que 6</b> – Inteligência sobrenatural, podendo ter a capacidade de processamento
+                        de um
+                        computador.</li>
+                </ul>
+
+                <h3>PERCEPÇÃO (PER):</h3>
+                <p>
+                    O atributo de Percepção mede a capacidade de um personagem de detectar e interpretar informações do
+                    ambiente ao seu redor. Um personagem com alta percepção possui sentidos aguçados e está atento a
+                    detalhes minuciosos que podem passar despercebidos para outros. Essa habilidade é essencial para
+                    identificar armadilhas, detectar inimigos ocultos, encontrar itens valiosos e perceber qualquer
+                    alteração no ambiente. Personagens com alta percepção são extremamente vigilantes e têm uma vantagem
+                    em situações onde a observação cuidadosa e a atenção aos detalhes são cruciais para o sucesso.
+                </p>
+                <ul>
+                    <li><b>Nível 1</b> – Percepção fraca.</li>
+                    <li><b>Nível 2</b> – Percepção normal.</li>
+                    <li><b>Nível 3</b> – Percepção acima da média.</li>
+                    <li><b>Nível 4</b> – Percepção muito acima da média.</li>
+                    <li><b>Nível 5</b> – Percepção altíssima (+2D10 em teste de investigação).</li>
+                    <li><b>Nível 6</b> – Percepção nível ninja (+3D10 em testes para investigação).</li>
+                    <li><b>Nível maior que 6</b> – Percepção à níveis sobrenaturais (+ 4D10 em testes de investigação).
+                    </li>
+                </ul>
+
+                <h3>SABEDORIA (SAB):</h3>
+                <p>
+                    Atributo de Sabedoria representa a profundidade do conhecimento e a compreensão intuitiva do mundo
+                    ao redor. Personagens com alta sabedoria têm a capacidade de perceber padrões ocultos, interpretar
+                    sinais sutis e tomar decisões sábias com base em seu discernimento. Essa característica não se
+                    limita apenas ao conhecimento acadêmico, mas também abrange a intuição, a sensibilidade espiritual e
+                    a experiência prática. Personagens com alta sabedoria são frequentemente excelentes conselheiros e
+                    são capazes de lidar com dilemas morais complexos de maneira perspicaz. Ela pode ser usada para
+                    resistir, até mesmo, a poderes mentais e hipnóticos.
+                </p>
+                <ul>
+                    <li><b>Nível 1</b> – Sabedoria fraca.</li>
+                    <li><b>Nível 2</b> – Sabedoria e intuição normais.</li>
+                    <li><b>Nível 3</b> – Sabedoria e intuição acima da média.</li>
+                    <li><b>Nível 4</b> – Sabedoria e intuição muito acima da média (+1D10 em testes para resistir
+                        manipulações
+                        mentais).</li>
+                    <li><b>Nível 5</b> – Sabedoria e intuição altíssimas (+2D10 em teste para resistir manipulações
+                        mentais).</li>
+                    <li><b>Nível 6</b> – Sabedoria e intuição níveis ninja (+3D10 em testes para resistir manipulações
+                        mentais).</li>
+                    <li><b>Nível maior que 6</b> – Sabedoria e intuição a níveis sobrenaturais (+ 4D10 em testes para
+                        resistir a
+                        forças mentais).</li>
+                </ul>
+
+                <p>Exemplos de Situações de Testes de SABEDORIA:</p>
+                <p>Sentir Perigo. Ex.: SAB</p>
+                <p>Sentir Motivação ou Perceber Mentiras. Ex.: SAB.</p>
+                <p>Resistir ao Medo. Ex.: SAB + Coragem.</p>
+
+                <h3>CARISMA (CAR):</h3>
+                <p>
+                    O Carisma é o quão sociável esse personagem é. Ele mede a capacidade de influenciar pessoas,
+                    convencer, seduzir, etc. Carisma é usado em testes que envolvem interação social, disputas de
+                    discurso, entre outras coisas.
+                </p>
+                <ul>
+                    <li><b>Nível 1</b> – Carisma normal: não chama atenção.</li>
+                    <li><b>Nível 2</b> – Simpático: chama um pouco de atenção.</li>
+                    <li><b>Nível 3</b> – Carismático: chama atenção.</li>
+                    <li><b>Nível 4</b> – Sedutor, líder, carismático: consegue afetar um grupo de pessoas facilmente
+                        (+1D10 em
+                        testes de sedução, diplomacia e manipulação).</li>
+                    <li><b>Nível 5</b> – Muito sedutor, muito carismático: consegue afetar um grande grupo de pessoas
+                        (+2D10 em
+                        testes de sedução, diplomacia e manipulação).</li>
+                    <li><b>Nível 6</b> – Carisma muito elevado: tem uma capacidade enorme de manipular seduzir etc.
+                        (+3D10 em
+                        testes de sedução diplomacia e manipulação).</li>
+                    <li><b>Nível maior que 6</b> – Carisma sobrenatural: hipnotiza só com o olhar.</li>
+                </ul>
+
+                <h3>CONSTITUIÇÃO (CON):</h3>
+                <p>
+                    A constituição representa a capacidade física do personagem, seu fôlego, sua capacidade de resistir
+                    a doenças e venenos. A constituição, então controla a energia física de um personagem. Ela é
+                    utilizada em testes de cansaço, esforço físico prolongado e para resistir a venenos ou doenças.
+                </p>
+                <p>
+                    Geralmente o teste de Constituição é aplicado somente para saber se o personagem está cansado de
+                    praticar aquela atividade, como por exemplo, uma escalada, ou então verificar se o personagem
+                    resiste a algum veneno. Para isso realizamos o teste de Constituição, com a dificuldade definida
+                    pelo narrador, usando por base o nível de Constituição e a atividade que o personagem está
+                    exercendo, ou a força do veneno e/ou doença que tentará resistir.
+                </p>
+                <ul>
+                    <li><b>Nível 1</b> – Franzino: se cansa rapidamente.</li>
+                    <li><b>Nível 2</b> – Corpo normal: sedentário, cansa com esforço físico moderado.</li>
+                    <li><b>Nível 3</b> – Corpo normal: menos sedentário, se cansa menos com esforços físicos moderados.
+                    </li>
+                    <li><b>Nível 4</b> – Corpo de atleta amador: se cansa após esforços físicos fortes.</li>
+                    <li><b>Nível 5</b> – Corpo de atleta profissional: cansa apenas depois de esforço físico pesado.
+                    </li>
+                    <li><b>Nível 6</b> – Corpo de atleta campeão olímpico: cansa apenas depois de esforços físico
+                        pesadíssimo.</li>
+                    <li><b>Nível maior que 6</b> – Corpo de grande atleta: aguenta muito tempo de esforços físicos
+                        pesados.</li>
+                </ul>
+
+                <h3>RESISTÊNCIA (RES):</h3>
+                <p>
+                    Aqui é onde sabemos o quão resistente seu personagem é realmente. Com ela o personagem pode absorver
+                    danos recebidos. Para absorver o dano, joga-se o teste de Resistência, <b>ND 5</b>. Cada acerto vale
+                    um de dano absorvido.
+                </p>
+                <ul>
+                    <li><b>Nível 1</b> – Franco, seu personagem não resiste a golpes.</li>
+                    <li><b>Nível 2</b> – O personagem consegue resistir normalmente a danos externos.</li>
+                    <li><b>Nível 3</b> – O personagem tem uma resistência moderada.</li>
+                    <li><b>Nível 4</b> – O personagem contem uma resistência de lutador médio.</li>
+                    <li><b>Nível 5</b> – A resistência do personagem é de um lutador semi-profissional.</li>
+                    <li><b>Nível 6</b> – Seu personagem tem a resistência de um lutador profissional.</li>
+                    <li><b>Nível maior que 6</b> – A resistência desse personagem é de um semideus.</li>
+                </ul>
+
+                <div class="alert alert-info">
+                    <i><b>CURIOSIDADE.:</b> Bônus de Resistência podem fornecer ao personagem uma imunidade a certos
+                        tipos de danos.</i>
+                </div>
+
+                <h5>BÔNUS DE RESISTÊNCIA:</h5>
+                <p>
+                    Quando o personagem têm sua resistência padrão, mais uma bonificação. O mesmo acaba recebendo
+                    imunidade a alguns danos do jogo, principalmente aos danos padrões como: <b>Queimadura</b>,
+                    <b>Choque elétrico</b>, <b>Ficar sem Respirar</b>, <b>Exposição ao vaco do espaço</b> e o <b>Contato
+                        com gases venenosos</b>.
+                </p>
+                <p>
+                    Quando o personagem têm uma bonificação fornecida por algum item, esse mesmo item pode fornecer a
+                    imunidade a um determinado evento, mesmo que a bonificação por si só não seja logicamente usual para
+                    aquela imunidade.
+                </p>
+
+                <h3>PODER (POD):</h3>
+                <p>
+                    Esse atributo representa a capacidade de poder de seu personagem. Toda vez que realizar um teste em
+                    que usará as habilidades de sua raça, terá de ser jogado um teste de <b>Poder + Nível da
+                        habilidade</b> que está sendo usada.
+                </p>
+                <ul>
+                    <li><b>Nível 1</b> – Poder pequeno: poucas chances de conseguir ativar uma habilidade.</li>
+                    <li><b>Nível 2</b> – Poder normal: suas chances aumentaram um pouco.</li>
+                    <li><b>Nível 3</b> – Poder de médio efeito.</li>
+                    <li><b>Nível 4</b> – Poder de efeito considerável: agora as chances de ativar uma habilidade
+                        aumentaram
+                        bastante.</li>
+                    <li><b>Nível 5</b> – Mega poder: seu teste agora tem muito mais chance de acertos.</li>
+                    <li><b>Nível 6</b> – Poder de efeitos enorme, podendo ser considerado um semideus.</li>
+                    <li><b>Nível maior que 6</b> – Capacidade dos semideuses.</li>
+                </ul>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

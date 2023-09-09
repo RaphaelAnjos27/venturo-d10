@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Criação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/criacao.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criacao</h1>
+        <p>Agora que você conhece o Universo e as Regras. Está na hora de aprender a criar os elementos desse universo!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-criacao></venturo-sumario-criacao>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>INÍCIO DA CONSTRUÇÃO</h2>
+                <p>
+                    A primeira coisa que você deve pensar é no <b>nome da civilização</b>. Essa é a primeira parte que consegue tomar um grande tempo dependendo dos casos. O nome da civilização é o nome genérico que engloba toda a civilização, como humanos ou Otirus.
+                </p>
+                <p>
+                    Muitas civilizações ainda, podem ter espécies separadas. Cada espécie com suas habilidades e características. Podemos separa tanto por nacionalidades, com suas culturas, costumes e características físicas. Quanto por espécies, como ocorre com os Anrar, onde cada espécie (<i>mesmo que da mesma nação</i>) tem fisionomias diferentes, mas as mesmas habilidades.
+                </p>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Esse processo pode levar muito tempo, talvez anos, dependendo de seu nível de detalhes.</i>
+                </div>
+                <p>
+                    Depois partimos para o local onde essa civilização se encontra, ou seja, a <b>dimensão</b>, <b>plano</b>, <b>planeta</b> e <b>sistema planetário</b>. Isso significa que você deve passar pelo processo de criação de sistemas planetários para sua civilização antes mesmo de começar a construí-la.
+                </p>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> A criação não tem uma ordem em específico. Na verdade você pode começar por onde quiser. Aqui colocarei apenas a ordem tradicional.</i>
+                </div>
+
+                <h3>NÍVEL EVOLUTIVO DA CIVILIZAÇÃO:</h3>
+                <p>
+                    Outra coisa importante que você tem que pensar é no <b>Nível Evolutivo da civilização</b>. Ele dita em qual época sua civilização se encontra, ou seja, se ela é uma civilização mais evoluída ou não. Ao todo temos quatro níveis para representar uma civilização, esses são: 
+                </p>
+
+                <img class="img-fluid" src="/static/imagens/imgs_criacao/racas/linhatempo.webp"
+                    alt="Linha do tempo completa da civilização">
+                <br><br>
+
+                <ul>
+                    <li>
+                        <b>Nível 1 Primitiva</b> – Nesse nível as espécies que compõem sua civilização não tem muito conhecimento tecnológico. Aqui eles basicamente vivem em cavernas, constroem armas com elementos encontrados na natureza. Nessa fase sua civilização como um todo está nascendo. Essa nível pode durar até 5.000 anos, mais tempo que isso é exagero. 
+                    </li>
+                    <li>
+                       <b> Nível 2 Antiga</b> – Nesse nível as espécies de sua civilização já alcançaram a escrita, conseguindo assim armazenar mais informações de sua história, e assim, evoluir mais rapidamente. Nesse nível as espécies já conseguem construir cidades, reinos, armas brancas, fazer artes. Podemos associar esse nível com a idade antiga e medieval dos humanos. Esse nível pode durar aproximadamente 3.000 anos. 
+                    </li>
+                    <li>
+                        <b>Nível 3 Moderna</b> – Nesse nível é quando as espécies conseguem criar máquinas, sejam a vapor, combustão ou elétrico. Nesse nível as espécies já conhecem a eletricidade e como manipulá-la ao seu favor. O nível moderno sendo o último nível, costuma ter um tempo de duração de 2.000 anos. 
+                    </li>
+                    <li>
+                        <b>Nível 4 Futurista</b> – No último nível, basicamente sua civilização consegue fazer tudo, desde prolongar sua vida até grandes explorações espaciais e colonização de outros planetas. Aqui é o último estágio de uma civilização. O nível futurista não tem um limite de tempo, pois ele é o último nível. Sendo assim a duração dele é até a extinção da civilização.
+                    </li>
+                </ul>
+
+                <h5>LIMITES DOS NÍVEIS TECNOLÓGICOS DA CIVILIZAÇÃO:</h5>
+                <p>
+                    Esses Níveis de Evolução da civilização tem influência direta no Nível Tecnológico da civilização. Isso porque não faz muito sentido uma civilização de nível primitivo conseguir, por exemplo, criar tecnologias capazes de abrir portais para outros lugares do universo. Então para limitar essas coisas, cada Nível Evolutivo da civilização tem um peso sobre o Nível Tecnológico da mesma:
+                </p>
+
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                
+                        <thead>
+                            <tr>
+                                <th>Setores</th>
+                                <th>Armamento e proteção</th>
+                                <th>Deslocamento</th>
+                                <th>Medicina</th>
+                                <th>Energia</th>
+                                <th>Magia</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>Primitiva</b></td>
+                                <td>Máximo 1</td>
+                                <td>Máximo 1</td>
+                                <td>Máximo 2</td>
+                                <td>Máximo 2</td>
+                                <td>Máximo 2</td>
+                            </tr>
+                            <tr>
+                                <td><b>Antiga</b></td>
+                                <td>Máximo 3</td>
+                                <td>Máximo 2</td>
+                                <td>Máximo 3</td>
+                                <td>Máximo 3</td>
+                                <td>Máximo 10</td>
+                            </tr>
+                            <tr>
+                                <td><b>Moderna</b></td>
+                                <td>Máximo 5</td>
+                                <td>Máximo 7</td>
+                                <td>Máximo 8</td>
+                                <td>Máximo 8</td>
+                                <td>Máximo 10</td>
+                            </tr>
+                            <tr>
+                                <td><b>Futurista</b></td>
+                                <td>10</td>
+                                <td>10</td>
+                                <td>10</td>
+                                <td>10</td>
+                                <td>10</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>
+                    Na criação de civilização, você não precisa criar todos esses níveis para uma mesma civilização. Normalmente é criado apenas o nível que será usado na campanha. Então você pode começar a criar uma civilização a partir do <b>nível 3</b>, sem necessariamente criar os <b>níveis 1</b>, <b>2</b> e <b>4</b>. Porem sempre de uma simples explicação de como foi o passado de sua civilização, ou seja, uma breve história dos níveis anteriores ao atual.
+                </p>
+                <p>
+                    Vale lembrar que aqueles limites de 5, 3 e 2 mil anos são uma média. Você pode sim ultrapassar esses limites. Sua civilização pode continuar no nível 2 (<i>antigo</i>) por 10 mil anos se você achar necessário, e os motivos pode ser dos mais diversos como: Guerra, Desastres naturais, forças divinas entre outros.
+                </p>
+
+                <h3>ORIGEM DA CIVILIZAÇÃO:</h3>
+                <p>
+                    Toda a civilização tem um ponto de origem na linha do tempo universal. É sobre isso que trabalharemos aqui. Se você leu sobre o Começo da Existência na sessão de Tempo do livro de regras. Sabe que existem três parâmetros que juntos definem a linha do tempo do sistema universal.
+                </p>
+                <p>
+                    Essa linha do tempo é formada por três atributos que estão diretamente ligadas umas as outras. Elas servem para alocarmos a origem de uma civilização em determinado <b>nível evolutivo</b>, em um período de tempo de 100 mil anos. Esses atributos que compõem a linha do tempo são:
+                </p>
+
+                <ul>
+                    <li>
+                        <b>Starvys</b> – É a maior unidade, onde o período de 1 starvys equivale a 1 bilhão de anos. Mas intenda essa unidade como um grupo, com demais unidades;
+                    </li>
+                    <li>
+                        <b>Divisões</b> – Quando uma Starvys é dividida em 10, temos <b>Vux</b>, <b>Dak</b>, <b>Gal</b>, <b>Lot</b>, <b>Rys</b>, <b>Tak</b>, <b>Bor</b>, <b>Zor</b>, <b>Dos</b> e <b>Ren</b>. Cada uma dessas unidades contêm um atributo chamado Dyvs;
+                    </li>
+                    <li>
+                        <b>Dyvs</b> – É o último atributo da linha do tempo universal. A Dyvs é um período de tempo de 1000 unidades. Cada uma dessas unidades vale 100 mil anos.
+                    </li>
+                </ul>
+                <p>
+                    Quando formos alocar nossas civilizações em um período de tempo do universo, devemos escolher em qual Starvys ela nasceu. Muitas das civilizações do sistema venturo estão localizadas dentro da <b>Starvys 13</b> que retrata um período de tempo de 1 bilhão de anos.
+                </p>
+                <p>
+                    Após escolher a Starvys, devemos escolher em qual divisão ela está. As divisões que temos são: <b>Vux</b>, <b>Dak</b>, <b>Gal</b>, <b>Lot</b>, <b>Rys</b>, <b>Tak</b>, <b>Bor</b>, <b>Zor</b>, <b>Dos</b> e <b>Ren</b>. Cada uma dessas divisões tem um período de 100 milhões de anos. Esse período é extremamente alto, mesmo para os padrões evolutivos.
+                </p>
+                <p>
+                    Por conta disso cada uma das divisões contem um atributo <b>Dyvs</b> que é dividida em 1000 unidades, cada uma com um período de 100 mil anos. Assim fica muito mais preciso o período de origem de uma civilização. Então você deve escolher um valor entre 1 a 1000 para alocar sua civilização.
+                </p>
+                <p>
+                    Imagine então que você está criado uma civilização num <b>nível evolutivo 3</b>. Essa civilização está dentro do Starvys 13, divisão Zor Dyvs 20. Temos mais duas formas de escrever esse valor, que são:
+                </p>
+                <ul>
+                    <li>
+                        <b>Simplificada</b> – Composta por Número da Starvys, número da Divisão e o número da Dyvs, ficando então <b>13-8-20</b>;
+                    </li>
+                    <li>
+                        <b>Normal</b> – Composta pela Starvys, divisão e número da Dyvs, ficando então, <b>Starvys 13 Zor 20</b>.
+                    </li>
+                </ul>
+
+                <h3>ORGANIZAÇÕES DA CIVILIZAÇÃO:</h3>
+                <p>
+                    Você poderá criar sistemas militares ou organizações para sua civilização, seguindo as regras de criação na sessão de <b>Corporação</b>.
+                </p>
+                <p>
+                    O termo Militar está ligado a membros, instituições, instalações, equipamentos, veículos e qualquer outra coisa que faz parte de uma organização autorizada a usar a força para a defesa de seu país. Além também das organizações militares que servem para desastres civis como o próprio corpo de bombeiros. E nesse caso também estamos nos referindo a organizações feitas por determinados grupos como, por exemplo, um grupo terrorista.
+                </p>
+                <p>
+                    Sistemas militares são constituídos por hierarquias para distribuir os poderes dentro de uma organização. Além de servir também para distinguir os graus de subordinação dentro desse sistema militar. Cada sistema são divididos em áreas de atuação, que nos ditas as funções dessa organização, onde cada membro ou grupo de membros pode trabalhar.
+                </p>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Você terá mais informações sobre esse item na sessão de corporações.</i>
+                </div>
+                
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

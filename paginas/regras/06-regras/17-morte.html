@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>MORTE DO PERSONAGEM</h2>
+                <p>
+                    Um jogador pode se deparar com a morte de seu PP. Isso ocorre quando a vitalidade do personagem chega a zero. Porem de imediato o personagem não chega a morrer, mas fica inconsciente. Em seguida o jogador terá que realizar um teste apenas de <b>CON, ND 7</b>. A sua quantidade de acertos define o número de turno que o personagem vai ter antes de morrer completamente. 
+                </p>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Durante o tempo inconsciente, os outros jogadores ou PnJ podem tentar curar o personagem. </i>
+                </div>
+
+                <p>
+                    Quando sua quantidade de turnos inconsciente chegar ao fim. O jogador terá que realizar um teste de <b>FOR+CON, ND 8</b>. Onde o acerto garante mais um turno de vida para aquele personagem. E ele fará esse mesmo teste a cada turno que se passe, mesmo sendo a vês dos outros jogadores. E quando o teste falhar, o jogador morrerá de vez.
+                </p>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Esse tipo de teste não é usado bonificação, mas pode usar perseverança. </i>
+                </div>
+
+                <p>
+                    Temos duas formas de morte de personagem que devem ser destacadas aqui. Pois elas garantem o futuro desse personagem pós-morte. Essas formas são:
+                </p>
+
+                <ul>
+                    <li>
+                        Quando o personagem morre por um personagem de outro jogador. Então quando um jogador mata o personagem do outro, os pontos de XP desse personagem morto passa para o personagem que o matou. E o mesmo não tem direito a teste.
+                    </li>
+                    <li>
+                        A segunda forma é quando o personagem morre por acontecimentos narrativos. Nesse caso o personagem morre por qualquer elemento da sessão, até mesmo os <b>PnJ</b>. Quando isso ocorre, o jogador terá o direito de retornar com o seu personagem. Porem será submetido a um <b>teste</b> complicado.
+                    </li>
+                </ul>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Falaremos mais desse teste a frente. Testes de morte podem ser feitos caso a morte seja por outro jogador. Mas isso quem decide é o mestre. Isso ocorre muito por conta do escopo narrativo, como uma tentativa de teste proposital. </i>
+                </div>
+
+                <p>
+                    Se o jogador perder seu personagem, em qualquer uma das situações. Ao criar um novo, terá uma pontuação de <b>+10Xp</b> para a criação, além dos pontos que recebe normalmente na criação de um personagem.
+                </p>
+
+                <h3>CRIAÇÃO DE TESTES PÓS-MORTE:</h3>
+                <p>
+                    O Mestre tem até a próxima sessão para criar o teste de seu jogador. O recomendável a fazer é elaborar perguntas referentes a crônica e até mesmo a história do personagem, e para cada pergunta elaborar três dicas. Assim você não será pego de surpresa na hora que o personagem fizer a pergunta.
+                </p>
+                <p>
+                    O mestre deve elaborar seis perguntas e suas respetivas respostas. Isso pode demorar de uma narrativa a outra pois o mestre tem que ter seu tempo para pensar. Após a elaboração das perguntas ele deve fazê-las ao jogador, onde o mesmo terá o direito de pedir apenas 3 dicas durante todo o teste.
+                </p>
+                <p>
+                    O jogador deve acerta pelo menos 3 das 6 perguntas para poder passar no teste. E terá um limite de tempo de 1 minuto para responder cada uma das perguntas. 
+                </p>
+                <p>
+                    Caso o jogador acerte mais de 3 perguntas, o mestre pode evoluir sua ficha, ou dar a ele algum item ou poder ilimitado temporariamente. Isso vai de mestre para mestre. Mas acerta apenas 3 perguntas só dá o direito de renascer no mesmo lugar que morreu ou em outro lugar da escolha do mestre (<i>que de preferência não tenha riscos de vida para o PP</i>).
+                </p>
+                <p>
+                    Para não haver dúvidas, o mestre deve perguntar ao jogador, após dar sua resposta: <i>“Esta é a sua resposta?”</i>. Caso o jogador responda <i>“sim”</i>, o narrador anuncia se acertou ou errou, e vai para a próxima. Caso a resposta do jogador seja <i>“não”</i>, o narrador deve dar mais 30 segundos para a nova resposta do jogador. Se não responder neste tempo, a pergunta será considerada como errada.
+                </p>
+                <p>
+                    Após o teste, o narrador anuncia quantas respostas o jogador acertou. Caso tenha acertado menos de três, perderá seu personagem. Agora, se for aprovado no teste, o personagem retorna, com uma bonificação escolhida pelo narrador.
+                </p>
+                <p>
+                    Esse teste foi criado para dar uma segunda chance aos jogadores. Porem ele segue regras, onde só vai para teste, jogadores que morrerem por PnJ ou eventos/acontecimentos narrativos. Caso o jogador morra por outro jogador ele não irá para teste, apenas ira morrer e seu Xp será somado com o do jogador que o matou.
+                </p>
+
+                <h3>CENÁRIO:</h3>
+                <p>
+                    Quando um personagem vai para teste (<i>se a sua forma de morte permitir um teste</i>). Seu teste ocorre em um cenário que é padrão para todos os jogadores (<i>na maioria dos casos</i>). Esse cenário é inteiramente branco, onde sua superfície é espelhada, e tem dois centímetros de água a cima dela. E a frente do personagem vai haver uma espera de luz branca.
+                </p>
+                <p>
+                    Essa esfera é a responsável por fazer as perguntas ao personagem no escopo narrativo. Quando finaliza um teste com sucesso. Essa esfera brilha tanto que força o personagem a fechar seus olhos, e quando abre novamente, já está no mundo da crônica.
+                </p>
+                <p>
+                    Caso contrário (<i>tenha falhado nesse teste</i>) a AZMIR de seu personagem é levada para algum dos planos divinos (<i>serão abordados mais a frente</i>).
+                </p>
+                <p>
+                    Quando passa em um teste, quem está no exterior (<i>cenário narrativo</i>) vê os danos físicos causados no personagem serem reconstruído, partícula por partícula. E cada uma dessas partículas irradiam uma luz branca.
+                </p>
+                <p>
+                    O mestre pode trocar tanto cenário quanto o interrogador padrão do teste, podendo colocar somente alguma divindade que tenha ligação com o personagem. Essa divindade por sua vez pode assumir a forma que desejar.
+                </p>
+                
+                <h3>LIDANDO COM A MORTE DO PERSONAGEM:</h3>
+                <p>
+                    Sabemos que a morte de um personagem pode vir de diversas maneiras. Seja ela por descuido do jogador, ou acontecimentos narrativos. Esse acontecimento pode deixar o jogador daquele personagem bastante chateado, ainda mais quando o jogador tem apego pelo PP.
+                </p>
+                <p>
+                    Esse universo é focado mais no <i>“realismo”</i>. Sendo assim <i>“protagonismo”</i> de um personagem não o ajudara em qualquer ponto de dificuldade. O jogador deve ter em mente que a morte de seu personagem pode ocorrer a qualquer momento. Deixe isso claro a eles antes de iniciar sua campanha. Além disso é aconselhável explicar aos jogadores dos riscos, tanto no início da campanha quanto em uma cena especifica. Essa explicação pode vir por meio de PnJ ou ser explicada pelo mestre diretamente aos jogadores.
+                </p>
+                <p>
+                    Em alguns casos essa exposição do perigo pode tirar a adrenalina da campanha. Por isso é aconselhável que esses riscos sejam explicados em narrativa do que diretamente pelo mestre em OFF.
+                </p>
+                <p>
+                    Podemos também ter mortes com propósitos narrativos. Esse tipo de morte, mesmo que surpresa, ameniza bastante a depressão pôs morte de um jogador. Com isso seu jogador pode até ficar chateado com a morte. Mas isso não irá barrá-lo de continuar sua campanha, pois ele viu que seu personagem não morreu em vão. E isso pode até mesmo motivá-lo a continuar com um PP que tenha ligações com o seu PP morto. 
+                </p>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Não mate os PP de seus jogadores com propósitos narrativos por querer. Isso desmotiva seu jogador. Apenas coloque um propósito narrativo se ele morrer por consequência e não por planejamento.</i>
+                </div>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

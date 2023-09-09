@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>TERCEIRA FICHA</h2>
+                <p>
+                    Tanto as regras para uso de escudo, armaduras e armas são encontradas dentro do livro de regras na
+                    sessão de Regras do Sistema.
+                </p>
+                <h3>ESCUDO:</h3>
+                <p>
+                    A área de <b>“Escudo”</b> é usada para preencher os atributos do escudo que um personagem esteja
+                    usando. Todo esses campos são preenchidos a lápis. E com isso podemos ter informações rápidas do
+                    escudo que está equipado ao personagem.
+                </p>
+
+                <div class="row">
+                    <div class="col-sm-7">
+                        <p>
+                            Cada escudo tem seus valores de atributo para serem preenchidos nessas áreas. Porem quando o
+                            escudo não funcionar a base de energia. Os dois últimos atributos (Consumo e Energia) não
+                            são preenchidos.
+                        </p>
+                    </div>
+                    <div class="col-sm-5">
+                        <img class="img-fluid"
+                            src="/static/imagens/imgs_regra/personagem/parte25.webp"
+                            alt="Escudos">
+                    </div>
+                </div>
+
+                <h3>ARMADURAS:</h3>
+                <div class="row">
+                    <div class="col-sm-7">
+                        <p>
+                            O campo <b>“Armadura”</b> é usado para preencher os atributos da armadura que está equipada
+                            em seu personagem. Ela deve ser toda preenchida a lápis, assim como o campo de “Escudo”.
+                            Nele teremos todos os atributos usados em uma armadura convencional e tecnológica. Todos
+                            esses atributos são encontrados na descrição de cada armadura. </p>
+                    </div>
+                    <div class="col-sm-5">
+                        <img class="img-fluid"
+                            src="/static/imagens/imgs_regra/personagem/parte26.webp"
+                            alt="Armaduras">
+                    </div>
+                </div>
+                <p>
+                    Os três últimos campos (Bateria, CdN e AC) são omitidos se a armadura não for do tipo tecnológica.
+                </p>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Diferente do Escudo, o jogador pode anotar o dano total sofrido pela armadura ao
+                        fim da sessão no campo PpD (Pontos perdidos de Durabilidade). </i>
+                </div>
+
+                <h3>CONFRONTO:</h3>
+                <p>
+                    A área <b>“Confronto”</b> é onde vamos colocar todas as armas que estão sendo carregas por nosso
+                    personagem. Ela é dividida em três partes principais que compõem os três tipos de armamento que um
+                    personagem pode carregar. Dentre eles temos: <b>Armas de fogo</b>, <b>energia</b> e
+                    <b>antimatéria</b>. Temos a parte de <b>armas brancas</b>. E por fim a parte de <b>bombas</b>.
+                </p>
+                <h5>ARMAS DE ENERGIA, FOGO E ANTIMATÉRIA:</h5>
+                <img class="img-fluid" src="/static/imagens/imgs_regra/personagem/parte27.webp"
+                    alt="Confronto1"><br><br>
+
+                <p>
+                    Adotei a técnica de preenchimento vertical. Onde o jogador vai preencher os atributos da arma em uma
+                    das três colunas que temos. Assim, basta o jogador preencher os atributos correspondentes da arma
+                    que ele está recebendo do mestre, para poder usar em narrativa. Nessa área temos capacidade de
+                    colocar três armas. Independente de seu tipo.
+                </p>
+                <p>
+                    Um personagem pode carregar no máximo três armas (<i>o que achamos mais do que necessário</i>).
+                    Porem o mestre pode optar por mais campos usando uma folha a parte para anotar os atributos da arma.
+                </p>
+                <div class="row">
+                    <div class="col-sm-7">
+                        <p>
+                            O Atributo <b>NARF-Força</b>, representa o valor do nível do atributo de Raça Força, e o
+                            nível de
+                            força do atributo do personagem. Onde esse segundo atributo “Força” é preenchido apenas seu
+                            nível. Enquanto o primeiro é preenchido o valor:
+                    </div>
+                    <div class="col-sm-5">
+                        <img class="img-fluid"
+                            src="/static/imagens/imgs_regra/personagem/parte28.webp"
+                            alt="Armaduras">
+                    </div>
+                </div>
+
+                <p>
+                    Já o atributo <b>Capacidade</b> funciona exatamente igual ao <b>NARF-Força</b>. Porem colocamos aqui
+                    a perícia necessária para usar a arma, e seu nível. Coloca-se o valor:
+                </p>
+                <ul>
+                    <li>
+                        <b>E</b> – Para a perícia Armas de Energia;
+                    </li>
+                    <li>
+                        <b>F</b> – Para a perícia Armas de Fogo;
+                    </li>
+                    <li>
+                        <b>A</b> – Para a perícia Armas de Antimatéria.
+                    </li>
+                </ul>
+
+                <h5>ARMAS BRANCAS E BOMBAS:</h5>
+                <img class="img-fluid" src="/static/imagens/imgs_regra/personagem/parte29.webp"
+                    alt="Armas brancas e bombas"><br><br>
+
+                <p>
+                    Para as <b>armas brancas</b> e <b>Bombas</b>, adotamos o preenchimento de linhas padrão. Por terem menos atributos para preencher, ou não precisarem de um espaço de preenchimento tão grande. 
+                </p>
+                <p>
+                    Assim, basta fazer como nas armas de fogo. Anote os atributos da arma branca no campo de destaque a cima. A única diferença, é que esses campos tanto para armas brancas quanto bombas. Tem um atributo chamado <b>QtD</b> (<i>Quantidade</i>). Ele serve para você informar quantas dessas artefatos, o personagem está carregando.
+                </p>
+                <p>
+                    E como dito a cima, as áreas das <b>bombas</b> funciona da mesma forma que a área de Armas brancas. Bastando somente passar os atributos da descrição da arma, para a ficha.
+                </p>
+                <img class="img-fluid" src="/static/imagens/imgs_regra/personagem/parte30.webp"
+                    alt="Bombas"><br><br>
+                <p>
+                    No caso o personagem pode carregar ao todo 7 armas brancas e 7 bombas.
+                </p>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

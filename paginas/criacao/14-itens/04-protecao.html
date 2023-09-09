@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Criação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/criacao.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criacao</h1>
+        <p>Agora que você conhece o Universo e as Regras. Está na hora de aprender a criar os elementos desse universo!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-criacao></venturo-sumario-criacao>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>PROTEÇÃO</h2>
+                <p>
+                    Itens de proteção são usados para segurar um valor fixo de dano em um período de tempo. Já escudos seguram dano até que o mesmo seja destruído ou descarregado.
+                </p>
+                <p>
+                    Vamos abordar os atributos de ambos os tipos:
+                </p>
+
+                <h3>PROTEÇÃO:</h3>
+                <p>
+                    Qualquer item que forneça proteção ao personagem, pode ser categorizado como proteção. Ele é parecido com uma armadura. Porem mais simples (ou não).
+                </p>
+                <p>
+                    Um bom item de proteção, poderia ser um colar mágico medieval, por exemplo. Ou a proteção de prata dos Anrar.
+                </p>
+                <p><b>Seus atributos são:</b></p>
+                <ul>
+                    <li><b>Nome</b> – De um nome para esse item. </li>
+                    <li><b>Ilustração</b> – Faça uma ilustração desse item. Lembrando de destacar características importantes do mesmo.</li>
+                    <li><b>Preço</b> – Informe o preço desse item, seja em Aurons, ou na moeda da raça.</li>
+                    <li><b>Criadores</b> – Informe a raça/corporação responsável pela criação desse item.</li>
+                    <li><b>Aquisição</b> – Informe aonde e como você consegue adquirir este item.</li>
+                    <li><b>Tamanho</b> – Geralmente itens dessa categoria tem tamanhos de 5 a 30 centímetros. Basta dar o comprimento e largura em centímetros.</li>
+                    <li><b>Absorção</b> – Absorção é a quantidade de pontos de dano que esse item absorve automaticamente. Os mais simples absorvem dês de 2 a 5 pontos de dano. Já os mais modernos conseguem absorver entre 7 a 13 de dano (ou mais).</li>
+                    <li><b>Duração</b> – Eles podem durar turnos, rodadas, cenas ou batalha, informe a quantidade da duração com o tipo de categoria que o valor representa por exemplo “2 rodadas”.</li>
+                    <li><b>Descrição</b> – Assim como a maioria das descrições, você deve informar, onde, quando e por que foi criado. Descreva também o efeito do item quando usado.</li>
+                    <li><b>Funcionamento</b> – Informe detalhadamente como esse item deve ser utilizado.</li>
+                </ul>
+
+                <h3>ESCUDOS:</h3>
+                <p>
+                    Temos duas categorias de escudos, esses são: Os físicos e os de energia. Cada categoria tem atributos diferentes a serem pensados. Os atributos tanto do escudo físicos, quanto de energia são iguais. O que muda é que o escudo de energia tem um atributo a mais <b>“Consumo”</b> e <b>“Energia”</b>.
+                </p>
+                <ul>
+                    <li><b>Nome</b> – Qual o nome desse escudo?</li>
+                    <li><b>Ilustração</b> – Faça uma ilustração desse escudo.</li>
+                    <li><b>Preço</b> – Informe o valor desse escudo, que pode ser em Aurons, ou na moeda da raça.</li>
+                    <li><b>Criadores</b> – Informe a raça/corporação responsável pela criação desse equipamento.</li>
+                    <li><b>Aquisição</b> – Informe aonde e como você consegue adquirir este item.</li>
+                    <li><b>Descrição</b> – Faça uma descrição desse equipamento. Caso seja de energia, informe como é utilizado ou ativado. </li>
+                    <li><b>Vigor</b> – Informe a quantidade de dano que esse escudo toma automaticamente. </li>
+                    <li><b>Resistência</b> – Informe quanto de resistência tem seu escudo. Lembrando que esse valor é como se fosse a vitalidade de seu escudo. Ele é subtraído pelos danos causados.</li>
+                    <p>
+                        Para escudos de energia, temos um atributo a mais:
+                    </p>
+                    <li><b>Consumo</b> – O consumo de energia representa quanto de energia ela consome a cada rodada que está ligado.</li>
+                    <li><b>Energia</b> – Esse atributo serve para informar quantos pontos de energia seu escudo tem caso ele use alguma fonte de energia para funcionar.</li>
+
+                </ul>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Os escudos a base de energia carregam alguma bateria. Caso não use uma bateria já criada, você devera criar uma para implementá-la ao escudo.</i>
+                </div>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

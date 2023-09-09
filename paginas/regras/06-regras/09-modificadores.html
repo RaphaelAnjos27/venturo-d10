@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>MODIFICADORES DE OCASIÃO</h2>
+                <p>
+                    Em muitos momentos de uma sessão, as condições de ambiente, as condições do local, o uso de certos equipamentos e até mesmo os aliados e jogadores presentes no momento. Podem gerar vantagens e desvantagens para sua ação. 
+                </p>
+                <p>
+                    Chamamos essas vantagens e desvantagens de “Modificadores de ocasião”. E elas fornecem ou anulam 5 dados de sua ação. Observe a lista a baixo:
+                </p>
+                <ul>
+                    <li>
+                        <b>Desvantagem grande:</b> -5 dados no teste;
+                    </li>
+                    <li>
+                        <b>Desvantagem média:</b> -4 dados no teste;
+                    </li>
+                    <li>
+                        <b>Desvantagem leve:</b> -2 dados no teste;
+                    </li>
+                    <li>
+                        <b>Vantagem leve:</b> +2 dados no teste;
+                    </li>
+                    <li>
+                        <b>Vantagem média:</b> +4 dados no teste;
+                    </li>
+                    <li>
+                        <b>Vantagem grande:</b> +5 dados no teste.
+                    </li>
+                </ul>
+
+                <p>
+                    Vamos ver um exemplo de <i>desvantagem média</i> em uma ação. Imagine que você esteja em sala onde sua única opção e levantar uma porta corrediça vertical. Ação fácil. Porem naquela mesma sala tem muito musgo escorregadio, dificultando muito que você levante essa porta. E é ai que aplicamos a desvantagem média. Esses modificadores podem se aplicar em muitas situações narrativas.
+                </p>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>ARMAS</h2>
+                <p>
+                    Agora vamos abordar as armas que podem ser encontradas dentro desse sistema. Vamos falar desde as
+                    armas brancas, até as armas de grande poder, que podem ser encontradas dentro do sistema.
+                </p>
+                <p>
+                    Em nosso universo temos vários tipos de armas. Cada raça tem a sua, e elas são constituídas por suas
+                    características que definem dano, força necessária para se carregar a arma e entre outras coisas.
+                    Aqui vamos falar sobre assuntos importantes para usar essas armas.
+                </p>
+                <p>
+                    Uma coisa que deve ficar clara é que não existe esquiva para armas de fogo, apenas defesa. O
+                    argumento é simples, nenhum ser no universo pode ter a destreza necessária, ou seja, maior que 8,
+                    para ter o direito de esquivar do disparo de uma arma de fogo ou energia.
+                </p>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Caso a destreza do ser seja maior que 8 ele tem a capacidade de esquivar de armas
+                        de fogo.</i>
+                </div>
+
+                <p>
+                    Os atributos universais das armas são:
+                </p>
+                <p>
+                    <b>Nome</b> – Que pode ser encontrado em qualquer objeto dentro do sistema.
+                </p>
+                <p>
+                    <b>Ilustração</b> – Para representar a arma graficamente.
+                </p>
+                <p>
+                    <b>Preço</b> – Para caso alguém queira comprar essa arma.
+                </p>
+                <p>
+                    <b>Criadores</b> – Que indica quem é responsável pela existência dessa arma.
+                </p>
+                <p>
+                    <b>Nível de Dificuldade da Arma (NdA)</b> – É o nível de dificuldade padrão para usar a arma em
+                    questão. Em todas as armas teremos esse atributo.
+                </p>
+                <p>
+                    <b>Descrição</b> – Vai nos fornecer uma descrição detalhada da arma.
+                </p>
+                <p>
+                    <b>NV Atrib Físico/Força</b> – Algumas armas são criadas por espécies e corporações que tem forças
+                    distintas das outras raças. Por conta disso, o <i>Nível do Atributo Físico</i> da raça fica
+                    associado a arma. Assim como a Força necessária para erguer a arma.
+                </p>
+
+                <p>
+                    Quando uma corporação universal está criando a arma, ela costuma ter um Nível de Atributo Físico que
+                    atenda a todos integrantes que usaram essa arma na corporação. Associando então sempre um valor que
+                    seja igual à da raça mais fraca da corporação.
+                </p>
+
+                <p>
+                    Esses atributos serão encontrados em qualquer tipo de arma, outros não. E elas ainda podem ter
+                    atributos próprios que fornecem comportamentos e regras para o uso dessa arma em questão.
+                </p>
+
+                <h5>NV Atrib Físico/Força</h5>
+                <p>
+                    Existe a possibilidade de personagens terem seus movimentos reduzidos graças a esse atributo.
+                    Sabemos que quando maior o nível desse atributo, mais força o personagem precisa ter para erguê-lo,
+                    e essa mesma ideia se aplica ao contrário na movimentação, ou seja, quanto maior o nível desse
+                    atributo, mais lento será o personagem, pois a arma em si é muito pesada.
+                </p>
+                <p>
+                    Mesmo que o personagem tenha o nível necessário para erguer a arma, ele tem sua movimentação
+                    prejudicada. A menos que o personagem tenha alguma bonificação em seu atributo Força.
+                </p>
+                <p>
+                    A exceção aqui é básica, caso o personagem tenha <b>+2 níveis</b> acima do nível do atributo, seja
+                    por bonificação ou nível normal, ele não terá sua movimentação prejudicada.
+                </p>
+                <p>
+                    Os níveis desse atributo interferem também na esquiva do personagem, onde:
+                </p>
+                <ul>
+                    <li>
+                        <b>Nível 3</b> – Sua esquiva tem penalidade de -1D10;
+                    </li>
+                    <li>
+                        <b>Nível 4</b> – Sua esquiva tem penalidade de -2D10;
+                    </li>
+                    <li>
+                        <b>Nível 5</b> – Sua esquiva tem a penalidade de -3D10.
+                    </li>
+                </ul>
+                <p>
+                    Esses efeitos são anulados caso o personagem tenha uma bonificação de <b>+2</b> acima do nível atual
+                    do atributo.
+                </p>
+
+                <h3>ARMAS BRANCAS:</h3>
+                <p>
+                    As armas brancas são objetos que podem ser usados para a defesa ou ataque de um personagem. E
+                    algumas delas podem ser usadas para realizar trabalho, como é o caso das foices, facas, martelos e
+                    machados. E temos armas brancas que são criadas justamente para fornecer dano a algum oponente.
+                    Esses tipos de armas são classificadas em sete principais <b>categorias</b>, que são: <i>Cortantes,
+                        Perfurantes, Contundentes, Perfurocortantes, Cortocontundentes, Perfurocontundentes e
+                        Perfurocortocontundentes</i>.
+                </p>
+
+                <p>
+                    Toda arma branca necessita que o personagem tenha perecia para usá-la, ou seja, é necessário que o
+                    personagem tenha perícias em <b>armas brancas</b>. E cada uma vai informar o nível necessário para
+                    manipular a arma. E cada arma vai ter seu valor de dano especificado nos atributos da arma. E os
+                    testes com Armas brancas sempre envolvem <b>Destreza + Armas Brancas</b>.
+                </p>
+
+                <h5>Arremessando coisas</h5>
+                <p>
+                    Você pode querer usar uma arma branca como arma de fogo, para poder arremessá-la contra um alvo.
+                    Para isso temos uma regra básica onde, começamos pela <b>ND</b> que o mestre pode estipula de acordo
+                    com as características do cenário e alvo, por exemplo, quero acerta essa faca contra um alvo a 25
+                    metros de distância. Para isso eu daria uma <b>ND 8</b> ou <b>7</b>. Lembre-se sempre de ser justo
+                    com seus jogadores, caso eles não aceitem sua escolha explique o porquê da escolha, e sempre
+                    lembre-os de que você é o metre e a pessoal com a palavra final na sessão.
+                </p>
+                <p>
+                    Com a dificuldade em mãos temos o teste de <b>destreza + perícia (Arremesso)</b> para saber se ele
+                    acerto. Caso erre a mente criativa do narrador entra em ação. O dano aqui também é diferente,
+                    devemos pegar o dano da arma e somar com a força para termos o dano total. Então por exemplo, uma
+                    faca com 4 de dano e uma força igual a 5, meu dano seria <b>4 + 5 = 9</b>.
+                </p>
+                <p>
+                    Pode ser que jogadores procurem arremessar algo aleatório do cenário. Dependendo do objeto
+                    arremessado, o mestre vai estipular um valor de dano para ele, julgando a dimensão do objeto,
+                    densidade e formato. E então usar a mesma regra descrita acima.
+                </p>
+                <p>
+                    A distância máxima que alguém consegue jogar algo é igual a <b>Força x 10 Metros</b>. Porem isso
+                    pode mudar de acordo com o <i>Nível do Atributo Físico</i> e raça, pois uma raça de 10 metros pode
+                    arremessar objetos muito mais longe que uma raça de 2 metros. Essa regra acima é para estipulado
+                    para raças com estatura e capacidades humanas.
+                </p>
+
+                <h3>ARMAS IMPROVISADAS:</h3>
+                <p>
+                    Em algum momento em sua narrativa, um jogador com toda a certeza vai criar uma arma improvisa, algo
+                    que ele catou ali no cenário, juntou e fez uma arma. Ou pode pegar algo do cenário e usar como arma,
+                    como por exemplo, uma cadeira. Essa é uma situação muito delicada, e o momento ao qual o mestre vai
+                    precisar usar suas habilidades de improviso. Isso por que não existe uma regra para lidar com essa
+                    situação. Para isso o recomendado é que p mestre interprete esse objeto criado, e tente assemelhá-lo
+                    com uma arma já existente, podendo então estipular a quantidade de dano que ele tem. Porem essa
+                    gambiarra do jogador terá o dano mais reduzido que a arma ao qual foi comparada.
+                </p>
+
+                <h3>ARMAS DE FOGO/ENERGIA/ANTIMATÉRIA:</h3>
+                <p>
+                    Agora vamos falar das <b>armas de fogo, energia e antimatéria</b>. As armas de fogo, são armas que
+                    usam a queima de algum combustível para disparar projéteis a grandes velocidades. Já as armas de
+                    energia podem usar da energia para atirar projéteis, raios ou lasers. E por fim as armas de
+                    antimatéria, são incríveis armas pessoais que utilizam da antimatéria para seu poder de fogo. Esse
+                    tipo de Arma é a mais poderosa dentre as duas categorias anteriores.
+                </p>
+                <p>
+                    Cada uma dessas armas podem conter subcategorias, que especificam qual o seu tipo. O tipo de uma
+                    arma descreve se a mesma é um revólver, pistola, metralhadora, rifle de precisão e por ai vai.
+                </p>
+
+                <h5>Capacidade de uso</h5>
+                <p>
+                    Um personagem que desejar usar uma dessas armas deve ser especializado no mesmo, ou seja, deve ter
+                    conhecimento de como manusear a arma. Para especificar o conhecimento um tipo de arma, o personagem
+                    pode ter uma das perícias: Armas de Fogo, Armas de Energia ou Armas de Antimatéria. Caso o mesmo
+                    tente usar uma arma ao qual não tem a categoria, seu <b>NV</b> sobe drasticamente.
+                </p>
+
+                <h5>Distância</h5>
+                <p>
+                    Essa categoria de arma tem um atributo chamado <b>Distância</b>, que representa a distância máxima
+                    efetiva de uma arma. Quando à distância do alvo ultrapassa a distância de disparo da arma, o mesmo
+                    sobre penalidade de dados. Assim, quando ultrapassado o limite da arma, o jogador sofre uma
+                    <b>penalidade de -2</b>. Passando duas vezes a distância da arma, a <b>penalidade é de -5</b>. Acima
+                    disso é impossível acertar um alvo, mas caso o personagem queira tentar ele pode. Porem o mestre vai
+                    colocar uma dificuldade extremamente alta.
+                </p>
+
+                <h5>Carga</h5>
+                <p>
+                    As armas precisam de algum tipo de carga para serem usadas. Então esse é um atributo que você vai
+                    encontrar em todas elas. Elas são descritas como a quantidade de disparos por cartucho.
+                </p>
+                <p>
+                    Quando você for anotar as armas em sua ficha, você deve anotar a carga total da arma, e em seguida a
+                    quantidade de cartuchos que você tem, por exemplo, <b>50-2</b>, nesse caso, a arma dispara 50 vezes.
+                    E o personagem pegou apenas 2 cartuchos.
+                </p>
+                <p>
+                    Para armas que tem a munição inserida diretamente na arma, como, por exemplo, o revólver que tem sua
+                    munição inserida diretamente no tambor. Você vai colocar a quantidade de disparos, e em seguida a
+                    quantidade de projéteis que você tem, por exemplo, <b>5-20</b>.
+                </p>
+
+                <h5>Recarga (ReC)</h5>
+                <p>
+                    As armas quando acabam suas munições precisam ser recarregadas, e algumas podem levar tempo. A
+                    recarga indica quantos turnos se leva para um personagem conseguir recarregar sua arma. Quando a
+                    carga de uma arma é rápida, o valor desse atributo pode ser de <b>“0.5”</b> indicando que se precisa
+                    de meio turno para recarregar a arma. Com isso o jogador ainda pode realizar uma ação rápida
+                    (<i>Lembrando que uma ação normal demora de 3s a 5min e em batalha 2s a 1min</i>). Caso o personagem
+                    seja <b>Especialista</b> na arma que está usando, ele pode reduzir o tempo de recarga pela metade.
+                </p>
+                <p>
+                    Arma tem um dano fixo, que ao ser usada, soma-se com os acertos do teste para ter o dano total. Cada
+                    acerto do teste, sem as bonificações representam um disparo da arma, por exemplo: <i>Em um teste de
+                        disparo consegui <b>3 acertos</b>, somei eles com o dano da arma, e obtive meu dano total</i>.
+                    Porem esses três acertos representam uma munição que está no pente da arma. Então podemos pegar
+                    esses acertos e subtrair pela quantidade de munição da arma. Isso para armas que são
+                    <b>semiautomáticas</b>. Para armas de <b>repetição</b>, cada dano total representa um único disparo
+                    da arma.
+                </p>
+                <p>
+                    Agora para armas <b>automáticas</b> a regra muda, pois a mesma dispara muitos projéteis por minuto
+                    ou melhor, por ação. Nesse caso, a cada fim de teste, o mestre pode jogar dados <b>D10</b> para
+                    saber a quantidade de balas consumidas do estojo. Cada dado representa <b>10 balas</b> do cartucho
+                    da arma, ou seja, para armas com cartucho de 50 munições, joga-se <b>5D10</b>, quando a capacidade
+                    do pente chegar a 40 munições, joga-se <b>4D10</b> e por ai vai até chegar a zero. Se a capacidade
+                    do pente for muito grande, tendo 200 munições ou mais por pente, cada <b>D10</b> pode consumir o
+                    dobro de munição.
+                </p>
+
+                <h5>Precisão</h5>
+                <p>
+                    Você pode equipar sua arma com modificadores para que sua precisão fique melhor, e isso ajuda a
+                    bonificar sua jogada, seja abaixando o <b>Nível de Dificuldade</b> ou fornecendo dados adicionais em
+                    sua <b>Parada de Dados</b>. Cada arma pode ou não ter uma lista de modificadores para serem
+                    equipados na mesma. E cada um desses modificadores vão indicar qual a bonificação que elas fornecem
+                    na arma.
+                </p>
+                <p>
+                    Porem existe um limite nessas bonificações. Quando a mesma é voltada para a Parada de Dados o limite
+                    é de <b>+4D10</b>. Agora quando ele é voltado ao Nível de Dificuldade, o máximo de bonificação que
+                    podemos ter é <b>-3ND</b>.
+                </p>
+
+                <h5>Abaixando a Dificuldade do Disparo</h5>
+                <p>
+                    Essa regra se aplica a qualquer tipo de arma. Caso você gaste um turno mirando com sua arma, você
+                    diminui em <b>-1ND</b>. Isso é acumulativo para cada turno que você gastou mirando, porém o limite é
+                    de <b>-3ND</b>. Então se eu ficar meus 2 turnos apenas mirando com a arma, meu ND cai de <b>8</b>
+                    para <b>6</b>. E caso eu leve dano nesse período, essa vantagem é perdida.
+                </p>
+
+                <h3>BOMBAS:</h3>
+                <p>
+                    As bombas são objetos usados para efeitos em área. Esses efeitos podem ser: <b>dano, atordoamento e
+                        distração</b>. Esses objetos bélicos têm tamanhos variados, desde maletas de viajem até pequenas
+                    granadas de mão.
+                </p>
+                <p>
+                    Bombas podem ter diversas formas de acionar, e isso é dito na descrição da mesma. Os principais
+                    tipos que temos são: <b>Relógio</b> que é um sistema de ignição que ativa a bomba após um certo
+                    tempo ativada. <b>Controle remoto</b> que inicia a ignição da bomba após um acionamento remoto de
+                    longa distância. <b>Sensores</b> que é um sistema que realiza a ignição da bomba, após algum tipo de
+                    sensor (<i>presença, pressão, contato e entre outros</i>) ser acionado. Porem isso não é uma regra,
+                    bombas podem ter diversas formas ignição.
+                </p>
+                <p>
+                    Temos diversos <b>tipos</b> de bombas, que podem variar de um único tipo por bomba, para diversos
+                    tipos por bomba. Além de um <b>raio de alcance</b> em metros. Isso tudo é especificado nos atributos
+                    da bomba.
+                </p>
+                <p>
+                    Algumas bombas podem exigir que o personagem tenha um nível da perícia <b>“explosivos”</b>.
+                </p>
+
+                <h5>Atributos de Efeito</h5>
+                <p>
+                    Bombas tem atributos de efeito que uma única bomba pode causar. Mesmo que a bomba seja de um único
+                    tipo, ela terá esses atributos, porém zerados. Esses efeitos são:
+                </p>
+                <p>
+                    <b>Dano</b> – Para quando a bomba fornece um dano ao seu alvo.
+                </p>
+                <p>
+                    <b>TsA (Turno sem Ação)</b> – Usado para efeitos de atordoamento. Ele representa a quantidade de
+                    turnos que o alvo fica sem ação.
+                </p>
+                <p>
+                    <b>NvB (Nível de Vitória da Bomba)</b> – Esse atributo é usado para bombas de fumaça. Ele indica
+                    quantos Níveis de Vitória iguais a “10” um personagem tem que ter para conseguir realizar ações
+                    quando está sobre o efeito da bomba.
+                </p>
+
+                <p>
+                    Além desses atributos, um valor de <b>turnos</b> que uma mesma bomba pode causar dano, enquanto
+                    ativada. Podemos ter bombas explosivas que causam dano em turnos, mas esse atributo é mais voltado
+                    para as bombas químicas e fumaças. E no caso de bombas químicas, temos o atributo <b>agentes</b> que
+                    informa qual agente químico ela está usando para causar o dano.
+                </p>
+                <p>
+                    Uma bomba pode levar um certo tempo para ser acionada. Esse tempo é encontrado em <b>AcT</b>
+                    (<b>Acionamento</b>). Esse atributo é igual ao ReC das armas. E assim como ele, se o acionamento da
+                    bomba for rápido, pode colocar meio turno <b>“0,5”</b>. Dando a possibilidade de mais uma ação
+                    rápida. Para ser mais claro, o acionamento é o tempo que o personagem leva preparando a bomba para
+                    detonação.
+                </p>
+                <p>
+                    Cada bomba vai explicar como ela deve ser <b>ativada</b>, seja por inserir uma senha, puxar uma
+                    alavanca ou milhares de outras coisas que podemos fazer para ativar uma bomba. E após detonada ela
+                    terá um <b>efeito</b>, que também é descrito pela bomba.
+                </p>
+
+                <h5>Tipos de Bombas</h5>
+                <p>
+                    Dentro desse universo, você vai encontrar os mais variados tipos de bombas, cada um desses tipos
+                    terão um efeito diferente. Lembrando que uma bomba pode ser mesclada com mais tipos, surtindo assim
+                    efeitos mistos em seu uso. Os tipos são:
+                </p>
+                <p>
+                    <b>Explosivos</b> – As bombas explosivas, são todas as bombas que causam dano a partir de algum tipo
+                    de explosão (seja ela qual for). As granas por exemplo, que atiram fragmentos contra os soldados
+                    após sua explosão, se encaixam nessa categoria.
+                </p>
+                <p>
+                    <b>Atordoamento</b> – Bombas com efeitos sonoros e luminosos são do tipo atordoamento. Elas são
+                    usadas para atordoar os inimigos em meio a batalha, onde o mesmo fica alguns turnos sem ação, ou
+                    seja, desorienta temporariamente os sentidos do alvo. Esse tipo de bomba também é considerada um
+                    explosivo não-letal, ou seja, que não causa dano ao alvo.
+                </p>
+                <p>
+                    <b>Fumaça</b> – são bombas que gerem cortinas de fumaça não tóxicas que bloqueia a visão do alvo.
+                    Alvos dentro dessas cortinas de fumaça terão o nível de dificuldade para qualquer ação que envolva
+                    visão fixos em “10”, além do Nível de Dificuldade que pode aumentar dependendo da bomba.
+                </p>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Equipamentos que de alguma forma aprimoram a visão do personagem, acabam omitindo a
+                        penalidade causada por esse tipo de bomba.</i>
+                </div>
+
+                <p>
+                    <b>Química</b> – São bombas que usam algum agente químico para causar seu dano em área por um
+                    período de tempo. E os agentes que essas bombas podem possuir são:
+                </p>
+                <p>
+                    <b>Agentes Vesicantes</b> – São substâncias químicas, que ao entrar em contato com a pele causam
+                    bolhas cutâneas, irritação na pele, úlceras e fortes queimaduras.
+                </p>
+                <p>
+                    <b>Agentes Nervosos</b> – São agentes químicos que perturbam os mecanismos pelos quais os nervos
+                    transferem mensagens para os órgãos.
+                </p>
+                <p>
+                    <b>Agentes Sufocantes</b> – São agentes químicos que causam bastante irritação ao nariz, garganta e
+                    olhos. E quando ingeridos em bastante quantidade causam sufocamento.
+                </p>
+                <p>
+                    <b>Agentes de Sangue</b> – São agentes que reagem com o sangue, interferindo na oxigenação de órgãos
+                    do corpo. E envenenam o sangue.
+                </p>
+                <p>
+                    <b>Agentes incendiários</b> – São substâncias químicas, que quando acionadas. Explodem em chamas,
+                    causando incêndio temporário em uma determinada área.
+                </p>
+
+                <h3>GRANDE PODER</h3>
+                <p>
+                    Armas de grande poder, são armas com grande poder destrutivo. Mas ao mesmo tempo são armas difíceis
+                    de se manipular. E podem ou não ser extremamente grandes, impossibilitando de serem erguidas.
+                </p>
+
+                <h5>Canhões</h5>
+                <p>
+                    Os canhões são armas projetadas para veículos como aviões, naves de ataque e transporte e até mesmo
+                    alguns veículos marítimos e terrestres. Elas são as armas primárias desses veículos, e ficam a
+                    frente do mesmo. Já que são operadas pelo condutor do veículo.
+                </p>
+                <p>
+                    As regras aplicadas a elas é semelhante às de armas de fogo, porém quem joga os testes sempre será o
+                    condutor do veículo. A regra é: Essas armas são somente encontras em veículos. E seu dano é
+                    calculado normalmente como as armas comuns. Diferentemente do dano das demais armas a baixo.
+                </p>
+                <p>
+                    No final de um teste você deve somar o dano de cada arma encontrada no veículo. Isso por que quando
+                    um veículo realiza o disparo de um canhão, ela dispara com todos os canhões de uma só vez.
+                </p>
+
+                <h5>Torrents</h5>
+                <p>
+                    Comparado com o canhão, as torrents têm um poder de fogo bem maior. Elas podem ser encontradas em
+                    solo para defesa, ou em algum tipo de veículo (<i>dependendo do tipo de veículo</i>). Seu dano é
+                    extremamente elevado, sendo assim, ela fornece dano multiplicado.
+                </p>
+                <p>
+                    Essas armas contêm três classes principais, essas são: <b>Classe T</b> para Torrents terrestres, ou seja, armas que ficam em solo para defesa. <b>Classe MP</b> (Médio Porte), para Torrents usadas em veículos ou em naves. E por fim a <b>Classe GP</b> (Grande Porte), para Torrents usadas em naves de grande porte como cargueiros, naves-mães e estações espaciais.
+                </p>
+                <p>
+                    Outra característica importante dessa arma, é que ela tem duas formas de controle. O primeiro é <b>remoto</b> para quando a Torrent é controlada a distância, normalmente de uma cabine de controle. E <b>manual</b> quando controlamos a arma de dentro dela, ou seja, ela tem toda uma estrutura remota dentro dela para manipular a mesma. Porem o tipo manual só é encontrado em Classes GP pois as demais classes são muito pequenas para conter um cockpit interno.
+                </p>
+                
+                <h5>Misseis</h5>
+                <p>
+                    Misseis são todos projeteis guiados, que utilizam algum tipo de propulsor. Sendo assim, eles tem características básicas como um ou mais propulsores. Sejam eles motores de foguete, estatorreator ou ambos. Deve conter um sistema de navegação como por exemplo: os lemes. E por fim devem possuir uma carga que pode ser explosiva, eletromagnética e entre outros.
+                </p>
+                <p>
+                    Podemos ter diversos tipos de mísseis, sejam eles explosivos, eletromagnéticos, explosivos, e por ai vai. Cada míssil vai indicar seu tipo nos atributos do mesmo. A regra para disparar misseis é <b>Inteligência + Computadores</b>. Caso tenha uma falha <i>“normal”</i> o míssil não será ativado, mas se for uma falha critica o narrador decide o que ocorrera (<i>podendo até mesmo explodir esse míssil</i>). 
+                </p>
+                <p>
+                    Podemos encontrar um nível de dificuldade nesse tipo de armamento. Isso por que quando for dispará-los usando algum veículo, você vai precisar fazer um teste. Eles também contem um raio de alcance efetivo, que podem ser muito extensos chegando até 500 metros dependendo da arma. 
+                </p>
+                <p>E elas tem atributos que são únicos para cada tipo de míssil, esses são:</p>
+                <p>
+                    <b>Explosivas</b> – Ela contem um atributo de <b>dano</b> causado pela arma.
+                </p>
+                <p>
+                    <b>Eletromagnéticas</b> – Ogivas eletromagnéticas têm como objetivo desativar temporariamente aparelhos eletrônicos. Seu atributo é <b>turnos</b> que indica quantos turnos o equipamento fica desativado.
+                </p>
+                <p>
+                    <b>Químicas</b> – As ogivas químicas são armas de destruição em massa, que usam agentes químicos para causar seus efeitos. Esse tipo de arma tem o atributo de <b>Dano</b> por turno, <b>Turnos</b> que o efeito fica ativo. <b>Categoria</b> que indica qual o agente químico a arma usa. Nesse caso os agentes são: <i>Vesicantes, Agentes Nervosos, Agentes de Sangue e Agentes Sufocantes</i>. E por fim o <b>efeito</b> que indica qual o efeito a arma causa na vítima. 
+                </p>
+                <p>
+                    <b>Biológicas</b> – As armas biológicas são compostas por agentes patogênicos como os fungos, vírus, bactérias e entre outros. E são usadas para atingir e contaminar um grande número de pessoas. Normalmente essas armas não causam dano e sim infecta o alvo para um futuro problema. Seu atributo é a <b>doença</b> que a arma causa ao alvo, e os <b>turnos</b> que ele fica ativo. Lembrando que o atributo de <i>turnos</i> pode conter o valor “contaminado”, indicando que a área que a bomba afetou precisa ser descontaminada para o efeito da arma.
+                </p>
+
+                <h5>Atómica e EMP</h5>
+                <p>
+                    Armas atômicas são, assim como os misseis e ogivas que podem ser detonados em solo ou a partir de um veículo. Escapar desse tipo de arma é difícil e tem a capacidade de tirar uma grande quantidade de vitalidade (<i>que varia de bomba para bomba</i>). As EMP são bombas de pulso eletromagnéticos que funcionam igual as ogivas eletromagnéticas, ou seja, tem função de desativar sistemas eletrônicos. Porem essas armas em vez de atingir um pequeno raio, elas têm um raio superior aos 5 quilômetros.
+                </p>
+                <p>
+                    Então logo de cara podemos ver que essas armas têm duas categorias principais, ou seja, <b>Atómica</b> e <b>EMP</b>. E cada bomba dessas vai indicar isso. E elas também tem um raio máximo efetivo, que podem ser milhares de metros dependendo da arma. O teste para esse tipo de arma é <b>Inteligência + Computadores</b>.
+                </p>
+                <p>
+                    Essa diferença entre as armas também diferem em seus atributos. Bombas atômicas têm um atributo de <b>Dano</b> muito elevado. Já as EMP tem um atributo de <b>Turnos</b> que representa quanto tempo um determinado equipamento ficará desativado. 
+                </p>
+                
+                <h5>HPP (Hiper Pulso de plasma)</h5>
+                <p>
+                    Os HPP ou (Hiper Pulso de plasma) são bombas que tem disparos de 1 a 3 pulsos quilométricos, que desintegram todos seres e estruturas sem emitir radiação. Assim como as bombas atômicas, seu dano é extremamente elevado, mas o <b>raio</b> de alcance é muito superior à de bombas atômicas. A diferença dela para uma bomba nuclear é que elas são ativadas de uma estrutura. Elas têm um tamanho muito elevado sendo assim detonadas de grandes estruturas, tendo um disparo de 2 a 5 vezes por minuto, destruindo a si e tudo que está no seu raio de alcance.
+                </p>
+                <p>
+                    Essas armas são ativados dentro de sua cobertura nas salas de comando. O seu teste será semelhante ao da bomba atômica sendo então <b>Inteligência + Computadores</b>. Quando ativada elas dispararão uma certa quantidade de <b>pulsos</b> em um determinado tempo <b>IpR</b> (<i>Intervalo de pulsos p/rodada</i>), que indica o tempo de espera de um pulso a outro. O <b>dano</b> e <b>raio</b> de alcance dessa arma, como dito acima são bem elevados.
+                </p>
+                <p>
+                    Uma HPP é uma arma que fica dentro de uma estrutura. E em toda estrutura você vai encontrar uma <b>Sala de controle</b> usada para ativar a bomba. <b>Sala de energia</b> usada para armazenar o gerador de energia da bomba e a <b>Sala de detonação</b> usada para armazenar a bomba em si. E com isso, teremos um mapa da estrutura ao qual a bomba está localizada.
+                </p>
+                <p>
+                    Essas armas mesmo sendo estruturas, não significa que ela é fixa em um lugar. Na verdade ela pode ser uma grande estrutura móvel, que pode ser, por exemplo, carregada por um cargueiro.
+                </p>
+                <div class="alert alert-success">
+                    <i><b>DICA.:</b> Armamentos como a bomba atômica, EMP e HPP são armas poderosas de mais para você simplesmente ir lá e ativá-las. Geralmente necessitam de uma senha ou chave para usá-las. Fica a critério do mestre qual o melhor bloqueio usar ou a descrição da arma vai indicar isso.</i>
+                </div>
+
+                <h5>Espaciais</h5>
+                <p>
+                    Armas espaciais são a última categoria de arma que podemos encontrar dentro desse sistema. São as armas mais poderosas criada por seres comuns como as Azmires. Essas armas quando construídas são associadas a algum objeto, como estação espacial (<i>quando orbita um planeta</i>). Sua capacidade destrutiva é tão alta, que algumas delas podem aniquilar todo um planeta. Ela é separada em duas categorias: As de disparos constante, onde o tiro é uma grande rajada de plasma. E as de disparos únicos, onde a arma realiza um disparo por vez.
+                </p>
+                <p>
+                    O principal diferencial dessa arma é que ela contem mais descrições do que atributos especiais. Isso por que a função dela é única, ou seja, criar uma grande rajada de plasma, que pode ou não ser contínua. Porem devemos saber o <b>objetivo</b> dessa arma, ou seja, para oque ela foi projetada, se foi projetada para um cargueiro, estação e por ai vai. Ela também vai indicar como é feita sua <b>operação</b>, ou seja, se seu controle é feito em uma cabine especial na nave, se ela é controlada do planeta, dentre muitas outras formas de operação.
+                </p>
+                <h3>
+                    Dificuldade na operação
+                </h3>
+                <p>
+                    Algumas armas dessa sistema são poderosas de mais para serem manipuladas de forma tão fácil. Elas vão indicar na descrição da mesma as dificuldades de acesso a elas. Porem o mestre pode ajudar e dificultar ainda mais esses acessos. Essas armas mais poderosas são muitas vezes o objetivo de uma campanha, e não um elemento ao qual o grupo tem durante toda a jornada.
+                </p>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>ESCUDOS</h2>
+                <p>
+                    Vamos falar agora dos escudos, ou tudo que sirva para proteção. Falaremos primeiro dos tipos de escudos que podemos ter em uma sessão, esses são:
+                </p>
+                <p>
+                    <b>Energia</b> – Esse escudo utiliza algum tipo de energia para gerar sua barreira de proteção. Toda vez que pegar um escudo dessa categoria você vai achar os atributos de resistência e consumo de energia.
+                </p>
+                <p>
+                    <b>Físico</b> – Já os escudos físicos seriam qualquer objeto ou armadura que geram a proteção. Você encontra de atributo nesses escudos somente a sua resistência.
+                </p>
+                <p>
+                    Os escudos são objetos cujo a única função é dar uma absorção fixo de dano automático ao usuário <b><i>(Vigor)</i></b>. Quando esse valor de dano é maior do que o dano absorvido pelo escudo, o restante do dano após a subtração, é tomado pelo personagem ou armadura.
+                </p>
+                <p>
+                    Vamos ver um exemplo: Imagina que você tem um escudo que absorve 5 de dano. E seu personagem está tomando 7 de dano. Subtraindo o dano 7 pelo vigor do escudo 5 teremos 2. Essa sobra é o dano recebido pelo personagem. 
+                </p>
+                <p>
+                    Quando o dano for menor que o vigor do escudo, todos os danos são absorvidos pelo escudo, e o personagem não leva dano.
+                </p>
+                <p>
+                    Quando um escudo toma dano, esse dano recebido é usado para subtrair a resistência do escudo. Basicamente é assim que funciona para todos os escudos. Porem os escudos de energia usam da sua energia para ficarem funcionando. 
+                </p>
+                <p>
+                    Esses tipos de escudos tem um consumo de pontos de energia por rodadas que estejam funcionando. E esses consumo deve ser subtraído da bateria que o mantêm ligado, ou seja, a cada rodada o escudo terá um valor de energia subtraído de sua energia. Quando um escudo de energia perde todos seus pontos de energia eles desligam. 
+                </p>
+                <p>
+                    E quando eles perdem sua resistência, os mesmos são somente desligados demorando uma certa quantidade de rodadas para poderem serem ligados novamente (<i>caso tenha pontos de energia sobrando</i>).
+                </p>
+                <p>
+                    Quando um escudo finalizar sua resistência. O mestre deve jogar 1D10 para saber o tempo que vai demorar que possa ser religado. O valor do D10 representa as rodadas que levara para o escudo religar. 
+                </p>
+                <p>
+                    Todos os atributos referentes a um escudo e qualquer outro item pode ser encontrado em sua descrição.
+                </p>
+                <p>
+                    Jogadores podem pegar algum objeto como por exemplo (<i>pedaço de porta</i>) para usar como escudo temporário. O mestre pode deixar isso ocorrer dando a esse objeto uma resistência baixa para aguentar dano. Somente use o objeto que fizer sentido, não vá querer se proteger de uma bala de revólver colocando um vaso na sua frente.
+                </p>
+                <p>
+                    Esses atributos de consumo e energia devem ser preenchidos e mantidos pelo mestre durante a sessão. Junto com a integridade do mesmo. O mestre deve alertar seus jogadores quando seus escudos estiverem prestes a quebrar.
+                </p>
+                        
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

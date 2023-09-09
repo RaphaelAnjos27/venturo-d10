@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>QUARTA FICHA</h2>
+                <h3>INVENTÁRIO:</h3>
+                <img class="img-fluid" src="/static/imagens/imgs_regra/personagem/parte31.webp"
+                    alt="inventário"><br><br>
+
+                <p>
+                    O inventário é uma área básica da quarta ficha do personagem. Ela serve para anotarmos todos os itens (<i>consumíveis ou não</i>) de um personagem. Nos campos de inventário, devemos anotar o <b>nome</b> do item, a <b>quantidade</b>, e onde estamos armazenando esse item, por exemplo: No bolso, na mochila e etc. Ao todo são <b>18 slots</b> de inventário.
+                </p>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Tudo que for carregado pelo personagem deve ficar anotado no inventário. E é dever do mestre alertar seus jogadores a isso.</i>
+                </div>
+                <p>
+                    Independente dos slots de inventário, se o jogador não tiver local para colocar os itens. Não tem como carregá-lo (<i>a não ser na mão</i>). Existem itens que dão espaço de inventário a mais para o jogador. Porem o mesmo deve adquirir uma ficha de inventário (<i>ficha só de inventário</i>).
+                </p>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Os itens de inventário também tem seus limites de carga. Então fique atento a isso. E sempre anote os itens a <b>lápis</b>.</i>
+                </div>
+                
+                <h3>RECURSOS:</h3>
+                <div class="row">
+                    <div class="col-sm-7">
+                        <p>
+                            Em recursos vamos colocar todo o dinheiro do personagem. Separando o mesmo por moeda, que vai geralmente ser a <b>moeda</b> universal da raça, ou aurons (<i>moeda do universo</i>). E logo ao lado da moeda colocamos o valor que o personagem tem daquela moeda. Essa área contem 8 slots para anotar os recursos do personagem. Recursos em banco também são anotados aqui.
+                        </p>
+                    </div>
+                    <div class="col-sm-5">
+                        <img class="img-fluid"
+                            src="/static/imagens/imgs_regra/personagem/parte32.webp"
+                            alt="Armaduras">
+                    </div>
+                </div>
+                <h3>IDIOMAS:</h3>
+                <p>
+                    Na parte de idiomas, você vai simplesmente escrever os idiomas que seu personagem fala. Seu personagem pode além do português, falar a linguagem nativa dos <b>Anrar</b>. Ou qualquer linguagem de sua própria espécie. A única regra aqui é: Se um personagem fala mais de uma língua. O mesmo deve ter a perícia <b>“Linguística”</b>.
+                </p>
+
+            </div>
+
+           <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

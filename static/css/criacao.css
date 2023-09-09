@@ -1,0 +1,8 @@
+.sobre{
+    background-image: url(../imagens/banners/banner_criacao.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ul {
+    list-style-image: url('../imagens/bulletpoint.svg');
+  }

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Criação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/criacao.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criacao</h1>
+        <p>Agora que você conhece o Universo e as Regras. Está na hora de aprender a criar os elementos desse universo!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-criacao></venturo-sumario-criacao>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>CRIAÇÃO DE UMA ORGANIZAÇÃO</h2>
+                <p>
+                    Abordamos todos os componentes que compõem uma organização. Agora veremos o que deve ser preenchido
+                    para a criação da mesma. Começamos pensando em um <b>nome</b> para sua organização. Em seguida você
+                    precisa fornecer uma <b>descrição</b> bem detalhada dessa organização para indicar quais seus
+                    objetivos, pois um sistema militar também pode ser uma organização criminosa que pertence a um grupo
+                    de seres especifico.
+                </p>
+                <p>
+                    Você deve pensar em um <b>símbolo</b> que vai representar sua corporação. Lembre-se de criar também
+                    uma versão com menos resolução desse símbolo para associá-lo aos objetos criados pela corporação.
+                </p>
+
+                <h3>ÁREAS:</h3>
+                <p>
+                    Agora vamos definir todas as áreas dessa organização, além de descrever todas as hierarquias da
+                    mesma. Essas hierarquias podem ser usadas para definir as possíveis áreas ou ramificações dessas
+                    áreas que um membro do grupo pode seguir.
+                </p>
+                <div class="alert alert-danger">
+                    <i><b>ALERTA.:</b> Áreas exigem algumas hierarquias para se trabalhar na mesma. E essas hierarquias
+                        podem ser descritas em possíveis ramificações de atuação da área.</i>
+                </div>
+                <p>
+                    Começamos primeiro elaborando o <b>nome</b> descritivo das áreas, e em seguida uma <b>descrição</b>
+                    geral da mesma. Algumas áreas usam <b>instalações</b> (bases) e <b>equipamentos</b> criados para
+                    elas, e eles devem estar na descrição dessa área.
+                </p>
+                <p>
+                    A descrição de uma área pode ser extensa, pois a mesma trabalha muitas características como a
+                    própria descrição dessa área, todos os equipamentos (<i>armas, veículos e entre outros</i>) e por
+                    fim as instalações. Ficando com uma estrutura parecida com essa:
+                </p>
+
+                <ul>
+                    <li>
+                        <b>Área</b> – Cada área vai conter um nome relacionado a mesma.
+                    </li>
+                    <ul>
+                       <li> <b>Hierarquias</b> para Trabalhar na área – Aqui você coloca a/as hierarquias exigidas para
+                        trabalhar nessa área.</li>
+                        <li><b>Descrição</b> – Faça uma descrição detalhada da área. Se ela contiver subfunções, descreva
+                        cada uma aqui com a estrutura (Nome – descrição).</li>
+                        <li><b>Instalações</b> – Informe todas as estruturas que essa área trabalha.</li>
+                        <li><b>Equipamentos</b> – Liste os equipamentos usados pela área e possíveis ramificações.</li>
+
+                    </ul>
+                </ul>
+
+                <p>
+                    As áreas podem ser trabalhadas de duas formas: A primeira é você usar ela como a função daquela organização, onde cada função é separada em uma área específica. E o segundo é você usar a área para agrupar um conjunto de funções semelhantes, e cada uma dessas funções da área tem uma hierarquia distinta.
+                </p>
+                <p>
+                    Normalmente essa segunda opção vai exigir que você indique a hierarquia da função na descrição da mesma. Enquanto as subfunções devem ser feitas na descrição da área.
+                </p>
+
+                <h3>INFORMAÇÕES ADICIONAIS:</h3>
+                <p>
+                    Podemos ter informações que não necessariamente são inseridas nas áreas ou ramificações dessas áreas. Essas <b>informações adicionais</b> são características da organização que está sendo criada, e devem ser listadas e descritas nessa sessão. Cada uma dessas informações serão colocadas como subtítulos dessa sessão, e vão conter todas as informações necessárias da mesma. Podemos tomar como exemplo uma sessão de <b>leis</b> que vai abordar todas as leis dessa organização.
+                </p>
+
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

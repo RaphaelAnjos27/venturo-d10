@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>CONDIÇÕES</h2>
+                <p>
+                    Dentro do Sistema Venturo temos algumas regras relacionadas a <b>condições</b> que seu personagem pode possuir momentaneamente, e que afetará o mesmo em suas ações futuras. As condições ditam se seu personagem está naquele momento sofrendo com algum efeito anterior e interferem diretamente em seus atributos.
+                </p>
+
+                <p>
+                    Vejamos a baixo as condições que temos, e quais atributos elas afetam.
+                </p>
+               
+                <p>
+                    <b>Fraco</b> – Essa condição afeta diretamente a força do personagem. O Personagem recebe uma penalidade de <b>-1 For</b>.
+                </p>
+                <p>
+                    <b>Confuso</b> – Afeta a Inteligência do personagem. Penalidade de <b>-2 Int</b>.
+                </p>
+                <p>
+                    <b>Ferido</b> – Afeta a constituição do personagem, impedindo que o mesmo consiga realizar ações que dependem mais de seu esforço físico. Penalidade de <b>-2 Con</b>.
+                </p>
+                <p>
+                    <b>Doente</b> – Afeta a Constituição e a Resistência, diminuindo a capacidade de resistir a doenças e afetando a saúde geral do personagem. Penalidade de <b>-1 Con</b> e <b>-1 Res</b>.
+                </p>
+                <p>
+                    <b>Cego</b> – Afeta a Percepção e a Destreza, reduzindo a capacidade de perceber o ambiente e realizar ações precisas. Penalidade de <b>-3 Per</b> e <b>-4 Des</b>. 
+                </p>
+                <p>
+                    <b>Surdo</b> – Afeta a Percepção e o Carisma, diminuindo a capacidade de detectar sons e interagir socialmente. Penalidade de <b>-2 Per</b> e <b>-3 Car</b>.
+                </p>
+                <p>
+                    <b>Imobilizado</b> – Afeta a Destreza e a Força, limitando a mobilidade e a capacidade de realizar ações físicas. Penalidade de <b>-5 Des</b> e <b>-3 For</b>.
+                </p>
+                <p>
+                    <b>Abalado</b> – Afeta o Poder e o Carisma, diminuindo a força de vontade e a capacidade de influenciar os outros. Penalidade de <b>-2 Pod</b> e <b>-2 Car</b>.
+                </p>
+                <p>
+                    <b>Paralisado</b> – Afeta a Resistência e a Força, incapacitando o personagem e impedindo qualquer ação. Penalidade de <b>-2 Res</b> e <b>-3 For</b>.
+                </p>
+                <p>
+                    <b>Inconsciente</b> – Essa condição afeta todos os atributos do personagem. Se o mesmo receber essa condição, as ações dele estão impedidas temporariamente. E só retornaram após um teste bem-sucedido de <b>Constituição, ND9</b>. 
+                </p>
+                
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

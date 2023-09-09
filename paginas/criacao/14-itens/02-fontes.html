@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Criação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/criacao.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criacao</h1>
+        <p>Agora que você conhece o Universo e as Regras. Está na hora de aprender a criar os elementos desse universo!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-criacao></venturo-sumario-criacao>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>FONTES</h2>
+                <p>
+                    O primeiro objeto abordado serão as fontes de energia. Usamos elas para alimentar diversos equipamentos como por exemplo, as armaduras mais tecnológicas, armas, e por ai vai.
+                </p>
+                <p><b>Seus atributos são:</b></p>
+                
+                <ul>
+                    <li><b>Nome</b> – Pense em um nome para sua bateria. Lembrando que você pode colocar números de versões nos nomes.</li>
+                    <li><b>Ilustração</b> – Faça uma ilustração de sua fonte de energia, destacando as principais partes da mesma.</li>
+                    <li><b>Preço</b> – Forneça o preço dessa bateria em AURON ou na moeda de sua raça mesmo, os valores variam de acordo com o tamanho da fonte e a quantidade de pontos de energia.</li>
+                    <li><b>Recarregável</b> – Sim, se a bateria pode ser recarregada, ou não, caso a bateria não possa ser recarregada (raros casos).</li>
+                    <li><b>Criadores</b> – Aqui você só escreve a raça/corporações responsáveis por sua criação.</li>
+                    <li><b>Aquisição</b> – Informe aonde e como você consegue adquirir este item. </li>
+                    <li><b>Tamanho</b> – O tamanho pode variar bastante. Temos quatro tipos de tamanho para baterias. Quando estiver criando sua bateria, é preciso colocar qual a categoria de tamanho ao lado de suas medidas (<i>que pode ser em centímetros ou metros</i>). As categorias são:</li>
+                    <ul>
+                        <li><b>PQ (Pequena)</b> - Baterias pequenas têm um tamanho igual ou menor que 15 Cm³.</li>
+                        <li><b>MD (Médio)</b> - Baterias médias têm um tamanho igual ou menor que 30 Cm³.</li>
+                        <li><b>GD (Grande)</b> - Baterias grandes têm seu tamanho igual ou menor que 1 m³.</li>
+                        <li><b>GT (Gigante)</b> - Baterias categorizadas como gigantes tem um tamanho igual ou maior que 2 m³.</li>
+                    </ul>
+                    <p>
+                        Tenha em mente o seguinte. Cada categoria de tamanho é usada para alguma função específica. As categorias PQ e MD são usadas para armas e armaduras, ou para outros fins. Já as categorias GD e GT são usadas em armamentos de grande porte ou naves.
+                    </p>
+                    <li><b>Pontos de energia</b> – Pontos de energia é a quantidade de energia que a bateria carrega. O tamanho da bateria pode influencia muito nisso ou até mesmo o material no qual foi fabricada. Uma bateria de plutônio, por exemplo, concebe 1000 pontos de energia.</li>
+                    <li><b>Descrição</b> – Na descrição você deve falar um pouco de quem projetou. Qual a raça por trás desse projeto. Porque ela projetou essa fonte, e qualquer outra descrição importante.</li>
+                    <li><b>Funcionamento</b> – As fontes seguem o padrão de movimentação de elétrons usado por todo o universo. Sendo assim elas têm polos + e –, explique como funciona os polos da sua fonte.</li>
+                    <li><b>Riscos</b> – Aqui você deve listar os riscos e uma pequena descrição, caso a fonte seja usada de maneira errada. Cada fonte pode ter um comportamento totalmente diferente quando usado de maneira errada. Eles podem explodir, danificar o aparelho, e por ai vai.</li>
+                
+                </ul>
+
+
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

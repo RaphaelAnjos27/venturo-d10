@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Criação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/criacao.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criacao</h1>
+        <p>Agora que você conhece o Universo e as Regras. Está na hora de aprender a criar os elementos desse universo!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-criacao></venturo-sumario-criacao>  
+            </div>
+
+            <div class="col-sm-7">
+                <h1>ARMADURAS</h1>
+                <p>
+                    Iremos agora ver o processo para criação das armaduras. Pode-se dizer seu processo de criação é relativamente simples, onde a parte mais complicada dela é a ilustração. Vamos falar sobre cada atributo que deve ser pensado para desenvolver qualquer tipo de armadura.
+                </p>
+
+                <h2>CRIAÇÃO DE ARMADURA:</h2>
+                <p>
+                    As armaduras têm seus atributos, e são divididas por categorias. Vamos primeiro ver os atributos que são usados em todas as armaduras, para depois vermos as categorias. E os atributos que são carregados pela mesma.
+                </p>
+
+                <ul>
+                    <li><b>Nome</b> – Você deve pensar em um nome para dar a sua armadura. </li>
+                    <li><b>Ilustração</b> – A ilustração da armadura também é muito importante. Procure ilustrar frente e costas da mesma.</li>
+                    <li><b>Descrição</b> – Você deve dar uma descrição bem detalhada da armadura. Informe quem são os criadores da armadura, qual a raça responsável, por que ela foi criada, etc.</li>
+                    <li><b>Durabilidade</b> – A durabilidade é como se fosse a vitalidade de sua armadura. Ela se esvai conforme o personagem recebe ataque. Pense nessa durabilidade levando em consideração o material da armadura.</li>
+                    <li><b>Bonificação/Penalidade</b> – As armaduras podem tanto ajudar quanto atrapalhar. Elas podem lhe oferecer uma bonificação ou uma penalidade em dados, por exemplo: uma armadura medieval da penalidade em força e destreza, mas pode bonificam em Resistência.</li>
+                </ul>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Geralmente a maioria das armaduras dão bonificação em Resistência.</i>
+                </div>
+
+                <ul>
+                    <li><b>Preço</b> – Informe qual o valor estabelecido em AURON, ou na moeda da raça, que essa armadura está sendo vendida.</li>
+                    <li><b>Vigor da Armadura (VA)</b> – Sua armadura possui um valor que define quanto de dano ela absorve automaticamente depois de um ataque. Esse valor pode variar de “2” (<1>para armaduras mais fracas</1>) até “10” (<i>para armaduras mais tecnológicas</i>) ou mais. Leve em consideração que armaduras com um grande vigor são bem mais caras.</li>
+                    <li><b>Compatibilidade</b> – Sua armadura foi criada por uma raça ou organização em específico. Por isso a mesma não poderá ser usada em outras espécies localizadas no espaço afora. A não ser que a mesma tenha alguma função que compatibiliza a armadura com outras espécies (<i>descreva essa função na descrição da armadura</i>) caso tenha a função de compatibilidade com todas as raças preencha esse campo com “TODOS”, caso contrário coloque o nome das raças compatíveis.</li>
+                </ul>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Toda a armadura tem de ser compatível. Não basta querer apenas que o tórax seja compatível e o restante não.</i>
+                </div>
+                <ul>
+                    <li><b>Local de proteção</b> – Aqui descrevemos as partes do corpo que a armadura protege, ou seja, onde o vigor da armadura vai atuar. Isso por que podemos ter armaduras medievais e tecnológicas que não protegem o corpo inteiro do personagem, como armaduras casuais que são vendidas por partes como um colete balístico. Quando desenvolver sua armadura pense as áreas que ela protege e as descreva nesse item, quando for uma armadura que protege todo o corpo do ser basta colocar “completo”.</li>
+                    <li><b>Ponto Crítico da Armadura (PCA)</b> – Toda as armaduras quando perdem uma certa quantidade de durabilidade começam a dar defeitos. Esses defeitos podem ser descritos pelo mestre no momento que a armadura atinge seu PcA.</li>
+                </ul>
+                <p>	O PCA de uma armadura é 5% de sua durabilidade. Por exemplo: digamos que sua armadura tem uma durabilidade de 1500 pontos, o PcA dela será:</p>
+                <p><b>PcA = ((5*1500)/100)</b></p>
+                
+                <h3>CATEGORIA:</h3>
+                <p>
+                    As armaduras têm três tipos principais. O tipo <b>“tecnológico”</b>, <b>“Casual”</b> e <b>“Medieval”</b>. Os tipos tecnológicos serão armaduras mais aprimoradas, que fornecem mais recursos do que as medievais que nos dão somente uma proteção maior do que as roupas convencionais. Já as armaduras casuais são como coletes joelheiras e etc, elas não oferecem recursos tecnológicos e geralmente são criadas peças por peças em vez de um único conjunto.
+                </p>
+
+                <p>
+                    Armaduras medievais recebem somente os atributos que foram descritos a cima. Já as armaduras tecnológicas também recebem esses atributos e mais um bônus que será descrito a baixo.
+                </p>
+                <ul>
+                    <li><b>Consumo por dia narrativo (CDN)</b> – Imagine seu celular. Ele mesmo que não esteja sendo usado, ele consumirá bateria. A mesma ideia funciona para as armaduras. Você deve pensar qual o valor que será descontado da bateria da armadura a cada dia que se passar na narrativa.</li>
+                </ul>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Uma armadura é projetada para aguentar dias de guerra. Por esse motivo muitas vezes o valor de consumo é baixo, como por exemplo, 5 ou 10, mas isso vai depender da sua vontade e da quantidade de função que tem na armadura.</i>
+                </div>
+                <ul>
+                    <li><b>Alcance de conexão (AC)</b> – As armaduras tecnológicas geralmente têm conexão com uma nave ou com outras armaduras. Porem o alcance dessa conexão é limitada e esse limite é informado em quilômetros. Você também pode colocar na descrição da armadura o componente que torna sua conexão tão grande (<i>caso seja, por exemplo 1000Km</i>).</li>
+                    <li><b>Bateria</b> – Aqui você deve declara o item “bateria” que sua armadura usa. E seguindo de um traço, quantos pontos de energia ela tem, por exemplo: Bateria de plutônio – 500pt.</li>
+                </ul>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Assim como as armas, tenha bom senso na criação da armadura. Não vá querer criar uma armadura que trabalha com antimatéria, se a raça por trás da sua criação não tem nem nível 5.</i>
+                </div>
+                
+                <h3>FUNÇÕES E TESTES:</h3>
+                <p>
+                    Uma característica somente para armaduras tecnológicas são as preciosas funções. Elas dão características a mais a sua armadura, como por exemplo: uma arma lazer, lança-foguetes e entre outras coisas.
+                </p>
+                <p>
+                    As funções são construídas primeiro, definindo o <b>nome</b> da função. E procure pensar em nomes que estão voltados aos componentes da armadura, ou as coisas que elas fazem.
+                </p>
+                <p>
+                    Segundo, devemos pensar na <b>descrição</b> da função. E obrigatoriamente essa descrição deve conter: O que essa função faz (<i>caso cause dano, informe esse dano</i>). Devemos informar os efeitos visuais que essa função faz na armadura, por exemplo: Brilhar alguma parte da armadura, suspender algum componente, e entre outros. Devemos informar como é ativado essa função, seja ela por voz, comandos na armadura e por ai vai.
+                </p>
+                <p>
+                    Em terceiro, devemos informar o consumo de sua armadura, ou seja, quantos pontos de energia ela consome na ativação da função. Esse consumo pode ser constante conforme a função fique ativada em turnos, ou ela pode ser única, por ativação.
+                </p>
+                <p>
+                    E por fim, devemos informar o teste para poder usar essa função. Esse teste pode variar entre muitas perícias da raça ou das perícias globais.
+                </p>
+                
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universo do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/universo.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Universo Base</h1>
+        <p>Agora que conhecemos as mecânicas do sistema. Está na hora de conhecer o cenário básico!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-universo></venturo-sumario-universo>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>ORIGEM E ÁREA</h2>
+                <p>
+                    Habilidades Secundárias tem um ponto de origem onde seu efeito começa após serem ativadas, ou seja,
+                    onde se inicia a habilidade após ser conjurada. Uma habilidade pode ter início da palma da mão de um
+                    personagem, do centro de um símbolo ou até mesmo em um local apontado pelo invocador.
+                </p>
+                <p>
+                    E elas também contem formas geométricas que definem como será a área de efeito da habilidade. A
+                    habilidade então pode ter um efeito em área esférico, cúbico, cilíndrico ou até mesmo cônico. A
+                    forma mais simples que temos é a reta, onde o efeito sai do ponto de origem e segue uma linha reta
+                    até o alvo.
+                </p>
+
+                <div class="row justify-content-center" style="text-align: center;">
+                    <div class="col-sm-5">
+                        <p>
+                            <b>Invocador</b>
+                        </p>
+                        <img class="img-fluid"
+                            src="/static/imagens/imgs_universo/invocador.webp"
+                            alt="Simbolo de Abys">
+                    </div>
+                    <div class="col-sm-2">
+                        <p>
+                            <b>Origem</b>
+                        </p>
+                        <img class="img-fluid" src="/static/imagens/imgs_universo/origem.webp"
+                            alt="Simbolo de Abys">
+                    </div>
+                    <div class="col-sm-5">
+                        <p>
+                            <b>Áreas</b>
+                        </p>
+                        <img class="img-fluid" src="/static/imagens/imgs_universo/areas.webp"
+                            alt="Simbolo de Abys">
+                    </div>
+
+                </div>
+
+                <p>
+                    Acima temos os ícones que serão usados para explicar como funciona o sistema de origem e área de uma
+                    habilidade secundária.
+                </p>
+
+                <h3>ORIGEM:</h3>
+                <p>
+                    A origem como abordado acima, é o ponto inicial da sua habilidade após ela ser ativada. Então toda
+                    vez que sua habilidade for ativada ela sairá desse ponto de origem até o alvo, que pode ser você
+                    mesmo, ou pode seguir uma trajetória de acordo com a área:
+                </p>
+                <div class="row">
+                    <div class="col-sm-9">
+                        <p>
+                            E a origem pode ser o próprio corpo do invocador, quando a habilidade, por exemplo, tem
+                            algum efeito como restaurar a vitalidade de seu invocador. Nesse caso a origem não precisa
+                            conter uma área de efeito, por que esse efeito será aplicado ao invocador:
+                        </p>
+                        <p>
+                            Quando a origem tem por objetivo um alvo, a forma de invocação vai mostrar como é definido
+                            esse alvo, seja por contato visual ou direcional com algum membro do corpo (<i>como apontar
+                                um dedo, por exemplo</i>).
+                        </p>
+                    </div>
+                    <div class="col-sm-3">
+                        <img class="img-fluid"
+                            src="/static/imagens/imgs_universo/invocador2.webp"
+                            alt="Simbolo de Abys">
+                    </div>
+                </div>
+                <p>
+                    Quando o ponto de origem é definido pelo invocador, como por exemplo, mirar em um alvo. Você deverá
+                    ter um caminho livre até ele, caso contrário o ponto de origem é definido no alvo mais próximo a
+                    observação.
+                </p>
+                <p>
+                    Quem define o ponto de origem é a habilidade. O seu ritual que deve descrever de onde surge o ponto
+                    de origem e qual o efeito em área, por exemplo, uma habilidade que usa em seu ritual de invocação um
+                    símbolo. A origem pode se dá a partir do meio desse símbolo, e ter uma área esférica do tamanho do
+                    símbolo desenhado.
+                </p>
+
+                <h3>ÁREAS:</h3>
+                <p>
+                    As áreas são usadas quando a habilidade tem um efeito externo ao invocador, ou seja, não é nenhum
+                    efeito aplicável a ele. Quando usamos áreas em nossas habilidades, vamos ter alguns atributos extras
+                    para informar na hora que estiver criando a habilidade, como por exemplo, o tamanho dessa área e a
+                    localização do ponto de origem dentro do volume.
+                </p>
+                <p>
+                    No contexto de tamanho, você vai poder passar esses valores em centímetros, metros ou quilômetros
+                    dependendo da habilidade que você está criando.
+                </p>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <p>
+                            As áreas de uma habilidade secundária vai ajudar nos a descrever como é o efeito daquela
+                            habilidade que está sendo invocada.
+                        </p>
+                        <p>
+                            Nas áreas, sempre teremos o ponto de origem da habilidade localizado em algum lugar do
+                            <b>Volume, Aresta, Vértice</b> ou <b>Faces</b>.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img class="img-fluid" src="/static/imagens/imgs_universo/area01.webp"
+                            alt="area quadrada">
+                    </div>
+                </div>
+
+                <p>
+                    E todos que estiverem dentro dessa área, sofrerão com os efeitos causados pela habilidade
+                    igualmente, a não ser que a habilidade tenha uma regra específica para o efeito em área que ela
+                    causa. Caso contrário usa-se a regra de <b>dano em áreas</b> localizadas em <b>Regras do
+                        Sistema</b>.
+                </p>
+
+                <h5>Reta:</h5>
+                <p>
+                    A <b>reta</b> é usada quando o efeito da habilidade sai do seu ponto de origem, e segue uma linha
+                    reta até seu alvo, como podemos ver no exemplo a baixo. Esse tipo de área cobre uma distância de
+                    efeito definida pelo comprimento da reta em metros.
+                </p>
+                <img class="img-fluid" src="/static/imagens/imgs_universo/reta.webp"
+                    alt="area quadrada">
+
+                <p>
+                    Então no caso de retas, você só precisa informar a distância máxima que essa linha percorre. Isso
+                    define o alcance da habilidade.
+                </p>
+                <p>
+                    Habilidades que tenha que se arremessar um determinado objeto gerado pela habilidade, não são
+                    associados as retas por que o mesmo deve ser arremessado depois de invocado. E não segue uma
+                    trajetória reta ao alvo depois de invocado.
+                </p>
+
+                <h5>Esfera:</h5>
+                <p>
+                    As esferas são as áreas mais comuns para habilidades que utilizem efeito em área. Para esse tipo de
+                    habilidade, a origem é localizada no <b>centro</b> da esfera, e ao ativar a habilidade, ela se
+                    expande do ponto de origem. E o tamanho da esfera é dado pelo seu raio em metros.
+                </p>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <p><b>Área Perto</b></p>
+                        <img class="img-fluid"
+                            src="/static/imagens/imgs_universo/areaperto.webp"
+                            alt="area quadrada">
+                    </div>
+                    <div class="col-sm-8">
+                        <p><b>Área Longe</b></p>
+                        <img class="img-fluid"
+                            src="/static/imagens/imgs_universo/arealonge.webp"
+                            alt="area quadrada">
+                    </div>
+                </div>
+                <p>
+                    Essa imagem acima demonstra que a área pode aparecer em qualquer ponto, seja perto do personagem ou
+                    não. Intenda que a área é formada a partir da origem da habilidade, que nesse caso, é o centro da
+                    esfera.
+                </p>
+                <p>
+                    Então a primeira regra é que a origem sempre aparece no centro da esfera. Agora com relação a
+                    medida, você só precisa informar o raio dessa esfera.
+                </p>
+
+                <h5>Cubo:</h5>
+                <p>
+                    Já os Cubos são áreas cujo a origem pode estar no centro do objeto ou em uma das suas seis faces,
+                    como demonstrado no exemplo a baixo. Nesse caso cada aresta do cubo terá um comprimento em metros
+                    iguais.
+                </p>
+                <img class="img-fluid" src="/static/imagens/imgs_universo/cubo.webp"
+                    alt="area quadrada">
+
+                <p>
+                    Cada habilidade vai explicar como funciona sua área na invocação, isto é, ela vai explicar se o
+                    ponto de origem está ao centro da face inferior, ou se ela está no meio do volume total da área.
+                    Quem está criando a habilidade deve descrever isso detalhadamente.
+                </p>
+                <p>
+                    No caso das áreas tipo cubo, você precisa informar qual o tamanho cúbico do mesmo.
+                </p>
+
+                <h5>Cone:</h5>
+                <p>
+                    Os cones são áreas cujo a origem se dá a partir da ponta do cone. Ele se expande na direção
+                    escolhida por um comprimento em metros. Outra característica das habilidades com áreas cônicas, é
+                    que sua base pode ter um diâmetro igual, do começo ao fim do trajeto. Como pode observar na imagem a
+                    baixo:
+                </p>
+
+                <p>
+                    Ativação da Habilidade
+                </p>
+                <img class="img-fluid" src="/static/imagens/imgs_universo/cone01.webp"
+                    alt="area quadrada">
+
+                <p>
+                    Trajeto final da Habilidade
+                </p>
+                <img class="img-fluid" src="/static/imagens/imgs_universo/cone02.webp"
+                    alt="area quadrada">
+
+                <p>
+                    Porem ela pode variar esse diâmetro ao longo do trajeto. Nesse segundo caso você vai precisar indicar o tamanho do diâmetro no começo da habilidade e no final, por exemplo, se no começo da habilidade ela tem um diâmetro <b>50 centímetros</b>, após percorrer seu trajeto máximo de 15 metros, o diâmetro passa a ter <b>3 metros</b>.
+                </p>
+                <p>
+                    Então no caso dos cones, a origem sempre estará na ponta do cone. E você vai precisar informar seu comprimento máximo, diâmetro inicial e diâmetro final (<i>após a habilidade alcançar seu tamanho máximo</i>).
+                </p>
+
+                <h5>Cilindro:</h5>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <p>
+                            E por fim temos o cilindro. Nele temos um ponto de origem definido em uma de suas faces <b>superior ou inferior</b>. E que segue uma trajetória reta até o máximo de seu comprimento.
+                        </p>
+                        <p>
+                            Então no cilindro você vai informar o diâmetro da sua face, e seu comprimento total.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img class="img-fluid"
+                            src="/static/imagens/imgs_universo/cilindro.webp"
+                            alt="Simbolo de Abys">
+                    </div>
+                </div>
+                
+
+                <p>
+                    As áreas são bastante fáceis de intender, não tem muito segredo. Basta que você intenda o sistema de origens, que o resto fica fácil. O mais interessante nas áreas, é que elas também podem definir efeitos durante a invocação da habilidade, por exemplo, em uma habilidade de invocação, cujo a área é um cilindro. Antes da invocação ser concluída, um efeito pode aparecer se abrindo do chão a partir do ponto de origem.
+                </p>
+
+                <h5>Pessoal ou Contato:</h5>
+                <p>
+                    E por fim sobre a categoria de área ainda temos esses dois tipos que podem aparecer em uma habilidade secundária. Quando você vê o valor <b>Pessoal</b> no atributo área de uma habilidade secundária, significa que a mesma tem o efeito sobre o personagem que está invocando, ou seja, a origem da habilidade se dá no corpo do invocador. Agora quando você vê o valor <b>Contato</b> no atributo de área, significa que o invocador deve tocar no alvo para que os efeitos da habilidade sejam ativados. 
+                </p>
+
+            </div>
+
+
+           <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

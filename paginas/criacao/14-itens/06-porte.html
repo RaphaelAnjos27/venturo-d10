@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Criação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/criacao.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criacao</h1>
+        <p>Agora que você conhece o Universo e as Regras. Está na hora de aprender a criar os elementos desse universo!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-criacao></venturo-sumario-criacao>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>PORTE</h2>
+                <p>
+                    Itens de porte são itens que de alguma forma tem a capacidade de armazenar outros itens, como por exemplo, uma mochila. Normalmente é necessário usar uma ficha auxiliar (<i>Ficha de inventário</i>) quando temos muito desses itens trabalhando.
+                </p>
+                <ul>
+                    <li><b>Nome</b> – De um nome ao seu item de porte.</li>
+                    <li><b>Ilustração</b> – Faça uma ilustração destacando as principais partes de seu item.</li>
+                    <li><b>Preço</b> – De um valor para esse item. Seu valor será baixo, dependendo da sua capacidade e tipo.</li>
+                    <li><b>Tamanho</b> – Informe seu tamanho, isso vai depender muito do tipo também. Uma mochila por exemplo, pode ter vários tamanhos, ou um anel ou bracelete.</li>
+                    <li><b>Capacidade</b> – Aqui é sua capacidade de carga. Ela deve ser descrita em quantidade de slots para armazenar os itens, e ao lado, o tamanho desse itens, por exemplo: uma mochila pode carregar 5 itens de tamanho médio, ficando então 5/Médio. E caso tenha mais slots reservados para outros tamanhos, você pode colocar separando-os com espaço.</li>
+                    <p>Os tamanhos que temos para serem anotados na capacidade são:</p>
+                    <ul>
+                        <li><b>Pequeno</b> – Itens menores ou igual a 7 centímetros cúbicos;</li>
+                        <li><b>Médio</b> – itens menores ou iguais a 40 centímetros cúbicos;</li>
+                        <li><b>Grande</b> – Itens menores ou iguais a 1 metro cúbico;</li>
+                        <li><b>Extenso</b> – Itens maiores como carros ou pessoas;</li>
+                        <li><b>Especial</b> – Itens muito grandes como, por exemplo, uma nave.</li>
+                    </ul>
+                    <p>
+                        As categorias Grande, Extenso e Especial é mais comum em itens de porte do tipo virtual. Já o Pequeno e Médio é mais comum ver em itens de porte do tipo físico, mas nada impede que os Virtuais também tenham essa categoria. 
+                    </p>
+                    <li>
+                        <b>Tipo</b> – Temos dois tipos de itens de armazenamento, os físicos e virtuais, onde:
+                    </li>
+                    <ul>
+                        <li><b>Físicos</b> – Os itens físicos são as mochilas, bolsas etc. com capacidade para carregar pequenos itens. E tem poucos slots.</li>
+                        <li><b>Virtuais</b> – Os itens virtuais são objetos de transporte que tem a capacidade de estruturar os objetos em código computacionais e armazená-los em formas de dados em seus slots. São itens de alta tecnologia com mais slots e capacidade de carregar itens maiores em cada slot.</li>
+                    </ul>
+                    <li><b>Criadores</b> – Informe qual a raça responsável pela criação desse item.</li>
+                    <li><b>Aquisição</b> – Informe aonde e como você consegue adquirir este item.</li>
+                    <li><b>Descrição</b> – De uma descrição detalhada de seu item, onde, como e por que foi criado assim como a maioria dos outros itens.</li>
+                    <li><b>Funcionamento</b> – Informe detalhadamente o que o jogador deve fazer para usar esse tipo de item.</li>
+
+                </ul>
+
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

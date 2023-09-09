@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>BONIFICAÇÃO E PENALIDADE</h2>
+                <p>
+                    A todo momento você verá algo ou algum efeito fornecendo bonificação ao seu personagem, seja ela bonificação de ataque, proteção ou qualquer outra. E a bonificação são pontos a mais para seu personagem poder realizar algo que está além de suas capacidades físicas normais, por exemplo, uma armadura pode fornecer uma bonificação de +2 em força, ou destreza, e por ai vai.
+                </p>
+                <p>
+                    E também a todo momento você verá algo dando penalidade ao seu personagem da mesma forma que bonifica, ou seja, itens e efeitos também podem dar penalidade ao personagem. E ao contrário da bonificação, a penalidade vai diminuir suas capacidades. Dentro do sistema já temos algumas regras de penalidade como os <b>“Modificadores de Ocasião”</b>, mas ainda sim podemos ter outras formas de receber a penalidade. 
+                </p>
+                <p>
+                    Essa sessão aqui vai tratar de como devem ser tratadas as bonificações e penalidades. E já adianto que existem algumas ramificações tanto para a bonificação quanto a penalidade. Vamos vê-las, começando pela bonificação:
+                </p>
+                
+                <h3>BONIFICAÇÃO:</h3>
+                <p>
+                    Como já foi dito acima, a bonificação vai fornecer pontos a mais para serem usadas como um auxílio para seu personagem. E podemos ter dois tipos de bonificação dentro do sistema: <b>Bonificação padrão, Bonificação Divina, Bonificação mágica e Bonificação de vitalidade</b>. Tanto a bonificação padrão quanto a bonificação divina serão usadas apenas nos atributos dos personagens.
+                </p>
+                <h6>Bonificação padrão:</h6>
+                <p>
+                    A bonificação padrão é uma bonificação de dados a mais que você ganha para usar em seus testes. Ela trabalha com valores de +1 a +6 dados bônus, que são jogados a parte dos dados normais de teste, ou seja, primeiro joga-se o teste, depois joga-se os dados da bonificação. Anotamos a bonificação padrão com um sinal de mais seguido do valor da bonificação, exemplo.: <b>+5</b>.
+                </p>
+
+                <h6>Bonificação Divina:</h6>
+                <p>
+                    A bonificação divina é uma bonificação que fornece acertos automáticos para o personagem. Ela é uma bonificação mais difícil de se conseguir, normalmente ocorrendo através de itens mágicos ou efeitos. E podemos ter uma bonificação de +1 a +5 de acertos automáticos. Anotamos a bonificação divina com dois sinais de mais seguido do valor da bonificação, exemplo.: <b>++5</b>.
+                </p>
+
+                <h6>Bonificação mágica:</h6>
+                <p>
+                    A bonificação mágica é usada para dar pontos de CLOL a mais ao personagem. Normalmente conquistada de itens, porém pode aparecer por efeitos também. 
+                </p>
+
+                <h6>Bonificação de vitalidade:</h6>
+                <p>
+                    E por fim temos a bonificação de vitalidade, que como seu nome sugere. Bonifica a vitalidade dando mais pontos de vida ao personagem. Nesse caso quando sua vitalidade está bonificada, primeiro consome-se a bonificação para então consumir a vitalidade.
+                </p>
+
+                <p>
+                    É interessante ressaltar que o tempo que uma bonificação fica ativo vai depender muito de sua origem, por exemplo, uma armadura que da +2 em resistência, fica ativo enquanto a armadura está em uso e funcional. Agora bonificações que são dadas por efeito, terão na descrição do efeito a quantidade de tempo que ela fica ativa no personagem.
+                </p>
+
+                <p>
+                    E sobre como diferenciar bonificação padrão de divina na ficha. Isso será explicado na parte de criação de personagem quando estivermos abordando sobre a ficha do personagem.
+                </p>
+                
+                <h3>PENALIDADE:</h3>
+                <p>
+                    A penalidade como nome sugere, vai retirar pontos de seu personagem para dificultar os seus testes. E assim como a bonificação ela tem suas ramificações, onde temos a <b>Penalidade Padrão, Penalidade Infernal e Penalidade Vital</b>. E aqui a penalidade Padrão e infernal também são usadas apenas nos atributos do personagem.
+                </p>
+
+                <h6>Penalidade Padrão:</h6>
+                <p>
+                    A penalidade padrão vai retirar dados do teste do jogador ao qual a penalidade está envolvida. Pode existir uma penalidade de -1 a -6 dados a menos no teste. Nesse caso, os dados são retirados antes do teste do jogador. Anotamos a penalidade padrão com um sinal de menos seguido do valor da penalidade, exemplo.: <b>-5</b>.
+                </p>
+
+                <h6>Penalidade Infernal</h6>
+                <p>
+                    Penalidade infernal vai retirar os acertos de sua jogada. Podendo ser de -1 a -4 acertos da jogada. Elas são mais raras por serem uma penalidade rigorosa, mas você pode achá-la na penalidade por perca de vida (que será explicado na criação de personagem). Anotamos a penalidade infernal com dois sinais de menos seguido do valor da penalidade, exemplo.: <b>--5</b>.
+                </p>
+
+                <h6>Penalidade Vital:</h6>
+                <p>
+                    A penalidade vital é uma penalidade que retira a capacidade de vida de seu personagem, ou seja, se seu personagem tem uma penalidade vital de -5. E sua vida atual é de 10 pontos, ele na verdade tem 5 pontos. Essa penalidade é causada muitas vezes por doenças.
+                </p>
+
+                <h5>Conflito dos atributos</h5>
+                <p>
+                    Pode ocorrer do seu personagem receber uma bonificação e uma penalidade no mesmo atributo. Quando isso ocorrer você deve sempre subtrair a bonificação pela penalidade para saber quantos pontos de qual desses dois efeitos terá. Sempre vai sobrar apenas um deles na jogada, e você não pode subtrair efeitos diferentes.
+                </p>
+                <p>
+                    Quando falo que você não pode subtrair efeitos diferentes, quero dizer quer você não pode, por exemplo, subtrair <b>Bonificação padrão – Penalidade Infernal</b>. Nesse caso seria <b>Bonificação Divina – Penalidade Infernal ou Bonificação padrão – Penalidade Padrão</b>. 
+                </p>
+
+                <p>
+                    No caso da vitalidade, você subtrai a <b>Bonificação de vitalidade – Penalidade Vital</b> para saber quais dos efeitos terá no final do calculo. Se o valor for negativo, será a penalidade, agora se for positivo você terá a bonificação.
+                </p>
+                
+                <h3>ATRIBUTO DE RESISTÊNCIA:</h3>
+
+                <div class="alert alert-info">
+                    <i><b>CURIOSIDADE.:</b> Bônus de Resistência podem fornecer ao personagem uma imunidade a certos tipos de danos.</i>
+                </div>
+
+                <h5>BÔNUS DE RESISTÊNCIA:</h5>
+                <p>
+                    Quando o personagem têm sua resistência padrão, mais uma bonificação. O mesmo acaba recebendo imunidade a alguns danos do jogo, principalmente aos <b>danos padrões</b> como: <b>Queimadura, Choque elétrico, Ficar sem Respirar, Exposição ao vaco do espaço e o Contato com gases venenosos</b>.
+                </p>
+                <p>
+                    Quando o personagem têm uma bonificação fornecida por algum item, esse mesmo item pode fornecer a imunidade a um determinado evento, mesmo que a bonificação por si só não seja logicamente usual para aquela imunidade.
+                </p>
+                <p>
+                    Agora quando essa bonificação no atributo de resistência ultrapassa um certo limite, o personagem tem imunidade aos mais diversos tipos de danos. O limite usual é de <b>Nível Total do Atributo Resistência + 10 Bonificação</b>. Com isso ele tem imunidade a todos os Níveis de danos padrões do sistema (Capítulo Combate, sessão dano e teste de Efeito).
+                </p>
+
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

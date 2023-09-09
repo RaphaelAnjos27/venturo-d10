@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>ATAQUE SEQUENTE</h2>
+                <p>
+                    Personagens dentro do sistema venturo conseguem (<i>se forem capazes</i>) realizar mais de um ataque por vez, sem a necessidade de uma bonificação externa ou habilidade. Chamamos esse ataque de <b>“Ataque Sequente”</b>. A seguir veremos as condições ideais que permitem um personagem realizar o ataque.
+                </p>
+                <p>
+                    Primeiro: O personagem deve ser um mestre no atributo que usará o ataque, isso é, seu <b>atributo</b> usado no ataque (<i>normalmente destreza</i>) deve ser obrigatoriamente <b>nível 6</b>. Segundo: O personagem deve ser <b>nível 5</b> na <b>perícia</b> usada no ataque. Com essas duas condições favoráveis, você poderá realizar ataques consecutivos.
+                </p>
+                <h5>LIMITE DE ATAQUE:</h5>
+
+                <p>
+                    Existe um limite de quantos ataques você consegue fazer. Esse limite está atrelado a sua quantidade de <b>Perseverança + Constituição</b>. Porém usa somente as sobras da perseverança, ou seja, a quantia gasta não conta. Então se meu total é de 10 de perseverança, e eu gastei 2, posso realizar nó máximo 8 ataques sequentes numa mesma ação.
+                </p>
+                <p>
+                    Esse ataque não gasta a perseverança do atacante, ele apenas agirá como uma espécie de estamina do personagem.
+                </p>
+                <p>
+                    Se o personagem realizar todos os pontos de <b>Perseverança + Constituição</b> na ação, ele só poderá realizar o mesmo ataque após <b>duas rodadas</b>. Caso realize apenas metade, ele poderá refazer esse mesmo tipo de ataque na próxima rodada.
+                </p>
+
+                <h3>TIPOS DE ATAQUE:</h3>
+                <p>
+                    Agora vamos falar dos tipos de ataque. Quando você usa um ataque sequente, você poderá manter em toda sua sequência somente aquele <b>tipo de ataque</b>. Então se você iniciou seu ataque golpeando o alvo com uma espada, o próximo ataque terá que ser feito com a mesma espada. Caso você altere o tipo de ataque, sua ação sequente se <b>encerra</b> após o golpe ser finalizado.
+                </p>
+                <p>
+                    Os ataques devem ser <b>simples</b>, ou seja, ataques corpo a corpo ou até com armas (<i>que possam ser realizados de forma rápida</i>). Invocar uma habilidade secundária muito complexa na sua invocação não se enquadra aqui, a não ser que sua invocação seja rápida (<i>como pronunciar uma ou duas palavras</i>). 
+                </p>
+
+                <h3>ALVO:</h3>
+                <p>
+                    O ataque sequente não é as mil maravilhas, pois, de certa forma, ela também beneficia o alvo do ataque. Quando realizado esse tipo de ataque, tanto a <b>esquiva</b> quanto a <b>defesa</b> do alvo ganham uma bonificação, já que em ataques consecutivos, seu personagem não consegue se concentrar muito, pois não está realizando um único ataque.
+                </p>
+
+                <h5>ATRIBUTO NIVELADO:</h5>
+                <p>
+                    Quando o atributo usado para esquiva ou defesa do alvo está no mesmo nível do atacante. Sua bonificação é maior, sendo que:
+                </p>
+                <ul>
+                    <li>
+                        <b>Esquiva</b> – Ao se esquivar, seu ND diminui para 6, e caso o ND já seja 6, ele diminui em -2;
+                    </li>
+                    <li>
+                        <b>Defesa</b> – Ao se defender, seu ND diminui para 5, e caso o ND já seja 5, ele diminui em -2.
+                    </li>
+                </ul>
+                <p>
+                    Se o atributo for desnivelado, ou seja, o alvo tiver níveis maiores, ele ainda ganha bonificação, porém essas são: 
+                </p>
+                <ul>
+                    <li>
+                        <b>Esquiva</b> – Ao se esquivar, seu ND diminui para 5, e caso o ND já seja 5, ele diminui em -1;
+                    </li>
+                    <li>
+                        <b>Defesa</b> – Ao se defender, seu ND diminui para 4, e caso o ND já seja 4, ele diminui em -1.
+                    </li>
+                </ul>
+
+                <h5>CANCELAR O ATAQUE SEQUENTE:</h5>
+                <p>
+                    O alvo também tem o poder de cancelar o ataque sequente de seu inimigo. Se seus testes de defesa ou esquiva tiverem uma <b>PD</b> igual a <b>10</b>, o ataque nele desferido é cancelado. Após isso, o mestre deve rodar <b>1D10 ND7</b> e caso seja bem-sucedido, o alvo pode realizar uma ação.
+                </p>
+
+                
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

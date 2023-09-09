@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Criação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/criacao.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criacao</h1>
+        <p>Agora que você conhece o Universo e as Regras. Está na hora de aprender a criar os elementos desse universo!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-criacao></venturo-sumario-criacao>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>PODER DE FOGO</h2>
+                <h5>CANHÃO PRIMÁRIO:</h5>
+                <p>
+                    Os canhões primários são as armas de pequenos veículos. Podem ser encontrados em veículos espaciais médios e pequenos, aviões de todos os tipos, embarcações de pequeno até grande porte e em veículos militares. Normalmente controladas por um copiloto do cockpit. 
+                </p>
+                <p>
+                    Você deve colocar todos os canhões primários que estão presentes nesse veículo.
+                </p>
+                <p><b>O atributo para cada canhão são:</b></p>
+                <ul>
+                    <li><b>Localização no veículo</b> – Aqui você fala onde se encontra essa arma em seu veículo.</li>
+                    <li><b>Nome da arma</b> – Aqui você informa o nome do canhão escolhido para ser alocado a esse veículo.</li>
+                    <li><b>Dano</b> – Aqui você informa o dano causado pela arma.</li>
+                    <li><b>Nível de Dificuldade da Arma</b> – Agora você deve informar a dificuldade da arma. </li>
+                    <li><b>Capacidade</b> – Aqui você informa qual o atributo necessário para usar esse canhão.</li>
+                </ul>
+
+                <h5>TORRENTS:</h5>
+                <p>
+                    Normalmente um veículo contem armas de categoria torrent, alguns modelos podem ser controlados internamente e são chamados de torrents manuais. porém alguma necessitam de uma cabine (<i>estação de controle/cockpit</i>) responsável pelo controle da mesma, e esses são chamados de torrents remotos.
+                </p>
+                <p>
+                    Quando o veículo é muito pequeno, como as naves pequenas, médias, carros, e embarcações de pequeno porte. Normalmente eles contem um cockpit onde controla seus torrents que são somente de categoria MP.
+                </p>
+                <p>Você deve colocar todas as torrentes que estão presentes nesse veículo.</p>
+                <p><b>O atributo para cada torrent são:</b></p>
+
+                <ul>
+                    <li><b>Localização no veículo</b> – Os veículos normalmente contem um mapa completo do mesmo. Aqui você coloca em qual parte desse mapa se encontra a arma.</li>
+                    <li><b>Nome da arma</b> – Aqui você informa o nome do torrent escolhido para ser alocado a esse veículo. </li>
+                    <li><b>Dano</b> – Aqui você informa o dano causado pela arma.</li>
+                    <li><b>Nível de Dificuldade da Arma</b> – Agora você deve informar a dificuldade da arma. </li>
+                    <li><b>Capacidade</b> – Aqui você informa qual o atributo necessário para usar esse Torrent. </li>
+                    <li><b>Classe</b> – Aqui será preenchido apenas com duas das três classes de torrent. Porque uma delas é destinada a bases terrestres. Então você pode preencher com <b>MP</b> (<i>médio porte</i>) e <b>GP</b> (<i>Grande porte</i>).</li>
+                    <li><b>Tipo</b> – Aqui você informa qual o tipo dessa arma, ou seja, se ela é do tipo remoto (controlado a distância), ou manual (<i>controlados internamente</i>).</li>
+                </ul>
+
+                <h5>MISSEIS:</h5>
+                <p>
+                    Os misseis normalmente tem uma sala própria com operários para carregar os misseis no compartimento de disparos. Essa sala é diretamente ligada ao compartimento de disparo que pode ser um Rotary Lauche ou qualquer outro tipo de compartimento de disparo.
+                </p>
+                <p>
+                    Seu veículo pode ter mais de uma área para misseis.
+                </p>
+                <p><b>Os atributos da sala são:</b></p>
+
+                <ul>
+                    <li><b>Nome da Sala</b> – informe o nome da sala.</li>
+                    <li><b>Quantidade de misseis</b> – Aqui você informa quantos misseis podem ser carregadas pelo veículo.</li>
+                    <li><b>Descrição</b> – De uma descrição de como é feito o trabalho de recarga e contenção desses misseis dentro dessa cabine. Levando em consideração que podem ser feitas manualmente por um operário ou máquina. </li>
+                    <li><b>Mapa</b> – Aqui você faz um mapa da sala onde são comportadas os misseis.</li>
+                </ul>
+                <p><b>Os atributos dos misseis:</b></p>
+                <ul>
+                    <li><b>Nome</b> – Aqui você coloca o nome do míssil em questão.</li>
+                    <li><b>Tipo</b> – Em tipo você deve explicar se o míssil é explosivo ou eletromagnético.</li>
+                    <li><b>NdA</b> – Aqui informamos o Nível de Dificuldade para usar o Míssil.</li>
+                    <li><b>Raio</b> – Qual o seu raio de efeito para causar o dano em área que pode variar de 1 a 500 metros.</li>
+                </ul>
+                <h6>Atributos por tipo:</h6>
+                <p><b>Explosivos</b></p>
+                <ul>
+                    <li>
+                        <b>Dano</b> – Quanto de dano esse míssil causa.
+                    </li>
+                </ul>
+                <p><b>Eletromagnéticos</b></p>
+                <ul>
+                    <li>
+                        <b>Turnos</b> – Quantos turnos o alvo fica desativado após atingido.
+                    </li>
+                </ul>
+                <p><b>Química</b></p>
+                <ul>
+                    <li><b>Dano</b> – Aqui você informa quanto de dano por turno o míssil causa;</li>
+                    <li><b>Turnos</b> – Quantos turnos a bomba fica ativa;</li>
+                    <li><b>Categoria</b> – Informe qual dos quatro agentes essa arma é.</li>
+                    <ul>
+                        <li><b>Agentes Vesicantes</b>: São substâncias químicas, que ao entrar em contato com a pele causam bolhas cutâneas, irritação na pele, úlceras e fortes queimaduras. </li>
+                        <li><b>Agentes Nervosos</b>: São agentes químicos que perturbam os mecanismos pelos quais os nervos transferem mensagens para os órgãos.</li>
+                        <li><b>Agentes Sufocantes</b>: São agentes químicos que causam bastante irritação ao nariz, garganta e olhos. E quando ingeridos em bastante quantidade causam sufocamento.</li>
+                        <li><b>Agentes de Sangue</b>: São agentes que reagem com o sangue, interferindo na oxigenação de órgãos do corpo. E envenenam o sangue.</li>
+                    </ul>
+                    <li><b>Efeito</b> – Informe qual o efeito causado nas vítimas dessa arma.</li>
+                </ul>
+
+                <p><b>Biológicas</b></p>
+                <ul>
+                    <li><b>Doenças</b> – Informe as possíveis doenças que essa arma pode causar ao alvo;</li>
+                    <li><b>Turnos</b> – Quanto tempo a bomba fica ativa após atingir o alvo.</li>
+                </ul>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> A sala pode ser um pequeno compartimento onde você coloca mais carga para disparo.</i>
+                </div>
+
+                <h5>ATÔMICAS E EMP:</h5>
+                <p>
+                    A sala de Ogivas Nucleares tem sua função descrita em seu nome, ela nada mais é do que uma sala responsável pelo acionamento e disparos de misseis nucleares. Encontrada em Veículos de grande porte como grandes embarcações de guerra.
+                </p>
+                <p>
+                    Normalmente essa sala é mais para armazenar e preparar as ogivas para disparos do que propriamente pelo acionamento. O acionamento acaba sendo responsabilidade da <b>estação de controle</b>. E essa sala dá ao veículo poder de fogo.
+                </p>
+                <p>Seu veículo pode ter mais de uma cabine desse tipo.</p>
+                <p><b>Os atributos da sala são:</b></p>
+                <ul>
+                    <li><b>Nome da Sala</b> – informe o nome da sala.</li>
+                    <li><b>Quantidade de Ogivas</b> – Aqui você informa quantas ogivas nucleares podem são carregadas pelo veículo.</li>
+                    <li><b>Descrição</b> – De uma descrição de como é feito o trabalho de recarga e contenção dessas ogivas dentro dessa cabine. Levando em consideração que normalmente essas ogivas são enormes. E sua recarga é feita em uma estação (normalmente projetada para isso).</li>
+                    <li><b>Mapa</b> – Aqui você faz um mapa da sala onde são comportadas as ogivas.</li>
+                </ul>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> A sala pode ser um pequeno compartimento onde você coloca mais carga para disparo.</i>
+                </div>
+
+                <p>Os atributos das ogivas nucleares são:</p>
+
+                <ul>
+                    <li><b>Nome da Ogiva</b> – Aqui você coloca o nome de uma das ogivas encontradas no veículo. </li>
+                    <li><b>NdA</b> – Informe o Nível de Dificuldade dessa Arma.</li>
+                    <li><b>Tipo</b> – Aqui você informa o tipo dessa ogiva.</li>
+                    <li><b>Raio</b> – Aqui você coloca o raio de atuação dessa arma.</li>
+                </ul>
+                <h6>Atributos por tipo:</h6>
+                <p><b>Atômica</b></p>
+                <ul>
+                    <li>
+                        <b>Dano</b> – informe o dano causado por essa arma.
+                    </li>
+                </ul>
+                <p><b>EMP</b></p>
+                <ul>
+                    <li>
+                        <b>Turnos</b> – Informe quantos turnos essa bomba desabilita os equipamentos eletrônicos.
+                    </li>
+                </ul>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Temos dois tipos de atributos para preencher pois, estamos criando aqui a sala que comporta as ogivas. E as ogivas nucleares em si. Os atributos das ogivas são copiados do próprio item.</i>
+                </div>
+
+                <h5>ESPACIAIS:</h5>
+                <p>
+                    Essas são as armas mais fortes de todo o universo. São grandes canhões de energia, com um grande poder destrutivo. Dependendo do caso essas armas conseguem destruir até mesmo um planeta com um único disparo.
+                </p>
+                <p>
+                    Elas são enormes e somente localizadas em naves capitais, e colossais, estações espaciais ou orbitando um planeta. E por serem extremamente grande uma nave capital é produzida somente para comportar uma única arma dessas (<i>capitais encouraçados</i>), por seu grande consumo de energia. Naves colossais, e estações espaciais normalmente contem mais de uma arma dessas com poder destrutivo um pouco menor.
+                </p>
+                <p>
+                    <b>Seus atributos são:</b>
+                </p>
+                <ul>
+                    <li><b>Tipo</b> – Informe se a arma é de disparo único ou disparos constante.</li>
+                    <li><b>Dano</b> – Informe a quantidade de dano dessa arma. Leve em consideração o tipo da arma.</li>
+                    <li><b>NdA</b> – Informe qual o Nível de Dificuldade da Arma para poder ativá-la.</li>
+                    <li><b>Operação</b> – Informe como essa arma é ativada, diga se ela é usada da cabine da estação, ou se ela é controlada por uma sala própria. Se pode ser acessada remotamente e por ai vai.</li>
+                </ul>
+                
+                <h5>HABILIDADES NATURAIS:</h5>
+                <p>
+                    As habilidades naturais encontrados em veículos do tipo animal. Onde o animal em questão tem alguma habilidade como por exemplo, cuspir fogo. Esse tipo de poder de fogo pode ser encontrado em muitos tipos de veículos que utilizam algum ser vivo como armamento. Quando o condutor do veículo quer utilizar essas habilidades, ele fará testes como se fossem suas próprias habilidades.
+                </p>
+                <p><b>Seus atributos são:</b></p>
+                <ul>
+                    <li><b>Nome</b> – Informe o nome da habilidade.</li>
+                    <li><b>Teste</b> – Informe o teste que deve ser jogado ao usar essa habilidade.</li>
+                    <li><b>Consumo</b> – Informe o consumo de CLOL da habilidade.</li>
+                    <li><b>Descrição</b> – Faça uma descrição dessa habilidade informando dano e efeitos que ele tem.</li>
+                </ul>
+
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

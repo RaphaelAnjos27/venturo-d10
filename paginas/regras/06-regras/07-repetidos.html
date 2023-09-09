@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>TESTE REPETIDOS</h2>
+                <p>
+                    Haverá muitos momentos aos quais os jogadores fracassarão em seus testes. Um jogador que fracasse em um teste e tente fazê-lo novamente terá uma bonificação ou diminuição no ND desse teste. 
+                </p>
+                <p>
+                    O que define se o ND vai aumentar ou diminuir é o escopo do teste, onde: Testes que atribuam conhecimento ao jogador tendem a ter seu ND diminuído por tentativa. Agora testes onde o jogador, de alguma forma prejudique-se ou prejudique os elementos do mesmo, tendem a ter seu ND bonificado. Por exemplo: 
+                </p>
+                <p>
+                    Imagine que seu jogador está montando uma placa de circuitos, e isso requer um teste. Nesse caso ele falha normal nesse teste e acaba que estragando um pouco essa placa. Nesse escopo, o jogador terá o nível de dificuldade aumentada por que terá que reparar esse problema que causou a placa.
+                </p>
+                <p>
+                    Agora um teste onde ele está tentando usar uma habilidade. O seu erro atribui conhecimento temporário ao personagem. E esse conhecimento ajuda a não cometer o mesmo erro na próxima tentativa.
+                </p>
+                <p>
+                    Então tanto o Jogador quanto o Mestre devem saber interpretar esse escopo para saber se bonifica ou diminui o ND de uma segunda tentativa de ação.
+                </p>
+                <p>
+                    Tenha em mente também, que haverá momentos onde um segundo teste não será possível. E isso vale muito quando a vida do jogador está em risco, como por exemplo: Desarmar uma bomba. 
+                </p>
+                <div class="alert alert-success">
+                    <i><b>DICA.:</b> Algumas falhas podem ajudar o mestre na trama. Um jogador pode falhar em um teste e não saber. E essa falha pode gerar algum problema futuro para esse personagem.</i>
+                </div>
+
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

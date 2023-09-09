@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universo do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/universo.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Universo Base</h1>
+        <p>Agora que conhecemos as mecânicas do sistema. Está na hora de conhecer o cenário básico!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-universo></venturo-sumario-universo>  
+            </div>
+
+            <div class="col-sm-7">
+                <h1>CIVILIZAÇÃO</h1>
+                
+                <p>
+                    Vamos começar pelas civilziações. Esse é um dos conteúdos mais complexos para se criar no sistema Venturo, até mesmo porque sua criação depende de outras criações como Sistemas planetários e etc.
+                </p>
+                <p>
+                    As Civilizações influenciam diretamente na ficha, podendo até mesmo dar alguma bonificação só pelo fato de você ter escolhido aquela Civilização. Só que ao mesmo tempo grande parte de seu conteúdo é irrelevante na criação da ficha, servindo apenas como um background da Civilização.
+                </p>
+                <p>
+                    As civilização por sua vês são divididas em espécies, onde cada espécie pode ter características e habilidades próprias. Existem casos onde uma mesma Civilização pode ter uma única espécie, adquirindo assim, o nome da Civilização para a espécie como é o caso dos humanos.
+                </p>
+
+                <h5>NÍVEIS DOS ATRIBUTOS FÍSICOS DA RAÇA:</h5>
+                <p>
+                    Esse é um atributo na primeira ficha que você vai encontrar na Civilização. Ele já foi abordado anteriormente nesse livro, e tem uma forte relação na mecânica do jogo. Foi criado basicamente para diferenciar os atributos de Civilizações diferentes (<i>em mundos diferentes</i>).
+                </p>
+
+                <h5>HABILIDADES:</h5>
+                <p>
+                    Todas as Civilizações poderão ter em seu arsenal uma quantidade máxima de 5 habilidades, onde quatro delas serão relacionados a Civilização, enquanto a última será uma das três habilidades primordiais.
+                </p>
+                <p>
+                    Na ficha de personagem você encontra os slots corretos para preencher as habilidades, que por sua vez estarão na descrição de <b>espécie</b> de uma Civilização.
+                </p>
+                
+                <h5>PERÍCIAS, VANTAGENS E DESVANTAGENS RACIAIS:</h5>
+                <p>
+                    Você também vai encontrar nas Civilizações, perícias específicas daquela reça, que você poderá na criação ou em jogo colocar em sua ficha. Além das vantagens e desvantagens ligadas aquela Civilização em especial.
+                </p>
+
+                <h5>VANTAGENS NATURAIS:</h5>
+                <p>
+                    As vantagens naturais de uma espécie também podem ser colocadas dentro da ficha de personagem. Elas são vantagens impostas naquela Civilização, gCivilizações as suas condições de vida, costumes e etc.
+                </p>
+                <p>
+                    Essas são basicamente as informações necessárias que você precisa para criar uma ficha baseada em uma Civilização específica. Existem mais coisas relacionadas a história de seu personagem na qual você usará outras informações da Civilização/espécie. Porém para ficha, essas informações são as essenciais.
+                </p>
+
+                <h3>NÍVEIS TECNOLÓGICOS:</h3>
+                <p>
+                    O nível tecnológico é uma característica atribuída a cada Civilização, para sabermos o quanto de tecnologia determinada Civilização domina. O nível tecnológico de uma Civilização é dividido em 4 categorias, essas são: <i>armamentos e proteção, deslocamento, medicina</i> e por última <i>energia</i>. Somando os níveis de todas as categorias temos um valor igual a 40, que é o nível tecnológico máximo da Civilização.
+                </p>
+                <p>
+                    Quando você analisa as descrições de uma Civilização você sempre terá seu nível tecnológico total (<i>soma dos níveis de todos as categorias</i>). E o nível separado de cada uma das categorias.
+                </p>
+                <p>
+                    Lembrando que o nível tecnológico de uma Civilização, é as tecnologias dominadas por todas as nações daquela Civilização. Por isso dentro de determinado planeta um continente pode ter domínio em uma tecnologia que a outra não tem.
+                </p>
+
+                <h3>TIPOS DE CIVILIZAÇÃO:</h3>
+                <p>
+                    Podemos dividir as civilizações em duas categorias: As <b>“Civilizações Completas”</b> e as <b>“Civilizações Incompletas”</b>. Geralmente quando estamos usando esse sistema, dependendo do seu cenário, deverá existir uma quantidade absurda de Civilizações, que não seria viável criar do zero. Então definimos a existência dessas Civilizações e definimos alguns atributos básicos só pra apresentar elas na narrativa. Essas Civilizações não serão jogáveis a menos que você crie atributos básicos dela para serem usadas na ficha. 
+                </p>
+                <p>
+                    Normalmente para Civilizações incompletas teremos apenas o seu nome, uma leve descrição e possivelmente uma ilustração da Civilização. Mas no geral pode ser apenas um nome mesmo, mas isso vai depender do cenário e narrativa, por exemplo: Imagine uma grande assembleia de milhares de Civilizações diferentes em uma federação espacial, obviamente não passaríamos a eternidade criando essas Civilizações.
+                </p>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

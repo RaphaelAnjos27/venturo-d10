@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>FICHÁRIO DO JOGADOR</h2>
+                <p>
+                    O Sistema Venturo tem um foco muito alto no desenvolvimento de personagem, contendo regras bem específicas para isso. Temos diversas fichas complementares que ajudam no desenvolvimento do personagem, você irá conhecê-las mais a frente no capítulo de criação de personagens.
+                </p>
+                <p>
+                    Oque aprenderemos aqui é um comportamento que você jogador deve ter quando estiver ministrando seu próprio personagem. Você deve começar a criar anotações de cada sessão sobre elementos que seu personagem interagiu, por exemplo: <b>PnJs que seu personagem interagiu</b>, ou os mais importantes. Tenha uma folha separada para anotar todos esses personagens seguindo uma estrutura semelhante:
+                </p>
+                <p>
+                    - Nome: nome_pnj, <i>“sessão que apareceu”</i>, “raça, espécie e ofício”, “oque ele pode fazer para me ajudar?”
+                </p>
+                <p>
+                    Então você começa adicionando o nome desse personagem. Depois qual a sessão ele apareceu, dependendo de como você estruturas suas sessões de jogo. Qual a sua raça, espécie dentro dessa raça e seu principal trabalho (<i>oque ele faz para ganhar a vida</i>). E por fim adicione um motivo do porque seu personagem lembrará desse personagem, no que esse Pnj pode ajudar seu personagem no futuro? Pode fornecer armas, poções, informações e por ai vai.
+                </p>
+                <p>
+                    Outra anotação que você pode querer ter é um <b>resumo de cada sessão</b> jogada pelo seu personagem. Aqui o mais fácil de se fazer é listar todos os acontecimentos dentro do capitulo, por exemplo:
+                </p>
+                <ul>
+                    <li>
+                        Entramos na grande base da Força Universal;
+                    </li>
+                    <li>
+                        Acabamos tendo que intervir sobre uma invasão contra a força universal.
+                    </li>
+                </ul>
+                <p>
+                    Cada conteúdo de lista pode ser até mesmo um paragrafo bem descrito, contendo até mesmo os pensamentos de seu personagem. Cada um estruturará de uma forma. Caso você encontre <b>ligação entre uma sessão e outra</b>, não esqueça de anotar que determinado contexto tem ligação com sessões anteriores entre parênteses.
+                </p>
+                <p>
+                    Diferente do fichário do mestre, o fichário do jogador não precisa ser tão estruturado assim, com a necessidade até mesmo de um sumário. Mas caso veja necessidade de usar esse recurso, procure dar uma lida na sessão de fichário do mestre.
+                </p>
+
+            </div>
+
+            
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>
