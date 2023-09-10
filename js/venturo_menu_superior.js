@@ -25,7 +25,7 @@ export class VenturoMenuSuperior extends HTMLElement{
         
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/">
+                <a class="navbar-brand" href="/venturo-d10/index.html">
                     <img src="/venturo-d10/static/imagens/logo_simples_pequeno_branco.webp" alt=""
                         style="width:40px;" class="rounded-pill">
                 </a>
