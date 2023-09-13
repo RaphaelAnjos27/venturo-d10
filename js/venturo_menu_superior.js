@@ -50,7 +50,7 @@ export class VenturoMenuSuperior extends HTMLElement{
                             <a class="nav-link" href="/venturo-d10/paginas/criacao.html">Criação</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/venturo-d10/paginas/criacao.html">Contos</a>
+                            <a class="nav-link" href="/venturo-d10/paginas/contos.html">Contos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/venturo-d10/paginas/ferramenta.html">Ferramentas</a>
