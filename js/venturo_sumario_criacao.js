@@ -126,11 +126,32 @@ export class VenturoSumarioCriacao extends HTMLElement {
                                 <a class="nav-link" href="/venturo-d10/paginas/criacao/05-racas/03-racas.html">Criando uma Civilização</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/venturo-d10/paginas/criacao/05-racas/04-nacoes.html">Nações</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" href="/venturo-d10/paginas/criacao/05-racas/05-especies.html">Especies</a>
                             </li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="btn" data-bs-toggle="collapse" href="#5.1">
+                        Nações
+                    </a>
+                </div>
+
+                <div id="5.1" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/venturo-d10/paginas/criacao/05.1-nacoes/01-introducao.html">Introdução</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/venturo-d10/paginas/criacao/05.1-nacoes/02-nacao.html">Nações</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/venturo-d10/paginas/criacao/05.1-nacoes/03-cidades.html">Cidades e Reinos</a>
+                            </li>
+                            
                     </div>
                 </div>
             </div>

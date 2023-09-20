@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Criação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/venturo-d10/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/venturo-d10/static/css/criacao.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criacao</h1>
+        <p>Agora que você conhece o Universo e as Regras. Está na hora de aprender a criar os elementos desse universo!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-criacao></venturo-sumario-criacao>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>CRIANDO UMA CIDADE/REINO</h2>
+
+                <p>
+                    Cada nação terá suas cidades ou reinos. Isso vai depender de nação para nação. Suas localizações podem ser encontradas no mapa continental da nação.
+                </p>
+                <p>
+                    Cada cidade vai ter o seu modelo descrevendo um pouco da cidade. Também histórias importantes da cidade ou do reino. E locais que conterão diversas informações importantes com relação a cidade ou reino em si.
+                </p>
+                <p>
+                    Dentro do modelo, vamos informar:
+                </p>
+
+                <ul>
+                    <li><b>Nome da cidade </b>– Devemos pensar num nome para essa cidade.</li>
+                    <li><b>Ilustração </b>– Sua cidade pode conter uma ilustração básica que a represente.</li>
+                    <li><b>População </b>– Você deve pensar numa estimativa de quantos seres vivem nessa cidade ou reino.</li>
+                    <li><b>Descrição </b>– Descreva um pouco dessa cidade.</li>
+                    <li><b>Mapa Urbano </b>– São mapas de cidades onde cada casa tem um ícone a representado (<i>geralmente um desenho próprio</i>) além de ter pontos históricos da cidade e etc. Mapas urbanos são basicamente composto de caminhos (<i>ruas</i>) e residências, mostrando a cidade em si com figuras geométricas representando as residências. Dependendo do tamanho do mapa os ícones das casas podem ser mais detalhados ou não, isso vai depender do seu nível de perfeccionismo. Esses mapas contem também ícones como, por exemplo, de pontos onde pode ser arrumado comida, armamento como bases militares ou centros policiais, e por ai vai, isso vai depender da criatividade de quem está criando o mapa.</li>
+                </ul>
+
+                <h5>HISTÓRIAS:</h5>
+                <p>
+                    Você pode gerar muitas histórias com títulos próprios para sua cidade ou reino. Você pode então elaborar histórias de acontecimentos daquela cidade, organizações secretas, seitas religiosas. Todas essas histórias servem para dar mais vida a sua cidade, assim como as histórias de uma nação servem para dar mais vida a ela.
+                </p>
+
+                <h5>LOCAIS:</h5>
+                <p>
+                    Em locais, cada modelo, vai conter um local importante da cidade, com um nome, mapa e descrição.
+                </p>
+                <ul>
+                    <li><b>Nome</b> – Você terá que dar um nome para esse local.</li>
+                    <li><b>Ilustração</b> – Faça uma ilustração representativa desse local. </li>
+                    <li><b>Descrição</b> – Descreva esse local. O por que ele é importante.</li>
+                    <li><b>Mapas</b> – Aqui usamos mais os mapas de interiores pois são as vistas de dentro de casas, bases ou até mesmo naves. O mapa com mais quantidade de ícones é esse, você vai ter que ter ícone para tudo, dês de pequenos objetos como camas e lixeiras, até pequenas naves que podem ser encontradas no hangar, escadarias, elevadores, baús dependendo da sua temática, papéis escritos e muito mais.</li>
+                </ul>
+
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Um mesmo local pode ter diversos mapas do mesmo.</i>
+                </div>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/venturo-d10/js/venturo_lib.js"></script>
+</body>
+
+</html>

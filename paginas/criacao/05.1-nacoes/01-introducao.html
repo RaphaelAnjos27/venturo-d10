@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Criação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/venturo-d10/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/venturo-d10/static/css/criacao.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criacao</h1>
+        <p>Agora que você conhece o Universo e as Regras. Está na hora de aprender a criar os elementos desse universo!</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-criacao></venturo-sumario-criacao>  
+            </div>
+
+            <div class="col-sm-7">
+                <h2>INTRODUÇÃO</h2>
+                <p>
+                    O que faremos aqui é passar pelo processo de nações. As nações são partes do planeta em que a civilização
+                    habita, seja em terra, céu ou mar. Ele servem para muitas coisas. Sua civilização com grande certeza é
+                    dividida em nações. Independente se ela está em um contexto futurista, moderno ou medieval. E essas
+                    nações podem se dividir em continentes do seu planeta, podem dividir o mar (<i>caso viva na
+                        aguá</i>) ou podem se dividir no céu (<i>caso vivam no céu</i>).
+                </p>
+
+                <div class="alert alert-danger">
+                    <i><b>ALERTA.:</b> A nação nesse contexto, são territórios dominados dentro de um continente. Caso um mesmo continente seja dominado por inúmeras nações, seu nome seguira a seguinte estrutura: “Nome da Nação – Nome do Continente”.<br>
+                        Agora se a nação nesse contexto de criação abranger todo o continente, então seu nome não leva o nome do continente, já que a mesma é o próprio continente.</i>
+                </div>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/venturo-d10/js/venturo_lib.js"></script>
+</body>
+
+</html>
