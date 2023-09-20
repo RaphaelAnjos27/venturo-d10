@@ -14,6 +14,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Crie um link âncora para o cabeçalho
         const anchor = document.createElement('a');
+        
+        if (header.tagName === 'h3') {
+            anchor.textContent = '  ' + header.textContent;
+        }else if(header.tagName === 'h4'){
+            anchor.textContent = '      ' + header.textContent;
+        } 
+        else {
+            anchor.textContent = header.textContent;
+        }
         anchor.textContent = header.textContent;
 
         // Configure o link para rolar suavemente para o cabeçalho quando clicado
