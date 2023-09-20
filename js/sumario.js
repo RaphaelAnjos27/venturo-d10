@@ -1,9 +1,9 @@
 // sumario.js
 document.addEventListener('DOMContentLoaded', function () {
     // Seu código JavaScript aqui...
-    console.log('teste')
+    
     // Encontre todos os cabeçalhos h1, h2 e h3 na página
-    const headers = document.querySelectorAll('h2, h3, h4');
+    const headers = document.querySelectorAll('h2, h3, h4, h5');
 
     // Crie uma lista não ordenada para o sumário
     const summaryList = document.createElement('ul');
@@ -15,15 +15,19 @@ document.addEventListener('DOMContentLoaded', function () {
         // Crie um link âncora para o cabeçalho
         const anchor = document.createElement('a');
         
-        if (header.tagName === 'h3') {
-            anchor.textContent = '-  ' + header.textContent;
-        }else if(header.tagName === 'h4'){
-            anchor.textContent = '-    ' + header.textContent;
+        
+        if (header.tagName === 'H3') {
+            anchor.textContent = '\u00A0\u00A0\u00A0'+ header.textContent;
+            
+        }else if(header.tagName === 'H4'){
+            anchor.textContent = '\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0' + header.textContent;
+        }else if(header.tagName === 'H5'){
+            anchor.textContent = '\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0' + header.textContent;
         } 
         else {
             anchor.textContent = header.textContent;
         }
-        anchor.textContent = header.textContent;
+
 
         // Configure o link para rolar suavemente para o cabeçalho quando clicado
         anchor.href = `#${header.id || ''}`;
@@ -45,4 +49,3 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-console.log('Teste')
