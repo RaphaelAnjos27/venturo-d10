@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
         const anchor = document.createElement('a');
         
         if (header.tagName === 'h3') {
-            anchor.textContent = '&nbsp;&nbsp;&nbsp;&nbsp;' + header.textContent;
+            anchor.textContent = '-  ' + header.textContent;
         }else if(header.tagName === 'h4'){
-            anchor.textContent = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + header.textContent;
+            anchor.textContent = '-    ' + header.textContent;
         } 
         else {
             anchor.textContent = header.textContent;
