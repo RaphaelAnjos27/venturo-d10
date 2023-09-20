@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Remova a decoração de link (sublinhado)
         anchor.style.textDecoration = 'none';
         anchor.style.color = "#212529"
+        anchor.style.fontWeight = "bold"
 
         listItem.appendChild(anchor);
         summaryList.appendChild(listItem);
