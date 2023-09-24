@@ -35,6 +35,16 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
                             <li class="nav-item">
                                 <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/01-introducao/03-linha-tempo.html">Linha do Tempo</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/01-introducao/04-guias.html">Guias de Worldbuilding</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/01-introducao/05-checklist.html">Lista de Verificação</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/01-introducao/06-organizando.html">Organizando o Worldbuilding</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
