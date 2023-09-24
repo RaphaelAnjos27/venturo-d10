@@ -33,7 +33,7 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
                                 <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/01-introducao/02-resumo.html">Resumo de Worldbuilding</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/01-introducao/03-linha-tempo.html">Resumo de Worldbuilding</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/01-introducao/03-linha-tempo.html">Linha do Tempo</a>
                             </li>
                     </div>
                 </div>
