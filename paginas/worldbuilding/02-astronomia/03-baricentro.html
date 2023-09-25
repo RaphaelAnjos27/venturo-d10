@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baricentro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/venturo-d10/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/venturo-d10/static/css/wb.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criação de Mundos</h1>
+        <p>
+            Embora a seção de criação ofereça dicas para o processo de construção de mundos (<i>conhecido como Worldbuilding</i>), encare esta seção como um suplemento abrangente destinado a aprofundar ainda mais essa categoria.
+        </p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-wb></venturo-sumario-wb>  
+            </div>
+
+            <div class="col-sm-7">
+                <!--Conteudo da Página-->
+                <div id="sumario" class="container rounded shadow p-4 mb-4 bg-white">
+                    <h6>Sumário:</h6>
+                </div>
+                <script src="/venturo-d10/js/sumario.js"></script>
+
+                <h2>BARICENTRO:</h2>
+
+                <p>
+                    Ainda nesse conceitos das órbitas, vamos conhecer o Baricentro, que é um conceito importante encontrado em estrelas binárias. O <b>baricentro</b> é basicamente um ponto onde dois corpos celestes orbitam, e que tem relação com a massa dos objetos.
+                </p>
+	            <p>
+                    A distância do centro de massa de um corpo ao baricentro pode ser calculado usando o <b>Problema de dois Corpos</b>. Porem esse não será nosso foco, pois o objetivo das regras de criação é te mostrar que existem esses conceitos, e passar alguns padrões para serem usados.
+                </p>
+	            <p>
+                    Se tivermos dois corpos celestes orbitando um ao outro em uma distância relativamente próxima, e um desses corpos for mais maciço que o outro. Nosso ponto do baricentro está localizado dentro do corpo mais maciço. Então nesse caso, ao invés dos dois corpos parecerem orbitarem um ponto em comum, o corpo menos maciço orbitará o corpo mais massivo. Já o corpo mais maciço terá pequenas oscilações, como se estivesse orbitando um ponto específico em seu interior. Podemos ver um exemplo disso na órbita Terra-Lua, onde o ponto do baricentro se encontra a 75% da terra.
+                </p>
+	            <p>
+                    Quando temos dois corpos de massa semelhantes, o ponto do baricentro fica entre eles. Ambos os corpos de mesma massa orbitam esse ponto do baricentro. Podemos pegar como exemplo a órbita Plutão-Caronte, mas também podemos ter esse tipo de baricentro em Asteroides binários e Estrelas binárias.
+                </p>
+	            <p>
+                    Agora quando o corpo menos maciço está longe, o baricentro pode ser encontrado fora do corpo mais maciço. Como exemplo, temos a órbita Júpiter-Sol, onde mesmo que o Sol seja mil vezes mais maciço que Júpiter, o seu baricentro fica um pouco para fora do Sol graças a imensa distância entre eles.
+                </p>
+                <p>
+                    A baixo colocarei alguns exemplos ilustrados de como seria os tipos de baricentro:
+                </p>
+
+                <img class="img-fluid" src="/venturo-d10/static/imagens/imgs_worldbuilding/baricentro01.webp" alt="Orbitas">
+
+                <p>
+                    No exemplo acima temos dois corpos de massa semelhante orbitando um baricentro comum. Podemos pegar como exemplo o sistema <p>90 Antíope</p> que consiste em dois asteroides localizado no cinturão de asteroides entre a órbita de Marte e Júpiter.
+                </p>
+
+                <img class="img-fluid" src="/venturo-d10/static/imagens/imgs_worldbuilding/baricentro02.webp" alt="Orbitas">
+
+                <p>
+                    Outro modelos que temos de baricentro, é esse formado por dois corpos de massas diferentes, que orbitam um baricentro externo comum a ambos os corpos. Podemos pegar como exemplo desse baricentro o sistema <b>Plutão</b> e <b>Caronte</b>.
+                </p>
+
+                <img class="img-fluid" src="/venturo-d10/static/imagens/imgs_worldbuilding/baricentro03.webp" alt="Orbitas">
+
+                <p>
+                    Acima temos um exemplo com dois corpos de massa ligeiramente diferentes orbitando um baricentro comum interno a um corpo. Um bom exemplo desse sistema é a <b>Terra</b> e a <b>Lua</b>.
+                </p>
+
+                <img class="img-fluid" src="/venturo-d10/static/imagens/imgs_worldbuilding/baricentro04.webp" alt="Orbitas">
+
+                <p>
+                    No exemplo acima temos dois corpos com uma extrema diferença de massa orbitando um baricentro comum interno a um corpo. Um bom exemplo disso é o <b>Sol</b> com a <b>Terra</b>.
+                </p>
+
+                <img class="img-fluid" src="/venturo-d10/static/imagens/imgs_worldbuilding/baricentro05.webp" alt="Orbitas">
+
+                <p>
+                    E por fim temos o baricentro mais comum em estrelas binárias. Aqui teremos dois corpos de massas semelhantes orbitando um baricentro comum, externo a ambos os corpos.
+                </p>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/venturo-d10/js/venturo_lib.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Órbitas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/venturo-d10/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/venturo-d10/static/css/wb.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criação de Mundos</h1>
+        <p>
+            Embora a seção de criação ofereça dicas para o processo de construção de mundos (<i>conhecido como Worldbuilding</i>), encare esta seção como um suplemento abrangente destinado a aprofundar ainda mais essa categoria.
+        </p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-wb></venturo-sumario-wb>  
+            </div>
+
+            <div class="col-sm-7">
+                <!--Conteudo da Página-->
+                <div id="sumario" class="container rounded shadow p-4 mb-4 bg-white">
+                    <h6>Sumário:</h6>
+                </div>
+                <script src="/venturo-d10/js/sumario.js"></script>
+
+                <h2>ÓRBITAS</h2>
+
+                <p>
+                    Calcular a Trajetória da órbita de um planeta sobre uma estrela é algo complexo. Johannes Kepler foi a pessoa que pesquisou como o Sol e os planetas estavam arranjados em nosso sistema solar. E com essa pesquisa tivemos as três leis do movimento planetário, onde as suas duas primeiras foram publicados em 1609 em um livro chamado “<i>Astronomia Nova</i>”.
+                </p>
+	            <p>
+                    Lá ele focava no movimento do planeta vermelho <b>“Marte”</b>. Kepler percebeu que os movimentos orbitais de marte não batiam com nenhum modelo proposto do sistema solar, que naquela época envolvia órbitas circulares.
+                </p>
+	            <p>
+                    Na primeira lei de Kepler, temos resumidamente que marte viaja em uma <b>órbita elíptica</b>, onde o sol é o foco da elipse.
+                </p>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p>
+                            A segunda lei de Kepler, também conhecida como Lei das Áreas, diz que o seguimento que une o centro do Sol e um Planeta varre áreas (<i>A</i>) iguais em intervalos de tempos (<i>Delta T</i>) iguais, como pode ver na imagem:
+                        </p>
+                    </div>
+                    <div class="col-sm-9">
+                        <img class="img-fluid" src="/venturo-d10/static/imagens/imgs_worldbuilding/orbitas.webp" alt="Orbitas">
+                    </div>                    
+                </div>
+
+                <p>
+                    Essa lei funciona, porque o Planeta Marte não se move a uma velocidade constante, o planeta acelera quando se aproxima do Sol. Quando Marte está na sua órbita mais próxima do Sol, ele está na zona do <b>Periélio</b>, e nessa proximidade, ele viaja mais rápido do que quando está em sua órbita mais distante <b>Afélio</b>. Por conta desse comportamento de aceleração, a área percorrida pelo planeta em um período fixo de tempo é a mesma. 
+                </p>
+                <p>
+                    Então Kepler e seus amigos viram que Marte não se movia de forma constante, porém não sabiam dizer o porquê. A relação inversa que Kepler propôs entre a distância do Sol e a velocidade orbital poderia explicar as observações estranhas do movimento de marte. Mas para isso acontecer, a órbita deveria ser uma elipse. Uma órbita circular significaria nenhuma mudança na distância do Sol através do tempo, e com isso a velocidade seria constante.
+                </p>
+                <p>
+                    Essas duas afirmações de que marte viaja em uma órbita elíptica (<i>quase circular</i>), e sua velocidade varia de maneira em que a linha entre Marte e Sol percorrem áreas iguais, em tempos iguais, <b>foram generalizadas para incluir todos os planetas em 1621</b>.
+                </p>
+                <p>
+                    Existem três tipos de movimento que um corpo pode fazer ao orbitá-lo, esses são:
+                </p>
+                <p>
+                    <b>MOVIMENTO DE ROTAÇÃO:</b>
+                </p>
+                <p>
+                    O movimento de rotação é aquele onde o corpo gira em torno de seu próprio eixo, gerando assim os dias. Podemos pegar como exemplo a terra, que gasta em torno de 24h para completar essa rotação.
+                </p>
+                <p>
+                    <b>MOVIMENTO DE TRANSLAÇÃO:</b>
+                </p>
+                <p>
+                    Já o movimento de Translação é aquele movimento que um satélite natural e seu planeta realiza ao redor de uma estrela. O movimento de translação se dá por um planeta seguindo uma trajetória elíptica ao redor de uma estrela.
+                </p>
+                <p>
+                    <b>MOVIMENTO DE REVOLUÇÃO:</b>
+                </p>
+                <p>
+                    Esse é o movimento que um satélite como a Lua, faz em torno de seu Planeta em uma trajetória Elíptica.
+                </p>
+                <p>
+                    Ainda sobre a Lua: A distância média entre ela e a Terra e de 384 mil quilômetros. Mas como essa revolução tem uma órbita elíptica, existe um ponto onde essa distância é menor (<b>Perigeu</b>), podendo chegar a 363 mil quilômetros. E quando a Lua está mais distante, cerca de 406 mil quilômetros, temos o <b>Apogeu</b>.
+                </p>
+
+                <h4>Tipos de órbitas:</h4>
+                <p>
+                    Existem as órbitas elípticas, que vimos no começo dessa sessão, e também temos as órbitas <b>hiperbólica</b> e <b>parabólicas</b>. Enquanto os planetas de nosso sistema solar tem órbitas elípticas (<i>quase circulares</i>), <b>Isaac Newton</b> demonstrou que a órbita de certos Cometas são do tipo Hiperbólicas e Parabólicas.
+                </p>
+                <h4>Classes de órbitas:</h4>
+                <p>
+                    Agora entramos nas classes das órbitas. Elas foram classificadas de acordo com a relação com o corpo que orbitam. As classes que temos são:
+                </p>
+
+                <div class="row">
+                    <div class="col-sm-8">
+                        <p>
+                            <b>ÓRBITA POLAR:</b>
+                        </p>
+	                    <p>
+                            Quando temos um satélite em <b>órbita polar</b>, isso significa que o mesmo está passando ou quase passando sobre ambos os polos Norte e Sul do planeta (<i>ou outro corpo celeste</i>) em cada uma de suas revoluções. Desta forma temos uma órbita com inclinação igual ou próxima a 90 graus em relação ao equador.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img class="img-fluid" src="/venturo-d10/static/imagens/imgs_worldbuilding/orbita-polar.webp" alt="Orbitas">
+                    </div>                    
+                </div>
+
+                <p>
+                    <b>ÓRBITA EQUATORIAL:</b>
+                </p>
+	            <p>
+                    Uma órbita equatorial ocorre quando temos um satélite, seja ele artificial ou natural, em uma trajetória próxima a linha do equador do corpo celeste. Esse tipo de órbita são bem baixas, enquadrando-se como órbita terrestre baixa.
+                </p>
+
+                <div class="row">
+                    <div class="col-sm-8">
+                        
+                        <p>
+                            Só temos uma órbita geoestacionária quando está órbita é circular, com uma trajetória rente ao equador da terra. Onde sua rotação acompanha exatamente a rotação da terra. Esse é o caso da maioria dos satélites artificiais de comunicação.
+                        </p>
+                        <p>
+                            No caso terrestre, para termos um satélite com órbita geoestacionária, ele precisa estar a uma distância de 35.786 Km acima do nível do mar, no plano do equador da terra (<i>pode variar de acordo com a massa do satélite</i>). 
+                        </p>
+
+                    </div>
+                    <div class="col-sm-4">
+                        <img class="img-fluid" src="/venturo-d10/static/imagens/imgs_worldbuilding/orbita-estacionaria.webp" alt="Orbitas">
+                    </div>                    
+                </div>
+
+                <p>
+                    Uma variação dessa órbita é a <b>geossíncrona</b>, onde o objetivo é o mesmo que a geoestacionária, isto é, acompanhar a rotação da terra, porém ela pode ter <b>inclinação</b> e  <b>excentricidade</b> diferente de zero.
+                </p>
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/venturo-d10/js/venturo_lib.js"></script>
+</body>
+
+</html>

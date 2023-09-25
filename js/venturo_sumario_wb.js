@@ -64,7 +64,25 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
                                         <li class="nav-item">
                                             <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/02-astronomia/01-introducao.html">Introdução</a>
                                         </li>
-                                        
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/02-astronomia/02-orbitas.html">Órbitas</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/02-astronomia/03-baricentro.html">Baricentro</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/02-astronomia/04-inclinacao.html">Inlinação</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/02-astronomia/05-equador.html">Linha do Equador</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/02-astronomia/06-poeira.html">Poeira Estelar</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/02-astronomia/07-galaxias.html">Galáxias</a>
+                                        </li>
+
                                     </ul>
                                 </div>
                             </div>
