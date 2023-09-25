@@ -54,11 +54,11 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
 
                         <div class="card">
                             <div class="card-header">
-                                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                                <a class="btn" data-bs-toggle="collapse" href="#astronomia">
                                     Astronomia
                                 </a>
                             </div>
-                            <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                            <div id="astronomia" class="collapse" data-bs-parent="#accordion">
                                 <div class="card-body">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
@@ -74,11 +74,11 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
 
                         <div class="card">
                             <div class="card-header">
-                                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                                <a class="btn" data-bs-toggle="collapse" href="#geografia">
                                     Geografia
                                 </a>
                             </div>
-                            <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                            <div id="geografia" class="collapse" data-bs-parent="#accordion">
                                 <div class="card-body">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
@@ -94,11 +94,11 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
 
                         <div class="card">
                             <div class="card-header">
-                                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                                <a class="btn" data-bs-toggle="collapse" href="#historia">
                                     História
                                 </a>
                             </div>
-                            <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                            <div id="historia" class="collapse" data-bs-parent="#accordion">
                                 <div class="card-body">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
@@ -114,11 +114,11 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
 
                         <div class="card">
                             <div class="card-header">
-                                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                                <a class="btn" data-bs-toggle="collapse" href="#dicas">
                                     Dicas de Worldbuilding
                                 </a>
                             </div>
-                            <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                            <div id="dicas" class="collapse" data-bs-parent="#accordion">
                                 <div class="card-body">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
@@ -134,11 +134,11 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
 
                         <div class="card">
                             <div class="card-header">
-                                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                                <a class="btn" data-bs-toggle="collapse" href="#cenarios">
                                     Cenários
                                 </a>
                             </div>
-                            <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                            <div id="cenarios" class="collapse" data-bs-parent="#accordion">
                                 <div class="card-body">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
@@ -154,11 +154,11 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
 
                         <div class="card">
                             <div class="card-header">
-                                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                                <a class="btn" data-bs-toggle="collapse" href="#sociedade">
                                     Sociedade e Economia
                                 </a>
                             </div>
-                            <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                            <div id="sociedade" class="collapse" data-bs-parent="#accordion">
                                 <div class="card-body">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
@@ -174,11 +174,11 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
 
                         <div class="card">
                             <div class="card-header">
-                                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                                <a class="btn" data-bs-toggle="collapse" href="#idiomas">
                                     Idiomas
                                 </a>
                             </div>
-                            <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                            <div id="idiomas" class="collapse" data-bs-parent="#accordion">
                                 <div class="card-body">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
@@ -194,11 +194,11 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
 
                         <div class="card">
                             <div class="card-header">
-                                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                                <a class="btn" data-bs-toggle="collapse" href="#personagens">
                                     Personagens
                                 </a>
                             </div>
-                            <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                            <div id="personagens" class="collapse" data-bs-parent="#accordion">
                                 <div class="card-body">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
@@ -214,11 +214,11 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
 
                         <div class="card">
                             <div class="card-header">
-                                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                                <a class="btn" data-bs-toggle="collapse" href="#aventuras">
                                     Aventuras
                                 </a>
                             </div>
-                            <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                            <div id="aventuras" class="collapse" data-bs-parent="#accordion">
                                 <div class="card-body">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
@@ -234,11 +234,11 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
 
                         <div class="card">
                             <div class="card-header">
-                                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                                <a class="btn" data-bs-toggle="collapse" href="#elementos">
                                     Elementos de Campanha
                                 </a>
                             </div>
-                            <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                            <div id="elementos" class="collapse" data-bs-parent="#accordion">
                                 <div class="card-body">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
