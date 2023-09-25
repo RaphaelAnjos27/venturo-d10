@@ -62,7 +62,7 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
                                 <div class="card-body">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/02-astronomia/introducao.html">Introdução</a>
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/02-astronomia/01-introducao.html">Introdução</a>
                                         </li>
                                         
                                     </ul>
