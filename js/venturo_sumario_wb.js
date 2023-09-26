@@ -82,6 +82,12 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
                                         <li class="nav-item">
                                             <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/02-astronomia/07-galaxias.html">Galáxias</a>
                                         </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/02-astronomia/08-buracos.html">Buraco Negro</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/02-astronomia/09-estrelas.html">Estrelas</a>
+                                        </li>
 
                                     </ul>
                                 </div>
