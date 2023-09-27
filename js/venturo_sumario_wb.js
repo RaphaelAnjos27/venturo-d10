@@ -241,7 +241,22 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
                                 <div class="card-body">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/wb.html">Introdução</a>
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/06-cenarios/01-introducao.html">Cenários</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/06-cenarios/02-antes.html">Antes de criamos o mundo</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/06-cenarios/03-primeiro.html">Primeiro Método de criação de mundos</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/06-cenarios/04-segundo.html">Segundo Método de criação de mundos</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/06-cenarios/05-arquitetura.html">A Arquitetura moldada pelo Mundo</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/06-cenarios/06-masmorra.html">A Arquitetura moldada pelo Mundo</a>
                                         </li>
                                         
                                     </ul>
