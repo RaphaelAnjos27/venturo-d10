@@ -156,7 +156,19 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
                                 <div class="card-body">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/wb.html">Introdução</a>
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/04-historia/01-introducao.html">História Básica</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/04-historia/02-antiga.html">Idade Antiga</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/04-historia/03-media.html">Idade Média</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/04-historia/04-moderna.html">Idade Moderna</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/04-historia/05-contemporanea.html">Idade Contemporânea</a>
                                         </li>
                                         
                                     </ul>
