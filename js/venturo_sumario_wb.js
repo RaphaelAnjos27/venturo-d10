@@ -188,7 +188,40 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
                                 <div class="card-body">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/wb.html">Introdução</a>
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/05-dicas/01-introducao.html">Dicas de Criação</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/05-dicas/02-feudalismo.html">Feudalismo e Politica</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/05-dicas/03-cultura.html">Cultura Engessada</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/05-dicas/04-poder.html">Ausência de poder governamental</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/05-dicas/05-conflito.html">Conflitos Externos</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/05-dicas/06-opressao.html">Opressão do mais forte</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/05-dicas/07-consequencias.html">Ações causam consequências</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/05-dicas/08-mundos.html">Mundos Vivos</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/05-dicas/09-verossimilhanca.html">A verossimilhança em fantasias</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/05-dicas/10-ideias.html">Formas de conseguir ideias para seus mundos</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/05-dicas/11-naming.html">Técnicas de naming</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/05-dicas/12-historias.html">Criando a história de seu mundo</a>
                                         </li>
                                         
                                     </ul>
