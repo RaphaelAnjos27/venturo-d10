@@ -256,7 +256,7 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
                                             <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/06-cenarios/05-arquitetura.html">A Arquitetura moldada pelo Mundo</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/06-cenarios/06-masmorra.html">A Arquitetura moldada pelo Mundo</a>
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/06-cenarios/06-masmorra.html">Como Usar Masmorras</a>
                                         </li>
                                         
                                     </ul>
@@ -276,8 +276,33 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
                                 <div class="card-body">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/wb.html">Introdução</a>
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/07-sociedade/01-introducao.html">A Sociedade</a>
                                         </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/07-sociedade/02-economia.html">Economia</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/07-sociedade/03-nacoes.html">Nações</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/07-sociedade/04-cidades.html">Cidades</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/07-sociedade/05-culturas.html">Culturas</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/07-sociedade/06-mitologia.html">Pensando na Mitologia</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/07-sociedade/07-politica.html">Como desenvolver o Governo</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/07-sociedade/08-racas.html">Criando uma raça</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/07-sociedade/09-especies.html">Criando Espécimes</a>
+                                        </li>
+                                        
                                         
                                     </ul>
                                 </div>
