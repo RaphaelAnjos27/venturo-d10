@@ -385,7 +385,7 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
                                             <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/10-aventuras/03-historia.html">Historias</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/10-aventuras/04-criativiade.html">Criativiadde</a>
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/10-aventuras/04-criatividade.html">Criativiade</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/10-aventuras/05-improviso.html">Improviso</a>
