@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando aventuras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/venturo-d10/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/venturo-d10/static/css/wb.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criação de Mundos</h1>
+        <p>
+            Embora a seção de criação ofereça dicas para o processo de construção de mundos (<i>conhecido como Worldbuilding</i>), encare esta seção como um suplemento abrangente destinado a aprofundar ainda mais essa categoria.
+        </p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-wb></venturo-sumario-wb>  
+            </div>
+
+            <div class="col-sm-7">
+                <!--Conteudo da Página-->
+                <div id="sumario" class="container rounded shadow p-4 mb-4 bg-white">
+                    <h6>Sumário:</h6>
+                </div>
+                <script src="/venturo-d10/js/sumario.js"></script>
+
+                <h2>Criando aventuras</h2>
+
+                <p>
+                    De todas as aventuras de Rpg que você jogou em sua vida, quantas delas inicia-se dentro de uma taverna? É sobre isso que falaremos aqui, pois estamos cansados dos clichês atuais. Vamos aprender a como criar uma aventura de rpg de maneira descomplicada.
+                </p>
+                <p>
+                    Vamos iniciar nossa explicação para criar uma aventura simples de maneira rápida e objetiva. Iremos ter basicamente três pilares principais que você terá que pensar:
+                </p>
+                <p>
+                    <b>Trama</b> – Que no caso é a própria missão;
+                </p>
+                <p>
+                    <b>Locais</b> – Que ocorrerá a missão;
+                </p>
+                <p>
+                    <b>Npc</b> – Aqui entra todos os npcs relevantes para a história do jogo.
+                </p>    
+
+                <h3>Trama principal:</h3>
+
+                <p>
+                    Primeiro você deve elaborar um pequeno paragrafo (<i>ou menos</i>) para sua tama principal, algo como: “<i>O grande rei de Namy iniciou uma guerra contra pequenos fortes do reino de Tyla</i>”.
+                </p>
+                <p>
+                    Depois dessa base, você deve elaborar um <b>gancho</b>. O gancho é uma trama que colocará os jogadores dentro de sua história, isso é, oque acontece antes mesmo da missão começar. Ou pode ser também algo dentro da trama que atrai a atenção de seus jogadores para um conflito.
+                </p>
+                <p>
+                    Pense no passo a passo que você vai colocar para esse gancho, desde o início onde os jogadores podem estar se conhecendo, até a hora que eles são introduzidos a missão principal, seja direta ou indiretamente. E dentro dessa <b>lista de passos</b>, você pode inserir ideias como: possíveis combates, interpretações, itens que podem achar e etc.
+                </p>
+                <p>
+                    Agora se inicia um brainstorm de todas as ideias de sua mente referentes a <b>missão principal</b>. Você pode colocar essas ideias na ordem cronológica, ou não. Vamos dar um exemplo do porque está ocorrendo a guerra:<i> A meia-noite passada, a princesa do rei Lucios de Namy foi sequestrada… e espiões dizem que ela se encontra nas terras de Tyla.</i>”.
+                </p>
+                <p>
+                    Você não precisa pensar muito nas questões da história, pois podem surgir diversas ideias conforme vocês vão realizando as missões. Apenas foque na trama, e depois na lista de passos para o gancho principal.
+                </p>
+
+                <h3>Locais:</h3>
+                <p>
+                    Agora vamos pensar nos locais principais dessa trama. Você pode pensar também em alguns plots que os jogadores possam explorar caso eles queiram. Então para cada local principal você insere uma pequena descrição do mesmo, como características principais, região que o entorna.
+                </p>
+                <p>
+                    Descrever o cenário de cada local, desde as estradas principais até o local em si é muito importante para a imersão. Dentro dessa descrição você pode inserir notas para fazer durante a cena daquele local em específico, por exemplo, criar suspense, dar a impressão de uma batalha e entre outros elementos, como sons aleatórios que você pode esquecer de narrar naquele momento.
+                </p>
+                <p>
+                    Durante essas descrições você pode colocar um  “<b>foreshadow</b>”. O foreshadow seria você colocar algo dentro da cena que demonstra oque esta por vir da missão principal. Isso dá um ar de mistério para seus jogadores, oque torna a sessão mais interessante.
+                </p>
+                <p>
+                    Se uma estrutura de lista e sublista para criar esses elementos, por exemplo:
+                </p>
+                <ul>
+                    <li>Nome do Local – Descrição do Local:</li>
+                    <ul>
+                        <li>Aqui entra as notas principais, foreshadows, plots e etc. E cada nota diferente pode ser uma sublista igual a essa.</li>
+                    </ul>
+                </ul>
+
+                <h3>NPC:</h3>
+                <p>
+                    Agora você pensa em todos os npcs principais para sua trama, como: quem fornece a missão principal, o npc que os acompanha nas missões e etc. Crie uma ficha de personagem somente para esses npcs, não precisa detalhar tanto, como por exemplo, fazer um background superelaborado para ele.
+                </p>
+                <p>
+                    Para cada NPC você cria uma nota com o nome dele, função (<i>taverneiro, ferreiro, frentista e etc</i>), e depois uma descrição geral do personagem, como cor do cabelo, altura, peso e etc. Dentro dessa descrição você pode criar também elementos de mistério que abrangem esse npc em questão, pode inserir passatempos desse npc, um passado, mentiras que ele conta para todos. 
+                </p>
+                <p>
+                    Procure separa essa descrição em basicamente duas notas, uma pública que você pode revelar a seus jogadores, e outra privada que pode te dar ideias no futuro, como por exemplo, o mistério do npc, conhecimentos que ele tem que possam ser uteis aos jogadores e etc.
+                </p>
+                <p>
+                    É basicamente isso que você precisa para começar a elaborar uma aventura de rpg de maneira rápida. Seu único limitador nessa questão será sua criatividade.
+                </p>
+
+                <h3>Missões:</h3>
+
+                <p>
+                    Vamos continuar falando sobre as aventuras e como criar uma missão para nossa mesa. Para trabalhar na criação de uma missão você precisará pensar em muitos elementos, e um deles é o:
+                </p>
+                <p>
+                    <b>GANCHO DE AVENTURA:</b>
+                </p>
+                <p>
+                    É com ele que você vai atrair seus jogadores para a aventura. O gancho é uma ideia que atrai a atenção dos personagens, inserindo eles em sua trama. Seus ganchos podem ser simples: como uma recompensa para investigar algo (<b>missão</b>), ou podem ser mais elaborados e complexos.
+                </p>
+                <p>
+                    Você pode inserir eles no meio de sua aventura, que por sua vez puxará seus personagens para conflitos ou caminhos alternativos. Qualquer <b>evento</b> que você planejar que coloque seus personagens em uma trama será um gancho.
+                </p>
+                <p>
+                    No final de sua aventura você também pode inserir ganchos que levam seus personagens a uma próxima trama que você esteja planejando. Então observe como essa é uma ferramenta poderosa para usarmos. Imagina que no final da aventura, antes mesmo de entregar a missão, você introduz um evento que muda a rota de seus jogadores drasticamente, forçando eles a terem que resolver novos conflitos antes mesmo de finalizar o principal.
+                </p>
+                <p>
+                    <b>CRIANDO AVENTURAS COMPLEXAS:</b>
+                </p>
+                <p>
+                    Você precisa pensar nas características normais de uma aventura antes mesmo de começar a criá-la. Essas características são:
+                </p>
+                <p>
+                    <b>Interpretação</b> – São coisas que você pode fazer com o role play como interagir com os personagens não jogáveis, embates sociais, coletar informações, ganhar aliados, comércio e fazer inimigos e por ai vai. Aqui você destaca o momento chave da missão que criará o conflito da aventura, como por exemplo, extrair informações de um npc.
+                </p>
+                <p>
+                    <b>Exploração</b> – Aqui entra desde a exploração de cavernas até florestas e estruturas no geral. Enigmas e charas e pistas também são validos aqui, ou encontrar itens ou personagens perdidos.
+                </p>
+                <p>
+                    <b>Combate</b> – Aqui entra tudo relacionado a lutas no geral, desde a mecânica de seu jogo até as fichas de personagens e diretrizes de combate. É interessante pensar em um background para esse combate como: quem lidera os inimigos, porque estão atacando tal região, ou qual o objetivo desses inimigos.
+                </p>
+                <p>
+                    Agora que entra o macete dessa técnica: Para cada um dos tópicos inseridos acima você criará três níveis de complexidade para aprofundar a história: Aqui entra desde dar mais detalhes de uma descrição, desenvolver a ficha de um NPC, aumentar os conflitos encima do tópico, dar mais ganchos para outras rotas ligadas ou não com o tópico central, e outros elementos. Você pode usar um mapa mental para trabalhar com essa ideia, ou listas de subníveis.
+                </p>
+                <p>
+                    Então resumindo: Você começa desenvolvendo um <b>gancho de aventura</b> para introduzir seus personagens a trama. E então começamos a pensar nos tópicos, ou seja, para cada tópico vamos criar um <b>conflito chave</b>, e em seguida criar uma ramificação de três com mais conflitos a serem explorados.
+                </p>
+                <p>
+                    Então para a ramificação de <b>interpretação</b> você descreve o conflito chave, que nesse caso pode ser: “<b><i>Coletar informações sobre os problemas da trama principal</i></b>”. E em seguida adicionamos três ramificações de conflitos a serem explorados como: “<b><i>Pessoas com pistas</i></b>”, ”<b><i>Pessoas com informações relevantes</i></b>”, “<b><i>Pessoas com boatos</i></b>”. Podemos interpretar isso como ideias importantes, ideal para trama e complementos:
+                </p>
+                
+                <img class="img-fluid" src="/venturo-d10/static/imagens/imgs_worldbuilding/criando-aventura-01.webp" alt="Aventuras">
+                
+                <p>
+                    Nesse tipo de missão, não será necessário explorar todos os npcs envolvidos na trama para intender oque está de fato ocorrendo. Mas cada pessoa que você inserir ai terá pistas importantes para intender a história como um todo.
+                </p>
+                <p>
+                    Para cada Npc inserido nessas categorias, vamos inserir mais três informações: ficha de role play, informações e conflitos:
+                </p>
+
+                <img class="img-fluid" src="/venturo-d10/static/imagens/imgs_worldbuilding/criando-aventura-02.webp" alt="Aventuras">
+
+                <p>
+                    Em <b>ficha de role play</b> você vai colocar uma descrição geral do personagem como suas vestes, acessórios, tamanho, cor do cabelo e etc. Coloque também personalidade e comportamentos desse personagem que auxilie você a interpretar o mesmo com seus jogadores.
+                </p>
+                <p>
+                    Já nas <b>informações</b>, teremos pistas que cada npc tem sobre a trama da aventura, como por exemplo, uma conexão direta ou indireta com o ocorrido. Como conseguir essas informações são um desafio chave, você não vai conseguir arrancar de seus npcs essas informações com facilidade, ainda mais se for um inimigo.
+                </p>
+                <p>
+                    E por fim o <b>Conflito</b> vai destacar o porque os personagens não conseguem as informações desse npc, tendo que rolar dados ou usar a interpretação para isso, como por exemplo, o local onde esse npc está ou até mesmo uma guarda pessoal. Os conflitos podem ser dos mais diversos, e complexos, a função é impedir os jogadores de conseguirem as informações.
+                </p>
+                <p>
+                    O bom de desenvolver essas bases é que eles podem fornecer ganchos para mais missões pessoais, como: uma missão para conseguir a informação necessária, ou outras informações relevantes que ele tem, que possam abrir um leque de possibilidades de exploração. 
+                </p>
+                <p>
+                    Tanto Pessoas c/ pista, quanto pessoas c/ informações relevantes, quanto pessoas c/ boatos seguirão essa estrutura, porém uma informação tem mais peso que outras, e dentro da sessão somente o mestre vai saber isso. Os jogadores não tem ideia de quem é quem ali, e poderá abordar todos os npcs.
+                </p>
+                <p>
+                    Outra coisa, as informações entre os npcs podem ter basicamente o mesmo contexto mudando apenas a forma como é apresentado, isso dá aos jogadores a possibilidade de não precisar seguir uma rota única, ou até ter aquela impressão que estão perdendo tempo. Colocar na balança o custo beneficio de uma informação será muito usado por eles se você adaptar essa característica.
+                </p>
+                <p>
+                    Npcs podem ter informações não somente sobre a missão principal, mas sobre outros npcs que pode sua vez tem as informações necessárias. Sendo assim, oque eles podem te oferecer é uma forma mais simples de conquistar informações dos outros npcs ou apenas facilitando seus conflitos. Assim os npcs têm conexões entre si, pistas diferentes e importantes, são variados em personalidade e por ai vai. Pense em todos os npcs que serão relevantes para sua trama.
+                </p>
+                <p>
+                    Depois vamos para o ramo de <b>Exploração</b> que remeterá as áreas sem que seja locais. Os próprios npcs relevantes dão objetivos de exploração, seja com outros npcs ou itens da aventura. Nesse caso você explora todos os conflitos que podemos ter até chegar ao local, ou quando estamos nele:
+                </p>
+
+                <img class="img-fluid" src="/venturo-d10/static/imagens/imgs_worldbuilding/criando-aventura-03.webp" alt="Aventuras">
+                
+                <p>
+                    Caso ache necessário, cada conflito pode ser mais completo, tendo mais ramificações para cada local, gerando assim uma complexidade maior para trama. Descreva bem esses conflitos, onde suas ramificações podem ser notas que o mestre possa usar em sua trama caso aquele conflito ocorra.
+                </p>
+                <img class="img-fluid" src="/venturo-d10/static/imagens/imgs_worldbuilding/criando-aventura-04.webp" alt="Aventuras">
+                
+                <p>
+                    Esses conflitos e subconflitos não são precisam ocorrer de maneira linear, por exemplo do conflito 1 vamos para o 2 ou 3. Eles podem ocorrer todos ao mesmo tempo dentro daquela região, sendo apenas uma nota de lembrete para o mestre sobre os perigos daquela área e os problemas que os aguardam.
+                </p>
+                <p>
+                    E por fim entramos no tópico de <b>combate</b>. Esse tópico pode ser gerado a partir de informações geradas dos outros dois tópicos anteriores. Aqui entra todos os possíveis combates, sejam eles para defender um território ou a mando de alguém, e etc.
+                </p>
+                <p>
+                    Aqui você separa cada monstro ou oponente dentro de um mesmo ramo que agrupa suas categorias, por exemplo, monstros no geral, inimigos mais fortes, guardas e etc:
+                </p>
+                <img class="img-fluid" src="/venturo-d10/static/imagens/imgs_worldbuilding/criando-aventura-05.webp" alt="Aventuras">
+
+                <p>
+                    Isso vai servir para você consultar a ficha de combate do personagem em questão de forma mais fácil. Então estrutura da maneira que você quiser.
+                </p>
+
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/venturo-d10/js/venturo_lib.js"></script>
+</body>
+
+</html>
