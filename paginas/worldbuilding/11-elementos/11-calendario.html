@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/venturo-d10/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/venturo-d10/static/css/wb.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criação de Mundos</h1>
+        <p>
+            Embora a seção de criação ofereça dicas para o processo de construção de mundos (<i>conhecido como Worldbuilding</i>), encare esta seção como um suplemento abrangente destinado a aprofundar ainda mais essa categoria.
+        </p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-wb></venturo-sumario-wb>  
+            </div>
+
+            <div class="col-sm-7">
+                <!--Conteudo da Página-->
+                <div id="sumario" class="container rounded shadow p-4 mb-4 bg-white">
+                    <h6>Sumário:</h6>
+                </div>
+                <script src="/venturo-d10/js/sumario.js"></script>
+
+                <h2>Calendário</h2>
+
+                <p>
+                    O calendário de seu mundo será a base para contagem de tempo de sua sociedade. No mundo real temos alguns modelos espalhados pelo mundo, e aqui em nosso país usamos o modelo gregoriano, mas você pode querer se inspirar em outros modelos para criar o calendário base de sua sociedade.
+                </p>
+
+                <p>
+                    NECESSIDADE:
+                </p>
+                <p>
+                    Antes mesmo de criar um calendário para seu mundo, você precisa se perguntar se ele é realmente necessário para sua história. Você pode criar festivais e estações do ano sem a necessidade de um calendário.
+                </p>
+                <p>
+                    Caso você precise fazer referência a dias, semanas, meses ou até mesmo anos, faça, você não necessariamente precisa de um calendário para isso. Caso queira criar uma referência exclusiva para seu mundo, pode trocar o nome dessas referências, por exemplo, “<i><b>um mês</b></i>” pode se chamar “<i><b>uma lua</b></i>”.
+                </p>
+                <p>
+                    Caso queira mesmo fazer seu calendário, não se segure. Comece criando uma lógica interna para a passagem de tempo, e mostre ao público apenas aspectos importantes como nomes dos meses, semanas e até mesmo o tipo de calendário.
+                </p>
+
+                <h3>CALENDÁRIOS SOLARES E LUNARES:</h3>
+
+                <p>
+                    Acredito que não precise de muita explicação aqui: <b>Calendários solares</b> usam como referência o giro da terra em torno do sol. Enquanto <b>calendários lunares</b> usam como referência o giro da lua em torno da terra. 
+                </p>
+                <p>
+                    Devido a falta de sincronia entre a órbita da lua ao redor da terra e a da terra ao redor do sol, podemos ter alguns problemas em calendários lunares. O principal problema é acarretado por <b>desvios sazonais</b>, onde: feriados de um calendário lunar podem ocorrer algumas vezes no inverno e outras no verão.
+                </p>
+                <p>
+                    Apenas sabendo disso, podemos concluir que os calendários solares são bem mais elegantes, então porque escolheria um calendário lunar? A resposta está tanto nas estações do ano, quanto na latitude das sociedades do planeta. Os impactos das <b>estações</b> perto do equador costumam ser menores comparado as médias e altas latitudes. E consequentemente sociedades dessas médias e altas latitudes têm as estações do ano como sendo algo crucial em suas vidas. Devido a essa importância, ter um calendário solar é mais vantajoso, pois com eles podemos definir o início e fim de cada estação com precisão.
+                </p>
+                <p>
+                    Agora quando temos sociedades vivendo mais próximas ao equador, essas estações do ano não são tão bem definidas. E como rastrear as fases da lua é mais simples de se fazer, eles acabam adotando um calendário lunar.
+                </p>
+
+                <h3>Calendários Espaciais:</h3>
+
+                <p>
+                    Se sua história é mais científica, criar um calendário para esse cenário é um pouco mais complicado, pois agora não estamos lidando com um planeta orbitando uma estrela, e sim centenas ou milhares de planetas rodeando diversas estrelas.
+                </p>
+                <p>
+                    Um bom exemplo de data fictícia usada em construções de mundo scify é a <b>Stardate</b> da série “<b>Star Trek</b>”. Você pode estudar esse sistema e extrair sua lógica para criar seus próprios sistemas de calendário interplanetário. 
+                </p>
+                <p>
+                    Além disso, não somente nesse calendário, mas em diversos outros modelos, criar uma coesão quando tentamos converter de um sistema para outro acaba sendo complicado e muitos anos podem ser perdidos dependendo de como estiver convertendo. Seu calendário espacial poderia ter de idade o mesmo de seu universo, e atrelado a ela uma das raças mais antigas podem apenas preencher um quarto desse calendário desde sua criação.
+                </p>
+
+                <h3>Diversas Luas:</h3>
+
+                <p>
+                    Mundos com mais de uma lua, caso sua sociedade queira criar um calendário lunar, poderá ter alguns problemas: Você não deve colocar todas as fases de cada lua seu planeta no seu calendário, a menos que seja extremamente necessário. 
+                </p>
+                <p>
+                    É recomendável que você escolha apenas uma dessas luas para criar seu calendário lunar, e se basear nas fases dessa única lua. Em sua sociedade isso pode ter um significado mais cultural, onde aquela lua em questão representa a divindade mais poderosa de seu povo, ou essa lua está ligado a algum mito.
+                </p>
+
+                <h3>Estrela Binária:</h3>
+
+                <p>
+                    Já pensou se seu planeta orbita uma estrela binária? Como podemos desenvolver um calendário solar para duas estrelas? Assim como os demais calendários busque uma lógica interna sua para criar a base. Comece usando sua sociedade como base, e em qual parte do planeta elas residem. Pense como funciona as estações do ano nesse planeta, e como elas são afetadas por essa configuração de órbita.
+                </p>
+                <p>
+                    Depois disso pense quanto tempo dura as estações com base nessa órbita. E pense em coisas mais culturais, por exemplo, quando essas duas estrelas se alinham, oque acontece? E só então construa seu calendário com base na duração de uma revolução completa em torno dessas estrelas, e também na divisão sazonal durante todo o ano.
+                </p>
+
+                <h3>Nome de cada mês:</h3>
+
+                <p>
+                    Quando começar a criar as divisões de seu calendário você vai precisar nomear as referências a meses, dias da semana e até anos. Vamos ver algumas coisas que podemos ficar de olho quando formos fazer isso:
+                </p>
+                <ul>
+                    <li><b>Aleatório</b> – Você pode inventar essas palavras, contanto que soem bem quando pronunciadas;</li>
+                    <li><b>Divindades</b> – Nomes baseado nos principais deuses de seu mundo;</li>
+                    <li><b>Reis</b> – Grandes reis do passado podem ter seu nome imortalizado no calendário de seu mundo, tendo um mês totalmente destinado ao seu nome;</li>
+                </ul>
+                <p>
+                    Não importa que tipo de mundo você esteja construindo, há três dicas importantes ao inventar meses: <b>primeiro</b>, mantenha seu sistema lógico e claro. <b>Segundo</b>, torne mais fácil para o seu público seguir. <b>Terceiro</b>, mantenha suas palavras fáceis de ler e fáceis de pronunciar pelo público.
+                </p>
+                <p>
+                    Quando for criar seu calendário tenha alguns parâmetros em mente para criar algo mais coeso e plausível:
+                </p>
+                <ul>
+                    <li>Considere o público, ou seja, não complique demais oque não precisa ser complicado. Use o seu calendário como uma referência interna sua, que não necessariamente chegará ao público final;</li>
+                    <li>Considere as sociedades de seu mundo. Crie um sistema de passagem do tempo lógico para a cultura em questão, necessidades e história;</li>
+                    <li>Pesquise referências reais de calendários, e como sua adaptação ao longo das décadas ocorreram;</li>
+                    <li>Não crie um sistema matemático muito complexo que fuja do que já temos na terra. As vezes é mais interessante se assemelhar a um sistema de quatro estações, 12 meses, e depois ir aperfeiçoando, do que criar algo totalmente complexo que depois de dois dias você esquece como funciona.</li>
+                </ul>
+
+                <h3>Elementos do Calendário:</h3>
+
+                <p>
+                    Agora vamos ver os passos necessários para criar nossos calendários de ficção:
+                </p>
+                <ol>
+                    <li>Estabeleça uma base inicial, um período no tempo que começou a contagem de seu calendário. Em um calendário espacial, o primeiro dia dele pode ter sido no começo do universo, enquanto em um calendário planetário pode ter sido um evento marcante, podendo até mesmo ter dias posteriores ao evento que retrocedem, por exemplo: 150 antes de cristo e 2022 depois de cristo.</li>
+                    <li>Depois defina uma quantidade de tempo como referência, por exemplo: 24 horas é igual a 1 dia, 7 dias é igual a 1 semana ou 30 dias é igual a 1 mês e por ai vai. Você pode começar definindo quantas horas leva um dia de seu mundo, e depois usar a base solar ou lunar para definir os anos.</li>
+                    <li>Crie seus eventos, feriados, festivais, fases da lua, períodos sazonais e tudo que ache pertinente para o seu calendário.</li>
+                    <li>Desenvolva um layout agradável para a leitura do calendário com base na sua lógica de criação.</li>
+                </ol>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/venturo-d10/js/venturo_lib.js"></script>
+</body>
+
+</html>
