@@ -105,8 +105,11 @@
                     Primeiro defina o seu grupo de moedas, pode ser 1,2,3,5,10 tanto faz. Depois você vai criar uma tabela da moeda mais cara para mais barata. Em seguida você vai criar as colunas: <b>Nome</b>, <b>Símbolo</b>, <b>Material</b>, <b>Peso</b>. Cada moeda vai ter seu nome original, e um símbolo que a represente, por exemplo, Nome <b>“Auron”</b> símbolo <b>“AU”</b>. Depois vem o material, se sua moeda for física coloque a porcentagem de quantos material foi usado nela, por exemplo: Material “<b>80% Prata</b>, <b>20% Cobre</b>”, em seguida coloque seu peso em Gramas.
                 </p>
                 <p>
-                    Você ainda pode fazer seus <b>pesos monetário</b> em porcentagem. Para isso pegue sua moeda mais cara e defina como <b>100%</b>. Ele será nossa base para definirmos o peso das demais moedas. Agora vai descendo da mais alta para a mais cara. Agora na segunda moeda definimo quantas dela precisamos para ter a primeira, nesse caso 2, então fazemos a conta, 100/2 e teremos 50, ou seja, a segunda moeda tem um peso monetário de 50%. A terceira vai ser o seguinte: Para termos peso monetário de 100% com a terceira moeda precisamos de 8 delas, sendo assim <b>100/8 = 12,5%</b> e isso vale para todas as moedas.            
+                    Você ainda pode fazer seus <b>pesos monetário</b> em porcentagem. Para isso pegue sua moeda mais cara e defina como <b>100%</b>. Ele será nossa base para definirmos o peso das demais moedas. Agora vai descendo da mais alta para a mais cara. Agora na segunda moeda definimo quantas dela precisamos para ter a primeira, nesse caso 2, então fazemos a conta, 100/2 e teremos 50, ou seja, a segunda moeda tem um peso monetário de 50%. A terceira vai ser o seguinte: Para termos peso monetário de 100% com a terceira moeda precisamos de 8 delas, sendo assim <b>100/8 = 12,5%</b> e isso vale para todas as moedas.           
                 </p>
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> Guarde o valor dessas moedas para criarmos a primeira linha do <b>valor dos pares</b></i>
+                </div>
                 <p>
                     Imagine que eu tenha criado um reino que trabalhe com três moedas apenas, essas são: <b>Aerion</b>, <b>Draji</b> e <b>Coiny</b>, vamos definir os seus atributos e pesos monetários:
                 </p>
@@ -154,8 +157,15 @@
                 </div>
 
                 <p>
-                    Agora com os pesos monetários criados, podemos atribuir valor a cada par de moedas, ou seja, quantas moedas eu preciso para ter o valor semelhante a outra, para isso usamos a regra de três. Então quantas moedas de Coiny preciso para ter uma de Aerion? Se cada Aerion vale 100% e o peso monetário da moeda de Coiny é de 4%, então preciso ter 25 moedas para ter uma de Aerion. E usamos essa fórmula para todos os pares, formando a seguinte tabela a baixo:
+                    Agora com os pesos monetários criados, podemos atribuir valor a cada par de moedas, ou seja, quantas moedas eu preciso para ter o valor semelhante a outra, para isso definiremos a primeira linha da tabela com os valores já discutidos anteriormente. Em seguida definiremos as demais linhas usando <b>regra de três</b>. Então sabemos que para <b>1 AR</b> precisamos de <b>25 CY</b>, mas e para <b>1 DR</b>, quantos <b>CY</b> são necessários? Então eu pego a primeira linha onde temos que <b>25 CY</b> é igual a <b>2 DR</b>, e então faço a conta:
                 </p>
+                <p>
+                    <b>1DR.25 CY = 2DRx => 25CY/2DR = 12,5 = 13CY</b>
+                </p>
+                <p>
+                    E com essa lógica eu estruturo a tabela como podemos ver a baixo:
+                </p>
+
 
                 <p><b>VALOR DOS PARES:</b></p>
                 <div class="table-responsive">
@@ -432,7 +442,7 @@
                     Explore como o setor de saúde funciona em seu mundo fictício. Existem profissionais de saúde especializados? Quais são os principais métodos de tratamento e cuidados médicos disponíveis? Existe um sistema de saúde abrangente ou são apenas serviços básicos? Considere também a relação entre medicina tradicional e alternativa, bem como a importância da prevenção e bem-estar.
                 </p>
                 <p>
-                   <b> Militar:</b>
+                    <b> Militar:</b>
                 </p>
                 <p>
                     Pense na presença de forças militares ou de segurança em seu mundo fictício. Qual é o papel do setor militar na sociedade? Há uma hierarquia clara e um código de conduta? Quais são as principais ameaças ou conflitos que eles enfrentam? Considere também a relação entre o militarismo e a política, bem como o impacto que o setor militar tem na vida cotidiana dos cidadãos.
