@@ -257,7 +257,7 @@ export class VenturoSumarioRegras extends HTMLElement{
                                 </li>
     
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/venturo-d10/paginas/regras/06-regras/18-atributoraca.html">Níveis dos Atributos de Raça</a>
+                                    <a class="nav-link" href="/venturo-d10/paginas/regras/06-regras/18-atributoraca.html">Bônus Racial</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="/venturo-d10/paginas/regras/06-regras/19-exaustao.html">Exaustão</a>
