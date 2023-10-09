@@ -211,22 +211,22 @@ export class VenturoSumarioCriacao extends HTMLElement {
                     <div class="card-body">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="/venturo-d10/paginas/criacao/07-armas/01-armas.html">Armas</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/criacao/08-armas/01-armas.html">Armas</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/venturo-d10/paginas/criacao/07-armas/02-fogo.html">Armas de Fogo, Energia e Antimatéria</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/criacao/08-armas/02-fogo.html">Armas de Fogo, Energia e Antimatéria</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/venturo-d10/paginas/criacao/07-armas/03-branca.html">Armas Brancas</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/criacao/08-armas/03-branca.html">Armas Brancas</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/venturo-d10/paginas/criacao/07-armas/04-bombas.html">Bombas</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/criacao/08-armas/04-bombas.html">Bombas</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/venturo-d10/paginas/criacao/07-armas/05-poder.html">Grande Poder</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/criacao/08-armas/05-poder.html">Grande Poder</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/venturo-d10/paginas/criacao/07-armas/06-tabela.html">Tabela de Referencia</a>
+                                <a class="nav-link" href="/venturo-d10/paginas/criacao/08-armas/06-tabela.html">Tabela de Referencia</a>
                             </li>
                     </div>
                 </div>
