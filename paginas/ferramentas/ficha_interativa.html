@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/venturo-d10/../../static/imagens/favicon_personagem.webp">
+
+    <!--Importando o Bootstrap5-->
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/venturo-d10/../../static/css/ficha_interativa.css">
+    <title>Home</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <nav class="navbar navbar-expand-sm" id="menu-superior">
+        <div class="container-fluid">
+            <h3 class="text-light">Ficha de Personagem</h3>
+            <form class="d-flex">
+                
+                    <button id="salvar-personagem" class="btn btn-light" type="button" style="margin-right: 5px;">Salvar</button>
+                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#Carregar-personagem-modal">
+                        Carregar
+                    </button>
+                    <!-- The Modal -->
+                    <div class="modal" id="Carregar-personagem-modal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Carregar Arquivo de Personagem</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <label class="form-label mx-auto">Selecione o Arquivo</label>
+                                    <input id="file-json-personagem" type="file" class="form-control">
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button id="btn-carregar-personagem" type="button" class="btn btn-primary">Carregar</button>
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+            </form>
+        </div>
+    </nav>
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-12">
+
+
+                <!-- Títulos do Menu -->
+                <ul class="nav nav-tabs justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#home">Ficha 01</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#menu1">Ficha 02</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#menu2">Confronto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#menu3">Inventário</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#menu4">Ações Proficientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#menu5">Conhecimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#menu6">Habilidades Exclusivas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#menu7">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#menu8">Lore do Personagem</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+
+                    <!--Primeira Ficha de Personagem-->
+                    <div class="tab-pane container active" id="home">
+                        <form action="#" id="Primeira-Ficha">
+                            <br>
+                            <h3 class="text-center border-bottom border-3">Informações Gerais</h3>
+                            <div class="row">
+
+
+                                <div class="col-sm-4 text-center">
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img id="imagem-thumb" src="/venturo-d10/../../static/imagens/ferramentas/perfil.webp"
+                                                class="img-thumbnail rounded-5" alt="Cinque Terre">
+                                            <div class="d-grid">
+                                                <button type="button" class="btn btn-primary btn-block"
+                                                    data-bs-toggle="modal" data-bs-target="#AlterarImagem">Alterar
+                                                    Imagem</button>
+                                            </div>
+                                            <!--Modal da alteração-->
+                                            <div class="modal" id="AlterarImagem">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+
+                                                        <!-- Modal Header -->
+                                                        <div class="modal-header">
+                                                            <h4 class="modal-title">Link da Imagem</h4>
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal"></button>
+                                                        </div>
+
+                                                        <!-- Modal body -->
+                                                        <div class="modal-body">
+                                                            <input id="input-link-img" type="text" class="form-control"
+                                                                placeholder="Link Válido da Imagem">
+                                                        </div>
+
+                                                        <!-- Modal footer -->
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-danger"
+                                                                data-bs-dismiss="modal">Close</button>
+                                                            <button onclick="alterar_imagem(this)" type="button"
+                                                                class="btn btn-primary"
+                                                                data-bs-dismiss="modal">Alterar</button>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-4 text-center">
+
+                                    <label class="form-label mx-auto">Campanha</label>
+                                    <input type="text" style="text-align: center;" class="form-control-plaintext"
+                                        id="campanha" placeholder="Nome da Campanha" name="Campanha">
+
+                                    <label class="form-label">Personagem</label>
+                                    <input type="text" style="text-align: center;" class="form-control-plaintext"
+                                        id="Personagem" placeholder="Nome da Personagem" name="Personagem">
+
+                                    <label class="form-label">Jogador</label>
+                                    <input type="text" style="text-align: center;" class="form-control-plaintext"
+                                        id="Jogador" placeholder="Nome da Jogador" name="Jogador">
+
+                                    <label class="form-label">Raça</label>
+                                    <input type="text" style="text-align: center;" class="form-control-plaintext"
+                                        id="Raça" placeholder="Nome da Raça e Especie" name="Raça">
+                                </div>
+                                <div class="col-sm-4 text-center">
+                                    <div class="row">
+                                        <h4>Bônus Racial</h4>
+                                        <div class="col">
+                                            <label class="form-label">For</label>
+                                            <input type="number" style="text-align: center;"
+                                                class="form-control-plaintext" id="Bonus-For" placeholder="Valor"
+                                                name="Bonus-For">
+                                        </div>
+                                        <div class="col">
+                                            <label class="form-label">Des</label>
+                                            <input type="number" style="text-align: center;"
+                                                class="form-control-plaintext" id="Bonus-Des" placeholder="Valor"
+                                                name="Bonus-Des">
+                                        </div>
+                                        <div class="col">
+                                            <label class="form-label">Res</label>
+                                            <input type="number" style="text-align: center;"
+                                                class="form-control-plaintext" id="Bonus-Res" placeholder="Valor"
+                                                name="Bonus-Res">
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <br>
+                            <h3 class="text-center border-bottom border-3">Aparência</h3>
+                            <div class="row">
+                                <div class="col text-center">
+                                    <label class="form-label mx-auto">Personalidade</label>
+                                    <input type="text" style="text-align: center;" class="form-control-plaintext"
+                                        id="Personalidade" placeholder="Personalidade..." name="Personalidade">
+
+                                    <label class="form-label mx-auto">Cor do Cabelo</label>
+                                    <input type="text" style="text-align: center;" class="form-control-plaintext"
+                                        id="Cor-Cabelo" placeholder="Cor do Cabelo..." name="Cor-Cabelo">
+
+                                    <label class="form-label mx-auto">Altura</label>
+                                    <input type="number" style="text-align: center;" class="form-control-plaintext"
+                                        id="Altura" placeholder="Altura do Personagem" name="Altura">
+                                </div>
+
+                                <div class="col text-center">
+                                    <label class="form-label mx-auto">Comportamento</label>
+                                    <input type="text" style="text-align: center;" class="form-control-plaintext"
+                                        id="Comportamento" placeholder="Comportamento..." name="Comportamento">
+
+                                    <label class="form-label mx-auto">Cor dos Olhos</label>
+                                    <input type="text" style="text-align: center;" class="form-control-plaintext"
+                                        id="Cor-Olhos" placeholder="Cor dos Olhos..." name="Cor-Olhos">
+
+                                    <label class="form-label mx-auto">Peso</label>
+                                    <input type="number" style="text-align: center;" class="form-control-plaintext"
+                                        id="Peso" placeholder="Peso do Personagem" name="Peso">
+                                </div>
+
+                                <div class="col text-center">
+                                    <label class="form-label mx-auto">Idade Aparente</label>
+                                    <input type="text" style="text-align: center;" class="form-control-plaintext"
+                                        id="Idade" placeholder="Idade..." name="Idade">
+
+                                    <label class="form-label mx-auto">Sexo</label>
+                                    <input type="text" style="text-align: center;" class="form-control-plaintext"
+                                        id="Sexo" placeholder="Sexo do Personagem" name="Sexo">
+                                </div>
+                            </div>
+                            <br>
+                            <!-- EScudo e Armadura-->
+
+                            <div class="row">
+                                <div class="col">
+                                    <h3 class="text-center">Escudos</h3>
+                                    <div class="card_atributos shadow">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Nome</span>
+                                            <input type="text" class="form-control" id="Escudo-Nome">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">Vigor</span>
+                                                    <input type="text" class="form-control" id="Escudo-Vigor">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">Resistência</span>
+                                                    <input type="text" class="form-control" id="Escudo-Resistencia">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">Consumo</span>
+                                                    <input type="text" class="form-control" id="Escudo-Consumo">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">Energia</span>
+                                                    <input type="text" class="form-control" id="Escudo-Energia">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <h3 class="text-center">Armadura</h3>
+                                    <div class="card_atributos shadow">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Nome</span>
+                                            <input type="text" class="form-control" id="Armadura-Nome">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">Vigor Armadura</span>
+                                                    <input type="text" class="form-control" id="Armadura-Vigor">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">PCA</span>
+                                                    <input type="text" class="form-control" id="Armadura-PCA">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">Durabilidade</span>
+                                                    <input type="text" class="form-control" id="Armadura-Durabilidade">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">PPD</span>
+                                                    <input type="text" class="form-control" id="Armadura-PPD">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">Bateria</span>
+                                                    <input type="text" class="form-control" id="Armadura-Bateria">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">CDN</span>
+                                                    <input type="text" class="form-control" id="Armadura-CDN">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">AC</span>
+                                                    <input type="text" class="form-control" id="Armadura-AC">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <br>
+                            <h3 class="text-center border-bottom border-3">Atributos</h3>
+                            <div class="row">
+                                <div class="col text-center">
+                                    <div class="card_atributos shadow">
+                                        <label class="form-label">Força</label>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Nível</span>
+                                            <input type="number" min="0" max="6" class="form-control"
+                                                id="Atributo-Forca">
+                                        </div>
+                                        <p>Bonificação/Penalidade</p>
+                                        <input type="text" style="text-align: center;" class="form-control-plaintext"
+                                            id="Boni-Atributo-Forca" placeholder="Valor" name="Boni-Atributo-Forca">
+                                    </div>
+                                </div>
+
+                                <div class="col text-center">
+                                    <div class="card_atributos shadow">
+                                        <label class="form-label">Destreza</label>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Nível</span>
+                                            <input type="number" min="0" max="6" class="form-control"
+                                                id="Atributo-Destreza">
+                                        </div>
+                                        <p>Bonificação/Penalidade</p>
+                                        <input type="text" style="text-align: center;" class="form-control-plaintext"
+                                            id="Boni-Atributo-Destreza" placeholder="Valor"
+                                            name="Boni-Atributo-Destreza">
+                                    </div>
+                                </div>
+
+                                <div class="col text-center">
+                                    <div class="card_atributos shadow">
+                                        <label class="form-label">Resistência</label>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Nível</span>
+                                            <input type="number" min="0" max="6" class="form-control"
+                                                id="Atributo-Resistencia">
+                                        </div>
+                                        <p>Bonificação/Penalidade</p>
+                                        <input type="text" style="text-align: center;" class="form-control-plaintext"
+                                            id="Boni-Atributo-Resistencia" placeholder="Valor"
+                                            name="Boni-Atributo-Resistencia">
+                                    </div>
+                                </div>
+
+                                <div class="col text-center">
+                                    <div class="card_atributos shadow">
+                                        <label class="form-label">Constituição</label>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Nível</span>
+                                            <input type="number" min="0" max="6" class="form-control"
+                                                id="Atributo-Constituicao">
+                                        </div>
+                                        <p>Bonificação/Penalidade</p>
+                                        <input type="text" style="text-align: center;" class="form-control-plaintext"
+                                            id="Boni-Atributo-Constituicao" placeholder="Valor"
+                                            name="Boni-Atributo-Constituicao">
+                                    </div>
+                                </div>
+
+                                <div class="col text-center">
+                                    <div class="card_atributos shadow">
+                                        <label class="form-label">Carisma</label>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Nível</span>
+                                            <input type="number" min="0" max="6" class="form-control"
+                                                id="Atributo-Carisma">
+                                        </div>
+                                        <p>Bonificação/Penalidade</p>
+                                        <input type="text" style="text-align: center;" class="form-control-plaintext"
+                                            id="Boni-Atributo-Carisma" placeholder="Valor" name="Boni-Atributo-Carisma">
+                                    </div>
+                                </div>
+
+                                <div class="col text-center">
+                                    <div class="card_atributos shadow">
+                                        <label class="form-label">Percepção</label>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Nível</span>
+                                            <input type="number" min="0" max="6" class="form-control"
+                                                id="Atributo-Percepcao">
+                                        </div>
+                                        <p>Bonificação/Penalidade</p>
+                                        <input type="text" style="text-align: center;" class="form-control-plaintext"
+                                            id="Boni-Atributo-Percepcao" placeholder="Valor"
+                                            name="Boni-Atributo-Percepcao">
+                                    </div>
+                                </div>
+
+                                <div class="col text-center">
+                                    <div class="card_atributos shadow">
+                                        <label class="form-label">Sabedoria</label>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Nível</span>
+                                            <input type="number" min="0" max="6" class="form-control"
+                                                id="Atributo-Sabedoria">
+                                        </div>
+                                        <p>Bonificação/Penalidade</p>
+                                        <input type="text" style="text-align: center;" class="form-control-plaintext"
+                                            id="Boni-Atributo-Sabedoria" placeholder="Valor"
+                                            name="Boni-Atributo-Sabedoria">
+                                    </div>
+                                </div>
+
+                                <div class="col text-center">
+                                    <div class="card_atributos shadow">
+                                        <label class="form-label">Inteligência</label>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Nível</span>
+                                            <input type="number" min="0" max="6" class="form-control"
+                                                id="Atributo-Inteligencia">
+                                        </div>
+                                        <p>Bonificação/Penalidade</p>
+                                        <input type="text" style="text-align: center;" class="form-control-plaintext"
+                                            id="Boni-Atributo-Inteligencia" placeholder="Valor"
+                                            name="Boni-Atributo-Inteligencia">
+                                    </div>
+                                </div>
+
+                                <div class="col text-center">
+                                    <div class="card_atributos shadow">
+                                        <label class="form-label">Poder</label>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Nível</span>
+                                            <input type="number" min="0" max="6" class="form-control"
+                                                id="Atributo-Poder">
+                                        </div>
+                                        <p>Bonificação/Penalidade</p>
+                                        <input type="text" style="text-align: center;" class="form-control-plaintext"
+                                            id="Boni-Atributo-Poder" placeholder="Valor" name="Boni-Atributo-Poder">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <br>
+
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="card_atributos shadow">
+                                        <h3 class="text-center">Perceverança</h3>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Total</span>
+                                            <input type="number" min="0" max="20" class="form-control"
+                                                id="Perceveranca-Total">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Gastos</span>
+                                            <input type="number" min="0" max="20" class="form-control"
+                                                id="Perceveranca-Gasta">
+                                        </div>
+                                    </div>
+
+                                    <div class="card_atributos shadow">
+                                        <h3 class="text-center">Coragem</h3>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Nível</span>
+                                            <input type="number" min="1" max="10" class="form-control"
+                                                id="Coragem-Nivel">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <div class="card_atributos shadow">
+                                        <h3 class="text-center">CLOL</h3>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Total</span>
+                                            <input type="number" min="0" max="40" class="form-control" id="Clol-Total">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Gastos</span>
+                                            <input type="number" min="0" max="40" class="form-control" id="Clol-Gasto">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Bonificação</span>
+                                            <input type="number" class="form-control" id="Clol-Bonificacao">
+                                        </div>
+                                    </div>
+                                    <div class="card_atributos shadow">
+                                        <h3 class="text-center">Bondade</h3>
+                                        <h5 class="text-center" id="contador-bondade">Mal < 0> Bom</h5>
+                                        <input style="width: 100%;" type="range" min="-10" max="10" value="0"
+                                            id="bondade_controle">
+                                        <p class="text-center" id="status-bondade">Neutro</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <div class="card_atributos shadow">
+                                        <h3 class="text-center">Pontos de Ação</h3>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Recebidos</span>
+                                            <input type="number" min="1" max="6" class="form-control"
+                                                id="Pontos-Acao-Total">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Gastos</span>
+                                            <input type="number" min="0" max="6" class="form-control"
+                                                id="Pontos-Acao-Gasto">
+                                        </div>
+                                    </div>
+                                    <div class="card_atributos shadow">
+                                        <h3 class="text-center">Pontos de XP</h3>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Valor</span>
+                                            <input type="number" class="form-control" id="Pontos-XP">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <br>
+                            <h3 class="text-center border-bottom border-3">Pericias</h3>
+                            <ul class="nav justify-content-end">
+                                <button type="button" class="btn btn-dark" id="add-pericia" data-bs-toggle="tooltip"
+                                    title="Adicionar Pericia">+</button>
+                            </ul>
+                            <div id="pericias-container">
+
+                            </div>
+
+
+                        </form>
+                    </div>
+
+                    <!-- Segunda Ficha de Personagem-->
+                    <div class="tab-pane container fade" id="menu1">
+                        <form action="#" id="Segunda-Ficha">
+                            <br>
+                            <h3 class="text-center border-bottom border-3">Vitalidade</h3>
+                            <div class="row">
+                                <div class="col">
+                                    <h4>Bonificação de Vitalidade</h4>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">Total</span>
+                                        <input type="number" class="form-control" id="vitalidade-bonificacao-total">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">Gastos</span>
+                                        <input type="number" class="form-control" id="vitalidade-bonificacao-gasto">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <h4>Vitalidade Do Personagem</h4>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">Valor</span>
+                                        <input oninput="alterar_status_vitalidade()" type="number" min="0" max="40"
+                                            class="form-control" id="vitalidade-total">
+                                    </div>
+
+                                    <h5 id="status-vitalidade">Status: Valor</h5>
+                                </div>
+                            </div>
+
+                            <br>
+                            <h3 class="text-center border-bottom border-3">Treino</h3>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="card_atributos shadow">
+                                        <input type="text" class="form-control-plaintext"
+                                            placeholder="Atributo em Treino" id="atributo-treino-slot-1">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">Qtd Treino</span>
+                                                    <input type="number" min="0" max="16" class="form-control"
+                                                        id="qtd-treino-slot-1">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">Treinado</span>
+                                                    <input type="number" class="form-control" id="treinado-slot-1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="card_atributos shadow">
+                                        <input type="text" class="form-control-plaintext"
+                                            placeholder="Atributo em Treino" id="atributo-treino-slot-2">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">Qtd Treino</span>
+                                                    <input type="number" min="0" max="16" class="form-control"
+                                                        id="qtd-treino-slot-2">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">Treinado</span>
+                                                    <input type="number" class="form-control" id="treinado-slot-2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="card_atributos shadow">
+                                        <input type="text" class="form-control-plaintext"
+                                            placeholder="Atributo em Treino" id="atributo-treino-slot-3">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">Qtd Treino</span>
+                                                    <input type="number" min="0" max="16" class="form-control"
+                                                        id="qtd-treino-slot-3">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">Treinado</span>
+                                                    <input type="number" class="form-control" id="treinado-slot-3">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="card_atributos shadow">
+                                        <input type="text" class="form-control-plaintext"
+                                            placeholder="Atributo em Treino" id="atributo-treino-slot-4">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">Qtd Treino</span>
+                                                    <input type="number" min="0" max="16" class="form-control"
+                                                        id="qtd-treino-slot-4">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">Treinado</span>
+                                                    <input type="number" class="form-control" id="treinado-slot-4">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <br>
+                            <!--Habilidades e aquisições-->
+                            <div class="row">
+                                <div class="col-sm-6" id="container-habilidade">
+                                    <h3 class="text-center border-bottom border-3">Habilidades</h3>
+                                    <ul class="nav justify-content-end">
+                                        <button type="button" class="btn btn-dark" id="add-habilidade"
+                                            data-bs-toggle="tooltip" title="Adicionar Habilidade">+</button>
+                                    </ul>
+
+                                </div>
+
+                                <div class="col-sm-6" id="container-aquisicoes">
+                                    <h3 class="text-center border-bottom border-3">Aquisições</h3>
+                                    <ul class="nav justify-content-end">
+                                        <button type="button" class="btn btn-dark" id="add-aquisicao"
+                                            data-bs-toggle="tooltip" title="Adicionar Aquisições">+</button>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                            <br>
+                            <h3 class="text-center border-bottom border-3">Vantagens e Desvantagens</h3>
+                            <ul class="nav justify-content-end">
+                                <button type="button" class="btn btn-dark" id="add-vantagem-desvantagem"
+                                    data-bs-toggle="tooltip" title="Adicionar Vantagem">+</button>
+                            </ul>
+                            <div class="row" id="container-vantagem-desvantagem">
+
+                            </div>
+                            <br>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h3 class="text-center border-bottom border-3">Recursos</h3>
+                                    <ul class="nav justify-content-end">
+                                        <button type="button" class="btn btn-dark" id="add-moeda"
+                                            data-bs-toggle="tooltip" title="Adicionar Moeda">+</button>
+                                    </ul>
+                                    <div class="row" id="container-recursos">
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h3 class="text-center border-bottom border-3">Idiomas</h3>
+                                    <ul class="nav justify-content-end">
+                                        <button type="button" class="btn btn-dark" id="add-idioma"
+                                            data-bs-toggle="tooltip" title="Adicionar Idioma">+</button>
+                                    </ul>
+                                    <div class="row" id="container-idiomas">
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </form>
+                    </div>
+
+                    <!-- Ficha de Confronto-->
+                    <div class="tab-pane container fade" id="menu2">
+                        <form action="#" id="Terceira-Ficha">
+                            <br>
+                            <br>
+                            <h3 class="text-center border-bottom border-3">Confronto</h3>
+                            <h4 class="text-center">Armas de Fogo - Energia e Antimatéria</h4>
+                            <ul class="nav justify-content-end">
+                                <button type="button" class="btn btn-dark" id="add-arma-fogo" data-bs-toggle="tooltip"
+                                    title="Adicionar Armas de Fogo">+</button>
+                            </ul>
+
+                            <div class="row" id="container-armas-fogo">
+
+                            </div>
+
+                            <br><br>
+                            <h3 class="text-center border-bottom border-3">Armas Brancas</h3>
+                            <ul class="nav justify-content-end">
+                                <button type="button" class="btn btn-dark" id="add-arma-branca" data-bs-toggle="tooltip"
+                                    title="Adicionar Armas Brancas">+</button>
+                            </ul>
+
+                            <div class="row" id="container-armas-brancas">
+
+                            </div>
+
+
+                            <br><br>
+                            <h3 class="text-center border-bottom border-3">Bombas</h3>
+                            <ul class="nav justify-content-end">
+                                <button type="button" class="btn btn-dark" id="add-bombas" data-bs-toggle="tooltip"
+                                    title="Adicionar Bombas">+</button>
+                            </ul>
+                            <div class="row" id="container-bombas">
+
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Ficha de Inventário-->
+                    <div class="tab-pane container fade" id="menu3">
+                        <form action="#" id="Ficha-Inventario">
+                            <br>
+                            <br>
+                            <h3 class="text-center border-bottom border-3">Inventário</h3>
+                            <ul class="nav justify-content-end">
+                                <button type="button" class="btn btn-dark" id="add-item-inventario"
+                                    data-bs-toggle="tooltip" title="Adicionar Armas Brancas">+</button>
+                            </ul>
+                            <div class="row" id="container-inventario">
+
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Fciha de Ações Proficientes -->
+                    <div class="tab-pane container fade" id="menu4">
+                        <form action="#" id="Ficha-Conhecimentos">
+                            <br>
+                            <br>
+                            <h3 class="text-center border-bottom border-3">Ações Proficientes</h3>
+                            <ul class="nav justify-content-end">
+                                <button type="button" class="btn btn-dark" id="add-acoes" data-bs-toggle="tooltip"
+                                    title="Adicionar Ação Proficiente">+</button>
+                            </ul>
+                            <div class="row" id="container-acoes-proficientes">
+
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Ficha de Conhecimentos -->
+                    <div class="tab-pane container fade" id="menu5">
+                        <form action="#" id="Ficha-Conhecimentos">
+                            <br>
+                            <br>
+                            <h3 class="text-center border-bottom border-3">Conhecimentos</h3>
+                            <ul class="nav justify-content-end">
+                                <button type="button" class="btn btn-dark" id="add-conhecimento"
+                                    data-bs-toggle="tooltip" title="Adicionar Ação Proficiente">+</button>
+                            </ul>
+                            <div class="row" id="container-conhecimentos">
+
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Ficha de habilidades gerais -->
+                    <div class="tab-pane container fade" id="menu6">
+                        <form action="#" id="Ficha-habilidades">
+                            <br>
+                            <br>
+                            <h3 class="text-center border-bottom border-3">Habilidades Secundárias</h3>
+                            <ul class="nav justify-content-end">
+                                <button type="button" class="btn btn-dark" id="add-hab-secundaria"
+                                    data-bs-toggle="tooltip" title="Adicionar Habilidade Secundária">+</button>
+                            </ul>
+                            <div class="row" id="container-hab-secundarias">
+
+                            </div>
+
+                            <br>
+                            <h3 class="text-center border-bottom border-3">Habilidades Exclusivas</h3>
+
+                            <br>
+                            <h4 class="text-center"> Habilidades Não Evolutivas</h4>
+                            <ul class="nav justify-content-end">
+                                <button type="button" class="btn btn-dark" id="add-hab-exclusiva"
+                                    data-bs-toggle="tooltip" title="Adicionar Habilidades Exclusivas">+</button>
+                            </ul>
+                            <div class="row" id="container-hab-exclusiva">
+
+                            </div>
+                            <br>
+                            <h4 class="text-center"> Habilidades Evolutivas</h4>
+                            <ul class="nav justify-content-end">
+                                <button type="button" class="btn btn-dark" id="add-hab-exclusiva-2"
+                                    data-bs-toggle="tooltip"
+                                    title="Adicionar Habilidades Exclusivas evolutiva">+</button>
+                            </ul>
+                            <div class="row" id="container-hab-exclusiva-2">
+
+                            </div>
+                    </div>
+
+                     <!-- Ficha de Classes -->
+                     <div class="tab-pane container fade" id="menu7">                         
+                        <br><br>
+                        <h3 class="text-center">Classes de Personagem</h3>
+                        
+                        <div class="d-grid">
+                            <button data-bs-toggle="collapse" data-bs-target="#classe-primaria-container" type="button" class="btn btn-outline-dark btn-block">Classes Primarias</button>
+                          </div>
+                        <div id="classe-primaria-container" class="collapse">
+                            <br>
+                            <ul class="nav justify-content-end">
+                                <button type="button" class="btn btn-dark" id="add-classe-primaria"
+                                    data-bs-toggle="tooltip" title="Adicionar Habilidade Secundária">+</button>
+                            </ul>
+                            
+                        </div>
+                        <br>
+                        <div class="d-grid">
+                            <button data-bs-toggle="collapse" data-bs-target="#classe-secundaria-container" type="button" class="btn btn-outline-dark btn-block">Classes Secundárias</button>
+                          </div>
+                        <div id="classe-secundaria-container" class="collapse">
+                            <br>
+                            <ul class="nav justify-content-end">
+                                <button type="button" class="btn btn-dark" id="add-classe-secundaria"
+                                    data-bs-toggle="tooltip" title="Adicionar Habilidade Secundária">+</button>
+                            </ul>
+
+                            
+
+                        </div>
+                    </div>
+
+                    <!-- Ficha de Lore do Personagem -->
+                    <div class="tab-pane container fade" id="menu8">
+                        <form action="#" id="Ficha-habilidades">
+                            <br>
+                            <br>
+                            <h3 class="text-center border-bottom border-3">Lore do Personagem</h3>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <ul class="nav justify-content-end">
+                                        <button type="button" class="btn btn-dark" id="editar-historia"
+                                            data-bs-toggle="tooltip" title="Editar História">Editar</button>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="historia-personagem" contenteditable="false" class="col-sm-12">
+                                História do Personagem...
+                            </div>
+
+
+                    </div>
+
+
+
+                    </form>
+                </div>
+            </div>
+
+            <footer>
+                <p>
+
+                </p>
+            </footer>
+
+        </div>
+    </div>
+    </div>
+</body>
+<!-- Scripts da Página -->
+
+<script src="/venturo-d10/../../js/pagina_personagem.js"></script>
+<script src="/venturo-d10/../../js/salvar_personagem.js"></script>
+<script src="/venturo-d10/../../js/carregar_personagem.js"></script>
+
+</html>

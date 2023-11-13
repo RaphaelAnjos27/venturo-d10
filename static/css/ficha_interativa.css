@@ -1,0 +1,51 @@
+label {
+    font-size: 1.3em;
+}
+
+#menu-superior{
+    background-image: url("../imagens/thump_menu.webp");
+}
+
+.card_atributos {
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    border-radius: 15px;
+    padding: 10px;
+
+}
+
+#historia-personagem {
+    text-align: justify;
+    padding: 5px 25px 10px 25px;
+    text-justify: inter-word;
+    height: auto;
+    /* Configura a altura para ajustar automaticamente ao conteúdo */
+    overflow: hidden;
+    /* Para limpar floats (se aplicável) */
+    resize: none;
+}
+
+[contenteditable="true"]:focus {
+    outline: none;
+}
+
+.modo-editavel{
+    border-style: solid;
+    border-width: 0px 0px 0px 3px;
+    border-color: rgb(27, 27, 27);
+}
+
+
+@media only screen and (max-width: 600px) {
+    #historia-personagem {
+        padding-right: 0px;
+        padding-left: 1px;
+        padding: 5px 0px 10px 1px;
+        text-justify: inter-word;
+        height: auto;
+        /* Configura a altura para ajustar automaticamente ao conteúdo */
+        overflow: hidden;
+        /* Para limpar floats (se aplicável) */
+        resize: none;
+    }
+}
