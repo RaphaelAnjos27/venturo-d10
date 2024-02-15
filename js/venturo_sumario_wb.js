@@ -45,6 +45,9 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
                                         <li class="nav-item">
                                             <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/01-introducao/06-organizando.html">Organizando o Worldbuilding</a>
                                         </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/01-introducao/07-pontas-soltas.html">Pontas Soltas na Criação de Mundos</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
