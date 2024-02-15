@@ -10,7 +10,7 @@ export class VenturoFooter extends HTMLElement{
         <link rel="stylesheet" href="/venturo-d10/static/css/index.css">
         
         <footer class="mt-5 p-4 bg-dark text-white text-center">
-            <p>© Todos direitos Reservados a Raphael dos Anjos – 2023</p>
+            <p>© Todos direitos Reservados a Raphael dos Anjos – 2024</p>
             <p>
                 Versão do Sistema: 2.0.0
             </p>
