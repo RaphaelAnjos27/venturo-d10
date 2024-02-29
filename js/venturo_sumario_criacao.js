@@ -43,6 +43,9 @@ export class VenturoSumarioCriacao extends HTMLElement {
                             <li class="nav-item">
                                 <a class="nav-link" href="/venturo-d10/paginas/criacao/01-introducao/06-cenario.html">Cenários</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/venturo-d10/paginas/criacao/01-introducao/07-organizacao.html">Organização de Mundo</a>
+                            </li>
                     </div>
                 </div>
             </div>
