@@ -31,6 +31,9 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
                                             <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/01-introducao/01-conceitos.html">Conceitos Básicos</a>
                                         </li>
                                         <li class="nav-item">
+                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/01-introducao/01.01-referencias.html">Referencias na Criação de Mundos</a>
+                                        </li>
+                                        <li class="nav-item">
                                             <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/01-introducao/02-resumo.html">Resumo de Worldbuilding</a>
                                         </li>
                                         <li class="nav-item">

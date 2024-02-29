@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referencias na Criação de Mundos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/venturo-d10/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/venturo-d10/static/css/wb.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criação de Mundos</h1>
+        <p>
+            Embora a seção de criação ofereça dicas para o processo de construção de mundos (<i>conhecido como
+                Worldbuilding</i>), encare esta seção como um suplemento abrangente destinado a aprofundar ainda mais
+            essa categoria.
+        </p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-wb></venturo-sumario-wb>
+            </div>
+
+            <div class="col-sm-7">
+                <!--Conteudo da Página-->
+                <div id="sumario" class="container rounded shadow p-4 mb-4 bg-white">
+                    <h6>Sumário:</h6>
+                </div>
+                <script src="/venturo-d10/js/sumario.js"></script>
+
+                <!--
+                    
+                    <div class="card-body">
+                        <h4 class="card-title">Eärtland RPG e Worldbuilding</h4>
+                        <h6><b>Idioma: </b>Português</h6>
+                        <p class="card-text">
+                            O primeiro local onde aprendi sobre o conceito de Wb, e o mais popular aqui no Brasil sobre
+                            o assunto. Nesse canal do Youtube você irá aprender diversos conceitos importantes sobre a
+                            criação de mundos, RPG de mesa e escrita criativa. Vale muito a pena conhecer esse canal e
+                            participar de sua comunidade.
+                        </p>
+                        <div class="clearfix">
+                            <a href="#" class="btn btn-outline-danger float-end" target="_blank" style="text-decoration: none; color:red;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                                </svg>
+                                Youtube
+                            </a>
+                            <a href="#" class="btn btn-outline-primary float-end me-3" target="_blank" style="text-decoration: none;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-globe" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
+                                </svg>
+                                Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                -->
+
+                <h2>Referencias na Criação de Mundos</h2>
+                <hr />
+                <p>
+                    Desde o início do projeto do Sistema Venturo, encontrei minha principal fonte de inspiração nos
+                    canais dedicados ao RPG de mesa. Inicialmente, o conceito de <b>Worldbuilding</b> não fazia parte do
+                    meu escopo, então não me aprofundei nessas informações. Minha introdução a esse conceito ocorreu
+                    através do canal do Youtube chamado <b>Eärtland RPG e Worldbuilding</b>, uma referência primordial
+                    em meu processo criativo. Muitos dos artigos que escrevi foram inspirados por esse canal.
+                </p>
+                <p>
+                    Imediatamente após descobrir esse canal e mergulhar no conceito de criação de mundos, iniciei uma
+                    busca meticulosa pela internet, formando minha própria lista de recursos sobre o assunto. Este
+                    artigo tem como objetivo centralizar e listar todas as redes que discutem o Worldbuilding,
+                    independentemente do idioma, seja em inglês, português, ou qualquer outro. Dessa forma, você terá
+                    acesso não apenas a este site, mas também a outras fontes de conhecimento e inspiração para
+                    desenvolver seus próprios mundos. Então, sem mais delongas, vamos começar nossa jornada pela lista:
+                </p>
+
+                <h3>Criação de mundo Geral</h3>
+                <hr />
+                <!--Earfland-->
+
+                <div class="card-body">
+                    <h4 class="card-title">Eärtland RPG e Worldbuilding</h4>
+                    <h6><b>Idioma: </b>Português</h6>
+                    <p class="card-text">
+                        O primeiro local onde aprendi sobre o conceito de Wb, e o mais popular aqui no Brasil sobre
+                        o assunto. Nesse canal do Youtube você irá aprender diversos conceitos importantes sobre a
+                        criação de mundos, RPG de mesa e escrita criativa. Vale muito a pena conhecer esse canal e
+                        participar de sua comunidade.
+                    </p>
+                    <div class="clearfix">
+                        <a href="https://www.youtube.com/@EartlandRPGeWorldbuilding"
+                            class="btn btn-outline-danger float-end" target="_blank"
+                            style="text-decoration: none; color:red;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-youtube" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                            </svg>
+                            Youtube
+                        </a>
+                    </div>
+                </div>
+
+
+                <!--Craftando mundos-->
+
+                <div class="card-body">
+                    <h4 class="card-title">Craftando Mundos</h4>
+                    <h6><b>Idioma: </b>Português</h6>
+                    <p class="card-text">
+                        Mais um canal de Criação de mundos muito bom, onde segundo ele, seu foco é no Worldbuilding
+                        e que tem como objetivo trazer uma reflexão sobre criação de mundo e dicas para a produção e
+                        aprimoramento das criações.
+                    </p>
+                    <div class="clearfix">
+                        <a href="https://www.youtube.com/@CraftandoMundosBR" class="btn btn-outline-danger float-end"
+                            target="_blank" style="text-decoration: none; color:red;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-youtube" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                            </svg>
+                            Youtube
+                        </a>
+                        <a href="https://worldbuildingparatodos.com.br/" class="btn btn-outline-primary float-end me-3"
+                            target="_blank" style="text-decoration: none;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-globe" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
+                            </svg>
+                            Site
+                        </a>
+                    </div>
+                </div>
+
+                <!--Eledris-->
+
+                <div class="card-body">
+                    <h4 class="card-title">Eledris</h4>
+                    <h6><b>Idioma: </b>Inglês</h6>
+                    <p class="card-text">
+                        O Eledris Blog é um arquivo de recursos sobre construção de mundos, escrita, arte e
+                        desenvolvimento de jogos. À medida que trabalho no meu mundo, compartilho minha experiência
+                        e conhecimento na forma de guias fáceis de entender. O site é totalmente em inglês, mas vale
+                        muito a pena dar uma lida.
+                    </p>
+                    <div class="clearfix">
+
+                        <a href="https://eledris.com/" class="btn btn-outline-primary float-end me-3" target="_blank"
+                            style="text-decoration: none;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-globe" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
+                            </svg>
+                            Site
+                        </a>
+                    </div>
+                </div>
+
+                <!--Kingdompen-->
+
+                <div class="card-body">
+                    <h4 class="card-title">Kingdompen</h4>
+                    <h6><b>Idioma: </b>Inglês</h6>
+                    <p class="card-text">
+                        Esse é outro Blog também em inglês com assuntos de Criação de mundo e escrita. Embora esteja em
+                        inglês, é muito fácil de acompanhar se você usar o tradutor do google para traduzir as páginas.
+                    </p>
+                    <div class="clearfix">
+
+                        <a href="https://kingdompen.org/category/articles/worldbuilding/?fbclid=IwAR1JmVwJ-X-vcg2WtHHYY4y-JrUBUj44UzksYK-Jpxndd0TAKjByZS-LyzA"
+                            class="btn btn-outline-primary float-end me-3" target="_blank"
+                            style="text-decoration: none;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-globe" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
+                            </svg>
+                            Site
+                        </a>
+                    </div>
+                </div>
+
+                <!--Worldanvil-->
+
+                <div class="card-body">
+                    <h4 class="card-title">Worldanvil</h4>
+                    <h6><b>Idioma: </b>Inglês</h6>
+                    <p class="card-text">
+                        Worldanvil é uma ferramenta de criação de mundos, mas possui um blog dedicado a alguns assuntos,
+                        como o próprio Worldbuiding.
+                    </p>
+                    <div class="clearfix">
+
+                        <a href="https://blog.worldanvil.com/category/worldbuilding/"
+                            class="btn btn-outline-primary float-end me-3" target="_blank"
+                            style="text-decoration: none;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-globe" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
+                            </svg>
+                            Site
+                        </a>
+                    </div>
+                </div>
+
+                <h3>Mitologia e Religião</h3>
+                <hr />
+                <!--Pantheon (Encyclopedia Mythica)-->
+
+                <div class="card-body">
+                    <h4 class="card-title">Pantheon (Encyclopedia Mythica)</h4>
+                    <h6><b>Idioma: </b>Inglês</h6>
+                    <p class="card-text">
+                        A Enciclopédia Mythica é uma enciclopédia online sobre mitologia, folclore e lendas. Muito útil
+                        para buscar inspirações sobre religião e mitologias para seu mundo.
+                    </p>
+                    <div class="clearfix">
+
+                        <a href="https://pantheon.org/" class="btn btn-outline-primary float-end me-3" target="_blank"
+                            style="text-decoration: none;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-globe" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
+                            </svg>
+                            Site
+                        </a>
+                    </div>
+                </div>
+
+                <h3>
+                    Conclusão
+                </h3>
+
+                <p>
+                    À medida que continuo minha busca pela internet, mais blogs e canais surgirão nesta lista. Com esse
+                    processo contínuo, pretendo construir um repositório abrangente de diversas fontes sobre a criação
+                    de mundos.
+                </p>
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/venturo-d10/js/venturo_lib.js"></script>
+</body>
+
+</html>
