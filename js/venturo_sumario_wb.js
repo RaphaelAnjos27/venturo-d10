@@ -25,31 +25,31 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
                                 <div class="card-body">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/wb.html">Introdução</a>
+                                            <a class="nav-link" href="/paginas/wb.html">Introdução</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/01-introducao/01-conceitos.html">Conceitos Básicos</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/01-introducao/01-conceitos.html">Conceitos Básicos</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/01-introducao/01.01-referencias.html">Referencias na Criação de Mundos</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/01-introducao/01.01-referencias.html">Referencias na Criação de Mundos</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/01-introducao/02-resumo.html">Resumo de Worldbuilding</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/01-introducao/02-resumo.html">Resumo de Worldbuilding</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/01-introducao/03-linha-tempo.html">Linha do Tempo</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/01-introducao/03-linha-tempo.html">Linha do Tempo</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/01-introducao/04-guias.html">Guias de Worldbuilding</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/01-introducao/04-guias.html">Guias de Worldbuilding</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/01-introducao/05-checklist.html">Lista de Verificação</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/01-introducao/05-checklist.html">Lista de Verificação</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/01-introducao/06-organizando.html">Organizando o Worldbuilding</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/01-introducao/06-organizando.html">Organizando o Worldbuilding</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/01-introducao/07-pontas-soltas.html">Pontas Soltas na Criação de Mundos</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/01-introducao/07-pontas-soltas.html">Pontas Soltas na Criação de Mundos</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -68,40 +68,40 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
                                 <div class="card-body">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/02-astronomia/01-introducao.html">Introdução</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/02-astronomia/01-introducao.html">Introdução</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/02-astronomia/02-orbitas.html">Órbitas</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/02-astronomia/02-orbitas.html">Órbitas</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/02-astronomia/03-baricentro.html">Baricentro</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/02-astronomia/03-baricentro.html">Baricentro</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/02-astronomia/04-inclinacao.html">Inlinação</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/02-astronomia/04-inclinacao.html">Inlinação</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/02-astronomia/05-equador.html">Linha do Equador</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/02-astronomia/05-equador.html">Linha do Equador</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/02-astronomia/06-poeira.html">Poeira Estelar</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/02-astronomia/06-poeira.html">Poeira Estelar</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/02-astronomia/07-galaxias.html">Galáxias</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/02-astronomia/07-galaxias.html">Galáxias</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/02-astronomia/08-buracos.html">Buraco Negro</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/02-astronomia/08-buracos.html">Buraco Negro</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/02-astronomia/09-estrelas.html">Estrelas</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/02-astronomia/09-estrelas.html">Estrelas</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/02-astronomia/10-planetas.html">Planetas</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/02-astronomia/10-planetas.html">Planetas</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/02-astronomia/11-sistemas.html">Sistemas Planetários</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/02-astronomia/11-sistemas.html">Sistemas Planetários</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/02-astronomia/12-aneis.html">Aneis Planetários</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/02-astronomia/12-aneis.html">Aneis Planetários</a>
                                         </li>
 
                                     </ul>
@@ -121,28 +121,28 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
                                 <div class="card-body">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/03-geografia/01-introducao.html">Introdução</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/03-geografia/01-introducao.html">Introdução</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/03-geografia/02-paisagens.html">Paisagens</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/03-geografia/02-paisagens.html">Paisagens</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/03-geografia/03-continente.html">Como os Continentes Afetam a Evolução</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/03-geografia/03-continente.html">Como os Continentes Afetam a Evolução</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/03-geografia/04-fronteiras.html">Tipos de Fronteiras</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/03-geografia/04-fronteiras.html">Tipos de Fronteiras</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/03-geografia/05-recursos.html">Recursos Naturais</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/03-geografia/05-recursos.html">Recursos Naturais</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/03-geografia/06-paises.html">Como nascem os países</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/03-geografia/06-paises.html">Como nascem os países</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/03-geografia/07-estados.html">Oque são Estados</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/03-geografia/07-estados.html">Oque são Estados</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/03-geografia/08-metropoles.html">Metrópoles, Colônias e repúblicas</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/03-geografia/08-metropoles.html">Metrópoles, Colônias e repúblicas</a>
                                         </li>
                                         
                                     </ul>
@@ -162,19 +162,19 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
                                 <div class="card-body">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/04-historia/01-introducao.html">História Básica</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/04-historia/01-introducao.html">História Básica</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/04-historia/02-antiga.html">Idade Antiga</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/04-historia/02-antiga.html">Idade Antiga</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/04-historia/03-media.html">Idade Média</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/04-historia/03-media.html">Idade Média</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/04-historia/04-moderna.html">Idade Moderna</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/04-historia/04-moderna.html">Idade Moderna</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/04-historia/05-contemporanea.html">Idade Contemporânea</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/04-historia/05-contemporanea.html">Idade Contemporânea</a>
                                         </li>
                                         
                                     </ul>
@@ -194,40 +194,40 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
                                 <div class="card-body">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/05-dicas/01-introducao.html">Dicas de Criação</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/05-dicas/01-introducao.html">Dicas de Criação</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/05-dicas/02-feudalismo.html">Feudalismo e Politica</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/05-dicas/02-feudalismo.html">Feudalismo e Politica</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/05-dicas/03-cultura.html">Cultura Engessada</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/05-dicas/03-cultura.html">Cultura Engessada</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/05-dicas/04-poder.html">Ausência de poder governamental</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/05-dicas/04-poder.html">Ausência de poder governamental</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/05-dicas/05-conflito.html">Conflitos Externos</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/05-dicas/05-conflito.html">Conflitos Externos</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/05-dicas/06-opressao.html">Opressão do mais forte</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/05-dicas/06-opressao.html">Opressão do mais forte</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/05-dicas/07-consequencias.html">Ações causam consequências</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/05-dicas/07-consequencias.html">Ações causam consequências</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/05-dicas/08-mundos.html">Mundos Vivos</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/05-dicas/08-mundos.html">Mundos Vivos</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/05-dicas/09-verossimilhanca.html">A verossimilhança em fantasias</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/05-dicas/09-verossimilhanca.html">A verossimilhança em fantasias</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/05-dicas/10-ideias.html">Formas de conseguir ideias para seus mundos</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/05-dicas/10-ideias.html">Formas de conseguir ideias para seus mundos</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/05-dicas/11-naming.html">Técnicas de naming</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/05-dicas/11-naming.html">Técnicas de naming</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/05-dicas/12-historias.html">Criando a história de seu mundo</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/05-dicas/12-historias.html">Criando a história de seu mundo</a>
                                         </li>
                                         
                                     </ul>
@@ -247,22 +247,22 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
                                 <div class="card-body">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/06-cenarios/01-introducao.html">Cenários</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/06-cenarios/01-introducao.html">Cenários</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/06-cenarios/02-antes.html">Antes de criamos o mundo</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/06-cenarios/02-antes.html">Antes de criamos o mundo</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/06-cenarios/03-primeiro.html">Primeiro Método de criação de mundos</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/06-cenarios/03-primeiro.html">Primeiro Método de criação de mundos</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/06-cenarios/04-segundo.html">Segundo Método de criação de mundos</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/06-cenarios/04-segundo.html">Segundo Método de criação de mundos</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/06-cenarios/05-arquitetura.html">A Arquitetura moldada pelo Mundo</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/06-cenarios/05-arquitetura.html">A Arquitetura moldada pelo Mundo</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/06-cenarios/06-masmorra.html">Como Usar Masmorras</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/06-cenarios/06-masmorra.html">Como Usar Masmorras</a>
                                         </li>
                                         
                                     </ul>
@@ -282,31 +282,31 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
                                 <div class="card-body">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/07-sociedade/01-introducao.html">A Sociedade</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/07-sociedade/01-introducao.html">A Sociedade</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/07-sociedade/02-economia.html">Economia</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/07-sociedade/02-economia.html">Economia</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/07-sociedade/03-nacoes.html">Nações</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/07-sociedade/03-nacoes.html">Nações</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/07-sociedade/04-cidades.html">Cidades</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/07-sociedade/04-cidades.html">Cidades</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/07-sociedade/05-culturas.html">Culturas</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/07-sociedade/05-culturas.html">Culturas</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/07-sociedade/06-mitologia.html">Pensando na Mitologia</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/07-sociedade/06-mitologia.html">Pensando na Mitologia</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/07-sociedade/07-politica.html">Como desenvolver o Governo</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/07-sociedade/07-politica.html">Como desenvolver o Governo</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/07-sociedade/08-racas.html">Criando uma raça</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/07-sociedade/08-racas.html">Criando uma raça</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/07-sociedade/09-especies.html">Criando Espécimes</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/07-sociedade/09-especies.html">Criando Espécimes</a>
                                         </li>
                                         
                                         
@@ -327,16 +327,16 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
                                 <div class="card-body">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/08-conlang/01-introducao.html">Idiomas (Conlang)</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/08-conlang/01-introducao.html">Idiomas (Conlang)</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/08-conlang/02-arvore.html">Arvore dos idiomas</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/08-conlang/02-arvore.html">Arvore dos idiomas</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/08-conlang/03-nunca.html">Nunca crie um idioma inteiro</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/08-conlang/03-nunca.html">Nunca crie um idioma inteiro</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/08-conlang/04-basico.html">O Básico de Conlang</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/08-conlang/04-basico.html">O Básico de Conlang</a>
                                         </li>
                                         
                                     </ul>
@@ -356,13 +356,13 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
                                 <div class="card-body">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/09-personagens/01-introducao.html">Personagens</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/09-personagens/01-introducao.html">Personagens</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/09-personagens/02-viloes.html">Vilões</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/09-personagens/02-viloes.html">Vilões</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/09-personagens/03-background.html">Background</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/09-personagens/03-background.html">Background</a>
                                         </li>
                                         
                                     </ul>
@@ -382,22 +382,22 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
                                 <div class="card-body">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/10-aventuras/01-introducao.html">Planejamento de campanha</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/10-aventuras/01-introducao.html">Planejamento de campanha</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/10-aventuras/02-criando.html">Criando aventuras</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/10-aventuras/02-criando.html">Criando aventuras</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/10-aventuras/03-historia.html">Historias</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/10-aventuras/03-historia.html">Historias</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/10-aventuras/04-criatividade.html">Criativiade</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/10-aventuras/04-criatividade.html">Criativiade</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/10-aventuras/05-improviso.html">Improviso</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/10-aventuras/05-improviso.html">Improviso</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/10-aventuras/06-missoes.html">Missões Secundárias</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/10-aventuras/06-missoes.html">Missões Secundárias</a>
                                         </li>
                                         
                                     </ul>
@@ -417,40 +417,40 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
                                 <div class="card-body">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/11-elementos/01-introducao.html">Elementos do mundo</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/11-elementos/01-introducao.html">Elementos do mundo</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/11-elementos/02-magia.html">Sistema de magia</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/11-elementos/02-magia.html">Sistema de magia</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/11-elementos/03-itens.html">Itens Mágicos</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/11-elementos/03-itens.html">Itens Mágicos</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/11-elementos/04-elementos.html">Materiais/Elementos Fantasticos</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/11-elementos/04-elementos.html">Materiais/Elementos Fantasticos</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/11-elementos/05-energias.html">Energias & Forças</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/11-elementos/05-energias.html">Energias & Forças</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/11-elementos/06-armadilhas.html">Armadilhas</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/11-elementos/06-armadilhas.html">Armadilhas</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/11-elementos/07-comercio.html">Comércio</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/11-elementos/07-comercio.html">Comércio</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/11-elementos/08-organizacao.html">Organizações</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/11-elementos/08-organizacao.html">Organizações</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/11-elementos/09-fauna.html">Fauna</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/11-elementos/09-fauna.html">Fauna</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/11-elementos/10-flora.html">Flora</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/11-elementos/10-flora.html">Flora</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/11-elementos/11-calendario.html">Calendário</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/11-elementos/11-calendario.html">Calendário</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/venturo-d10/paginas/worldbuilding/11-elementos/12-mitos.html">Mitos Lendas E Histórias</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/11-elementos/12-mitos.html">Mitos Lendas E Histórias</a>
                                         </li>
                                         
                                     </ul>

@@ -1,8 +1,8 @@
 .sobre{
-    background-image: url(/venturo-d10/static/imagens/banners/banner_devlog.webp);
+    background-image: url(/static/imagens/banners/banner_devlog.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
 ul {
-    list-style-image: url('/venturo-d10/static/imagens/bulletpoint.svg');
+    list-style-image: url('/static/imagens/bulletpoint.svg');
   }

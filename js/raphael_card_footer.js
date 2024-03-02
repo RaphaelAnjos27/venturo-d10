@@ -8,7 +8,7 @@ export class RaphaelCardFooter extends HTMLElement {
         <div class="container rounded shadow p-4 mb-4 bg-white">
         <div class="row">
             <div class="col-sm-3">
-                <img src="/venturo-d10/static/imagens/profiles/raphael.webp" class="img-fluid rounded-circle" alt="Perfil">
+                <img src="/static/imagens/profiles/raphael.webp" class="img-fluid rounded-circle" alt="Perfil">
                 <br><br>
             </div>
             <div class="col-sm-9">
@@ -20,12 +20,12 @@ export class RaphaelCardFooter extends HTMLElement {
                 <div class="btn-group" role="group" aria-label="Redes">
                     <button type="button" class="btn btn-outline-dark">
                         <a href="https://www.instagram.com/raphael_kanlyangh/" target="_blank">
-                            <img class="img-fluid" src="/venturo-d10/static/imagens/icones/rede_instagram.svg" alt="Icon Social" style="width: 30%;">
+                            <img class="img-fluid" src="/static/imagens/icones/rede_instagram.svg" alt="Icon Social" style="width: 30%;">
                         </a>
                     </button>
                     <button type="button" class="btn btn-outline-dark">
                         <a href="https://www.linkedin.com/in/raphael-dos-anjos/" target="_blank">
-                            <img class="img-fluid" src="/venturo-d10/static/imagens/icones/rede_linkdin.svg" alt="Icon Social" style="width: 30%;">
+                            <img class="img-fluid" src="/static/imagens/icones/rede_linkdin.svg" alt="Icon Social" style="width: 30%;">
                         </a>
                     </button>
                   </div>
