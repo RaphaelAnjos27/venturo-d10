@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organização da mesa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/venturo-d10/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/venturo-d10/static/css/regras.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>
+            </div>
+
+            <div class="col-sm-7">
+
+                <div id="sumario" class="container rounded shadow p-4 mb-4 bg-white">
+                    <h6>Sumário:</h6>
+                </div>
+                <script src="/venturo-d10/js/sumario.js"></script>
+
+                <h2>Organização da mesa</h2>
+
+                <p>
+                    Mestrar uma campanha de RPG é um pouco complicado, e dependendo de sua campanha, poderá ser difícil
+                    conciliar tudo que você planeja. Dentro do Sistema Venturo temos diversas dicas que auxiliam tanto
+                    mestre quanto jogador a conciliar os dados da campanha, e agora veremos formas modernas de fazer
+                    isso. Ao longo desse artigo aprenderemos diversas técnicas e estruturas para organizar nossa
+                    <b>mesa/campanha</b>.
+                </p>
+                <p>
+                    Para realizar esse feito precisaremos de algum programa que nos permita criar e organizar nossas
+                    informações. Se você é um <b>Old Master</b>, pode preferir o bom e velho <b>fichário</b>, mas nós
+                    iremos aqui abordar como trabalhar com ferramentas digitais poderosas para nossa organização.
+                </p>
+                <p>
+                    As duas principais ferramentas do mercado hoje são <b>Obsidian</b> e o <b>Notion</b>, ambos muito
+                    bons para estruturação. Mas ambos possuem suas diferenças: O Obsidian por exemplo, é muito bom por
+                    fornecer diversos elementos como links, grafos e estruturação por documentos e pastas, mas o Notion
+                    se destaca nesse quesito, e será nossa ferramenta padrão.
+                </p>
+                <p>
+                    Estruturarei esse artigo para que o mesmo possa ser atualizado com o tempo conforme aprendo mais
+                    técnicas de organização, e eventualmente dicas que eu julgar úteis nessas ferramentas ou outras
+                    ferramentas possam aparecer por aqui.
+                </p>
+
+                <h3>
+                    Notion
+                </h3>
+                <hr />
+
+                <p>
+                    O Notion acaba sendo minha ferramenta preferida para organização de campanha por alguns aspectos
+                    básicas. Veja essa ferramenta como uma espécie de <b>banco de dados</b>, no qual os elementos desse
+                    banco serão páginas únicas para cada elemento de sua campanha, e poderemos navegar entre as páginas
+                    através de links internos e menções.
+                </p>
+                <p>
+                    O Obsidian também nos permite esse feito de linkar vários documentos uns aos outros dentro dele,
+                    além do próprio grafo que é uma ferramenta excelente. Porém a vantagem do Notion, é que além de
+                    criar essas ligações entre as páginas, nos podemos abrir ela para o publico em forma de Wiki para
+                    que seus jogadores ou admiradores da obra possam acompanhar o desenvolvimento.
+                </p>
+                <p>
+                    Você também pode criar páginas para seus jogadores organizarem seus personagens, no qual eles podem
+                    até mesmo implementar o fichário do jogador nessas páginas.
+                </p>
+                <p>
+                    Agora vamos ver as principais Ferramentas do Notion para organização de nosso RPG:
+                </p>
+
+                <h4>Menções:</h4>
+
+                <p>
+                    Em qualquer lugar de texto no Notion você pode realizar <b>menções</b>, que nada mais são que links
+                    para alguma coisa. Podemos mencionar uma <b>Data</b>, <b>Pessoas</b> e <b>Páginas</b>. E isso para
+                    estruturação de uma campanha é uma mão na roda, pois nos permite navegar de uma página a outra
+                    rapidamente.
+                </p>
+                <p>
+                    Então vamos supor que você esteja escrevendo uma parte da trama, e lá dentro precisa citar a ficha
+                    de um personagem que você criou no notion: Para isso basta usar o <b>@</b> seguindo do nome da
+                    página que representa a ficha do personagem:
+                </p>
+
+                <img class="img-fluid"
+                    src="/venturo-d10/static/imagens/imgs_regra/narrativa/organizacao-mesa/mencoes.webp" alt="Menções">
+
+                <p>
+                    Assim um link será gerado para jogar você dentro da página do personagem, ou qualquer outra página
+                    que queira mencionar.
+                </p>
+
+                <h4>DataBase:</h4>
+
+                <p>
+                    Database é a ferramenta que mais usaremos do <b>notion</b> depois das menções. Elas que nos ajudarão
+                    a criar a nossa organização das páginas. Vamos supor que você tenha a página de NPCs da campanha,
+                    nela usaremos um database para criar cada <b>NPC</b> com todas as características necessárias para
+                    cada NPC.
+                </p>
+                <p>
+                    O Database mais usado por mim é a <b>Visualização em Galeria</b>, pois ele permite a criação das
+                    páginas em modo galeria. Para criar um database é simples, basta digitar <b>/database</b>, e uma
+                    lista deles será apresentada:
+                </p>
+
+                <img class="img-fluid"
+                    src="/venturo-d10/static/imagens/imgs_regra/narrativa/organizacao-mesa/database01.webp"
+                    alt="database">
+
+                <p>
+                    A vantagem dos databases é a organização: Neles você consegue usar tags, categorias e muitas outras
+                    propriedades que você julgar necessário para a organização de suas páginas.
+                </p>
+                <p>
+                    Ao usarmos a visualização em galeria, se você integrar uma imagem dentro dele, a primeira imagem
+                    listada será usada como thump da visualização de galeria:
+                </p>
+
+                <img class="img-fluid"
+                    src="/venturo-d10/static/imagens/imgs_regra/narrativa/organizacao-mesa/Database03.webp"
+                    alt="database">
+
+                <p>
+                    É interessante criar databases modelos, que por sua vez serão organizadas através das tags, por
+                    exemplo, podemos criar uma única database chamada “<b>Database Campanha</b>” e dentro dela gerenciar
+                    os elementos através de tags, por exemplo, <b>NPC</b>, <b>Personagem</b>, <b>Vilão</b>,
+                    <b>Local</b>, <b>Itens</b> e etc. Assim, dentro da página de NPCs podemos chamar uma nova database
+                    que usa como base a nossa “<b>Database Campanha</b>”, porém lá destacamos apenas as tags de
+                    <b>NPC</b>.
+                </p>
+
+                <h4>Espaços de Trabalho:</h4>
+
+                <p>
+                    O Notion possui um fluxo de trabalho muito simples: Nele você terá os espaços de trabalho, e em cada
+                    espaço de trabalho você possuirá páginas. Ao criar uma conta você estará no seu espaço de trabalho
+                    pessoal, onde você poderá organizar sua vida, leitura e tudo mais.
+                </p>
+                <p>
+                    Agora, quando você desejar criar um Worldbuinding para seu mundo, ou até mesmo uma campanha para
+                    esse mundo, você pode criar um espaço de trabalho especialmente para ele, por exemplo: Criar um
+                    espaço de trabalho para o mundo, e lá separar a página de <b>Mundo</b> e <b>Campanhas</b>, assim o
+                    mundo pode ter a informação geral do seu mundo, enquanto a campanha, apenas elementos essenciais
+                    para a mesma. Você pode criar o NPC no mundo, e conectar sua ficha na campanha.
+                </p>
+
+                <div class="row">
+                    <div class="col-sm-8">
+                        <p>
+                            Criar um Espaço de Trabalho é muito simples, basta ir ao <b>menu superior</b>, clicar no seu
+                            nome, em seguida nos três pontinhos na lado direito do popup, e então clicar na opção:
+                            <b>Criar ou entrar em um espaço de Trabalho</b>. Em seguida é só seguir os passos que ele te
+                            da, e seu novo espaço de trabalho estará criado.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img class="img-fluid"
+                            src="/venturo-d10/static/imagens/imgs_regra/narrativa/organizacao-mesa/AreaTrabalho01.webp"
+                            alt="Area de Trabalho Notion">
+                    </div>
+                </div>
+
+                <h4>Páginas:</h4>
+
+                <p>
+                    As páginas são o ponto central do Notion depois dos databases. As páginas conterão informações cruciais de cada elemento de jogo que estivermos fazendo, então vejamos agora algumas características importantes das páginas:
+                </p>
+                <p>
+                    <b>Banners:</b> As páginas quando criadas podem receber um Banner no topo, que pode vir através de um link, um documento de imagem ou alguma outra opção que o Notion fornece lá no aplicativo.
+                </p>
+                <p>
+                    <b>Ícone:</b> podem ser associados a cada página, e será destacado quando a página for marcada em algum outro local, aparecendo o ícone da mesma seguindo de seu nome.
+                </p>
+                <p>
+                    <b>Propriedades:</b> As propriedades são elementos que ficam abaixo do <b>Nome</b> da página, por padrão você terá uma propriedade de “<b>Criado em</b>” e “<b>Tags</b>”. Caso a página esteja associada a um database, ficará fácil filtrar ela por essas propriedades. E você poderá adicionar mais e mais propriedades a sua página de acordo com suas necessidades.
+                </p>
+
+                <img class="img-fluid"
+                    src="/venturo-d10/static/imagens/imgs_regra/narrativa/organizacao-mesa/paginas01.webp"
+                    alt="Página"/>
+
+                <p>
+                    Esses são os recursos mais importantes da página quando estamos trabalhando com elas usando o Notion.
+                </p>
+	            <p>
+                    Quando estiver estruturando seus databases, você poderá criar <b>páginas modelos</b>, que servirão como ficha de criação para seus elementos de campanha. Para criar uma página modelo, dentro de sua página raiz você vai adicionar uma nova página através de algum database que você já tenha criado. Quando você clicar em novo dentro desse database, você será direcionado a página em branco, e lá em baixo verá uma mensagem “<b>Pressione Enter para continuar com uma página vazia ou crie um modelo</b>”. E ao clicar no link “<b>Crie um Modelo</b>”, uma janela se abrirá para você trabalhar nesse modelo. 
+                </p>
+	            <p>
+                    Assim que Terminar de criar a página, poderá fechar ela. E quando clicar em novo novamente dentro do database a opção da página modelo criada anteriormente estará listada na parte inferior da página, bem como uma opção para criar uma <b>página vazia</b> ou <b>outros modelos</b>. 
+                </p>
+
+                <h3>Organização de Campanha Simples</h3>
+                <hr/>
+
+                <p>
+                    Agora abordaremos estruturas que você pode usar para organizar sua campanha de RPG usando algum programa desses, ou até mesmo um fichário. A partir daqui você já deve conseguir estruturar bem suas páginas dentro do Notion, agora você verá aspectos relacionados a estrutura geral da campanha.
+                </p>
+                <p>
+                    Eu gosto de separar os pingos dos is, isso é, eu normalmente separo oque é <b>campanha</b>, e o que é <b>cenário</b>. Crio uma <b>página separada</b> para cada um desses elementos. Dentro do cenário gosto de usar a estrutura de worldbuinding que mais me agrada, e que também pode ser encontrada nos artigos desse site.
+                </p>
+                <p>
+                    Agora para a página de campanha é onde aprenderemos uma estrutura complexa da qual você poderá modificar para se encaixar melhor no seu contexto de campanha. Veremos todos os tópicos necessários para que você consiga estruturar nos mínimos detalhes a sua campanha.
+                </p>
+                <p>
+                    Vejamos esses tópicos agora:
+                </p>
+
+                <h4>Estrutura da Campanha:</h4>
+
+                <p>
+                    Ao mergulhar na criação da campanha de RPG de mesa, é vital estabelecer uma sólida estrutura que servirá como espinha dorsal para a narrativa. Neste estágio inicial, concentre-se em desenvolver os aspectos gerais que moldarão o mundo e as experiências dos jogadores. Considere este momento como uma jornada de exploração criativa, onde a sua imaginação é a bússola e as ideias, os pontos cardeais.
+                </p>
+                <p>
+                    <b>Brainstorming Cenários:</b> Inicie o processo de construção da campanha com uma sessão de brainstorming. Deixe sua mente explorar livremente diferentes cenários, ambientes e conceitos. Essa etapa é a oportunidade de gerar ideias inovadoras e peculiares que tornarão sua campanha memorável. Pergunte a si mesmo: "<i>E se os jogadores fossem lançados em um reino subaquático dominado por criaturas místicas?</i>"
+                </p>
+                <p>
+                    <b>Pontos-Chave da Narrativa:</b> Identifique os pontos-chave da narrativa que guiarão o desenvolvimento da história. Estes são os eventos ou momentos cruciais que ajudarão a manter a coesão e a progressão da trama. Pode ser a descoberta de um artefato mágico perdido, o desdobramento de um conflito político, ou a revelação de um segredo obscuro.
+                </p>
+                <p>
+                    <b>Conexões entre Elementos:</b> Certifique-se de que os diferentes elementos da campanha estão interconectados de maneira significativa. As relações entre personagens, lugares e eventos devem contribuir para a profundidade da narrativa, criando uma teia complexa que os jogadores desvendarão ao longo do tempo.
+                </p>
+                <p>
+                    <b>Desenvolvimento do Mundo:</b> Dedique tempo para desenvolver o mundo em que a campanha se desenrolará. Detalhes como a geografia, a história, e as culturas locais são fundamentais para criar uma experiência imersiva. Ao fornecer uma base sólida, você permite que os jogadores se envolvam mais profundamente na trama.
+                </p>
+                <p>
+                    <b>Flexibilidade para a Inovação:</b> Lembre-se de que, apesar de toda a preparação, a improvisação também desempenha um papel crucial. Esteja preparado para ajustar a narrativa com base nas escolhas e ações dos jogadores. A flexibilidade é a chave para uma campanha dinâmica e envolvente.
+                </p>
+                <p>
+                    Ao finalizar esta fase de planejamento, você terá uma estrutura robusta que servirá como guia durante a narrativa. Este é apenas o ponto de partida; a magia do RPG de mesa se desdobra quando a criatividade dos jogadores encontra-se com a trama elaborada, criando uma história única e inesquecível.
+                </p>
+
+                <h4>Sistema:</h4>
+
+                <p>
+                    Nesta seção valiosa, apresentaremos as regras da casa que proporcionarão uma experiência única e envolvente aos jogadores. Além disso, destacaremos as regras cruciais do sistema, garantindo que você tenha acesso fácil e rápido a informações vitais sempre que necessário.
+                </p>
+                <p>
+                    Aqui é onde disponibilizaremos as <b>regras da casa</b> para nossos jogadores. Além disso destacaremos regras importantes do sistema para que você possa acessar facilmente quando desejar consultar. 
+                </p>
+                <p>
+                    <b>Raças:</b> Embarque em uma jornada através das raças disponíveis em nosso universo. Cada raça possui características distintas que moldarão a identidade do seu personagem. Descubra os traços raciais exclusivos, as origens culturais e as vantagens que cada raça oferece. Esta seção fornecerá um mergulho profundo nas opções disponíveis, permitindo que você escolha com sabedoria e dê vida a personagens verdadeiramente únicos.
+                </p>
+                <p>
+                    <b>Classes:</b> As classes formam a espinha dorsal das habilidades e papéis que os personagens desempenham em nossa campanha. Explore as nuances de cada classe, desde as habilidades fundamentais até as especializações avançadas. Este guia abrangente ajudará você a compreender plenamente as oportunidades que cada classe oferece, permitindo que você molde seu personagem de acordo com suas aspirações e estilo de jogo.
+                </p>
+                <p>
+                    <b>Modificadores e Habilidades:</b> Se aprofunde nas regras relacionadas a modificadores e habilidades. Entenda como as características do seu personagem influenciam seus testes, ataques e habilidades especiais. Esta seção é um recurso indispensável para otimizar o desempenho do seu personagem durante as sessões de jogo.
+                </p>
+                <p>
+                    <b>Outras Regras Gerais:</b> Este é o repositório de conhecimento para todas as outras regras essenciais do sistema. Desde regras de combate até mecanismos de magia, cada página dedicada oferecerá uma visão aprofundada, garantindo que você esteja sempre ciente das regras que moldam nosso mundo de jogo.
+                </p>
+                <p>
+                    Ao estruturar cada categoria como uma página separada, facilitamos a navegação e referência rápida. Assim, você pode se aprofundar nas nuances do sistema conforme necessário, garantindo uma experiência de jogo mais suave e imersiva para todos os participantes. Este guia abrangente é um companheiro confiável para todos os exploradores do nosso vasto universo de RPG de mesa.
+                </p>
+
+                <h4>Personagens:</h4>
+
+                <p>
+                    Nesta seção dedicada aos protagonistas de nossa jornada, abrimos as portas para as páginas individuais de cada jogador, transformando a experiência do RPG de mesa em uma experiência personalizada e interativa. A singularidade desta abordagem reside na criação de uma página exclusiva para cada personagem, permitindo que os jogadores assumam o controle total sobre seus avatares e envolvam-se profundamente na construção de suas narrativas.
+                </p>
+                <p>
+                    <b>Fichário de Jogador:</b> Aqui, o fichário de jogador é o epicentro de informações essenciais. Explore as características fundamentais do personagem, desde estatísticas vitais até habilidades e histórico. Este recurso central oferece uma visão abrangente do desenvolvimento do personagem, proporcionando uma referência rápida durante as sessões e facilitando a evolução constante do herói.
+                </p>
+                <p>
+                    <b>Anotações do Jogador em Campanha:</b> A magia do RPG de mesa se manifesta nas decisões e anotações dos jogadores ao longo da campanha. Nesta seção, os jogadores têm a oportunidade de registrar suas observações, estratégias, e até mesmo as reviravoltas surpreendentes que ocorreram durante as aventuras. Essas anotações fornecem não apenas um registro histórico, mas também contribuem para o desenvolvimento dinâmico da narrativa.
+                </p>
+                <p>
+                    <b>Imagens e Descrições:</b> Enriqueça a experiência visual do jogo ao incorporar imagens e descrições detalhadas dos personagens. Isso não apenas ajuda a visualizar os heróis, mas também adiciona camadas à sua personalidade e história. Os jogadores podem compartilhar visões artísticas de seus personagens, aprimorando ainda mais a conexão emocional com suas criações.
+                </p>
+                <p>
+                    <b>Colaboração Direta:</b> Ao fornecer a opção de colaboração direta, os jogadores têm o poder de moldar ativamente seus personagens. Ao designar os jogadores como colaboradores de suas páginas individuais, eles podem atualizar fichas, adicionar anotações em tempo real e participar ativamente da construção do mundo. Isso cria uma dinâmica única de participação, envolvendo os jogadores de uma maneira mais íntima e investida.
+                </p>
+                <p>
+                    <b>Registro de Conquistas:</b> Celebre as vitórias e marcos de cada personagem. Crie um espaço dedicado para registrar conquistas notáveis, eventos significativos e momentos épicos. Isso não apenas adiciona um toque de glória à jornada de cada herói, mas também serve como uma referência emocionante durante o desenvolvimento da trama.
+                </p>
+                <p>
+                    Esta abordagem inovadora não apenas oferece uma gestão eficiente dos personagens, mas também transforma a construção da narrativa em uma experiência compartilhada, onde jogadores e Mestre podem colaborar para dar vida a uma história verdadeiramente memorável.
+                </p>
+
+                <h4>NPCs:</h4>
+
+                <p>
+                    Nesta seção dedicada aos personagens do mestre, damos vida a uma galeria de NPCs (<i>Personagens Não-Jogadores</i>), cada um trazendo sua própria essência e papel vital na trama. Aqui, a criação de uma lista abrangente oferece ao mestre e aos jogadores uma visão clara do elenco secundário que povoará o universo do RPG.
+                </p>
+                <p>
+                    <b>Lista de NPCs:</b> Esta é a enciclopédia viva dos personagens do mestre. Cada NPC tem sua própria entrada na lista, fornecendo informações cruciais, como nome, papel na história, motivações e qualquer relação específica com os jogadores. Organizada de maneira acessível, esta lista facilita a gestão e a referência constante durante a campanha.
+                </p>
+                <p>
+                    <b>Descrição Detalhada:</b> Cada NPC merece uma descrição detalhada que vai além de meras estatísticas. Explore suas personalidades distintas, aparências marcantes e nuances que os tornam memoráveis. Inclua detalhes que ajudem os jogadores a se conectarem emocionalmente ou a desenvolverem relações complexas com esses personagens fascinantes.
+                </p>
+                <p>
+                    <b>Motivações e Objetivos:</b> Profundize-se nas motivações e objetivos de cada NPC. Compreender o que impulsiona esses personagens enriquece a experiência, criando tramas mais ricas e intrigantes. Seja uma busca por vingança, um desejo de poder ou um objetivo benevolente, as motivações adicionam camadas cruciais à narrativa.
+                </p>
+                <p>
+                    <b>Relações Interativas:</b> Destaque qualquer relação específica que um NPC possa ter com os jogadores ou entre eles. Isso pode incluir alianças, rivalidades ou laços familiares. O conhecimento dessas relações permite ao mestre incorporar elementos pessoais na trama, gerando oportunidades únicas para os jogadores explorarem.
+                </p>
+                <p>
+                    <b>Ganchos de História:</b> Integre ganchos de história relacionados aos NPCs, oferecendo aos jogadores oportunidades para missões secundárias, reviravoltas inesperadas e alianças estratégicas. Esses ganchos adicionam profundidade à narrativa e incentivam a exploração mais aprofundada do mundo.
+                </p>
+                <p>
+                    Ao compilar essa galeria de almas intrigantes, o mestre cria um recurso valioso para si mesmo e para os jogadores. A interação com esses NPCs não só enriquece a trama principal, mas também contribui para a imersão, tornando o universo do RPG mais vibrante e repleto de oportunidades inexploradas.
+                </p>
+
+                <h4>Vilão:</h4>
+
+                <p>
+                    Dedique um espaço exclusivo a quem trama nas sombras, o antagonista principal responsável por semear a desordem em sua campanha de RPG. Criar uma página dedicada ao vilão não apenas centraliza informações cruciais, mas também oferece uma oportunidade única de explorar o passado intricado, conexões com NPCs e eventos impactantes que moldaram o mundo.
+                </p>
+                <p>
+                    <b>Perfil Detalhado:</b> Inicie com um perfil detalhado do vilão, abrangendo sua origem, motivações, e visões para o futuro. Esta seção serve como um guia mestre para garantir consistência no papel do vilão na trama, ajudando-o a manter uma presença coerente e ameaçadora.
+                </p>
+                <p>
+                    <b>História Pessoal:</b> Mergulhe nas entranhas do passado do vilão. Explore eventos-chave que moldaram sua personalidade e levaram-no ao caminho sombrio que trilha. Revelar fragmentos da história pessoal adiciona complexidade ao vilão, tornando-o mais do que uma mera força do mal.
+                </p>
+                <p>
+                    <b>Conexões com NPCs:</b> Destaque as conexões do vilão com outros personagens da trama. Isso pode incluir laços familiares, amizades corrompidas, ou alianças secretas. Entender como o vilão está entrelaçado com o tecido dos NPCs permite ao mestre criar interações mais ricas e revelar informações estratégicas de maneira impactante.
+                </p>
+                <p>
+                    <b>Influência no Mundo:</b> Explore o impacto do vilão no mundo ao seu redor. Desde a manipulação de reinos até a instigação de guerras, mapeie as ações do vilão que geraram as circunstâncias atuais. Isso não só contextualiza a trama, mas também oferece aos jogadores pistas valiosas sobre a verdadeira extensão da ameaça.
+                </p>
+                <p>
+                    <b>Eventos Significativos:</b> Registre eventos significativos relacionados ao vilão. Esta seção serve como um arquivo de acontecimentos cruciais que podem influenciar as decisões dos jogadores e a direção da campanha. Consultar esse registro oferece uma perspectiva valiosa sobre a evolução da trama.
+                </p>
+                <p>
+                    Ao criar essa página dedicada ao vilão, você não apenas solidifica o papel do antagonista na narrativa, mas também proporciona aos jogadores uma ferramenta fascinante para investigar e entender a origem do mal que enfrentam. Este arquivo se torna uma fonte valiosa de informações, incentivando a imersão na trama e permitindo uma narrativa mais rica e envolvente.
+                </p>
+
+                <h4>Organizações:</h4>
+
+            	<p>
+                    Nesta seção dedicada, desvendamos as complexas teias sociais que dão forma ao universo da campanha. Organizações, sejam guildas de mercadores, grupos de ladrões, escolas de magia, ou tripulações destemidas, são elementos-chave que adicionam profundidade e dinamismo ao seu mundo de RPG. Criar páginas individuais para cada organização destaca não apenas sua presença, mas também oferece uma compreensão aprofundada de suas nuances.
+                </p>
+                <p>
+                    <b>Guildas e Associações:</b> Explore as guildas e associações que prosperam em seu mundo. Desde guildas de mercadores até sociedades secretas, cada organização desempenha um papel vital na economia, política ou submundo. Crie páginas específicas que detalhem sua história, liderança, e objetivos, proporcionando uma visão holística de suas influências.
+                </p>
+                <p>
+                    <b>Líderes e Membros:</b> Apresente os líderes e membros proeminentes de cada organização. Descreva suas personalidades, motivações e papel na estrutura hierárquica. Esta seção permite aos jogadores compreenderem quem está no comando e como essas figuras podem influenciar a trama.
+                </p>
+                <p>
+                    <b>Territórios e Bases:</b> Mapeie os territórios e bases operacionais de cada organização. Seja uma fortaleza escondida nas montanhas ou um bazar movimentado no coração da cidade, entender os locais-chave de cada grupo oferece oportunidades para missões e interações intrigantes.
+                </p>
+                <p>
+                    <b>Relações com Outras Organizações:</b> Analise as relações complexas entre as diferentes organizações. Isso pode incluir alianças, rivalidades ou conflitos em andamento. Compreender as dinâmicas entre esses grupos cria um mundo mais dinâmico, onde as ações de uma organização reverberam por todo o cenário.
+                </p>
+                <p>
+                    <b>Histórico de Ações:</b> Documente as ações significativas realizadas por cada organização. Isso pode envolver eventos passados, conspirações, ou realizações notáveis. Ter um registro histórico oferece uma referência valiosa para entender o impacto contínuo dessas organizações na narrativa.
+                </p>
+            	<p>
+                    Ao criar páginas específicas para cada organização, você não apenas organiza informações cruciais, mas também fornece aos jogadores uma enciclopédia virtual para explorar. Essas páginas se tornam uma ferramenta valiosa para imersão na trama, permitindo que os jogadores entendam e interajam de maneira mais profunda com as forças que moldam o mundo ao seu redor.
+                </p>
+
+                <h4>Locais:</h4>
+
+                <p>
+                    Nesta seção abrangente, traçamos um atlas detalhado que revela os cenários cativantes de sua campanha de RPG. Dos vastos países às cidades labirínticas, dos prédios majestosos às masmorras sombrias, cada local desempenha um papel crucial na narrativa. Ao criar páginas individuais para cada local, você proporciona uma experiência imersiva, enriquecendo a jornada dos jogadores.
+                </p>
+                <p>
+                    <b>Países e Regiões:</b> Comece pelo panorama macro, destacando países e regiões que compõem o tecido do mundo. Descreva suas geografias, culturas predominantes e desafios únicos que oferecem aos jogadores uma perspectiva global do cenário em que estão imersos.
+                </p>
+                <p>
+                    <b>Cidades e Assentamentos:</b> Explore cidades movimentadas, vilarejos pitorescos e assentamentos remotos. Crie páginas individuais para cada local, detalhando suas características distintas, governantes, economia e atmosfera única. Mapas, descrições detalhadas e imagens de referência ajudam a visualizar cada localidade.
+                </p>
+                <p>
+                    <b>Edifícios e Pontos de Interesse:</b> Destaque prédios marcantes e pontos de interesse que os jogadores podem explorar. Seja um castelo majestoso, uma torre de magos ou uma taverna peculiar, cada edifício tem sua própria história. Inclua informações sobre arquitetura, propósitos e personagens-chave associados a esses locais.
+                </p>
+                <p>
+                    <b>Masmorras e Locais Perigosos:</b> Adentre as masmorras sinistras, florestas proibidas e locais perigosos que testarão a coragem dos aventureiros. Detalhe os desafios encontrados em cada local, acompanhado de mapas, armadilhas e criaturas que habitam essas áreas.
+                </p>
+                <p>
+                    <b>Interiores Específicos:</b> Explore ambientes mais fechados, como salas secretas, bibliotecas místicas ou câmaras subterrâneas. Crie páginas específicas para esses interiores, destacando sua relevância na trama e oferecendo aos jogadores a chance de investigar e descobrir segredos ocultos.
+                </p>
+                <p>
+                    <b>Imagens de Referência e Mapas:</b> Enriqueça as descrições com imagens de referência, ilustrações e mapas detalhados. Esses elementos visuais não apenas ajudam os jogadores a visualizarem os locais, mas também proporcionam uma experiência mais rica e envolvente.
+                </p>
+                <p>
+                    Ao mapear meticulosamente cada local, você cria um mundo vibrante e coeso. Essas páginas se tornam um recurso valioso para jogadores explorarem, enquanto oferecem ao mestre uma ferramenta poderosa para guiar as narrativas, tornando os cenários não apenas palcos, mas personagens em si dentro da jornada épica.
+                </p>
+
+                <h4>Convite:</h4>
+
+                <p>
+                    Essa página é exclusiva para você elaborar um texto e mandar ao seus jogadores convidando eles para a mesa. Aqui você dará um prefácio de sua campanha mostrando oque eles podem esperar dessa campanha.
+                </p>
+                <p>
+                    Então você pode estruturar algo dessa forma:
+                </p>
+                <p>
+                    Caros aventureiros,
+                </p>
+                <p>
+                    É com grande emoção que estendo a vocês um convite para embarcarem em uma jornada única, onde as tramas da imaginação ganham vida e os destinos de heróis são forjados. Em um reino de magia, mistérios e perigos, uma narrativa extraordinária aguarda, pronta para ser tecida pelos seus feitos heróicos.
+                </p>
+                <p>
+                    Bem-vindos ao <b>[Nome do Mundo]</b>!
+                </p>
+                <p>
+                    Neste vasto território de maravilhas e perigos, cada local esconde segredos milenares, cidades respiram histórias, e masmorras guardam mistérios há muito esquecidos. A aventura se desenrolará em meio a paisagens que desafiam a lógica e desafios que testarão sua coragem e astúcia.
+                </p>
+                <p>
+                    O que podem esperar desta campanha:
+                </p>
+                <p>
+                    Um Mundo Dinâmico e Vibrante:
+                </p>
+                <p>
+                    <b>[Nome do Mundo]</b> é um organismo vivo, evoluindo com base nas escolhas que vocês farão. Cada cidade, floresta e montanha tem sua própria voz, e suas ações reverberarão através das terras, moldando o destino do mundo ao seu redor.
+                </p>
+                <p>
+                    Personagens Profundos e Conectados:
+                </p>
+                <p>
+                    Cada um de vocês é mais do que apenas um aventureiro; são contadores de histórias, heróis com passados ricos e futuros entrelaçados. A jornada não só desafiará suas habilidades de combate, mas também explorará as profundezas de quem são e como suas histórias se entrelaçam.
+                </p>
+                <p>
+                    Intrigas, Mistérios e Desafios:
+                </p>
+                <p>
+                    Preparai-vos para desvendar intrigas ocultas, explorar mistérios escondidos e enfrentar desafios que irão testar os limites de sua imaginação. Cada caminho que escolherem reserva revelações surpreendentes e momentos épicos.
+                </p>
+                <p>
+                    Participação Ativa e Colaborativa:
+                </p>
+                <p>
+                    Esta não é apenas a minha história; é a nossa história. Encorajo a participação ativa e a criatividade de cada um de vocês. Seus insights, escolhas e ações moldarão a trama de maneiras inesperadas, fazendo desta campanha uma experiência verdadeiramente única.
+                </p>
+                <p>
+                    Estão prontos para a aventura?
+                </p>
+                <p>
+                    Se a resposta for sim, preparem-se para uma jornada que transcenderá as páginas e se desdobrará diante dos seus olhos. <b>[Nome da Campanha]</b> está prestes a começar, e mal posso esperar para testemunhar as lendas que vocês criarão neste mundo mágico.
+                </p>
+                <p>
+                    Que a sorte esteja ao seu lado, heróis!
+                </p>
+                <p>
+                    <b>[Seu Nome como Mestre de Jogo]</b>
+                </p>
+
+                <h4>Sessões Passadas:</h4>
+
+                <p>
+                    Nesta seção, embarcamos em uma jornada pela história já escrita, registrando cada sessão passada como capítulos vívidos e cheios de acontecimentos. Cada página dedicada é um portal para o passado, onde os eventos, personagens e locais são imortalizados, permitindo-nos relembrar as tramas intrincadas que tecemos juntos.
+                </p>
+                <p>
+                    <b>[Data da Sessão] - [Nome da Sessão]</b>
+                </p>
+                <p>
+                    <b>Detalhes Gerais:</b>
+                </p>
+                <p>
+                    <b>Data:</b> [Data da Sessão]
+                </p>
+                <p>
+                    <b>Nome da Sessão:</b> [Nome Escolhido]
+                </p>
+                <p>
+                    <b>Eventos Marcantes:</b>
+                </p>
+                <ul>
+                    <li>
+                        Encontro com <b>[NPC]</b>: Durante a jornada, os aventureiros cruzaram caminho com <b>[Nome do NPC]</b>, um personagem misterioso que parece ter ligações com a <b>[Organização]</b>.
+                    </li>
+                    <li>
+                        Desafio na <b>[Localidade]</b>: A cidade de [Nome da Cidade] foi palco de um desafio intrigante, onde os heróis enfrentaram <b>[Desafio ou Inimigo]</b> para alcançar seu objetivo.
+                    </li>
+                    <li>
+                        Revelações sobre <b>[Organização]</b>: Descobertas surpreendentes foram reveladas sobre a <b>[Nome da Organização]</b>, sugerindo tramas mais profundas e motivos ocultos.
+                    </li>
+                    <li>
+                        Aliança com <b>[Organização/NPC]</b>: Uma aliança estratégica foi formada com <b>[Nome da Organização ou NPC]</b>, alterando o curso das relações no mundo.
+                    </li>
+                    <li>
+                        Descobertas em <b>[Local Específico]</b>: Exploração minuciosa de <b>[Nome do Local] </b>revelou antigas inscrições, indícios de uma profecia e a presença de uma <b>[Criatura Mágica]</b>.
+                    </li>
+                </ul>
+
+                <p>
+                    <b>Desdobramentos para a Próxima Sessão:</b>
+                </p>
+                <p>
+                    <b>Ganho de Recompensas:</b> Os aventureiros adquiriram [Recompensas ou Itens Mágicos] como resultado de suas proezas.
+                </p>
+                <p>
+                    <b>Ganchos para a Próxima Sessão:</b> [Eventos ou Personagens] apresentaram ganchos intrigantes que indicam direções futuras para a trama.
+                </p>
+                <p>
+                    Essas páginas são portais para o passado, servindo não apenas como registros, mas como guias para moldar o futuro. Que cada evento registrado seja uma fonte de inspiração enquanto continuamos a desvendar os mistérios que permeiam nosso mundo.
+                </p>
+
+                <h3>Organização de Campanha Complexa</h3>
+                <hr/>
+                
+                <p>
+                    Agora veremos mais elementos que podemos adotar para a organização de nossas campanhas usando o Notion (<i>Ou qualquer outro software similar</i>). Na internet afora você encontrará muitas estruturas de organização, sejam elas usando um fichário ou um programa. 
+                </p>
+                <p>
+                    Vamos dividir nossa nova estrutura agora em seis partes principais: <b>Sessões</b>, <b>Campanha</b>, <b>Recursos e Regras</b>, <b>databases</b> e <b>Calendário</b>. Essa estrutura se assemelha bastante a estrutura anterior, só que diferente da anterior, essas categorias estarão como tópicos dentro de nossa página principal do <b>modelo de campanha</b>. E cada tópico receberá alguns elementos:
+                </p>
+
+                <h4>Databases:</h4>
+                <p>
+                    Aqui você criará duas páginas principais, a página de <b>Dados da Campanha</b> e a página <b>Dados de Personagens</b>:
+                </p>
+                <h5>DADOS DE CAMPANHA:</h5>
+                <p>
+                    Dentro dessa página criaremos um database do tipo tabela com o nome <b>dados da campanha</b>. Lembra que no começo do artigo onde explico o Notion, na parte de database, mencionei que poderíamos manipular um database por tags, então, é isso que faremos aqui. Você irá criar uma tag para cada propriedade importante de sua campanha, como por exemplo: <b>NPC</b>, <b>Personagem</b>, <b>Ameaça</b>, <b>Vilão</b>, Local, <b>Item</b>, <b>Anotação</b>, <b>Organização</b>. Essas são as oito tags principais desse modelo, mas você criará mais, basta intender para que elas servem. 
+                </p>
+                <p>
+                    Criado a Tabela e as tags, coloque como propriedade dessa tabela o <b>Nome</b>, <b>Tags</b> e <b>Ultima Edição</b>. Raramente entraremos nessa página, mas caso queira um acesso rápido a todos os elementos da campanha, poderá vir aqui e ter um controle mais preciso de tudo.
+                </p>
+                <h5>DADOS DE PERSONAGEM:</h5>
+                <p>
+                    Aqui será que nem a base de dados para a campanha, mas aqui filtrará apenas os <b>personagens dos jogadores</b>. Ela listará uma <b>página</b> para cada personagem, um filtro de classes (<i>que é uma propriedade do tipo <b>seleção múltipla</b></i>) e um atributo de texto para vínculos que indica a qual organização esse personagem está atrelado.
+                </p>
+                <p>
+                    O Atributo de Classe você criará de acordo com todas as classes que você permite seus jogadores jogarem na campanha. Eles servirão como tags atreladas ao personagem, indicando suas classes.
+                </p>
+
+                <h4>Sessões:</h4>
+                <p>
+                    No tópico de sessão, adicionaremos alguns elementos primordial para nossas sessões: <b>Arquivos de Sessão</b>, <b>Anotações/Ideias/Pensamentos</b> e <b>Feedbacks</b> (<i>que usa a estrutura da estrela dos desejos</i>).
+                </p>
+                <h5>ARQUIVOS DE SESSÃO:</h5>
+                <p>
+                    Aqui teremos um database do tipo tabela que guardará todas as nossas sessões, seu nome será “<b>Histórico de Sessão</b>”. Essa tabela por sua vez receberá como primeiro parâmetro uma <b>data</b> (<i>que ocorrerá a sessão que estamos criando</i>), o <b>nome</b> (<i>que receberá a página da sessão</i>) e uma <b>nota</b> (<i>com uma anotação importante sobre essa sessão</i>).
+                </p>
+                <p>
+                    A estrutura de cada página dessa tabela pode variar, porém o básico do básico é ter: 
+                </p>
+                <ul>
+                    <li>
+                        <b>Pré-sessão –</b> Com elementos que deveremos ver antes de iniciar a sessão. Normalmente esse tópico guarda uma <b>checklist</b> para revisar a database de <b>personagens</b> e outra para revisar a database de <b>NPCs importantes</b>. Além de uma lista de alternantes para <b>Recados</b> (<i>que serão listados em bulletpoints</i>), outro para <b>Recapitulação</b> que normalmente terá recados importantes da sessão passada, e uma menção ao <b>resumo da sessão passada</b> (<i>guarde essa informação porque faz parte da estrutura</i>);
+                    </li>
+                    <li>
+                        <b>CG –</b> Aqui entra uma breve descrição de como essa sessão se inicia. Um ou dois parágrafos dramáticos para inserir seus jogadores na história;
+                    </li>
+                    <li>
+                        <b>Conflito Chave – </b>Descreva o principal conflito da sessão que seus jogadores enfrentarão, por exemplo: “<i>Invadir a nave que caiu na floresta e encontrar respostas…</i>”;
+                    </li>
+                    <li>
+                        <b>Objetivos –</b> Aqui teremos duas listas de alternantes, uma para o <b>objetivo determinante</b> da sessão, por exemplo: “<i>encontrar o rastreador do Frederico nos destroços da nave</i>”. E outra para <b>objetivos bônus</b> que podem beneficiar os jogadores de alguma forma, com tesouros ou itens extras;
+                    </li>
+                    <li>
+                        <b>Problemas –</b> Aqui teremos uma lista de problemas que os jogadores podem enfrentar na sessão. E caso tenha estudado o Sistema Venturo, verá que nas regras temos as ameaças, que podem ser criadas num database de ameaças e mencionadas aqui;
+                    </li>
+                    <li>
+                        <b>Locais –</b> Nesse tópico teremos três subtópicos do tipo lista de alternantes com os nomes <b>Local Atual</b> (<i>que irá ocorrer a sessão</i>), <b>Locais Próximos</b> e <b>Locais Prováveis</b>, Aqui iremos mencionar locais já listados na campanha. Porém você pode querer destacar uma localização especifica que não possui uma página criada, então basta escrever o nome aqui. Coloque entre <b>2 a 3 locais</b> por categoria;
+                    </li>
+                    <li>
+                        <b>Objetivos –</b> Aqui entra uma lista de todos os objetivos necessários que os jogadores devem fazer nessa sessão, por exemplo, entrar num castelo furtivamente. E para cada elemento da lista você pode complementar inserindo algumas regras dentro da cena;
+                    </li>
+                    <li>
+                        <b>NPCs da Sessão –</b> Aqui entra uma menção a todos os NPCs que aparecerão nessa sessão;
+                    </li>
+                    <li>
+                        <b>Ameaças/Encontros –</b> As ameaças estarão melhores listadas no local, mas se for algo mais específico você pode listar aqui. Além de possíveis encontros que são importantes para sua sessão;
+                    </li>
+                    <li>
+                        <b>Notas da Sessão –</b> Aqui será uma lista de notas importantes que ocorrem conforme seus jogadores interagem com o seu cenário. Aqui você lista coisas que podem transcender a essa sessão, ou seja, informações que serão usadas em sessões futuras;
+                    </li>
+                    <li>
+                        <b>Bloco de Notas –</b> Para quem trabalha com markdown, quando declaramos um bloco de código no Notion usando três “`”, conseguimos uma marcação para código, e você pode escolher a categoria “<b>Plain Text</b>”. Dentro dessa área você fará anotações importantes para o decorrer dessa sessão, como controle de vida, iniciativa e etc;
+                    </li>
+                </ul>
+
+                <p>
+                    É dessa forma que estruturamos nossas sessões. Cada página de sessão terá esses atributos a serem preenchidos quando estiver planejando a próxima sessão de jogo. 
+                </p>
+                <p>
+                    Ainda na página de Sessões teremos a baixo da tabela uma página para o <b>Resumo das Sessões</b>. Essa página será simples, cada sessão mencionada aqui será uma lista de alternantes com o nome da sessão que foi jogada. Ao final de cada sessão você irá escrever um ou dois parágrafos resumindo a sessão para que possa usar no próximo jogo.
+                </p>
+                <p>
+                    E por fim temos a “<b>Notas da Sessão Zero</b>” que é uma página contendo informações da sessão zero da sua campanha. A sessão zero já foi abordada nas regras do sistema, e você poderá ter melhores informações dela lá. Aqui iremos apenas listar seus atributos:
+                </p>
+
+                <ul>
+                    <li>
+                        <b>Tema Central da Campanha –</b> Resuma nessa parte oque define e move sua campanha.
+                    </li>
+                    <li>
+                        <b>Seis Verdades Sobre a Campanha –</b> Quais as seis coisas mais importantes que você deseja que seus jogadores intendam sobre sua campanha? Liste essas seis coisas aqui.
+                    </li>
+                    <li>
+                        <b>Vilões –</b> Quem são os principais impulsionadores desta campanha? Normalmente, eles são antagonistas. Você não deseja revelar isso aos seus jogadores. Em vez disso, elabore uma carta para cada vilão. Inclua um objetivo principal para cada antagonista e três submetas que os conduzem a alcançar esse objetivo.
+                    </li>
+                    <li>
+                        <b>Opções de personagem e regras da casa –</b> Quais são as especificidades da criação de personagens para este mundo? Quais são os limites na construção de personagens neste universo? Quais regras personalizadas estão em vigor?
+                    </li>
+                    <li>
+                        <b>Patronos e Facções –</b> Quem são os patronos e facções dos quais os personagens podem fazer parte? O que une os personagens para a aventura nesta campanha?
+                    </li>
+                    <li>
+                        <b>Ferramentas de Segurança –</b> Discuta quais ferramentas de segurança você e seus jogadores se sentem confortáveis em usar durante esta campanha. Discuta todos os tópicos delicados a serem evitados.
+                    </li>
+                    <li>
+                        <b>Inspirações para a Campanha –</b> Que livros, obras de arte, música, filmes e programas de TV inspiram sua campanha? Compartilhe-os com seus jogadores e use-os você mesmo quando precisar de inspiração.
+                    </li>
+                </ul>
+
+                <h5>ANOTAÇÕES/IDEIAS/PENSAMENTOS:</h5>
+
+                <p>
+                    Essa página também se encontrará no tópico da sessão, mas ela usara o nosso database dos <b>dados da campanha</b> (<i>é aqui que a separação por tags começa a fazer sentido</i>). Use esta página como um bloco de notas e ideias. Qualquer coisa com a tag Anotação aparecerá aqui. 	Então crie um novo database do tipo <b>galeria</b>, e filtre a tag <b>“Anotações”</b> que criamos anteriormente para que possamos ver todas as anotações da campanha. 
+                </p>
+            	<p>
+                    Assim basta clicar no botão <b>“Nova”</b>, para inserir uma nova página de anotações. Essa página não possui uma estrutura padrão, então poderá estruturar da melhor forma que desejar para destacar o seu pensamento sobre a campanha.
+                </p>
+                
+                <h5>FEEDBACKS:</h5>
+
+            	<p>
+                    Já nessa página teremos informações relevantes aos feedbacks dos jogadores relacionados a última sessão de jogo. Normalmente em todo final de sessão você elabora uma pequena reunião com seus jogadores, e captura feedbacks dos mesmos sobre a sessão. Uma boa ferramenta para essa página é usar a estrutura de estrela dos desejos já abordada aqui no site.
+                </p>
+            	<p>
+                    Nesse caso a página terá uma database do tipo tabela que armazenará a <b>data</b> que o feedback foi colhido, o <b>nome do jogador</b>, a <b>tag</b> (<i>que pode ser <b>estrela</b> ou <b>desejo</b></i>), e o <b>feedback</b>. 
+                </p>
+
+                <h4>Campanha:</h4>
+
+                <p>
+                    Dentro do tópico de campanha teremos mais algumas páginas importantes para nossa campanha no geral. As páginas que criaremos aqui são: Enredo, NPCs, <b>Ameaças e Vilões</b>, <b>Organizações, Itens</b>, <b>Locais</b>. Sinta-se livre caso queira incorporar mais elementos a sua campanha, como por exemplo, <b>monstros</b>, ou outro elemento do sistema. 
+                </p>
+                
+                <h5>ENREDO:</h5>
+                
+                <p>
+                    Essa página é relativamente simples, nela você vai incorporar o enredo da sua campanha como um todo. Aqui podemos destacar algumas perguntas que servirão como combustível para ativar nossa criatividade.
+                </p>
+
+                <p>Perguntas para criar o Enredo da campanha:</p>
+                <ul>
+                    <li><b>Onde estamos?</b></li>
+                    <li><b>O que aconteceu recentemente?</b></li>
+                    <li><b>Quem está no controle?</b></li>
+                    <li><b>O que consideramos útil ou valioso?</b></li>
+                    <li><b>O que está prestes a acontecer aqui?</b></li>
+                    <li><b>O que devemos fazer agora?</b></li>
+                </ul>
+
+                <p>
+                    Se quiser uma ferramenta mais interessante, você pode implementar 6, 10 ou até 20 respostas para cada pergunta, e usar um dado para responder cada uma delas, e com as respostas da pergunta você começa a elaborar o enredo da trama.
+                </p>
+
+                <h5>DEMAIS PÁGINAS:</h5>
+
+                <p>
+                    As páginas seguintes servirá como uma categoria para nosso <b>database de campanha</b>. Como adicionamos diversas tags aquele database, iremos agora criar databases baseados nele, só que cada database irá filtrar uma tag especifica, por exemplo: A página de NPCs será o database da campanha(<i>que criamos no começo</i>) do tipo <b>galeria</b>. Só que esse database ira filtrar as TAGS de <b>NPC</b>. E esse processo se repete para cada página.
+                </p>
+
+                <h4>Recursos e Regras:</h4>
+
+                <p>
+                    Aqui apresentaremos recursos fundamentais para usarmos em sessão. Criaremos as seguintes páginas: <b>Resumo das Regras</b> e<b> Regras da Casa</b>, ambas as páginas serão em branco para que você possa estrutura a sua maneira.
+                </p>
+                <p>
+                    Em <b>Resumo das Regras</b> você citará as regras que você mais usará em campanha com seus jogadores. Já em <b>Regras da Casa</b>, colocaremos todas as regras acordadas entre jogadores e mestre.
+                </p>
+
+                <h4>Calendário:</h4>
+
+                <p>
+                    Por fim temos o calendário, que nada mais é do que um database de calendário. Para adicioná-lo basta usar o comando <b>/visualização em calendário</b>. Assim que aparecer a janela de configuração iremos escolher uma database base que já criamos, que é o <b>histórico de sessão</b>. Ele tentará criar outra tabela, nesse caso, escolha a opção “<b>Nova Visualização Vazia</b>”, selecione “<b>Calendário</b>” e em seguida concluir.
+                </p>
+                <p>
+                    Assim um calendário será criado, e caso queira adicionar uma sessão em algum dia especifico, essa sessão aparecerá lá na página de <b>Arquivos de Sessões</b>. Ter essa segunda visualização na página principal da campanha é interessante. 
+                </p>
+                <p>
+                    Aqui você aprendeu que de um mesmo database conseguimos criar diferentes tipos de visualizações. 
+                </p>
+
+                <div class="mt-4 p-5 bg-light rounded shadow">
+                    <h5>Referências</h5>
+                    <ul>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=I1xG1ezsFuw&t=417s"
+                                target="_blank">COMO PREPARAR SESSÃO DE RPG com NOTION
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=jAG_wE-nlec&t=1733s"
+                                target="_blank">Crie seu mundo de RPG com o Notion
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <div class="col-sm-2">
+                <venturo-anuncio></venturo-anuncio>
+            </div>
+        </div>
+    </div>
+
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/venturo-d10/js/venturo_lib.js"></script>
+</body>
+
+</html>
