@@ -6,7 +6,15 @@ export class VenturoAnuncio extends HTMLElement {
         // Inclua o conteúdo do componente no DOM quando ele for conectado
         this.innerHTML = `
         
-            
+        <script async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3911900562799248"
+        crossorigin="anonymous"></script>
+    <!-- Anuncio Lateral -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3911900562799248"
+        data-ad-slot="2483162649" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
             
         `
     }
