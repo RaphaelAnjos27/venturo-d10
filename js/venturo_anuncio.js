@@ -5,7 +5,7 @@ export class VenturoAnuncio extends HTMLElement {
     connectedCallback() {
         // Inclua o conteúdo do componente no DOM quando ele for conectado
         this.innerHTML = `
-            <!--<style>
+            <style>
                     .anuncio{
                         width: 100%;
                     }
@@ -18,12 +18,7 @@ export class VenturoAnuncio extends HTMLElement {
                 </style>
                 <a href="https://go.hotmart.com/Y86396770N" target="_blank">
                     <img class="anuncio" src="/static/imagens/anuncio/BannersHotmart_Página5.webp" alt="New York">
-                </a> -->
-                
-                
-
-                <meta name="google-adsense-account" content="ca-pub-3911900562799248">
-
+                </a>
             
         `
     }
