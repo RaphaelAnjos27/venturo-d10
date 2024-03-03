@@ -6,7 +6,6 @@ import { VenturoSumarioUniverso } from "./venturo_sumario_universo.js";
 import { VenturoSumarioCriacao } from "./venturo_sumario_criacao.js";
 import { VenturoSumarioWorldBuilding } from "./venturo_sumario_wb.js";
 import { RaphaelCardFooter } from "./raphael_card_footer.js";
-import { ConfigAnuncio } from "./configuracao_propaganda.js";
 
 
 customElements.define('venturo-menu-superior', VenturoMenuSuperior);
@@ -17,5 +16,4 @@ customElements.define('venturo-sumario-universo', VenturoSumarioUniverso);
 customElements.define('venturo-sumario-criacao', VenturoSumarioCriacao);
 customElements.define('venturo-sumario-wb', VenturoSumarioWorldBuilding);
 customElements.define('raphael-card-footer', RaphaelCardFooter);
-customElements.define('config-anuncio', ConfigAnuncio);
 
