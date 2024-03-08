@@ -193,6 +193,9 @@ export class VenturoSumarioRegras extends HTMLElement{
                                 <li class="nav-item">
                                     <a class="nav-link" href="/paginas/regras/05-campanhasaventuras/11-dicas.html">Dicas</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/paginas/regras/05-campanhasaventuras/12-sessaozero.html">Sessão Zero</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
