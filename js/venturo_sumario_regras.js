@@ -388,7 +388,7 @@ export class VenturoSumarioRegras extends HTMLElement{
                 <div class="card">
                     <div class="card-header">
                         <a class="collapsed btn" data-bs-toggle="collapse" href="#collapse14">
-                            Criação de Personagem
+                            Personagem
                         </a>
                     </div>
                     <div id="collapse14" class="collapse" data-bs-parent="#accordion">
@@ -429,6 +429,9 @@ export class VenturoSumarioRegras extends HTMLElement{
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="/paginas/regras/10-personagem/12-dicas.html">Dicas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/paginas/regras/10-personagem/13-acordo.html">Acordo de Desenvolvimento de Personagem</a>
                                 </li>
                             </ul>
                         </div>
