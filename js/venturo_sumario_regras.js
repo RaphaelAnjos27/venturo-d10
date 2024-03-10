@@ -334,9 +334,6 @@ export class VenturoSumarioRegras extends HTMLElement{
                                     <a class="nav-link" href="/paginas/regras/08-combate/01-combatepersonagem.html">Combate de Personagem</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/paginas/regras/08-combate/02-combateguerra.html">Combate em Guerra</a>
-                                </li>
-                                <li class="nav-item">
                                     <a class="nav-link" href="/paginas/regras/08-combate/03-defesa.html">Defesa</a>
                                 </li>
                                 <li class="nav-item">
