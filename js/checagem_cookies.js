@@ -2,13 +2,14 @@ import URL from "/@types/URL.js"
 
 // Função para desbloquear cookies de terceiros
 function desbloquearCookiesDeTerceiros() {
+    document.cookie = "cookie-consent=accepted; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/";
     // Define a política de cookies para permitir cookies de terceiros
     cookieStore.get(URL).then(cookie => {
         if (cookie) {
             // Atualiza a política de cookies para permitir cookies de terceiros
             cookie.sameSite = 'none';
             cookieStore.set(cookie);
-            document.cookie = "cookie-consent=accepted; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/";
+            
             console.log('Cookies de terceiros desbloqueados com sucesso!');
         } else {
             console.error('Não foi possível encontrar o cookie.');
@@ -21,18 +22,10 @@ function desbloquearCookiesDeTerceiros() {
 }
 
 //Função para Verificar se o navegador suporta Cookies:
-async function ChecagemCookies() {
-    if ('cookieStore' in window) {
-        try {
-            const cookie = await cookieStore.get(URL);
-            return !!cookie; // Convert to boolean
-        } catch (error) {
-            console.error('Error fetching cookie:', error);
-            return false;
-        }
-    } else {
-        return false;
-    }
+function ChecagemCookies() {
+    const cookiesEnabled = document.cookie.indexOf("cookie-consent=accepted") !== -1;
+
+    return cookiesEnabled;
 }
 //Função para Gerar o PopUP:
 
@@ -52,7 +45,7 @@ function GerarPopUp() {
     const POPUP = `
     <h3>Politicas de Privacidade:</h3>
     <p>
-        Ao continuar navegando neste site, você concorda com nossa Política de Privacidade. Para saber mais sobre como coletamos, usamos e protegemos suas informações, consulte a <a href="https://venturod10.com.br/paginas/politica-privacidade.html" target="_blank">política completa</a>.
+    Para melhorar sua experiência neste site, utilizamos cookies que nos ajudam a personalizar conteúdos e anúncios, oferecer funcionalidades de redes sociais e analisar o tráfego. Ao continuar navegando, você concorda com nossa Política de Privacidade. Para mais detalhes sobre como coletamos, usamos e protegemos suas informações, consulte nossa <a href="https://venturod10.com.br/paginas/politica-privacidade.html" target="_blank">política completa</a>.
     </p>
     <div class="clearfix">
         <button
@@ -79,10 +72,8 @@ function GerarPopUp() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    ChecagemCookies().then(result => {
-        if (!result){
-            GerarPopUp()
-        }
-    });
+    if(!ChecagemCookies()){
+        GerarPopUp()
+    }
 });
 
