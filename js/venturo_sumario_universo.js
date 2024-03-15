@@ -44,6 +44,7 @@ export class VenturoSumarioUniverso extends HTMLElement {
                                 <a class="nav-link" href="/paginas/universo/01-introducao/06-realidadeabstrata.html">A Existência Abstrata</a>
                             </li>
                         </ul>
+                        
                     </div>
                 </div>
             </div>
