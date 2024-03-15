@@ -40,6 +40,9 @@ export class VenturoSumarioUniverso extends HTMLElement {
                             <li class="nav-item">
                                 <a class="nav-link" href="/paginas/universo/01-introducao/05-civilizacoes.html">Tipos de Civilizações</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/paginas/universo/01-introducao/06-realidadeabstrata.html">A Existência Abstrata</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
