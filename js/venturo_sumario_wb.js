@@ -375,7 +375,7 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
                         <div class="card">
                             <div class="card-header">
                                 <a class="btn" data-bs-toggle="collapse" href="#aventuras">
-                                    Aventuras
+                                    Campanhas e Aventuras
                                 </a>
                             </div>
                             <div id="aventuras" class="collapse" data-bs-parent="#accordion">
@@ -385,7 +385,10 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
                                             <a class="nav-link" href="/paginas/worldbuilding/10-aventuras/01-introducao.html">Planejamento de campanha</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/paginas/worldbuilding/10-aventuras/02-criando.html">Criando aventuras</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/10-aventuras/01.1-dicasaventuras.html">Dicas de Aventuras</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/paginas/worldbuilding/10-aventuras/02-criando.html">Criando Aventuras</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="/paginas/worldbuilding/10-aventuras/03-historia.html">Historias</a>
