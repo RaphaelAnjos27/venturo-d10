@@ -12,7 +12,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
     <link rel="stylesheet" href="/static/css/contos.css">
+    <style>
+        .container-conteudo {
+            background-color: rgba(0, 0, 0, 0.644);
+            color: white;
+            padding: 20px;
+        }
 
+        .container-conteudo:hover {
+            transition: 0.2s;
+            backdrop-filter: blur(7.3px);
+            -webkit-backdrop-filter: blur(7.3px);
+        }
+    </style>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
@@ -27,8 +39,6 @@
 
     <div class="container mt-5">
         <div class="row">
-
-
             <div class="col-sm-10">
 
                 <h1>Contos oficiais do Sistema Venturo</h1>
@@ -41,40 +51,33 @@
                     imaginação
                 </p>
 
-                <div id="accordion">
-
-                    <div class="card">
-                        <div class="card-header">
-                            <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
-                                <h4>Armagedom - O Retorno Ao Marco Zero</h4>
-                            </a>
-                        </div>
-                        <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
-                            <div class="card-body">
-                                <img class="img-fluid" src="/static/imagens/banners_contos/contos_amargedom.webp"
-                                    alt="Card image">
-                                <br><br>
-                                <p>
-                                    Em um multiverso infinito, a divindade Abys observa o ciclo incessante de nascimento
-                                    e morte
-                                    de universos, onde as ações das civilizações moldam o destino de cada realidade.
-                                    Abys
-                                    escolhe divindades para entreter sua existência eterna, desafiando-as a encontrar a
-                                    essência
-                                    da divindade em meio à complexidade do multiverso. Enquanto eles exploram novos
-                                    universos,
-                                    Abys contempla a interconexão de todas as coisas e a beleza na dança cósmica que
-                                    persiste
-                                    além do tempo e do espaço.
-
-                                </p>
-                                <a href="/paginas/contos/armagedom.html" class="btn btn-dark">História</a>
-                                <a href="/static/documentos/contos/Armagedom - O Retorno Ao Marco Zero.pdf"
-                                    class="btn btn-dark" download>Download</a>
+                <h2>Contos do Universo</h2>
+                <hr>
+                <div class="rounded-4" style="
+                    background-image: url('/static/imagens/contos/armagegom_retorno_marco_zero/thumb-contos-armagedom.webp');
+                    background-size: cover;
+                    background-position: center;
+                ">
+                    <div class="container-conteudo rounded-4">
+                        <a 
+                            style="text-decoration: none; color: white; cursor: pointer;" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#colapser-armagedom-marco-zero">
+                            <h3>Armagedom - O Retorno Ao Marco Zero</h3>
+                            <hr>
+                        </a>
+                        <div id="colapser-armagedom-marco-zero" class="collapse">
+                            <p>
+                                Em um multiverso infinito, a divindade Abys observa o ciclo incessante de nascimento e morte de universos, onde as ações das civilizações moldam o destino de cada realidade. Abys escolhe divindades para entreter sua existência eterna, desafiando-as a encontrar a essência da divindade em meio à complexidade do multiverso. Enquanto eles exploram novos universos, Abys contempla a interconexão de todas as coisas e a beleza na dança cósmica que persiste além do tempo e do espaço.
+                            </p>
+                            <div class="clearfix">
+                                <a href="/paginas/contos/armagedom.html" class="btn btn-outline-light float-end">História</a>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
+
                 <br>
 
             </div>

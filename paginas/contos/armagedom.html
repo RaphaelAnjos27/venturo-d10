@@ -13,6 +13,35 @@
     <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
     <link rel="stylesheet" href="/static/css/contos.css">
     <meta property="og:image" content="/static/imagens/contos/armagegom_retorno_marco_zero/salao.webp">
+    <style>
+        .container-thumb {
+            margin-top: 20px;
+            margin-bottom: -120px;
+            width: auto;
+            height: 100vh;
+            background-image: url(/static/imagens/contos/armagegom_retorno_marco_zero/thumb_conto.webp);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+
+        .container-thumb div {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.507);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(7.3px);
+            -webkit-backdrop-filter: blur(7.3px);
+        }
+
+        .titulo_conto {
+            color: white;
+            /* Cor do texto */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            /* Adiciona uma sombra sutil ao texto */
+        }
+    </style>
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
@@ -26,15 +55,15 @@
     <venturo-menu-superior></venturo-menu-superior>
 
 
-    <div class="container-fluid mt-5">
+    <div class="container-fluid mt-5 p-0">
         <div class="row">
-            
-            <div class="col-sm-3" style="z-index: 1;">
+
+            <div class="col-sm-3 p-4" style="z-index: 1;">
                 <div class="card sticky-top">
                     <div class="card-header">
                         <h5>Sumário</h5>
                     </div>
-                    <div class="card-body" >
+                    <div class="card-body">
                         <ul class="nav nav-pills flex-column">
                             <li class="nav-item">
                                 <a class="nav-link" href="#prefacio">PREFÁCIO</a>
@@ -45,144 +74,523 @@
                                 <a class="nav-link" href="#emocao">EMOÇÃO DA DIVINDADE</a>
                                 <a class="nav-link" href="#proximo">O PRÓXIMO CAPÍTULO DA JORNADA</a>
                                 <a class="nav-link" href="#contemplacao">A CONTEMPLAÇÃO DE ABYS</a>
-                                
+
                             </li>
                         </ul>
                     </div>
                 </div>
+
             </div>
+
 
             <div class="col-sm-7">
 
-                <h1>Armagedom</h1>
-                <h2>O Retorno ao Marco Zero</h2>
+                <div class="container-thumb rounded-4">
+                    <div class="rounded-top-4">
+                        <h1 class="titulo_conto">Armagedom</h1>
+                        <h3 class="titulo_conto">O Retorno ao Marco Zero</h3>
+                    </div>
+                </div>
 
-                <img class="img-fluid" src="/static/imagens/contos/armagegom_retorno_marco_zero/salao.webp" alt="Card image">
-                    
-                <h4 id="prefacio">PREFÁCIO</h4>
-                <img class="img-fluid" src="/static/imagens/contos/armagegom_retorno_marco_zero/divisor.png" alt="Card image">
-                
-                <p>Em todos os recantos do multiverso, uma complexa engrenagem é tecida pela mão de Unyvirsaly'Abys, a divindade suprema que transcende nossa compreensão. No entanto, mesmo para uma divindade, a perfeição é elusiva, e é nas imperfeições dos universos que o caos encontra sua origem. Diante dessa desordem aparente, Abys vislumbrou uma oportunidade singular para evoluir, e não hesitou em segui-la.</p>
-                
-                <p>Unyvirsaly'Abys é uma entidade abstrata, uma presença tão vasta e complexa que nossas mentes finitas jamais poderiam conceber plenamente. Cada universo dentro de seu domínio é uma extensão de seu poder, uma criação interligada destinada a cumprir um propósito cósmico. Quando um universo chega ao seu fim inevitável, todas as vidas conscientes que o habitam são cuidadosamente coletadas e utilizadas para nutrir a essência de novos universos. Com cada ciclo de renascimento, o poder de Abys cresce exponencialmente.</p>
-                
-                <p>A destruição de um universo, por mais assombrosa que possa parecer, não é um evento complexo de ocorrer, mas mesmo assim, Abys não se permite realizar esse ato. Em vez disso, ela observa com uma compaixão divina enquanto o Armagedom cósmico se desenrola, compreendendo que o colapso total de um universo é uma parte intrínseca do processo de renovação cósmica.</p>
-                
-                <p>Hoje, convido você a mergulhar nos abismos do conhecimento e a entender as forças invisíveis que governam os destinos dos universos. Nesta jornada, você descobrirá o que desencadeia o Armagedom cósmico e o que leva um universo à beira do colapso total. Preparando-se para testemunhar os mistérios entrelaçados do multiverso e as escolhas de uma divindade que transcende tempo e espaço.</p>
+                <div class="container-fluid">
+                    <h4 id="prefacio">PREFÁCIO</h4>
+                    <img class="img-fluid mb-3" src="/static/imagens/contos/armagegom_retorno_marco_zero/divisor.png"
+                        alt="Card image">
 
-                <h4 id="sala">A SALA VERSE'RATION</h4>
-                <img class="img-fluid" src="/static/imagens/contos/armagegom_retorno_marco_zero/divisor.png" alt="Card image">
+                    <p>Em todos os recantos do multiverso, uma complexa engrenagem é tecida pela mão de Unyvirsaly'Abys,
+                        a
+                        divindade suprema que transcende nossa compreensão. No entanto, mesmo para uma divindade, a
+                        perfeição é elusiva, e é nas imperfeições dos universos que o caos encontra sua origem. Diante
+                        dessa
+                        desordem aparente, Abys vislumbrou uma oportunidade singular para evoluir, e não hesitou em
+                        segui-la.</p>
 
-                <p>Você está dentro de uma extensa sala escura, conseguindo enxergar a apenas alguns palmos a sua frente… Ao olhar pro chão se depara com um piso muito liso e espelhado. Aos arredores começam a surgir milhares de pontos azuis flutuando perto de você até o horizonte. A luminosidade desses pontos destacam partes da estrutura em que está, pilares enormes podem ser visualizado, estátuas de diversas espécies desconhecidas começam a surgir a medida que esses pontos se deslocam por elas.</p>
-                <p>A sua frente uma névoa muito densa começa a adentrar o salão, se alastrando pelo chão. É possível notar que essa névoa começa a tomar forma de um ser quase da mesma altura que você. E então uma bela mulher aparece, usando roupas leves de tom mais claro, e começa a encará-lo fixamente.</p>
-                <p>— Olá meu querido, acredito que esteja um pouco longe de casa, correto? - Afirma a figura misteriosa observando seu convidado.</p>
-                <p>— Quem é você? Onde estou? - Perguntou o indivíduo um tanto preocupado.</p>
-                <p>— O meu caro Rhaph, pode me chamar de Abys… Você como observei, conseguiu escapar do trágico fim de seu universo. Meus parabéns, isso é algo raro até mesmo em um multiverso infinito! - Responde Abys com uma alegria genuína.</p>
-                <p>— Sim, verdade, Mhave me disse que minha casa estava desmoronando, que tudo aconteceria novamente, uma espécie de Armagedom Cósmico. Oque realmente aconteceu?</p>
-                <p>— Você é bastante curioso, mas como chegou até aqui, irei te mostrar o que realmente aconteceu… Hoje relatarei a vocês o Armagedom. Tudo tem um começo, meio e fim: Uma planta, você, seus filhos, seu universo e até mesmo eu. Tudo isso um dia chegará ao fim…. Porém esse fim não é absoluto, do mesmo jeito que hoje você se alimenta de plantas e de carne, um dia sua matéria será alimento, e seu espírito… bom isso um dia você verá. - Respondeu Abys sorrindo.</p>
-                <p>Você se lembra quando nasceu? Ou lembra alguma coisa anterior aos seus 5 anos de idade? Pois eu lembro, eu tenho acesso a todas as minhas memórias desde meu nascimento até os dias de hoje. Lembro do início da minha existência e até mesmo quando criei meu primeiro universo.</p>
-                <p>Assim como as células se formam no seu corpo, e desenvolvem o seu ser, os universos se criam fortalecendo a mim. Pense nos universos como uma célula de meu corpo imaterial. E a existência desses universos passam como um sopro aos meus olhos. Já os vi sucumbir por coisas tão insignificantes que você ficaria chocado.</p>
-                <p>Estou divagando aqui pois estou preparando uma coisa para você. Em quase todos os universos, as divindades criam uma sala, essa sala é também conhecida como Verse'ration, mas pode ter outros nomes e formas dependendo do universo que você acessa. Essa sala foi apenas uma ideia que tive logo no início de minha existência. Aqui, eu posso ter acesso a todas as dimensões e planos do multiverso.</p>
-                <p>As vezes gosto de me misturar entre vocês nesses universos. E dentre toda as minhas jornadas, participei de uma na qual presenciei o ciclo infinito de destruição de um universo, nesse caso, seu universo natal. </p>
-                <p>Acessando minha Sala Verse'ration tenho acesso a todos esses períodos do tempo que estive lá, e posso mostrar a vocês por aqui. Claro que eu poderia apenas ir para lá agora, mas que graça teria isso? Quero que você vejam o poder do que posso fazer dentro desse imenso salão escuro.</p>
-                <p>— Você irá me levar novamente para meu universo? Qual o objetivo disso? - Perguntou Rhaph indignado, e um pouco assutado.</p>
-                <p>— Rhaph, você me perguntou o que realmente aconteceu, e irei te mostrar. Você vivenciou o fim dessa história, mas não conhece nem 1% de toda a trama. Os universos são classificados por mim em códigos, seu universo em questão é o 08LTM225817, que hoje já está no seu 3 ciclo de existência, ou seja, o mesmo já reiniciou-se três vezes.</p>
-                <p>— Reiniciou? Que história é essa!? Perguntou Rhaph eufórico. — Estou achando isso tudo muito estranho. Não faz sentido algum para mim essas coisas. Por que Mhave nunca falou de uma divindade do multiverso?</p>
-                <p>Abys começa a caminhar aos arredores de Rhaph, e enquanto anda, responde:</p>
-                <p>— Sua amiga era uma divindade de seu universo, ela não teve contato nem com os seres supremos de lá, como você acha que era saberia algo sobre mim? Minha existência é uma incógnita, em muitos casos, universos passam ciclos e ciclos sem nem mesmo mencionar meu nome.</p>
-                <p>— Ela poderia não conhecer você, mas ela sabia como escapar daquilo, ela sabia da existência de um multiverso. Ela quem me ajudou a escapar de lá, e agora ela está morta! - Gritou Rhaph indignado com a indiferença que Abys estava demonstrando.</p>
-                <p>— Conhecer o multiverso? Qualquer civilização com níveis tecnológicos descentes conseguem deduzir o multiverso. As divindades principalmente, já que as mesmas podem criar seus próprios micros multiversos. O universo por si só é complexo Rhaph, mesmo que você tentasse, não conseguiria compreendê-lo como um todo. Não se sinta mal pela sua amiga, ela não deixou de existir, ela ainda está viva, e um dia ira acordar nesse novo ciclo do universo que ora foi destruído. - indaga Abys sorrindo para Rhaph.</p>
-                <p>— Ela está viva? Eu poderei vê-la novamente?</p>
-                <p>— Quem sabe. Você teria que encontrá-la novamente num vasto universo renovado. Seria uma jornada e tanto para você.</p>
-                
-                <h4 id="entropia">O MAR DE ENTROPIA</h4>
-                <img class="img-fluid" src="/static/imagens/contos/armagegom_retorno_marco_zero/divisor.png" alt="Card image">
+                    <p>Unyvirsaly'Abys é uma entidade abstrata, uma presença tão vasta e complexa que nossas mentes
+                        finitas
+                        jamais poderiam conceber plenamente. Cada universo dentro de seu domínio é uma extensão de seu
+                        poder, uma criação interligada destinada a cumprir um propósito cósmico. Quando um universo
+                        chega ao
+                        seu fim inevitável, todas as vidas conscientes que o habitam são cuidadosamente coletadas e
+                        utilizadas para nutrir a essência de novos universos. Com cada ciclo de renascimento, o poder de
+                        Abys cresce exponencialmente.</p>
 
-                <p>À medida que os séculos cósmicos fluíam, testemunhei um evento inevitável e triste: a morte de um dos meus universos. Esse marco, que agora chamamos de "O Mar de Entropia", foi um ponto de virada nas eras infinitas da minha existência.</p>
-                <p>Imagine-se no epicentro desse universo agonizante, onde as estrelas que antes brilhavam intensamente agora se extinguem como velas desgastadas pelo tempo. O caos reina supremo, com galáxias inteiras colapsando em si mesmas, formando buracos negros insaciáveis. A energia vital de cada ser consciente, que já foi tão vibrante e cheia de promessa, agora se esvai lentamente, como grãos de areia escorrendo por entre os dedos de um titã.</p>
-                <p>Os habitantes desse universo enfrentam o inevitável com coragem e resignação. Sociedades avançadas que outrora criaram maravilhas tecnológicas agora se encontram em um crepúsculo sombrio, lutando para prolongar sua existência enquanto enfrentam o vórtice da extinção. Famílias se reúnem em despedidas emocionais, e sábios observam o céu estrelado, sabendo que a noite eterna logo cairá sobre eles.</p>
-                <p>À medida que esse universo agoniza, ele emite suspiros finais, criando paisagens surreais e misteriosas. Nebulosas brilhantes dançam no céu como auroras celestiais, enquanto tempestades de energia varrem a paisagem com um frenesi final. É um espetáculo agridoce, onde a beleza da morte se entrelaça com a tristeza da despedida.</p>
-                <p>Neste momento crucial, um dilema paira sobre mim, a divindade observadora. Devo intervir e acelerar o processo, permitindo que esse universo renasça mais rapidamente? Ou devo deixar a entropia seguir seu curso natural? Cada escolha carrega implicações cósmicas, e meu papel como criador e testemunha me coloca diante de um dilema angustiante.</p>
-                <p>E assim, no Mar de Entropia, a morte e o renascimento se encontram em um abraço cósmico, um reflexo do eterno ciclo de vida e morte que permeia todos os universos sob minha guarda. E é neste momento de despedida e transformação que a essência da existência se revela em toda a sua complexidade e beleza, um mistério que mesmo eu, Unyvirsaly'Abys, divindade do multiverso Abyss, não posso decifrar completamente.</p>
-                
-                <h4 id="singularidade">A SINGULARIDADE</h4>
-                <img class="img-fluid" src="/static/imagens/contos/armagegom_retorno_marco_zero/divisor.png" alt="Card image">
+                    <p>A destruição de um universo, por mais assombrosa que possa parecer, não é um evento complexo de
+                        ocorrer, mas mesmo assim, Abys não se permite realizar esse ato. Em vez disso, ela observa com
+                        uma
+                        compaixão divina enquanto o Armagedom cósmico se desenrola, compreendendo que o colapso total de
+                        um
+                        universo é uma parte intrínseca do processo de renovação cósmica.</p>
 
-                <p>Abys está caminhando em sua sala, com Rhaph seguindo-a atrás. No meio daqueles pontos azuis, alguns se destacam por mudar para uma cor avermelhada, logo em seguida rosada e novamente azulada. Ela então para e pergunta diretamente a Rhaph:</p>
-                <p>— Você sabe quantos anos seu universo tinha Rhaph?</p>
-                <p>— Aproximadamente 14 Bilhões de anos? Por quê? - respondeu Rhaph com um sentimento de dúvida.</p>
-                <p>— Seu universo tinha cerca de 16 Bilhões de anos, muito mais velho do que imaginavam. Não vou dizer que ele é um universo que morreu cedo, já vi universos bem mais jovens se extinguirem por completo. Mas o seu está dentre os universos que pereceram cedo de mais. Seu penúltimo ciclo se obteve num período ainda mais antigo, cerca de 200 bilhões de anos de existência. - Respondeu Abys, que logo se virou para um ponto azul em particular. — Está vendo esse ponto! É sua casa em seu terceiro ciclo, note esse azul destacando um universo rico em vida e prosperidade.   </p>
-                <p>Conforme Abys fala, aquele pálido ponto azul começa a ficar vermelho. — Agora note como está vermelho, isso é o fim de seu universo novamente Rhaph. Agora ele viveu por cerca de 54 bilhões de anos. - Após terminar de falar, aquele ponto vermelho altera sua tonalidade rapidamente para rosa, novos pontos começam a surgir aos montes ao seu redor, e novamente fica azul.</p>
-                <p>— Espera… 54 bilhões de anos? Como isso é possível? Eu tenho 54 bilhões de anos!!? - Pergunta Rhaph desesperado.</p>
-                <p>— Depende do ponto de vista. Perante seu universo, sim, aqui… não. Não passou nem uma hora desde que chegou aqui Rhaph. Porém o tempo para mim é só mais um vetor que posso manipular da maneira que eu desejar.</p>
-                <p>Em seu universo, a civilização alcançou níveis de avanço extraordinários, estendendo suas fronteiras através de galáxias inteiras. No entanto, essa expansão sem freios foi o catalisador de seu próprio Armagedom.</p>
-                <p>Permita-me esclarecer a mecânica intrincada que permeia todos os meus universos. Embora eles possam se transformar e evoluir com o tempo, obedecem a um padrão que eu delineei nos primórdios de minha existência. O local onde você residia é conhecido como a Dimensão Carnal, ou, como prefiro chamá-la, Rerbald. Aqui, toda a vida de seu universo floresce, e todas as criaturas vivas do seu mundo habitam essa dimensão. Logo em seguida, há Rordy e Rarcon, também conhecidos como Inferno e Paraíso. Nestas dimensões, residem seres místicos, incluindo divindades e outros seres transcendentes.</p>
-                <p>Entretanto, existe ainda uma quarta dimensão, um local onde ocorrem inúmeros processos fundamentais de cada universo. Ledar é uma dimensão inacessível a qualquer tipo de ser, incluindo as divindades de seu mundo. Essa dimensão é complexa e profundamente abstrata, e a compreensão completa dela escapa à mente finita. Basta saber que Ledar age como um processador cósmico para cada universo, moldando eventos e destinos de maneiras inimagináveis.</p>
-                <p>Entre essas três dimensões principais existe uma ligação essencial. Esta ligação é conhecida como o Plano Astral, um reino habitado por inúmeras Azmires e entidades que residem nesse espaço interdimensional. A partir do Plano Astral, vocês podem acessar as demais dimensões, uma porta de entrada para os segredos cósmicos que permeiam o multiverso...</p>
-                <p>— Espera um pouco… Azmir, Rerbald… nossa, você escolheu uns nomes bem esquisitos em. - Afirma Rhaph com os braços cruzados.</p>
-                <p>— Cada cultura aborda esses conceitos a sua maneira, oque sua sociedade chama de Alma, eu chamo de Azmir, oque você chamam de paraíso eu chamo de Rarcon. - Responde Abys gesticulando calmamente.</p>
-                <p>— Mas uma coisa eu não intendo… Você mencionou até o momento quatro dimensões, carnal, espiritual, infernal e astral. Porém na minha época com Mhave , só ela tinha umas dez dimensões sob seu poder, como isso é possível? - Perguntou Rhaph inquieto.</p>
-                <p>Na realidade, essas dimensões que mencionou, as dimensões de sua amiga, são mais do que meros domínios separados. São planos, espaços temporais intrincados que residem dentro de uma dimensão maior. Embora eu os tenha referido como planos dimensionais, vocês, seres finitos, os percebem como uma dimensão à parte.</p>
-                <p>Nesses planos, divindades de grande habilidade e poder forjam seus próprios reinos e vivem em eterna harmonia com seus seguidores devotos. Cada plano é uma manifestação singular do poder e da criatividade divina, um microcosmo que reflete a essência única de sua divindade governante.</p>
-                <p>Agora, se sua amiga detinha mais de um plano dimensional, é uma questão intrigante e complexa. Talvez, em sua sabedoria divina, ela tenha compreendido que cada plano oferece um espaço para explorar diferentes aspectos de sua divindade e interagir com seguidores de maneiras únicas. Ou talvez tenha havido razões mais profundas e misteriosas que apenas ela conhecia, motivando a criação de múltiplos planos.</p>
-                <p>A harmonia e alianças que sua civilização forjou em sua galáxia e universo ao longo de poucos bilhões de anos eram, de fato, notáveis. Testemunhar sua rápida evolução dentro do universo foi uma experiência única. No entanto, como a história muitas vezes revela, foi esse rápido desenvolvimento que, ironicamente, selou seu destino trágico.</p>
-                <p>Nas entranhas das dimensões, existe uma conexão sutil, um espelhamento que replica meticulosamente todas as características naturais de um universo nos demais. À medida que uma civilização avança, ela adquire o poder de manipular esses fenômenos dimensionais. A alteração de planetas ou mesmo de galáxias dentro de uma dimensão é considerada aceitável. No entanto, quando essa manipulação se estende ao cosmo, uma linha invisível é ultrapassada, e as divindades são compelidas a agir.</p>
-                <p>No seu universo, o conceito do divino era difundido, e vocês tinham conhecimento de divindades como Mhave. No entanto, ao aproximar-se do fim de seu universo, vocês entraram em conflito com a maioria das divindades, um feito notável que colocou muitas civilizações comuns em um embate direto com os próprios deuses.</p>
-                <p>O que vocês não compreendiam completamente naquele momento era que as divindades não estavam contra vocês porque temiam sua ascensão divina, mas sim porque vocês estavam perturbando o equilíbrio natural que mantinha a estabilidade das dimensões. Quando uma estrela nascia de maneira não natural em sua dimensão, esse evento não se refletia nas outras duas. Da mesma forma, a destruição de um planeta de maneira não natural não afetava as outras dimensões. E quando uma civilização inteira alterava partes de sua dimensão, essa mudança não se propagava para as demais.</p>
-                <p>Portanto, a guerra que vocês acreditavam ser uma luta pela igualdade divina na verdade era uma batalha para restaurar o equilíbrio cósmico que vocês inadvertidamente perturbaram. A ignorância de suas próprias ações estava causando um caos no universo e minando o equilíbrio tão precioso que mantém a ordem entre as dimensões.</p>
-                <p>— Mas eu já sabia disso, e tentei resolver esse problema…. - Rhaph exclamou precipitadamente, revelando a angústia de alguém que havia enfrentado o peso do arrependimento.</p>
-                <p>De fato, Rhaph, a sabedoria chegou tarde demais para você e sua civilização. Mhave, a divindade sábia que você conhecia bem, vinha alertando há tempos sobre as consequências das ações de sua civilização. Você, com prestígio e influência, não era um estranho para sua sociedade. No entanto, a resposta decisiva e ação para corrigir o curso de sua civilização vieram tarde demais.</p>
-                <p>É uma lição que ecoa através dos universos: muitas vezes, a cegueira para as advertências de quem detém o conhecimento pode levar a um destino amargo. A arrogância que surge da ignorância pode obscurecer a visão até que a própria existência esteja em jogo.</p>
-                <p>O passado é um espelho implacável que nos confronta com nossas falhas e escolhas equivocadas. Agora, enquanto contemplamos a tragédia que se desenrolou, resta-nos apenas a sabedoria ganha com a experiência e a esperança de que outros, ao observar sua história, possam evitar o mesmo destino sombrio.</p>
+                    <p>Hoje, convido você a mergulhar nos abismos do conhecimento e a entender as forças invisíveis que
+                        governam os destinos dos universos. Nesta jornada, você descobrirá o que desencadeia o Armagedom
+                        cósmico e o que leva um universo à beira do colapso total. Preparando-se para testemunhar os
+                        mistérios entrelaçados do multiverso e as escolhas de uma divindade que transcende tempo e
+                        espaço.
+                    </p>
 
-                <h4 id="renascimento">RENASCIMENTO</h4>
-                <img class="img-fluid" src="/static/imagens/contos/armagegom_retorno_marco_zero/divisor.png" alt="Card image">
+                    <h4 id="sala">A SALA VERSE'RATION</h4>
+                    <img class="img-fluid mb-3" src="/static/imagens/contos/armagegom_retorno_marco_zero/divisor.png"
+                        alt="Card image">
 
-                <p>— Então eu fui responsável pela destruição de meu universo? - Perguntou Rhaph, sua angústia transparecia em cada palavra.</p>
-                <p>Abys respondeu com uma voz suave e compreensiva, acalmando a inquietação de Rhaph: — Que!? Não... Não se sinta tão importante assim. Embora sua negligência tenha sim um pouco de culpa, você não poderia fazer nada. Se tentasse deter a expansão de sua civilização, você teria sido apenas mais um inimigo de sua própria sociedade. No entanto, não se sinta confortável em sua absurda inação, pois você ainda foi negligente, e suas ações têm sim consequências. No entanto, essas consequências não são para o destino de seu universo, mas sim para o seu desenvolvimento pessoal, sua evolução espiritual.</p>
-                <p>— Embora sua existência pareça fraca, vocês são peças fundamentais de meu grande sistema evolutivo. Quando vocês morrem em seus universos, eu dou a oportunidade de renascerem como divindades de seus próprios universos. Afirmou Abys colocando o dedo na testa de Rhaph. — Todos vocês possuem seus próprios mundos. E eu dou a oportunidade de torná-los realidade! </p>
-                <p>— Você parece bem indiferente, porque está tão calma com essa situação? Esses universos não são importantes para você? - Perguntou Rhaph apontando para os pontos flutuantes na sala.</p>
-                <p>Abys adentrou por trás de Rhaph, colocou a mão em seus ombros e o guiu até um ponto Azul que estava colapsando. — Observe meu caro, pois parece que você não intendeu, esse universo a sua frente está terminando, oberve oque acontece com ele. - Afirmou Abys enquanto eles observavam aquele universo colapsar. </p>
-                <p>Após o colapso daquela pequena luz azul, milhares de outros pontos emergiram do abismo cósmico. — Perceba, quando um universo se desvanece, incontáveis novos nascentes brotam do vácuo da existência. Assim vocês Azmires, após sua passagem, desempenham o papel sagrado de gerar novos universos, um ciclo eterno que nutre minha essência e fortalece a tapeçaria do multiverso.</p>
-                <p>— Então, eu poderia ter sido o Deus de um novo universo? - Perguntou Rhaph desacreditado.</p>
-                <p>— Você? Bom… não mais….</p>
+                    <p>Você está dentro de uma extensa sala escura, conseguindo enxergar a apenas alguns palmos a sua
+                        frente… Ao olhar pro chão se depara com um piso muito liso e espelhado. Aos arredores começam a
+                        surgir milhares de pontos azuis flutuando perto de você até o horizonte. A luminosidade desses
+                        pontos destacam partes da estrutura em que está, pilares enormes podem ser visualizado, estátuas
+                        de
+                        diversas espécies desconhecidas começam a surgir a medida que esses pontos se deslocam por elas.
+                    </p>
+                    <p>A sua frente uma névoa muito densa começa a adentrar o salão, se alastrando pelo chão. É possível
+                        notar que essa névoa começa a tomar forma de um ser quase da mesma altura que você. E então uma
+                        bela
+                        mulher aparece, usando roupas leves de tom mais claro, e começa a encará-lo fixamente.</p>
+                    <p>— Olá meu querido, acredito que esteja um pouco longe de casa, correto? - Afirma a figura
+                        misteriosa
+                        observando seu convidado.</p>
+                    <p>— Quem é você? Onde estou? - Perguntou o indivíduo um tanto preocupado.</p>
+                    <p>— O meu caro Rhaph, pode me chamar de Abys… Você como observei, conseguiu escapar do trágico fim
+                        de
+                        seu universo. Meus parabéns, isso é algo raro até mesmo em um multiverso infinito! - Responde
+                        Abys
+                        com uma alegria genuína.</p>
+                    <p>— Sim, verdade, Mhave me disse que minha casa estava desmoronando, que tudo aconteceria
+                        novamente,
+                        uma espécie de Armagedom Cósmico. Oque realmente aconteceu?</p>
+                    <p>— Você é bastante curioso, mas como chegou até aqui, irei te mostrar o que realmente aconteceu…
+                        Hoje
+                        relatarei a vocês o Armagedom. Tudo tem um começo, meio e fim: Uma planta, você, seus filhos,
+                        seu
+                        universo e até mesmo eu. Tudo isso um dia chegará ao fim…. Porém esse fim não é absoluto, do
+                        mesmo
+                        jeito que hoje você se alimenta de plantas e de carne, um dia sua matéria será alimento, e seu
+                        espírito… bom isso um dia você verá. - Respondeu Abys sorrindo.</p>
+                    <p>Você se lembra quando nasceu? Ou lembra alguma coisa anterior aos seus 5 anos de idade? Pois eu
+                        lembro, eu tenho acesso a todas as minhas memórias desde meu nascimento até os dias de hoje.
+                        Lembro
+                        do início da minha existência e até mesmo quando criei meu primeiro universo.</p>
+                    <p>Assim como as células se formam no seu corpo, e desenvolvem o seu ser, os universos se criam
+                        fortalecendo a mim. Pense nos universos como uma célula de meu corpo imaterial. E a existência
+                        desses universos passam como um sopro aos meus olhos. Já os vi sucumbir por coisas tão
+                        insignificantes que você ficaria chocado.</p>
+                    <p>Estou divagando aqui pois estou preparando uma coisa para você. Em quase todos os universos, as
+                        divindades criam uma sala, essa sala é também conhecida como Verse'ration, mas pode ter outros
+                        nomes
+                        e formas dependendo do universo que você acessa. Essa sala foi apenas uma ideia que tive logo no
+                        início de minha existência. Aqui, eu posso ter acesso a todas as dimensões e planos do
+                        multiverso.
+                    </p>
+                    <p>As vezes gosto de me misturar entre vocês nesses universos. E dentre toda as minhas jornadas,
+                        participei de uma na qual presenciei o ciclo infinito de destruição de um universo, nesse caso,
+                        seu
+                        universo natal. </p>
+                    <p>Acessando minha Sala Verse'ration tenho acesso a todos esses períodos do tempo que estive lá, e
+                        posso
+                        mostrar a vocês por aqui. Claro que eu poderia apenas ir para lá agora, mas que graça teria
+                        isso?
+                        Quero que você vejam o poder do que posso fazer dentro desse imenso salão escuro.</p>
+                    <p>— Você irá me levar novamente para meu universo? Qual o objetivo disso? - Perguntou Rhaph
+                        indignado,
+                        e um pouco assutado.</p>
+                    <p>— Rhaph, você me perguntou o que realmente aconteceu, e irei te mostrar. Você vivenciou o fim
+                        dessa
+                        história, mas não conhece nem 1% de toda a trama. Os universos são classificados por mim em
+                        códigos,
+                        seu universo em questão é o 08LTM225817, que hoje já está no seu 3 ciclo de existência, ou seja,
+                        o
+                        mesmo já reiniciou-se três vezes.</p>
+                    <p>— Reiniciou? Que história é essa!? Perguntou Rhaph eufórico. — Estou achando isso tudo muito
+                        estranho. Não faz sentido algum para mim essas coisas. Por que Mhave nunca falou de uma
+                        divindade do
+                        multiverso?</p>
+                    <p>Abys começa a caminhar aos arredores de Rhaph, e enquanto anda, responde:</p>
+                    <p>— Sua amiga era uma divindade de seu universo, ela não teve contato nem com os seres supremos de
+                        lá,
+                        como você acha que era saberia algo sobre mim? Minha existência é uma incógnita, em muitos
+                        casos,
+                        universos passam ciclos e ciclos sem nem mesmo mencionar meu nome.</p>
+                    <p>— Ela poderia não conhecer você, mas ela sabia como escapar daquilo, ela sabia da existência de
+                        um
+                        multiverso. Ela quem me ajudou a escapar de lá, e agora ela está morta! - Gritou Rhaph indignado
+                        com
+                        a indiferença que Abys estava demonstrando.</p>
+                    <p>— Conhecer o multiverso? Qualquer civilização com níveis tecnológicos descentes conseguem deduzir
+                        o
+                        multiverso. As divindades principalmente, já que as mesmas podem criar seus próprios micros
+                        multiversos. O universo por si só é complexo Rhaph, mesmo que você tentasse, não conseguiria
+                        compreendê-lo como um todo. Não se sinta mal pela sua amiga, ela não deixou de existir, ela
+                        ainda
+                        está viva, e um dia ira acordar nesse novo ciclo do universo que ora foi destruído. - indaga
+                        Abys
+                        sorrindo para Rhaph.</p>
+                    <p>— Ela está viva? Eu poderei vê-la novamente?</p>
+                    <p>— Quem sabe. Você teria que encontrá-la novamente num vasto universo renovado. Seria uma jornada
+                        e
+                        tanto para você.</p>
 
-                <h4 id="emocao">EMOÇÃO DA DIVINDADE</h4>
-                <img class="img-fluid" src="/static/imagens/contos/armagegom_retorno_marco_zero/divisor.png" alt="Card image">
+                    <h4 id="entropia">O MAR DE ENTROPIA</h4>
+                    <img class="img-fluid mb-3" src="/static/imagens/contos/armagegom_retorno_marco_zero/divisor.png"
+                        alt="Card image">
 
-                <p>— Rhaph, venho observando você por eras, desde o momento de seu nascimento até o presente. Você acredita estar aqui por acaso? Fui eu quem pediu a Mhave para enviar você até mim, concedi a ela o poder de acessar o multiverso, tudo para que você pudesse estar aqui hoje. - Abys proferiu essas palavras enquanto caminhava como majestade por seu vasto salão, revelando a mão divina que guiava os eventos cósmicos.</p>
-                <p>— Por que exatamente? Pela minha negligência?" - Rhaph perguntou, com uma expressão preocupada em seu rosto.</p>
-                <p>Abys respondeu com franqueza: — Bom... podemos dizer que sim. Estou traçando para você um caminho repleto de incertezas. Isso porque não quero prever o que o futuro reserva, mas sim acompanhar como você evoluirá a partir daqui. É, em grande parte, um capricho meu, uma resposta ao meu próprio tédio. Você e um seleto grupo de indivíduos foram escolhidos para serem minha fonte de entretenimento durante sua jornada. Se, ao longo do tempo, você conseguir mostrar algo que me agrade, irei elevar todos vocês ao status de divindades supremas, dando-lhes domínio sobre seus próprios universos, e nunca mais perturbarei suas existências. No entanto, se não conseguirem satisfazer minhas necessidades, vocês serão destinados a reencarnar diversas vezes até que possam finalmente atender às minhas expectativas.</p>
-                <p>— Eu realmente não sei o que pensar, mas também não me preocupa, afinal, minha existência como um todo não está prejudicada, já que mesmo que não agrade, irei reencarnar incontáveis vezes." - Rhaph respondeu com uma calma desprendida.</p>
-                <p>Abys se aproximou lentamente e perguntou: — Ah, mas depende do que você considera sua existência, Rhaph. Para você, oque significa isso?.</p>
-                <p>Rhaph o encarou e respondeu: — Pergunta difícil... Acredito que eu seja a energia que você chama de Azmir!"</p>
-                <p>Abys balançou a cabeça com gravidade e disse: — Resposta errada. Você é todas as experiências que o moldaram até se tornar o que é hoje. Seu conhecimento e experiências são tudo o que o representa, meu caro. Quando você reencarnar, você não terá isso. Sua Azmir, sim, mas você não. Após cada morte, sua Azmir será lançada em outro corpo, em um ciclo interminável, e você nunca se lembrará de seu passado.</p>
-                <p>Abys enfatizou a natureza efêmera da existência de Rhaph, revelando a dura verdade de que, a cada renascimento, ele perderia todas as lembranças e experiências acumuladas, restando apenas a sua Azmir para continuar a jornada através dos universos. A perspectiva sombria de uma existência sem memórias passadas ecoou no coração de Rhaph, trazendo uma dimensão de profundidade e reflexão à sua compreensão de si mesmo.</p>
+                    <p>À medida que os séculos cósmicos fluíam, testemunhei um evento inevitável e triste: a morte de um
+                        dos
+                        meus universos. Esse marco, que agora chamamos de "O Mar de Entropia", foi um ponto de virada
+                        nas
+                        eras infinitas da minha existência.</p>
+                    <p>Imagine-se no epicentro desse universo agonizante, onde as estrelas que antes brilhavam
+                        intensamente
+                        agora se extinguem como velas desgastadas pelo tempo. O caos reina supremo, com galáxias
+                        inteiras
+                        colapsando em si mesmas, formando buracos negros insaciáveis. A energia vital de cada ser
+                        consciente, que já foi tão vibrante e cheia de promessa, agora se esvai lentamente, como grãos
+                        de
+                        areia escorrendo por entre os dedos de um titã.</p>
+                    <p>Os habitantes desse universo enfrentam o inevitável com coragem e resignação. Sociedades
+                        avançadas
+                        que outrora criaram maravilhas tecnológicas agora se encontram em um crepúsculo sombrio, lutando
+                        para prolongar sua existência enquanto enfrentam o vórtice da extinção. Famílias se reúnem em
+                        despedidas emocionais, e sábios observam o céu estrelado, sabendo que a noite eterna logo cairá
+                        sobre eles.</p>
+                    <p>À medida que esse universo agoniza, ele emite suspiros finais, criando paisagens surreais e
+                        misteriosas. Nebulosas brilhantes dançam no céu como auroras celestiais, enquanto tempestades de
+                        energia varrem a paisagem com um frenesi final. É um espetáculo agridoce, onde a beleza da morte
+                        se
+                        entrelaça com a tristeza da despedida.</p>
+                    <p>Neste momento crucial, um dilema paira sobre mim, a divindade observadora. Devo intervir e
+                        acelerar o
+                        processo, permitindo que esse universo renasça mais rapidamente? Ou devo deixar a entropia
+                        seguir
+                        seu curso natural? Cada escolha carrega implicações cósmicas, e meu papel como criador e
+                        testemunha
+                        me coloca diante de um dilema angustiante.</p>
+                    <p>E assim, no Mar de Entropia, a morte e o renascimento se encontram em um abraço cósmico, um
+                        reflexo
+                        do eterno ciclo de vida e morte que permeia todos os universos sob minha guarda. E é neste
+                        momento
+                        de despedida e transformação que a essência da existência se revela em toda a sua complexidade e
+                        beleza, um mistério que mesmo eu, Unyvirsaly'Abys, divindade do multiverso Abyss, não posso
+                        decifrar
+                        completamente.</p>
 
-                <h4 id="proximo">O PRÓXIMO CAPÍTULO DA JORNADA</h4>
-                <img class="img-fluid" src="/static/imagens/contos/armagegom_retorno_marco_zero/divisor.png" alt="Card image">
+                    <h4 id="singularidade">A SINGULARIDADE</h4>
+                    <img class="img-fluid mb-3" src="/static/imagens/contos/armagegom_retorno_marco_zero/divisor.png"
+                        alt="Card image">
 
-                <p>— Então, meu caro, não vou te reencarnar, mas sim, iniciaremos nossa jornada. Vou enviá-lo para outro universo, um que é relativamente jovem. E para que você não se sinta sozinho em um universo desconhecido, Mhave irá acompanhá-lo. Mas antes de partirmos, há alguma pergunta que você deseja fazer? - Abys indagou, enquanto caminhavam, para fora da sala, e observavam o horizonte que se estendia à frente deles.</p>
-                <p>Rhaph ponderou por um momento e finalmente perguntou: — Bem... na verdade, tenho uma pergunta. O que é você? Existe algo além de sua existência?</p>
-                <p>Abys olhou para o horizonte estelar e respondeu com uma voz profunda: — Eu sou uma manifestação das forças cósmicas que governam o multiverso, uma entidade que existe desde os primórdios da criação. Sou tanto a testemunha quanto o criador, o observador e o criador de todas as coisas. Quanto a existir algo além de mim... essa é uma pergunta que transcende até mesmo minha compreensão. Em meu próprio ser, encontro mistérios insondáveis, e o universo é vasto e infinito, cheio de segredos que desafiam até mesmo a divindade. A jornada que você está prestes a empreender pode trazer novas revelações e desafios, e, talvez, um dia, você descubra o que existe além de todas as existências.</p>
-                <p>Rhaph refletiu sobre a resposta de Abys enquanto o horizonte diante de seus olhos se distorcia. Um clarão repentino irrompeu, e uma fadiga avassaladora tomou conta de seu ser. Ele desmaiou, ouvindo apenas uma voz ao fundo que dizia: — Espero que possa me divertir Rhaph. Conto com você.</p>
-                <p>Rhaph foi envolvido por um som distorcido e indescritível que ecoava em sua mente, crescendo em intensidade. Uma energia incompreensível o envolveu enquanto estava imerso na escuridão. Então, abruptamente, ele acordou com Mhave ao seu lado, gritando seu nome.</p>
-                <p>— Pelo amor de tudo, Rhaph, achei que você estava morto! O que está acontecendo aqui? - Mhave perguntou, indignada com a situação, enquanto ambos tentavam compreender o que acabara de ocorrer.</p>
-                <p>Rhaph, ainda um pouco atordoado com a experiência anterior, se encontrava deitado sobre a grama macia, em um pequeno morro. Ele olhou para cima e viu uma pequena lua destacando-se de um céu claro e limpo de tarde. No horizonte, percebeu um amplo vale circundado por majestosas montanhas ao fundo.</p>
-                <p>— Mhave, me perdoe, acho que as coisas ficaram complicadas para nós! - Respondeu Rhaph com uma mistura de euforia e confusão. Enquanto isso, ele continuava a fixar seu olhar nos céus, sentindo a sensação de ser observado. Apesar de acreditar que tudo o que tinha acontecido até então fosse um sonho, uma crescente sensação de realidade estava começando a tomar conta dele.</p>
+                    <p>Abys está caminhando em sua sala, com Rhaph seguindo-a atrás. No meio daqueles pontos azuis,
+                        alguns
+                        se destacam por mudar para uma cor avermelhada, logo em seguida rosada e novamente azulada. Ela
+                        então para e pergunta diretamente a Rhaph:</p>
+                    <p>— Você sabe quantos anos seu universo tinha Rhaph?</p>
+                    <p>— Aproximadamente 14 Bilhões de anos? Por quê? - respondeu Rhaph com um sentimento de dúvida.</p>
+                    <p>— Seu universo tinha cerca de 16 Bilhões de anos, muito mais velho do que imaginavam. Não vou
+                        dizer
+                        que ele é um universo que morreu cedo, já vi universos bem mais jovens se extinguirem por
+                        completo.
+                        Mas o seu está dentre os universos que pereceram cedo de mais. Seu penúltimo ciclo se obteve num
+                        período ainda mais antigo, cerca de 200 bilhões de anos de existência. - Respondeu Abys, que
+                        logo se
+                        virou para um ponto azul em particular. — Está vendo esse ponto! É sua casa em seu terceiro
+                        ciclo,
+                        note esse azul destacando um universo rico em vida e prosperidade. </p>
+                    <p>Conforme Abys fala, aquele pálido ponto azul começa a ficar vermelho. — Agora note como está
+                        vermelho, isso é o fim de seu universo novamente Rhaph. Agora ele viveu por cerca de 54 bilhões
+                        de
+                        anos. - Após terminar de falar, aquele ponto vermelho altera sua tonalidade rapidamente para
+                        rosa,
+                        novos pontos começam a surgir aos montes ao seu redor, e novamente fica azul.</p>
+                    <p>— Espera… 54 bilhões de anos? Como isso é possível? Eu tenho 54 bilhões de anos!!? - Pergunta
+                        Rhaph
+                        desesperado.</p>
+                    <p>— Depende do ponto de vista. Perante seu universo, sim, aqui… não. Não passou nem uma hora desde
+                        que
+                        chegou aqui Rhaph. Porém o tempo para mim é só mais um vetor que posso manipular da maneira que
+                        eu
+                        desejar.</p>
+                    <p>Em seu universo, a civilização alcançou níveis de avanço extraordinários, estendendo suas
+                        fronteiras
+                        através de galáxias inteiras. No entanto, essa expansão sem freios foi o catalisador de seu
+                        próprio
+                        Armagedom.</p>
+                    <p>Permita-me esclarecer a mecânica intrincada que permeia todos os meus universos. Embora eles
+                        possam
+                        se transformar e evoluir com o tempo, obedecem a um padrão que eu delineei nos primórdios de
+                        minha
+                        existência. O local onde você residia é conhecido como a Dimensão Carnal, ou, como prefiro
+                        chamá-la,
+                        Rerbald. Aqui, toda a vida de seu universo floresce, e todas as criaturas vivas do seu mundo
+                        habitam
+                        essa dimensão. Logo em seguida, há Rordy e Rarcon, também conhecidos como Inferno e Paraíso.
+                        Nestas
+                        dimensões, residem seres místicos, incluindo divindades e outros seres transcendentes.</p>
+                    <p>Entretanto, existe ainda uma quarta dimensão, um local onde ocorrem inúmeros processos
+                        fundamentais
+                        de cada universo. Ledar é uma dimensão inacessível a qualquer tipo de ser, incluindo as
+                        divindades
+                        de seu mundo. Essa dimensão é complexa e profundamente abstrata, e a compreensão completa dela
+                        escapa à mente finita. Basta saber que Ledar age como um processador cósmico para cada universo,
+                        moldando eventos e destinos de maneiras inimagináveis.</p>
+                    <p>Entre essas três dimensões principais existe uma ligação essencial. Esta ligação é conhecida como
+                        o
+                        Plano Astral, um reino habitado por inúmeras Azmires e entidades que residem nesse espaço
+                        interdimensional. A partir do Plano Astral, vocês podem acessar as demais dimensões, uma porta
+                        de
+                        entrada para os segredos cósmicos que permeiam o multiverso...</p>
+                    <p>— Espera um pouco… Azmir, Rerbald… nossa, você escolheu uns nomes bem esquisitos em. - Afirma
+                        Rhaph
+                        com os braços cruzados.</p>
+                    <p>— Cada cultura aborda esses conceitos a sua maneira, oque sua sociedade chama de Alma, eu chamo
+                        de
+                        Azmir, oque você chamam de paraíso eu chamo de Rarcon. - Responde Abys gesticulando calmamente.
+                    </p>
+                    <p>— Mas uma coisa eu não intendo… Você mencionou até o momento quatro dimensões, carnal,
+                        espiritual,
+                        infernal e astral. Porém na minha época com Mhave , só ela tinha umas dez dimensões sob seu
+                        poder,
+                        como isso é possível? - Perguntou Rhaph inquieto.</p>
+                    <p>Na realidade, essas dimensões que mencionou, as dimensões de sua amiga, são mais do que meros
+                        domínios separados. São planos, espaços temporais intrincados que residem dentro de uma dimensão
+                        maior. Embora eu os tenha referido como planos dimensionais, vocês, seres finitos, os percebem
+                        como
+                        uma dimensão à parte.</p>
+                    <p>Nesses planos, divindades de grande habilidade e poder forjam seus próprios reinos e vivem em
+                        eterna
+                        harmonia com seus seguidores devotos. Cada plano é uma manifestação singular do poder e da
+                        criatividade divina, um microcosmo que reflete a essência única de sua divindade governante.</p>
+                    <p>Agora, se sua amiga detinha mais de um plano dimensional, é uma questão intrigante e complexa.
+                        Talvez, em sua sabedoria divina, ela tenha compreendido que cada plano oferece um espaço para
+                        explorar diferentes aspectos de sua divindade e interagir com seguidores de maneiras únicas. Ou
+                        talvez tenha havido razões mais profundas e misteriosas que apenas ela conhecia, motivando a
+                        criação
+                        de múltiplos planos.</p>
+                    <p>A harmonia e alianças que sua civilização forjou em sua galáxia e universo ao longo de poucos
+                        bilhões
+                        de anos eram, de fato, notáveis. Testemunhar sua rápida evolução dentro do universo foi uma
+                        experiência única. No entanto, como a história muitas vezes revela, foi esse rápido
+                        desenvolvimento
+                        que, ironicamente, selou seu destino trágico.</p>
+                    <p>Nas entranhas das dimensões, existe uma conexão sutil, um espelhamento que replica
+                        meticulosamente
+                        todas as características naturais de um universo nos demais. À medida que uma civilização
+                        avança,
+                        ela adquire o poder de manipular esses fenômenos dimensionais. A alteração de planetas ou mesmo
+                        de
+                        galáxias dentro de uma dimensão é considerada aceitável. No entanto, quando essa manipulação se
+                        estende ao cosmo, uma linha invisível é ultrapassada, e as divindades são compelidas a agir.</p>
+                    <p>No seu universo, o conceito do divino era difundido, e vocês tinham conhecimento de divindades
+                        como
+                        Mhave. No entanto, ao aproximar-se do fim de seu universo, vocês entraram em conflito com a
+                        maioria
+                        das divindades, um feito notável que colocou muitas civilizações comuns em um embate direto com
+                        os
+                        próprios deuses.</p>
+                    <p>O que vocês não compreendiam completamente naquele momento era que as divindades não estavam
+                        contra
+                        vocês porque temiam sua ascensão divina, mas sim porque vocês estavam perturbando o equilíbrio
+                        natural que mantinha a estabilidade das dimensões. Quando uma estrela nascia de maneira não
+                        natural
+                        em sua dimensão, esse evento não se refletia nas outras duas. Da mesma forma, a destruição de um
+                        planeta de maneira não natural não afetava as outras dimensões. E quando uma civilização inteira
+                        alterava partes de sua dimensão, essa mudança não se propagava para as demais.</p>
+                    <p>Portanto, a guerra que vocês acreditavam ser uma luta pela igualdade divina na verdade era uma
+                        batalha para restaurar o equilíbrio cósmico que vocês inadvertidamente perturbaram. A ignorância
+                        de
+                        suas próprias ações estava causando um caos no universo e minando o equilíbrio tão precioso que
+                        mantém a ordem entre as dimensões.</p>
+                    <p>— Mas eu já sabia disso, e tentei resolver esse problema…. - Rhaph exclamou precipitadamente,
+                        revelando a angústia de alguém que havia enfrentado o peso do arrependimento.</p>
+                    <p>De fato, Rhaph, a sabedoria chegou tarde demais para você e sua civilização. Mhave, a divindade
+                        sábia
+                        que você conhecia bem, vinha alertando há tempos sobre as consequências das ações de sua
+                        civilização. Você, com prestígio e influência, não era um estranho para sua sociedade. No
+                        entanto, a
+                        resposta decisiva e ação para corrigir o curso de sua civilização vieram tarde demais.</p>
+                    <p>É uma lição que ecoa através dos universos: muitas vezes, a cegueira para as advertências de quem
+                        detém o conhecimento pode levar a um destino amargo. A arrogância que surge da ignorância pode
+                        obscurecer a visão até que a própria existência esteja em jogo.</p>
+                    <p>O passado é um espelho implacável que nos confronta com nossas falhas e escolhas equivocadas.
+                        Agora,
+                        enquanto contemplamos a tragédia que se desenrolou, resta-nos apenas a sabedoria ganha com a
+                        experiência e a esperança de que outros, ao observar sua história, possam evitar o mesmo destino
+                        sombrio.</p>
 
-                <h4 id="contemplacao">A CONTEMPLAÇÃO DE ABYS</h4>
+                    <h4 id="renascimento">RENASCIMENTO</h4>
+                    <img class="img-fluid mb-3" src="/static/imagens/contos/armagegom_retorno_marco_zero/divisor.png"
+                        alt="Card image">
 
-	            <p>Enquanto Rhaph e Mhave começavam a desvendar os segredos de um novo universo, Abys permanecia imerso em sua própria contemplação. Diante da vastidão do multiverso e das escolhas que moldavam os destinos das civilizações, ele ponderava sobre o ciclo incessante de nascimento e morte que governava cada realidade.</p>
-	            <p>O Armagedom de um universo, como o que Rhaph testemunhou, era mais do que um evento cósmico; era um reflexo das ações e escolhas das civilizações que o habitavam. Era a consequência do equilíbrio precário entre dimensões e a busca incansável pelo poder e conhecimento.</p>
-	            <p>A cada colapso, a cada renascimento, o multiverso ecoava com o eco eterno da existência, uma sinfonia de criação e destruição que desafiava até mesmo as mentes divinas. Abys entendia que, apesar de sua divindade, ele próprio era apenas uma parte desse intricado ciclo, um observador e criador que, como todas as coisas, estava sujeito às leis cósmicas que governavam a realidade.</p>
-	            <p>Enquanto o multiverso continuava a se desdobrar, Abys permanecia em seu trono de observação, contemplando o infinito e suas infindáveis possibilidades. Pois, no coração de toda a complexidade, havia uma beleza inegável na interconexão de todas as coisas, uma dança cósmica que persistia além do tempo e do espaço, desafiando até mesmo a compreensão de uma divindade.</p>
+                    <p>— Então eu fui responsável pela destruição de meu universo? - Perguntou Rhaph, sua angústia
+                        transparecia em cada palavra.</p>
+                    <p>Abys respondeu com uma voz suave e compreensiva, acalmando a inquietação de Rhaph: — Que!? Não...
+                        Não
+                        se sinta tão importante assim. Embora sua negligência tenha sim um pouco de culpa, você não
+                        poderia
+                        fazer nada. Se tentasse deter a expansão de sua civilização, você teria sido apenas mais um
+                        inimigo
+                        de sua própria sociedade. No entanto, não se sinta confortável em sua absurda inação, pois você
+                        ainda foi negligente, e suas ações têm sim consequências. No entanto, essas consequências não
+                        são
+                        para o destino de seu universo, mas sim para o seu desenvolvimento pessoal, sua evolução
+                        espiritual.
+                    </p>
+                    <p>— Embora sua existência pareça fraca, vocês são peças fundamentais de meu grande sistema
+                        evolutivo.
+                        Quando vocês morrem em seus universos, eu dou a oportunidade de renascerem como divindades de
+                        seus
+                        próprios universos. Afirmou Abys colocando o dedo na testa de Rhaph. — Todos vocês possuem seus
+                        próprios mundos. E eu dou a oportunidade de torná-los realidade! </p>
+                    <p>— Você parece bem indiferente, porque está tão calma com essa situação? Esses universos não são
+                        importantes para você? - Perguntou Rhaph apontando para os pontos flutuantes na sala.</p>
+                    <p>Abys adentrou por trás de Rhaph, colocou a mão em seus ombros e o guiu até um ponto Azul que
+                        estava
+                        colapsando. — Observe meu caro, pois parece que você não intendeu, esse universo a sua frente
+                        está
+                        terminando, oberve oque acontece com ele. - Afirmou Abys enquanto eles observavam aquele
+                        universo
+                        colapsar. </p>
+                    <p>Após o colapso daquela pequena luz azul, milhares de outros pontos emergiram do abismo cósmico. —
+                        Perceba, quando um universo se desvanece, incontáveis novos nascentes brotam do vácuo da
+                        existência.
+                        Assim vocês Azmires, após sua passagem, desempenham o papel sagrado de gerar novos universos, um
+                        ciclo eterno que nutre minha essência e fortalece a tapeçaria do multiverso.</p>
+                    <p>— Então, eu poderia ter sido o Deus de um novo universo? - Perguntou Rhaph desacreditado.</p>
+                    <p>— Você? Bom… não mais….</p>
+
+                    <h4 id="emocao">EMOÇÃO DA DIVINDADE</h4>
+                    <img class="img-fluid mb-3" src="/static/imagens/contos/armagegom_retorno_marco_zero/divisor.png"
+                        alt="Card image">
+
+                    <p>— Rhaph, venho observando você por eras, desde o momento de seu nascimento até o presente. Você
+                        acredita estar aqui por acaso? Fui eu quem pediu a Mhave para enviar você até mim, concedi a ela
+                        o
+                        poder de acessar o multiverso, tudo para que você pudesse estar aqui hoje. - Abys proferiu essas
+                        palavras enquanto caminhava como majestade por seu vasto salão, revelando a mão divina que
+                        guiava os
+                        eventos cósmicos.</p>
+                    <p>— Por que exatamente? Pela minha negligência?" - Rhaph perguntou, com uma expressão preocupada em
+                        seu
+                        rosto.</p>
+                    <p>Abys respondeu com franqueza: — Bom... podemos dizer que sim. Estou traçando para você um caminho
+                        repleto de incertezas. Isso porque não quero prever o que o futuro reserva, mas sim acompanhar
+                        como
+                        você evoluirá a partir daqui. É, em grande parte, um capricho meu, uma resposta ao meu próprio
+                        tédio. Você e um seleto grupo de indivíduos foram escolhidos para serem minha fonte de
+                        entretenimento durante sua jornada. Se, ao longo do tempo, você conseguir mostrar algo que me
+                        agrade, irei elevar todos vocês ao status de divindades supremas, dando-lhes domínio sobre seus
+                        próprios universos, e nunca mais perturbarei suas existências. No entanto, se não conseguirem
+                        satisfazer minhas necessidades, vocês serão destinados a reencarnar diversas vezes até que
+                        possam
+                        finalmente atender às minhas expectativas.</p>
+                    <p>— Eu realmente não sei o que pensar, mas também não me preocupa, afinal, minha existência como um
+                        todo não está prejudicada, já que mesmo que não agrade, irei reencarnar incontáveis vezes." -
+                        Rhaph
+                        respondeu com uma calma desprendida.</p>
+                    <p>Abys se aproximou lentamente e perguntou: — Ah, mas depende do que você considera sua existência,
+                        Rhaph. Para você, oque significa isso?.</p>
+                    <p>Rhaph o encarou e respondeu: — Pergunta difícil... Acredito que eu seja a energia que você chama
+                        de
+                        Azmir!"</p>
+                    <p>Abys balançou a cabeça com gravidade e disse: — Resposta errada. Você é todas as experiências que
+                        o
+                        moldaram até se tornar o que é hoje. Seu conhecimento e experiências são tudo o que o
+                        representa,
+                        meu caro. Quando você reencarnar, você não terá isso. Sua Azmir, sim, mas você não. Após cada
+                        morte,
+                        sua Azmir será lançada em outro corpo, em um ciclo interminável, e você nunca se lembrará de seu
+                        passado.</p>
+                    <p>Abys enfatizou a natureza efêmera da existência de Rhaph, revelando a dura verdade de que, a cada
+                        renascimento, ele perderia todas as lembranças e experiências acumuladas, restando apenas a sua
+                        Azmir para continuar a jornada através dos universos. A perspectiva sombria de uma existência
+                        sem
+                        memórias passadas ecoou no coração de Rhaph, trazendo uma dimensão de profundidade e reflexão à
+                        sua
+                        compreensão de si mesmo.</p>
+
+                    <h4 id="proximo">O PRÓXIMO CAPÍTULO DA JORNADA</h4>
+                    <img class="img-fluid mb-3" src="/static/imagens/contos/armagegom_retorno_marco_zero/divisor.png"
+                        alt="Card image">
+
+                    <p>— Então, meu caro, não vou te reencarnar, mas sim, iniciaremos nossa jornada. Vou enviá-lo para
+                        outro
+                        universo, um que é relativamente jovem. E para que você não se sinta sozinho em um universo
+                        desconhecido, Mhave irá acompanhá-lo. Mas antes de partirmos, há alguma pergunta que você deseja
+                        fazer? - Abys indagou, enquanto caminhavam, para fora da sala, e observavam o horizonte que se
+                        estendia à frente deles.</p>
+                    <p>Rhaph ponderou por um momento e finalmente perguntou: — Bem... na verdade, tenho uma pergunta. O
+                        que
+                        é você? Existe algo além de sua existência?</p>
+                    <p>Abys olhou para o horizonte estelar e respondeu com uma voz profunda: — Eu sou uma manifestação
+                        das
+                        forças cósmicas que governam o multiverso, uma entidade que existe desde os primórdios da
+                        criação.
+                        Sou tanto a testemunha quanto o criador, o observador e o criador de todas as coisas. Quanto a
+                        existir algo além de mim... essa é uma pergunta que transcende até mesmo minha compreensão. Em
+                        meu
+                        próprio ser, encontro mistérios insondáveis, e o universo é vasto e infinito, cheio de segredos
+                        que
+                        desafiam até mesmo a divindade. A jornada que você está prestes a empreender pode trazer novas
+                        revelações e desafios, e, talvez, um dia, você descubra o que existe além de todas as
+                        existências.
+                    </p>
+                    <p>Rhaph refletiu sobre a resposta de Abys enquanto o horizonte diante de seus olhos se distorcia.
+                        Um
+                        clarão repentino irrompeu, e uma fadiga avassaladora tomou conta de seu ser. Ele desmaiou,
+                        ouvindo
+                        apenas uma voz ao fundo que dizia: — Espero que possa me divertir Rhaph. Conto com você.</p>
+                    <p>Rhaph foi envolvido por um som distorcido e indescritível que ecoava em sua mente, crescendo em
+                        intensidade. Uma energia incompreensível o envolveu enquanto estava imerso na escuridão. Então,
+                        abruptamente, ele acordou com Mhave ao seu lado, gritando seu nome.</p>
+                    <p>— Pelo amor de tudo, Rhaph, achei que você estava morto! O que está acontecendo aqui? - Mhave
+                        perguntou, indignada com a situação, enquanto ambos tentavam compreender o que acabara de
+                        ocorrer.
+                    </p>
+                    <p>Rhaph, ainda um pouco atordoado com a experiência anterior, se encontrava deitado sobre a grama
+                        macia, em um pequeno morro. Ele olhou para cima e viu uma pequena lua destacando-se de um céu
+                        claro
+                        e limpo de tarde. No horizonte, percebeu um amplo vale circundado por majestosas montanhas ao
+                        fundo.
+                    </p>
+                    <p>— Mhave, me perdoe, acho que as coisas ficaram complicadas para nós! - Respondeu Rhaph com uma
+                        mistura de euforia e confusão. Enquanto isso, ele continuava a fixar seu olhar nos céus,
+                        sentindo a
+                        sensação de ser observado. Apesar de acreditar que tudo o que tinha acontecido até então fosse
+                        um
+                        sonho, uma crescente sensação de realidade estava começando a tomar conta dele.</p>
+
+                    <h4 id="contemplacao">A CONTEMPLAÇÃO DE ABYS</h4>
+
+                    <p>Enquanto Rhaph e Mhave começavam a desvendar os segredos de um novo universo, Abys permanecia
+                        imerso
+                        em sua própria contemplação. Diante da vastidão do multiverso e das escolhas que moldavam os
+                        destinos das civilizações, ele ponderava sobre o ciclo incessante de nascimento e morte que
+                        governava cada realidade.</p>
+                    <p>O Armagedom de um universo, como o que Rhaph testemunhou, era mais do que um evento cósmico; era
+                        um
+                        reflexo das ações e escolhas das civilizações que o habitavam. Era a consequência do equilíbrio
+                        precário entre dimensões e a busca incansável pelo poder e conhecimento.</p>
+                    <p>A cada colapso, a cada renascimento, o multiverso ecoava com o eco eterno da existência, uma
+                        sinfonia
+                        de criação e destruição que desafiava até mesmo as mentes divinas. Abys entendia que, apesar de
+                        sua
+                        divindade, ele próprio era apenas uma parte desse intricado ciclo, um observador e criador que,
+                        como
+                        todas as coisas, estava sujeito às leis cósmicas que governavam a realidade.</p>
+                    <p>Enquanto o multiverso continuava a se desdobrar, Abys permanecia em seu trono de observação,
+                        contemplando o infinito e suas infindáveis possibilidades. Pois, no coração de toda a
+                        complexidade,
+                        havia uma beleza inegável na interconexão de todas as coisas, uma dança cósmica que persistia
+                        além
+                        do tempo e do espaço, desafiando até mesmo a compreensão de uma divindade.</p>
+                        <div class="clearfix mb-5">
+                            <hr>
+                            <a href="/static/documentos/contos/Armagedom - O Retorno Ao Marco Zero.pdf"
+                                class="btn btn-dark float-end" download>
+                                Download
+                            </a>
+                        </div>
+                    </div>
 
                 <raphael-card-footer></raphael-card-footer>
 
             </div>
 
-            <div id="propaganda-lateral" class="col-sm-2">
+            <div id="propaganda-lateral" class="col-sm-2 p-4">
                 <script src="/js/propaganda_lateral.js" defer></script>
             </div>
         </div>
