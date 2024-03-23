@@ -36,6 +36,7 @@ export class VenturoFooter extends HTMLElement{
                             <p><b>Informações</b></p>
                             <p><a target="_blank" style="text-decoration: none; color:white;" href="/paginas/sobre.html">Sobre</a></p>
                             <p><a target="_blank" style="text-decoration: none; color:white;" href="/paginas/politica-privacidade.html">Privacidade</a></p>
+                            <p><a target="_blank" style="text-decoration: none; color:white;" href="/paginas/termos/politica-uso00012024.html">Termos de Uso</a></p>
                             <p><a target="_blank" style="text-decoration: none; color:white;" href="/paginas/devlog.html">Devlog</a></p>
                         </div>
 
