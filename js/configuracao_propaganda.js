@@ -8,16 +8,6 @@ scriptElement.setAttribute('src', 'https://pagead2.googlesyndication.com/pagead/
 scriptElement.setAttribute('async', '');
 scriptElement.setAttribute('crossorigin', 'anonymous');
 
-// Adiciona os elementos criados ao <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PKZEWD0W51"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-PKZEWD0W51');
-</script>
- do documento
+// Adiciona os elementos criados ao <head> do documento
 document.head.appendChild(metaElement);
 document.head.appendChild(scriptElement);
