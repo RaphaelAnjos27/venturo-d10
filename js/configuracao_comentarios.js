@@ -29,4 +29,3 @@ ScriptFinal.setAttribute('async',true);
 
 document.body.appendChild(ScriptFinal)
 
-console.log(Container);
