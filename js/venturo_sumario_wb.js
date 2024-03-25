@@ -359,6 +359,9 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
                                             <a class="nav-link" href="/paginas/worldbuilding/09-personagens/01-introducao.html">Personagens</a>
                                         </li>
                                         <li class="nav-item">
+                                            <a class="nav-link" href="/paginas/worldbuilding/09-personagens/01.1-arquetipos.html">Arquétipos</a>
+                                        </li>
+                                        <li class="nav-item">
                                             <a class="nav-link" href="/paginas/worldbuilding/09-personagens/02-viloes.html">Vilões</a>
                                         </li>
                                         <li class="nav-item">

@@ -60,7 +60,7 @@ export class VenturoFooter extends HTMLElement{
                 </div>
             </div>
             
-            <p><b>© Todos direitos Reservados a Raphael dos Anjos – ${anoCompleto}</b></p>
+            <p>Venturo D10 © ${anoCompleto}. Desenvolvido por <a style="text-decoration: none;" href="https://raphaelanjos27.github.io/Raphael-Page/" target="_blank">Raphael dos Anjos</a></p>
             <p><b>Versão do Sistema: ${VERSAO}</b></p>
             
         </footer>

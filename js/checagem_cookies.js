@@ -34,6 +34,11 @@ function FecharPopUp() {
     POPUPELEMENT.remove();
 }
 
+function RedirecionarUsuario(){
+    // Redirecionar para outra página
+    window.location.href = "https://www.google.com";
+}
+
 function GerarPopUp() {
 
     // Criando o elemento <article>:
@@ -68,7 +73,7 @@ function GerarPopUp() {
     const btn_recusar = document.getElementById('recusar-cookie')
 
     btn_aceitar.addEventListener('click', desbloquearCookiesDeTerceiros);
-    btn_recusar.addEventListener('click', FecharPopUp);
+    btn_recusar.addEventListener('click', RedirecionarUsuario);
 }
 
 document.addEventListener("DOMContentLoaded", function () {
