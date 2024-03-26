@@ -1,0 +1,16 @@
+
+#menu-button-sumary-2 {
+    display: none;
+    
+}
+
+@media (max-width: 600px) {
+
+    #menu-button-sumary-1 {
+        display: none;
+    }
+    #menu-button-sumary-2 {
+        display: block;
+    }
+    
+}

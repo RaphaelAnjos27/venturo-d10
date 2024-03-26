@@ -5,6 +5,7 @@ export class VenturoSumarioUniverso extends HTMLElement {
     connectedCallback() {
         // Inclua o conteúdo do componente no DOM quando ele for conectado
         this.innerHTML = `
+        <link rel="stylesheet" href="/static/css/menu_sumario.css">
         <div class="offcanvas offcanvas-start" id="demo">
     <div class="offcanvas-header">
         <h1 class="offcanvas-title">Sumário</h1>
@@ -176,7 +177,7 @@ export class VenturoSumarioUniverso extends HTMLElement {
         </div>
     </div>
 </div>
-<div class="d-grid">
+<div id="menu-button-sumary-1" class="d-grid">
     <button type="button" class="btn btn-outline-dark btn-block" data-bs-toggle="offcanvas" data-bs-target="#demo">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-task"
             viewBox="0 0 16 16">
@@ -190,6 +191,24 @@ export class VenturoSumarioUniverso extends HTMLElement {
         Sumário
     </button>
 </div>
+<div id="menu-button-sumary-2" class="rounded-3 me-2 ms-2 mb-1 bg-dark clearfix fixed-bottom">
+        <button type="button" class="btn btn-dark float-start p-2  m-1" data-bs-toggle="offcanvas" data-bs-target="#demo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list-task"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z" />
+                <path
+                    d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z" />
+                <path fill-rule="evenodd"
+                    d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z" />
+            </svg>
+        </button>
+        <a href="#" type="button" class="btn btn-dark float-end p-2  m-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
+            </svg>
+        </a>
+    </div>
 <br>
         `;
     }
