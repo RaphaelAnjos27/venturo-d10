@@ -30,6 +30,9 @@ export class VenturoSumarioCriacao extends HTMLElement {
                                 <a class="nav-link" href="/paginas/criacao/01-introducao/01.1-direitos.html">Plágio e Inspiração</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="/paginas/criacao/01-introducao/01.2-criandocenario.html">Estratégias e Flexibilidade na Criação de Cenários</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="/paginas/criacao/01-introducao/01-habilidades.html">Habilidades</a>
                             </li>
                             <li class="nav-item">
