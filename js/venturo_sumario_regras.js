@@ -284,7 +284,10 @@ export class VenturoSumarioRegras extends HTMLElement{
                                 <li class="nav-item">
                                     <a class="nav-link" href="/paginas/regras/06-regras/23-destino.html">Destino Adaptado</a>
                                 </li>
-    
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/paginas/regras/06-regras/24-passagemtempo.html">Passagem de Tempo e Envelhecimento</a>
+                                </li>
+                                
                             </ul>
                         </div>
                     </div>

@@ -1311,7 +1311,13 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-
+    <url>
+        <loc>https://www.venturod10.com.br/paginas/regras/06-regras/24-passagemtempo.html</loc>
+        <lastmod>2024-04-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
 
     <url>
         <loc>https://www.venturod10.com.br/paginas/regras/07-acoes/01-acoes.html</loc>
