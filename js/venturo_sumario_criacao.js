@@ -193,6 +193,9 @@ export class VenturoSumarioCriacao extends HTMLElement {
                             <li class="nav-item">
                                 <a class="nav-link" href="/paginas/criacao/06-corporacao/05-guildas.html">Criando Guildas e Grupos</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/paginas/criacao/06-corporacao/06-carreira.html">Carreiras através das organizações</a>
+                            </li>
                     </div>
                 </div>
             </div>

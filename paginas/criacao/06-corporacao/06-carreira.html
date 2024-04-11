@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!--Propaganda Google-->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3911900562799248"
+     crossorigin="anonymous"></script>
+
+    <meta name="google-adsense-account" content="ca-pub-3911900562799248">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PKZEWD0W51"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PKZEWD0W51');
+</script>
+
+    <script src="/js/checagem_cookies.js" defer type="module"></script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Completo para Criar Sistemas de Carreiras e Tabelas de Vida no RPG de Mesa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+    <meta property="og:image" content="/static/imagens/thumbs_paginas/thumbs_artigos/thumbShareCarreira.webp">
+    <meta name="description" content="Aprenda a aprimorar seu jogo de RPG de mesa com sistemas de carreiras e tabelas de vida detalhadas. Este guia abrangente oferece insights sobre desenvolvimento de personagens, narrativa envolvente e criação de cenários dinâmicos.">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+
+            <div class="col-sm-7">
+                
+                <div id="sumario" class="container rounded shadow p-4 mb-4 bg-white">
+                    <h6>Sumário:</h6>
+                </div>
+                <script src="/js/sumario.js"></script>
+                
+                <h2>Carreiras através das organizações</h2>
+                <br>
+                <img class="img-fluid rounded-4 mb-3" src="/static/imagens/thumbs_paginas/thumbs_artigos/thumbCarreiras.webp" alt="Guia Completo para Criar Sistemas de Carreiras e Tabelas de Vida no RPG de Mesa.">
+
+                <p>
+                    Dentro de um cenário de jogo, as carreiras representam os ofícios ou profissões que os jogadores escolhem para seus personagens. Estas podem ser adquiridas antes do início da campanha, como parte do passado do personagem, ou durante o decorrer da história. Este conceito se baseia no <b>sistema de carreiras</b> que pode ser implementado através dos <b>componentes</b> de cenário do seu mundo, que abrange as diversas organizações e instituições presentes nele. Aqui aprenderemos como desenvolver um sistema de carreiras para enriquecer o seu mundo de jogo.
+                </p>
+
+                <h4>
+                    Definição de Carreiras e Vínculo com Organizações
+                </h4>
+                <p>
+                    Carreiras são os caminhos profissionais que os personagens escolhem seguir e podem estar associadas a diferentes organizações ou guildas do seu mundo. Por exemplo, imagine uma grande <b>Academia Arcana</b> renomada em seu cenário. Se os jogadores desejam explorar essa academia, como eles podem se beneficiar disso? Eles poderiam estudar os documentos da organização e incorporar as habilidades e conhecimentos adquiridos em seus personagens, ajustando seus atributos com base no treinamento recebido na academia.
+                </p>
+                <p>
+                    Embora seja simples associar uma organização ao passado do personagem, podemos usar esse conceito para criar mecânicas interessantes no jogo, implementando regras que permitam aos jogadores conquistarem carreiras dentro do cenário em campanha. As organizações e guildas podem ser responsáveis por <b>conceder</b> <b>características</b> específicas aos personagens que seguem essas carreiras.
+                </p>
+                <p>
+                    Ao criar uma carreira, você define as habilidades e atributos que um personagem ganha ou perde ao seguir esse caminho profissional. Isso pode incluir habilidades específicas, conhecimentos especializados ou vantagens únicas associadas àquela carreira. O sistema de carreiras pode ser usado como uma <b>missão atemporal</b>, permitindo aos jogadores e mestres construir personagens com base na carreira escolhida.
+                </p>
+                <p>
+                    <b>Exemplo Prático</b>
+                </p>
+                <p>
+                    Por exemplo, se um personagem decide seguir a carreira de "<b>Mago da Academia Arcana</b>", ele pode ganhar acesso a feitiços exclusivos da academia, ter um bônus em testes de magia e possuir um conhecimento aprofundado sobre artefatos mágicos. Por outro lado, ele pode perder a capacidade de usar armaduras pesadas devido ao foco intensivo em estudos mágicos, ou seja, enquanto seu atributo de <b>Inteligência</b> sobe, ele pode perder através dos eventos de carreira, níveis do atributo de <b>Força</b>.
+                </p>
+
+                <h3>Implementando o sistema de Carreira</h3><hr>
+
+                <p>
+                    Para implementar um sistema de carreira em seu mundo de jogo, é fundamental criar regras claras que definam as carreiras disponíveis, seus <b>benefícios</b> e como os jogadores podem acessá-las. Aqui estão alguns passos para começar:
+                </p>
+                <h4>Descreva as Carreiras nas Organizações:</h4>
+
+                <p>
+                    Ao descrever uma guilda, academia, corporação ou qualquer outra organização importante do seu mundo, inclua uma seção dedicada às carreiras. Isso pode ser sob o título "<b>Carreira</b>" ou "<b>Caminhos Profissionais</b>" na descrição da organização. Nesta seção, liste as diferentes carreiras disponíveis dentro daquela organização e os benefícios e regras associados a cada uma.
+                </p>
+                <p>
+                    Por exemplo, se estamos falando de uma Academia Arcana, as carreiras disponíveis podem incluir "<b>Estudante de Magia Elemental</b>", "<b>Artesão de Artefatos Mágicos</b>" e "<b>Mestre em Rituais Arcanos</b>". Para cada uma dessas carreiras, descreva quais habilidades, conhecimentos ou bônus os personagens ganham ao seguir esse caminho.
+                </p>
+
+                <h4>Detalhe os Benefícios das Carreiras:</h4> 
+
+	            <p>
+                    Para cada carreira, especifique claramente quais são os benefícios que os personagens recebem ao adotar essa profissão. Isso pode incluir aumento de habilidades, acesso a técnicas exclusivas, obtenção de itens especiais, ou outros privilégios únicos associados àquela carreira específica.
+                </p>
+
+                <h4>Passagem de Tempo: </h4>
+	            <p>
+                    Ao incorporar a passagem de tempo no treinamento de carreiras, é importante considerar como esse processo afeta o desenvolvimento dos personagens e como os jogadores podem aproveitar essa narrativa em suas histórias.
+                </p>
+                
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> O Sistema Venturo possui regras para treinos de atributos sem a necessidade de comprar com XP. Porém, embora seja um artifício para desenvolvimento narrativo, essa regra não permite evoluir múltiplos atributos da ficha de uma só vez, diferente do sistema de carreia.</i>
+                </div>
+                
+                <div class="alert alert-danger">
+                    <i><b>ALERTA.:</b> Lembrando que essa passagem de tempo será narrativo, ou seja, não será jogado na campanha.</i>
+                </div>
+
+                <p>
+                    <b>Definindo o Tempo de Treinamento:</b> Estabeleça um período de tempo necessário para que um personagem avance em uma carreira específica. Isso pode variar de algumas semanas a vários meses ou até anos, dependendo da complexidade e do prestígio da carreira escolhida.
+                </p>
+                <p>
+                    <b>Mecânica de Evolução de Atributos:</b> Associe a passagem de tempo ao desenvolvimento dos atributos dos personagens. Por exemplo, a cada período de treinamento completado, os jogadores podem escolher atributos específicos (<i>como habilidades, características, ou níveis de proficiência</i>) para evoluir com base na carreira que estão seguindo.
+                </p>
+                <p>
+                    <b>Narrativa durante o Treinamento:</b> Encoraje os jogadores a criar narrativas envolventes durante o treinamento de carreira. Durante o tempo dedicado ao treinamento, os personagens podem se envolver em eventos significativos, desafios pessoais, ou até mesmo missões relacionadas à sua profissão em formação. Essas experiências podem ser exploradas por meio de narrações, flashbacks ou interações com o mestre.
+                </p>
+                <p>
+                    <b>Construindo Histórias de Fundo:</b> Aproveite a oportunidade para desenvolver histórias de fundo dos personagens durante o treinamento de carreira. Os jogadores podem criar relações com mentores, colegas de treinamento ou até mesmo rivais dentro da organização. Essas conexões adicionam profundidade aos personagens e enriquecem o mundo ao redor deles.
+                </p>
+                <p>
+                    <b>Eventos Marcantes:</b> Durante o treinamento, introduza eventos marcantes que moldem os personagens e influenciem suas decisões futuras. Isso pode incluir descobertas surpreendentes, desafios éticos, ou até mesmo reviravoltas dramáticas que ocorrem durante o período de treinamento.
+                </p>
+
+                <p><b>Exemplo de Implementação:</b></p>
+
+                <p>
+                    Se um personagem está seguindo a carreira de "<b>Estudante de Magia Elemental</b>" na Academia Arcana, você pode estabelecer que cada período de seis meses de treinamento permite ao jogador escolher um novo feitiço elemental para aprender e aprimorar sua proficiência em habilidades mágicas relacionadas.
+                </p>
+                <p>
+                    Durante esses seis meses, o jogador pode descrever como seu personagem pratica feitiços, estuda teoria mágica avançada, e participa de experimentos arcanos supervisionados por mestres. Essas experiências podem ser narradas em sessões de jogo dedicadas ao desenvolvimento da carreira.
+                </p>
+
+                <h4>Testes para Ingressar e Progredir na Carreira</h4>
+
+	            <p>
+                    Ao criar um sistema de carreiras, os <b>testes</b> desempenham um papel crucial ao determinar a admissão e o avanço dos personagens dentro de uma profissão. Aqui estão alguns aspectos a considerar ao implementar testes em seu cenário:
+                </p>
+                <p>
+                    <b>Teste de Admissão na Carreira:</b>
+                </p>
+                <p>
+                    Defina um teste inicial que os jogadores precisam passar para serem aceitos na carreira desejada. Este teste deve estar relacionado diretamente com os atributos necessários para a carreira.
+                </p>
+                <p>
+                    Por exemplo, para se tornar um "<b>Estudante de Magia Elemental</b>", o jogador pode ser desafiado a demonstrar habilidades mágicas básicas através de um teste de Inteligência ou Sabedoria.
+                </p>
+                <p>
+                    <b>Teste de Graduação ou Progressão:</b>
+                </p>
+                <p>
+                    Estabeleça testes adicionais para cada nível de progressão dentro da carreira. Cada teste pode representar novos desafios e habilidades que o personagem deve dominar.
+                </p>
+                <p>
+                    Por exemplo, ao avançar de "<b>Estudante de Magia Elemental</b>" para "<b>Aprendiz de Mago</b>", o jogador pode ser testado em habilidades de conjuração avançadas.
+                </p>
+                <p>
+                    <b>Consequências da Falha:</b>
+                </p>
+                <p>
+                    Determine as consequências de falha nos testes. Uma falha pode significar a perda da oportunidade de avançar na carreira ou receber um nível inferior de habilidades.
+                </p>
+                <p>
+                    Por exemplo, se um jogador falha no teste para se tornar um "<b>Estudante de Magia Elemental</b>", eles podem ser reprovados e precisar esperar dois anos até a próxima oportunidade de tentar novamente.
+                </p>
+                <p>
+                    <b>Níveis de Sucesso ou Fracasso:</b>
+                </p>
+                <p>
+                    Considere implementar níveis de sucesso ou fracasso nos testes. Um sucesso pode significar ganhar todos os benefícios esperados da carreira, enquanto um fracasso pode resultar em benefícios reduzidos ou adiados.
+                </p>
+                <p>
+                    Por exemplo, um jogador que passa no teste de graduação como "<b>Aprendiz de Mago</b>" pode receber feitiços adicionais e uma recomendação especial, enquanto um jogador que falha pode ser reprovado ou receber apenas habilidades básicas.
+                </p>
+                <p>
+                    <b>Tempo entre Tentativas:</b>
+                </p>
+                <p>
+                    Determine o tempo necessário entre as tentativas de teste. Isso adiciona um elemento de realismo à narrativa e às oportunidades de crescimento dos personagens.
+                </p>
+                <p>
+                    Por exemplo, se um jogador falha na primeira tentativa de se tornar um "<b>Estudante de Magia Elemental</b>", eles podem ter duas tentativas adicionais, mas precisarão esperar dois anos até a próxima oportunidade.
+                </p>
+
+                <p><b>Exemplo de Implementação:</b></p>
+                <p>Para um personagem que está tentando se tornar um "<b>Mestre em Rituais Arcanos</b>" na Academia Arcana:</p>
+                <ul>
+                    <li><b>Teste de Admissão:</b> O jogador precisa demonstrar conhecimento avançado em rituais arcanos, fazendo um teste de Inteligência ou Sabedoria.</li>
+                    <li><b>Testes de Graduação:</b> Para cada nível de progressão, o jogador enfrenta desafios específicos, como realizar um ritual complexo ou resolver um enigma mágico.</li>
+                    <li><b>Consequências da Falha:</b> Uma falha pode significar a não admissão na carreira ou receber um nível inferior de conhecimento em rituais arcados.</li>
+                    <li><b>Tempo entre Tentativas:</b> Se o jogador falhar no teste de admissão, eles só poderão tentar novamente após dois anos, quando novas vagas na carreira estarão disponíveis.</li>
+                </ul>
+                <div class="alert alert-success">
+                    <i><b>DICA.:</b> Esses testes podem ser simplesmente narrativos, onde o mestre e jogador interpretam os testes, ou pode ser através de rolagens de dados mais simples, para agilizar o processo.</i>
+                </div>
+
+                <h4>Objetivo da Carreira</h4>
+	            <p>
+                    Cada carreira deve ter um objetivo claro e descritivo que indique o propósito e as possibilidades que ela oferece aos personagens. Por exemplo, para a carreira de "<b>Soldado do Império</b>", o objetivo pode ser defender o reino contra ameaças externas, participar de missões de combate ou servir como guarda real.
+                </p>
+                <p><b>Progressão Específica:</b></p>
+	            <p>
+                    Dentro de cada carreira, os jogadores podem seguir uma progressão específica, escolhendo ofícios ou especializações que fornecem benefícios adicionais.
+                </p>
+	            <p>
+                    Por exemplo, dentro da carreira de "<b>Soldado do Império</b>", os jogadores podem progredir para se tornarem "<b>Arqueiros Especializados</b>", "<b>Cavaleiros de Elite</b>" ou "<b>Comandantes Táticos</b>", cada um com habilidades e atributos únicos.
+                </p>
+
+                <p><b>Benefícios dos Ofícios:</b></p>
+	            <p>
+                    Cada ofício dentro de uma carreira deve oferecer benefícios distintos aos personagens, refletindo suas especializações e habilidades.
+                </p>
+	            <p>
+                    Por exemplo, um personagem que escolhe se tornar um "<b>Ferreiro de Machados</b>" dentro da carreira de "<b>Guilda dos Ferreiros</b>" pode receber bônus em ataques com machados, capacidade de criar armas especiais e até mesmo melhorar a durabilidade das armas de seus companheiros.
+                </p>
+                <p><b>Explorando Possibilidades:</b></p>
+	            <p>
+                    Encoraje os jogadores a explorar diferentes possibilidades dentro de uma carreira, permitindo que eles personalizem seus personagens de acordo com suas preferências e estilos de jogo.
+                </p>
+	            <p>
+                    Por exemplo, um soldado pode optar por se especializar em combate corpo a corpo, enquanto outro pode preferir focar em estratégias táticas ou liderança de equipe.
+                </p>
+
+                <p><b>Exemplo de Implementação:</b></p>
+
+                <p>Para a carreira de "<b>Soldado do Império</b>":</p>
+                <p><b>Objetivo:</b> Defender o reino contra ameaças externas e servir como uma força militar leal ao imperador.</p>
+                
+                <div class="alert alert-secondary">
+                    <p><b>Progressão Específica:</b></p>
+                    <ul>
+                        <li><b>Arqueiro Especializado:</b> Habilidade aprimorada em arco e flecha, precisão em disparos de longa distância.</li>
+                        <li><b>Cavaleiro de Elite:</b> Proficiência em combate montado, acesso a armaduras pesadas.</li>
+                        <li><b>Comandante Tático:</b> Habilidade em estratégias de batalha, liderança de tropas.</li>
+                    </ul>
+                    <p><b>Benefícios dos Ofícios:</b></p>
+                    <ul>
+                        <li><b>Ferreiro de Machados:</b> Bônus em ataques com machados, capacidade de criar armas de qualidade superior.</li>
+                        <li><b>Espadachim Experiente:</b> Aumento de dano com espadas, habilidades de duelos avançadas.</li>
+                    </ul>
+                </div>
+
+                <h4>Categorias e Ofícios da Carreira</h4>
+
+                <p>Ao expandir uma carreira para incluir categorias e múltiplos ofícios, você oferece aos jogadores uma variedade de opções e oportunidades de especialização. Aqui estão algumas diretrizes para desenvolver categorias de carreira com ofícios distintos:</p>
+                <p><b>Definição de Categorias:</b></p>
+                <p>Divida a carreira em categorias que representem diferentes caminhos ou especializações que os jogadores podem seguir. Por exemplo, na carreira de "<b>Militar Imperial</b>", as categorias podem incluir "<b>Infantaria Pesada</b>", "<b>Cavalaria</b>", "<b>Arquearia</b>", "<b>Engenharia Militar</b>", entre outras.</p>
+                <p><b>Ofícios Específicos:</b></p>
+                <p>Dentro de cada categoria, ofereça uma variedade de ofícios específicos que os jogadores podem escolher. Por exemplo, dentro da categoria "<b>Cavalaria</b>", os ofícios podem incluir "<b>Cavaleiro Pesado</b>", "<b>Batedor Montado</b>", "<b>Líder de Carga</b>", cada um com habilidades e atributos únicos.</p>
+                <p><b>Perícias e Atributos Relacionados:</b></p>
+                <p>Atribua perícias e atributos específicos a cada ofício dentro das categorias, refletindo as habilidades necessárias para desempenhar essas funções. Por exemplo, um "<b>Arqueiro</b>" pode ter habilidades de <b>precisão</b> e <b>furtividade</b>, enquanto um "<b>Engenheiro</b> <b>Militar</b>" pode ser especializado em <b>construção</b> e <b>armadilhas</b>.</p>
+                <p><b>Eventos e Exploração na Passagem de Tempo:</b></p>
+                <p>Crie eventos e oportunidades de exploração narrativa relacionados a cada ofício dentro das categorias. Por exemplo, um "Engenheiro Militar" pode participar da construção de fortificações ou inventar dispositivos de cerco durante o treinamento e a progressão na carreira.</p>
+                
+                <p><b>Exemplo de Implementação:</b></p>
+
+                <p>Para a carreira de "<b>Militar Imperial</b>":</p>
+                
+                
+                <div class="alert alert-secondary">
+                    <p><b>Categoria:</b> Cavalaria</p>
+                    <ul>
+                    <li><b>Ofício</b>: Cavaleiro Pesado
+                        <ul>
+                            <li><b>Perícias</b>: Montaria avançada, carga de lança.</li>
+                            <li><b>Atributos</b>: Força e Resistência aumentadas.</li>
+                        </ul>
+                    </li>
+                    <li><b>Ofício</b>: Batedor Montado
+                        <ul>
+                            <li><b>Perícias</b>: Furtividade, rastreamento.</li>
+                            <li><b>Atributos</b>: Destreza e Percepção aprimoradas.</li>
+                        </ul>
+                    </li>
+                    <li><b>Ofício</b>: Líder de Carga
+                        <ul>
+                            <li><b>Perícias</b>: Táticas de batalha, liderança.</li>
+                            <li><b>Atributos</b>: Carisma e Inteligência para comandar tropas.</li>
+                        </ul>
+                    </li>
+                    </ul>
+                </div>
+
+                <div class="alert alert-secondary">
+                    <p><b>Categoria:</b> Engenharia Militar</p>
+                    <ul>
+                    <li><b>Ofício</b>: Engenheiro de Fortificações
+                        <ul>
+                            <li><b>Perícias</b>: Arquitetura, construção.</li>
+                            <li><b>Atributos</b>: Inteligência e Sabedoria para planejar defesas.</li></li>
+                        </ul>
+                        <li><b>Ofício</b>: Mestre de Armamentos
+                        <ul>
+                            <li><b>Perícias</b>: Fabricação de armas, manutenção.</li>
+                            <li><b>Atributos</b>: Destreza e Força para lidar com armamentos pesados.</li></li>
+                        </ul>
+                    </ul>
+                </div>
+
+                <h4>Requisitos e Restrições para Carreiras</h4>
+
+                <p>Ao criar requisitos para adentrar em carreiras dentro do seu sistema de jogo, considere diversos elementos que podem influenciar a elegibilidade dos personagens. Aqui estão algumas diretrizes para definir requisitos e restrições:</p>
+                <p><b>Requisitos Sociais e Econômicos:</b></p>
+                <p>Estabeleça requisitos relacionados ao <b>status social</b> ou <b>recursos financeiros</b> dos personagens. Por exemplo, para ingressar em uma academia prestigiada, o personagem pode precisar ter um <b>título de nobreza</b> ou pagar uma taxa elevada de admissão.</p>
+                <p><b>Treinamento ou Experiência Prévia:</b></p>
+                <p>Exija que os personagens tenham um certo nível de treinamento ou experiência prévia relacionada à carreira desejada. Por exemplo, para se tornar um ferreiro qualificado, o personagem pode precisar demonstrar proficiência em habilidades de forja e metalurgia.</p>
+                <p><b>Atributos Necessários:</b></p>
+                <p>Defina requisitos de atributos específicos que os personagens devem possuir para se qualificar para determinadas carreiras. Por exemplo, para ingressar na Guilda dos Ferreiros, um personagem pode precisar ter um nível mínimo de Força em sua ficha de atributos.</p>
+
+                <p><b>Exemplo de Implementação:</b></p>
+                
+                <div class="alert alert-secondary">
+                    <p><b>Para a carreira de "Mago da Academia Arcana":</b></p>
+                    <ul>
+                        <li><b>Requisitos Sociais e Econômicos:</b> O personagem precisa ter um patrocinador ou recomendação de um mago respeitável ou pagar uma taxa de admissão considerável.</li>
+                        <li><b>Treinamento ou Experiência Prévia:</b> O personagem deve demonstrar conhecimento básico em magia ou ter frequentado uma escola de magia antes de se candidatar.</li>
+                        <li><b>Atributos Necessários:</b> O personagem deve ter um nível mínimo de Inteligência ou Sabedoria para acompanhar os estudos avançados de magia na academia.</li>
+                    </ul>
+                    <p><b>Para a carreira de "Ferreiro da Guilda dos Ferreiros":</b></p>
+                    <ul>
+                        <li><b>Requisitos Sociais e Econômicos:</b> O personagem precisa ser membro da guilda ou ser recomendado por um mestre ferreiro reconhecido.</li>
+                        <li><b>Treinamento ou Experiência Prévia:</b> O personagem deve demonstrar habilidades básicas em metalurgia e forja.</li>
+                        <li><b>Atributos Necessários:</b> O personagem deve ter um nível mínimo de Força para lidar com os equipamentos pesados e materiais de trabalho da guilda.</li>
+                    </ul>
+                </div>
+                
+                <h4>Eventos de Carreiras</h4>
+
+                <p>
+                    Ao desenvolver eventos dentro das carreiras, você oferece aos jogadores oportunidades para experiências significativas e desafiadoras durante sua jornada profissional. Aqui estão os tipos de eventos que podem ser implementados:
+                </p>
+                <p>
+                    <b>Eventos da Carreira:</b>
+                </p>
+                <p>
+                    Estes são eventos específicos relacionados às atividades e conquistas dentro da carreira escolhida. Por exemplo, "<i>Participou de um evento importante e conquistou um aliado valioso</i>", ou "<i>Descobriu um segredo antigo relacionado à história da guilda</i>".
+                </p>
+                <p>
+                    <b>Eventos de Obstáculos:</b>
+                </p>
+                <p>
+                    Esses eventos apresentam desafios ou adversidades que os personagens enfrentam ao longo de sua carreira. Por exemplo, "<i>Sofreu uma cicatriz de batalha que afeta sua aparência</i>", ou "<i>Foi acusado injustamente de traição e teve que provar sua inocência</i>".
+                </p>
+                <p>
+                    <b>Eventos de Vida:</b>
+                </p>
+                <p>
+                    São acontecimentos externos à carreira que moldam a vida e a personalidade do personagem. Por exemplo, "<i>Perdeu um ente querido durante uma epidemia</i>", ou "<i>Descobriu uma habilidade latente após um encontro místico</i>".
+                </p>
+
+                <h5>Integração com a Narrativa</h5>
+
+                <p>
+                    Além de oferecer benefícios mecânicos, é essencial integrar as carreiras à narrativa mais ampla do seu mundo de jogo. Aqui estão algumas maneiras de fazer isso:
+                </p>
+                <p>
+                    <b>Contexto Histórico e Cultural:</b>
+                </p>
+                <p>
+                    Descreva como cada carreira se encaixa na história geral e na cultura da sociedade do seu cenário. Por exemplo, explique a importância dos soldados imperiais na defesa do reino e sua relação com a hierarquia militar.
+                </p>
+                <p>
+                    <b>Conexões com Organizações e NPCs:</b>
+                </p>
+                <p>
+                    Introduza NPCs importantes e relacionamentos significativos que estejam ligados à carreira dos personagens. Por exemplo, apresente mentores, rivais ou aliados influentes dentro da guilda ou academia associada à carreira.
+                </p>
+                <p>
+                    <b>Desenvolvimento de Subtramas:</b>
+                </p>
+                <p>
+                    Utilize as carreiras dos personagens como base para subtramas interessantes e envolventes. Por exemplo, crie missões específicas relacionadas às habilidades e experiências adquiridas durante a progressão na carreira.
+                </p>
+                
+                <p><b>Exemplo de Implementação:</b></p>
+                
+                <div class="alert alert-secondary">
+                    <p>Para a carreira de "<b>Guarda Real do Rei</b>":</p>
+                    <ul>
+                        <li><b>Evento da Carreira:</b> "Foi selecionado para participar da escolta real durante um importante evento diplomático, ganhando a confiança do rei."</li>
+                        <li><b>Evento de Obstáculo:</b> "Ficou gravemente ferido durante um ataque surpresa, resultando em uma cicatriz facial que se tornou uma marca de sua bravura."</li>
+                        <li><b>Evento de Vida:</b> "Perdeu seu mentor de longa data para uma conspiração política, impulsionando sua determinação em proteger o rei a todo custo."</li>
+                        <li><b>Integração com a Narrativa:</b> A carreira de "Guarda Real do Rei" é essencial para a segurança do reino, refletindo os valores de lealdade e coragem valorizados na sociedade. Os guardas reais são respeitados e temidos por sua dedicação ao rei, desempenhando um papel crucial na estabilidade do reino.</li>
+                    </ul>
+                </div>
+                
+
+                <h5>Tabelas de Eventos para Carreiras</h5>
+
+                <p>
+                    Para adicionar elementos de aleatoriedade e variedade às carreiras, você pode criar tabelas de eventos específicos para cada categoria. Aqui está como você pode incorporar essas tabelas:
+                </p>
+                <p>
+                    <b>Criação de Tabelas Aleatórias:</b>
+                </p>
+                <p>
+                    Desenvolva tabelas com uma variedade de eventos significativos para cada categoria de carreira. Por exemplo, crie uma tabela de eventos para a categoria "<b>Cavalaria</b>" que inclua eventos como "<b>Recebeu uma comenda por bravura em batalha</b>" ou "<b>Foi traído por um colega de esquadrão</b>".
+                </p>
+                <p>
+                    <b>Diversidade de Eventos:</b>
+                </p>
+                <p>
+                    Garanta que cada tabela de eventos ofereça uma mistura de experiências positivas, desafiadoras e transformadoras para os personagens. Inclua eventos de sucesso, fracasso, reviravoltas inesperadas e encontros significativos.
+                </p>
+                <p>
+                    <b>Eventos de Vida Comuns:</b>
+                </p>
+                <p>
+                    Mantenha uma tabela de eventos de vida comuns que seja compartilhada entre todas as carreiras. Esta tabela pode incluir eventos pessoais como "<b>Nascimento de um filho</b>", "<b>Perda de um ente querido</b>" ou "<b>Descoberta de um segredo de família</b>".
+                </p>
+                <p>
+                    <b>Integração com a Narrativa:</b>
+                </p>
+                <p>
+                    Ao utilizar tabelas de eventos, incorpore os resultados desses eventos à narrativa geral do seu mundo de jogo. Os eventos aleatórios podem inspirar subtramas, desafios adicionais ou oportunidades de desenvolvimento para os personagens.
+                </p>
+                <p><b>Exemplo de Implementação:</b></p>
+
+                <div class="alert alert-secondary">
+                    <p>Para a categoria "Cavalaria" na carreira de "<i>Militar Imperial</i>":</p>
+                    <p><b>1d6 Eventos:</b></p>
+                    <ol>
+                        <li>Recebeu uma comenda por bravura em batalha.</li>
+                        <li>Foi promovido a capitão de esquadrão após uma missão bem-sucedida.</li>
+                        <li>Perdeu seu fiel cavalo de guerra em combate.</li>
+                        <li>Descobriu uma conspiração dentro das fileiras e teve que enfrentar o traidor.</li>
+                        <li>Foi ferido gravemente em uma escaramuça, mas se recuperou com honra.</li>
+                        <li>Encontrou um artefato antigo durante uma patrulha de fronteira.</li>
+                    </ol>
+                </div>
+                
+
+                <h3>Benefícios das Carreiras</h3><hr>
+
+                <p>
+                    Ao criar um sistema de carreiras, você pode oferecer uma variedade de benefícios que impactam diretamente o desenvolvimento e a experiência dos personagens. Aqui estão algumas características que podem ser implementadas nas carreiras:
+                </p>
+
+                <h4>Títulos e Funções Associadas:</h4>
+                <p>
+                    Atribua títulos distintos aos personagens com base na carreira escolhida. Os títulos podem conferir funções específicas dentro do cenário, como liderança, reconhecimento social ou responsabilidades especiais. Por exemplo, um título de "<i>Mestre Ferreiro</i>" pode conceder autoridade sobre uma guilda de artesãos ou acesso a materiais exclusivos.
+                </p>
+
+                <h4>Habilidades Únicas e Especializações:</h4>
+                <p>
+                    Ofereça habilidades únicas que só podem ser adquiridas ao seguir uma determinada carreira. Permita que os jogadores desenvolvam especializações específicas ao longo da carreira, tornando-se mestres em determinadas áreas. Por exemplo, um "<i>Explorador</i>" pode aprender habilidades de rastreamento avançadas ou navegação precisa.
+                </p>
+
+                <p>
+                    Temos também no sistema o <b>Treino de Ação</b>, uma mecânica onde o jogador pode mesclar suas habilidades, criando um movimento de ataque muito mais poderoso, ou até mesmo aliar seus movimentos com outros jogadores a fim de criar um ataque mais eficaz. E as carreiras podem atribuir ações já pré estabelecidas que serão aprendidas na carreira. 
+                </p>
+
+                <h4>Aquisições Exclusivas e Evolução de Níveis:</h4>
+                <p>
+                    Introduza aquisições que só podem ser obtidas ao seguir uma carreira específica, como equipamentos especiais, conhecimento secreto ou acesso a locais restritos. Permita a evolução de níveis dentro da carreira por meio de testes e eventos significativos. Por exemplo, um "<i>Aventureiro</i>" pode adquirir mapas antigos, artefatos raros ou aliados influentes durante suas explorações.
+                </p>
+
+                <h4>Recursos Recorrentes e Únicos:</h4>
+                <p>
+                    Forneça recursos valiosos aos jogadores, como equipamentos, salários ou benefícios exclusivos. Estabeleça uma lista de recursos que os personagens podem ganhar e manter enquanto seguem uma determinada carreira. Por exemplo, um "<i>Guarda Real</i>" pode receber uma armadura real e uma pensão mensal como parte de seus deveres.
+                </p>
+
+                <p><b>Exemplo de Implementação:</b></p>
+
+                <div class="alert alert-secondary">
+                    <p>Para a carreira de "<b>Mestre Ferreiro</b>" na Guilda dos Ferreiros:</p>
+                    <ul>
+                        <li><b>Título e Função:</b> "Mestre Ferreiro" confere autoridade sobre a guilda e o direito de ensinar a próxima geração de artesãos.</li>
+                        <li><b>Habilidades Únicas:</b> Aprende a forjar armas mágicas com propriedades especiais, como chamas encantadas ou lâminas gélidas.</li>
+                        <li><b>Aquisições Específicas:</b> Ganha acesso a Aquisição materiais raros e segredos de forjamento transmitidos apenas aos mestres da guilda.</li>
+                        <li><b>Recursos Recorrentes:</b> Recebe uma pensão mensal da guilda e tem acesso a um laboratório de alta qualidade para suas criações.</li>
+                    </ul> 
+                </div>
+
+                <h3>Sistema de Progressão em Carreiras</h3><hr>
+
+                <p>Ao criar categorias de progressão dentro das carreiras, você oferece aos jogadores uma estrutura clara para avançar e alcançar objetivos específicos. Aqui estão alguns elementos que podem ser implementados no sistema de progressão:</p>
+                <p><b>Categorias de Progressão:</b></p>
+                <ul>
+                    <li>Divida a carreira em categorias ou níveis que os jogadores podem alcançar por meio de testes, eventos e conquistas.</li>
+                    <li>Cada categoria representa um marco significativo na jornada da carreira e oferece benefícios ou habilidades adicionais.</li>
+                </ul>
+                <p><b>Testes e Desafios:</b></p>
+                <ul>
+                    <li>Introduza testes ou desafios específicos para cada categoria de progressão.</li>
+                    <li>Os jogadores precisarão demonstrar suas habilidades e conhecimentos adquiridos durante a carreira para avançar para a próxima categoria.</li>
+                </ul>
+                <p><b>Eventos e Benefícios:</b></p>
+                <ul>
+                    <li>Associe eventos únicos a cada categoria de progressão, oferecendo experiências narrativas significativas.</li>
+                    <li>Os benefícios adquiridos ao passar para uma nova categoria podem incluir novas habilidades, acesso a recursos exclusivos ou reconhecimento dentro da organização.</li>
+                </ul>
+                <p><b>Narrativa Temporal e Desenvolvimento:</b></p>
+                <ul>
+                    <li>Utilize a progressão como uma narrativa temporal, permitindo que os jogadores e o mestre explorem como os personagens evoluíram ao longo do tempo.</li>
+                    <li>Desenvolva diretrizes para contar histórias sobre os eventos e desafios enfrentados durante cada etapa da progressão.</li>
+                </ul>
+                
+                <p><b>Exemplo de Implementação:</b></p>
+
+                <div class="alert alert-secondary">
+                    <p>Para a carreira de "<b>Aventureiro</b>" na Guilda dos Exploradores:</p>
+                    <p>Categorias de Progressão:</p>
+                    <ul>
+                        <li><b>Nível 1:</b> Recruta da Guilda</li>
+                        <li><b>Nível 2:</b> Explorador Iniciante</li>
+                        <li><b>Nível 3:</b> Explorador Sênior</li>
+                        <li><b>Nível 4:</b> Mestre Explorador</li>
+                    </ul>
+                    <p><b>Testes e Desafios:</b></p>
+	                <p>Para avançar de Recruta a Explorador Iniciante, o jogador deve completar uma missão de exploração solo e apresentar um relatório detalhado. Para avançar de Explorador Sênior a Mestre Explorador, o jogador deve liderar uma expedição bem-sucedida e mapear uma região desconhecida.</p>
+                    <p><b>Eventos e Benefícios:</b></p>
+	                <p>Ao se tornar um Explorador Sênior, o jogador recebe uma bússola mágica que aponta para locais de interesse. Ao alcançar o status de Mestre Explorador, o jogador ganha o direito de liderar expedições oficiais da guilda e acesso a recursos avançados de navegação.</p>
+                    <p><b>Narrativa Temporal e Desenvolvimento:</b></p>
+	                <p>Os eventos e desafios enfrentados durante cada progressão contribuem para o desenvolvimento da história do personagem e sua reputação como explorador experiente.</p>
+	                <p>Os jogadores podem criar narrativas detalhadas sobre suas conquistas e experiências ao longo da carreira de aventureiro.</p>
+                </div>
+
+                <h3>Carreiras como Aquisições Progressivas</h3><hr>
+
+                <p>Ao incorporar carreiras como <b>aquisições progressivas</b>, você permite que os jogadores desenvolvam seus personagens de maneira flexível e orgânica, ao mesmo tempo em que alcançam marcos significativos ao longo da narrativa. Aqui estão alguns pontos-chave para implementar essa abordagem:</p>
+                
+                
+                <p><b>Evolução por Requisitos Cumpridos:</b></p>
+                <ul>
+                    <li>Cada nível de carreira representa uma aquisição específica que só pode ser evoluída ao cumprir requisitos definidos dentro da narrativa da carreira.</li>
+                    <li>Os requisitos podem incluir completar missões importantes, superar desafios específicos ou alcançar marcos narrativos significativos.</li>
+                </ul>
+                <p><b>Benefícios Gradativos:</b></p>
+                <ul>
+                    <li>Cada nível alcançado na carreira oferece benefícios e recompensas para o personagem, refletindo o crescimento e a experiência adquirida ao longo do caminho.</li>
+                    <li>Os benefícios podem incluir habilidades adicionais, acesso a recursos exclusivos, aumento de estatísticas ou reconhecimento dentro da comunidade relacionada à carreira.</li>
+                </ul>
+                <p><b>Narrativa Flexível e Exploratória:</b></p>
+                <ul>
+                    <li>Encoraje uma abordagem narrativa flexível, onde os jogadores e o mestre explorem os eventos e desafios que moldam a progressão na carreira.</li>
+                    <li>Permita que os personagens desenvolvam suas habilidades e conhecimentos de maneira única, refletindo suas escolhas e interações no mundo do jogo.</li>
+                </ul>
+                <p><b>Integração com o Sistema Venturo:</b></p>
+                
+                <p>Alinhe os níveis de carreira com os conceitos do sistema Venturo, permitindo que os jogadores usem suas aquisições para aprimorar e personalizar seus personagens de acordo com suas escolhas narrativas.</p>
+                
+                <p>Utilize os recursos do sistema Venturo, como atributos, habilidades e treinamentos de ação, para complementar os benefícios obtidos ao evoluir na carreira.</p>
+                
+                <p><b>Exemplo de Implementação:</b></p>
+
+                <div class="alert alert-secondary">
+                    <p>Para a carreira de "<b>Mago Continental</b>" como aquisição progressiva:</p>
+                    <p><b>Níveis da Carreira:</b></p>
+                    <ul>
+                        <li><b>Nível 1:</b> Aprendiz de Magia</li>
+                        <li><b>Nível 2:</b> Estudante Arcano</li>
+                        <li><b>Nível 3:</b> Mago Júnior</li>
+                        <li><b>Nível 4:</b> Mago Sênior</li>
+                        <li><b>Nível 5:</b> Mestre dos Elementos</li>
+                    </ul>
+                    <p><b>Requisitos e Benefícios:</b></p>
+                    <ul>
+                        <li>Para avançar de Aprendiz de Magia a Estudante Arcano, o jogador deve dominar três feitiços básicos e passar por um teste de conhecimento arcano.</li>
+                        <li>Cada nível alcançado oferece benefícios como novos feitiços aprendidos, acesso às bibliotecas mágicas proibidas e reconhecimento como mago respeitável.</li>
+                    </ul>   
+                    <p><b>Narrativa Exploratória:</b></p>
+	                <p>Os eventos e desafios enfrentados durante cada nível da carreira contribuem para o desenvolvimento da história do personagem como um mago continental experiente. Os jogadores podem explorar a academia de magia, participar de expedições místicas e confrontar inimigos mágicos poderosos ao longo de sua jornada. </p>
+                </div>
+
+                <h3>Tabela de Vida Detalhada</h3><hr>
+
+                <p>
+                    Ao criar uma tabela de vida abrangente, você oferece aos jogadores uma estrutura para explorar uma variedade de eventos e experiências que moldam seus personagens ao longo do tempo. Aqui estão alguns elementos que podem ser incluídos na tabela de vida:
+                </p>
+                <p>
+                    <b>Eventos Significativos:</b>
+                </p>
+                <ul>
+                    <li><b>Doenças:</b> Descreva doenças comuns no cenário e seus efeitos nos personagens.</li>
+                    <li><b>Ferimentos:</b> Determine os tipos de ferimentos possíveis e suas consequências.</li>
+                    <li><b>Nascimento e Morte:</b> Adicione eventos relacionados ao início e ao fim da vida dos personagens.</li>
+                    <li><b>Relacionamentos:</b> Explore o desenvolvimento e desfecho de relacionamentos pessoais, incluindo novas relações, traições e evolução nas interações.</li>
+                    <li><b>Viagens e Eventos Incomuns:</b> Inclua eventos relacionados a viagens, encontros inesperados e reviravoltas emocionantes.</li>
+                </ul>
+
+                <p><b>Regras e Descrições Associadas:</b></p>
+                <p>Para cada evento listado, forneça uma descrição detalhada e regras específicas para guiar o impacto narrativo no jogo. Por exemplo, ao rolar "<i>Fim de um Relacionamento</i>", descreva a causa e consequências desse término, como a criação de um inimigo ou o impacto emocional no personagem.</p>
+                <p><b>Testes e Consequências:</b></p>
+                <p>Integre testes ou rolagens de dados para determinar o resultado de certos eventos, adicionando uma camada de aleatoriedade e imprevisibilidade à narrativa. Os resultados dos testes podem influenciar o desenvolvimento do personagem, incluindo novas motivações, desafios ou benefícios inesperados.</p>
+                <p><b>Desenvolvimento da Carreira:</b></p>
+                <p>Utilize a tabela de vida como uma ferramenta para explorar o desenvolvimento dos personagens ao longo de suas carreiras. Os eventos da tabela de vida podem influenciar as escolhas dos jogadores, moldando suas trajetórias e narrativas pessoais dentro do mundo do jogo.</p>
+                
+                <p><b>Exemplo de Implementação:</b></p>
+
+                <div class="alert alert-secondary">
+                    <p>Para a tabela de vida de um personagem em um cenário de fantasia medieval:</p>
+	                <p><b>Fim de um Relacionamento:</b></p>
+                    <ul>
+                        <li><b>Descrição:</b> Seu relacionamento chegou ao fim devido a uma traição.</li>
+                        <li><b>Regra:</b> Role 1d6 para determinar se você criou um inimigo mortal como resultado dessa traição.</li>
+                    </ul>
+	                <p><b>Doença:</b></p>
+                    <ul>
+                        <li><b>Descrição:</b> Você contraiu uma doença grave e debilitante.</li>
+                        <li><b>Regra:</b> Role na tabela de doenças para determinar os efeitos e consequências dessa enfermidade.</li>
+                    </ul>
+	                <p><b>Evento Incomum:</b></p>
+                    <ul>
+                        <li><b>Descrição:</b> Durante uma viagem, você encontrou uma relíquia antiga.</li>
+                        <li><b>Regra:</b> Desenvolva uma subtrama baseada nessa relíquia e suas implicações para o personagem.</li>
+                    </ul>
+                </div>
+                <p>A tabela de vida pode ser extensa, e abordar até mesmo, outras tabelas relacionadas ao resultado da tabela de vida, por exemplo, se você rolar doença, poderá ter uma tabela inteira para rolar somente categorias de doenças mais comuns daquele mundo.</p>
+
+                <h3>Conclusão</h3><hr>
+                <p>
+                    Em conclusão, ao criar um sistema robusto de carreiras e tabelas de vida dentro do seu cenário de jogo, você está dando vida a uma experiência de RPG mais envolvente e personalizada para seus jogadores. Essas ferramentas oferecem uma estrutura flexível para o desenvolvimento dos personagens, permitindo que eles cresçam não apenas em termos de habilidades mecânicas, mas também como protagonistas de uma narrativa rica e complexa.
+                </p>
+                <p>
+                    Ao implementar carreiras detalhadas, você possibilita que os jogadores escolham caminhos significativos para seus personagens, com requisitos, testes e eventos que refletem os desafios e conquistas ao longo do tempo. Isso não apenas incentiva a imersão dos jogadores no mundo do jogo, mas também promove uma sensação de progressão tangível e recompensadora.
+                </p>
+                <p>
+                    Da mesma forma, uma tabela de vida bem elaborada oferece uma variedade de eventos marcantes que moldam os destinos dos personagens, desde doenças e ferimentos até relacionamentos, viagens e descobertas inesperadas. Cada evento é uma oportunidade para explorar a profundidade emocional dos personagens e criar narrativas memoráveis.
+                </p>
+                <p>
+                    A integração desses elementos também pode enriquecer a narrativa geral do seu mundo de jogo, proporcionando contextos culturais e sociais mais ricos, além de possibilitar uma exploração mais ampla da história e das organizações presentes no cenário.
+                </p>
+                <p>
+                    Em última análise, ao adotar essas ferramentas de criação de cenário, você está capacitando seus jogadores a participarem ativamente da construção e evolução da história, transformando suas escolhas em consequências significativas e contribuindo para uma experiência de RPG mais envolvente, imersiva e personalizada para todos os envolvidos.
+                </p>
+
+                <br>
+            </div>
+
+            <div id="propaganda-lateral" class="col-sm-2">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3911900562799248"
+     crossorigin="anonymous"></script>
+    <!-- Anuncio Lateral -->
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3911900562799248"
+     data-ad-slot="2483162649"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+    <script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+                
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="container" id="comentarios">
+        <script src="/js/configuracao_comentarios.js" defer></script>
+    </div>
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>
