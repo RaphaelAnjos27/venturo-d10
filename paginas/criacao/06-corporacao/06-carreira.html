@@ -65,6 +65,11 @@
                     Dentro de um cenário de jogo, as carreiras representam os ofícios ou profissões que os jogadores escolhem para seus personagens. Estas podem ser adquiridas antes do início da campanha, como parte do passado do personagem, ou durante o decorrer da história. Este conceito se baseia no <b>sistema de carreiras</b> que pode ser implementado através dos <b>componentes</b> de cenário do seu mundo, que abrange as diversas organizações e instituições presentes nele. Aqui aprenderemos como desenvolver um sistema de carreiras para enriquecer o seu mundo de jogo.
                 </p>
 
+                <div class="alert alert-primary">
+                    <i><b>NOTA.:</b> O Sistema de Carreiras de cada cenário é uma mecânica de componente, ou seja, pode variar de cenário para cenário. Então desenvolva a mecânica com base no que estudará aqui, e então desenvolva as carreiras de acordo com sua mecânica.</i>
+                </div>
+
+
                 <h4>
                     Definição de Carreiras e Vínculo com Organizações
                 </h4>
@@ -77,6 +82,30 @@
                 <p>
                     Ao criar uma carreira, você define as habilidades e atributos que um personagem ganha ou perde ao seguir esse caminho profissional. Isso pode incluir habilidades específicas, conhecimentos especializados ou vantagens únicas associadas àquela carreira. O sistema de carreiras pode ser usado como uma <b>missão atemporal</b>, permitindo aos jogadores e mestres construir personagens com base na carreira escolhida.
                 </p>
+
+                <p>
+                    O Sistema de Carreiras é para servir como um artifício Narrativo para passagem de tempo, ou seja, pode ser usado em um <b>Timeskip</b> para desenvolvimento de personagem durante campanha, ou na criação de Personagens, complementando assim, o passado do mesmo. 
+                </p>
+                <p>
+                    As Carreiras contem <b>eventos</b>, que por sua vez, deverão ser usados pelas regras de cada carreira para descrever os eventos que ocorreram com o personagem durante essa passagem de tempo enquanto ele está ingressado na carreira.
+                </p>
+                <p>
+                    Existem também as carreiras através de <b>aquisições</b>, no qual o jogador terá a carreira como uma aquisição, e deverá trabalhar nela durante a campanha, seja para evoluir, obter seus benefícios e entre outros elementos que você pode explorar ao desenvolver sua carreira. 
+                </p>
+                <p>
+                    Então o sistema de carreira cobre três objetivos simples: 
+                </p>
+                <p>
+                    <b>Desenvolvimento de Personagem</b> – No qual o jogador cria seu personagem, escolhe uma carreira, e usa as regras de eventos da carreira para elaborar um pouco mais o personagem, antes de iniciar a campanha.
+                </p>
+                <p>
+                    <b>Evolução de Personagem</b> – Aqui o jogador usará a mesma carreira, mas como bem sabemos, não participará da campanha. Nesse caso irá ter um timeskip de alguns anos até a conclusão da carreira. E o jogador e mestre usará as regras de evento para ver como o personagem se saiu nesse período. 
+                </p>
+                <p>
+                    <b>Aquisitiva</b> – Aqui o personagem ingressará na carreira e participar da mesma, enquanto participa da campanha. Essas carreiras são mais flexíveis possuindo regras de como evoluir a aquisição, e como mantê-la, mesmo participando da campanha. Um bom exemplo aqui seria a Guilda de Aventureiros, que pode exigir que o jogador faça missões diárias para se manter na carreira.
+                </p>
+
+
                 <p>
                     <b>Exemplo Prático</b>
                 </p>
@@ -84,6 +113,10 @@
                     Por exemplo, se um personagem decide seguir a carreira de "<b>Mago da Academia Arcana</b>", ele pode ganhar acesso a feitiços exclusivos da academia, ter um bônus em testes de magia e possuir um conhecimento aprofundado sobre artefatos mágicos. Por outro lado, ele pode perder a capacidade de usar armaduras pesadas devido ao foco intensivo em estudos mágicos, ou seja, enquanto seu atributo de <b>Inteligência</b> sobe, ele pode perder através dos eventos de carreira, níveis do atributo de <b>Força</b>.
                 </p>
 
+                <div class="alert alert-success">
+                    <i><b>DICA.:</b> Acima vimos um exemplo de como podemos implementar os sistemas de carreira em nosso cenário. Mas não precisa seguir essa premissa, eu por exemplo, separei as carreiras das organizações, no qual, carreiras estão alocadas dentro do Metadocumento de meu cenário, podendo ser facilmente consultadas.</i>
+                </div>
+                
                 <h3>Implementando o sistema de Carreira</h3><hr>
 
                 <p>
@@ -439,7 +472,30 @@
                         <li>Encontrou um artefato antigo durante uma patrulha de fronteira.</li>
                     </ol>
                 </div>
+                <h5>Fim da Carreira</h5>
                 
+                <p>
+                    A mecânica de carreira deve abordar oque acontece com a mesma após o personagem terminar sua incursão. Essa ideia pode gerar boas tramas e conflitos para os personagens, por exemplo: 
+                </p>
+                <p>
+                    Um personagem que ingressou em uma carreira militar, deverá cumprir seu dever, sendo convocado mensalmente para missões, ou sendo obrigado a ficar de guarda por longos períodos de tempo.
+                </p>
+                <p>
+                    Já uma carreira acadêmica não precisa nem abordar esse atributo, já que, após finalizar o curso, basta seguir sua vida.
+                </p>
+                <p>
+                    A maioria das carreiras tem como objetivo fortalecer o personagem de alguma forma em um período não narrativo, ou seja, em um timeskip de desenvolvimento de personagens. E se sua campanha for grande o suficiente, criar carreiras acadêmicas que fortaleçam seus personagens pode ser uma boa ideia. 
+                </p>
+                <p>
+                    Então nesse atributo você precisa pensar em duas coisas:
+                </p>
+                <ul>
+                    <li>O que acontece com o Personagem ao terminar sua Carreira?</li>
+                    <li>O que acontece com o Personagem caso ele abandone a Carreira?</li>
+                </ul>
+                <p>
+                    Ter a resposta para essas duas perguntas já ajuda bastante quando for desenvolver essa descrição. Vale lembrar que esse é um dos atributos mais importantes de uma carreira, podendo até mesmo envolver tabelas de eventos para fim de carreira. 
+                </p>
 
                 <h3>Benefícios das Carreiras</h3><hr>
 
