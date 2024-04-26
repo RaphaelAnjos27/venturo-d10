@@ -454,15 +454,7 @@ export class VenturoSumarioRegras extends HTMLElement{
                                 <li class="nav-item">
                                     <a class="nav-link" href="/paginas/regras/11-pericias/01-pericias.html">Pericias</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/paginas/regras/11-pericias/02-fisicas.html">Pericias Fisicas</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/paginas/regras/11-pericias/03-mentais.html">Pericias Mentais</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/paginas/regras/11-pericias/04-sociais.html">Pericias Sociais</a>
-                                </li>
+                                
                             </ul>
                         </div>
                     </div>
