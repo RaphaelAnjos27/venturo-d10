@@ -410,9 +410,7 @@ export class VenturoSumarioRegras extends HTMLElement{
                                 <li class="nav-item">
                                     <a class="nav-link" href="/paginas/regras/10-personagem/04-fichadois.html">Segunda Ficha</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/paginas/regras/10-personagem/06-vantagens.html">Vantagens e Desvantagens</a>
-                                </li>
+                                
                                 <li class="nav-item">
                                     <a class="nav-link" href="/paginas/regras/10-personagem/07-fichatres.html">Terceira Ficha</a>
                                 </li>
@@ -442,17 +440,20 @@ export class VenturoSumarioRegras extends HTMLElement{
                 <div class="card">
                     <div class="card-header">
                         <a class="collapsed btn" data-bs-toggle="collapse" href="#collapse15">
-                            Aquisições e Pericias
+                            Elementos da Criação de Personagem
                         </a>
                     </div>
                     <div id="collapse15" class="collapse" data-bs-parent="#accordion">
                         <div class="card-body">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
+                                    <a class="nav-link" href="/paginas/regras/11-pericias/01-pericias.html">Pericias</a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link" href="/paginas/regras/11-pericias/05-aquisicoes.html">Aquisições</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/paginas/regras/11-pericias/01-pericias.html">Pericias</a>
+                                    <a class="nav-link" href="/paginas/regras/11-pericias/06-vantagens.html">Vantagens e Desvantagens</a>
                                 </li>
                                 
                             </ul>
