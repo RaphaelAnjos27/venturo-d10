@@ -390,12 +390,7 @@ export class VenturoSumarioCriacao extends HTMLElement {
                             <li class="nav-item">
                                 <a class="nav-link" href="/paginas/criacao/13-criaturas/04-tecnologicos.html">Tecnológicos</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/paginas/criacao/13-criaturas/05-divinos.html">Seres Divinos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/paginas/criacao/13-criaturas/06-malignos.html">Seres Malignos</a>
-                            </li>
+                    
                             <li class="nav-item">
                                 <a class="nav-link" href="/paginas/criacao/13-criaturas/07-infectados.html">Infectados</a>
                             </li>
@@ -505,12 +500,7 @@ export class VenturoSumarioCriacao extends HTMLElement {
                             <li class="nav-item">
                                 <a class="nav-link" href="/paginas/criacao/16-divindades/09-normais.html">Divindades Normais</a>
                             </li> 
-                            <li class="nav-item">
-                                <a class="nav-link" href="/paginas/criacao/16-divindades/10-celestiais.html">Seres Celestiais</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/paginas/criacao/16-divindades/11-filhos.html">Filhos das divindades primordiais</a>
-                            </li> 
+                        
                         </ul>
                     </div>
                 </div>

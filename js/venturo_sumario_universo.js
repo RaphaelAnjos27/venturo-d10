@@ -74,15 +74,7 @@ export class VenturoSumarioUniverso extends HTMLElement {
                             <li class="nav-item">
                                 <a class="nav-link" href="/paginas/universo/02-mitologia/05-divindades.html">Divindades</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo/02-mitologia/06-celestiais.html">Celestiais</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo/02-mitologia/07-filhos.html">Filhos das Divindades</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo/02-mitologia/08-divinos.html">Seres Divinos e Infernais</a>
-                            </li>
+                            
                             <li class="nav-item">
                                 <a class="nav-link" href="/paginas/universo/02-mitologia/09-azmir.html">Azmir</a>
                             </li>
