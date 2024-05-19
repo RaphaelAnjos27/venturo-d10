@@ -129,9 +129,6 @@ export class VenturoSumarioUniverso extends HTMLElement {
                                 <a class="nav-link" href="/paginas/universo/04-habilidade/01-introducao.html">Introdução</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo/04-habilidade/02-categoria.html">Categorias</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" href="/paginas/universo/04-habilidade/03-formas.html">Formas de Invocação</a>
                             </li>
                             <li class="nav-item">
