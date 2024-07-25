@@ -52,6 +52,9 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
                                         <li class="nav-item">
                                             <a class="nav-link" href="/paginas/worldbuilding/01-introducao/07-pontas-soltas.html">Pontas Soltas na Criação de Mundos</a>
                                         </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/paginas/worldbuilding/01-introducao/08-leismagicas.html">Leis Naturais da Magia</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
