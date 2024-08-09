@@ -189,6 +189,12 @@
         <priority>0.7</priority>
     </url>
 
+    <url>
+        <loc>https://www.venturod10.com.br/paginas/criacao/01-introducao/09-wb-prioridades</loc>
+        <lastmod>2024-08-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 
     <url>
         <loc>https://www.venturod10.com.br/paginas/criacao/02-cosmo/01-universo.html</loc>
@@ -2365,6 +2371,13 @@
     <url>
         <loc>https://www.venturod10.com.br/paginas/worldbuilding/11-elementos/03-itens.html</loc>
         <lastmod>2024-03-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.venturod10.com.br/paginas/worldbuilding/11-elementos/03.1-itenseservicos.html</loc>
+        <lastmod>2024-08-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>

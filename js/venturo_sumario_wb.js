@@ -436,6 +436,9 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
                                             <a class="nav-link" href="/paginas/worldbuilding/11-elementos/03-itens.html">Itens Mágicos</a>
                                         </li>
                                         <li class="nav-item">
+                                            <a class="nav-link" href="/paginas/worldbuilding/11-elementos/03.1-itenseservicos.html">Itens e Serviços</a>
+                                        </li>
+                                        <li class="nav-item">
                                             <a class="nav-link" href="/paginas/worldbuilding/11-elementos/04-elementos.html">Materiais/Elementos Fantasticos</a>
                                         </li>
                                         <li class="nav-item">
