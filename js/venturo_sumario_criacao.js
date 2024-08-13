@@ -33,6 +33,9 @@ export class VenturoSumarioCriacao extends HTMLElement {
                                 <a class="nav-link" href="/paginas/criacao/01-introducao/01.2-criandocenario.html">Estratégias e Flexibilidade na Criação de Cenários</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="/paginas/criacao/01-introducao/09-wb-prioridades">Prioridades na Criação de Mundos</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="/paginas/criacao/01-introducao/01-habilidades.html">Habilidades</a>
                             </li>
                             <li class="nav-item">
@@ -61,9 +64,6 @@ export class VenturoSumarioCriacao extends HTMLElement {
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/paginas/criacao/01-introducao/08-divulgacao.html">Divulgação de Cenários e Criação de Conteúdo</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/paginas/criacao/01-introducao/09-wb-prioridades">Prioridades na Criação de Mundos</a>
                             </li>
                     </div>
                 </div>
