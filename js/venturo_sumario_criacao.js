@@ -277,6 +277,44 @@ export class VenturoSumarioCriacao extends HTMLElement {
 
             <div class="card">
                 <div class="card-header">
+                    <a class="btn" data-bs-toggle="collapse" href="#14">
+                        Itens
+                    </a>
+                </div>
+                <div id="14" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/paginas/criacao/14-itens/01-artefactos.html">Introdução</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/paginas/criacao/14-itens/02-fontes.html">Fontes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/paginas/criacao/14-itens/03-combustivel.html">Combustivel</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/paginas/criacao/14-itens/04-protecao.html">Proteção e Escudos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/paginas/criacao/14-itens/05-restauracao.html">Restaruação e Ajuda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/paginas/criacao/14-itens/06-porte.html">Porte</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/paginas/criacao/14-itens/07-objetos.html">Objetos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/paginas/criacao/14-itens/08-mecanismo.html">Mecanismo</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
                     <a class="btn" data-bs-toggle="collapse" href="#10">
                         Veiculos
                     </a>
@@ -400,44 +438,6 @@ export class VenturoSumarioCriacao extends HTMLElement {
                             <li class="nav-item">
                                 <a class="nav-link" href="/paginas/criacao/13-criaturas/08-sobrenaturais.html">Sobrenaturais</a>
                             </li>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <a class="btn" data-bs-toggle="collapse" href="#14">
-                        Itens
-                    </a>
-                </div>
-                <div id="14" class="collapse" data-bs-parent="#accordion">
-                    <div class="card-body">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="/paginas/criacao/14-itens/01-artefactos.html">Introdução</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/paginas/criacao/14-itens/02-fontes.html">Fontes</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/paginas/criacao/14-itens/03-combustivel.html">Combustivel</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/paginas/criacao/14-itens/04-protecao.html">Proteção e Escudos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/paginas/criacao/14-itens/05-restauracao.html">Restaruação e Ajuda</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/paginas/criacao/14-itens/06-porte.html">Porte</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/paginas/criacao/14-itens/07-objetos.html">Objetos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/paginas/criacao/14-itens/08-mecanismo.html">Mecanismo</a>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>
