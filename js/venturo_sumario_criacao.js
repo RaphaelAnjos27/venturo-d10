@@ -242,6 +242,9 @@ export class VenturoSumarioCriacao extends HTMLElement {
                                 <a class="nav-link" href="/paginas/criacao/08-armas/02-fogo.html">Armas de Fogo, Energia e Antimatéria</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="/paginas/criacao/08-armas/02.1-arcoeflecha.html">Arco e Flecha</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="/paginas/criacao/08-armas/03-branca.html">Armas Brancas</a>
                             </li>
                             <li class="nav-item">
