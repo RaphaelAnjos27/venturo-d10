@@ -427,16 +427,19 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
                                 <div class="card-body">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/paginas/worldbuilding/11-elementos/01-introducao.html">Elementos do mundo</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/11-elementos/01-introducao.html">Elementos do Mundo</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/paginas/worldbuilding/11-elementos/02-magia.html">Sistema de magia</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/11-elementos/02-magia.html">Sistema de Magia</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="/paginas/worldbuilding/11-elementos/03-itens.html">Itens Mágicos</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/paginas/worldbuilding/11-elementos/03.1-itenseservicos.html">Itens e Serviços</a>
+                                            <a class="nav-link" href="/paginas/worldbuilding/11-elementos/03.1-itens.html">Itens Comuns</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/paginas/worldbuilding/11-elementos/03.2-servicos.html">Serviços Comuns</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="/paginas/worldbuilding/11-elementos/04-elementos.html">Materiais/Elementos Fantasticos</a>

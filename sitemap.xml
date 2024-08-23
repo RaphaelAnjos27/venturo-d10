@@ -151,6 +151,13 @@
     </url>
 
     <url>
+        <loc>https://venturod10.com.br/paginas/criacao/01-introducao/03.3-servicos.html</loc>
+        <lastmod>2024-05-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
         <loc>https://venturod10.com.br/paginas/criacao/01-introducao/04-coletividade.html</loc>
         <lastmod>2024-03-26</lastmod>
         <changefreq>monthly</changefreq>
@@ -2385,8 +2392,15 @@
     </url>
 
     <url>
-        <loc>https://venturod10.com.br/paginas/worldbuilding/11-elementos/03.1-itenseservicos.html</loc>
-        <lastmod>2024-08-09</lastmod>
+        <loc>https://venturod10.com.br/paginas/worldbuilding/11-elementos/03.1-itens.html</loc>
+        <lastmod>2024-08-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://venturod10.com.br/paginas/worldbuilding/11-elementos/03.2-servicos.html</loc>
+        <lastmod>2024-08-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
