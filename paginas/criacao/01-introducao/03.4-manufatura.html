@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!--Propaganda Google-->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3911900562799248"
+        crossorigin="anonymous"></script>
+
+    <meta name="google-adsense-account" content="ca-pub-3911900562799248">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PKZEWD0W51"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-PKZEWD0W51');
+    </script>
+
+    <script src="/js/checagem_cookies.js" defer type="module"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Criação - Como Implementar Mecânicas de Crafting e Ações Seguidas em RPGs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/criacao.css">
+    <meta name="description" content="Aprenda a usar a mecânica de Crafting e Ações Seguidas para criar itens personalizados em seu cenário de RPG. Explore fichas de crafting detalhadas, com testes, materiais e etapas que determinam a qualidade final dos itens, trazendo mais estratégia e profundidade ao jogo.">
+
+    <meta property="og:image" content="/static/imagens/thumbs_paginas/Thumb_criacao.webp">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Criacao</h1>
+        <p>Agora que você conhece o Universo e as Regras. Está na hora de aprender a criar os elementos desse universo!
+        </p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-criacao></venturo-sumario-criacao>
+            </div>
+
+            <div class="col-sm-7">
+
+                <div id="sumario" class="container rounded shadow p-4 mb-4 bg-white">
+                    <h6>Sumário:</h6>
+                </div>
+                <script src="/js/sumario.js"></script>
+
+                <h2>Como Implementar Mecânicas de Crafting e Ações Seguidas em RPGs</h2>
+
+                <p>
+                    Essa mecânica de criação de itens pode ser implementada como uma <b>mecânica de cenário</b>, onde o criador do cenário define uma <b>ficha de craft</b>. Essa ficha inclui os materiais, etapas, e requisitos necessários para a criação de itens específicos, além de utilizar a regra de <b>Ações Seguidas</b> para estruturar o processo.
+                </p>
+                <h3>Crafting como Complemento de Cenário</h3>
+                <p>
+                    Embora o sistema oficial não contemple uma explicação detalhada sobre <b>criação de itens (crafting)</b>, seu cenário pode implementa uma abordagem personalizada, utilizando a <b>mecânica de Ações Seguidas</b> para dar mais profundidade ao processo. Esta abordagem permite que os jogadores, ao desenvolverem suas perícias específicas, como <b>Ferreiro</b> ou <b>Alquimia</b>, possam criar itens de alta qualidade e até mesmo personalizar armas e objetos com efeitos únicos.
+                </p>
+
+                <h4>Como Funciona:</h4>
+                <ol>
+                    <li><b>Definição de Fichas de Craft:</b> O cenário oferece fichas específicas para cada tipo de item que pode ser criado, detalhando os materiais necessários, o tempo estimado, e o número de acertos para completar a tarefa com sucesso.</li>
+                    <li><b>Ações Seguidas:</b> O processo de criação é dividido em várias etapas, onde o jogador realiza testes regulares de <b>Atributo + Perícia</b>. O número de acertos acumulados ao longo do processo determina a qualidade do item final.</li>
+                    <li><b>Personalização de Itens:</b> Dependendo do desempenho nos testes, o jogador pode criar itens funcionais, de qualidade superior, ou até mesmo objetos excepcionais, ganhando bônus em combate, durabilidade aumentada ou efeitos visuais.</li>
+                </ol>
+                <p>
+                    Essa abordagem permite adicionar uma camada extra de estratégia e narrativa, onde os jogadores podem investir tempo e recursos para obter itens únicos, trazendo mais profundidade ao cenário e novas possibilidades de gameplay.
+                </p>
+                <p>
+                    Dessa forma, o <b>complemento de cenário</b> define claramente que essa é uma regra opcional, criada especificamente para enriquecer a experiência dos jogadores, sem alterar o sistema oficial base.
+                </p>
+
+                <h4>Ficha de Craft:</h4>
+
+                <p>
+                    O criador do cenário pode elaborar uma ficha para cada tipo de item que pode ser criado pelos jogadores. Essa ficha funcionará como um guia passo a passo para o processo de crafting, determinando:
+                </p>
+                <ol>
+                    <li><b>Nome do Item</b>: Exemplo: Espada de Qualidade Superior.</li>
+                    <li><b>Materiais Necessários</b>: Detalha os recursos que o jogador precisará reunir antes de começar a criação (<i>ex: 3 barras de aço, couro tratado, carvão de alta qualidade</i>).</li>
+                    <li><b>Número de Turnos ou Dias</b>: Define o tempo necessário para a criação (<i>ex: 20 turnos ou 3 dias in-game</i>).</li>
+                    <li><b>Atributos e Perícias</b>: Define quais combinações de Atributos e Perícias o jogador deve usar para realizar os testes (<i>ex: Força + Ferreiro, Destreza + Joalheria</i>).</li>
+                    <li><b>Testes e ND</b>: Estabelece a dificuldade de cada teste durante o processo (<i>ex: ND8 para forja de armas simples</i>).</li>
+                    <li><b>Número de Acertos Necessários</b>: Determina o número total de acertos que o jogador deve acumular para concluir a criação (<i>ex: 15 acertos para uma espada de qualidade</i>).</li>
+                    <li><b>Complicações e Bônus Críticos</b>: Define o que acontece em casos de falhas e sucessos críticos, conforme a natureza do item (<i>ex: perder materiais em falhas críticas, conseguir bônus em ataques com sucessos críticos</i>).</li>
+                    <li><b>Qualidade Final do Item</b>: Define as possíveis variações na qualidade do item com base nos acertos (<i>ex: arma normal, arma superior com bônus de +1, arma excepcional com bônus de +2</i>).</li>
+                </ol>
+                
+                <h4>Exemplo de Ficha de Craft:</h4>
+
+                <p>
+                    <b>Item:</b> Espada de Qualidade Superior
+                </p>
+                <p>
+                    <b>Materiais Necessários:</b>
+                </p>
+                <ul>
+                    <li>3 Barras de Aço Refinado</li>
+                    <li>1 Couro Tratado de Alta Qualidade</li>
+                    <li>Carvão de Alta Pureza</li>
+                </ul>
+                <p>
+                    <b>Tempo:</b> 20 turnos (3 dias in-game)
+                </p>
+                <p>
+                    <b>Atributos + Perícias:</b> Força + Ferreiro (ND8)
+                </p>
+                <p>
+                    <b>Acertos Necessários:</b> 15
+                </p>
+                <p>
+                    <b>Complicações:</b>
+                </p>
+                <ul>
+                    <li>Falhas Críticas: Perde 1 barra de aço ou causa um defeito na espada.</li>
+                    <li>Sucessos Críticos: Bônus de qualidade (+1 adicional no dano).</li>
+                </ul>
+                <p>
+                    <b>Qualidade Final:</b>
+                </p>
+                <ul>
+                    <li>10-14 Acertos: Espada normal, sem bônus.</li>
+                    <li>15-19 Acertos: Espada de Qualidade Superior (+1 de dano).</li>
+                    <li>20+ Acertos: Espada Excepcional (+2 de dano, durabilidade aumentada).</li>
+                </ul>
+                <p>
+                    Essa ficha facilita o uso da mecânica de crafting e deixa claro o que o jogador precisa para criar itens. O sistema incentiva o planejamento estratégico, a obtenção de materiais e um envolvimento mais profundo com a narrativa.
+                </p>
+
+
+
+
+
+            </div>
+
+            <div id="propaganda-lateral" class="col-sm-2">
+                <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3911900562799248"
+                    crossorigin="anonymous"></script>
+                <!-- Anuncio Lateral -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3911900562799248"
+                    data-ad-slot="2483162649" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <venturo-anuncio></venturo-anuncio>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="comentarios">
+        <script src="/js/configuracao_comentarios.js" defer></script>
+    </div>
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>

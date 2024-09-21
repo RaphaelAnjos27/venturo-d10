@@ -54,6 +54,9 @@ export class VenturoSumarioCriacao extends HTMLElement {
                                 <a class="nav-link" href="/paginas/criacao/01-introducao/03.3-servicos.html">Criando Serviços para o Cenário</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="/paginas/criacao/01-introducao/03.4-manufatura.html">Mecânica de Manufatura</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="/paginas/criacao/01-introducao/04-coletividade.html">Universos Coletivos</a>
                             </li>
                             <li class="nav-item">
