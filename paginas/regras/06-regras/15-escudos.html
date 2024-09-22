@@ -56,45 +56,68 @@
                 <script src="/js/sumario.js"></script>
                 
                 <h2>ESCUDOS</h2>
+
                 <p>
-                    Vamos falar agora dos escudos, ou tudo que sirva para proteção. Falaremos primeiro dos tipos de escudos que podemos ter em uma sessão, esses são:
+                    Os escudos, ou qualquer item que forneça proteção, são parte essencial de muitas aventuras. Eles desempenham o papel fundamental de absorver dano, protegendo o personagem de ataques diretos. Os escudos podem ser divididos em dois tipos principais: <b>Escudos de Energia</b> e <b>Escudos Físicos</b>.
+                </p>
+                
+                <h3>Tipos de Escudos</h3>
+
+                <h4>Escudos de Energia</h4>
+                <ul>
+                    <li>Utilizam algum tipo de <b>energia</b> para gerar uma barreira de proteção.</li>
+                    <li>Possuem dois atributos principais:</li>
+                        <ul>
+                            <li><b>Resistência:</b> Quantidade de dano que o escudo pode absorver antes de ser desativado temporariamente.</li>
+                            <li><b>Consumo de Energia:</b> A energia necessária para manter o escudo funcionando, que é subtraída a cada rodada.</li>
+                        </ul>
+                    <li>Quando um escudo de energia atinge <b>0 de energia</b>, ele se desliga, exigindo tempo para se recarregar e voltar a funcionar.</li>
+                    <li>Ao perder sua <b>resistência</b>, o escudo também desliga, precisando de algumas rodadas para religar, desde que ainda tenha pontos de energia restantes.</li>
+                </ul>
+                <h4>Escudos Físicos</h4>
+                <ul>
+                    <li>São objetos físicos, como <b>escudos de combate</b>, usados para absorver impacto.</li>
+                    <li>Possuem o atributo de <b>resistência</b>, que indica o quanto de dano o escudo pode absorver antes de se desgastar ou quebrar.</li>
+                    <li>Não consomem energia para funcionar, mas têm sua resistência reduzida a cada impacto que absorvem.</li>
+                </ul>
+                
+                <h3>Funcionamento Geral dos Escudos</h3>
+
+                <p>
+                    Todos os escudos, sejam de energia ou físicos, têm a função de <b>absorver uma quantidade fixa de dano</b>, chamada de <b>Vigor do Escudo</b>. Esse valor é subtraído do dano recebido. O que sobra após a subtração, se houver, é transferido para o personagem ou sua armadura. Vamos ver um exemplo prático:
                 </p>
                 <p>
-                    <b>Energia</b> – Esse escudo utiliza algum tipo de energia para gerar sua barreira de proteção. Toda vez que pegar um escudo dessa categoria você vai achar os atributos de resistência e consumo de energia.
+                    <b>Exemplo:</b> Um escudo com vigor 5 é usado para proteger um personagem de um ataque que causa 7 de dano.
                 </p>
+                <ul>
+                    <li>O escudo absorve <b>5 pontos de dano</b>.</li>
+                    <li>O restante do dano, <b>2 pontos</b>, passa para o personagem.</li>
+                </ul>
                 <p>
-                    <b>Físico</b> – Já os escudos físicos seriam qualquer objeto ou armadura que geram a proteção. Você encontra de atributo nesses escudos somente a sua resistência.
+                    Se o dano total for <b>menor ou igual ao vigor do escudo</b>, o escudo absorve tudo e o personagem não sofre nenhum dano.
                 </p>
+                
+                <h3>Desgaste e Quebra dos Escudos</h3>
+                <ul>
+                    <li><b>Escudos Físicos:</b> A cada vez que um escudo absorve dano, sua <b>resistência</b> é reduzida pela mesma quantidade de dano recebido. Se a resistência do escudo chegar a 0, o escudo <b>quebra</b> ou fica inutilizável até ser consertado.</li>
+                    <li><b>Escudos de Energia:</b> Além de absorver o dano, esses escudos têm um consumo constante de energia por rodada. A energia do escudo diminui a cada turno que ele permanece ativo. Se a energia acabar, o escudo se <b>desliga</b> automaticamente e não poderá ser usado até que seja recarregado. Quando a resistência do escudo de energia chega a 0, ele também se desliga, mas pode ser <b>religado após um intervalo</b>.</li>
+                </ul>
+                    
+                <h3>Reativação dos Escudos de Energia</h3>
+
                 <p>
-                    Os escudos são objetos cujo a única função é dar uma absorção fixo de dano automático ao usuário <b><i>(Vigor)</i></b>. Quando esse valor de dano é maior do que o dano absorvido pelo escudo, o restante do dano após a subtração, é tomado pelo personagem ou armadura.
+                    Se um escudo de energia perder toda a sua resistência, ele desativa temporariamente. O tempo que ele leva para se religar é determinado pelo lançamento de <b>1D10</b> ou <b>2D10</b>, onde o número resultante representa o número de rodadas que ele ficará desativado antes de ser ativado novamente (<i>desde que ainda tenha pontos de energia restantes</i>).
                 </p>
+                <h3>Objetos Temporários como Escudos</h3>
                 <p>
-                    Vamos ver um exemplo: Imagina que você tem um escudo que absorve 5 de dano. E seu personagem está tomando 7 de dano. Subtraindo o dano 7 pelo vigor do escudo 5 teremos 2. Essa sobra é o dano recebido pelo personagem. 
+                    Em algumas situações, os jogadores podem improvisar usando <b>objetos do cenário</b> como escudos temporários, como pedaços de madeira ou portas. O mestre pode permitir o uso desses objetos, atribuindo-lhes uma <b>resistência</b> apropriada, geralmente baixa. Contudo, faz parte do bom senso que apenas objetos lógicos sejam usados para defesa. Por exemplo, usar uma porta para bloquear flechas faz sentido, mas tentar parar uma bala com um vaso pode não ser eficaz.
                 </p>
-                <p>
-                    Quando o dano for menor que o vigor do escudo, todos os danos são absorvidos pelo escudo, e o personagem não leva dano.
-                </p>
-                <p>
-                    Quando um escudo toma dano, esse dano recebido é usado para subtrair a resistência do escudo. Basicamente é assim que funciona para todos os escudos. Porem os escudos de energia usam da sua energia para ficarem funcionando. 
-                </p>
-                <p>
-                    Esses tipos de escudos tem um consumo de pontos de energia por rodadas que estejam funcionando. E esses consumo deve ser subtraído da bateria que o mantêm ligado, ou seja, a cada rodada o escudo terá um valor de energia subtraído de sua energia. Quando um escudo de energia perde todos seus pontos de energia eles desligam. 
-                </p>
-                <p>
-                    E quando eles perdem sua resistência, os mesmos são somente desligados demorando uma certa quantidade de rodadas para poderem serem ligados novamente (<i>caso tenha pontos de energia sobrando</i>).
-                </p>
-                <p>
-                    Quando um escudo finalizar sua resistência. O mestre deve jogar 1D10 para saber o tempo que vai demorar que possa ser religado. O valor do D10 representa as rodadas que levara para o escudo religar. 
-                </p>
-                <p>
-                    Todos os atributos referentes a um escudo e qualquer outro item pode ser encontrado em sua descrição.
-                </p>
-                <p>
-                    Jogadores podem pegar algum objeto como por exemplo (<i>pedaço de porta</i>) para usar como escudo temporário. O mestre pode deixar isso ocorrer dando a esse objeto uma resistência baixa para aguentar dano. Somente use o objeto que fizer sentido, não vá querer se proteger de uma bala de revólver colocando um vaso na sua frente.
-                </p>
-                <p>
-                    Esses atributos de consumo e energia devem ser preenchidos e mantidos pelo mestre durante a sessão. Junto com a integridade do mesmo. O mestre deve alertar seus jogadores quando seus escudos estiverem prestes a quebrar.
-                </p>
+                <h3>Gestão dos Escudos</h3>
+                <ul>
+                    <li>O <b>mestre</b> deve monitorar o consumo de energia e a integridade dos escudos de energia durante a sessão, além de acompanhar a resistência dos escudos físicos.</li>
+                    <li>Quando um escudo estiver prestes a quebrar ou perder toda sua energia, o mestre deve <b>informar o jogador</b>, permitindo que ele se prepare para possíveis consequências ou buscar alternativas de defesa.</li>
+                </ul>                
+            
                         
             </div>
 
