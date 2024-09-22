@@ -1503,22 +1503,12 @@
         <priority>0.7</priority>
     </url>
 
-
     <url>
         <loc>https://venturod10.com.br/paginas/regras/10-personagem/04-fichadois.html</loc>
         <lastmod>2024-03-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-
-
-    <url>
-        <loc>https://venturod10.com.br/paginas/regras/10-personagem/05-aquisicoes.html</loc>
-        <lastmod>2024-03-26</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
 
     <url>
         <loc>https://venturod10.com.br/paginas/regras/11-pericias/06-vantagens.html</loc>
@@ -1832,7 +1822,7 @@
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://venturod10.com.br/paginas/worldbuilding/01-introducao/08-leismagicas.html.html</loc>
+        <loc>https://venturod10.com.br/paginas/worldbuilding/01-introducao/08-leismagicas.html</loc>
         <lastmod>2024-07-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
