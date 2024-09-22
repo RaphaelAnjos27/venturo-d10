@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
     <url>
         <loc>https://venturod10.com.br/</loc>
         <lastmod>2024-03-12</lastmod>
@@ -68,12 +70,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-    <url>
-        <loc>https://venturod10.com.br/paginas/documentos/documentos_universo.html</loc>
-        <lastmod>2024-03-12</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
+    
     <url>
         <loc>https://venturod10.com.br/paginas/documentos/fichas_personagem.html</loc>
         <lastmod>2024-03-12</lastmod>
@@ -82,12 +79,6 @@
     </url>
     <url>
         <loc>https://venturod10.com.br/paginas/documentos/escudo_mestre.html</loc>
-        <lastmod>2024-03-12</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://venturod10.com.br/paginas/documentos/linha_tempo.html</loc>
         <lastmod>2024-03-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
@@ -804,22 +795,6 @@
 
     <url>
         <loc>https://venturod10.com.br/paginas/documentos/documentos_universo.html</loc>
-        <lastmod>2024-03-26</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-
-    <url>
-        <loc>https://venturod10.com.br/paginas/documentos/escudo_mestre.html</loc>
-        <lastmod>2024-03-26</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-
-    <url>
-        <loc>https://venturod10.com.br/paginas/documentos/fichas_personagem.html</loc>
         <lastmod>2024-03-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -1576,54 +1551,6 @@
 
     <url>
         <loc>https://venturod10.com.br/paginas/regras/11-pericias/01-pericias.html</loc>
-        <lastmod>2024-03-26</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-
-    <url>
-        <loc>https://venturod10.com.br/paginas/universo/01-introducao/01-sistema-estelar.html</loc>
-        <lastmod>2024-03-26</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-
-    <url>
-        <loc>https://venturod10.com.br/paginas/universo/01-introducao/02-organizacoes.html</loc>
-        <lastmod>2024-03-26</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-
-    <url>
-        <loc>https://venturod10.com.br/paginas/universo/01-introducao/03-ciclo.html</loc>
-        <lastmod>2024-03-26</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-
-    <url>
-        <loc>https://venturod10.com.br/paginas/universo/01-introducao/04-guildas.html</loc>
-        <lastmod>2024-03-26</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-
-    <url>
-        <loc>https://venturod10.com.br/paginas/universo/01-introducao/05-civilizacoes.html</loc>
-        <lastmod>2024-03-26</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-
-    <url>
-        <loc>https://venturod10.com.br/paginas/universo/01-introducao/06-realidadeabstrata.html</loc>
         <lastmod>2024-03-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
