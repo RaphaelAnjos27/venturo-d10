@@ -56,47 +56,142 @@
                 <script src="/js/sumario.js"></script>
                 
                 <h2>CONDIÇÕES</h2>
+                
                 <p>
-                    Dentro do Sistema Venturo temos algumas regras relacionadas a <b>condições</b> que seu personagem pode possuir momentaneamente, e que afetará o mesmo em suas ações futuras. As condições ditam se seu personagem está naquele momento sofrendo com algum efeito anterior e interferem diretamente em seus atributos.
+                    No Sistema <b>Venturo</b>, as condições representam estados temporários que podem afetar seu personagem, impactando diretamente suas capacidades físicas e mentais. Estas condições são geralmente resultado de eventos como ferimentos, doenças, fadiga ou efeitos mágicos. Cada condição interfere em atributos específicos, dificultando a realização de ações ou impondo penalidades no desempenho geral do personagem.
+                </p>
+                
+                <p>
+                    Abaixo estão as principais condições e os atributos que elas afetam:
+                </p>
+                
+                
+                <h4>Fraco</h4>
+
+                <p><b>Descrição</b>: O personagem está debilitado fisicamente, perdendo parte de sua força. Essa condição pode ser causada por ferimentos, desnutrição ou esforços físicos extremos.</p>
+                <p><b>Efeito</b>: Penalidade de <b>-1 Força</b>.</p>
+                <p><b>Impacto</b>: Afeta testes que envolvem força física, como ataques corpo a corpo e levantamento de peso.</p>
+                
+                <h4>Confuso</h4>
+
+                <p><b>Descrição</b>: A mente do personagem está desorientada, o que dificulta a tomada de decisões e o raciocínio lógico. Pode ser causado por efeitos mágicos, envenenamento ou estresse mental.</p>
+                <p><b>Efeito</b>: Penalidade de <b>-2 Inteligência</b>.</p>
+                <p><b>Impacto</b>: Afeta testes de estratégia, percepção lógica e qualquer ação que envolva raciocínio complexo.</p>
+                
+                <h4>Ferido</h4>
+
+                <p><b>Descrição</b>: O personagem sofreu danos físicos consideráveis, tornando difícil realizar ações que exijam esforço físico.</p>
+                <p><b>Efeito</b>: Penalidade de <b>-2 Constituição</b>.</p>
+                <p><b>Impacto</b>: Diminui a resistência física geral e dificulta a realização de ações prolongadas ou que envolvam grande esforço, como correr longas distâncias ou resistir a fadiga.</p>
+                
+                <h4>Doente</h4>
+
+                <p><b>Descrição</b>: O personagem está sofrendo os efeitos de uma doença ou envenenamento, afetando sua saúde e resistência.</p>
+                <p><b>Efeito</b>: Penalidade de <b>-1 Constituição</b> e <b>-1 Resistência</b>.</p>
+                <p><b>Impacto</b>: Reduz a capacidade de resistir a doenças e fadiga, além de prejudicar a saúde física geral, tornando o personagem mais vulnerável a novas doenças ou venenos.</p>
+                
+                <h4>Cego</h4>
+
+                <p><b>Descrição</b>: O personagem está temporariamente ou permanentemente sem visão, dificultando sua percepção do ambiente e sua precisão em ações motoras.</p>
+                <p><b>Efeito</b>: Penalidade de <b>-3 Percepção</b> e <b>-4 Destreza</b>.</p>
+                <p><b>Impacto</b>: Afeta a percepção do ambiente, ataques à distância e ações que dependem de coordenação visual, como esquiva e combate de precisão.</p>
+                
+                <h4>Surdo</h4>
+
+                <p><b>Descrição</b>: O personagem perdeu temporariamente ou permanentemente a audição, o que dificulta sua percepção sonora e habilidades sociais.</p>
+                <p><b>Efeito</b>: Penalidade de <b>-2 Percepção</b> e <b>-3 Carisma</b>.</p>
+                <p><b>Impacto</b>: Dificulta a comunicação verbal, a percepção de inimigos e eventos próximos, além de prejudicar a interação social.</p>
+                
+                <h4>Imobilizado</h4>
+
+                <p><b>Descrição</b>: O personagem está incapacitado de se mover livremente, seja por paralisia, amarras ou outros efeitos físicos.</p>
+                <p><b>Efeito</b>: Penalidade de <b>-5 Destreza</b> e <b>-3 Força</b>.</p>
+                <p><b>Impacto</b>: Impossibilita ações que envolvem movimento corporal e reduz a capacidade de realizar qualquer esforço físico considerável.</p>
+                
+                <h4>Abalado</h4>
+
+                <p><b>Descrição</b>: A confiança e a determinação do personagem foram comprometidas, afetando sua capacidade de influenciar os outros e exercer sua força de vontade.</p>
+                <p><b>Efeito</b>: Penalidade de <b>-2 Poder</b> e <b>-2 Carisma</b>.</p>
+                <p><b>Impacto</b>: Dificulta ações que envolvem intimidação, liderança ou uso de habilidades baseadas em vontade e presença.</p>
+                
+                <h4>Paralisado</h4>
+
+                <p><b>Descrição</b>: O personagem está completamente incapaz de mover seu corpo, seja por venenos, magia ou trauma severo.</p>
+                <p><b>Efeito</b>: Penalidade de <b>-2 Resistência</b> e <b>-3 Força</b>.</p>
+                <p><b>Impacto</b>: Incapacita o personagem de realizar qualquer ação física e o torna vulnerável a ataques.</p>
+                
+                <h4>Inconsciente</h4>
+
+                <p><b>Descrição</b>: O personagem perdeu completamente a consciência e não pode realizar nenhuma ação até recuperar-se. Isso pode ser resultado de ferimentos graves, exaustão extrema ou outros fatores debilitantes.</p>
+                <p><b>Efeito</b>: Todos os atributos são temporariamente anulados.</p>
+                <p><b>Impacto</b>: O personagem não pode agir enquanto estiver inconsciente. Ele só retornará à consciência após um teste de <b>Constituição ND9</b> bem-sucedido ou através de intervenção externa (<i>cura ou assistência mágica</i>).</p>
+                
+                <h4>Atordoado</h4>
+
+                <p><b>Descrição</b>: O personagem sofreu um choque ou golpe que o desorientou, dificultando sua capacidade de reagir adequadamente a estímulos ao seu redor.</p>
+                <p><b>Efeito</b>: Penalidade de <b>-2 Percepção</b>, <b>-3 Destreza</b> e <b>-1 Inteligência</b>.</p>
+                <p><b>Impacto</b>: Reduz a percepção sensorial e a destreza, além de limitar a capacidade de realizar ações complexas até o final do próximo turno.</p>
+
+                
+                <h4>Cansado</h4>
+
+                <p><b>Descrição</b>: O personagem não descansou adequadamente ou passou por uma atividade extenuante, e está sofrendo de fadiga física.</p>
+                <p><b>Efeito</b>: Penalidade de <b>-1 Destreza</b> e <b>-1 Força</b>.</p>
+                <p><b>Impacto</b>: Diminui a capacidade de realizar ações físicas e reduz a eficácia em combate corpo a corpo e em habilidades que dependem de coordenação motora.</p>
+                
+                <h4>Desidratado</h4>
+
+                <p><b>Descrição</b>: O personagem não ingeriu líquidos suficientes e está sofrendo os efeitos da desidratação. Isso afeta tanto seu desempenho físico quanto mental.</p>
+                <p><b>Efeito</b>: Penalidade de <b>-2 Constituição</b> e <b>-1 Inteligência</b>.</p>
+                <p><b>Impacto</b>: Dificulta a resistência física e mental do personagem, aumentando sua vulnerabilidade a fadiga, golpes e habilidades que exigem concentração.</p>
+                
+                <h4>Sobrecarregado</h4>
+
+                <p><b>Descrição</b>: O personagem está carregando mais peso do que é capaz de suportar confortavelmente, o que limita seus movimentos.</p>
+                <p><b>Efeito</b>: Penalidade de <b>-3 Destreza</b> e <b>-1 Força</b>.</p>
+                <p><b>Impacto</b>: Afeta ações que envolvem agilidade e força, como ataques rápidos, esquiva e manuseio de objetos.</p>
+                
+                <h4>Desorientado</h4>
+
+                <p><b>Descrição</b>: O personagem perdeu a noção de direção ou do tempo, seja por um golpe na cabeça, uma armadilha mágica ou um ambiente extremamente confuso.</p>
+                <p><b>Efeito</b>: Penalidade de <b>-2 Inteligência</b> e <b>-2 Percepção</b>.</p>
+                <p><b>Impacto</b>: Dificulta tomadas de decisões lógicas e orientadas, além de diminuir a capacidade de encontrar saídas ou perceber perigos iminentes.</p>
+                
+                <h4>Intoxicado</h4>
+
+                <p><b>Descrição</b>: O personagem consumiu uma substância (<i>como álcool, drogas ou uma poção malfeita</i>) que afeta suas capacidades mentais e físicas.</p>
+                <p><b>Efeito</b>: Penalidade de <b>-2 Inteligência</b> e <b>-2 Destreza</b>, mas pode também conceder temporariamente uma bonificação de +1 Carisma devido à desinibição.</p>
+                <p><b>Impacto</b>: Afeta o julgamento e a coordenação motora, mas pode facilitar interações sociais que exigem confiança e despreocupação.</p>
+                
+                <h4>Congelado</h4>
+
+                <p><b>Descrição</b>: O personagem foi exposto a condições extremas de frio ou a um efeito mágico de gelo. Suas funções motoras estão lentas e ele sofre de hipotermia.</p>
+                <p><b>Efeito</b>: Penalidade de <b>-3 Destreza</b> e <b>-1 Constituição</b>. A cada turno ou cena, o personagem precisa passar em um teste de Resistência (ND a ser definido) ou perderá 1 ponto adicional de Constituição.</p>
+                <p><b>Impacto</b>: Dificulta movimentos rápidos e ações que exigem esforço físico, além de deixar o personagem vulnerável a danos relacionados ao frio.</p>
+                
+                <h4>Exausto Mentalmente</h4>
+
+                <p><b>Descrição</b>: O personagem sofreu sobrecarga mental devido a esforços intelectuais prolongados ou manipulação mágica.</p>
+                <p><b>Efeito</b>: Penalidade de <b>-3 Inteligênci</b>a e <b>-1 Poder</b>.</p>
+                <p><b>Impacto</b>: Afeta a capacidade de pensar claramente, planejar e usar habilidades baseadas em poder mental ou mágico.</p>
+                
+                <h4>Enlouquecido</h4>
+
+                <p><b>Descrição</b>: O personagem entrou em um estado de insanidade temporária, perdendo o controle de suas ações. Isso pode ocorrer devido a magia, trauma extremo ou eventos sobrenaturais.</p>
+                <p><b>Efeito</b>: Penalidade de <b>-4 Inteligência</b> e <b>-2 Carisma</b>, com a possibilidade de ações irracionais.</p>
+                <p><b>Impacto</b>: O personagem pode atacar aliados, fugir ou realizar ações que contrariam sua lógica, além de perder completamente a habilidade de interagir socialmente de forma coerente.</p>
+
+                
+                <h3>Considerações Finais</h3>
+                <p>
+                    Cada uma dessas condições pode ser temporária ou permanente, dependendo do contexto da narrativa e das ações do personagem. O mestre tem liberdade para ajustar os efeitos e gravidade das condições conforme a situação exige. Algumas condições podem ser revertidas com descanso, tratamentos médicos ou efeitos mágicos, enquanto outras podem exigir mais esforço, como realizar testes específicos para superar a condição imposta.
+                </p>
+                
+                <p>
+                    Essas condições devem ser usadas como ferramentas para criar desafios narrativos e táticos, mantendo o equilíbrio entre dificuldade e a imersão do jogador no mundo do jogo.
                 </p>
 
-                <p>
-                    Vejamos a baixo as condições que temos, e quais atributos elas afetam.
-                </p>
-               
-                <p>
-                    <b>Fraco</b> – Essa condição afeta diretamente a força do personagem. O Personagem recebe uma penalidade de <b>-1 For</b>.
-                </p>
-                <p>
-                    <b>Confuso</b> – Afeta a Inteligência do personagem. Penalidade de <b>-2 Int</b>.
-                </p>
-                <p>
-                    <b>Ferido</b> – Afeta a constituição do personagem, impedindo que o mesmo consiga realizar ações que dependem mais de seu esforço físico. Penalidade de <b>-2 Con</b>.
-                </p>
-                <p>
-                    <b>Doente</b> – Afeta a Constituição e a Resistência, diminuindo a capacidade de resistir a doenças e afetando a saúde geral do personagem. Penalidade de <b>-1 Con</b> e <b>-1 Res</b>.
-                </p>
-                <p>
-                    <b>Cego</b> – Afeta a Percepção e a Destreza, reduzindo a capacidade de perceber o ambiente e realizar ações precisas. Penalidade de <b>-3 Per</b> e <b>-4 Des</b>. 
-                </p>
-                <p>
-                    <b>Surdo</b> – Afeta a Percepção e o Carisma, diminuindo a capacidade de detectar sons e interagir socialmente. Penalidade de <b>-2 Per</b> e <b>-3 Car</b>.
-                </p>
-                <p>
-                    <b>Imobilizado</b> – Afeta a Destreza e a Força, limitando a mobilidade e a capacidade de realizar ações físicas. Penalidade de <b>-5 Des</b> e <b>-3 For</b>.
-                </p>
-                <p>
-                    <b>Abalado</b> – Afeta o Poder e o Carisma, diminuindo a força de vontade e a capacidade de influenciar os outros. Penalidade de <b>-2 Pod</b> e <b>-2 Car</b>.
-                </p>
-                <p>
-                    <b>Paralisado</b> – Afeta a Resistência e a Força, incapacitando o personagem e impedindo qualquer ação. Penalidade de <b>-2 Res</b> e <b>-3 For</b>.
-                </p>
-                <p>
-                    <b>Inconsciente</b> – Essa condição afeta todos os atributos do personagem. Se o mesmo receber essa condição, as ações dele estão impedidas temporariamente. E só retornaram após um teste bem-sucedido de <b>Constituição, ND9</b>. 
-                </p>
-                <p>
-                    <b>Atordoado</b> – Afeta a Percepção, Destreza e Inteligência. O personagem sofre uma penalidade de <b>-2 Per</b>, <b>-3 Des</b>, e <b>-1 Int</b>, e não pode realizar ações complexas até o final de seu próximo turno.
-                </p>
+
                 
             </div>
 
