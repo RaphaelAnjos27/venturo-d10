@@ -379,7 +379,7 @@ export class VenturoSumarioRegras extends HTMLElement{
                         <div class="card-body">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/paginas/regras/09-tempo/01-tempo.html">Tempo</a>
+                                    <a class="nav-link" href="/paginas/regras/09-tempo/01-tempo.html">Estrutura e Fluxo de Tempo em RPG</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="/paginas/regras/09-tempo/02-existencia.html">Existencia</a>
