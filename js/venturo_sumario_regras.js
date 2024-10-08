@@ -248,6 +248,9 @@ export class VenturoSumarioRegras extends HTMLElement{
                                     <a class="nav-link" href="/paginas/regras/06-regras/12-decisao.html">Decisao D2</a>
                                 </li>
                                 <li class="nav-item">
+                                    <a class="nav-link" href="/paginas/regras/06-regras/12.1-objetos.html">Objetos de Cenário</a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link" href="/paginas/regras/06-regras/13-armas.html">Armas</a>
                                 </li>
                                 <li class="nav-item">

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!--Propaganda Google-->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3911900562799248"
+     crossorigin="anonymous"></script>
+
+    <meta name="google-adsense-account" content="ca-pub-3911900562799248">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PKZEWD0W51"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PKZEWD0W51');
+</script>
+
+    <script src="/js/checagem_cookies.js" defer type="module"></script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Sistema - Regras de Durabilidade e Dano para Objetos de Cenário</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <link rel="stylesheet" href="/static/css/regras.css">
+
+    <meta property="og:image" content="/static/imagens/thumbs_paginas/Thumb_regras.webp">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="p-5 text-white text-center sobre">
+        <h1>Regras do Sistema</h1>
+        <p>Agora vamos conhecer as regras por tras do sistema Venturo</p>
+    </div>
+
+    <venturo-menu-superior></venturo-menu-superior>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <venturo-sumario-regras></venturo-sumario-regras>  
+            </div>
+
+            <div class="col-sm-7">
+                
+                <div id="sumario" class="container rounded shadow p-4 mb-4 bg-white">
+                    
+                </div>
+                <script src="/js/sumario.js"></script>
+                
+                <h2>Objetos de Cenário</h2>
+                <p>
+                    Lidar com objetos do cenário em um jogo de RPG pode ser um desafio, pois os personagens podem tentar destruir praticamente qualquer coisa. A questão "<i>meu personagem pode cortar uma corrente de aço com uma faca?</i>" surge frequentemente. Para isso, é importante que tanto o mestre quanto os jogadores usem o bom senso ao avaliar o tempo necessário, as ferramentas corretas e as habilidades envolvidas para destruir um objeto. No fim, quase tudo pode ser destruído, desde que o método faça sentido.
+                </p>
+                <p>
+                    Quando falamos de <b>objetos</b> aqui, estamos nos referindo a itens inanimados, independentemente de seu tamanho ou função, e que podem ser danificados ou destruídos. Para manter o equilíbrio e a lógica, o mestre pode atribuir dois atributos a objetos que possam ser destruídos: <b>Vigor</b> e <b>Durabilidade</b>.
+                </p>
+                <h3>Atributos de Objetos Destrutíveis:</h3>
+                <ul>
+                    <li><b>Vigor</b>: Representa a capacidade do material de resistir ao dano. Ele funciona como uma "barreira", absorvendo parte do impacto antes que o dano afete a integridade do objeto. Se o dano infligido em um único golpe não ultrapassar o valor de Vigor, o objeto não é danificado.</li>
+                    <li><b>Durabilidade</b>: Indica a quantidade de dano que o objeto pode suportar antes de ser completamente destruído. Cada vez que o Vigor é superado, o objeto perde pontos de Durabilidade. Quando a Durabilidade chega a 0, o objeto é destruído.</li>
+                </ul>
+                <p>
+                    Esses atributos podem variar de acordo com o material e o tamanho do objeto.
+                </p>
+                <h3>Valores de Vigor por Material:</h3>
+                <ul>
+                    <li><b>Tecido, papel, corda</b> – 0 Vigor (<i>qualquer dano causa impacto direto na durabilidade</i>)</li>
+                    <li><b>Cristal, vidro, gelo</b> – 2 Vigor</li>
+                    <li><b>Madeira, ossos</b> – 4 Vigor</li>
+                    <li><b>Pedra</b> – 7 Vigor</li>
+                    <li><b>Ferro, aço</b> – 10 Vigor</li>
+                </ul>
+                <h3>Valores de Durabilidade por Tamanho:</h3>
+
+                <p>
+                    Além do material, o tamanho também influência a Durabilidade. Aqui estão exemplos de durabilidades para diferentes tipos de objetos, considerando a fragilidade ou resistência do item:
+                </p>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                
+                        <thead>
+                            <tr>
+                                <th>Tamanho</th>
+                                <th>Frágeis</th>
+                                <th>Resistentes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>Minúsculo</b><br>(<i>garrafas, copos</i>)</td>
+                                <td>4</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td><b>Pequeno</b><br>(<i>notebooks, computadores</i>)</td>
+                                <td>10</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td><b>Médio</b><br>(<i>barris, baús grandes</i>)</td>
+                                <td>25</td>
+                                <td>60</td>
+                            </tr>
+                            <tr>
+                                <td><b>Grande</b><br>(<i>carros, motos</i>)</td>
+                                <td>40</td>
+                                <td>100</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Uso em Combate e Interações com Cenário:</h3>
+
+                <p>
+                    O mestre pode usar essas regras para objetos encontrados no cenário ou para equipamentos que os jogadores manipulam durante a aventura. Um detalhe importante é que, enquanto armas e ferramentas podem não seguir esses atributos de Vigor e Durabilidade, armaduras tem suas próprias mecânicas de desgaste específicas, que podem ser monitoradas com o tempo. Então essa regra pode se aplicar bem para outros objetos usados pelos jogadores, para dar um tom de maior realismo. O uso (<i>testes sucedidos</i>) ou mal uso (<i>erros e erros criticos</i>) podem causar desgaste ao objeto do jogador, subtraindo assim, sua durabilidade com o tempo. Isso leva os jogadores a necessidade de reparo de seus equipamentos em campanha.
+                </p>
+                <h3>Objetos Maiores e Estruturas:</h3>
+
+                <p>
+                    Para objetos maiores, como uma grande rocha bloqueando um caminho ou uma ponte, é recomendado que o mestre dívida esses elementos em seções ou setores de Durabilidade. Por exemplo, uma ponte pode ser dividida em suas vigas ou pilares, monitorando o desgaste conforme os jogadores atacam partes específicas. Destruir as bases de uma estrutura pode resultar no colapso total.
+                </p>
+                <p>
+                    Divisão de Setores: Grandes objetos podem ter sua Durabilidade fragmentada. Por exemplo, destruir as vigas de uma ponte pode resultar em seu colapso completo. Essa abordagem é especialmente útil para cenários dinâmicos, onde os jogadores tentam danificar estruturas inteiras. O mestre deve avaliar quando é mais interessante utilizar uma Durabilidade única para o objeto inteiro ou fragmentar o objeto em seções.
+                </p>
+                <h3>Tipo de Dano e Ferramentas Adequadas:</h3>
+
+                <p>
+                    Outro ponto importante é considerar o <b>tipo de dano</b> que os jogadores tentam infligir. O dano deve ser coerente com o material do objeto e as ferramentas usadas. Por exemplo:
+                </p>
+                <ul>
+                    <li><b>Dano contundente</b> (<i>martelos, golpes de força bruta</i>) é ideal para quebrar objetos como paredes, rochas, ou superfícies duras.</li>
+                    <li><b>Dano cortante</b> (<i>facas, espadas</i>) é mais eficaz em materiais como cordas, tecidos e madeira fina, mas não seria útil para cortar ferro ou aço.</li>
+                    <li><b>Dano perfurante</b> (<i>lanças, flechas</i>) pode ser útil em materiais frágeis como vidro, mas ineficaz contra materiais rígidos.</li>
+                </ul>
+                <p>
+                    O uso das ferramentas certas, aliado ao tempo necessário, também deve ser um fator a ser considerado. Por exemplo, cortar uma corrente de aço com uma faca comum seria improvável, mas com uma serra adequada e tempo suficiente, isso seria possível.
+                </p>
+                <h3>Desgaste Natural e Eventos Ambientais:</h3>
+
+                <p>
+                    Objetos do cenário podem ser desgastados ao longo do tempo, sem a intervenção dos jogadores, dependendo das condições ambientais. O mestre pode aplicar esse desgaste para representar o impacto de eventos como terremotos, tempestades ou até corrosão por oxidação. Além disso, um objeto pode perder Durabilidade conforme o tempo passa, se estiver sendo utilizado continuamente (<i>como uma corda muito esticada ou uma ponte que sofre com o peso constante de veículos</i>).
+                </p>
+                <h3>Complemento Narrativo:</h3>
+
+                <p>
+                    Essas regras devem servir como base, mas o mais importante é usá-las de forma <b>narrativa</b> para enriquecer o jogo. O mestre pode ajustar a Durabilidade e o Vigor dos objetos de acordo com a trama, aplicando modificadores em situações de estresse ou urgência, como durante uma batalha intensa, ou diminuindo os valores em momentos mais tranquilos para facilitar o progresso dos jogadores.
+                </p>
+
+            </div>
+
+            <div id="propaganda-lateral" class="col-sm-2">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3911900562799248"
+     crossorigin="anonymous"></script>
+    <!-- Anuncio Lateral -->
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3911900562799248"
+     data-ad-slot="2483162649"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+    <script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                <venturo-anuncio></venturo-anuncio>
+
+                
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="container" id="comentarios">
+        <script src="/js/configuracao_comentarios.js" defer></script>
+    </div>
+    <venturo-footer></venturo-footer>
+
+    <script type="module" src="/js/venturo_lib.js"></script>
+</body>
+
+</html>
