@@ -309,6 +309,9 @@ export class VenturoSumarioCriacao extends HTMLElement {
                                 <a class="nav-link" href="/paginas/criacao/14-itens/05-restauracao.html">Restaruação e Ajuda</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="/paginas/criacao/14-itens/05.1-venenos.html">Venenos</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="/paginas/criacao/14-itens/06-porte.html">Porte</a>
                             </li>
                             <li class="nav-item">
