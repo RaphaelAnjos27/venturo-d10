@@ -268,12 +268,14 @@ export class VenturoSumarioRegras extends HTMLElement{
                                 <li class="nav-item">
                                     <a class="nav-link" href="/paginas/regras/06-regras/17-morte.html">Morte do Personagem</a>
                                 </li>
-    
                                 <li class="nav-item">
                                     <a class="nav-link" href="/paginas/regras/06-regras/18-atributoraca.html">Bônus Racial</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="/paginas/regras/06-regras/19-exaustao.html">Exaustão</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/paginas/regras/06-regras/19.1-sanidade.html">Sanidade</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="/paginas/regras/06-regras/20-condicoes.html">Condições</a>
