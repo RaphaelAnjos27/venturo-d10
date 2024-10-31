@@ -144,6 +144,9 @@ export class VenturoSumarioRegras extends HTMLElement{
                                 <li class="nav-item">
                                     <a class="nav-link" href="/paginas/regras/04-narrativa/11-organizacao-mesa.html">Organização da mesa</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/paginas/regras/04-narrativa/12-carreiras.html">Carreiras no Cenário</a>
+                                </li>
                         </div>
                     </div>
                 </div>

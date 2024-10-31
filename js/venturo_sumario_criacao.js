@@ -211,6 +211,12 @@ export class VenturoSumarioCriacao extends HTMLElement {
                             <li class="nav-item">
                                 <a class="nav-link" href="/paginas/criacao/06-corporacao/06-carreira.html">Carreiras através das organizações</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/paginas/criacao/06-corporacao/07-criandocarreira.html">Criação de Carreiras</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/paginas/criacao/06-corporacao/08-tabeladevida.html">Tabela de Vida</a>
+                            </li>
                     </div>
                 </div>
             </div>
