@@ -30,12 +30,6 @@ export class VenturoSumarioUniverso extends HTMLElement {
                                 <a class="nav-link" href="/paginas/universo/01-introducao/01-sistema-estelar.html">Sistema Estelar</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo/01-introducao/02-organizacoes.html">Organizações Espaciais</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/paginas/universo/01-introducao/03-ciclo.html">Ciclo Comercial e Estações</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" href="/paginas/universo/01-introducao/04-guildas.html">Guildas</a>
                             </li>
                             <li class="nav-item">

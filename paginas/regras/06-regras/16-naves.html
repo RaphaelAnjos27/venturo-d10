@@ -22,13 +22,13 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Regras do Sistema - Nave</title>
+    <title>Regras do Sistema - Regras e Atributos de Veículos para RPG: Guia Completo para Venturo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="icon" type="image/x-icon" href="/static/imagens/favicon.webp">
+    <meta name="description" content="Explore o guia completo de regras e atributos para veículos no RPG Venturo. Descubra como aplicar mecânicas de mobilidade, vitalidade, consumo de energia e muito mais para enriquecer suas campanhas com naves espaciais, montarias e veículos personalizados.">
     <link rel="stylesheet" href="/static/css/regras.css">
-
     <meta property="og:image" content="/static/imagens/thumbs_paginas/Thumb_regras.webp">
 </head>
 
@@ -55,298 +55,257 @@
                 </div>
                 <script src="/js/sumario.js"></script>
                 
-                <h2>Veículo</h2>
+                <h2>Guia Completo de Regras e Atributos para Veículos no RPG Venturo</h2>
 
                 <p>
-                    O Sistema Venturo se baseia principalmente no tema sci-fi, sendo assim, o controle de embarcações
-                    espaciais é obrigatório. Naves tem de ser controladas assim como qualquer outro veículo de
-                    transporte. Porem elas têm características muito diferentes de veículos normais como a
-                    <i>“velocidade de navegação”</i>. Já outros são iguais, como a Vitalidade do Veículo.
+                    O Sistema Venturo é um RPG de criação aberta, projetado para o desenvolvimento flexível de cenários personalizados. Cada cenário pode implementar mecânicas únicas ou complementares que abrangem diferentes tipos de veículos. Por exemplo, cenários náuticos podem incluir regras específicas e perícias adaptadas exclusivamente para embarcações marítimas. Essa abordagem modular permite que narradores e jogadores personalizem suas experiências de acordo com o tema e a ambientação escolhidos.
                 </p>
-                <p>
-                    Jogar com naves em uma batalha é quase igual a jogar com personagens. As regras básicas podem ser
-                    aplicadas da mesma forma. O que muda são as formas de calcular a esquiva e o ataque.
-                </p>
-                <p>Ao todo, temos quatro categorias de naves, e algumas ainda tem subcategorias:</p>
 
-                <h5>NAVES PEQUENAS:</h5>
                 <p>
-                    Naves pequenas são veículos de 1 a 2 lugares criadas para realizar a defesa ou ataque de uma certa
-                    área. Seu tamanho varia dos 2 a 10 metros de comprimento.
-                </p>
-                <p>
-                    Por serem equipamentos mais robustos eles fornecem capacidade de operação de 3 a 4 dias no máximo, a
-                    partir disso seu estoque de ar ou energia pode zerar, ou seja, não são naves com capacidade de
-                    viagens muito longas sem um componente de salto.
-                </p>
-                <p>
-                    Suas subcategorias são:
+                    O sistema fornece uma lista de perícias genéricas, projetadas para servir de base adaptável em qualquer cenário. No entanto, criadores de conteúdo têm a liberdade de expandir essas opções ou desenvolver novas perícias que reflitam as necessidades específicas de seu mundo. A organização de veículos no Sistema Venturo também segue categorias amplas e versáteis, atualmente definidas como:
                 </p>
                 <ul>
-                    <li>
-                        <b>Corveta</b> – É uma pequena nave com espaço para apenas um tripulante, e um poder de fogo
-                        reduzido. Além de seu suporte a vida ser bem ínfimo;
-                    </li>
-                    <li>
-                        <b>Fragata</b> – Também é uma pequena nave, porém um pouco maior que as corvetas. Elas contem
-                        mais poder de fogo podendo carregar pequenos torrents, um espaço para no máximo 6 tripulantes e
-                        um suporte a vida um pouco maior;
-                    </li>
-                    <li>
-                        <b>Operária</b> – É uma nave com funções específicas dentro de uma corporação. Normalmente
-                        usadas para descarregar contêiner e outros afins.
-                    </li>
+                    <li><b>Veículos Terrestres:</b> Automóveis, motocicletas, caminhões e similares.</li>
+                    <li><b>Veículos Marítimos:</b> Barcos, navios e submarinos.</li>
+                    <li><b>Veículos Aeroespaciais:</b> Aviões e naves espaciais.</li>
                 </ul>
-
-                <h5>NAVES MÉDIAS:</h5>
                 <p>
-                    As naves médias podem ser usadas para ataques mesmo não tendo a agilidade de tal. Mas sua principal
-                    função é o transporte de seres ou mercadorias pelo espaço afora. Elas já podem ser usadas para
-                    exploração, diferente das de ataque, e seu tamanho varia dos 10 a 100 metros de comprimento.
-                </p>
-                <ul>
-                    <li>
-                        <b>Minerador</b> – São naves que exercem atividades de mineração, seja em asteroides, planetas e
-                        entre outros. Sua tripulação é mais reduzida, entre 1 a 4 tripulantes;
-                    </li>
-                    <li>
-                        <b>Transporte</b> – São naves com o único objetivo de transportar objetos ou tripulantes. Sendo
-                        assim seu poder de carga é estendido, podendo carregar uma carga de 50 a 100 tripulantes em uma
-                        única nave, ou toneladas de recursos.
-                    </li>
-                    <li>
-                        <b>Emergencial</b> – Essas são naves encontradas em estações, naves capitais e colossais. Sua
-                        capacidade de tripulação é bem maior, chegando a cerca de 200 tripulantes, dependendo da nave.
-                    </li>
-                    <li>
-                        <b>Cruzador</b> – é uma nave extremamente poderosa. Pode servir para diversos afins já que a
-                        mesma carrega um autopoderio bélico e tripulação mais elevada.
-                    </li>
-                </ul>
-
-                <h5>CAPITAIS:</h5>
-                <p>
-                    Capitais são naves muito grandes tendo um tamanho de 500 metros a 1 quilômetro. Geralmente usadas
-                    para transporte de uma grande quantidade de cargas. São muito usadas em guerras para transportar os
-                    combatentes e as naves pequenas, podendo ter até mesmo grande poder de fogo.
-                </p>
-                <ul>
-                    <li>
-                        <b>Cargueiro</b> – São uma nave com capacidade de carga de materiais muito elevada, já que são
-                        criados para essa função. Sua tripulação pode ser grande também, mas não tão alta, tendo cerca
-                        de 20 a 50 membros em um único cargueiro;
-                    </li>
-                    <li>
-                        <b>Exploração</b> – É um tipo de capital enorme com um grande foco na exploração espacial. Ela
-                        contem poder de fogo mais reduzido, comparado aos encouraçados, porém tem mais funções
-                        exploratórias e uma alta capacidade de tripulação;
-                    </li>
-                    <li>
-                        <b>Encouraçado</b> – É uma nave capital com foco na destruição. Ela carrega todos os tipos de
-                        armas que podemos ver em uma nave. Sua tripulação também é estendida assim como as de
-                        exploração.
-                    </li>
-                </ul>
-
-                <h5>COLOSSAIS:</h5>
-                <p>
-                    Naves colocais são criadas por raças com nível tecnológico bastante elevado. São naves extremamente
-                    grandes chegando a ter 10 quilômetros ou mais. São projetadas para que a raça possa viajar pelo
-                    espaço sem a necessidade de um planeta. Seus tripulantes não necessitam sair da nave para nada pois
-                    a mesma fornece tudo que um planeta pode fornecer. E ela tem uma capacidade de carga muito superior
-                    à dos capitais.
+                    Historicamente, animais de montaria eram considerados parte da categoria de Veículos Terrestres. Entretanto, uma atualização recente introduziu atributos específicos para animais domesticáveis, reconhecendo-os como uma classe própria com mecânicas dedicadas. Essa mudança enriquece as possibilidades de criação de personagens e cenários, proporcionando maior profundidade ao uso de criaturas como meios de transporte ou companheiros de exploração.
                 </p>
 
-                <h3>CONTROLE:</h3>
+                <h3>Interpretação</h3>
+
                 <p>
-                    Para se controlar essas naves precisamos ter duas perícias feitas somente para elas, essas são:
-                    <b>“Pilotar 1”</b> e <b>“Pilotar 2”</b>, Cada uma com suas categorias de veículo. Sempre o teste
-                    será <i>Pilotar 1 ou 2 + Destreza ND 7</i>.
+                    No Sistema Venturo, o uso de veículos é frequentemente tratado de forma interpretativa, exceto quando um veículo possui capacidades de ataque ou funções especiais. O mestre pode exigir testes de perícias relacionadas ao veículo durante tentativas de fuga, manobras arriscadas ou outras ações dinâmicas. Por exemplo:
                 </p>
-                <div class="alert alert-primary">
-                    <i><b>NOTA.:</b> O ND pode mudar de acordo com a dificuldade do cenário.</i>
+                <div class="alert alert-secondary">
+                    <p>
+                        "<i>Os personagens entram às pressas em um carro para fugir de um assassino em série. O jogador que está dirigindo liga o carro e tenta uma arrancada brusca para escapar. O mestre pede um teste de <b>Veículos Terrestres + Destreza</b> com <b>ND 8</b> para determinar se a manobra foi bem-sucedida.</i>"
+                    </p>
                 </div>
 
                 <p>
-                    Algumas colossais e capitais não são controladas diretamente por você. Porem você é o capitão e dá a
-                    ordem para seus pilotos. Quando isso ocorre, a perícia utilizada nos testes de controle desse
-                    veículo será <b>Liderança</b>.
+                    Quando um veículo permite ações ofensivas, ele passa a ser tratado como uma extensão do personagem, utilizando seus próprios atributos — como <b>Vitalidade</b>, <b>Poder de Fogo</b> e <b>Defesa</b> — para resolver combates e desafios mecânicos.
                 </p>
 
-                <h3>ATAQUE, ESQUIVA E DEFESA:</h3>
-                <p>
-                    Naves <b>colossais</b> e <b>capitais</b> não tem esquiva. Elas dependem somente de sua defesa. As
-                    únicas naves de esquiva são as <b>pequenas</b> e <b>médias</b>. E seu teste é realizado usando
-                    <b>Esquiva + Destreza ND 7</b>.
-                </p>
+                <h4>Uso do Cinto de Segurança</h4>
 
                 <p>
-                    Tanto a <b>esquiva</b> quanto o <b>ataque</b> funciona de forma diferente quando comparado ao
-                    combate tradicional (<i>entre personagens</i>). Em vez de somarmos os acertos com o dano da arma,
-                    devemos multiplicar. Sendo assim, antes de calcular qualquer dano realizado pela nave, você vai
-                    pegar o valor da esquiva e subtrair pela quantidade de acertos do dano. Só depois disso
-                    multiplicamos os acertos restantes com o dano da arma.
+                    Embora seja uma escolha narrativa, o uso do cinto de segurança pode ter consequências mecânicas significativas. Em caso de colisão, personagens sem cinto podem sofrer dano adicional. O mestre pode ajustar o dano para representar o impacto total, criando momentos dramáticos e realistas que reforçam a importância de detalhes práticos na condução de veículos.
                 </p>
+
+                <h3>Controle</h3>
+
                 <p>
-                    Por exemplo: Imagine que o dano da arma da nave seja “15”. Assim seu teste resultou em um PD com “6”
-                    acertos. Porem a nave inimiga está esquivando com “4”. Então pegamos os acertos “6” e subtraímos com
-                    a esquiva “4”, resultando em “2”. Agora pegamos esse resto e multiplicamos pelo dano da arma (2 x
-                    15). E nosso dano total foi de 30.
+                    Cada categoria de veículo exige uma perícia específica que reflete o nível de domínio do personagem sobre o tipo de transporte em questão. Essas perícias são usadas para ações que requerem habilidade técnica, como acionar funções específicas, realizar manobras complexas ou navegar em situações perigosas.
                 </p>
+                <h4>Controle por Comandos</h4>
+
                 <p>
-                    Naves que não tem esquiva dependem somente de seus escudos e vitalidade. A vitalidade de uma
-                    colossal ou capital é dado pela resistência de sua carcaça. E ela funciona da mesma forma que os
-                    escudos, absorve o dano total, subtraindo então sua resistência pelo dano recebido.
+                    Veículos de grande porte, como naves colossais, submarinos e navios, dependem de uma tripulação treinada e de comandos coordenados por um capitão ou condutor principal. Nessas situações, as ações são resolvidas através de testes de <b>Liderança</b> ou <b>Manipulação</b> relacionados à operação do veículo. O desempenho da tripulação também pode afetar os resultados, e a narrativa frequentemente se concentra mais na estratégia do comandante do que na execução direta de manobras.
                 </p>
 
                 <div class="alert alert-primary">
-                    <i><b>NOTA.:</b> As naves pequenas e médias também tem a resistência da sua nave subtraída pelo dano
-                        recebido, quando seus escudos não dão mais conta do trabalho.</i>
+                    <i><b>NOTA.:</b> Em narrativas que envolvem veículos complexos, os jogadores podem assumir o controle de componentes individuais, como sistemas de armas e direção. E os testes de suas ações interferem no veículo como um todo.</i>
                 </div>
-                <p>
-                    O ataque sempre será feito usando algum tipo de armamento atribuído a nave. Os testes e explicações
-                    dessas armas estão mais a baixo na categoria de armas. Você deve jogar a iniciativa nos combates de
-                    nave como se estivesse fazendo um combate normal.
-                </p>
-                <p>
-                    E ainda existe uma característica que diferencia o ataque da nave dos ataques normais. Uma nave pode
-                    ter mais de uma arma em sua direção de ataque, assim cada arma fará um ataque no mesmo turno daquela
-                    nave. Por exemplo: Se eu tenho uma nave de transporte com dois canhões a sua frente, em um único
-                    ataque, farei duas jogadas. Um para cada canhão, isto é, o dano do ataque será o dano das duas
-                    armas.
-                </p>
-                <p>
-                    Isso ocorre por que os canhões da frente de uma nave sempre atacam ao mesmo tempo. E quando
-                    estivermos tratando de capitais ou naves maiores. Suas armas são controladas por pessoas diferentes.
-                    Isso quando armas não estão sendo controladas por um PP, pois ai o ataque da nave vai depender do
-                    jogador disposto naquela arma. Sendo assim a quantidade de ataque por turno das naves vai depender
-                    da quantidade de armas que ela tem em sua direção de ataque, que não esteja sendo controlada por um
-                    PP.
-                </p>
 
-                <h3>VELOCIDADE DE NAVEGAÇÃO:</h3>
-                <p>
-                    Velocidade de navegação é um limite físico criado no sistema para as naves. Mais para frente você
-                    verá que o universo é dividido em quadrantes e setores, e é nesses quadrantes que você vai usar essa
-                    velocidade de navegação.
-                </p>
-                <p>
-                    A velocidade de navegação dita quantas rodadas leva para uma nave percorrer 50 anos-luz. Essa
-                    velocidade é separada em 5 níveis que é melhor abordado no capítulo de universo do sistema em
-                    <i>Sistema Estelar</i>. Quando uma nave ultrapassa esse nível, a mesma começa a levar <b>100 de
-                        dano</b> por turno.
-                </p>
-
-                <h3>VITALIDADES DO VEÍCULO:</h3>
-                <p>
-                    Todas as naves, sem exceção contém três atributos relacionados a sua vitalidade. Esses atributos são
-                    consumidos na seguinte ordem quando a nave recebe alguma avaria, primeiro vem o <b>Escudo</b>
-                    (<i>que segue as regras de escudo</i>), depois temos a <b>Blindagem</b> e por fim a
-                    <b>Estrutura</b>.
-                </p>
-                <p>
-                    O escudo são todos os sistemas de proteção de uma nave, gerando por algum modulo, que por sua vez,
-                    gera algum tipo de campo de proteção. A blindagem são elementos na carcaça da nave que geram essa
-                    proteção extra. E a estrutura da nave, como o próprio nome diz, é a parte interna. Quando essa parte
-                    começa a ser destruída, você pode tera perca de módulos, salas, corredores e por ai vai.
-                </p>
-                <p>
-                    Para finalizar, os atributos das naves são:
-                </p>
-                <b>
-                    <ul>
-                        <li>
-                            Escudos;
-                            <ul>
-                                <li>Resistência;</li>
-                                <li>Vigor</li>
-                            </ul>
-                        </li>
-                        <li>Blindagem;</li>
-                        <li>Estrutura;</li>
-                    </ul>
-                </b>
-
-                <h3>ENERGIA:</h3>
-                <p>
-                    O atributo Energia de um veículo funciona quase que da mesma forma que o CLOL, ou seja, usamos esses
-                    pontos para ativar os componentes de uma nave. Esse atributo é dividido em duas partes principais,
-                    essas são:
-                </p>
-                <p>
-                    <b>Pontos</b> – Quantidade de energia de sua nave para ser utilizado.
-                </p>
-                <p>
-                    <b>Gerador</b> – Quantos pontos de energia ela recupera por turno.
-                </p>
-                <p>
-                    Na ficha técnica de cada nave você ainda terá um atributo chamado <b>consumo</b>, que vai nos
-                    informar quantos pontos de energia os principais componentes de um veículo pode consumir.
-                </p>
-                <p>
-                    <b>Escudo</b> – Consumo de energia da nave para manter o escudo por turno;
-                </p>
-                <p>
-                    <b>Canhão primário</b> – Consumo de energia para disparar com os canhões primários;
-                </p>
-                <p>
-                    <b>Torrents</b> – Consumo de energia para disparar com Torrents;
-                </p>
-                <p>
-                    <b>Misseis</b> – Consumo de energia para manipular os mísseis;
-                </p>
-                <p>
-                    <b>Atômicas e EMP</b> – Consumo de energia para manipular as armas atômicas e EMP;
-                </p>
-                <p>
-                    <b>Espaciais</b> – Consumo de energia para manipular as armas espaciais.
-                </p>
-                <p>
-                    Cada nave pode usar mais ou menos energia para manipular a mesma arma. Quem dita esses valores de
-                    energia será esse atributo de consumo.
-                </p>
-                <h3>CAPACIDADE DE CARGA:</h3>
-                <p>
-                    Um veículo pode ter diversos tipos de cargas, as naves principalmente. Cada veículo terá os seus grupos de capacidade de carga, como por exemplo, as naves que podem ter a capacidade de carga do hangar. Então os atributos relacionados a capacidade de carga são:
-                </p>
+                <h4>Ataque, Esquiva e Defesa</h4>
 
                 <p>
-                    <b>Tripulantes</b> – Informa quantas pessoas esse veículo pode transportar.
+                    Veículos pequenos e médios, como carros, aviões leves e naves de combate, podem realizar testes de esquiva usando a perícia <b>Esquiva + Destreza ND 7</b> (<i>ou mais</i>). Veículos extremamente grandes, como navios capitais ou espaçonaves gigantescas, não possuem esquiva e dependem exclusivamente de seus escudos e resistência estrutural.
+                </p>
+                <h4>Resolvendo Ataques</h4>
+                <p>
+                    O combate entre veículos utiliza uma abordagem diferente do combate convencional entre personagens:
+                </p>
+                <ol>
+                    <li><b>Esquiva e Acertos:</b><br>Primeiro, subtraia o número de sucessos no teste de esquiva do valor de acertos do ataque. O resultado é o número final de acertos.</li>
+                    <li><b>Dano Final:</b><br>Multiplique o número final de acertos pelo dano base da arma para determinar o dano total causado.</li>
+                </ol>
+                
+                <p><b>Exemplo:</b></p>
+
+                <p>
+                    Se o dano base da arma for <b>15</b> e o jogador obtiver <b>6 acertos</b> no ataque contra uma nave inimiga com <b>4 acertos de esquiva</b>, o cálculo é:
+                </p>
+                <ul>
+                    <li>Acertos finais = 6 - 4 = 2</li>
+                    <li>Dano total = 2 x 15 = 30</li>
+                </ul>
+                <p>
+                    Veículos que não possuem esquiva contam apenas com resistência e escudos. A resistência é subtraída diretamente do dano recebido, assim como o valor do escudo.
+                </p>
+
+                <h4>Ações de Ataque e Iniciativa</h4>
+
+                <p>
+                    Cada arma instalada em um veículo realiza ataques independentes, seguindo a iniciativa padrão de combate. Se uma nave possuir duas armas frontais, cada uma realiza um ataque por turno. Em naves maiores, armas individuais podem ser controladas por diferentes personagens ou sistemas automatizados, aumentando a complexidade estratégica do combate.
                 </p>
                 <p>
-                    <b>Hangar</b> – Mostra a quantidade de naves um capital pode comportar.
+                    Cada arma instalada em um veículo realiza ataques de forma independente, seguindo a iniciativa padrão de combate. No entanto, há diferenças entre <b>sistemas automatizados</b> e armas <b>controladas manualmente</b> por personagens ou tripulantes.
+                </p>
+
+                <h5>Exemplo de Combate com Sistema Automatizado:</h5>
+
+
+                <p>
+                    Imagine que você está pilotando uma nave de combate no meio de uma grande batalha espacial. De repente, o sistema de IA de uma nave capital decide focar diretamente em você. Essa nave capital possui três torres de canhões com linha de visão para sua nave. Como o sistema de ataque é automatizado, apenas um único teste de ataque é realizado, mas o dano total é calculado somando o dano base de todas as armas envolvidas e multiplicando pelos acertos.
                 </p>
                 <p>
-                    <b>Dispensa de minérios</b> – informa a capacidade máxima em metros cúbicos que temos para comportar minérios.
+                    Se o dano base das armas for <b>45</b>, <b>10</b> e <b>45</b>, e o sistema obtiver <b>4 acertos</b>, o dano final será: <b>(45 + 10 + 45) × 4 = 400</b>
                 </p>
                 <p>
-                    <b>Carga</b> – Informa a capacidade máxima em metros cúbicos que temos para transportar qualquer tipo de item.
+                    Esse tipo de ataque representa a coordenação precisa de um sistema automatizado, onde as armas disparam simultaneamente em sincronia.
                 </p>
                 
-                <p>
-                    Nem todos os veículos terão os mesmos atributos de carga, como por exemplo, as naves pequenas, que não tem um hangar.
-                </p>
-
-                <h3>MOBILIDADE:</h3>
-                <p>
-                    Esse é um atributo encontrado apenas em naves. Ele dita como você conduz a nave, ou seja, qual a liberdade de deslocamento da nave em um espaço tridimensional. Naves mais avançadas permitem que você possam controlá-las de diversas maneiras, como por exemplo, voar de lado como se fosse um carangueiro, subir e descer sem precisar rotacionar a nave e por ai vai.
-                </p>
+                <h5>Combate com Controle Manual de Armas:</h5>
 
                 <p>
-                    Ou seja, para que uma aeronave possa se deslocar pelo espaço, ela precisa primeiro, se <b>deslocar</b> para frente ou para trás, e ela precisa <b>rotacionar-se</b> para conseguir se direcionar por um caminho.
+                    Se cada arma da nave for operada por personagens ou sistemas independentes, o foco de ataque pode ser mais imprevisível e potencialmente aleatório, dependendo do nível de organização e das prioridades táticas do combate. Neste caso, cada arma realiza um ataque separado, e o alvo de cada uma pode ser escolhido pelo jogador ou definido pelo mestre com base na narrativa.
                 </p>
+
+                <h3>Atributos de Veículos</h3>
+
                 <p>
-                    A mobilidade trabalha com esses dois atributos <i>(deslocamento e rotação)</i> gerando três tipos de valores, esses são:
+                    O sistema Venturo inclui um conjunto robusto de atributos pré-estabelecidos para veículos, permitindo que mestres e jogadores personalizem e adaptem os veículos de acordo com o cenário. A seguir, detalhamos os principais atributos e suas regras de uso:
+                </p>
+
+                <h4>Velocidade de Navegação</h4>
+
+                <p>
+                    A <b>Velocidade de Navegação</b> representa o limite físico para o deslocamento de naves através do espaço sideral. O universo é dividido em quadrantes e setores, e a velocidade determina quantas rodadas são necessárias para percorrer <b>50 anos-luz</b>.
                 </p>
 
                 <p>
-                    <b>Mobilidade Avançada</b> – Quando a nave tem total liberdade sobre o eixo X,Y e Z tanto para o deslocamento, quanto para rotação.
+                    Este atributo é dividido em <b>cinco níveis de velocidade</b>, abordados no capítulo sobre o <b>Sistema Estelar</b>. Quando uma nave ultrapassa seu limite máximo de velocidade, ela sofre <b>100 pontos de dano por turno</b> devido ao estresse estrutural.
+                </p>
+
+                <h4>Vitalidades do Veículo</h4>
+
+                Todos os veículos possuem três camadas de vitalidade que absorvem o dano na seguinte ordem: <b>Escudo</b>, <b>Blindagem</b> e, por último, <b>Estrutura</b>.
+                <ol>
+                    <li><b>Escudo</b>: Representa a proteção gerada por sistemas de campo de energia. Funciona de acordo com as regras de escudo, incluindo:</li>
+                    <ul> 
+                        <li><b>Resistência</b>: Vitalidade total do Escudo;</li>
+                        <li><b>Vigor</b>: Quanto de dano absorve automaticamente (<i>o resto do dano é atribuído a blindagem</i>);</li>
+                    </ul>
+                    <li><b>Blindagem</b>: Componentes físicos que formam a carcaça protetora do veículo, fornecendo defesa adicional após o colapso do escudo.</li>
+                    <li><b>Estrutura</b>: O núcleo físico e funcional do veículo. Quando a estrutura começa a ser destruída, módulos internos podem falhar, corredores podem ser bloqueados, e a segurança dos tripulantes é ameaçada.</li>
+                </ol>
+
+                <div class="alert alert-primary">
+                    <i><b>Nota Narrativa.:</b>  Quando a estrutura de um veículo sofre dano significativo, o mestre pode desativar módulos ou infligir danos a NPCs e jogadores a bordo.</i>
+                </div>
+            
+                <h4>Energia</h4>
+
+                <p>
+                    A <b>Energia</b> de um veículo funciona de maneira semelhante ao <b>CLOL</b> dos personagens. Ela é usada para ativar componentes e sistemas. O atributo é dividido em:
+                </p>
+                <ul>
+                    <li><b>Pontos de Energia</b>: A quantidade total disponível.</li>
+                    <li><b>Gerador de Energia</b>: A taxa de recuperação de energia por turno.</li>
+                </ul>
+
+                <h4>Consumo de Energia</h4>
+
+                <p>
+                    Cada componente de uma nave consome energia para operar. O consumo é especificado para:
+                </p>
+                <ul>
+                    <li><b>Escudo:</b> Energia consumida por turno para manter o escudo ativo.</li>
+                    <li><b>Canhão Primário:</b> Energia usada para disparar as armas principais.</li>
+                    <li><b>Torre de Canhões (Torrents):</b> Energia para disparar armas automáticas.</li>
+                    <li><b>Mísseis:</b> Energia necessária para lançar e guiar mísseis.</li>
+                    <li><b>Armas Atômicas e EMP:</b> Energia para manipular armamentos especiais.</li>
+                    <li><b>Armas Espaciais:</b> Energia para operar dispositivos bélicos de longo alcance ou de destruição massiva.</li>
+                </ul>
+                <p>
+                    O valor exato de consumo varia conforme o modelo e a tecnologia do veículo.
+                </p>
+
+                <h4>Capacidade de Carga</h4>
+
+                <p>
+                    Veículos possuem diferentes tipos de compartimentos de carga, variando conforme sua função e design. Os principais atributos relacionados são:
+                </p>
+                <ul>
+                    <li><b>Tripulantes</b>: Capacidade máxima de passageiros.</li>
+                    <li><b>Hangar</b>: Número de veículos menores que uma veículo maior pode abrigar.</li>
+                    <li><b>Dispensa de Minérios</b>: Capacidade de armazenagem em metros cúbicos.</li>
+                    <li><b>Carga Geral</b>: Volume total disponível para itens diversos.</li>
+                </ul>
+                <p>
+                    Nem todos os veículos possuem todos esses atributos — por exemplo, pequenas naves de combate geralmente não possuem hangares.
+                </p>
+
+                <h4>Mobilidade</h4>
+
+                <p>
+                    A mobilidade de um veículo determina sua capacidade de manobra em um espaço tridimensional. Este atributo define como a nave se move e afeta a capacidade de esquiva. Existem três níveis de mobilidade:
+                </p>
+                <ol>
+                    <li><b>Mobilidade Avançada</b>: Controle total nos eixos X, Y e Z, permitindo manobras como deslizar lateralmente ou subir e descer sem rotacionar.</li>
+                    <ul>
+                        <li>Bônus de Esquiva: <b>+1 a +5</b>.</li>
+                        <li>Acertos automáticos: <b>0 a +2</b>.</li>
+                    </ul>
+                    <li><b>Mobilidade Padrão</b>: Movimento limitado para frente e para trás, para cima e para baixo, com rotação livre em todos os eixos.</li>
+                    <ul>
+                        <li>Bônus de Esquiva: <b>+1 a +7</b>.</li>
+                    </ul>
+                    <li><b>Mobilidade Simples</b>: Movimento restrito apenas para frente e para trás, com rotação livre.</li>
+                    <ul>
+                        <li>Bônus de Esquiva: <b>0 a +5</b>.</li>
+                    </ul>
+                </ol>
+                <p>
+                    O nível de mobilidade não apenas determina a forma como imaginamos a nave se deslocando, mas também influencia a vantagem defensiva de cada veículo.
+                </p>
+
+                <h3>Regras Complementares para Veículos</h3>
+
+	            <p>
+                    Além dos atributos e regras básicas descritos anteriormente, o sistema Venturo permite a criação de <b>regras personalizadas</b> adaptadas às necessidades e especificidades de cada cenário de jogo. Isso permite que mestres e criadores de mundos tragam mais profundidade e mecânicas únicas para veículos, sejam eles naves espaciais, montarias ou máquinas terrestres. Abaixo estão alguns exemplos e sugestões de como essas regras podem ser implementadas:
+                </p>
+
+                <h4>Domesticação e Uso de Montarias</h4>
+                <p>
+                    Em cenários que envolvem o uso de montarias (<i>como criaturas fantásticas ou veículos vivos</i>), é possível adicionar um sistema de <b>domesticação</b> e <b>controle</b>.
+                </p>
+                <ul>
+                    <li><b>Domar uma Montaria</b>: Pode exigir uma série de testes usando perícias como <b>Empatia Animal</b> ou <b>Montaria</b>, com uma dificuldade ajustada pela raridade e temperamento da criatura.</li>
+                    <li><b>Lealdade e Temperamento</b>: Criaturas podem ter níveis de lealdade, influenciando sua obediência a comandos. Falhas em testes podem resultar em comportamentos imprevisíveis ou descontrolados.</li>
+                    <li><b>Exemplo de Regra de Domesticação</b>: Para montar um dragão, o jogador deve passar por uma série de Ações Seguidas, realizando testes de <b>Carisma + Empatia Animal</b> com um número fixo de sucessos. A dificuldade pode aumentar se o dragão estiver ferido ou faminto.</li>
+                </ul>
+                <h4>Condução de Veículos de Grande Porte</h4>
+                <p>
+                    Em cenários com naves massivas, como cruzadores estelares ou navios capitais, a condução exige mais do que um simples teste de pilotagem. Aqui, <b>múltiplas tripulações e funções especializadas</b> podem ser necessárias.
+                </p>
+                <ul>
+                    <li><b>Sistema de Funções</b>: Cada membro da tripulação assume um papel específico (<i>como piloto, engenheiro, ou artilheiro</i>). O desempenho de cada função pode influenciar a eficácia geral da nave em combate ou navegação.</li>
+                    <li><b>Ações Simultâneas</b>: Em situações de combate, o mestre pode solicitar testes coordenados usando o sistema de <b>Ação Conjunta</b>, onde o desempenho individual contribui para o sucesso geral.</li>
+                    <li><b>Exemplo de Condução Complexa</b>: Uma nave capital requer um <b>Teste de Pilotagem</b> com assistência de testes secundários de <b>Engenharia</b> para manter a estabilidade do gerador. Falhas podem resultar em sobrecargas ou perda de controle temporário.</li>
+                </ul>
+                <h4>Manutenção e Customização de Veículos</h4>
+                <p>
+                    Em campanhas focadas na sobrevivência ou exploração, veículos podem demandar <b>manutenção regular</b>.
+                </p>
+                <ul>
+                    <li><b>Durabilidade e Desgaste</b>: Naves ou veículos que percorrem longas distâncias podem acumular pontos de desgaste. Cada ponto pode aumentar a dificuldade de manobras ou reduzir a eficiência de energia, exigindo reparos periódicos.</li>
+                    <li><b>Sistema de Customização</b>: Jogadores podem adicionar módulos ou melhorias, como escudos aprimorados ou armas especializadas. O custo em recursos ou energia dependerá do cenário.</li>
+                </ul>
+                <p>
+                    Essas regras complementares permitem uma experiência mais imersiva e estratégica, adaptando o sistema Venturo para diferentes tipos de aventuras e gêneros. Ao definir regras específicas para veículos, mestres e jogadores podem enriquecer a narrativa e criar desafios únicos para superar.
+                </p>
+
+                <h3>Conclusão</h3>
+
+                <p>
+                    O sistema de veículos no Venturo apresenta uma abordagem detalhada e flexível, permitindo que mestres e jogadores adaptem suas mecânicas a diferentes cenários de jogo. Com atributos robustos, como Velocidade de Navegação, Vitalidade e Consumo de Energia, o sistema oferece uma experiência estratégica imersiva, equilibrando combate, exploração e gestão de recursos. A possibilidade de personalização por meio de regras complementares enriquece a diversidade do universo, possibilitando que cada campanha tenha desafios únicos e mecânicas especializadas, como o uso de montarias ou navegação de grandes capitais.
                 </p>
                 <p>
-                    <b>Mobilidade Padrão</b> – Aqui a nave só pode se deslocar para frente e para trás, para cima e para baixo. Mas sua rotação é livre em qualquer eixo.
-                </p>
-                <p>
-                    <b>Mobilidade Simples</b> – Já aqui, a aeronave só pode se deslocar para frente e para trás. Porem sua rotação é libre para qualquer eixo.
+                    Ao integrar essas regras com exemplos práticos, testes de perícias relevantes e condições adversas, o sistema amplia suas opções narrativas, tornando cada encontro com veículos dinâmico e cheio de decisões táticas importantes. Assim, Venturo fornece ferramentas abrangentes para criar batalhas épicas, missões de resgate ousadas e aventuras de exploração espacial inesquecíveis, sempre respeitando a criatividade do narrador e dos jogadores.
                 </p>
 
             </div>
