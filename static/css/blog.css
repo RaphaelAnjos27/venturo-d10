@@ -1,0 +1,12 @@
+.sobre{
+    background-image: url(/static/imagens/banners/banner_blog.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ul {
+    list-style-image: url('/static/imagens/bulletpoint.svg');
+  }
+
+h1, h2, h3,h4,h5,h6{
+    text-transform: uppercase;
+}

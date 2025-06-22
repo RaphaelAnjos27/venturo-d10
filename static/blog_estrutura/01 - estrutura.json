@@ -1,0 +1,10 @@
+[
+    {
+        "titulo": "Nome do Artigo",
+        "autor": "Autor do Artigo",
+        "data": "Dia-Mes-Ano",
+        "thumb": "Nome da Thumb sem extrensão",
+        "nome_arquivo": "nome do arquivo sem Extensão",
+        "descricao":"descricao..."
+    }
+]

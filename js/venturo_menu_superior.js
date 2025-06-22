@@ -53,6 +53,9 @@ export class VenturoMenuSuperior extends HTMLElement{
                             <a class="nav-link" href="/paginas/wb.html">Worldbuilding</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="/paginas/blog/blog_index.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="/paginas/contos.html">Contos</a>
                         </li>
                         <li class="nav-item">

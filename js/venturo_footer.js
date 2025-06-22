@@ -48,6 +48,7 @@ export class VenturoFooter extends HTMLElement{
                             <p><a target="_blank" style="text-decoration: none; color:white;" href="/paginas/universo.html">Universo</a></p>
                             <p><a target="_blank" style="text-decoration: none; color:white;" href="/paginas/criacao.html">Criacao</a></p>
                             <p><a target="_blank" style="text-decoration: none; color:white;" href="/paginas/wb.html">Worldbuilding</a></p>
+                            <p><a target="_blank" style="text-decoration: none; color:white;" href="/paginas/blog/blog_index.html">Blog</a></p>
                         </div>  
 
                         <div class="col-sm-4">
