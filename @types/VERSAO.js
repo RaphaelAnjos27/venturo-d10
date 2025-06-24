@@ -1,4 +1,4 @@
 
-const VERSAO = "2.5.0";
+const VERSAO = "2.6.0";
 
 export default VERSAO;
