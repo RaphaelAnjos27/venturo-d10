@@ -139,9 +139,6 @@ export class VenturoSumarioRegras extends HTMLElement{
                                     <a class="nav-link" href="/paginas/regras/04-narrativa/09-ameacas.html">Ameaças</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/paginas/regras/04-narrativa/10-florhex.html">Flores de Hex</a>
-                                </li>
-                                <li class="nav-item">
                                     <a class="nav-link" href="/paginas/regras/04-narrativa/11-organizacao-mesa.html">Organização da mesa</a>
                                 </li>
                                 <li class="nav-item">

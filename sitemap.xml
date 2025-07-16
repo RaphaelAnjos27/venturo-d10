@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
+        <loc>https://venturod10.com.br/paginas/blog/artigos/Guia%20Completo%20de%20Flores%20de%20Hex%20para%20RPG%20Conceito%20Uso%20e%20Criação.html</loc>
+        <lastmod>2025-07-16</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>https://venturod10.com.br/paginas/blog/artigos/Inteligencia%20Artificial%20no%20RPG%20de%20Mesa.html</loc>
         <lastmod>2025-06-24</lastmod>
         <changefreq>daily</changefreq>
@@ -805,12 +811,6 @@
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://venturod10.com.br/paginas/regras/04-narrativa/10-florhex.html</loc>
-        <lastmod>2024-03-26</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
         <loc>https://venturod10.com.br/paginas/regras/04-narrativa/11-organizacao-mesa.html</loc>
         <lastmod>2024-03-26</lastmod>
         <changefreq>monthly</changefreq>
@@ -822,9 +822,6 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-
-    
-
     <url>
         <loc>https://venturod10.com.br/paginas/regras/05-campanhasaventuras/01-campanhas.html</loc>
         <lastmod>2024-03-26</lastmod>
