@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
+        <loc>https://venturod10.com.br/paginas/blog/artigos/Ameacas%20em%20RPG%20Como%20Criar%20Obstaculos%20Narrativos%20Envolventes.html</loc>
+        <lastmod>2025-07-17</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>https://venturod10.com.br/paginas/blog/artigos/Listas%20de%20Progressão%20-%20De%20Vida%20a%20Trama%20do%20Seu%20RPG.html</loc>
         <lastmod>2025-07-17</lastmod>
         <changefreq>daily</changefreq>
@@ -806,12 +812,6 @@
     </url>
     <url>
         <loc>https://venturod10.com.br/paginas/regras/04-narrativa/08-eventos.html</loc>
-        <lastmod>2024-03-26</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://venturod10.com.br/paginas/regras/04-narrativa/09-ameacas.html</loc>
         <lastmod>2024-03-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
