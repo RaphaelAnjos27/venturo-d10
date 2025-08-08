@@ -268,7 +268,9 @@ export class VenturoSumarioWorldBuilding extends HTMLElement {
                                         <li class="nav-item">
                                             <a class="nav-link" href="/paginas/worldbuilding/06-cenarios/06-masmorra.html">Como Usar Masmorras</a>
                                         </li>
-                                        
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/paginas/worldbuilding/06-cenarios/07-tabelasAleatorias.html">Tabelas Aleatórias</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
